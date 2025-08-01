@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Graphic Design Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body onLoad="MM_preloadImages('images/gr design shop/1 brochures/2.png','images/gr design shop/2 infogr/2.png')">
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb9.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+ 
+
+					</pre>
+                        <h2>Graphic Design</h2>
+                        <h2>Shop</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+
+
+    <!-- ##### Elements Area Start ##### -->
+    <section class="elements-area mt-30 section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+
+   <!-- ##### Buy Now Area Start ##### -->
+    <div class="oneMusic-buy-now-area mb-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034073" target="busbrv">
+                            <img src="images/grdesign/1.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034073" target="busbrv">
+                                <h5>Business Brochures</h5>
+                            </a>
+                            <p>Vector Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034145" target="infogrv">
+                            <img src="images/grdesign/2.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034145" target="infogrv">
+                                <h5>Infographics</h5>
+                            </a>
+                            <p>Vector Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034075" target="businesscv">
+                            <img src="images/grdesign/3.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034075" target="businesscv">
+                                <h5>Business Cards</h5>
+                            </a>
+                            <p>Vector Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14531381" target="statv">
+                            <img src="images/grdesign/4.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14531381" target="statv">
+                                <h5>Stationery</h5>
+                            </a>
+                            <p>Vector Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034079" target="abstbv">
+                            <img src="images/grdesign/5.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14034079" target="abstbv">
+                                <h5>Abstract Backgrounds</h5>
+                            </a>
+                            <p>Vector Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504355?page=5" target="vertlv">
+                            <img src="images/grdesign/6.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504355?page=5" target="vertlv">
+                                <h5>Vertical Lines</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504413?page=110" target="psypv">
+                            <img src="images/grdesign/7.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504413?page=110" target="psypv">
+                                <h5>Psychedelic Pattern</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504389" target="chevpv">
+                            <img src="images/grdesign/8.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504389" target="chevpv">
+                                <h5>Chevron</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504383" target="neonr">
+                            <img src="images/grdesign/9.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504383" target="neonr">
+                                <h5>Neon Rhombuses</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504393" target="tartp">
+                            <img src="images/grdesign/10.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504393" target="tartp">
+                                <h5>Tartan Patterns</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504387?page=2" target="wavyint">
+                            <img src="images/grdesign/11.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504387?page=2" target="wavyint">
+                                <h5>Wavy Intersections</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504379" target="wavneo">
+                            <img src="images/grdesign/12.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504379" target="wavneo">
+                                <h5>Wavy Neon</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504415?page=7" target="tribcev">
+                            <img src="images/grdesign/13.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504415?page=7" target="tribcev">
+                                <h5>Tribal Cells</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504369?page=10" target="triangpv">
+                            <img src="images/grdesign/14.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504369?page=10" target="triangpv">
+                                <h5>Triangular Patterns</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504357?page=8" target="horizlinv">
+                            <img src="images/grdesign/15.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504357?page=8" target="horizlinv">
+                                <h5>Horizontal Lines</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504365?page=10" target="curvedl">
+                            <img src="images/grdesign/16.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504365?page=10" target="curvedl">
+                                <h5>Curved Lines</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504433" target="ornamb">
+                            <img src="images/grdesign/17.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504433" target="ornamb">
+                                <h5>Ornamental Patterns</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14305763" target="valv">
+                            <img src="images/grdesign/18.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14305763" target="valv">
+                                <h5>Valentine's Day</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504427" target="polkv">
+                            <img src="images/grdesign/19.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504427" target="polkv">
+                                <h5>Polka Dots</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album Area -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="single-album-area">
+                        <div class="album-thumb">
+                        <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504599" target="raysb">
+                            <img src="images/grdesign/20.jpg" alt="">
+                         </a>
+                        </div>
+                        <div class="album-info">
+                            <a href="https://www.shutterstock.com/g/Oana_Unciuleanu/sets/14504599" target="raysb">
+                                <h5>Rays Background</h5>
+                            </a>
+                            <p>Illustrations</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ##### Buy Now Area End ##### -->
+         
+            </div>
+        </div>
+    </section>
+    <!-- ***** Elements Area End ***** -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

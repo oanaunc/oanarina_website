@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Exhibitions by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb6.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+ 
+
+					</pre>
+                         <h2>Exhibitions</h2>                     
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+    
+
+   <!-- ##### Events Area Start ##### -->
+    <section class="events-area section-padding-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e10.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Voice Of Fire</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">U Art Gallery</a>
+                                <a class="event-place">April 2019</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=2359549497409347"
+                            target="voiceoffireex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e1.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Feminine art</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">The Parliament House</a>
+                                <a class="event-place">January 2018</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1731117080252595"
+                            target="feminineartex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e2.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Who We Are</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">U Art Gallery</a>
+                                <a class="event-place">April 2018</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1838367646194204"
+                             target="whoweareex" class=" btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e3.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Daydreaming</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">Elite Prof Art Gallery</a>
+                                <a class="event-place">October 2018</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=2072486369448996"
+                            target="draydreex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e4.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Distant Memories</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">Elite Prof Art Gallery</a>
+                                <a class="event-place">October 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1629490687081902"
+                            target="distmemex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e5.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Art Street Walk</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">Revolution Square</a>
+                                <a class="event-date">September 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1617693644928273"
+                            target="artstreewex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e6.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Fusion Arts</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">Noblesse Palace</a>
+                                <a class="event-date">May 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1492123500818622"
+                            target="fusionex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e7.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>City Love</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">U Art Gallery</a>
+                                <a class="event-place">April 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1446153735415599"
+                            target="cityloev" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e8.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Drawing after Brâncusi</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">Targu Jiu</a>
+                                <a class="event-place">March 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1413745785323061"
+                            target="tgjiuex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="img/bg-img/e9.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Gheorghe Petrascu</h4>
+                            <div class="event-meta-data">
+                                <a class="event-place">The History museum</a>
+                                <a class="event-date">January 2017</a>
+                            </div>
+                            <a href="https://www.facebook.com/pg/OanaRinaldiArtAlgorithmsArchitecture/photos/?tab=album&album_id=1299021296795511"
+                            target="ghpetrex" class="btn see-more-btn">See Event</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Events Area End ##### -->
+
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

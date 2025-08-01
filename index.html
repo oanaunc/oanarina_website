@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Oana Rinaldi Art, Algorithms &amp; Architecture</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- social media buttons -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Oana Rinaldi</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Art, Algorithms &amp; Architecture<span>Art, Algorithms &amp; Architecture</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="paintings.html" class="btn oneMusic-btn mt-50">Art<i class="fa fa-angle-double-right"></i></a>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="apps.html" class="btn oneMusic-btn mt-50">Algorithms<i class="fa fa-angle-double-right"></i></a>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="architecture.html" class="btn oneMusic-btn mt-50">Architecture<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Oana Rinaldi</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Art, Algorithms &amp; Architecture<span>Art, Algorithms &amp; Architecture</span></h2>
+                                 <a data-animation="fadeInUp" data-delay="500ms" href="paintings.html" class="btn oneMusic-btn mt-50">Art<i class="fa fa-angle-double-right"></i></a>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="algorithms.html" class="btn oneMusic-btn mt-50">Algorithms<i class="fa fa-angle-double-right"></i></a>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="architecture.html" class="btn oneMusic-btn mt-50">Architecture<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Latest Albums Area Start ##### -->
+    <section class="latest-albums-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2">
+                        <p>See what’s new</p>
+                        <h2>Welcome to the world of art, style and imagination.
+
+</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="ablums-text text-center mb-70">
+                        <p>I believe that art has the power to make us appreciate what is beautiful in life. It makes people want to aspire for greater things, and take a break to enjoy the feelings that art transmits to its viewers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="albums-slideshow owl-carousel">
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a1.jpg" alt="">
+                            <div class="album-info">
+                                <a href="paintings.html">
+                                    <h5>Painting</h5>
+                                </a>
+                                <p>More astonighing paintings</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a2.jpg" alt="">
+                            <div class="album-info">
+                                <a href="drawings.html">
+                                    <h5>Drawing</h5>
+                                </a>
+                                <p>more wonderful drawings</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a3.jpg" alt="">
+                            <div class="album-info">
+                                <a href="apps.html">
+                                    <h5>Apps</h5>
+                                </a>
+                                <p>more advanced technology</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a4.jpg" alt="">
+                            <div class="album-info">
+                                <a href="photography.html">
+                                    <h5>Photography</h5>
+                                </a>
+                                <p>more inspiring photography</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a5.jpg" alt="">
+                            <div class="album-info">
+                                <a href="architecture.html">
+                                    <h5>Architecture</h5>
+                                </a>
+                                <p>more visionary projects</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a6.jpg" alt="">
+                            <div class="album-info">
+                                <a href="exhibitions.html">
+                                    <h5>Events</h5>
+                                </a>
+                                <p>more sensational events</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Album -->
+                        <div class="single-album">
+                            <img src="img/bg-img/a7.jpg" alt="">
+                            <div class="album-info">
+                                <a href="albums.html">
+                                    <h5>Art albums &amp; publications</h5>
+                                </a>
+                                <p>more creative art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Latest Albums Area End ##### -->
+
+    <!-- ##### Buy Now Area Start ##### -->
+    <section class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading style-2">
+                        <p>See what’s new</p>
+                        <h2>Check the latest creations</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Painting Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b1.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="paintings.html">
+                                <h5>Where shadows dance</h5>
+                            </a>
+                            <p>Voice of fire</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawing Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b2.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="drawings.html">
+                                <h5>Quiet</h5>
+                            </a>
+                            <p>Red Embrace</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b3.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="photography.html">
+                                <h5>Silent Lullaby</h5>
+                            </a>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apps Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b4.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="https://play.google.com/store/apps/details?id=com.oanaunciuleanu.artworkpocketinventory" target="artinvn">
+                                <h5>Artwork Inventory</h5>
+                            </a>
+                            <p>Free on Google Play</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paintings Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b5.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="paintings.html">
+                                <h5>Bells From The Deep</h5>
+                            </a>
+                            <p>Daydreaming</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawings Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b6.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="drawings.html">
+                                <h5>Stalking shadows ahead</h5>
+                            </a>
+                            <p>Reality Dream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b7.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="photography.html">
+                                <h5>I see you in Infra-red</h5>
+                            </a>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apps Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b8.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="https://play.google.com/store/apps/details?id=com.oanaunciuleanu.foodnewsapp" target="newsappn">
+                                <h5>News App</h5>
+                            </a>
+                            <p>Algorithms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paintings Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b9.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="paintings.html">
+                                <h5>The world far below is on fire</h5>
+                            </a>
+                            <p>Who we are</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawings Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b10.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="drawings.html">
+                                <h5>I call to the darkness</h5>
+                            </a>
+                            <p>Frozen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b11.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="photography.html">
+                                <h5>One step closer into thin air</h5>
+                            </a>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apps Area -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                        <div class="album-thumb">
+                            <img src="img/bg-img/b12.jpg" alt="">
+                        </div>
+                        <div class="album-info">
+                            <a href="apps.html">
+                                <h5>Venice tour guide</h5>
+                            </a>
+                            <p>Android App</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Buy Now Area End ##### -->
+
+    <!-- ##### Featured Artist Area Start ##### -->
+    <section class="featured-artist-area section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/bg-4.jpg);">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="featured-artist-thumb">
+                        <img src="img/bg-img/fa.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="featured-artist-content">
+                        <!-- Section Heading -->
+                        <div class="section-heading white text-left mb-30">
+                            <p>Thanks for your visit on the page!</p>
+                            <h2>OR/AAA</h2>
+                        </div>
+                        <p>I have been passionate about life and knowledge, having degrees in computer science, painting and architecture. In my work I combine my passion of geometry, art and technology, creating works that are pleasant for the eye and intriguing for the mind.</p>
+							<p>I have a PHD in algebraic surfaces, and have published many other books on art and photography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Featured Artist Area End ##### -->
+
+    <!-- ##### Miscellaneous Area Start ##### -->
+    <section class="miscellaneous-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- ***** Paintings Top ***** -->
+                <div class="col-12 col-lg-4">
+                    <div class="weeks-top-area mb-100">
+                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
+                            <p>See what’s new</p>
+                            <h2>New Paintings</h2>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt1.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>Unfurl</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="150ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt2.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>I found you In the dark</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="200ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt3.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>Where shadows dance</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="250ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt4.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>I'm breaking down</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="300ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt5.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>It All Starts From Pieces</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                        <!-- Paintings Top Item -->
+                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="350ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/wt6.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <h6>One wing ruffled the water</h6>
+                                <p>120-80 cm, 2018, oil on canvas</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ***** New Drawings  ***** -->
+                <div class="col-12 col-lg-4">
+                    <div class="new-hits-area mb-100">
+                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
+                            <p>See what’s new</p>
+                            <h2>New Drawings</h2>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="100ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt7.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>Why I should feel this way?</h6>
+                                    <p>Red Embrace</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="150ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt8.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>The Racing Heart</h6>
+                                    <p>Red Embrace</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="200ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt9.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>Quiet</h6>
+                                    <p>Red Embrace</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="250ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt10.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>Wearing The Inside Out</h6>
+                                    <p>Red Embrace</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt11.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>Stalking shadows ahead</h6>
+                                    <p>Reality Dream</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drawings Top Item -->
+                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="350ms">
+                            <div class="first-part d-flex align-items-center">
+                                <div class="thumbnail">
+                                    <img src="img/bg-img/wt12.jpg" alt="">
+                                </div>
+                                <div class="content-">
+                                    <h6>Floating with nowhere to hide</h6>
+                                    <p>Reality Dream</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***** Popular Apps ***** -->
+                <div class="col-12 col-lg-4">
+                    <div class="popular-artists-area mb-100">
+                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
+                            <p>See what’s new</p>
+                            <h2>New Apps</h2>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa1.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Artwork Inventory</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="150ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa2.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Music App</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="200ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa3.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>News App</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="250ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa4.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Venice Tour Guide</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa5.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Catch the Armadillo</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="350ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa6.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Business App</p>
+                            </div>
+                        </div>
+
+                        <!-- Apps  -->
+                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="400ms">
+                            <div class="thumbnail">
+                                <img src="img/bg-img/pa7.jpg" alt="">
+                            </div>
+                            <div class="content-">
+                                <p>Phone Book</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Miscellaneous Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+      <!-- Contact-->
+      <section class="contact" id="contact">
+         <div>
+            <div align="center">
+               <script type="text/javascript" src="https://form.jotformeu.com/jsform/53576663567369"></script>
+            </div>
+         </div>
+         <div class="content">
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+               #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+               /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+               <form action="//oanaunciuleanu.us12.list-manage.com/subscribe/post?u=7f1b5f3d1ae4598e0f9ee3a82&amp;id=1c6310fd0e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                                     <div class="content-" align="center">
+                                    <h6 align="center">If you want to receive invitations at my painting exhibitions and updates on the latest creations, subscribe to my mailing list.</h6>
+                                
+                     <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                        </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                     </div>
+                     <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                     </div>
+                     </div>
+                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7f1b5f3d1ae4598e0f9ee3a82_1c6310fd0e" tabindex="-1" value=""></div>
+                     <div class="clear" align="center">  	
+                        <input  type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->  
+         </div>
+      </section>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
