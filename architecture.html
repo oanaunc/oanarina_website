@@ -32,7 +32,7 @@
     
     <link rel="stylesheet" href="css/swiper.css">
     
-    <!-- Custom CSS for tooltips -->
+    <!-- Custom CSS for tooltips and videos -->
     <style>
         /* Tooltip styling */
         .tooltip-btn {
@@ -76,6 +76,38 @@
         .tooltip-btn:hover::before {
             opacity: 1;
             visibility: visible;
+        }
+        
+        /* Video wrapper styling */
+        .video-wrapper {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+        }
+        
+        .video-wrapper video {
+            border-radius: 10px;
+        }
+        
+        /* Section heading animation */
+        .section-heading h2 {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 2px;
         }
     </style>        
 
@@ -221,6 +253,137 @@
    <section>
 <br>
 </section> 
+
+    <!-- ##### Architecture Videos Section Start ##### -->
+    <section class="album-catagory section-padding-100-0" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mb-70" data-aos="fade-up">
+                        <h2 style="color: #2c3e50; font-weight: 700; margin-bottom: 10px;">Architecture Videos</h2>
+                        <p style="color: #7f8c8d; font-size: 16px;">Explore our architectural projects through video presentations</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <!-- Video 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 5 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 6 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 7 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 8 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi8.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 9 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi9.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 10 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi10.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Video 11 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-50">
+                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+                            <source src="videos/architecture/archi11.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Architecture Videos Section End ##### -->
+    
+    <section>
+        <br>
+    </section>
 
  <div class="site-section"  data-aos="fade">
     <div class="container-fluid">
