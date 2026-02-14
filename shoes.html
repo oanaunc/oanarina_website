@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Custom Shoes by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+    <link rel="stylesheet" href="css/lightgallery.min.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">  
+    <link rel="stylesheet" href="css/swiper.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Custom styles for shoe collections */
+        .shoe-collection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .shoe-collection-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        /* Make lightbox description text white */
+        .lg-sub-html {
+            color: #FFF !important;
+        }
+        
+        .lg-sub-html h4,
+        .lg-sub-html h6,
+        .lg-sub-html p {
+            color: #FFF !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-gamepad"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                            <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+                            </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+	
+    
+    <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb18.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+
+					</pre>
+                         <h2>Custom Shoes</h2>
+                       
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="album-catagory">
+        <div class="site-section" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center" style="margin-top: 60px; margin-bottom: 80px;">
+                            <h3 style="font-size: 2rem; font-weight: 400; color: #333; line-height: 1.6; font-style: italic; padding: 0 20px;">Each pair of shoes is a unique canvas, transformed into wearable art. Explore my custom shoe creations, where fashion meets artistic expression.</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 6: Garden of Lace -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Garden of Lace</h3>
+                        <p class="shoe-collection-description">Elegant black dress shoes with refined decorative embellishments. Featuring romantic floral appliqués, delicate bow accents, and intricate lace overlays that create a vintage-inspired, couture aesthetic perfect for formal occasions and evening wear.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes6">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes1.jpg"
+                         data-id="garden-of-lace-1"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Elegant dress shoes adorned with floral appliqués and lace-like decorative elements. The layered fabric flowers and stitched textures create a romantic, refined aesthetic with subtle material contrasts that highlight the ornamental details.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/1.jpg" alt="Garden of Lace - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes2.jpg"
+                         data-id="garden-of-lace-2"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Sophisticated design featuring prominent rose-shaped embellishments on the toe area. The fabric flowers with layered petals and delicate bow accents add a feminine, couture-inspired touch, while embroidered overlays provide depth and tactile contrast.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/2.jpg" alt="Garden of Lace - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes3.jpg"
+                         data-id="garden-of-lace-3"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Refined decorative style with floral appliqués and lace textures. The slightly shinier embellishments create subtle highlights against the matte base fabric, resulting in an elegant, vintage-inspired look perfect for formal events and special occasions.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/3.jpg" alt="Garden of Lace - View 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 5: Gothic Couture -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Gothic Couture</h3>
+                        <p class="shoe-collection-description">Custom high-heel boots with a dramatic, couture-style aesthetic. Featuring intricate lace and embroidered overlays with floral patterns, draped chain strands with bead-like drops and a striking red gem accent, elegant satin ribbon bow details, and layered fabric flowers. This gothic-elegant design combines romantic lace, jewelry-like embellishments, and a dramatic silhouette, creating a statement fashion piece that showcases handcrafted artistry.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes5">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes1.jpg"
+                         data-id="gothic-couture-1"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Custom high-heel boots showcasing intricate lace appliqués and embroidered overlays that form floral and ornamental patterns, creating a baroque-inspired textured look with layered depth.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/1.jpg" alt="Gothic Couture - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes2.jpg"
+                         data-id="gothic-couture-2"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Dramatic couture design featuring draped chain strands with bead-like drops and a striking red gem accent, adding movement, sparkle, and bold contrast against the black base.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/2.jpg" alt="Gothic Couture - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes3.jpg"
+                         data-id="gothic-couture-3"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Elegant satin ribbon bow detail near the upper side provides a soft, romantic contrast to the bold decoration, adding a gothic-fashion elegance to the dramatic silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/3.jpg" alt="Gothic Couture - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes4.jpg"
+                         data-id="gothic-couture-4"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Layered fabric flowers and appliqué petals blend seamlessly with the intricate lace patterns, showcasing the handcrafted, customized artistry of this gothic-elegant design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/4.jpg" alt="Gothic Couture - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes5.jpg"
+                         data-id="gothic-couture-5"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>A statement fashion piece that combines romantic lace, jewelry-like embellishments, and dramatic couture-inspired details, creating an artistic custom design that transcends everyday footwear.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/5.jpg" alt="Gothic Couture - View 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 4: Emoji Express -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Emoji Express</h3>
+                        <p class="shoe-collection-description">Fun, youthful streetwear-inspired sneakers featuring colorful emoji-themed decorations. The dark base showcases vibrant smiley-face graphics in neon colors—yellow, pink, blue, orange, and green—with a mix of printed designs and raised plastic emoji charms. A prominent yellow winking tongue-out emoji charm serves as the main focal point, while a red strip along the sole edge and light-colored laces complete this playful, pop culture-inspired design.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes4">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes1.jpg"
+                         data-id="emoji-express-1"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>Colorful smiley-face graphics in different expressions and colors cover the shoes, creating a vibrant, playful aesthetic. The mix of printed designs and raised plastic emoji charms adds dimensionality and visual interest to this streetwear-inspired customization.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/1.jpg" alt="Emoji Express - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes2.jpg"
+                         data-id="emoji-express-2"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>A large yellow winking tongue-out emoji charm stands out prominently as the main focal point. The dark base (black/navy) makes the neon-like colors—yellow, pink, blue, orange, and green—pop strongly, creating a bold, eye-catching design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/2.jpg" alt="Emoji Express - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes3.jpg"
+                         data-id="emoji-express-3"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>Light-colored laces in mint/teal tones soften the look and complement the playful vibe, while a red strip along the sole edge adds extra contrast and a bold graphic line. The white sole keeps the design grounded while highlighting the colorful upper, completing this fun, DIY art-inspired statement piece.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/3.jpg" alt="Emoji Express - View 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 3: Painted Canvas -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Painted Canvas</h3>
+                        <p class="shoe-collection-description">Hand-painted custom sneakers with a strong artistic, painterly aesthetic—wearable artwork that combines streetwear with fine-art painting. The shoe upper features expressive brush-stroke painting with vivid colors (blues, oranges, yellows, reds, and greens) that blend dynamically, creating a canvas-painting effect. A stylized winged figure or abstract character on the side panel suggests a narrative artistic theme, while rhinestone-like elements on the laces and a hand-painted heart symbol on the back add personal, customized touches to this art-driven design.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes3">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes1.jpg"
+                         data-id="painted-canvas-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>Hand-painted artwork covers the shoe upper with expressive brush strokes. Vivid colors—blues, oranges, yellows, reds, and greens—blend dynamically, creating a canvas-painting effect that transforms these sneakers into wearable fine art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/1.jpg" alt="Painted Canvas - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes2.jpg"
+                         data-id="painted-canvas-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>A stylized winged figure or abstract character on the side panel suggests a narrative or symbolic artistic theme, adding depth and storytelling to the painted design. The artistic expression goes beyond decoration, creating a meaningful visual narrative.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/2.jpg" alt="Painted Canvas - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes3.jpg"
+                         data-id="painted-canvas-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>Rhinestone-like elements on the laces add sparkling contrast between fine art painting and fashion glam, while a reflective or studded panel near the collar provides a subtle decorative accent that complements the painted artwork.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/3.jpg" alt="Painted Canvas - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes4.jpg"
+                         data-id="painted-canvas-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>The heel area transitions into bright green and blue gradients, while a small hand-painted heart symbol on the back provides a personal, customized signature touch. The thick white sole and clean white interior contrast beautifully with the colorful exterior artwork, completing this expressive, art-driven design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/4.jpg" alt="Painted Canvas - View 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 2: Strength & Style -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Strength & Style</h3>
+                        <p class="shoe-collection-description">Custom white sneakers featuring hand-painted fitness-themed illustrations. Clean white low-top sneakers with a minimalist silhouette showcase a muscular torso illustration lifting dumbbells, rendered in a semi-realistic painted style. Soft gray cloud-like brushwork surrounds the figure, creating a dramatic, stylized background that emphasizes strength, bodybuilding, and gym culture. The white laces and thick white sole keep the overall look simple so the artwork stands out, creating a personalized, sporty artistic design that combines casual footwear with illustrative art.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes2">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes2/shoes1.jpg"
+                         data-id="strength-style-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Strength & Style</h4><p>Hand-painted artwork on the outer side features a muscular torso illustration lifting dumbbells, rendered in a semi-realistic painted style. The shading and anatomy suggest a focus on strength, bodybuilding, or gym culture, while soft gray cloud-like brushwork surrounds the figure, giving it a slightly dramatic or stylized background.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes2/mici/1.jpg" alt="Strength & Style - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes2/shoes2.jpg"
+                         data-id="strength-style-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Strength & Style</h4><p>Clean white low-top sneakers with a minimalist silhouette. White laces and thick white sole keep the overall look simple so the artwork stands out. The asymmetrical design suggests the artwork may be featured on one side, creating a unique, expressive look that combines casual everyday sneakers with illustrative art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes2/mici/2.jpg" alt="Strength & Style - View 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 1: Portrait & Abstract -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Portrait & Abstract</h3>
+                        <p class="shoe-collection-description">Hand-painted custom sneakers designed as wearable artwork, combining illustrative portrait art with abstract color composition. One shoe features a stylized female face with blue hair painted in an expressive, semi-illustrative style, while the other showcases bold flowing color bands in reds, oranges, and yellows set against deep blue. Rich cobalt/indigo blues with paint splatter effects create a night-sky or cosmic background, while light turquoise edging and sparkly rhinestone-like laces add fashion-glam accents that contrast beautifully with the painterly art style.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes1">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes1.JPG"
+                         data-id="portrait-abstract-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>One shoe features a stylized female face with blue hair, painted in an expressive, semi-illustrative style. The hair flows into the surrounding design, blending into cool blues and whites. The face has defined eyes and soft shading, giving it a slightly fantasy or graphic-novel aesthetic.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/1.jpg" alt="Portrait & Abstract - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes2.JPG"
+                         data-id="portrait-abstract-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>The opposite shoe showcases bold flowing color bands in reds, oranges, and yellows set against deep blue. The shapes feel painterly and dynamic, almost like flames, waves, or motion trails, creating an abstract expressionist composition that contrasts beautifully with the portrait side.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/2.jpg" alt="Portrait & Abstract - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes3.JPG"
+                         data-id="portrait-abstract-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>Rich cobalt/indigo blues with paint splatter effects create a night-sky or cosmic background across both shoes. Light turquoise edging around the panels helps separate the artwork from the white sole, adding definition and visual structure to the design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/3.jpg" alt="Portrait & Abstract - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes4.JPG"
+                         data-id="portrait-abstract-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>Thick white sneaker soles keep the base casual and wearable, while the laces appear sparkly or rhinestone-like, adding a fashion-glam accent that contrasts with the painterly art style. This combination creates a unique fusion of fine art and streetwear fashion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/4.jpg" alt="Portrait & Abstract - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes5.jpg"
+                         data-id="portrait-abstract-5"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>A strong art-meets-fashion customization that combines portrait illustration, abstract expressionism, and streetwear sneaker design. This expressive, personal statement piece transcends standard footwear, creating wearable artwork that showcases the intersection of fine art and contemporary fashion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/5.jpg" alt="Portrait & Abstract - View 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/idgallery.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script>
+        $(document).ready(function(){
+            // Initialize LightGallery for each collection separately
+            // This allows slideshow to be grouped by collection
+            $('#lightgallery-shoes1').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes2').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes3').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes4').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes5').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes6').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+        });
+    </script>
+</body>
+
+</html>
+
