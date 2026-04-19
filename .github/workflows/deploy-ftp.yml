@@ -70,6 +70,9 @@ jobs:
           print("Using FTP server address:", server)
           PY
 
+      # Incremental sync: keeps public_html/.ftp-deploy-sync-state.json and only uploads files
+      # whose content changed since the last successful deploy (not a full reupload each push).
+      # This is hash-based vs that state file, not a literal "git diff of one commit".
       - name: Upload site via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
