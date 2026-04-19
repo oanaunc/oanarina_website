@@ -16,26 +16,64 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ENOTFOUND almost always means FTP_HOST is empty/wrong, or includes a path or URL.
-      # Use repository secret name exactly: FTP_HOST (hostname only, e.g. oanarinaldi.com).
-      - name: Validate FTP host secret
+      # Strip BOM/CR/LF from secrets (common when pasting). Resolve hostname to IPv4 for the
+      # FTP client: many hosts mis-report PASV; using the literal IP avoids getaddrinfo ENOTFOUND
+      # on the control/data path (see SamKirkland/FTP-Deploy-Action issues #293, #400).
+      - name: Prepare FTP server address
         shell: bash
+        env:
+          RAW_FTP_HOST: ${{ secrets.FTP_HOST }}
         run: |
           set -euo pipefail
-          H="${{ secrets.FTP_HOST }}"
-          if [[ -z "${H// }" ]]; then
-            echo '::error::FTP_HOST is empty. Repo → Settings → Secrets and variables → Actions → set FTP_HOST to your FTP hostname only (not a URL, no public_html path).'
-            exit 1
-          fi
-          if [[ "$H" == *"://"* ]] || [[ "$H" == *"/"* ]]; then
-            echo '::error::FTP_HOST must be a bare hostname (no ftp://, no https://, no /public_html). Paths belong in server-dir in this workflow.'
-            exit 1
-          fi
+          python3 <<'PY'
+          import ipaddress
+          import os
+          import socket
+          import sys
+
+          raw = os.environ.get("RAW_FTP_HOST", "")
+          h = raw.replace("\ufeff", "").replace("\r", "").replace("\n", "").strip()
+          if not h:
+              print("::error::FTP_HOST is empty after cleanup.", file=sys.stderr)
+              sys.exit(1)
+          if "://" in h or "/" in h:
+              print(
+                  "::error::FTP_HOST must be a bare hostname or IPv4 (no ftp://, no /public_html).",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+
+          def is_ipv4(s: str) -> bool:
+              try:
+                  ipaddress.IPv4Address(s)
+                  return True
+              except ValueError:
+                  return False
+
+          if is_ipv4(h):
+              server = h
+          else:
+              try:
+                  infos = socket.getaddrinfo(h, 21, family=socket.AF_INET, type=socket.SOCK_STREAM)
+              except OSError as e:
+                  print(
+                      "::error::Could not resolve FTP_HOST as IPv4 from GitHub. "
+                      "Check the secret spelling, or set FTP_HOST to the IPv4 from cPanel. "
+                      f"Details: {e}",
+                      file=sys.stderr,
+                  )
+                  sys.exit(1)
+              server = infos[0][4][0]
+
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
+              f.write(f"FTP_SERVER={server}\n")
+          print("Using FTP server address:", server)
+          PY
 
       - name: Upload site via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
+          server: ${{ env.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: public_html/
