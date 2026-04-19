@@ -16,6 +16,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # ENOTFOUND almost always means FTP_HOST is empty/wrong, or includes a path or URL.
+      # Use repository secret name exactly: FTP_HOST (hostname only, e.g. oanarinaldi.com).
+      - name: Validate FTP host secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          H="${{ secrets.FTP_HOST }}"
+          if [[ -z "${H// }" ]]; then
+            echo '::error::FTP_HOST is empty. Repo → Settings → Secrets and variables → Actions → set FTP_HOST to your FTP hostname only (not a URL, no public_html path).'
+            exit 1
+          fi
+          if [[ "$H" == *"://"* ]] || [[ "$H" == *"/"* ]]; then
+            echo '::error::FTP_HOST must be a bare hostname (no ftp://, no https://, no /public_html). Paths belong in server-dir in this workflow.'
+            exit 1
+          fi
+
       - name: Upload site via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
