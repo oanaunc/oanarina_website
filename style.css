@@ -1685,6 +1685,35 @@ img {
   height: 1em;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect fill='%23e74c3c' x='1' y='1' width='6' height='6'/%3E%3Crect fill='%23fff' x='9' y='1' width='6' height='6'/%3E%3Crect fill='%23f1c40f' x='17' y='1' width='6' height='6'/%3E%3Crect fill='%23fff' x='1' y='9' width='6' height='6'/%3E%3Crect fill='%233498db' x='9' y='9' width='6' height='6'/%3E%3Crect fill='%23fff' x='17' y='9' width='6' height='6'/%3E%3Crect fill='%2327ae60' x='1' y='17' width='6' height='6'/%3E%3Crect fill='%23fff' x='9' y='17' width='6' height='6'/%3E%3Crect fill='%23e67e22' x='17' y='17' width='6' height='6'/%3E%3C/svg%3E") center / contain no-repeat;
   vertical-align: -0.1em; }
+.fa-car-quiz:before {
+  content: "";
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  background: url("img/nav/car-quiz-icon.png") center / contain no-repeat;
+  vertical-align: -0.15em; }
+
+@media only screen and (max-width: 991px) {
+  .header-area .oneMusic-main-menu .login-register-cart-button {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px 16px;
+    margin-left: 0;
+    margin-top: 12px;
+    padding-bottom: 8px;
+    width: 100%;
+    max-width: 100%; }
+  .header-area .oneMusic-main-menu .login-register-cart-button .login-register-btn {
+    margin-right: 0 !important;
+    flex: 0 0 auto; }
+  .header-area .oneMusic-main-menu .login-register-cart-button .login-register-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 4px; } }
 
 /* ====== The End ====== */
 
