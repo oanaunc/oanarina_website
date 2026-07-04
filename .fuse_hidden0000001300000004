@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>The Great Book Of Algorithms</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb16.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+ 
+
+					</pre>
+                         <h2>The Great Book Of Algorithms</h2>
+                        <h2>Code Samples</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+	
+	
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+					
+					<!-- Book java Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://www.amazon.com/great-book-algorithms-Dynamic-Programming/dp/B0BHTN37SJ/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1669107366&sr=1-1"
+                            target="nonstgeomvol2"><img src="img/bg-img/blog3.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://www.amazon.com/great-book-algorithms-Dynamic-Programming/dp/B0BHTN37SJ/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1669107366&sr=1-1"
+                            target="nonstgeomvol2" class="post-title">The great book of algorithms: Dynamic Programming</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Paperback: 51 pages</p>
+                                <p class="tags">Publisher: Independently published</p>
+                                <p class="tags">Language: English</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">The great book of algorithms is a great book for programmers to get familiar with the world of algorithms. The book discusses 35 programming algorithms, with solutions written in the JAVA programming language. The algorithms are solved using dynamic programming.</p>
+                        </div>
+                    </div>
+	    		 <!-- Book java End -->
+                
+                  <!-- Book c++  Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://www.amazon.com/Great-Book-Algorithms-Oana-Unciuleanu/dp/B08CWJ7LLV/ref=sr_1_1?dchild=1&qid=1619097541&refinements=p_27%3Adr.+Oana+Unciuleanu&s=books&sr=1-1&text=dr.+Oana+Unciuleanu"
+                            target="nonstgeom"><img src="img/bg-img/blog2.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://www.amazon.com/Great-Book-Algorithms-Oana-Unciuleanu/dp/B08CWJ7LLV/ref=sr_1_1?dchild=1&qid=1619097541&refinements=p_27%3Adr.+Oana+Unciuleanu&s=books&sr=1-1&text=dr.+Oana+Unciuleanu"
+                            target="nonstgeom" class="post-title">The Great Book of Algorithms</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Paperback: 135 pages</p>
+                                <p class="tags">Publisher: Independently published</p>
+                                <p class="tags">Language: English</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">This is a great book on learning everything you need to know about programming algorithms. This volume focuses on the most used and known algorithms. It contains searching algorithms, sorting algorithms, encryption algorithms, Greedy algorithms and dynamic programming. Every algorithm has a comprehensive description, an accurate visual representation that explains the complete process of thought, and a simple C++ program that integrates the algorithm. You can try out every algorithm in C++ and see in debugger how it works.</p>
+                        </div>
+                    </div>
+	    		 <!-- Book c++ End -->
+
+                    <!-- Art of Coding Blog Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://artofcoding.blog/" target="_blank"><img src="img/bg-img/breadcumb16.jpg" alt="Art of Coding blog"></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://artofcoding.blog/" target="_blank" class="post-title">Art of Coding</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Author: Oana Rinaldi</p>
+                                <p class="tags">Topics: Algorithms, Python, JavaScript, Java, SQL</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify"><a href="https://artofcoding.blog/" target="_blank">Art of Coding</a> is my programming blog, where I share practical tutorials and deep dives into software development. You will find articles on algorithms and data structures, sorting and search techniques, dynamic programming, API integration, databases, shell scripting, and web development — with working code samples in Python, Java, JavaScript, C++, SQL, and more. Many of the algorithm walkthroughs from my books are expanded here with step-by-step explanations and real-world examples. Visit the blog to explore the latest posts and follow along as new tutorials are published.</p>
+                        </div>
+                    </div>
+	    		 <!-- Art of Coding Blog End -->
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+	
+	
+	<!-- ##### Meniu de selectie Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Paintings Projects menu -->
+                    <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
+                              
+                    	<a href="#" data-filter=".z" style="color:#000000">All algorithms</a>
+                        <a href="#" data-filter=".a" style="color:#000000">Search</a>
+                        <a href="#" data-filter=".b" style="color:#000000">Sort</a>
+						<a href="#" data-filter=".c" style="color:#000000">Encryption</a>
+						<a href="#" data-filter=".d" style="color:#000000">Greedy</a>
+						<a href="#" data-filter=".e" style="color:#000000">Dynamic Programming</a>
+                      
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+    
+    <!-- ##### Area End ##### -->
+
+
+    <!-- ##### Elements Area Start ##### -->
+    <section class="elements-area mt-30">
+        <div class="container">
+            <div class="row">
+
+
+                <!-- ========== Icon Boxes ========== -->
+               
+                <div class="col-12">
+                    <div class="row mb-70 oneMusic-albums">
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/weighted-job-scheduling-in-java" target="dyna35">Weighted Job Scheduling</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/total-number-of-non-decreasing-numbers-with-n-digits-in-java" target="dyna34">Total number of non-decreasing numbers with n digits</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/tiling-problem-in-java" target="dyna33">Tiling Problem</a>
+                            </div>
+                        </div>
+						
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/subset-sum-problem-in-java" target="dyna32">Subset Sum Problem</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/shortest-common-supersequence-in-java" target="dyna31">Shortest Common Supersequence</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/palindrome-partitioning-in-java" target="dyna30">Palindrome Partitioning</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/mobile-numeric-keypad-problem-in-java" target="dyna29">Mobile Numeric Keypad Problem</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/minimum-number-of-squares-whose-sum-equals-to-a-given-number-in-java" target="dyna28">Minimum number of squares whose sum equals to a given number</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/minimum-number-of-jumps-to-reach-the-end-in-java" target="dyna27">Minimum number of jumps to reach the end</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/minimum-initial-points-to-reach-destination-in-java" target="dyna26">Minimum Initial Points to Reach Destination</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/minimum-cost-polygon-triangulation-in-java" target="dyna25">Minimum Cost Polygon Triangulation</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/maximum-sum-rectangle-in-a-2d-matrix-in-java" target="dyna24">Maximum sum rectangle in a 2D matrix</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/maximum-sum-increasing-subsequence-in-java" target="dyna23">Maximum Sum Increasing Subsequence</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/maximum-profit-by-buying-and-selling-a-share-at-most-twice-in-java" target="dyna22">Maximum profit by buying and selling a share at most twice</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/maximum-length-chain-of-pairs-in-java" target="dyna21">Maximum Length Chain of Pairs</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-palindromic-substring-in-java" target="dyna20">Longest Palindromic Substring</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-palindromic-subsequence-in-java" target="dyna19">Longest Palindromic Subsequence</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-even-length-substring-such-that-the-sum-of-the-first-and-second-halves-is-the-same-in-java" target="dyna18">Longest Even Length Substring such that the Sum of the First and Second Halves is the same</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-bitonic-subsequence-in-java" target="dyna17">Longest Bitonic Subsequence</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/largest-sum-contiguous-subarray-kadane-s-algorithm-in-java" target="dyna16">Largest Sum Contiguous Subarray (Kadane's Algorithm)</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/knapsack-problem-in-java" target="dyna15">Knapsack Problem</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/how-to-print-maximum-number-of-a-s-using-given-four-keys-in-java" target="dyna14">How to print maximum number of A’s using given four keys</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/find-the-minimum-cost-to-reach-the-destination-using-a-train-in-java" target="dyna13">Find the minimum cost to reach the destination using a train</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/find-the-minimum-number-of-coins-that-make-a-given-value-in-java" target="dyna12">Find the minimum number of coins that make a given value</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/find-the-length-of-the-longest-consecutive-path-from-a-given-starting-character-in-java" target="dyna11">Find the length of the longest consecutive path from a given starting character</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/count-the-ways-to-reach-the-n-th-stair-in-java" target="dyna10">Count the ways to reach the n’th stair</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/count-the-possible-ways-to-construct-buildings-in-java" target="dyna9">Count the possible ways to construct buildings</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-a-given-sum-in-java" target="dyna8">Count of n digit numbers whose sum of digits equals to a given sum</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/count-the-number-of-ways-to-reach-a-given-score-in-a-game-in-java" target="dyna7">Count the number of ways to reach a given score in a game</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/count-the-number-of-binary-strings-without-consecutive-1-s" target="dyna6">Count the number of binary strings without consecutive 1’s</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/compute-the-sum-of-digits-in-all-numbers-from-1-to-n-in-java" target="dyna5">Compute the sum of digits in all numbers from 1 to n</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/collect-maximum-points-in-a-grid-using-two-traversals-in-java" target="dyna4">Collect maximum points in a grid using two traversals</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/coin-change-in-java" target="dyna3">Coin Change</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/boolean-parenthesization-problem-in-java" target="dyna2">Boolean Parenthesization</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/binomial-coefficient-in-java" target="dyna1">Binomial Coefficient</a>
+                            </div>
+                        </div>
+						
+							<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/maximum-length-chain-of-pairs-in-c" target="maxlengchainpainr">Maximum Length Chain of Pairs</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-increasing-sub-sequence-in-c" target="longestincreasingsubs">Longest Increasing Subsequence</a>
+                            </div>
+                        </div>	
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/longest-common-subsequence-algorithm-in-c" target="longestcommonsubs">Longest Common Subsequence</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/floyd-warshall-algorithm-in-c" target="floydwarshall">Floyd Warshall Algorithm</a>
+                            </div>
+                        </div>	
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/collect-maximum-points-in-a-grid-using-two-traversals-in-c" target="collectmaxtrav">Maximum points in a grid</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/fibonacci-series-in-c" target="fibona">Fibonacci Series</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/box-stacking-problem-dynamic-programming-in-c" target="boxstack">Box stacking problem</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z d">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/kruskal-s-minimum-spanning-tree-algorithm-in-c" target="krumskal">Kruskal’s Minimum Spanning Tree</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z d">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/prim-s-minimum-spanning-tree-algorithm-in-c" target="primst">Prim’s Minimum Spanning Tree</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z d">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/the-minimum-number-of-coins-algorithm-in-c" target="minimumnrcoins">Minimum number of Coins</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z e">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/bellman-ford-s-shortest-paths-algorithm-in-c" target="bellmanford">Bellman-Ford Shortest Paths</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z d c">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/huffman-coding-and-decoding-algorithm-in-c" target="huffmancodeco">Huffman Coding and Decoding</a>
+                            </div>
+                        </div>	
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z d">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/dijkstra-s-shortest-path-algorithm-in-c" target="dijkstrasort">Dijkstra Shortest Path</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/shell-sort-algorithm-in-c" target="shellsort">Shell Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/quick-sort-algorithm-in-c" target="quicksort">Quick Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/pigeonhole-sort-algorithm-in-c" target="pigeonholesort">Pigeonhole Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/merge-sort-algorithm-in-c" target="mergesort">Merge Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/insertion-sort-algorithm-in-c" target="insertionsort">Insertion Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/heap-sort-algorithm-in-c" target="heapsort">Heap Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/cycle-sort-in-c" target="cyclesort">Cycle Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z c">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/caesar-cipher-cryptography-algorithm-in-c" target="caesarcipher">Caesar Cipher</a>
+                            </div>
+                        </div>
+						
+                        <!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/comb-sort-algorithm-in-c" target="combsort">Comb Sort</a>
+                            </div>
+                        </div>
+						                
+                        <!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/counting-sort-algorithm-in-c" target="countingsort">Counting Sort</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/bucket-sort-in-c" target="bucketsort">Bucket Sort</a>
+                            </div>
+                        </div>
+						
+												<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z b">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/bubble-sort-algorithm-in-c" target="bucketsort">Bubble Sort</a>
+                            </div>
+                        </div>
+                        
+                         <!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/ternary-search-in-c" target="ternarysearch">Ternary Search</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/linear-search-in-c" target="linearsearch">Linear Search</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/jump-search-in-c" target="jumpsearch">Jump Search</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/interpolation-search-in-c" target="interpolationsearch">Interpolation Search</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/exponential-search-in-c" target="exponentialsearch">Exponential Search</a>
+                            </div>
+                        </div>
+						
+						<!-- Single Web Icon -->
+                        <div class="single-album-item col-12 col-sm-6 col-md-3 col-lg-2 z a">
+                            <div class="single-web-icon mb-30">
+                                <a href="https://oanaunciuleanu.wixsite.com/artofcoding/post/binary-search-in-c" target="exponentialsearch">Binary Search</a>
+                            </div>
+                        </div>
+
+						
+                       </div>
+                    </div>
+                </div>
+            
+            </div>
+    </section>
+    <!-- ***** Elements Area End ***** -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

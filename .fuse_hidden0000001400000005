@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Apps by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb10.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+ 
+
+					</pre>
+                         <h2>Online</h2>
+                        <h2>Apps</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+    
+
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://oanarinaldi.com/rubik_4D/"
+                            target="_blank"><img src="images/apps/app8.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://oanarinaldi.com/rubik_4D/"
+                            target="_blank" class="post-title">4D Rubik's Cube Explorer</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Games</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">Web App</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">4D Rubik's Cube Explorer is an interactive application that brings the classic Rubik's Cube into the fourth dimension. Instead of solving a standard 3×3×3 cube, users can explore and manipulate a 3×3×3×3 hypercube puzzle, where each visible structure represents a projection of a higher-dimensional object. The app is designed to make 4D geometry more intuitive through play. Users can rotate, inspect, and interact with the puzzle while learning how pieces, stickers, cells, and moves behave in a four-dimensional space. By translating abstract mathematical concepts into a hands-on visual experience, the application helps users understand spatial relationships that are normally difficult to imagine. Beyond being a puzzle, the app functions as an educational tool for exploring higher-dimensional thinking, computational geometry, and game-based learning. It invites players, students, researchers, and puzzle enthusiasts to ask a simple but fascinating question: what would a Rubik's Cube look like in the fourth dimension?</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                 
+                 
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/fun-flags/id6775217449"
+                            target="_blank"><img src="images/apps/app7.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/fun-flags/id6775217449"
+                            target="_blank" class="post-title">Fun Flags</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Education</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Take off and paint your way around the globe! Fun Flags turns world geography into a relaxing, hands-on adventure. Hop in your plane, fly across a beautiful world map, and land in a new country. Learn its capital and official language — then bring its flag to life by coloring each part with the right colors. Get it right to earn points, build streaks, and add the flag to your collection. It's a calm, satisfying way to discover all 195 countries, one flag at a time. Fly to a country, see its name, capital, and language, tap each zone of the flag and fill it with the correct color, then score points and keep your streak alive. Features hand-painted flag coloring with gentle hints, a living world map, your personal collection with search and filter by continent, plus guess-the-capital and guess-the-country game modes. Great for curious kids and grown-ups, geography fans, classrooms, and family game time. No pressure, no timers — just you, the world, and a box of colors. How many flags can you collect?</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                 
+                 
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://oanarinaldi.com/4d_chess/"
+                            target="_blank"><img src="images/apps/app4.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://oanarinaldi.com/4d_chess/"
+                            target="_blank" class="post-title">4D Chess</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Games</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">Web App</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Experience chess in a whole new dimension! Play 4D Chess, an innovative game that extends traditional chess into four dimensions. Challenge yourself with strategic gameplay across X, Y, Z, and W dimensions. Play against a bot, watch bots battle, or compete with a friend in this mind-bending take on the classic game.</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                 
+                 
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-car-recognition/id6670488430"
+                            target="_blank"><img src="images/apps/app5.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-car-recognition/id6670488430"
+                            target="_blank" class="post-title">AI Car Recognition</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Education</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Turn your smartphone into a powerful car expert with our Car Recognition app! Leveraging advanced AI technology, our app allows you to identify the make, model, and year of any car simply by taking a photo. Whether you're a car enthusiast, buyer, or just curious about the vehicles you see on the road, our app delivers fast and accurate results with a sleek, user-friendly interface. Say goodbye to guessing games—discover the details of any car in seconds and elevate your automotive knowledge with the tap of a button!</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                 
+                 
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/gigglebox-jokes/id6670761862?platform=iphone"
+                            target="_blank"><img src="images/apps/app6.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/gigglebox-jokes/id6670761862?platform=iphone"
+                            target="_blank" class="post-title">GiggleBox Jokes</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Entertainment</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">GiggleBox - Your Daily Dose of Laughter! Need a break? GiggleBox delivers a fresh joke every 30 minutes, or whenever you hit the next joke button! From puns and one-liners to clever quips, there's always something to make you smile. Perfect for quick laughs on the go, at work, or anytime you need a chuckle. Download GiggleBox and keep the giggles coming all day long!</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                 
+                 
+                 <!-- Single Post Start -->
+                   <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                       		 <a href="https://apps.apple.com/us/app/goldbergs-conjecture/id6753913944"
+                            target="_blank"><img src="images/apps/app3.jpg" alt=""></a>
+								
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/goldbergs-conjecture/id6753913944"
+                            target="_blank" class="post-title">Goldbach's Conjecture</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Education</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Discover one of the greatest unsolved problems in mathematics — the Goldbach Conjecture — in an interactive way! This app allows you to explore the conjecture that every even integer greater than 2 can be written as the sum of two prime numbers. Simply enter an even number of your choice, and the app will instantly calculate and display a pair of prime numbers whose sum equals your input. Whether you're a math enthusiast, a student, or just curious about prime numbers, this app makes it easy to experiment with numbers of any size — from small values to extremely large integers. Fast calculation of prime pairs, even for very large numbers. Elegant, easy-to-use interface designed for quick exploration. Educational and fun — great for students, researchers, and anyone curious about number theory!</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                     
+                 
+                 <!-- Single Post Start -->
+                   <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                       		 <a href="https://apps.apple.com/ro/app/sudoku-hero/id6756328392?l=ro"
+                            target="_blank"><img src="images/apps/app.jpg" alt=""></a>
+								
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/ro/app/sudoku-hero/id6756328392?l=ro"
+                            target="_blank" class="post-title">Sudoku Hero</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Puzzle</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Enter Sudoku Hero, the vibrant and modern Sudoku experience built for players of all skill levels. Every puzzle is handcrafted for fair, logical solving, while the sleek interface keeps you focused and immersed. Start on Easy or take on the ultimate challenge in Master mode. Use hints that explain techniques, not just give answers, and track your improvement as you learn Naked Singles, Hidden Singles, and more. Perfect for quick sessions, deep focus, or daily brain training. Why players love it: A fresh neon-minimal aesthetic, five balanced difficulty levels, smart educational hint system, instant input with helper digits, undo, pause, mistake tracking, and smooth animations with a calming flow. Boost your logic. Level up your skills. Master the grid.</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+                     
+                    
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
