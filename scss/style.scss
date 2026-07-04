@@ -2025,12 +2025,9 @@ img {
 
 /* ====== The End ====== */
 /* ====== Mobile breadcrumb background fix ====== */
-/* On phones the header is narrow but tall, so background-size:cover scales the
-   wide 1920x1280 image up until it fills the height, cropping everything except
-   a tiny centre slice (the "zoomed in" look). Instead, scale the image to the
-   header's full WIDTH so the whole horizontal scene shows just like on desktop,
-   and let it tile down to fill any leftover height. Also drop the fixed
-   attachment, which iOS mis-sizes. */
+/* On phones, scale the image to the header's full HEIGHT and let the width
+   overflow (cropped, centred). This fills the header edge to edge with no
+   tiling seam. Also drop the fixed attachment, which iOS mis-sizes. */
 @media only screen and (max-width: 767px) {
   .bg-fixed {
     background-attachment: scroll !important;
@@ -2038,9 +2035,9 @@ img {
   .contact-area.bg-img,
   .breadcumb-area.bg-img {
     background-attachment: scroll !important;
-    background-size: 100% auto !important;
-    background-position: center top !important;
-    background-repeat: repeat-y !important;
+    background-size: auto 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
   }
   .contact-area.section-padding-100 {
     padding-top: 60px !important;
