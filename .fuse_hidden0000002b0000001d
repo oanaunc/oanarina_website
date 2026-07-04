@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Custom Shoes by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+    <link rel="stylesheet" href="css/lightgallery.min.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">  
+    <link rel="stylesheet" href="css/swiper.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Custom styles for shoe collections */
+        .shoe-collection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .shoe-collection-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        /* Make lightbox description text white */
+        .lg-sub-html {
+            color: #FFF !important;
+        }
+        
+        .lg-sub-html h4,
+        .lg-sub-html h6,
+        .lg-sub-html p {
+            color: #FFF !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                            <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+                            </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+	
+    
+    <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb18.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+
+					</pre>
+                         <h2>Custom Shoes</h2>
+                       
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="album-catagory">
+        <div class="site-section" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center" style="margin-top: 60px; margin-bottom: 80px;">
+                            <h3 style="font-size: 2rem; font-weight: 400; color: #333; line-height: 1.6; font-style: italic; padding: 0 20px;">Each pair of shoes is a unique canvas, transformed into wearable art. Explore my custom shoe creations, where fashion meets artistic expression.</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 24: Violet Dream Anime Couture Sneakers -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Violet Dream Anime Couture Sneakers</h3>
+                        <p class="shoe-collection-description">Violet Dream Anime Kicks — hand-painted power, love & mystery in every step. Bold, dreamy, and very artistic: the violet/pink anime-inspired portraits, the painted eyes, the love/power symbols, and the iridescent butterfly laces make them look like wearable pop-art couture. Step into a world of color, emotion, and fantasy with the Violet Dream Anime Couture Sneakers — a one-of-a-kind pair of hand-painted custom shoes created for those who see fashion as art. Built on a sleek black sneaker base, this design transforms the classic low-top silhouette into a vivid visual story, blending anime-inspired portraiture with bold graphic patterns, romantic symbolism, and a striking violet-pink color palette. Each side of the shoes features expressive hand-painted faces, intense illustrated eyes, and dynamic comic-style details that give the pair a powerful, cinematic presence. Shades of deep purple, lavender, magenta, black, and soft pink flow across the surface, creating depth and movement from every angle. The painted eye motifs on the heels add a mysterious, protective feel, while the small heart accents bring a delicate touch of sweetness and emotion. The toe boxes are decorated with layered scale-like patterns and sharp graphic strokes, giving the sneakers a dramatic, almost armor-like energy. On the sides, Japanese-inspired characters add an extra sense of meaning and visual impact, enhancing the shoes' contemporary streetwear identity. Every brushstroke is carefully placed to make the design feel alive, expressive, and completely unique. The look is completed with luminous iridescent lavender organza laces that shimmer between purple, blue, and green depending on the light. These oversized bow-style laces add a soft, ethereal contrast to the bold hand-painted artwork, turning the sneakers into a true statement piece. Perfect for collectors, anime lovers, streetwear enthusiasts, and anyone who wants to wear something unforgettable, the Violet Dream Anime Couture Sneakers are more than custom shoes — they are wearable art designed to stand out, tell a story, and turn every step into a moment. #CustomShoes #HandPaintedShoes #AnimeStyle #WearableArt #StatementSneakers</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes24">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes1.jpg"
+                         data-id="violet-dream-anime-couture-1"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Sleek black low-top base transformed into vivid anime-inspired pop-art couture—bold, dreamy, and unmistakably artistic.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes1.jpg" alt="Violet Dream Anime Couture Sneakers - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes2.jpg"
+                         data-id="violet-dream-anime-couture-2"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Expressive hand-painted anime portraits on each side—intense illustrated eyes and dynamic comic-style details with cinematic presence.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes2.jpg" alt="Violet Dream Anime Couture Sneakers - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes3.jpg"
+                         data-id="violet-dream-anime-couture-3"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Deep purple, lavender, magenta, black, and soft pink flow across the surface—depth and movement from every angle.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes3.jpg" alt="Violet Dream Anime Couture Sneakers - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes4.jpg"
+                         data-id="violet-dream-anime-couture-4"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Painted eye motifs on the heels add a mysterious, protective feel—love and power symbols woven into wearable art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes4.jpg" alt="Violet Dream Anime Couture Sneakers - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes5.jpg"
+                         data-id="violet-dream-anime-couture-5"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Small heart accents bring a delicate touch of sweetness and emotion to the bold violet-pink palette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes5.jpg" alt="Violet Dream Anime Couture Sneakers - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes6.jpg"
+                         data-id="violet-dream-anime-couture-6"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Layered scale-like patterns and sharp graphic strokes on the toe boxes—dramatic, almost armor-like energy.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes6.jpg" alt="Violet Dream Anime Couture Sneakers - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes7.jpg"
+                         data-id="violet-dream-anime-couture-7"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Japanese-inspired characters on the sides add meaning and visual impact—contemporary streetwear meets hand-painted couture.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes7.jpg" alt="Violet Dream Anime Couture Sneakers - View 7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes8.jpg"
+                         data-id="violet-dream-anime-couture-8"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Every brushstroke placed to feel alive and expressive—a one-of-a-kind visual story on a classic sneaker silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="800ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes8.jpg" alt="Violet Dream Anime Couture Sneakers - View 8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes24/shoes9.jpg"
+                         data-id="violet-dream-anime-couture-9"
+                         data-sub-html="<h6>Statement Sneakers</h6><br><h4>Violet Dream Anime Couture Sneakers</h4><p>Luminous iridescent lavender organza bow laces shimmer between purple, blue, and green—ethereal contrast to the bold artwork.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="900ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes24/mici/shoes9.jpg" alt="Violet Dream Anime Couture Sneakers - View 9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 23: Scarlet Bloom Couture Stiletto Sandals -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Scarlet Bloom Couture Stiletto Sandals</h3>
+                        <p class="shoe-collection-description">Scarlet Bloom Couture Stiletto Sandals — A Love Letter in Red. Dramatic, romantic, and very couture—the vivid red, sheer organza flowers, delicate gold details, and reflective styling make them feel like a luxury statement piece made for a special evening. The Scarlet Bloom Couture Stiletto Sandals are a passionate celebration of femininity, elegance, and artistic craftsmanship. Designed in a bold, radiant red, these custom heels command attention with every detail — from the sleek stiletto silhouette to the soft sculptural floral accents that bloom gracefully around the ankle and heel. Sheer organza petals create a sense of movement and romance, giving the shoes an airy, almost theatrical presence. Across the front straps, delicate golden vine embellishments and deep red floral accents add a refined jewelry-like finish, while dangling charms bring subtle sparkle and movement with each step. The high heel and open sandal shape create a graceful, elongated silhouette, balanced by soft textures and couture-inspired decoration. Perfect for special occasions, romantic evenings, fashion editorials, bridal looks, performances, or statement luxury styling, these heels are made for someone who wants to be unforgettable. Every element feels expressive and intentional — bold red passion, golden elegance, floral softness, and handcrafted drama combined into one unique wearable artwork. The Scarlet Bloom Couture Stiletto Sandals are not simply shoes; they are a statement of confidence, romance, and high-fashion individuality. #customheels #redheels #luxuryshoes #couturefashion #handmadeheels</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes23">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes1.jpg"
+                         data-id="scarlet-bloom-couture-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Bold radiant red with a sleek stiletto silhouette—couture drama from the first glance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes1.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes2.jpg"
+                         data-id="scarlet-bloom-couture-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Sheer organza petals bloom gracefully around the ankle and heel with airy, theatrical romance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes2.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes3.jpg"
+                         data-id="scarlet-bloom-couture-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Delicate golden vine embellishments on the front straps add a refined jewelry-like finish.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes3.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes4.jpg"
+                         data-id="scarlet-bloom-couture-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Deep red floral accents and dangling charms bring subtle sparkle and movement with each step.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes4.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes5.jpg"
+                         data-id="scarlet-bloom-couture-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>High heel and open sandal shape create a graceful, elongated silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes5.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes6.jpg"
+                         data-id="scarlet-bloom-couture-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Soft sculptural floral accents balanced by couture-inspired decoration—passionate and elegant.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes6.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes23/shoes7.jpg"
+                         data-id="scarlet-bloom-couture-7"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Scarlet Bloom Couture Stiletto Sandals</h4><p>Wearable artwork made for special evenings—a statement of confidence, romance, and high-fashion individuality.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes23/mici/shoes7.jpg" alt="Scarlet Bloom Couture Stiletto Sandals - View 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 22: Silver Butterfly Dreams Couture Heels -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Silver Butterfly Dreams Couture Heels</h3>
+                        <p class="shoe-collection-description">Silver Butterfly Dreams Couture Heels — Couture Heels Made to Sparkle. Icy, ethereal, bridal, and couture, with a beautiful mix of crystal sparkle, silver satin, delicate ribbons, and butterfly wings—they look like luxury fantasy heels made for a bride, a gala, or a magical editorial photoshoot. These exquisite silver heels feature a luminous satin-like finish, delicate ankle ribbons, and a dazzling crystal-embellished front strap that catches the light from every angle. The highlight of the design is the ethereal butterfly decoration at the back of each heel, crafted with soft feather-like textures, shimmering sequins, and delicate wing details that create a dreamy, fairytale-inspired silhouette. The slim silver stiletto enhances the feminine shape while flowing satin ribbons wrap gracefully around the ankle for a refined finish. Perfect for weddings, luxury events, evening occasions, photoshoots, and any moment where you want to feel truly extraordinary. #CustomHeels #ButterflyShoes #LuxuryFootwear #BridalHeels #HandmadeCouture</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes22">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes1.jpg"
+                         data-id="silver-butterfly-dreams-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Luminous satin-like silver finish with a dazzling crystal-embellished front strap—couture sparkle from the first glance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes1.jpg" alt="Silver Butterfly Dreams Couture Heels - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes2.jpg"
+                         data-id="silver-butterfly-dreams-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Delicate satin ribbons wrap gracefully around the ankle for a refined, bridal couture finish.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes2.jpg" alt="Silver Butterfly Dreams Couture Heels - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes3.jpg"
+                         data-id="silver-butterfly-dreams-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Ethereal butterfly decorations at the back—feather-like textures and shimmering sequins in a fairytale silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes3.jpg" alt="Silver Butterfly Dreams Couture Heels - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes4.jpg"
+                         data-id="silver-butterfly-dreams-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Delicate wing details appear almost weightless, adding movement, romance, and a couture artistic statement.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes4.jpg" alt="Silver Butterfly Dreams Couture Heels - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes5.jpg"
+                         data-id="silver-butterfly-dreams-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Slim silver stiletto heel enhances the feminine shape with icy, ethereal bridal elegance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes5.jpg" alt="Silver Butterfly Dreams Couture Heels - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes6.jpg"
+                         data-id="silver-butterfly-dreams-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>From sparkling crystal strap to sculptural butterfly accents—luxurious, delicate, and unforgettable.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes6.jpg" alt="Silver Butterfly Dreams Couture Heels - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes22/shoes7.jpg"
+                         data-id="silver-butterfly-dreams-7"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Silver Butterfly Dreams Couture Heels</h4><p>Wearable art made for weddings, galas, and magical editorial moments—every step feels extraordinary.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes22/mici/shoes7.jpg" alt="Silver Butterfly Dreams Couture Heels - View 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 21: Golden Bloom Couture Sandals -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Golden Bloom Couture Sandals</h3>
+                        <p class="shoe-collection-description">Golden Bloom Couture Heels — Where Romance Meets Royal Luxury. They look extremely luxurious and romantic, with that gold sculpted texture, delicate metallic floral details, and the soft champagne bows at the back. They feel like couture evening sandals made for a bride, a gala, or a dramatic editorial look. Designed in a radiant metallic gold finish, these custom high-heel sandals feature a refined ankle-strap silhouette, a delicate open-toe shape, and a shimmering textured surface that catches the light with every step. Sculptural floral embellishments bring a jewelry-like quality to the front strap, while warm rose-gold heart accents and oversized champagne organza bows at the back create an ethereal contrast against the polished gold structure. Perfect for bridal celebrations, luxury parties, evening events, photoshoots, and red-carpet-inspired moments. #GoldenHeels #LuxuryShoes #CustomHeels #CoutureFashion #StatementShoes</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes21">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes1.jpg"
+                         data-id="golden-bloom-couture-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Radiant metallic gold finish with ankle-strap silhouette—royal luxury from the first glance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/1.jpg" alt="Golden Bloom Couture Sandals - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes2.jpg"
+                         data-id="golden-bloom-couture-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Delicate open-toe shape and shimmering textured surface catch the light with every step.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/2.jpg" alt="Golden Bloom Couture Sandals - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes3.jpg"
+                         data-id="golden-bloom-couture-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Sculptural floral embellishments across the front strap bring a jewelry-like couture quality.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/3.jpg" alt="Golden Bloom Couture Sandals - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes4.jpg"
+                         data-id="golden-bloom-couture-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Warm rose-gold heart accents add a romantic and personal touch to the metallic florals.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/4.jpg" alt="Golden Bloom Couture Sandals - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes5.jpg"
+                         data-id="golden-bloom-couture-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Oversized champagne organza bows at the back soften the polished gold structure.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/5.jpg" alt="Golden Bloom Couture Sandals - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes6.jpg"
+                         data-id="golden-bloom-couture-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Shine, texture, and delicate movement—couture presence balanced between bold and ethereal.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/6.jpg" alt="Golden Bloom Couture Sandals - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes7.jpg"
+                         data-id="golden-bloom-couture-7"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Made for bridal celebrations, galas, evening events, and dramatic editorial styling.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/7.jpg" alt="Golden Bloom Couture Sandals - View 7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes21/shoes8.jpg"
+                         data-id="golden-bloom-couture-8"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Golden Bloom Couture Sandals</h4><p>Wearable art—regal, poetic, and handcrafted for beauty, confidence, and romance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="800ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes21/mici/8.jpg" alt="Golden Bloom Couture Sandals - View 8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 20: Celestia Blue Butterfly Heels -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Celestia Blue Butterfly Heels</h3>
+                        <p class="shoe-collection-description">Celestia Blue Butterfly Heels — step into a dream with these custom high heels crafted in a luminous ice-blue glossy finish. Ethereal blue butterflies, shimmering silver chains, crystal-like accents, and ornate jewel embellishments cascade across the pointed toe and side silhouette; a regal vintage-inspired centerpiece and translucent butterfly charms add movement and sparkle with every step. Soft satin bows at the back balance the dramatic stiletto with delicate couture charm, while the ankle strap refines the silhouette. Perfect for bridal moments, luxury photoshoots, fantasy fashion styling, special events, or collectors of wearable art. #CelestiaBlueButterflyHeels #CustomHeels #BridalHeels #FantasyFashion #LuxuryFootwear</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes20">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes1.jpg"
+                         data-id="celestia-blue-butterfly-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Luminous ice-blue glossy finish with ethereal butterflies—fantasy elegance from the first glance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/1.jpg" alt="Celestia Blue Butterfly Heels - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes2.jpg"
+                         data-id="celestia-blue-butterfly-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Shimmering silver chains and crystal accents catch frozen light across the vamp.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/2.jpg" alt="Celestia Blue Butterfly Heels - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes3.jpg"
+                         data-id="celestia-blue-butterfly-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Ornate jewel embellishments cascade along the pointed toe and side silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/3.jpg" alt="Celestia Blue Butterfly Heels - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes4.jpg"
+                         data-id="celestia-blue-butterfly-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Regal vintage-inspired centerpiece with translucent butterfly charms that sparkle in motion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/4.jpg" alt="Celestia Blue Butterfly Heels - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes5.jpg"
+                         data-id="celestia-blue-butterfly-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Dramatic stiletto silhouette refined by an elegant ankle strap—graceful and statement-making.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/5.jpg" alt="Celestia Blue Butterfly Heels - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes20/shoes6.jpg"
+                         data-id="celestia-blue-butterfly-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Celestia Blue Butterfly Heels</h4><p>Soft satin bows at the back—romantic couture charm balancing icy-blue enchantment.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes20/mici/6.jpg" alt="Celestia Blue Butterfly Heels - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 19: Pearl Champagne Butterfly Veil Heels -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Pearl Champagne Butterfly Veil Heels</h3>
+                        <p class="shoe-collection-description">Pearl Champagne Butterfly Veil Heels — an ornate statement pair for bridal moments, luxury evening wear, and fairycore styling. These elegant pearl-champagne pointed-toe high heels combine rhinestone ankle and cross straps with translucent shell- and petal-like ornaments across the vamp, small blue crystal heart charms, and butterfly-chain details at the back. Every element reads as couture craft: romantic, luminous, and impossible to miss. Ideal for weddings, galas, editorial shoots, and anyone who wants footwear that feels like wearable sculpture. #CustomHeels #BridalHeels #StatementHeels #Fairycore #LuxuryFootwear</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes19">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes1.jpg"
+                         data-id="pearl-champagne-butterfly-veil-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Pearl-champagne pointed toe with rhinestone ankle and cross straps—bridal luxury and fairycore in one silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/1.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes2.jpg"
+                         data-id="pearl-champagne-butterfly-veil-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Translucent shell and petal ornaments across the vamp catch the light like sea glass and silk petals.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/2.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes3.jpg"
+                         data-id="pearl-champagne-butterfly-veil-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Small blue crystal heart charms add a delicate pop of color against the champagne palette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/3.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes4.jpg"
+                         data-id="pearl-champagne-butterfly-veil-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Rhinestone straps frame the foot—sparkle and structure for luxury evening and statement styling.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/4.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes5.jpg"
+                         data-id="pearl-champagne-butterfly-veil-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Pointed toe and high heel line elongate the leg—ornate, refined, and editorial-ready.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/5.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes6.jpg"
+                         data-id="pearl-champagne-butterfly-veil-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Butterfly-chain details at the back add movement and fantasy—signature fairycore finishing.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/6.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes19/shoes7.jpg"
+                         data-id="pearl-champagne-butterfly-veil-7"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Pearl Champagne Butterfly Veil Heels</h4><p>Full ornate story: champagne base, crystals, translucent petals, hearts, and butterfly chains from another angle.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes19/mici/7.jpg" alt="Pearl Champagne Butterfly Veil Heels - View 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 18: Crimson Bloom Heels -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Crimson Bloom Heels</h3>
+                        <p class="shoe-collection-description">Introducing Crimson Bloom Heels, a handcrafted statement pair designed for elegance, confidence, and unforgettable entrances. These vivid red heels combine soft, luxurious textures with delicate pearl strands, floral embellishments, satin bows, and subtle gold accents for a romantic yet dramatic finish. The layered straps frame the foot beautifully, while the bold heel silhouette adds height, poise, and sophistication. Perfect for special occasions, fashion editorials, artistic styling, or anyone who wants their shoes to feel like wearable art. #CrimsonBloomHeels #CustomShoes #StatementHeels #PearlDetails #RomanticFashion</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes18">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes1.png"
+                         data-id="crimson-bloom-heels-1"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Romantic, bold, and very elegant—vivid red textures with pearl detailing for a fairytale evening feel.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/1.jpg" alt="Crimson Bloom Heels - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes2.png"
+                         data-id="crimson-bloom-heels-2"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Delicate pearl strands and floral accents add softness and couture sparkle against the rich red base.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/2.jpg" alt="Crimson Bloom Heels - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes3.png"
+                         data-id="crimson-bloom-heels-3"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Satin bows and subtle gold accents bring a romantic finish—luxury editorial styling in every detail.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/3.jpg" alt="Crimson Bloom Heels - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes4.png"
+                         data-id="crimson-bloom-heels-4"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Layered straps frame the foot beautifully—sculptural, feminine, and designed for unforgettable entrances.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/4.jpg" alt="Crimson Bloom Heels - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes5.png"
+                         data-id="crimson-bloom-heels-5"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Bold heel silhouette adds height, poise, and sophistication—statement footwear that feels like wearable art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/5.jpg" alt="Crimson Bloom Heels - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes18/shoes6.png"
+                         data-id="crimson-bloom-heels-6"
+                         data-sub-html="<h6>Statement Heels</h6><br><h4>Crimson Bloom Heels</h4><p>Perfect for special occasions, fashion editorials, and artistic styling—dramatic romance in crimson.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes18/mici/6.jpg" alt="Crimson Bloom Heels - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 17: Sapphire Bloom Crystal Heels -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Sapphire Bloom Crystal Heels</h3>
+                        <p class="shoe-collection-description">Blue Moon Princess Heels — step into elegance with the Sapphire Bloom Crystal Heels, a breathtaking pair of custom shoes designed to turn every entrance into a moment. Wrapped in a rich royal blue finish, these heels combine romantic femininity with statement luxury, creating a design that feels both regal and unforgettable. The silhouette is elevated by delicate crystal-embellished straps that wrap gracefully around the foot, adding sparkle from every angle. Jeweled floral elements and hanging heart-shaped charms bring refined, decorative brilliance, while soft satin-inspired petal detailing across the toe adds texture and an artisanal couture touch. At the back, oversized ribbon bows create a dramatic and graceful finish, making the design feel whimsical, elegant, and strikingly original. These custom heels are made for special occasions, celebrations, photoshoots, evening events, and anyone who wants footwear that feels like wearable art. They are bold without losing softness, glamorous without feeling excessive, and distinctive enough to stand out instantly. The Sapphire Bloom Crystal Heels are more than shoes — they are a statement of confidence, beauty, and imagination. Designed for those who love expressive fashion and unforgettable details, this pair brings together sparkle, romance, and royal blue sophistication in one truly enchanting creation. #CustomHeels #BlueHeels #HandmadeShoes #StatementHeels #LuxuryFootwear</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes17">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes1.jpg"
+                         data-id="sapphire-bloom-crystal-1"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Rich royal blue finish with romantic femininity and regal statement luxury—an unforgettable entrance from the first angle.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/1.jpg" alt="Sapphire Bloom Crystal Heels - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes2.jpg"
+                         data-id="sapphire-bloom-crystal-2"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Crystal-embellished straps wrap the foot with sparkle from every angle—delicate, graceful, and luminous.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/2.jpg" alt="Sapphire Bloom Crystal Heels - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes3.jpg"
+                         data-id="sapphire-bloom-crystal-3"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Jeweled florals and heart-shaped charms add refined brilliance; satin-inspired petal detailing brings couture texture at the toe.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/3.jpg" alt="Sapphire Bloom Crystal Heels - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes4.jpg"
+                         data-id="sapphire-bloom-crystal-4"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Oversized ribbon bows at the back—dramatic, whimsical, and gracefully finished wearable art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/4.jpg" alt="Sapphire Bloom Crystal Heels - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes5.jpg"
+                         data-id="sapphire-bloom-crystal-5"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Bold yet soft, glamorous yet balanced—perfect for celebrations, photoshoots, and evening events.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/5.jpg" alt="Sapphire Bloom Crystal Heels - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes17/shoes6.jpg"
+                         data-id="sapphire-bloom-crystal-6"
+                         data-sub-html="<h6>Custom Crystal Heels</h6><br><h4>Sapphire Bloom Crystal Heels</h4><p>Sparkle, romance, and royal blue sophistication—confidence, beauty, and imagination in one enchanting pair.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes17/mici/6.jpg" alt="Sapphire Bloom Crystal Heels - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 16: Midnight Poetry -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Midnight Poetry</h3>
+                        <p class="shoe-collection-description">Handwritten custom sneakers that blend minimalism, emotion, and wearable art into one striking design. Built on a sleek matte-black base, the shoes are covered in flowing white handwritten script that wraps across the sides, toe, and sole, creating the feeling of poetry in motion. Every line adds depth and personality, turning a classic silhouette into a statement piece that feels both modern and deeply expressive. The contrast between the bold black surface and the soft white lettering gives these shoes a refined yet dramatic presence. Delicate heart details and beautifully patterned black-and-white laces complete the look, adding a touch of charm and individuality. The result is a pair that feels artistic, mysterious, and effortlessly stylish from every angle. Perfect for those who love fashion with meaning, these custom shoes are more than footwear—they are a form of self-expression. They pair beautifully with casual streetwear, monochrome outfits, or elevated everyday looks, making them ideal for anyone who wants to stand out with something unique, elegant, and handcrafted. Each pair carries a one-of-a-kind visual rhythm, designed to feel personal, memorable, and impossible to ignore.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes16">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes1.jpg"
+                         data-id="midnight-poetry-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Sleek matte-black base with flowing white handwritten script—minimalism meets emotion across the upper.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/1.jpg" alt="Midnight Poetry - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes2.jpg"
+                         data-id="midnight-poetry-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Script wraps the sides like poetry in motion—depth, personality, and a classic silhouette turned statement.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/2.jpg" alt="Midnight Poetry - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes3.jpg"
+                         data-id="midnight-poetry-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Lettering continues across toe and sole—wearable art with a refined, dramatic black-and-white contrast.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/3.jpg" alt="Midnight Poetry - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes4.jpg"
+                         data-id="midnight-poetry-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Bold black surface and soft white lettering—modern, expressive, and unmistakably handcrafted.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/4.jpg" alt="Midnight Poetry - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes5.jpg"
+                         data-id="midnight-poetry-5"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Delicate heart details and patterned black-and-white laces—charm, individuality, and a polished finish.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/5.jpg" alt="Midnight Poetry - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes6.jpg"
+                         data-id="midnight-poetry-6"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Artistic, mysterious, and effortlessly stylish—another angle on the one-of-a-kind visual rhythm.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/6.jpg" alt="Midnight Poetry - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes16/shoes7.jpg"
+                         data-id="midnight-poetry-7"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Midnight Poetry</h4><p>Fashion with meaning—ideal with streetwear or monochrome looks; personal, memorable, impossible to ignore.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes16/mici/7.jpg" alt="Midnight Poetry - View 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 15: Sunset Dreams -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Sunset Dreams</h3>
+                        <p class="shoe-collection-description">Custom hand-painted platform sneakers—a vibrant celebration of color, creativity, and individuality. A smooth gradient blend of warm peach, pink, violet, and bright blue captures a sunset sky in bold, wearable form. Delicate golden ornamental details flow across the surface, adding movement, elegance, and a touch of magic. Contrasting purple patterned laces add personality; a crisp white platform sole gives a modern finish that lets the artwork shine. Small heart accents on the back add playful charm. Each pair is carefully hand-painted, so no two are exactly alike—ideal for statement fashion, artistic accessories, and one-of-a-kind pieces that turn everyday outfits into something unforgettable. Comfort, creativity, and handcrafted artistry in one striking design—wearable art for every step.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes15">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes1.jpg"
+                         data-id="sunset-dreams-1"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Hand-painted gradient of peach, pink, violet, and bright blue—like a sunset sky on the upper.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/1.jpg" alt="Sunset Dreams - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes2.jpg"
+                         data-id="sunset-dreams-2"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Delicate golden ornamental details flow across the surface—movement, elegance, and a touch of magic.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/2.jpg" alt="Sunset Dreams - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes3.jpg"
+                         data-id="sunset-dreams-3"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Purple patterned laces add personality and contrast against the warm-cool gradient palette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/3.jpg" alt="Sunset Dreams - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes4.jpg"
+                         data-id="sunset-dreams-4"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Crisp white platform sole—modern, stylish base that makes the hand-painted artwork stand out.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/4.jpg" alt="Sunset Dreams - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes5.jpg"
+                         data-id="sunset-dreams-5"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Small heart accents on the back—playful, charming detail that makes the pair feel special.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/5.jpg" alt="Sunset Dreams - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes6.jpg"
+                         data-id="sunset-dreams-6"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Carefully hand-painted—each pair unique. Statement fashion meets artistic accessories.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/6.jpg" alt="Sunset Dreams - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes7.jpg"
+                         data-id="sunset-dreams-7"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Bold color and golden ornament from another angle—vibrant celebration of creativity and individuality.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/7.jpg" alt="Sunset Dreams - View 7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes8.jpg"
+                         data-id="sunset-dreams-8"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Side profile: platform height, gradient flow, and laces working together for a cohesive look.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="800ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/8.jpg" alt="Sunset Dreams - View 8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes9.jpg"
+                         data-id="sunset-dreams-9"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Perfect for casual styling or as the standout piece—attention and personality with every step.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="900ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/9.jpg" alt="Sunset Dreams - View 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes10.jpg"
+                         data-id="sunset-dreams-10"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Comfort, creativity, and handcrafted artistry—more than footwear, wearable art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="1000ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/10.jpg" alt="Sunset Dreams - View 10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes15/shoes11.jpg"
+                         data-id="sunset-dreams-11"
+                         data-sub-html="<h6>Platform Sneakers</h6><br><h4>Sunset Dreams</h4><p>Sunset dreams on every step—original, unforgettable, and made to express you.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="1100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes15/mici/11.jpg" alt="Sunset Dreams - View 11">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 14: Emerald Dragon -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Emerald Dragon</h3>
+                        <p class="shoe-collection-description">Custom-painted sneakers with a powerful dragon-inspired design that transforms a classic low-top silhouette into wearable artwork. The entire upper is wrapped in a richly detailed scale pattern, hand-painted in layered shades of emerald green, deep forest green, and golden yellow—depth, movement, and a lifelike reptilian texture. Every scale is individually outlined for a dimensional, armored look. A hand-painted dragon stretches across the side panels and flows onto the midsole: serpentine body, wings with motion, tail wrapping heel to toe for one unified scene. The toe box features an ornamental dragon emblem in swirling green, gold, and black; white panels beneath the artwork add crisp contrast. The palette blends vibrant greens, moss tones, yellow accents, and clean white with small golden details; bright yellow laces add energy. A subtle heart detail on the heel softens the fierce fantasy aesthetic with a personal touch. Set on a chunky white sole for structure and contrast, every angle is customized—no plain side. Ideal for lovers of fantasy art, dragons, statement fashion, and one-of-a-kind custom footwear—handcrafted art to stand out and bring bold mythical energy into everyday style.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes14">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes1.jpg"
+                         data-id="emerald-dragon-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Scale pattern across the upper in emerald, forest green, and golden yellow—each scale outlined for a dimensional, armored reptilian texture.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/1.jpg" alt="Emerald Dragon - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes2.jpg"
+                         data-id="emerald-dragon-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>The dragon stretches across the side panels in multiple greens with yellow-green highlights and bold black outlines—wings spread with a sense of motion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/2.jpg" alt="Emerald Dragon - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes3.jpg"
+                         data-id="emerald-dragon-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Serpentine body curves around the shoe structure; the composition feels alive from every angle.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/3.jpg" alt="Emerald Dragon - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes4.jpg"
+                         data-id="emerald-dragon-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Tail wraps the lower edge, visually connecting artwork from heel to toe—one continuous scene across the pair.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/4.jpg" alt="Emerald Dragon - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes5.jpg"
+                         data-id="emerald-dragon-5"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Ornamental dragon emblem on the toe box—swirling green, gold, and black crest-like motif with regal fantasy flair.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/5.jpg" alt="Emerald Dragon - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes6.jpg"
+                         data-id="emerald-dragon-6"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>White panels beneath the painting add crisp contrast so greens and gold pop vividly.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/6.jpg" alt="Emerald Dragon - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes7.jpg"
+                         data-id="emerald-dragon-7"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Bright yellow laces tie into the dragon theme with bold energy; golden details echo the painted highlights.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/7.jpg" alt="Emerald Dragon - View 7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes8.jpg"
+                         data-id="emerald-dragon-8"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Chunky white sole balances dramatic artwork with a fresh, wearable base—room for the painting to shine.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="800ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/8.jpg" alt="Emerald Dragon - View 8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes9.jpg"
+                         data-id="emerald-dragon-9"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Subtle heart detail on the heel—a personal accent that softens the fierce fantasy look.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="900ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/9.jpg" alt="Emerald Dragon - View 9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes10.jpg"
+                         data-id="emerald-dragon-10"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Thoughtful customization from side profile to toe and heel—statement fantasy art with no plain side.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="1000ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/10.jpg" alt="Emerald Dragon - View 10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes14/shoes11.jpg"
+                         data-id="emerald-dragon-11"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Emerald Dragon</h4><p>Handcrafted wearable art—unique character, bold mythical energy, and conversation-starting style for dragon and fantasy lovers.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="1100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes14/mici/11.jpg" alt="Emerald Dragon - View 11">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 13: Butterfly Garden -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Butterfly Garden</h3>
+                        <p class="shoe-collection-description">Stunning custom pointed-toe stilettos in a rich deep berry or burgundy tone with a velvety suede-like finish—romantic, theatrical, and highly imaginative. The silhouette is elegant and sharp: slim high heels, refined pointed front, and graceful ankle straps that frame the foot beautifully. Delicate mesh panels combined with curved strap detailing across the sides create a light, airy effect while keeping the design sophisticated and polished. The centerpiece is the butterfly embellishment: multicolored butterflies in lavender, violet, sky blue, mint green, blush pink, and warm orange flutter across the toe box, ankle area, sides, and heel counter, making the design feel alive. The contrast between the dark wine-colored base and the bright, dreamy butterfly tones gives a fantasy-garden feel—like a couture fairytale or enchanted spring collection. From the back, a clean zipper closure keeps the shape neat and fitted; from the side, the arch and heel look graceful and feminine, while the butterflies soften the stiletto with something playful and poetic. Wearable art for someone who wants to make a statement and embrace beauty in a bold, creative way—original, expressive, and unmistakably one-of-a-kind.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes13">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes1.jpg"
+                         data-id="butterfly-garden-1"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>Rich deep berry or burgundy pointed-toe stilettos with velvety suede-like finish. Slim high heels, refined pointed front, and graceful ankle straps frame the foot beautifully.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/1.jpg" alt="Butterfly Garden - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes2.jpg"
+                         data-id="butterfly-garden-2"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>Delicate mesh panels and curved strap detailing create a light, airy effect. The dark wine-colored base contrasts beautifully with the bright, dreamy butterfly tones.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/2.jpg" alt="Butterfly Garden - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes3.jpg"
+                         data-id="butterfly-garden-3"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>Multicolored butterflies in lavender, violet, sky blue, mint green, blush pink, and warm orange flutter across the toe box and sides—a fantasy-garden, couture fairytale feel.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/3.jpg" alt="Butterfly Garden - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes4.jpg"
+                         data-id="butterfly-garden-4"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>Butterflies adorn the ankle area and heel counter, making the design feel alive. Playful and poetic—the butterflies soften the sharpness of the stiletto shape.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/4.jpg" alt="Butterfly Garden - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes5.jpg"
+                         data-id="butterfly-garden-5"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>From the back, sleek and sculptural with a clean zipper closure. From the side, the arch and heel look graceful and feminine—elegance, nature, and fantasy combined.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/5.jpg" alt="Butterfly Garden - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes13/shoes6.jpg"
+                         data-id="butterfly-garden-6"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Butterfly Garden</h4><p>Wearable art—original, expressive, and visually memorable. A one-of-a-kind couture piece for making a statement and embracing beauty in a bold, creative way.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes13/mici/6.jpg" alt="Butterfly Garden - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 12: Emerald Romance -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Emerald Romance</h3>
+                        <p class="shoe-collection-description">Custom emerald green high-heeled sandals with a romantic, fantasy-inspired design—theatrical, elegant, and unmistakably handmade. Slim stiletto sandals with an open toe, broad vamp strap, and mostly open sides create a light, delicate silhouette; the tall, narrow heel gives a lifted, refined look. The upper is a rich emerald satin or velvety fabric with glossy satin ribbons that catch the light. The ankle and heel treatment is the dramatic focus: sculptural heel counters from which long emerald satin ribbons spill into oversized bows and rosette-like knots, with trailing ends for movement and a couture, ballet-meets-fairy-tale quality. The front is decorated with butterfly-like jeweled embellishments, clustered beadwork resembling leaves or botanical bursts, and coordinated jeweled clusters—adding sparkle and a nature-inspired theme. Jewel-toned emerald green shifts from deep and velvety to bright and reflective. Wearable art for photoshoots, special events, fantasy editorials, themed bridal styling, or collectors of one-of-a-kind fashion.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes12">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes1.jpg"
+                         data-id="emerald-romance-1"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>Slim stiletto sandals with open toe and broad vamp strap. Rich emerald satin or velvety upper with soft nude-beige sole and lining that contrast with the saturated green exterior.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/1.jpg" alt="Emerald Romance - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes2.jpg"
+                         data-id="emerald-romance-2"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>Long emerald satin ribbons spill from the heel counter into oversized bows and rosette-like knots around the ankle, with trailing ends that give movement and a couture, fairy-tale quality.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/2.jpg" alt="Emerald Romance - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes3.jpg"
+                         data-id="emerald-romance-3"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>From the back, oversized bows sit at the top of the heel counter; ribbon loops and floral ribbon forms cluster around the rear, as if the heels are wrapped in blooming green petals.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/3.jpg" alt="Emerald Romance - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes4.jpg"
+                         data-id="emerald-romance-4"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>Butterfly-like embellishment made from green stones, crystals, or sequins arranged like wings. Clustered beadwork resembles tiny leaves, fronds, or botanical bursts—enchanted garden ornaments on the front straps.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/4.jpg" alt="Emerald Romance - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes5.jpg"
+                         data-id="emerald-romance-5"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>From the side, the silhouette is elegant: slender heel, open arch, and trailing ribbons make the shoes look delicate and elongated. The green shifts from deep and velvety to bright and reflective.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/5.jpg" alt="Emerald Romance - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes12/shoes6.jpg"
+                         data-id="emerald-romance-6"
+                         data-sub-html="<h6>High-Heel Sandals</h6><br><h4>Emerald Romance</h4><p>Glamorous evening sandals with whimsical jeweled detailing. Couture meets botanical fairy-tale—wearable art for a photoshoot, special event, fantasy editorial, or themed bridal styling.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes12/mici/6.jpg" alt="Emerald Romance - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 11: Emerald Enchantment -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Emerald Enchantment</h3>
+                        <p class="shoe-collection-description">Highly ornate, fantasy-inspired pointed-toe stiletto heels with a dramatic, handcrafted look. The base is deep emerald or blackened green satin with a subtle sheen; the silhouette is elegant and sharp: closed pointed toe, d’Orsay-style side cut, and slim high stiletto heel, with a thin ankle strap and round gold buckle. The toe box has a small sculptural green satin bow or flower-like ribbon; along the outer edge, gold vine-like trim set with tiny green beads or crystal-like stones runs like jeweled ivy. The heel counters are decorated with gold floral metalwork, leaf motifs, and small flower clusters, topped with a large oval green gem. Multiple green feathers hang from the back and sides for motion and a theatrical, nature-inspired feel; fine gold chains connect the jewel and floral elements for a jewelry-like finish. A blend of couture evening wear, enchanted forest fairy aesthetic, botanical jewelry design, and bridal or costume statement footwear—opulent, magical, almost elven art shoes for a special event, photoshoot, or themed bridal look.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes11">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes1.jpg"
+                         data-id="emerald-enchantment-1"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Deep emerald or blackened green satin with subtle sheen. Elegant sharp silhouette: closed pointed toe, d'Orsay-style side cut, slim high stiletto heel, and thin ankle strap with round gold buckle.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/1.jpg" alt="Emerald Enchantment - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes2.jpg"
+                         data-id="emerald-enchantment-2"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Small sculptural green satin bow or flower-like ribbon embellishment on the toe box, placed slightly off-center. Gold vine-like trim with tiny green beads or crystals runs along the outer edge like jeweled ivy.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/2.jpg" alt="Emerald Enchantment - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes3.jpg"
+                         data-id="emerald-enchantment-3"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Heel counters decorated with gold floral metalwork, leaf motifs, and small flower clusters, topped with a large oval green gem near the upper back—the most elaborate area of the design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/3.jpg" alt="Emerald Enchantment - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes4.jpg"
+                         data-id="emerald-enchantment-4"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Multiple green feathers hang from the back and sides, adding motion, softness, and a theatrical, nature-inspired feel. Fine gold chains drape around the back, connecting jewel and floral elements.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/4.jpg" alt="Emerald Enchantment - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes5.jpg"
+                         data-id="emerald-enchantment-5"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Slim dark heels with gold detailing near the heel stem. Light tan or beige sole contrasts with the rich dark upper. Jewelry-like finish with gold filigree and gemstones.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/5.jpg" alt="Emerald Enchantment - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes11/shoes6.jpg"
+                         data-id="emerald-enchantment-6"
+                         data-sub-html="<h6>Stiletto Heels</h6><br><h4>Emerald Enchantment</h4><p>Couture evening wear meets enchanted forest fairy aesthetic and botanical jewelry design. Opulent, magical, almost elven—art shoes for special events, photoshoots, or themed bridal look.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes11/mici/6.jpg" alt="Emerald Enchantment - View 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 10: Moonlight Elegance -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Moonlight Elegance</h3>
+                        <p class="shoe-collection-description">Custom high-heeled knee-high boots transformed into a dramatic, fantasy couture piece with strong magical-girl and celestial elegance—Guardian of the Midnight Prism. Crafted in deep midnight-blue with a subtle satin-leather sheen that catches the light for a moonlit glow; sleek pointed toe and ultra-slim stiletto heels create a sharp, elegant silhouette that feels both powerful and delicate. Hand-applied embellishments: intricate floral embroidery in beads, sequins, and textured appliqués spreads like enchanted vines along the shaft. Dark blue crystals and jewel clusters frame the toe; soft light-blue ribbons and lace bows around the upper calf add contrast and magical transformation aesthetics. Ornate gold bow ornaments at the back, pale gold interior sole, and dangling crystal details and chains give movement and luxury. Fantasy couture, magical-girl inspired, romantic yet powerful—handcrafted statement footwear.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes10">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes1.jpg"
+                         data-id="moonlight-elegance-1"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Deep midnight-blue boots with satin-leather sheen that catches the light for a moonlit glow. Sleek pointed toe and ultra-slim stiletto heels create a sharp, elegant silhouette—powerful and delicate.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/1.jpg" alt="Moonlight Elegance - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes2.jpg"
+                         data-id="moonlight-elegance-2"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Intricate floral embroidery in beads, sequins, and textured appliqués spreads organically along the shaft like enchanted vines—fantasy couture with magical-girl energy.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/2.jpg" alt="Moonlight Elegance - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes3.jpg"
+                         data-id="moonlight-elegance-3"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Dark blue crystals and jewel clusters frame the toe area, adding sparkle and a jewelry-like finish reminiscent of royal accessories and celestial elegance.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/3.jpg" alt="Moonlight Elegance - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes4.jpg"
+                         data-id="moonlight-elegance-4"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Soft light-blue ribbons and lace bows around the upper calf introduce contrast and softness, evoking magical transformation aesthetics.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/4.jpg" alt="Moonlight Elegance - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes5.jpg"
+                         data-id="moonlight-elegance-5"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Ornate gold bow ornaments at the back near the heels add a baroque, regal accent, balancing the darker tones with warmth and luxury.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/5.jpg" alt="Moonlight Elegance - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 6 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes6.jpg"
+                         data-id="moonlight-elegance-6"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Pale gold interior sole subtly enhances the couture feeling. Romantic yet powerful—handcrafted statement footwear with a moonlight transformation vibe.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/6.jpg" alt="Moonlight Elegance - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 7 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes7.jpg"
+                         data-id="moonlight-elegance-7"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Dangling crystal details and chains give movement—as if the boots belong to a celestial guardian or fantasy heroine. Fantasy–luxury aesthetic.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/7.jpg" alt="Moonlight Elegance - View 7">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 8 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes8.jpg"
+                         data-id="moonlight-elegance-8"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Guardian of the Midnight Prism—Sailor Moon–inspired magical-girl energy with dark blue, crystals, and ribbons in a fantasy couture silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="800ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/8.jpg" alt="Moonlight Elegance - View 8">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 9 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes10/shoes9.jpg"
+                         data-id="moonlight-elegance-9"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Moonlight Elegance</h4><p>Stunning fantasy couture—magical-girl inspired, handmade luxury. A fusion of celestial elegance and dramatic statement footwear.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="900ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes10/mici/9.jpg" alt="Moonlight Elegance - View 9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 9: Fairy Spring -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Fairy Spring</h3>
+                        <p class="shoe-collection-description">Ornate, fantasy-inspired custom high-heeled boots that blend couture fashion with a fairy-garden aesthetic. Crafted in deep emerald green with a glossy crocodile-texture finish for a luxurious, mystical look; sleek pointed toe and very high stiletto heels create an elegant, dramatic silhouette. The surface is richly decorated with hand-applied floral elements—layered green fabric flowers, sparkling crystals, beads, and jewel embellishments arranged like blooming vines climbing along the boot. Gold chains and delicate leaf ornaments drape across the upper section; oversized satin bows cascade down the back of the shaft. Sculpted roses and pearl accents near the heel and ankle, with metallic leaf details on the pointed toe, complete the nature-inspired design. Wearable art fusing botanical fantasy, haute couture craftsmanship, and springtime enchantment.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes9">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes1.jpg"
+                         data-id="fairy-spring-1"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Deep emerald green boots with glossy crocodile-texture finish. Sleek pointed toe and very high stiletto heels create an elegant, dramatic silhouette with a luxurious, slightly mystical look.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/1.jpg" alt="Fairy Spring - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes2.jpg"
+                         data-id="fairy-spring-2"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Hand-applied floral elements—layered green fabric flowers, sparkling crystals, beads, and jewel embellishments arranged like blooming vines climbing along the side of the boot.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/2.jpg" alt="Fairy Spring - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes3.jpg"
+                         data-id="fairy-spring-3"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Gold chains and delicate leaf ornaments drape across the upper section, adding movement and a jewelry-like elegance to the fairy-garden design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/3.jpg" alt="Fairy Spring - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes4.jpg"
+                         data-id="fairy-spring-4"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Oversized satin bows cascade down the back of the shaft, softening the structured form and enhancing the romantic, fairy-tale feel.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/4.jpg" alt="Fairy Spring - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes5.jpg"
+                         data-id="fairy-spring-5"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Sculpted roses and pearl accents near the heel and ankle introduce a garden motif, blending botanical fantasy with haute couture craftsmanship.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/5.jpg" alt="Fairy Spring - View 5">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 6 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes6.jpg"
+                         data-id="fairy-spring-6"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Metallic leaf details on the pointed toe complete the nature-inspired design. A fusion of botanical fantasy and springtime enchantment.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="600ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/6.jpg" alt="Fairy Spring - View 6">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 7 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes9/shoes7.jpg"
+                         data-id="fairy-spring-7"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Fairy Spring</h4><p>Wearable art designed for a woodland fairy or an enchanted fashion runway—where couture meets fairy-garden fantasy and springtime enchantment.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="700ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes9/mici/7.jpg" alt="Fairy Spring - View 7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 8: Splatter Street -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Splatter Street</h3>
+                        <p class="shoe-collection-description">Custom athletic-style sneakers with a bold splatter-paint aesthetic, combining sporty structure with expressive, street-art inspired decoration. The base palette of black, white, and bright red creates a strong, high-contrast look. Red and black paint splatters applied across panels give a dynamic graffiti or abstract action-painting vibe, with layered splashes suggesting intentional artistic composition. Low-profile athletic sneakers with a sleek, performance-oriented silhouette; white cushioned sole and streamlined tongue enhance the modern design. Bold, edgy, and expressive—a statement sneaker for casual wear, creative environments, or fashion-forward styling where action painting meets urban streetwear.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes8">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes8/shoes1.jpg"
+                         data-id="splatter-street-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Splatter Street</h4><p>Athletic sneakers with a bold splatter-paint aesthetic. Black, white, and bright red base colors create strong contrast; red and black paint splatters add a dynamic graffiti and action-painting vibe.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes8/mici/1.jpg" alt="Splatter Street - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes8/shoes2.jpg"
+                         data-id="splatter-street-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Splatter Street</h4><p>Layered splashes suggest intentional artistic composition rather than random marks. The splatter style evokes energy, motion, and intensity—action painting translated into fashion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes8/mici/2.jpg" alt="Splatter Street - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes8/shoes3.jpg"
+                         data-id="splatter-street-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Splatter Street</h4><p>Low-profile athletic silhouette with sleek, performance-oriented design. White cushioned sole adds balance and reinforces the sporty identity of these statement sneakers.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes8/mici/3.jpg" alt="Splatter Street - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes8/shoes4.jpg"
+                         data-id="splatter-street-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Splatter Street</h4><p>The lace area features a streamlined tongue or panel for a modern look. Strong urban streetwear and contemporary art crossover—edgy and expressive.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes8/mici/4.jpg" alt="Splatter Street - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes8/shoes5.jpg"
+                         data-id="splatter-street-5"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Splatter Street</h4><p>A statement sneaker for casual wear, creative environments, or fashion-forward styling. Bold, edgy, and expressive—where fine art meets streetwear.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes8/mici/5.jpg" alt="Splatter Street - View 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 7: Gothic Romance -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Gothic Romance</h3>
+                        <p class="shoe-collection-description">Custom couture-style black knee-high boots with a dramatic gothic-romantic aesthetic. Tall knee-high boots with slim, elegant shafts feature pointed toes and high stiletto heels. The design combines intricate black lace fabric layered over matte leather, floral appliqués with butterfly/flower-like shapes, decorative gold-toned chains and medallion elements, hanging feather charms, and long black satin ribbon bows. This theatrical, artistic statement footwear showcases Victorian-inspired couture elegance with a fashion-forward, gothic elegance that transcends everyday boots.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes7">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes7/shoes1.JPG"
+                         data-id="gothic-romance-1"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Gothic Romance</h4><p>Tall knee-high boots with slim, elegant shafts showcase a refined, formal, fashion-forward shape. The pointed toes and high stiletto heels create a dramatic silhouette, while the mix of matte leather and lace overlay creates strong visual contrast. The intricate black lace fabric is layered over the base material, adding depth and romantic ornamentation.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes7/mici/1.jpg" alt="Gothic Romance - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes7/shoes2.JPG"
+                         data-id="gothic-romance-2"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Gothic Romance</h4><p>The upper shaft is largely covered with intricate black lace fabric, layered over the base material. Along the lower section, floral appliqués with butterfly/flower-like shapes climb diagonally, adding depth and romantic ornamentation. The decorative gold-toned chains and medallion elements wrap around parts of the boot, creating a jewelry-like embellishment effect.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes7/mici/2.jpg" alt="Gothic Romance - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes7/shoes3.JPG"
+                         data-id="gothic-romance-3"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Gothic Romance</h4><p>Hanging feather charms and small metal details add movement and a slightly bohemian or gothic couture feel. Long black satin ribbon bows at the back soften the strong silhouette, while some sheer ribbon strands hang down, adding texture and visual drama. The visible side zipper closures suggest practicality beneath the decorative exterior.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes7/mici/3.jpg" alt="Gothic Romance - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes7/shoes4.JPG"
+                         data-id="gothic-romance-4"
+                         data-sub-html="<h6>Knee-High Boots</h6><br><h4>Gothic Romance</h4><p>A strong gothic elegance with Victorian-inspired couture vibe. Designed as statement footwear—theatrical, artistic, and fashion-forward rather than purely everyday boots. This expressive, personal statement piece showcases the intersection of fine art, couture fashion, and wearable sculpture, creating a unique fusion of gothic romance and contemporary design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes7/mici/4.jpg" alt="Gothic Romance - View 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 6: Garden of Lace -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Garden of Lace</h3>
+                        <p class="shoe-collection-description">Elegant black dress shoes with refined decorative embellishments. Featuring romantic floral appliqués, delicate bow accents, and intricate lace overlays that create a vintage-inspired, couture aesthetic perfect for formal occasions and evening wear.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes6">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes1.jpg"
+                         data-id="garden-of-lace-1"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Elegant dress shoes adorned with floral appliqués and lace-like decorative elements. The layered fabric flowers and stitched textures create a romantic, refined aesthetic with subtle material contrasts that highlight the ornamental details.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/1.jpg" alt="Garden of Lace - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes2.jpg"
+                         data-id="garden-of-lace-2"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Sophisticated design featuring prominent rose-shaped embellishments on the toe area. The fabric flowers with layered petals and delicate bow accents add a feminine, couture-inspired touch, while embroidered overlays provide depth and tactile contrast.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/2.jpg" alt="Garden of Lace - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes6/shoes3.jpg"
+                         data-id="garden-of-lace-3"
+                         data-sub-html="<h6>Dress Shoes</h6><br><h4>Garden of Lace</h4><p>Refined decorative style with floral appliqués and lace textures. The slightly shinier embellishments create subtle highlights against the matte base fabric, resulting in an elegant, vintage-inspired look perfect for formal events and special occasions.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes6/mici/3.jpg" alt="Garden of Lace - View 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 5: Gothic Couture -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Gothic Couture</h3>
+                        <p class="shoe-collection-description">Custom high-heel boots with a dramatic, couture-style aesthetic. Featuring intricate lace and embroidered overlays with floral patterns, draped chain strands with bead-like drops and a striking red gem accent, elegant satin ribbon bow details, and layered fabric flowers. This gothic-elegant design combines romantic lace, jewelry-like embellishments, and a dramatic silhouette, creating a statement fashion piece that showcases handcrafted artistry.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes5">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes1.jpg"
+                         data-id="gothic-couture-1"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Custom high-heel boots showcasing intricate lace appliqués and embroidered overlays that form floral and ornamental patterns, creating a baroque-inspired textured look with layered depth.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/1.jpg" alt="Gothic Couture - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes2.jpg"
+                         data-id="gothic-couture-2"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Dramatic couture design featuring draped chain strands with bead-like drops and a striking red gem accent, adding movement, sparkle, and bold contrast against the black base.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/2.jpg" alt="Gothic Couture - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes3.jpg"
+                         data-id="gothic-couture-3"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Elegant satin ribbon bow detail near the upper side provides a soft, romantic contrast to the bold decoration, adding a gothic-fashion elegance to the dramatic silhouette.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/3.jpg" alt="Gothic Couture - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes4.jpg"
+                         data-id="gothic-couture-4"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>Layered fabric flowers and appliqué petals blend seamlessly with the intricate lace patterns, showcasing the handcrafted, customized artistry of this gothic-elegant design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/4.jpg" alt="Gothic Couture - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes5/shoes5.jpg"
+                         data-id="gothic-couture-5"
+                         data-sub-html="<h6>High-Heel Boots</h6><br><h4>Gothic Couture</h4><p>A statement fashion piece that combines romantic lace, jewelry-like embellishments, and dramatic couture-inspired details, creating an artistic custom design that transcends everyday footwear.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes5/mici/5.jpg" alt="Gothic Couture - View 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 4: Emoji Express -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Emoji Express</h3>
+                        <p class="shoe-collection-description">Fun, youthful streetwear-inspired sneakers featuring colorful emoji-themed decorations. The dark base showcases vibrant smiley-face graphics in neon colors—yellow, pink, blue, orange, and green—with a mix of printed designs and raised plastic emoji charms. A prominent yellow winking tongue-out emoji charm serves as the main focal point, while a red strip along the sole edge and light-colored laces complete this playful, pop culture-inspired design.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes4">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes1.jpg"
+                         data-id="emoji-express-1"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>Colorful smiley-face graphics in different expressions and colors cover the shoes, creating a vibrant, playful aesthetic. The mix of printed designs and raised plastic emoji charms adds dimensionality and visual interest to this streetwear-inspired customization.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/1.jpg" alt="Emoji Express - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes2.jpg"
+                         data-id="emoji-express-2"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>A large yellow winking tongue-out emoji charm stands out prominently as the main focal point. The dark base (black/navy) makes the neon-like colors—yellow, pink, blue, orange, and green—pop strongly, creating a bold, eye-catching design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/2.jpg" alt="Emoji Express - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes4/shoes3.jpg"
+                         data-id="emoji-express-3"
+                         data-sub-html="<h6>Sneakers</h6><br><h4>Emoji Express</h4><p>Light-colored laces in mint/teal tones soften the look and complement the playful vibe, while a red strip along the sole edge adds extra contrast and a bold graphic line. The white sole keeps the design grounded while highlighting the colorful upper, completing this fun, DIY art-inspired statement piece.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes4/mici/3.jpg" alt="Emoji Express - View 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 3: Painted Canvas -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Painted Canvas</h3>
+                        <p class="shoe-collection-description">Hand-painted custom sneakers with a strong artistic, painterly aesthetic—wearable artwork that combines streetwear with fine-art painting. The shoe upper features expressive brush-stroke painting with vivid colors (blues, oranges, yellows, reds, and greens) that blend dynamically, creating a canvas-painting effect. A stylized winged figure or abstract character on the side panel suggests a narrative artistic theme, while rhinestone-like elements on the laces and a hand-painted heart symbol on the back add personal, customized touches to this art-driven design.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes3">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes1.jpg"
+                         data-id="painted-canvas-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>Hand-painted artwork covers the shoe upper with expressive brush strokes. Vivid colors—blues, oranges, yellows, reds, and greens—blend dynamically, creating a canvas-painting effect that transforms these sneakers into wearable fine art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/1.jpg" alt="Painted Canvas - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes2.jpg"
+                         data-id="painted-canvas-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>A stylized winged figure or abstract character on the side panel suggests a narrative or symbolic artistic theme, adding depth and storytelling to the painted design. The artistic expression goes beyond decoration, creating a meaningful visual narrative.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/2.jpg" alt="Painted Canvas - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes3.jpg"
+                         data-id="painted-canvas-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>Rhinestone-like elements on the laces add sparkling contrast between fine art painting and fashion glam, while a reflective or studded panel near the collar provides a subtle decorative accent that complements the painted artwork.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/3.jpg" alt="Painted Canvas - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes3/shoes4.jpg"
+                         data-id="painted-canvas-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Painted Canvas</h4><p>The heel area transitions into bright green and blue gradients, while a small hand-painted heart symbol on the back provides a personal, customized signature touch. The thick white sole and clean white interior contrast beautifully with the colorful exterior artwork, completing this expressive, art-driven design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes3/mici/4.jpg" alt="Painted Canvas - View 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 2: Strength & Style -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Strength & Style</h3>
+                        <p class="shoe-collection-description">Custom white sneakers featuring hand-painted fitness-themed illustrations. Clean white low-top sneakers with a minimalist silhouette showcase a muscular torso illustration lifting dumbbells, rendered in a semi-realistic painted style. Soft gray cloud-like brushwork surrounds the figure, creating a dramatic, stylized background that emphasizes strength, bodybuilding, and gym culture. The white laces and thick white sole keep the overall look simple so the artwork stands out, creating a personalized, sporty artistic design that combines casual footwear with illustrative art.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes2">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes2/shoes1.jpg"
+                         data-id="strength-style-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Strength & Style</h4><p>Hand-painted artwork on the outer side features a muscular torso illustration lifting dumbbells, rendered in a semi-realistic painted style. The shading and anatomy suggest a focus on strength, bodybuilding, or gym culture, while soft gray cloud-like brushwork surrounds the figure, giving it a slightly dramatic or stylized background.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes2/mici/1.jpg" alt="Strength & Style - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes2/shoes2.jpg"
+                         data-id="strength-style-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Strength & Style</h4><p>Clean white low-top sneakers with a minimalist silhouette. White laces and thick white sole keep the overall look simple so the artwork stands out. The asymmetrical design suggests the artwork may be featured on one side, creating a unique, expressive look that combines casual everyday sneakers with illustrative art.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes2/mici/2.jpg" alt="Strength & Style - View 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 1: Portrait & Abstract -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="shoe-collection-title">Portrait & Abstract</h3>
+                        <p class="shoe-collection-description">Hand-painted custom sneakers designed as wearable artwork, combining illustrative portrait art with abstract color composition. One shoe features a stylized female face with blue hair painted in an expressive, semi-illustrative style, while the other showcases bold flowing color bands in reds, oranges, and yellows set against deep blue. Rich cobalt/indigo blues with paint splatter effects create a night-sky or cosmic background, while light turquoise edging and sparkly rhinestone-like laces add fashion-glam accents that contrast beautifully with the painterly art style.</p>
+                    </div>
+                </div>
+                
+                <div class="row oneMusic-albums" id="lightgallery-shoes1">
+                    <!-- Image 1 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes1.JPG"
+                         data-id="portrait-abstract-1"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>One shoe features a stylized female face with blue hair, painted in an expressive, semi-illustrative style. The hair flows into the surrounding design, blending into cool blues and whites. The face has defined eyes and soft shading, giving it a slightly fantasy or graphic-novel aesthetic.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/1.jpg" alt="Portrait & Abstract - View 1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes2.JPG"
+                         data-id="portrait-abstract-2"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>The opposite shoe showcases bold flowing color bands in reds, oranges, and yellows set against deep blue. The shapes feel painterly and dynamic, almost like flames, waves, or motion trails, creating an abstract expressionist composition that contrasts beautifully with the portrait side.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/2.jpg" alt="Portrait & Abstract - View 2">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes3.JPG"
+                         data-id="portrait-abstract-3"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>Rich cobalt/indigo blues with paint splatter effects create a night-sky or cosmic background across both shoes. Light turquoise edging around the panels helps separate the artwork from the white sole, adding definition and visual structure to the design.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/3.jpg" alt="Portrait & Abstract - View 3">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes4.JPG"
+                         data-id="portrait-abstract-4"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>Thick white sneaker soles keep the base casual and wearable, while the laces appear sparkly or rhinestone-like, adding a fashion-glam accent that contrasts with the painterly art style. This combination creates a unique fusion of fine art and streetwear fashion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/4.jpg" alt="Portrait & Abstract - View 4">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" 
+                         data-aos="fade" 
+                         data-src="images/shoes/shoes1/shoes5.jpg"
+                         data-id="portrait-abstract-5"
+                         data-sub-html="<h6>Custom Sneakers</h6><br><h4>Portrait & Abstract</h4><p>A strong art-meets-fashion customization that combines portrait illustration, abstract expressionism, and streetwear sneaker design. This expressive, personal statement piece transcends standard footwear, creating wearable artwork that showcases the intersection of fine art and contemporary fashion.</p>">
+                        <div class="single-album-area wow fadeInUp" data-wow-delay="500ms">
+                            <div class="album-thumb">
+                                <img src="images/shoes/shoes1/mici/5.jpg" alt="Portrait & Abstract - View 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/idgallery.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script>
+        $(document).ready(function(){
+            // Initialize LightGallery for each collection separately
+            // This allows slideshow to be grouped by collection
+            $('#lightgallery-shoes1').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes2').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes3').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes4').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes5').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes6').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes7').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes8').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes9').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes10').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes11').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes12').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes13').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes14').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes15').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes16').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes17').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes18').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes19').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes20').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes21').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes22').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes24').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+            
+            $('#lightgallery-shoes23').lightGallery({
+                mode: 'lg-slide',
+                speed: 600,
+                share: false,
+                actualSize: false
+            });
+        });
+    </script>
+</body>
+
+</html>
+
