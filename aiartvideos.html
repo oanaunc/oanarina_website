@@ -35,12 +35,12 @@
     .tooltip-btn:hover::after, .tooltip-btn:hover::before { opacity: 1; visibility: visible; }
 
     /* ===== Art Videos Gallery ===== */
-    .av-intro { text-align: center; margin-bottom: 55px; }
+    .av-intro { text-align: center; margin-bottom: 0; }
     .av-intro h2 {
-        font-size: 44px; font-weight: 700; letter-spacing: 1px; margin-bottom: 14px; color: #1a1a1a;
+        font-size: 44px; font-weight: 700; letter-spacing: 1px; margin-bottom: 14px; color: #fff;
     }
-    .av-intro .av-line { width: 70px; height: 3px; background: #1a1a1a; margin: 0 auto 22px; }
-    .av-intro p { max-width: 640px; margin: 0 auto; color: #7a7a7a; font-size: 16px; line-height: 1.7; }
+    .av-intro .av-line { width: 70px; height: 3px; background: #fff; margin: 0 auto 22px; }
+    .av-intro p { max-width: 640px; margin: 0 auto; color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.7; }
 
     /* Social call-to-action buttons */
     .av-social-wrap { display: flex; justify-content: center; gap: 40px; margin-top: 30px; }
@@ -54,7 +54,7 @@
     .av-social-item a svg { width: 40px; height: 40px; fill: #fff; }
     .av-ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
     .av-tt { background: #010101; }
-    .av-label { display: block; margin-top: 11px; font-size: 12px; letter-spacing: 1.5px; color: #7a7a7a; text-transform: uppercase; }
+    .av-label { display: block; margin-top: 11px; font-size: 12px; letter-spacing: 1.5px; color: rgba(255,255,255,0.9); text-transform: uppercase; }
 
     /* Masonry via CSS columns so vertical & horizontal clips flow nicely */
     .av-grid {
@@ -214,23 +214,8 @@
                 <div class="section-heading white">
                 <pre>
 
-
-
-
-					</pre>
-                     <h2>AI Art Videos</h2>
-               </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ##### Breadcumb Area End ##### -->
-
-<!-- ##### Art Videos Area Start ##### -->
-<section class="album-catagory section-padding-100-0">
-  <div class="container-fluid" style="padding-left:30px; padding-right:30px;">
-
-    <div class="av-intro wow fadeInUp" data-wow-delay="100ms">
+</pre>
+                     <div class="av-intro">
       <h2>AI Art in Motion</h2>
       <div class="av-line"></div>
       <p>A selection of short AI-generated art films. You can see my entire portfolio of videos over on Instagram and TikTok &mdash; follow along there for everything new.</p>
@@ -249,6 +234,16 @@
         </div>
       </div>
     </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Art Videos Area Start ##### -->
+<section class="album-catagory section-padding-100-0">
+  <div class="container-fluid" style="padding-left:30px; padding-right:30px;">
 
     <div class="av-grid" id="avGrid">
       <!-- items injected by JS -->
