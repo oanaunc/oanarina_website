@@ -1712,6 +1712,19 @@ img {
     min-height: 28px;
     padding: 4px; } }
 
+/* ====== Mobile breadcrumb background fix ====== */
+/* On phones, background-attachment:fixed sizes the image to the viewport,
+   making it look zoomed/cropped. Switch to scroll so the image scales to
+   the breadcrumb section (the header area actually used). */
+@media only screen and (max-width: 767px) {
+  .bg-fixed {
+    background-attachment: scroll !important; }
+  .contact-area.bg-img,
+  .breadcumb-area.bg-img {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center !important; } }
+
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
