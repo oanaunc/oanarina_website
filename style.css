@@ -1729,6 +1729,59 @@ img {
     padding-top: 60px !important;
     padding-bottom: 60px !important; } }
 
+/* ====== Header social icons next to logo ====== */
+.brand-social-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+.brand-social-wrap .nav-social-icon {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 0;
+  border-radius: 50%;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+.brand-social-wrap .nav-social-icon:first-of-type {
+  margin-left: 16px; }
+.brand-social-wrap .nav-social-icon svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  fill: currentColor; }
+.brand-social-wrap .nav-social-icon.nav-social-ig {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.brand-social-wrap .nav-social-icon.nav-social-tt {
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.25); }
+.brand-social-wrap .nav-social-icon:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px); }
+@media only screen and (max-width: 767px) {
+  .brand-social-wrap .nav-social-icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px; }
+  .brand-social-wrap .nav-social-icon:first-of-type {
+    margin-left: 12px; }
+  .brand-social-wrap .nav-social-icon svg {
+    width: 14px;
+    height: 14px; } }
+
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */

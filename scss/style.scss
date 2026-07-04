@@ -2044,3 +2044,55 @@ img {
     padding-bottom: 60px !important;
   }
 }
+
+/* ====== Header social icons next to logo ====== */
+.brand-social-wrap {
+  display: flex;
+  align-items: center;
+  .nav-social-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+    &:first-of-type {
+      margin-left: 16px;
+    }
+    svg {
+      display: block;
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+    &.nav-social-ig {
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    &.nav-social-tt {
+      background-color: #000;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brand-social-wrap .nav-social-icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    &:first-of-type {
+      margin-left: 12px;
+    }
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
