@@ -58,10 +58,13 @@
 
     /* Masonry via CSS columns so vertical & horizontal clips flow nicely */
     .av-grid {
-        column-count: 3; column-gap: 18px; margin: 0 auto;
+        column-count: 5; column-gap: 16px; margin: 0 auto;
     }
-    @media (max-width: 992px) { .av-grid { column-count: 2; } }
-    @media (max-width: 576px) { .av-grid { column-count: 1; } }
+    @media (max-width: 1600px) { .av-grid { column-count: 5; } }
+    @media (max-width: 1200px) { .av-grid { column-count: 4; } }
+    @media (max-width: 992px)  { .av-grid { column-count: 3; } }
+    @media (max-width: 768px)  { .av-grid { column-count: 2; } }
+    @media (max-width: 480px)  { .av-grid { column-count: 1; } }
 
     .av-item {
         position: relative; break-inside: avoid; margin-bottom: 18px;
@@ -225,7 +228,7 @@
 
 <!-- ##### Art Videos Area Start ##### -->
 <section class="album-catagory section-padding-100-0">
-  <div class="container">
+  <div class="container-fluid" style="padding-left:30px; padding-right:30px;">
 
     <div class="av-intro wow fadeInUp" data-wow-delay="100ms">
       <h2>Art in Motion</h2>
