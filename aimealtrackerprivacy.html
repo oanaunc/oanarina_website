@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Privacy Policy for AI Meal Tracker — a private food diary with AI nutrition estimates for iPhone.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Privacy Policy - AI Meal Tracker by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+
+					</pre>
+                         <h2>Privacy Policy for</h2>
+                        <h2>AI Meal Tracker</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+    
+
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+					
+                  <!-- Algorithm book Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+
+                          <!-- Post Excerpt -->
+    <h1>Privacy Policy — AI Meal Tracker</h1>
+    <p><strong>Last updated:</strong> July 7, 2026<br>
+    <strong>Developer:</strong> Oana Rinaldi<br>
+    <strong>Contact:</strong> <a href="mailto:contact@oanarinaldi.com">contact@oanarinaldi.com</a></p>
+
+    <h2>Summary</h2>
+    <p>AI Meal Tracker (“the App”) is a private food diary that helps you log meals, track nutrition, water intake, and weight. The App stores your data on your device. We do not operate servers that collect your personal data. We do not require an account.</p>
+
+    <h2>Information We Do Not Collect</h2>
+    <p>We do not operate a backend for the App. We do not collect, store, or sell:</p>
+    <ul>
+        <li>Name, email, or contact details (unless you email us for support)</li>
+        <li>Meal logs, photos, weight entries, or nutrition data on our servers</li>
+        <li>Location data</li>
+        <li>Usage analytics or advertising identifiers</li>
+        <li>Payment information</li>
+    </ul>
+
+    <h2>Data Stored on Your Device</h2>
+    <p>The following data is stored locally on your iPhone using Apple’s on-device storage (SwiftData and UserDefaults):</p>
+    <ul>
+        <li>Meal logs, including optional photos and nutrition values you enter or edit</li>
+        <li>Water intake entries</li>
+        <li>Weight entries and goals</li>
+        <li>App settings, including calorie, protein, and water goals</li>
+        <li>Favorites and recent meals for Quick Add</li>
+    </ul>
+    <p>This data stays on your device unless you choose to use features that send data to third parties, as described below.</p>
+
+    <h2>Apple Health</h2>
+    <p>If you enable “Sync with Apple Health” in Settings, the App may read and write body mass (weight) data to Apple Health on your device, subject to the Health permissions you grant. We do not receive this data. Apple Health is governed by Apple’s privacy policy.</p>
+
+    <h2>Home Screen Widget</h2>
+    <p>The App includes an optional home screen widget that displays summary information (such as calories remaining and latest weight) from data stored on your device. Widget data is shared between the App and widget extension via an App Group on your device only.</p>
+
+    <h2>Camera and Photo Library</h2>
+    <p>The App requests camera access when you take a meal photo or scan a barcode, and photo library access when you pick an existing image. Photos you choose for meal logging are stored locally on your device as part of your meal log.</p>
+
+    <h2>Notifications</h2>
+    <p>The App can send optional local reminders (for example, meal logging or weekly weigh-in). These notifications are scheduled on your device only. We do not use push notifications or remote servers for reminders.</p>
+
+    <h2>Data Sent to Third Parties (Only When You Use Those Features)</h2>
+    <p>When you use certain features, data is sent directly from your device to third-party services. We do not receive or store this data.</p>
+    <ul>
+        <li><strong>OpenAI</strong> — If you add an OpenAI API key in Settings and analyze a meal photo, the image is sent directly from your device to OpenAI to generate a nutrition estimate. OpenAI’s privacy policy applies: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">https://openai.com/policies/privacy-policy</a></li>
+        <li><strong>Open Food Facts</strong> — If you search foods or scan a barcode, your search query or barcode is sent to Open Food Facts to retrieve product nutrition information. Open Food Facts’ terms and privacy practices apply: <a href="https://world.openfoodfacts.org/terms-of-use" target="_blank" rel="noopener">https://world.openfoodfacts.org/terms-of-use</a></li>
+    </ul>
+
+    <h2>API Keys</h2>
+    <p>Your OpenAI API key is stored in the iOS Keychain on your device. It is sent only to OpenAI when you analyze a photo. It is not sent to us.</p>
+
+    <h2>Analytics and Tracking</h2>
+    <p>We do not use analytics SDKs. We do not track you across apps or websites. The App does not display advertisements.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>Your meal, water, and weight data remains on your device until you delete it in the App or uninstall the App. Uninstalling the App removes locally stored data. Your OpenAI API key is removed from the Keychain when you delete it in Settings or uninstall the App.</p>
+
+    <h2>Medical Disclaimer</h2>
+    <p>AI nutrition estimates and tracking features are for general wellness purposes only. They are not medical advice. Always verify nutrition information for allergies, medical conditions, or clinical needs.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The “Last updated” date at the top will change when we do. Continued use of the App after changes means you accept the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:contact@oanarinaldi.com">contact@oanarinaldi.com</a></p>
+
+                      </div>
+                    </div>
+	    		 <!-- Algorithm book End -->
+                
+                  <!-- Archi book Start --><!-- Archi book End -->
+                     
+                    
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
