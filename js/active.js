@@ -3,12 +3,20 @@
 
     var browserWindow = $(window);
 
-    // :: 1.0 Preloader Active Code
-    browserWindow.on('load', function () {
-        $('.preloader').fadeOut('slow', function () {
+    // :: 1.0 Preloader — hide as soon as the DOM is ready.
+    // Do NOT wait for window "load" (every image/video). Gallery pages
+    // have hundreds of MB of assets; waiting made the spinner hang forever.
+    function hidePreloader() {
+        var $preloader = $('.preloader');
+        if (!$preloader.length) {
+            return;
+        }
+        $preloader.fadeOut('fast', function () {
             $(this).remove();
         });
-    });
+    }
+    $(hidePreloader);
+    setTimeout(hidePreloader, 1200);
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
@@ -98,25 +106,28 @@
         });
     }
 
-    // :: 4.0 Masonary Gallery Active Code
-    if ($.fn.imagesLoaded) {
-        $('.oneMusic-albums').imagesLoaded(function () {
-            // filter items on button click
-            $('.catagory-menu').on('click', 'a', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            // init Isotope
-            var $grid = $('.oneMusic-albums').isotope({
+    // :: 4.0 Masonry Gallery — init immediately (do not wait for all images).
+    // Relayout as lazy-loaded images finish so the grid stays tidy while scrolling.
+    if ($.fn.isotope) {
+        var $grid = $('.oneMusic-albums');
+        if ($grid.length) {
+            $grid.isotope({
                 itemSelector: '.single-album-item',
                 percentPosition: true,
                 masonry: {
                     columnWidth: '.single-album-item'
                 }
             });
-        });
+            $('.catagory-menu').on('click', 'a', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+            $grid.on('load', 'img', function () {
+                $grid.isotope('layout');
+            });
+        }
     }
 
     // :: 5.0 Video Active Code
