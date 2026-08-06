@@ -106,28 +106,26 @@
         });
     }
 
-    // :: 4.0 Masonry Gallery — init immediately (do not wait for all images).
-    // Relayout as lazy-loaded images finish so the grid stays tidy while scrolling.
-    if ($.fn.isotope) {
-        var $grid = $('.oneMusic-albums');
-        if ($grid.length) {
-            $grid.isotope({
-                itemSelector: '.single-album-item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.single-album-item'
-                }
-            });
+    // :: 4.0 Masonary Gallery Active Code
+    // Must wait until images have dimensions — otherwise Isotope stacks items wrong.
+    if ($.fn.imagesLoaded) {
+        $('.oneMusic-albums').imagesLoaded(function () {
+            // filter items on button click
             $('.catagory-menu').on('click', 'a', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
                 });
             });
-            $grid.on('load', 'img', function () {
-                $grid.isotope('layout');
+            // init Isotope
+            var $grid = $('.oneMusic-albums').isotope({
+                itemSelector: '.single-album-item',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.single-album-item'
+                }
             });
-        }
+        });
     }
 
     // :: 5.0 Video Active Code
