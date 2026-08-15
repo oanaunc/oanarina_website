@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Privacy Policy for AI Fashion: Dress Me Up — virtual try-on. No accounts, no servers; photos stay on your iPhone and are sent only to OpenAI with your own API key.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Privacy Policy - AI Fashion by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+
+					</pre>
+                         <h2>Privacy Policy for</h2>
+                        <h2>AI Fashion</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+    
+
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+					
+                  <!-- Algorithm book Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+
+                          <!-- Post Excerpt -->
+    <h1>Privacy Policy — AI Fashion: Dress Me Up</h1>
+    <p><strong>Last updated:</strong> 15 August 2026<br>
+    <strong>Developer:</strong> Oana Rinaldi<br>
+    <strong>Bundle ID:</strong> com.oanarinaldi.aifashion<br>
+    <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
+
+    <h2>Summary</h2>
+    <p>AI Fashion has no user accounts and no servers. We do not collect, store, receive or have access to any of your data. Every look you make stays on your iPhone. The two photos you choose for a generation are sent to OpenAI, because that is where the image is made — this page sets out exactly what leaves your device, and when.</p>
+
+    <h2>What We Collect</h2>
+    <p>Nothing. There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app. We, the developer, never receive any information about you or your use of the app.</p>
+
+    <h2>What Stays on Your Device</h2>
+    <ul>
+        <li>Every look you generate — the finished image and both source photos — stored in the app’s private container and excluded from iCloud and iTunes backups.</li>
+        <li>The date, the garment type and any instruction you typed, stored alongside each look.</li>
+        <li>Your OpenAI API key, stored in the iOS Keychain with the “when unlocked, this device only” protection class, which means it is excluded from backups and never syncs to another device.</li>
+        <li>Your app preferences, such as image quality and how long to keep looks.</li>
+    </ul>
+    <p>Deleting the app removes all of it permanently.</p>
+
+    <h2>What Is Sent to OpenAI</h2>
+    <p>When you tap Dress Me Up, the app sends the two photos you selected and a text instruction directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with the API key you supplied. This is the only network request the app makes, apart from a check that your key is valid when you tap Test Connection.</p>
+    <p>This data goes to OpenAI, not to us. It is processed under your own OpenAI account and is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
+    <p>Nothing is sent unless you tap Dress Me Up. Browsing the Styles guide, taking the “What’s my style?” quiz and looking through your saved looks all work entirely offline.</p>
+
+    <h2>Photos and Camera</h2>
+    <p>The app never asks for access to your photo library. Choosing a picture uses Apple’s system photo picker, which runs outside the app and hands over only the single image you select — the app cannot see anything else in your library.</p>
+    <p>Camera access is requested only if you choose to take a photo. Add-only photo permission is requested only at the moment you choose to save a look to your Photos library. Generated looks are never saved there automatically.</p>
+
+    <h2>How Long Looks Are Kept</h2>
+    <p>By default, until you delete them. In Settings you can choose to keep looks for 7, 30 or 90 days and switch on automatic cleanup, which removes anything older once a day. You can also delete everything at once, or delete only the source photos and keep the results. Cleanup never touches your API key — removing that is a separate, clearly labelled action.</p>
+
+    <h2>Photographs of Other People</h2>
+    <p>AI Fashion is intended for use on your own photographs, or on photographs of people who have agreed to it. Generating altered images of someone without their consent is prohibited by OpenAI’s usage policies and is not a use this app supports. Requests that cross those lines are refused by OpenAI, and the app shows you the refusal and the reason.</p>
+
+    <h2>What This App Cannot Promise</h2>
+    <p>The image model regenerates your photograph rather than cutting and pasting clothing onto it. The app instructs it to preserve your face, hair, body, pose, background and lighting, and that instruction works well — but it is guidance to a model, not a guarantee. Every result opens on a before-and-after comparison slider so you can judge the likeness for yourself rather than take our word for it.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children and collects no data from anyone. Generating images requires an OpenAI account, which OpenAI restricts by age.</p>
+
+    <h2>Your Rights</h2>
+    <p>Because we hold no data about you, there is nothing for us to disclose, correct or delete. To remove everything the app has stored, use Settings &gt; Delete AI Fashion Data, or delete the app.</p>
+    <p>For data held by OpenAI under your account, contact OpenAI directly.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
+
+    <h2>Support</h2>
+    <p>For help getting started, billing questions or common problems, see the <a href="aifashionsupport.html">AI Fashion Support page</a>.</p>
+
+                          <h2>Contact</h2>
+    <p>If you have any questions about this policy, contact us at: <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
+
+                      </div>
+                    </div>
+	    		 <!-- Algorithm book End -->
+                
+                  <!-- Archi book Start --><!-- Archi book End -->
+                     
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2026 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
