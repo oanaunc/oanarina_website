@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover Oana Rinaldi's handmade couture jackets: one-of-a-kind wearable art embellished with embroidery, flowers, pearls, sequins and sculptural details.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Handmade Couture Jackets by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+    <link rel="stylesheet" href="css/lightgallery.min.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">  
+    <link rel="stylesheet" href="css/swiper.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Custom styles for shoe collections */
+        .shoe-collection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .shoe-collection-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        /* Make lightbox description text white */
+        .lg-sub-html {
+            color: #FFF !important;
+        }
+        
+        .lg-sub-html h4,
+        .lg-sub-html h6,
+        .lg-sub-html p {
+            color: #FFF !important;
+        }
+
+        .jacket-page { background: linear-gradient(180deg, #fff 0%, #fbf8f5 50%, #fff 100%); padding-bottom: 80px; }
+        .jacket-hero { min-height: 520px; display: flex; align-items: flex-end; background-position: center 30%; }
+        .jacket-hero-heading { margin-bottom: 15px; text-align: left; }
+        .jacket-hero-heading h2 { font-size: clamp(2.7rem, 6vw, 5.5rem); letter-spacing: -.04em; text-transform: none; margin-bottom: 10px; }
+        .jacket-hero-heading p { color: #fff; font-size: 1.15rem; letter-spacing: .08em; }
+        .jacket-eyebrow { display: inline-block; color: #fff; font-size: .78rem; letter-spacing: .25em; text-transform: uppercase; margin-bottom: 18px; }
+        .jacket-intro { max-width: 900px; margin: 85px auto 100px; }
+        .jacket-intro span { color: #a4775a; font-size: .76rem; letter-spacing: .24em; text-transform: uppercase; }
+        .jacket-intro h3 { font-family: "Josefin Sans", sans-serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.18; margin: 22px 0; }
+        .jacket-intro p { color: #6e6863; font-size: 1.05rem; line-height: 1.9; }
+        .jacket-collection { position: relative; max-width: 1500px; margin: 0 auto 105px; padding: 0 25px; }
+        .jacket-collection-copy { display: flex; gap: 24px; align-items: flex-start; max-width: 980px; margin: 0 auto 34px; }
+        .collection-number { color: #b9957f; font-size: .8rem; letter-spacing: .15em; border-top: 1px solid #b9957f; padding-top: 10px; min-width: 45px; }
+        .jacket-collection-copy h3 { font-size: clamp(1.7rem, 3vw, 2.65rem); font-weight: 400; margin-bottom: 12px; }
+        .jacket-collection-copy p { color: #746d68; line-height: 1.8; margin-bottom: 0; }
+        .jacket-gallery { justify-content: center; }
+        .jacket-gallery .single-album-item { cursor: zoom-in; padding: 10px; }
+        .jacket-gallery .single-album-area { margin-bottom: 0; overflow: hidden; background: #ece5df; box-shadow: 0 16px 40px rgba(63, 46, 37, .08); transition: transform .5s cubic-bezier(.2,.75,.25,1), box-shadow .5s ease; }
+        .jacket-gallery .album-thumb { position: relative; overflow: hidden; }
+        .jacket-gallery .album-thumb::after { content: "View"; position: absolute; inset: auto 16px 16px auto; width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,.92); color: #3f332d; display: grid; place-items: center; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; opacity: 0; transform: translateY(10px); transition: .35s ease; }
+        .jacket-gallery img { width: 100%; height: auto; transition: transform .8s cubic-bezier(.2,.75,.25,1), filter .5s ease; }
+        .jacket-gallery .single-album-item:hover .single-album-area { transform: translateY(-8px); box-shadow: 0 24px 55px rgba(63, 46, 37, .16); }
+        .jacket-gallery .single-album-item:hover img { transform: scale(1.045); filter: saturate(1.04) contrast(1.02); }
+        .jacket-gallery .single-album-item:hover .album-thumb::after { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) { .jacket-gallery *, .jacket-gallery *::after { transition: none !important; } }
+        @media (max-width: 767px) { .jacket-hero { min-height: 420px; } .jacket-hero-heading { text-align: center; } .jacket-intro { margin: 65px auto 75px; } .jacket-collection { margin-bottom: 75px; padding: 0 12px; } .jacket-collection-copy { gap: 14px; } }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="jackets.html">Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="jackets.html">Jackets</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+                                    
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                            
+                            <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+                            </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+	
+    
+    <!-- ##### Jacket Hero Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img jacket-hero" style="background-image: url(img/bg-img/breadcumb22.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white jacket-hero-heading">
+                        <span class="jacket-eyebrow">Wearable Art · One-of-a-Kind</span>
+                        <h2>Handmade Couture Jackets</h2>
+                        <p>Embellished by hand, designed to be remembered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Jacket Hero End ##### -->
+
+    <section class="album-catagory jacket-page">
+        <div class="site-section" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="jacket-intro text-center">
+                            <span>Oana Rinaldi Fashion Atelier</span>
+                            <h3>Jackets transformed into singular works of wearable art</h3>
+                            <p>Each piece begins with a classic silhouette and becomes entirely its own through embroidery, hand-applied flowers, bows, pearls, sequins and sculptural details. Explore every jacket from the front, back and close up; select any image to open the full editorial gallery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy">
+                        <span class="collection-number">01</span>
+                        <div><h3>Crimson Poppy Nocturne</h3><p>A vivid red biker jacket softened by hand-built poppies and deep botanical embroidery. The clean asymmetric front gives way to an opulent garden across the back—a contrast between structure and romantic abundance.</p></div>
+                    </div>
+                    <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-red">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4287.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Front View</h4><p>Sculptural poppies animate the asymmetric red silhouette.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4287.jpg" alt="Crimson Poppy Nocturne handmade jacket front view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4288.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Three-Quarter View</h4><p>Textural red flowers, matte suede and graphic metal zippers.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4288.jpg" alt="Crimson Poppy Nocturne three-quarter view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4289.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Embroidered Back</h4><p>A dramatic botanical composition in burgundy, green and black.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4289.jpg" alt="Crimson Poppy Nocturne embroidered back" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4290.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Back Detail</h4><p>Layered embroidery and dimensional poppies reveal meticulous handwork.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4290.jpg" alt="Crimson Poppy Nocturne back detail" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4291.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Embroidery Close-Up</h4><p>Fine threadwork, pearls and petals create a richly tactile surface.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4291.jpg" alt="Crimson Poppy Nocturne embroidery close-up" loading="lazy"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy"><span class="collection-number">02</span><div><h3>Emerald Secret Garden</h3><p>Deep emerald suede becomes a quiet landscape for blush roses, mint bows and jewel-toned butterflies. Transparent mesh allows the floral composition to float across the jacket like a pressed garden preserved in motion.</p></div></div>
+                    <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-emerald">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4292.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Back View</h4><p>Blush florals and butterflies float over emerald suede.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4292.jpg" alt="Emerald Secret Garden jacket back" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4293.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Botanical Detail</h4><p>Delicate mesh, satin bows and embroidered roses in close detail.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4293.jpg" alt="Emerald Secret Garden botanical detail" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4294.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Back Perspective</h4><p>The asymmetric garden follows the body's movement.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4294.jpg" alt="Emerald Secret Garden back perspective" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4295.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Front View</h4><p>A floral mesh panel and jewel-like butterflies frame the front.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4295.jpg" alt="Emerald Secret Garden front view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4296.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Front Detail</h4><p>Embroidery, organza and butterfly embellishment meet at the lapel.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4296.jpg" alt="Emerald Secret Garden front detail" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4297.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Side Detail</h4><p>Metal zippers bring a modern edge to the romantic handwork.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4297.jpg" alt="Emerald Secret Garden side detail" loading="lazy"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy"><span class="collection-number">03</span><div><h3>Champagne Winged Heart</h3><p>A warm champagne jacket with a restrained floral front and an unforgettable metallic heart across the back. A feathered butterfly rests on its edge, turning the piece into a tender emblem of movement, affection and transformation.</p></div></div>
+                    <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-champagne">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4298.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Front Perspective</h4><p>Soft champagne suede with hand-applied blossoms and gold details.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4298.jpg" alt="Champagne Winged Heart front perspective" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4299.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Front View</h4><p>An elegant neutral silhouette punctuated by delicate ornament.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4299.jpg" alt="Champagne Winged Heart front view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4300.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Heart Back</h4><p>A monumental gold heart and feathered butterfly create the signature view.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4300.jpg" alt="Champagne Winged Heart jacket back" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4302.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Back Perspective</h4><p>The metallic heart catches light with every change of angle.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4302.jpg" alt="Champagne Winged Heart back perspective" loading="lazy"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy"><span class="collection-number">04</span><div><h3>Fuchsia Blossom Rhapsody</h3><p>Fuchsia suede meets pale blush embroidery, pearl chains, crystalline centers and sculptural flowers. Romantic without becoming delicate, this jacket balances vivid color with intricate couture detailing.</p></div></div>
+                    <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-fuchsia">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4303.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Embroidered Back</h4><p>A sweeping pale-pink garden blooms across saturated fuchsia.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4303.jpg" alt="Fuchsia Blossom Rhapsody embroidered back" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4305.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Back Perspective</h4><p>Layered flowers and mesh give the composition depth and movement.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4305.jpg" alt="Fuchsia Blossom Rhapsody back perspective" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4306.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Front View</h4><p>Blush blossoms and pearl details sweep across the asymmetric front.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4306.jpg" alt="Fuchsia Blossom Rhapsody front view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4307.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Front Embroidery</h4><p>Fine floral threadwork, pearls and bows reveal the couture finish.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4307.jpg" alt="Fuchsia Blossom Rhapsody embroidery detail" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4308.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Three-Quarter Front</h4><p>Graphic zippers sharpen the softness of embroidered flowers.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4308.jpg" alt="Fuchsia Blossom Rhapsody three-quarter front" loading="lazy"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy"><span class="collection-number">05</span><div><h3>Azure Beaded Garland</h3><p>A clear turquoise silhouette conceals an exuberant back: sequined flowers, pearl-centered blossoms and densely beaded leaves form a luminous garland. Tone-on-tone ornament makes the craftsmanship emerge gradually as the light moves.</p></div></div>
+                    <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-azure">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4309.jpg" data-sub-html="<h6>Azure Beaded Garland</h6><h4>Minimal Front</h4><p>A clean turquoise front creates a striking moment of restraint.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4309.jpg" alt="Azure Beaded Garland front view" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4310.jpg" data-sub-html="<h6>Azure Beaded Garland</h6><h4>Beaded Back</h4><p>Sequined blossoms and intricate leaves form a radiant turquoise garland.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4310.jpg" alt="Azure Beaded Garland embellished back" loading="lazy"></div></div></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4311.jpg" data-sub-html="<h6>Azure Beaded Garland</h6><h4>Beadwork Detail</h4><p>Pearls, sequins and woven beads create a luminous tonal relief.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4311.jpg" alt="Azure Beaded Garland beadwork detail" loading="lazy"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/idgallery.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            $('.jacket-gallery').each(function () {
+                $(this).lightGallery({
+                    mode: 'lg-slide',
+                    speed: 650,
+                    share: false,
+                    actualSize: false,
+                    download: false,
+                    thumbnail: true
+                });
+            });
+
+            $('.jacket-gallery .single-album-item').each(function (index) {
+                $(this).attr('data-aos', 'fade-up');
+                $(this).attr('data-aos-delay', String((index % 6) * 70));
+            });
+        });
+    </script>
+</body>
+
+</html>
