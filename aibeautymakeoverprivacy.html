@@ -236,16 +236,17 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Beauty Makeover</h1>
-    <p><strong>Last updated:</strong> 19 August 2026<br>
+    <p><strong>Last updated:</strong> 24 August 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle ID:</strong> com.oanarinaldi.aibeautymakeover<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Beauty Makeover has no user accounts and no developer-operated servers. We do not collect, store, receive or have access to your data. Every saved makeover stays on your iPhone or iPad. The portrait and makeup reference you choose for a generation are sent directly to OpenAI, because that is where the image is created — this page explains exactly what leaves your device, and when.</p>
+    <p>AI Beauty Makeover has no user accounts and no developer-operated servers. We do not collect, store, receive or have access to your data. Every saved makeover stays on your iPhone or iPad. The portrait and makeup reference you choose for a generation are sent directly to OpenAI, because that is where the image is created — and only after you have explicitly agreed to it on a screen that names OpenAI and lists what is sent. This page explains exactly what leaves your device, when, and how to stop it.</p>
 
     <h2>What We Collect</h2>
-    <p>Nothing. There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app. We, the developer, never receive any information about you or your use of the app.</p>
+    <p><strong>We collect nothing.</strong> There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app, and we, the developer, never receive any information about you or your use of the app.</p>
+    <p>The app does, with your permission and at your request, send the photographs you choose directly to one third party — OpenAI — because that is where the image is created. It never passes through us. See <a href="#sent-to-openai">What Is Sent to OpenAI</a> below for exactly what is sent, who receives it, and how your permission is asked for and withdrawn.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
@@ -256,10 +257,24 @@
     </ul>
     <p>Deleting the app removes all of it permanently.</p>
 
-    <h2>What Is Sent to OpenAI</h2>
-    <p>When you tap Generate Makeover, the app sends the portrait, makeup reference and text instruction directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with the API key you supplied. This is the only network request the app makes, apart from a check that your key is valid when you tap Test Connection.</p>
+    <h2 id="sent-to-openai">What Is Sent to OpenAI</h2>
+    <p>When you tap <strong>Create My Makeover</strong>, the app sends the following directly from your device to OpenAI’s API (<code>api.openai.com/v1/images/edits</code>):</p>
+    <ul>
+        <li>the portrait you selected;</li>
+        <li>the makeup reference you selected;</li>
+        <li>any instruction you typed, if you added one;</li>
+        <li>your OpenAI API key, to authorise the request.</li>
+    </ul>
+    <p>Photographs are re-encoded before they are sent, which removes EXIF metadata including any location recorded by the camera. Your name, email address and contacts are never sent, because the app never asks for them. This is the only network request the app makes, apart from a check that your key is valid when you tap Test Connection.</p>
     <p>This data goes to OpenAI, not to us. It is processed under your own OpenAI account and is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
     <p>Nothing is sent unless you request a makeover. Browsing the makeup Styles guide, taking the style quiz and looking through saved looks all work entirely offline.</p>
+
+    <h2>Your permission</h2>
+    <p>Nothing is sent to OpenAI without your explicit agreement. Before your first makeover, AI Beauty Makeover shows a screen that names OpenAI, lists exactly what will be sent — the four items above — and asks you to agree. If you decline, no image is transmitted and the rest of the app continues to work.</p>
+    <p>You can withdraw that agreement at any time in <strong>Settings › Privacy</strong>, using the “Send photos to OpenAI” switch. Turning it off immediately stops the app from sending anything; your saved looks, your preferences and your API key are untouched. Turning it back on asks for your agreement again, on the same screen, so permission is never granted without the disclosure.</p>
+
+    <h2>Protection by OpenAI</h2>
+    <p>OpenAI, L.L.C. is the only third party that ever receives data from this app. Under OpenAI’s API terms and API data usage policies, OpenAI commits to protections for data submitted through the API that are equal to or greater than the protections described in this policy: data submitted through the API is not used to train OpenAI’s models by default, and OpenAI applies its own security, retention and deletion controls to it. Those terms are published at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. No other third party — no analytics provider, no advertising network, no SDK — receives anything, because the app contains none.</p>
 
     <h2>Photos and Camera</h2>
     <p>The app never asks for access to your photo library. Choosing a picture uses Apple’s system photo picker, which runs outside the app and hands over only the single image you select — the app cannot see anything else in your library.</p>
@@ -279,7 +294,8 @@
 
     <h2>Your Rights</h2>
     <p>Because we hold no data about you, there is nothing for us to disclose, correct or delete. To remove locally stored content, use the delete-data controls in Settings or delete the app.</p>
-    <p>For data held by OpenAI under your account, contact OpenAI directly.</p>
+    <p><strong>To withdraw your consent</strong> to photographs being sent to OpenAI, switch off “Send photos to OpenAI” in Settings › Privacy. This takes effect immediately and nothing further is transmitted. You can turn it back on at any time.</p>
+    <p>For data held by OpenAI under your account — including any request to access or delete it — contact OpenAI directly, since that data sits in your own OpenAI account and we have no access to it.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
