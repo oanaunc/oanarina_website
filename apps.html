@@ -91,35 +91,6 @@
             background: #5f2eea;
         }
 
-        .featured-app {
-            display: grid;
-            grid-template-columns: 190px 1fr;
-            gap: 34px;
-            align-items: center;
-            padding: 38px;
-            border: 1px solid #ececf3;
-            border-radius: 22px;
-            box-shadow: 0 14px 40px rgba(21, 21, 40, .08);
-            background: #fff;
-        }
-
-        .featured-app .app-icon {
-            width: 190px;
-            height: 190px;
-            border-radius: 38px;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, .16);
-        }
-
-        .featured-app .post-title {
-            display: inline-block;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        .featured-app p:last-child {
-            margin-bottom: 0;
-        }
-
         .more-apps-heading {
             margin: 25px 0 30px;
             text-align: center;
@@ -183,9 +154,6 @@
         }
 
         @media (max-width: 767px) {
-            .featured-app { grid-template-columns: 1fr; padding: 25px; text-align: center; }
-            .featured-app .app-icon { width: 150px; height: 150px; margin: 0 auto; }
-            .featured-app .post-meta { justify-content: center; }
             .more-apps-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -368,51 +336,140 @@
                         <a class="app-store-link" href="https://apps.apple.com/us/developer/oana-rinaldi/id1709880614" target="_blank" rel="noopener">View all apps on the App Store</a>
                     </div>
 
-                    <div class="single-blog-post featured-app mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <a href="https://apps.apple.com/us/app/ai-beauty-makeover/id6803126550" target="_blank" rel="noopener"><img class="app-icon" src="images/apps/icons/6803126550.jpg" alt="AI Beauty Makeover app icon"></a>
-                        <div class="blog-content">
-                            <a href="https://apps.apple.com/us/app/ai-beauty-makeover/id6803126550" target="_blank" rel="noopener" class="post-title">AI Beauty Makeover</a>
-                            <div class="post-meta d-flex mb-30"><p class="post-author">Photo &amp; Video</p><p class="tags">Free App</p><p class="tags">iOS</p></div>
-                            <p>Discover a makeup look before reaching for the brushes. Combine your portrait with a makeup reference or explore 20 curated looks, from natural glow and soft glam to graphic liner and colorful editorial makeup. Compare before and after, refine the result with your own instructions, and save favorite makeovers on your device.</p>
-                        </div>
-                    </div>
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-beauty-makeover/id6803126550"
+                            target="_blank"><img src="images/apps/app10.jpg" alt=""></a>
 
-                    <div class="single-blog-post featured-app mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802" target="_blank" rel="noopener"><img class="app-icon" src="images/apps/icons/6797901802.jpg" alt="AI Home Makeover app icon"></a>
-                        <div class="blog-content">
-                            <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802" target="_blank" rel="noopener" class="post-title">AI Home Makeover</a>
-                            <div class="post-meta d-flex mb-30"><p class="post-author">Lifestyle</p><p class="tags">Free App</p><p class="tags">iOS</p></div>
-                            <p>Reimagine any room in seconds. Upload a photo, choose from 12 designer styles, fine-tune the color mood and decide exactly what to keep or change. Every makeover is saved to Projects, with unlimited variations and a before-and-after slider to make comparisons easy.</p>
                         </div>
-                    </div>
 
-                    <div class="single-blog-post featured-app mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681" target="_blank" rel="noopener"><img class="app-icon" src="images/apps/icons/6799261681.jpg" alt="AI Architecture Render app icon"></a>
+                        <!-- Blog Content -->
                         <div class="blog-content">
-                            <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681" target="_blank" rel="noopener" class="post-title">AI Architecture Render</a>
-                            <div class="post-meta d-flex mb-30"><p class="post-author">Graphics &amp; Design</p><p class="tags">Free App</p><p class="tags">iOS</p></div>
-                            <p>Turn hand sketches, 3D model screenshots, room photos and floor plans into finished architectural images. Create interior and exterior renders, clean presentation plans and views generated from floor plans, with controls for style, light, materials and how faithfully the original geometry is preserved.</p>
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-beauty-makeover/id6803126550"
+                            target="_blank" class="post-title">AI Beauty Makeover</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Photo &amp; Video</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Discover a makeup look before reaching for the brushes. Combine your portrait with a makeup reference or explore 20 curated looks, from natural glow and soft glam to graphic liner and colorful editorial makeup. Compare before and after, refine the result with your own instructions, and save favorite makeovers on your device.</p>
                         </div>
                     </div>
+	    		 <!-- Single Post End -->
 
-                    <div class="single-blog-post featured-app mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <a href="https://apps.apple.com/us/app/ai-fashion-dress-me-up/id6801808515" target="_blank" rel="noopener"><img class="app-icon" src="images/apps/icons/6801808515.jpg" alt="AI Fashion app icon"></a>
-                        <div class="blog-content">
-                            <a href="https://apps.apple.com/us/app/ai-fashion-dress-me-up/id6801808515" target="_blank" rel="noopener" class="post-title">AI Fashion: Dress Me Up</a>
-                            <div class="post-meta d-flex mb-30"><p class="post-author">Lifestyle</p><p class="tags">Free App</p><p class="tags">iOS</p></div>
-                            <p>See what you would look like in clothes you have not bought yet. Add a photo of yourself and an outfit, choose the whole look or one specific piece, then compare the result with the original. The app also includes an offline guide to 14 fashion styles and a personal style quiz.</p>
-                        </div>
-                    </div>
 
-                    <div class="single-blog-post featured-app mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <a href="https://apps.apple.com/us/app/ai-plant-recognize/id6795512036" target="_blank" rel="noopener"><img class="app-icon" src="images/apps/icons/6795512036.jpg" alt="AI Plant Recognize app icon"></a>
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802"
+                            target="_blank"><img src="images/apps/app11.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
                         <div class="blog-content">
-                            <a href="https://apps.apple.com/us/app/ai-plant-recognize/id6795512036" target="_blank" rel="noopener" class="post-title">AI Plant Recognize</a>
-                            <div class="post-meta d-flex mb-30"><p class="post-author">Reference</p><p class="tags">Free App</p><p class="tags">iOS</p></div>
-                            <p>Identify plants in seconds, learn exactly how to care for them and check their health. Search a large plant database, save favorites in your own private garden and set watering reminders. It works without an account, keeps your collection on your device and offers both free database search and optional AI modes.</p>
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802"
+                            target="_blank" class="post-title">AI Home Makeover</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Lifestyle</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Reimagine any room in seconds. Upload a photo, choose from 12 designer styles, fine-tune the color mood and decide exactly what to keep or change. Every makeover is saved to Projects, with unlimited variations and a before-and-after slider to make comparisons easy.</p>
                         </div>
                     </div>
-                
+	    		 <!-- Single Post End -->
+
+
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681"
+                            target="_blank"><img src="images/apps/app12.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681"
+                            target="_blank" class="post-title">AI Architecture Render</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Graphics &amp; Design</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Turn hand sketches, 3D model screenshots, room photos and floor plans into finished architectural images. Create interior and exterior renders, clean presentation plans and views generated from floor plans, with controls for style, light, materials and how faithfully the original geometry is preserved.</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+
+
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-fashion-dress-me-up/id6801808515"
+                            target="_blank"><img src="images/apps/app13.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-fashion-dress-me-up/id6801808515"
+                            target="_blank" class="post-title">AI Fashion: Dress Me Up</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Lifestyle</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">See what you would look like in clothes you have not bought yet. Add a photo of yourself and an outfit, choose the whole look or one specific piece, then compare the result with the original. The app also includes an offline guide to 14 fashion styles and a personal style quiz.</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+
+
+                  <!-- Single Post Start -->
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-plant-recognize/id6795512036"
+                            target="_blank"><img src="images/apps/app14.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-plant-recognize/id6795512036"
+                            target="_blank" class="post-title">AI Plant Recognize</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Reference</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Identify plants in seconds, learn exactly how to care for them and check their health. Search a large plant database, save favorites in your own private garden and set watering reminders. It works without an account, keeps your collection on your device and offers both free database search and optional AI modes.</p>
+                        </div>
+                    </div>
+	    		 <!-- Single Post End -->
+
                   <!-- Single Post Start -->
                     <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Post Thumb -->
