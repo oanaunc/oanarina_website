@@ -1,0 +1,40 @@
+.exhibitions-container { max-width: 1800px; margin: 0 auto; padding: 0 30px; }
+.exhibitions-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 30px; }
+.exhibition-card { min-width: 0; }
+.exhibition-card .single-event-area { height: 100%; margin-bottom: 0; display: flex; flex-direction: column; }
+.exhibition-card .event-thumbnail { background: #f2f2f2; }
+.exhibition-card .event-thumbnail img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.exhibition-card .event-text { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 24px 18px; }
+.exhibition-card .event-text h4 { font-size: 19px; line-height: 1.4; overflow-wrap: anywhere; }
+.exhibition-card .event-meta-data span { display: block; color: #fff; font-size: 14px; line-height: 1.7; transition: color 500ms; }
+.exhibition-card .event-meta-data .event-date { margin-top: 8px; }
+.exhibition-card .event-text .see-more-btn { margin-top: auto; letter-spacing: 5px; }
+.exhibition-card .single-event-area:hover .event-meta-data span { color: #000; }
+.exhibition-card .see-more-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
+.lg-sub-html h4 { color: #fff; font-size: 18px; }
+.lg-sub-html p { color: #fff; font-size: 13px; margin: 4px 0; line-height: 1.5; }
+@media (min-width: 576px) { .exhibitions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .exhibitions-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1200px) { .exhibitions-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1500px) { .exhibitions-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (max-width: 575px) { .exhibitions-container { padding: 0 20px; } .lg-sub-html p { font-size: 11px; } }
+
+/* Keep the seminar poster legible and portrait covers framed above center. */
+#game-mechanics-live .event-thumbnail { background: #171d20; }
+#game-mechanics-live .event-thumbnail img { object-fit: contain; }
+#doctoral-research-2025 .event-thumbnail img { object-position: center 25%; }
+
+/* Extend the existing event link over its entire card. */
+.exhibition-card .event-text { position: static; }
+.exhibition-card .see-more-btn { position: static; }
+.exhibition-card .see-more-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.exhibition-card .single-event-area:focus-within {
+    outline: 2px solid #333;
+    outline-offset: 5px;
+}
