@@ -87,8 +87,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "graphicdesign": {
-    "src": "media/motion/graphicdesign-header.mp4",
-    "poster": "img/bg-img/breadcumb9.jpg",
+    "src": "media/motion/graphicdesign.mp4",
+    "poster": "img/bg-img/breadcumb-graphicdesign.jpg",
     "sameImage": true
   },
   "shoes": {
@@ -102,8 +102,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "origami": {
-    "src": "media/motion/origami-header.mp4",
-    "poster": "img/bg-img/breadcumb19.jpg",
+    "src": "media/motion/origami.mp4",
+    "poster": "img/bg-img/breadcumb-origami.jpg",
     "sameImage": true
   },
   "artbio": {
