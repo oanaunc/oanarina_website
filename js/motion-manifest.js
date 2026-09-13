@@ -57,8 +57,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "3dmodels": {
-    "src": "media/motion/archipublications.mp4",
-    "poster": "img/bg-img/breadcumb5.jpg",
+    "src": "media/motion/3dmodels.mp4",
+    "poster": "img/bg-img/breadcumb-3dmodels.jpg",
     "sameImage": true
   },
   "albums": {
