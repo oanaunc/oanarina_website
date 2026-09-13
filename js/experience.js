@@ -12,6 +12,24 @@
   try { disabled ||= localStorage.getItem('oana-motion') === 'off'; } catch (_) {}
   const saveData = Boolean(navigator.connection?.saveData);
   let near = false, target = 0, scheduled = false, carouselStopped = false;
+  const artist = name === 'index' ? document.querySelector('.featured-artist-area') : null;
+  const portrait = artist?.querySelector('.featured-artist-thumb');
+  let portraitX = 0, portraitY = 0;
+  if (portrait) {
+    artist.classList.add('artist-motion');
+    const orbit = document.createElement('span');
+    orbit.className = 'portrait-orbit';
+    orbit.setAttribute('aria-hidden', 'true');
+    portrait.append(orbit);
+    portrait.addEventListener('pointermove', event => {
+      if (disabled || event.pointerType !== 'mouse') return;
+      const rect = portrait.getBoundingClientRect();
+      portraitX = (event.clientX - rect.left) / rect.width - .5;
+      portraitY = (event.clientY - rect.top) / rect.height - .5;
+      schedule();
+    });
+    portrait.addEventListener('pointerleave', () => { portraitX = 0; portraitY = 0; schedule(); });
+  }
   const wrapper = document.createElement('div'); wrapper.className = 'motion-scroll';
   stage.before(wrapper); wrapper.append(stage); stage.classList.add('motion-stage');
   const after = document.createElement('span'); after.id = 'motion-content'; wrapper.after(after);
@@ -61,6 +79,18 @@
   function schedule() { if (!scheduled) { scheduled = true; requestAnimationFrame(update); } }
   function update() {
     scheduled = false;
+    if (portrait) {
+      const bounds = artist.getBoundingClientRect();
+      if (disabled || (bounds.bottom > 0 && bounds.top < innerHeight)) {
+        const progress = disabled ? .5 : Math.max(0, Math.min(1, (innerHeight - bounds.top) / (innerHeight + bounds.height)));
+        artist.style.setProperty('--portrait-lift', `${disabled ? 0 : (progress - .5) * -48}px`);
+        artist.style.setProperty('--portrait-scale', String(disabled ? 1 : .97 + progress * .06));
+        artist.style.setProperty('--portrait-orbit', `${progress * 150}deg`);
+        artist.style.setProperty('--portrait-tilt-x', `${disabled ? 0 : -portraitY * 8}deg`);
+        artist.style.setProperty('--portrait-tilt-y', `${disabled ? 0 : portraitX * 8}deg`);
+        artist.style.setProperty('--artist-copy-lift', `${disabled ? 0 : (progress - .5) * -18}px`);
+      }
+    }
     const rect = wrapper.getBoundingClientRect();
     const stickyOffset = Math.max(0, stage.offsetHeight - innerHeight);
     const distance = Math.max(1, wrapper.offsetHeight - stage.offsetHeight);

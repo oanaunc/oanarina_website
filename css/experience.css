@@ -8,3 +8,20 @@
 .motion-off .motion-scroll>.motion-stage:not(.hero-area){min-height:0}
 .motion-off .motion-stage.hero-area .single-hero-slide{min-height:0}
 @media(max-width:600px){.motion-scroll-cue{bottom:70px}}
+
+/* The artist introduction: a floating portrait and scroll-driven geometric orbit. */
+.artist-motion .featured-artist-thumb{
+  position:relative;isolation:isolate;max-width:360px;margin:0 auto;
+  transform:perspective(900px) translateY(var(--portrait-lift,0px)) rotateX(var(--portrait-tilt-x,0deg)) rotateY(var(--portrait-tilt-y,0deg)) scale(var(--portrait-scale,1));
+  transition:transform .3s ease-out;
+}
+.artist-motion .featured-artist-thumb img{display:block;width:100%;border-radius:50%;box-shadow:0 22px 55px #0005;position:relative;z-index:1}
+.artist-motion .featured-artist-thumb::before{content:"";position:absolute;inset:-20px;border:1px solid #ffffff38;border-radius:50%;transform:rotate(-24deg) scaleX(1.07);pointer-events:none}
+.portrait-orbit{position:absolute;inset:-11px;border:1px solid #e8bed46b;border-radius:50%;transform:rotate(var(--portrait-orbit,0deg));transition:transform .3s ease-out;pointer-events:none;z-index:2}
+.portrait-orbit::before,.portrait-orbit::after{content:"";position:absolute;left:50%;top:-4px;width:7px;height:7px;border-radius:50%;background:#e8bed4;box-shadow:0 0 15px #e8bed499}
+.portrait-orbit::after{left:14%;top:auto;bottom:12%;width:5px;height:5px;background:#c9c4ee;box-shadow:0 0 12px #c9c4ee88}
+.artist-motion .featured-artist-content{transform:translateY(var(--artist-copy-lift,0px));transition:transform .3s ease-out}
+.motion-off .artist-motion .featured-artist-thumb,.motion-off .artist-motion .featured-artist-content{transform:none;transition:none}
+.motion-off .portrait-orbit,.motion-off .artist-motion .featured-artist-thumb::before{display:none}
+@media(max-width:767px){.artist-motion .featured-artist-thumb{max-width:280px;margin:12px auto 52px}.artist-motion .featured-artist-content{transform:none}}
+@media(prefers-reduced-motion:reduce){.artist-motion .featured-artist-thumb,.artist-motion .featured-artist-content{transform:none!important;transition:none!important}.portrait-orbit,.artist-motion .featured-artist-thumb::before{display:none}}
