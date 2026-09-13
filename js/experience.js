@@ -11,6 +11,44 @@
   let disabled = mq.matches;
   try { disabled ||= localStorage.getItem('oana-motion') === 'off'; } catch (_) {}
   const saveData = Boolean(navigator.connection?.saveData);
+  // Reuse the first-generation car drawing film behind the contact form.
+  const contact = name === 'index' ? document.querySelector('#contact') : null;
+  let contactFilm = null, contactNear = false;
+  function syncContactFilm() {
+    if (!contactFilm) return;
+    const active = contactNear && !disabled && !saveData && !document.hidden;
+    contact.classList.toggle('contact-in-view', active);
+    if (active) {
+      if (!contactFilm.getAttribute('src')) contactFilm.src = 'media/motion/drawing.mp4';
+      contactFilm.play().catch(() => {}); // The artwork still remains if autoplay is unavailable.
+    } else contactFilm.pause();
+  }
+  if (contact) {
+    contact.classList.add('contact-motion');
+    const backdrop = document.createElement('div');
+    backdrop.className = 'contact-art-backdrop';
+    backdrop.setAttribute('aria-hidden', 'true');
+    contactFilm = document.createElement('video');
+    contactFilm.muted = true; contactFilm.loop = true; contactFilm.playsInline = true;
+    contactFilm.setAttribute('muted', ''); contactFilm.setAttribute('playsinline', '');
+    contactFilm.preload = 'none'; contactFilm.tabIndex = -1; contactFilm.playbackRate = .65;
+    contactFilm.addEventListener('playing', () => backdrop.classList.add('film-ready'));
+    contactFilm.addEventListener('error', () => backdrop.classList.remove('film-ready'));
+    backdrop.append(contactFilm); contact.prepend(backdrop);
+    new IntersectionObserver(entries => {
+      contactNear = entries[0].isIntersecting; syncContactFilm();
+    }, {rootMargin: '100px'}).observe(contact);
+    contact.addEventListener('pointermove', event => {
+      if (disabled || event.pointerType !== 'mouse') return;
+      const rect = contact.getBoundingClientRect();
+      contact.style.setProperty('--contact-light-x', `${(event.clientX - rect.left) / rect.width * 100}%`);
+      contact.style.setProperty('--contact-light-y', `${(event.clientY - rect.top) / rect.height * 100}%`);
+    });
+    contact.addEventListener('pointerleave', () => {
+      contact.style.removeProperty('--contact-light-x'); contact.style.removeProperty('--contact-light-y');
+    });
+    document.addEventListener('visibilitychange', syncContactFilm);
+  }
   let near = false, target = 0, scheduled = false, carouselStopped = false;
   const artist = name === 'index' ? document.querySelector('.featured-artist-area') : null;
   const portrait = artist?.querySelector('.featured-artist-thumb');
@@ -120,7 +158,7 @@
     root.classList.toggle('motion-off', disabled);
     toggle.textContent = disabled ? 'Motion off' : 'Motion on'; toggle.setAttribute('aria-pressed', String(!disabled));
     toggle.setAttribute('aria-label', disabled ? 'Enable scroll animation' : 'Disable scroll animation');
-    measure(); load();
+    measure(); load(); syncContactFilm();
   }
   toggle.addEventListener('click', () => {
     // Keep the viewer at the same content position when removing the extra scroll space.

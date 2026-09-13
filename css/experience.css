@@ -25,3 +25,20 @@
 .motion-off .portrait-orbit,.motion-off .artist-motion .featured-artist-thumb::before{display:none}
 @media(max-width:767px){.artist-motion .featured-artist-thumb{max-width:280px;margin:12px auto 52px}.artist-motion .featured-artist-content{transform:none}}
 @media(prefers-reduced-motion:reduce){.artist-motion .featured-artist-thumb,.artist-motion .featured-artist-content{transform:none!important;transition:none!important}.portrait-orbit,.artist-motion .featured-artist-thumb::before{display:none}}
+
+/* Artwork in motion behind a steady, readable contact form. */
+#contact.contact-motion{position:relative;isolation:isolate;overflow:hidden;background:#f3f3fe!important}
+.contact-art-backdrop{position:absolute;inset:-4%;z-index:-2;pointer-events:none;background:url('../images/desene/2026 cars/Velocity Blueprint, ink on paper, 2026, 30-42 cm.jpg') center/cover;opacity:.18;filter:blur(2px) saturate(.7)}
+.contact-art-backdrop video{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;opacity:0;transition:opacity 1.5s ease}
+.contact-art-backdrop.film-ready video{opacity:1}
+#contact.contact-motion::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at var(--contact-light-x,25%) var(--contact-light-y,35%),#fff9,transparent 60%),linear-gradient(180deg,#f3f3febf,transparent 25%,#f3f3fe99)}
+#contact.contact-motion .jotform-container{position:relative;background:#fffffff0;border:1px solid #ffffffd9;border-radius:14px;box-shadow:0 22px 65px #29205c12;overflow:hidden}
+#contact.contact-motion .section-heading{position:relative}
+#contact.contact-motion .section-heading::after{content:"";display:block;width:70px;height:2px;margin:25px auto 0;background:linear-gradient(90deg,#d790ac,#aaa1d6,#d790ac);background-size:200% 100%;animation:contact-light-flow 9s ease-in-out infinite alternate;animation-play-state:paused}
+#contact.contact-in-view .section-heading::after{animation-play-state:running}
+@keyframes contact-light-flow{from{background-position:0% 50%;transform:scaleX(.8)}to{background-position:100% 50%;transform:scaleX(1.15)}}
+.motion-off .contact-art-backdrop video{display:none}
+.motion-off #contact.contact-motion .section-heading::after{animation:none}
+.motion-off #contact.contact-motion::before{background:linear-gradient(180deg,#f3f3febf,transparent 25%,#f3f3fe99)}
+@media(max-width:767px){.contact-art-backdrop{opacity:.13}#contact.contact-motion .jotform-container{border-radius:8px}}
+@media(prefers-reduced-motion:reduce){.contact-art-backdrop video{display:none}#contact.contact-motion .section-heading::after{animation:none}#contact.contact-motion::before{background:linear-gradient(180deg,#f3f3febf,transparent 25%,#f3f3fe99)}}
