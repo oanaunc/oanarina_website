@@ -311,9 +311,8 @@
     item.className = 'av-item';
     item.setAttribute('data-index', i);
     item.innerHTML =
-      '<video muted loop playsinline preload="metadata" ' +
+      '<video muted loop playsinline preload="none" data-src="videos/ai-art/web/ai-art' + i + '.mp4" ' +
       'poster="videos/ai-art/posters/ai-art' + i + '.jpg">' +
-      '<source src="videos/ai-art/web/ai-art' + i + '.mp4" type="video/mp4">' +
       '</video>' +
       '<div class="av-play"></div>' +
       '<div class="av-overlay">' +
@@ -326,19 +325,41 @@
 
   var items = grid.querySelectorAll('.av-item');
 
-  // Hover to preview (muted, from start)
+  var preview = null;
+  function release(video) {
+    if (!video.getAttribute('src')) return;
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+  }
+  function stopPreview() {
+    if (preview) release(preview);
+    preview = null;
+  }
+  // Posters load initially; only the hovered clip gets a media source.
   items.forEach(function (item) {
     var v = item.querySelector('video');
     item.addEventListener('mouseenter', function () {
-      try { v.currentTime = 0; var p = v.play(); if (p) p.catch(function(){}); } catch (e) {}
+      if (document.hidden || lb.classList.contains('open') ||
+          !matchMedia('(hover: hover)').matches || navigator.connection?.saveData) return;
+      stopPreview();
+      preview = v;
+      v.src = v.getAttribute('data-src');
+      var p = v.play(); if (p) p.catch(function(){});
     });
     item.addEventListener('mouseleave', function () {
-      try { v.pause(); v.currentTime = 0; } catch (e) {}
+      if (preview === v) stopPreview();
     });
     item.addEventListener('click', function () {
       openLightbox(parseInt(item.getAttribute('data-index'), 10));
     });
   });
+  var previewObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting && preview === entry.target.querySelector('video')) stopPreview();
+    });
+  });
+  items.forEach(function (item) { previewObserver.observe(item); });
 
   // Lightbox
   var lb = document.getElementById('avLightbox');
@@ -346,6 +367,8 @@
   var current = 1;
 
   function loadCurrent() {
+    stopPreview();
+    release(player);
     player.src = 'videos/ai-art/web/ai-art' + current + '.mp4';
     player.poster = 'videos/ai-art/posters/ai-art' + current + '.jpg';
     var pr = player.play(); if (pr) pr.catch(function(){});
@@ -359,7 +382,7 @@
   function closeLightbox() {
     lb.classList.remove('open');
     document.body.style.overflow = '';
-    player.pause(); player.removeAttribute('src'); player.load();
+    release(player);
   }
   function step(dir) {
     current += dir;
@@ -367,6 +390,15 @@
     if (current > TOTAL) current = 1;
     loadCurrent();
   }
+
+  function suspendGallery() {
+    stopPreview();
+    closeLightbox();
+  }
+  window.addEventListener('pagehide', suspendGallery);
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) suspendGallery();
+  });
 
   document.getElementById('avClose').addEventListener('click', closeLightbox);
   document.getElementById('avPrev').addEventListener('click', function(e){ e.stopPropagation(); step(-1); });
