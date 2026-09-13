@@ -11,17 +11,28 @@
   let disabled = mq.matches;
   try { disabled ||= localStorage.getItem('oana-motion') === 'off'; } catch (_) {}
   const saveData = Boolean(navigator.connection?.saveData);
+  let pageActive = true;
+  function releaseVideo(video) {
+    if (!video.getAttribute('src')) return;
+    video.pause();
+    video.removeAttribute('src');
+    // Pause alone retains buffers. Reset the media element to abort loading/decoding.
+    video.load();
+  }
   // Reuse the first-generation car drawing film behind the contact form.
   const contact = name === 'index' ? document.querySelector('#contact') : null;
   let contactFilm = null, contactNear = false;
   function syncContactFilm() {
     if (!contactFilm) return;
-    const active = contactNear && !disabled && !saveData && !document.hidden;
+    const active = contactNear && pageActive && !disabled && !saveData && !document.hidden;
     contact.classList.toggle('contact-in-view', active);
     if (active) {
       if (!contactFilm.getAttribute('src')) contactFilm.src = 'media/motion/drawing.mp4';
       contactFilm.play().catch(() => {}); // The artwork still remains if autoplay is unavailable.
-    } else contactFilm.pause();
+    } else {
+      contactFilm.parentElement.classList.remove('film-ready');
+      releaseVideo(contactFilm);
+    }
   }
   if (contact) {
     contact.classList.add('contact-motion');
@@ -49,7 +60,7 @@
     });
     document.addEventListener('visibilitychange', syncContactFilm);
   }
-  let near = false, target = 0, scheduled = false, carouselStopped = false;
+  let near = false, target = 0, scheduled = null, carouselStopped = false;
   const artist = name === 'index' ? document.querySelector('.featured-artist-area') : null;
   const portrait = artist?.querySelector('.featured-artist-thumb');
   let portraitX = 0, portraitY = 0;
@@ -85,9 +96,10 @@
     video.dataset.src = name === 'index' && background.style.backgroundImage.includes('bg-2.jpg') ? config.secondSrc : config.src;
     background.prepend(video);
     const item = { video, ready: false, failed: false, time: 0 };
-    video.addEventListener('loadeddata', () => { item.ready = true; schedule(); });
+    video.addEventListener('loadeddata', () => { if (video.getAttribute('src')) { item.ready = true; schedule(); } });
     video.addEventListener('seeked', () => seek(item));
     video.addEventListener('error', () => {
+      if (!video.getAttribute('src')) return;
       item.failed = true; video.style.opacity = '0';
       if (videos.every(v => v.failed)) { cue.textContent = 'EXPLORE THE COLLECTION BELOW ↓'; measure(); }
     });
@@ -100,23 +112,33 @@
     stage.style.top = `${Math.min(0, innerHeight - height)}px`;
     schedule();
   }
+  function releaseHeader(item) {
+    item.ready = false;
+    item.video.style.opacity = '0';
+    releaseVideo(item.video);
+  }
   function load() {
-    if (disabled || saveData || !near) return;
-    videos.forEach(({video,failed}) => {
-      if (name === 'index' && !video.closest('.owl-item')?.classList.contains('active')) return;
-      if (!failed && !video.getAttribute('src')) { video.src = video.dataset.src; video.load(); }
-    });
+    const enabled = pageActive && !document.hidden && !disabled && !saveData && near;
+    // Owl keeps cloned slides in the DOM. Only the currently visible slide needs a decoder.
+    const active = enabled ? videos.find(({video, failed}) => !failed &&
+      (name !== 'index' || video.closest('.owl-item')?.classList.contains('active'))) : null;
+    videos.forEach(item => { if (item !== active) releaseHeader(item); });
+    if (active && !active.video.getAttribute('src')) {
+      active.video.src = active.video.dataset.src;
+      active.video.load();
+    }
   }
   function seek(item) {
     const v = item.video;
     if (name === 'index' && !v.closest('.owl-item')?.classList.contains('active')) return;
-    if (disabled || !near || !item.ready || item.failed || v.seeking || !Number.isFinite(v.duration)) return;
+    if (!pageActive || document.hidden || disabled || saveData || !near || !item.ready || item.failed || v.seeking || !Number.isFinite(v.duration)) return;
     const next = Math.max(0, Math.min(v.duration - .04, target * v.duration));
     if (Math.abs(v.currentTime - next) > .035) { try { v.currentTime = next; } catch (_) {} }
   }
-  function schedule() { if (!scheduled) { scheduled = true; requestAnimationFrame(update); } }
+  function schedule() { if (pageActive && !document.hidden && scheduled === null) scheduled = requestAnimationFrame(update); }
   function update() {
-    scheduled = false;
+    scheduled = null;
+    if (!pageActive || document.hidden) return;
     if (portrait) {
       const bounds = artist.getBoundingClientRect();
       if (disabled || (bounds.bottom > 0 && bounds.top < innerHeight)) {
@@ -142,7 +164,7 @@
     cue.style.opacity = target > .8 || disabled ? '0' : '1';
     skip.hidden = rect.bottom < 0 || disabled || saveData;
     if (name === 'index' && window.jQuery?.fn.owlCarousel) {
-      const stop = disabled || (near && target > 0 && target < 1);
+      const stop = disabled || saveData || !near || (target > 0 && target < 1);
       if (stop !== carouselStopped) {
         window.jQuery('.hero-slides').trigger(stop ? 'stop.owl.autoplay' : 'play.owl.autoplay');
         carouselStopped = stop;
@@ -151,7 +173,7 @@
   }
   const observer = new IntersectionObserver(entries => {
     near = entries[0].isIntersecting;
-    if (near) load();
+    load();
     schedule();
   }, {rootMargin:'200px'}); observer.observe(wrapper);
   function applyMotion() {
@@ -174,6 +196,31 @@
   if (name === 'index' && window.jQuery) {
     window.jQuery('.hero-slides').on('translated.owl.carousel', () => { load(); schedule(); });
   }
+  function suspend() {
+    if (scheduled !== null) cancelAnimationFrame(scheduled);
+    scheduled = null;
+    videos.forEach(releaseHeader);
+    syncContactFilm();
+    if (name === 'index' && window.jQuery?.fn.owlCarousel) {
+      window.jQuery('.hero-slides').trigger('stop.owl.autoplay');
+      carouselStopped = true;
+    }
+  }
+  function resume() {
+    const bounds = wrapper.getBoundingClientRect();
+    near = bounds.bottom >= -200 && bounds.top <= innerHeight + 200;
+    if (contact) {
+      const bounds = contact.getBoundingClientRect();
+      contactNear = bounds.bottom >= -100 && bounds.top <= innerHeight + 100;
+    }
+    applyMotion();
+  }
+  addEventListener('pagehide', () => { pageActive = false; suspend(); });
+  addEventListener('pageshow', () => { pageActive = true; resume(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) suspend();
+    else if (pageActive) resume();
+  });
   // Keep the original mobile menu usable from a keyboard as well as a tap.
   const navToggle = document.querySelector('.classy-navbar-toggler');
   if (navToggle) {
