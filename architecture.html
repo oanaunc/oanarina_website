@@ -78,20 +78,19 @@
             visibility: visible;
         }
         
-        /* Video wrapper styling */
-        .video-wrapper {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .video-wrapper:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
-        }
-        
-        .video-wrapper video {
-            border-radius: 10px;
-        }
-        
+        .architecture-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding-bottom: 48px; }
+        @media (min-width: 992px) { .architecture-video-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; } }
+        .architecture-video-card { border: 0; padding: 0; overflow: hidden; border-radius: 10px; background: #fff; color: #243443; cursor: pointer; text-align: left; box-shadow: 0 6px 20px #0002; }
+        .architecture-video-card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #18212a; }
+        .architecture-video-card span { display: block; padding: 12px; font-size: 14px; }
+        .architecture-video-card:hover, .architecture-video-card:focus-visible { outline: 3px solid #627d90; }
+        #architecture-player-dialog { margin: auto; width: min(960px, 94vw); max-height: 94vh; border: 0; padding: 16px; border-radius: 12px; background: #151c24; color: white; }
+        #architecture-player-dialog::backdrop { background: #000c; }
+        #architecture-player-dialog video { display: block; width: 100%; max-height: 70vh; background: #000; }
+        .architecture-player-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 12px; }
+        .architecture-player-actions button { border: 1px solid #8c9aa8; border-radius: 5px; background: transparent; color: white; padding: 8px 12px; cursor: pointer; }
+        #architecture-player-error { color: white; margin: 12px 0 0; }
+
         /* Section heading animation */
         .section-heading h2 {
             position: relative;
@@ -296,116 +295,51 @@
                 </div>
             </div>
             
-            <div class="row" data-aos="fade-up" data-aos-delay="200">
-                <!-- Video 1 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 2 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 3 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 4 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi4.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 5 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi5.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 6 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi6.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 7 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi7.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 8 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi8.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 9 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi9.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 10 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi10.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                
-                <!-- Video 11 -->
-                <div class="col-12 col-md-6 col-lg-4 mb-50">
-                    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
-                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" preload="none">
-                            <source src="videos/architecture/archi11.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
+            <div class="architecture-video-grid">
+                <button type="button" class="architecture-video-card" data-project="1" aria-label="Play architecture project 1">
+                    <img src="videos/architecture/posters/archi1.jpg" alt="Architecture project 1" loading="lazy" width="480" height="360">
+                    <span>▶ Project 01</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="2" aria-label="Play architecture project 2">
+                    <img src="videos/architecture/posters/archi2.jpg" alt="Architecture project 2" loading="lazy" width="480" height="360">
+                    <span>▶ Project 02</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="3" aria-label="Play architecture project 3">
+                    <img src="videos/architecture/posters/archi3.jpg" alt="Architecture project 3" loading="lazy" width="480" height="360">
+                    <span>▶ Project 03</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="4" aria-label="Play architecture project 4">
+                    <img src="videos/architecture/posters/archi4.jpg" alt="Architecture project 4" loading="lazy" width="480" height="360">
+                    <span>▶ Project 04</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="5" aria-label="Play architecture project 5">
+                    <img src="videos/architecture/posters/archi5.jpg" alt="Architecture project 5" loading="lazy" width="480" height="360">
+                    <span>▶ Project 05</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="6" aria-label="Play architecture project 6">
+                    <img src="videos/architecture/posters/archi6.jpg" alt="Architecture project 6" loading="lazy" width="480" height="360">
+                    <span>▶ Project 06</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="7" aria-label="Play architecture project 7">
+                    <img src="videos/architecture/posters/archi7.jpg" alt="Architecture project 7" loading="lazy" width="480" height="360">
+                    <span>▶ Project 07</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="8" aria-label="Play architecture project 8">
+                    <img src="videos/architecture/posters/archi8.jpg" alt="Architecture project 8" loading="lazy" width="480" height="360">
+                    <span>▶ Project 08</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="9" aria-label="Play architecture project 9">
+                    <img src="videos/architecture/posters/archi9.jpg" alt="Architecture project 9" loading="lazy" width="480" height="360">
+                    <span>▶ Project 09</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="10" aria-label="Play architecture project 10">
+                    <img src="videos/architecture/posters/archi10.jpg" alt="Architecture project 10" loading="lazy" width="480" height="360">
+                    <span>▶ Project 10</span>
+                </button>
+                <button type="button" class="architecture-video-card" data-project="11" aria-label="Play architecture project 11">
+                    <img src="videos/architecture/posters/archi11.jpg" alt="Architecture project 11" loading="lazy" width="480" height="360">
+                    <span>▶ Project 11</span>
+                </button>
             </div>
         </div>
     </section>
@@ -1842,7 +1776,19 @@
     </footer>
     <!-- ##### Footer Area Start ##### -->
 
-    <!-- ##### All Javascript Script ##### -->
+    <dialog id="architecture-player-dialog" aria-labelledby="architecture-player-title">
+    <div class="architecture-player-actions">
+        <button type="button" id="architecture-video-prev" aria-label="Previous project">←</button>
+        <span id="architecture-player-title">Architecture project</span>
+        <button type="button" id="architecture-video-next" aria-label="Next project">→</button>
+        <button type="button" id="architecture-video-close">Close</button>
+    </div>
+    <video id="architecture-player" controls playsinline preload="none"></video>
+    <p id="architecture-player-error" hidden>The video could not load. Close it and try again.</p>
+</dialog>
+<script defer src="js/architecture-videos.js?v=20260913"></script>
+
+<!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
