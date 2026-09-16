@@ -1,0 +1,33 @@
+{
+  "image_tool": "built-in imagegen",
+  "image_prompt": "Combine these three supplied five-phone strips into ONE panoramic website header image showing ALL FIFTEEN phones in ONE horizontal row, side by side. Exactly fifteen distinct phones. Preserve ALL screen contents and the order of phones from image 1 then image 2 then image 3, with no omissions or duplicates. Keep phones upright, front-on, evenly spaced. Wide 3:1 landscape output 3000x1000. Since 15 phones are in a row, the phones should occupy only roughly the MIDDLE HALF of the canvas height; the rest is clean dark charcoal negative space above and below. Uniform deep charcoal backdrop, subtle soft reflections below devices. No text added outside screens. Do not enlarge phones into a second row. Do not change or invent app content. Output a clean professional panoramic collage suitable for a slow camera glide.",
+  "sources": [
+    "images/apps/app.jpg",
+    "images/apps/app2.jpg",
+    "images/apps/app3.jpg",
+    "images/apps/app4.jpg",
+    "images/apps/app5.jpg",
+    "images/apps/app6.jpg",
+    "images/apps/app7.jpg",
+    "images/apps/app8.jpg",
+    "images/apps/app9.jpg",
+    "images/apps/app10.jpg",
+    "images/apps/app11.jpg",
+    "images/apps/app12.jpg",
+    "images/apps/app13.jpg",
+    "images/apps/app14.jpg",
+    "images/apps/app15.jpg"
+  ],
+  "image": "images/apps/apps-collage-header.jpg",
+  "video_job_id": "05798cba-f119-4a2f-b628-f3474aa90d43",
+  "video_model": "hf_mult_motion_control",
+  "credits": 0,
+  "uses_free_generation": true,
+  "video_prompt": "Transfer only the gentle smooth horizontal camera glide from the reference video to the reference image of fifteen smartphones. Preserve all fifteen phones and their app screen contents, layout and straight edges. Dark studio background, subtle premium reflections, no screen morphing, no people outside screens, no typing, no additional objects. Quiet website header animation.",
+  "motion_reference": "media/motion/apps-camera-motion.mp4",
+  "higgsfield_status": "queued",
+  "installed_video": "media/motion/apps-collage.mp4",
+  "installed_video_origin": "Temporary locally rendered camera glide; Higgsfield result is not installed yet.",
+  "installed_video_duration_seconds": 8,
+  "motion_reference_command": "ffmpeg -loop 1 -i images/apps/apps-collage-header.jpg -vf \"scale=2400:800,crop=2160:720:x=120+100*sin(2*PI*t/8):y=40,scale=1440:480\" -t 8 -r 24 -an -c:v libx264 -crf 19 -pix_fmt yuv420p -movflags +faststart media/motion/apps-camera-motion.mp4"
+}

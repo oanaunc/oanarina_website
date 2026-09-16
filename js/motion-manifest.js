@@ -32,8 +32,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "apps": {
-    "src": "media/motion/apps.mp4",
-    "poster": "img/bg-img/breadcumb10.jpg",
+    "src": "media/motion/apps-collage.mp4",
+    "poster": "images/apps/apps-collage-header.jpg",
     "sameImage": true
   },
   "algorithmsbook": {

@@ -69,6 +69,46 @@
             text-align: center;
         }
 
+        .apps-collage-header {
+            position: relative;
+            min-height: 620px;
+            padding: 160px 0 0;
+            background-color: #17191b;
+            background-size: 100% auto;
+            background-position: center 65%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .apps-collage-header .motion-video {
+            object-fit: contain;
+            object-position: center 65%;
+        }
+
+        .apps-collage-header.bg-overlay::after {
+            background-color: rgba(0, 0, 0, .08);
+        }
+
+        .apps-collage-header .section-heading {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .contact-area.apps-collage-header {
+                min-height: 480px;
+                padding-top: 140px;
+                background-size: auto 58% !important;
+                background-position: center 65% !important;
+            }
+
+            .apps-collage-header .motion-video {
+                top: 27.3%;
+                height: 58%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
         .apps-intro h3,
         .more-apps-heading h3 {
             font-size: 32px;
@@ -160,7 +200,7 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js"></script>
+    <script defer src="js/motion-manifest.js?v=20260916-apps-collage"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 </head>
 
@@ -305,17 +345,11 @@
     <!-- ##### Header Area End ##### -->
 
         <!-- ##### Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb10.jpg);">
+    <section class="contact-area apps-collage-header bg-img bg-overlay has-bg-img" style="background-image: url(images/apps/apps-collage-header.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading white">
-                    <pre>
-
-
- 
-
-					</pre>
                          <h2>Online</h2>
                         <h2>Apps</h2>
                         
