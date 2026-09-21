@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="A free native Mac photo editor for layered compositions, painting, retouching and typography by Oana Rinaldi.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Architecture Publications by Oana Rinaldi</title>
+    <title>Oanarina Photo Editor — Oana Rinaldi</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -62,8 +62,173 @@
             opacity: 1;
             visibility: visible;
         }
+
+        .apps-intro {
+            max-width: 760px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .apps-collage-header {
+            position: relative;
+            min-height: 620px;
+            padding: 160px 0 0;
+            background-color: #17191b;
+            background-size: 100% auto;
+            background-position: center 65%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .apps-collage-header .motion-video {
+            object-fit: contain;
+            object-position: center 65%;
+        }
+
+        .apps-collage-header.bg-overlay::after {
+            background-color: rgba(0, 0, 0, .08);
+        }
+
+        .apps-collage-header .section-heading {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .contact-area.apps-collage-header {
+                min-height: 480px;
+                padding-top: 140px;
+                background-size: auto 58% !important;
+                background-position: center 65% !important;
+            }
+
+            .apps-collage-header .motion-video {
+                top: 27.3%;
+                height: 58%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .apps-intro h3,
+        .more-apps-heading h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .app-store-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 22px;
+            border-radius: 24px;
+            color: #fff;
+            background: #000;
+            font-weight: 600;
+        }
+
+        .app-store-link:hover,
+        .app-store-link:focus {
+            color: #fff;
+            background: #5f2eea;
+        }
+
+        .more-apps-heading {
+            margin: 25px 0 30px;
+            text-align: center;
+        }
+
+        .more-apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        .compact-app {
+            display: flex;
+            gap: 16px;
+            min-height: 150px;
+            padding: 20px;
+            border: 1px solid #ededf2;
+            border-radius: 16px;
+            color: #232323;
+            background: #fff;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .compact-app:hover,
+        .compact-app:focus {
+            color: #232323;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(21, 21, 40, .1);
+        }
+
+        .compact-app img {
+            flex: 0 0 76px;
+            width: 76px;
+            height: 76px;
+            border-radius: 17px;
+        }
+
+        .compact-app h4 {
+            margin: 1px 0 4px;
+            font-size: 17px;
+            line-height: 1.25;
+        }
+
+        .compact-app .app-category {
+            margin-bottom: 7px;
+            color: #8b8b94;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        .compact-app p:last-child {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 991px) {
+            .more-apps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 767px) {
+            .more-apps-grid { grid-template-columns: 1fr; }
+        }
     </style>
 
+    <!-- Additive motion: original design and content retained. -->
+    <link rel="stylesheet" href="css/experience.css">
+    <script defer src="js/motion-manifest.js?v=20260916-apps-collage"></script>
+    <script defer src="js/experience.js?v=20260913-memory"></script>
+<style>
+.photo-editor-intro { text-align:center; max-width:850px; margin:0 auto 55px; }
+.photo-editor-intro .editor-icon { width:92px; height:92px; margin-bottom:24px; }
+.photo-editor-intro h1 { font-size:36px; margin-bottom:20px; }
+.editor-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:28px 0 18px; }
+.editor-shot { width:100%; border:1px solid #e5e5e5; margin-bottom:18px; }
+.editor-caption { text-align:center; font-size:13px; margin-bottom:60px; }
+.editor-feature { margin-bottom:35px; }
+.editor-feature h3 { font-size:20px; margin-bottom:14px; }
+.editor-feature p { font-size:15px; }
+.editor-section { padding:40px 0; border-top:1px solid #ebebeb; }
+#download, #features { scroll-margin-top:130px; }
+.editor-download { background:#f5f5f5; padding:40px; margin:25px 0 50px; }
+.editor-specs { width:100%; margin:25px 0; }
+.editor-specs th,.editor-specs td { padding:12px 0; border-bottom:1px solid #ddd; font-size:14px; }
+.editor-specs th { width:40%; }
+.editor-faq details { padding:20px 0; border-bottom:1px solid #e5e5e5; }
+.editor-faq summary { cursor:pointer; font-weight:600; }
+.editor-faq details p { margin:15px 0 0; }
+.editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:240px; }
+.editor-breadcrumb video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.editor-breadcrumb .container { position:relative; z-index:2; }
+.editor-breadcrumb .section-heading { margin-bottom:0; }
+.editor-motion-toggle { position:absolute; right:20px; bottom:15px; z-index:3; color:white; background:#0009; border:1px solid #fff7; padding:6px 12px; font-size:12px; }
+@media(max-width:575px) { .photo-editor-intro h1 {font-size:28px}.editor-download {padding:24px}.editor-actions .btn {width:100%} }
+</style>
+<link rel="canonical" href="https://oanarinaldi.com/photo-editor.html">
 </head>
 
 <body>
@@ -211,87 +376,37 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-        <!-- ##### Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb5.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white">
-                    <pre>
 
-
- 
-
-					</pre>
-                         <h2>Privacy Policy for</h2>
-                        <h2>Solar Match</h2>
-                        
-                   </div>
-                </div>
-            </div>
-        </div>
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/photo-editor/breadcrumb.png?v=20260921)">
+        <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Photography &amp; Design</p><h2>Photo Editor</h2></div></div></div></div>
     </section>
-    
-    <!-- ##### Area End ##### -->
-    
-
-
-    <!-- ##### Album Catagory Area Start ##### -->
-    <section class="album-catagory section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-					
-                  <!-- Algorithm book Start -->
-                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-
-                          <!-- Post Excerpt -->
-    <h1>Privacy Policy for Solar Match</h1>
-    <p>Last Updated: 2023</p>
-
-    <h2>Welcome to Solar Match!</h2>
-    <p>At Solar Match, our commitment to your privacy is paramount. This document explains how we handle information in relation to your gaming experience in Solar Match, a match-3 puzzle game featuring planets and stars.</p>
-
-    <h2>1. Information We Collect</h2>
-    <p>Solar Match is designed for your enjoyment without the need to collect any personal information.
-The game does <strong>not</strong> require sign-ups or email connections for gameplay.</p>
-
-    <h2>2. Data Usage</h2>
-    <p>As no personal data is collected, there is no usage or processing of user data.</p>
-
-    <h2>3. Third-Party Services</h2>
-    <p>Our game is free from third-party services that might collect or use your data.</p>
-
-    <h2>4. User Consent</h2>
-    <p>By engaging with Solar Match, users are considered to have acknowledged and accepted this privacy policy.</p>
-
-    <h2>5. Changes to Our Privacy Policy</h2>
-    <p>Any changes to our privacy policy will be posted on this page. Users are encouraged to review our privacy policy periodically to stay informed about how we are helping to protect the personal information we collect.</p>
-
-    <h2>6. Contact Us</h2>
-    <p>If you have questions or concerns regarding this Privacy Policy, please contact us at: oanarinaldi@gmail.com</p>
-
-                      </div>
-                    </div>
-	    		 <!-- Algorithm book End -->
-                
-                  <!-- Archi book Start --><!-- Archi book End -->
-                     
-                    
-
-
-                </div>
-            </div>
-
-
+    <main class="album-catagory section-padding-100-0" id="main"><div class="container">
+        <div class="photo-editor-intro">
+            <img class="editor-icon" src="images/apps/photo-editor/icon.png" alt="Oanarina Photo Editor icon" width="92" height="92">
+            <h1>Oanarina Photo Editor</h1><h4>Your images. Your imagination.</h4>
+            <p>A native Mac workspace for photo editing, layered compositions, painting and typography. Bring photographs, textures, type and ideas together, with your files kept on your Mac and no account required.</p>
+            <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#features" class="btn oneMusic-btn">Explore the tools</a></div>
+            <p>Free · macOS 26.5 or later</p>
         </div>
-    </section>
-    <!-- ##### Album Catagory Area End ##### -->
-
-
+        <img class="editor-shot" src="images/apps/photo-editor/workspace.png" alt="The Oanarina Photo Editor Mac workspace with canvas, tools, layers and edit history" loading="lazy">
+        <p class="editor-caption">The Mac app workspace: your canvas, tools, layers and history in one place.</p>
+        <section id="features"><div class="section-heading"><p>From the first layer to the final detail</p><h2>A space to create</h2></div><div class="row">
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Build with layers</h3><p>Combine images with groups, blend modes, opacity, clipping masks and painted layer masks. Keep each piece of your composition editable.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Find your color</h3><p>Refine light and color with curves, levels, exposure, hue and saturation. Explore white balance, color balance, gradient maps and fourteen editable adjustment types.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Make precise selections</h3><p>Work with rectangle and ellipse marquees, lasso and magic wand. Expand, contract or feather selections to refine an edge.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Paint &amp; retouch</h3><p>Paint with adjustable brushes, erase, clone and heal details. Soften with blur, shape with smudge, and blend with gradients.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Compose with type</h3><p>Add editable text, adjust its font and spacing, and combine it with shapes. Align and distribute layers, rotate the canvas, or correct a photographed surface with four-corner perspective crop.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Keep your creative flow</h3><p>Switch between projects in tabs, use familiar keyboard shortcuts and click any retained History state to go backward or forward. Save layers or export the finished image.</p></article>
+</div></section>
+        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>Start anywhere. Make it yours.</h2><p>From an everyday photo to a layered poster, give an idea room to take shape.</p></div><div class="col-12 col-lg-7"><h4>1. Bring something in</h4><p>Import a JPEG, PNG, HEIC or TIFF, or start with a landscape, square, portrait, story or custom canvas.</p><h4>2. Explore the possibilities</h4><p>Arrange layers, refine selections, retouch details and experiment with adjustments. Use History to follow your edits and undo or redo changes.</p><h4>3. Save what you made</h4><p>Save an editable .comp project, or export a PNG, JPEG or lossless TIFF to share your finished image.</p></div></div></section>
+        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Photo Editor</h2><p>Free creative tools for your Mac.</p><p id="release-status">Version 1.0 preview · Apple silicon and Intel · 10.8 MB. Developer ID-signed; Apple notarization is not yet complete. macOS may block this preview on another Mac.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/photo-editor/Oanarina-Photo-Editor-1.0.0.dmg" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 26.5 or later</td></tr><tr><th scope="row">Price</th><td>Free</td></tr><tr><th scope="row">Imports</th><td>JPEG, PNG, HEIC, TIFF</td></tr><tr><th scope="row">Exports</th><td>PNG, JPEG, TIFF</td></tr><tr><th scope="row">Layered projects</th><td>.comp</td></tr></tbody></table></div></div></section>
+        <p class="text-center"><a href="photo-editor-guide.html">Detailed user guide</a> · <a href="downloads/photo-editor/SHA256SUMS.txt">Download checksum</a></p>
+        <section class="editor-faq mb-100"><div class="section-heading"><p>A few useful details</p><h2>Before you begin</h2></div>
+<details><summary>Does it work offline?</summary><p>Yes. Editing and project files stay on your Mac. The app does not require an account or upload your photographs to an editing service.</p></details>
+<details><summary>Can I keep editing my layers later?</summary><p>Yes. Save your work as a .comp project to preserve its layers and editable composition. PNG, JPEG and TIFF exports are flattened images.</p></details>
+<details><summary>Which workflows are supported?</summary><p>This version focuses on raster photo editing and layered compositions in sRGB. It does not currently include PSD import or export, RAW development, CMYK print workflows or third-party plugins.</p></details>
+<details><summary>Who makes Oanarina Photo Editor?</summary><p>Oanarina Photo Editor is developed by Oana Rinaldi. Its native editing foundation is the MIT-licensed Compositor project by Wonder Assembly LLC. The original <a href="downloads/photo-editor/Open-Source-License.txt">open-source license</a> is included with the app.</p></details>
+<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
