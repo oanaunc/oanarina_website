@@ -98,3 +98,9 @@ Filter panels offer exact numeric fields, a preview toggle, Reset, Cancel and OK
 ## When a command is grey
 
 Commands require the relevant target: a document, an individual image layer, editable text, a mask, a selection or multiple layers. Open editing panels and operations in progress also disable conflicting commands. Accept or cancel the panel, then select the intended target. For color adjustments, select one visible image layer rather than its mask or a folder.
+
+### Layer right-click menu
+
+Right-click a layer row to open its commands. Right-clicking a layer already in a selection preserves that selection; right-clicking another row selects that layer. Merge Layers combines the selection, Merge Down combines a single layer with the layer beneath it, and Merge Group combines a folder’s contents. Undo restores the original layers.
+
+The menu also includes batch duplicate/delete/show/hide, grouping, masks and clipping, layer effects, editable text/adjustments, rasterizing, arranging, alignment, distribution, transforms and flattening. Commands that do not apply to the selection are disabled. Duplicating selected groups includes their children once and preserves clipping relationships between copied layers.
