@@ -4,7 +4,7 @@
 
 Choose **File → New Canvas** for a preset or custom dimensions. **Open** creates a tab from a supported image or `.comp` project. **Import Images** adds images as layers to the current composition. Use tabs to keep separate projects open.
 
-**Save** stores an editable `.comp` project; **Save As** gives it another destination. Save this project before exporting if you want to return to its layers. **Export PNG** preserves transparency. **Export TIFF** produces a lossless flattened image with alpha and document resolution. **Export JPEG** has a quality preview and produces a flattened image. JPEG does not support transparency.
+**Save** stores an editable `.comp` project; **Save As** includes a Format dropdown: Oanarina Project (.comp), JPEG, PNG, and TIFF. JPEG includes a quality slider and uses white for transparent areas. Image formats save a flattened copy without changing the editable project’s saved state. Save this project before exporting if you want to return to its layers. **Export PNG** preserves transparency. **Export TIFF** produces a lossless flattened image with alpha and document resolution. **Export JPEG** has a quality preview and produces a flattened image. JPEG does not support transparency.
 
 The app imports JPEG, PNG, HEIC and TIFF. It uses an 8-bit sRGB workflow. PSD interchange, RAW development and CMYK/Lab editing are not supported in this version.
 

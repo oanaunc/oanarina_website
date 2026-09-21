@@ -200,7 +200,7 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js?v=20260916-apps-collage"></script>
+    <script defer src="js/motion-manifest.js?v=20260921-photo-editor"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 <style>
 .photo-editor-intro { text-align:center; max-width:850px; margin:0 auto 55px; }
@@ -221,10 +221,11 @@
 .editor-faq details { padding:20px 0; border-bottom:1px solid #e5e5e5; }
 .editor-faq summary { cursor:pointer; font-weight:600; }
 .editor-faq details p { margin:15px 0 0; }
-.editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:240px; }
+.editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:clamp(440px,75vh,900px); display:flex; align-items:center; }
 .editor-breadcrumb video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .editor-breadcrumb .container { position:relative; z-index:2; }
 .editor-breadcrumb .section-heading { margin-bottom:0; }
+.editor-breadcrumb .section-heading p { color:#fff; text-shadow:0 1px 8px #000; }
 .editor-motion-toggle { position:absolute; right:20px; bottom:15px; z-index:3; color:white; background:#0009; border:1px solid #fff7; padding:6px 12px; font-size:12px; }
 @media(max-width:575px) { .photo-editor-intro h1 {font-size:28px}.editor-download {padding:24px}.editor-actions .btn {width:100%} }
 </style>
@@ -336,23 +337,23 @@
                                     <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
                                     </div>
-                                    
+
                                     <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
                                     </div>
-                                    
+
 <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
                                     </div>
-                                    
+
                                     <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
                                     </div>
-                                    
+
                                     <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
                                     </div>
-                                    
+
                                     <div class="login-register-btn mr-50">
                                          <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
                                     </div>
@@ -363,7 +364,7 @@
                                 </div>
                             </div>
                             <!-- Nav End -->
-                            
+
                                       <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
 
                         </div>
@@ -377,7 +378,7 @@
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/photo-editor/breadcrumb.png?v=20260921)">
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/photo-editor/motion-poster.jpg)">
         <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Photography &amp; Design</p><h2>Photo Editor</h2></div></div></div></div>
     </section>
     <main class="album-catagory section-padding-100-0" id="main"><div class="container">
@@ -388,7 +389,7 @@
             <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#features" class="btn oneMusic-btn">Explore the tools</a></div>
             <p>Free · macOS 26.5 or later</p>
         </div>
-        <img class="editor-shot" src="images/apps/photo-editor/workspace.png" alt="The Oanarina Photo Editor Mac workspace with canvas, tools, layers and edit history" loading="lazy">
+        <img class="editor-shot" src="images/apps/photo-editor/workspace.png?v=20260921-neon" alt="The Oanarina Photo Editor Mac workspace with neon sports-car artwork, tools, layers and edit history" loading="lazy">
         <p class="editor-caption">The Mac app workspace: your canvas, tools, layers and history in one place.</p>
         <section id="features"><div class="section-heading"><p>From the first layer to the final detail</p><h2>A space to create</h2></div><div class="row">
 <article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Build with layers</h3><p>Combine images with groups, blend modes, opacity, clipping masks and painted layer masks. Keep each piece of your composition editable.</p></article>
