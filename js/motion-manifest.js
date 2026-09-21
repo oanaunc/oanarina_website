@@ -1,8 +1,8 @@
 /* Higgsfield films generated from the original page header images. */
 window.OANA_MOTION = {
   "photo-editor": {
-    "src": "media/motion/graphicdesign-header.mp4",
-    "poster": "images/apps/photo-editor/motion-poster.jpg",
+    "src": "media/motion/photo-editor-midjourney.mp4",
+    "poster": "images/apps/photo-editor/breadcrumb.png",
     "sameImage": true
   },
   "index": {
