@@ -104,3 +104,20 @@ Commands require the relevant target: a document, an individual image layer, edi
 Right-click a layer row to open its commands. Right-clicking a layer already in a selection preserves that selection; right-clicking another row selects that layer. Merge Layers combines the selection, Merge Down combines a single layer with the layer beneath it, and Merge Group combines a folder’s contents. Undo restores the original layers.
 
 The menu also includes batch duplicate/delete/show/hide, grouping, masks and clipping, layer effects, editable text/adjustments, rasterizing, arranging, alignment, distribution, transforms and flattening. Commands that do not apply to the selection are disabled. Duplicating selected groups includes their children once and preserves clipping relationships between copied layers.
+
+## Paint Bucket
+
+Choose the bucket icon on the left or press **Shift-G**. Click the image to fill similar colors with the foreground color. Tolerance controls color matching; Contiguous limits the fill to connected pixels. Turn it off to fill matching colors throughout the canvas. Sample All Layers reads the visible composite while painting only the selected layer. Opacity sets the fill strength; number keys work as they do for brushes. Existing selections limit the painted area, and Undo reverses the fill. Select the image thumbnail, not a layer mask, to use this tool.
+
+## Copy by dragging
+
+With the Move tool (**V**), hold **Option/Alt** and drag to copy the selected layer or layers. Add **Shift** to keep the copy on the horizontal or vertical axis. Press Option before the first movement; simply clicking with Option does not create a copy. Undo removes the copied layers and their movement together.
+
+## Window panels
+
+Open **Window → Arrange, Character, Paragraph, Color, Brushes, Layers, or History**. These movable panels stay above the editing window while the app is active.
+
+- Arrange aligns one layer to the canvas or several layers to their combined bounds. Distribution needs at least three layers. Flip and Duplicate Selected Layers are also available.
+- Character controls the font face, size, tracking, leading and text color. Paragraph controls alignment and leading. Select editable text to change it, then Apply or Cancel; with no text selected the controls set defaults for new text.
+- Color opens the foreground/background color pickers. Brushes provides diameter, hardness and opacity.
+- Layers exposes the normal layer list and its context menu. Click a History entry to move backward or forward through edits.
