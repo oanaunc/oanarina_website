@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="A free native Mac photo editor for layered compositions, painting, retouching and typography by Oana Rinaldi.">
+    <meta name="description" content="Oanarina Archi Tool: a free native Mac app for architectural drafting, building design (BIM), 3D modelling, rendering and printing, with an AutoCAD-style command line and scripting for AI agents.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Oanarina Photo Editor — Oana Rinaldi</title>
+    <title>Oanarina Archi Tool — Oana Rinaldi</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -228,8 +228,14 @@
 .editor-breadcrumb .section-heading p { color:#fff; text-shadow:0 1px 8px #000; }
 .editor-motion-toggle { position:absolute; right:20px; bottom:15px; z-index:3; color:white; background:#0009; border:1px solid #fff7; padding:6px 12px; font-size:12px; }
 @media(max-width:575px) { .photo-editor-intro h1 {font-size:28px}.editor-download {padding:24px}.editor-actions .btn {width:100%} }
+.archi-accent { color:#d9a400; }
+.archi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:10px 0 60px; }
+.archi-grid div { background:#f5f5f5; padding:18px; text-align:center; }
+.archi-grid strong { display:block; font-size:28px; color:#d9a400; }
+.archi-code { background:#1e1f22; color:#e6e6e6; padding:18px 22px; font-family:Menlo,monospace; font-size:13px; overflow:auto; margin:18px 0; }
+.archi-code b { color:#f5c518; font-weight:normal; }
 </style>
-<link rel="canonical" href="https://oanarinaldi.com/photo-editor.html">
+<link rel="canonical" href="https://oanarinaldi.com/archi-tool.html">
 </head>
 
 <body>
@@ -375,39 +381,47 @@
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/photo-editor/breadcrumb.png?v=20260921)">
-        <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Photography &amp; Design</p><h2>Photo Editor</h2></div></div></div></div>
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260925)">
+        <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Architecture &amp; Design</p><h2>Archi Tool</h2></div></div></div></div>
     </section>
     <main class="album-catagory section-padding-100-0" id="main"><div class="container">
         <div class="photo-editor-intro">
-            <img class="editor-icon" src="images/apps/photo-editor/icon.png" alt="Oanarina Photo Editor icon" width="92" height="92">
-            <h1>Oanarina Photo Editor</h1><h4>Your images. Your imagination.</h4>
-            <p>A native Mac workspace for photo editing, layered compositions, painting and typography. Bring photographs, textures, type and ideas together, with your files kept on your Mac and no account required.</p>
+            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260925" alt="Oanarina Archi Tool icon" width="92" height="92">
+            <h1>Oanarina Archi Tool</h1><h4>Draw it. Build it. See it.</h4>
+            <p>A free, native Mac application for architecture: precise 2D drafting with an AutoCAD-style command line, intelligent building elements in the spirit of Revit, 3D views, rendering, sheets and printing — and a scripting interface that lets you, or an AI agent, design alongside you.</p>
             <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#features" class="btn oneMusic-btn">Explore the tools</a></div>
-            <p>Free · macOS 26.5 or later</p>
+            <p>Free and open source (GPL-3.0) · macOS 14 or later</p>
         </div>
-        <img class="editor-shot" src="images/apps/photo-editor/workspace.png?v=20260921-neon" alt="The Oanarina Photo Editor Mac workspace with neon sports-car artwork, tools, layers and edit history" loading="lazy">
-        <p class="editor-caption">The Mac app workspace: your canvas, tools, layers and history in one place.</p>
-        <section id="features"><div class="section-heading"><p>From the first layer to the final detail</p><h2>A space to create</h2></div><div class="row">
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Build with layers</h3><p>Combine images with groups, blend modes, clipping and layer masks, fill layers, frames and layer effects such as glows, bevels and overlays. Smart objects keep the original pixels, so filters stay editable in a list you can switch off, reorder and reopen.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Find your color</h3><p>Refine light and color with curves, levels, exposure, hue and saturation and editable adjustment layers. Work in CMYK, Lab, Indexed, Bitmap or Duotone, view each channel, assign or convert color profiles, soft-proof for print and blend in linear light.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Make precise selections</h3><p>Select with marquees, lasso, magnetic lasso, magic wand, Quick Selection, the Selection Brush, Object and Color Range, Focus Area and Sky. Select and Mask refines hair-fine edges and can clean up fringe colors.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Paint &amp; retouch</h3><p>Paint with image brush tips, pressure and tilt, symmetry and presets. Mix colors with the Mixer Brush, stamp patterns, heal and clone from five sources, patch and move content aware, and reshape with Liquify, Mesh, Puppet and Perspective Warp.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Compose with type</h3><p>Set rich text with character and paragraph styles, OpenType features, vertical and path type, and warps. Draw with the Pen tool and shapes, and lay out pages with artboards, slices and guides.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Automate your work</h3><p>Record actions and play them on one image or a whole folder, run scripts and plugins, fill templates from a data set, and animate with a frame timeline that exports GIF, APNG and movies.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Keep your creative flow</h3><p>Stack and resize panel groups, float panels, tile documents side by side, rotate the view and choose a screen mode. Customize the tool bar and menus, and keep your brushes, gradients, patterns and styles in one resource library.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Open almost anything</h3><p>Open PSD and GIMP files, camera RAW with development controls, OpenEXR and HDR with tone mapping, PDF pages, SVG and everyday photo formats. Export PNG, JPEG, TIFF, HEIC, WebP, AVIF, GIF, PDF and OpenEXR, with metadata kept.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Stay in control</h3><p>Every step is undoable, History lets you step back and forward, and versions of a project can be compared and restored. Nothing leaves your Mac.</p></article>
+        <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260925" alt="The Oanarina Archi Tool workspace with a house plan in 2D next to its shaded 3D model, the ribbon, properties panel and command line" loading="lazy">
+        <p class="editor-caption">Plan and model side by side: every wall, door and window you draw in 2D is a real building element in 3D.</p>
+        <div class="archi-grid">
+            <div><strong>150+</strong>commands</div>
+            <div><strong>10</strong>file formats</div>
+            <div><strong>2D + 3D</strong>in one model</div>
+            <div><strong>Free</strong>no account, no subscription</div>
+        </div>
+        <section id="features"><div class="section-heading"><p>From the first line to the finished building</p><h2>A complete studio for architecture</h2></div><div class="row">
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Draft with precision</h3><p>Lines, polylines with arcs, circles, arcs, ellipses, splines, rectangles, polygons, points and revision clouds. Object snaps, polar and ortho tracking, a grid and typed coordinates — absolute, relative and polar — put every point exactly where it belongs.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Edit like a professional</h3><p>Move, copy, rotate, scale, mirror, stretch, trim, extend, offset, fillet, chamfer, break, join, explode and arrays, with grips on every object and undo for every step. Select with windows, crossings, filters and similar objects.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Speak the command line</h3><p>Type LINE, WALL, DOOR or any of the familiar commands and aliases. Prompts offer their options, autocomplete suggests as you type, Enter repeats the last command and scripts replay whole sequences.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Design with building elements</h3><p>Walls with layered wall types and clean joins, doors and windows hosted in walls, curtain walls, slabs, roofs (flat, shed, gable and hip), stairs, railings, columns, beams, grids, levels, rooms with automatic areas, and furniture.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Annotate clearly</h3><p>Text and multiline text, linear, aligned, angular, radial, diameter, ordinate, baseline and continued dimensions, leaders, tables, 18 hatch patterns, layers with colours, linetypes and lineweights, blocks with attributes.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Step into 3D</h3><p>Orbit your building in a live 3D view with wireframe, hidden-line, shaded, realistic and X-ray styles, sun shadows and a walk mode. Elevations and sections are generated from the model.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Render the light</h3><p>Produce still renders up to 4K with the sun placed for your site, date and time, then save them as PNG or JPEG or export a turntable movie.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Sheets, plots and PDF</h3><p>Lay out plans, elevations and sections at 1:50, 1:100 or 1:200 on A-series or Letter sheets with a title block, north arrow and scale bar, then print or plot vector PDF.</p></article>
+<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Script it, or let an AI help</h3><p>Automate with the JavaScript console, connect AI agents such as Claude through the built-in Model Context Protocol server or the local JSON-RPC interface, and run the headless archi-cli on your projects.</p></article>
 </div></section>
-        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>Start anywhere. Make it yours.</h2><p>From an everyday photo to a layered poster, give an idea room to take shape.</p></div><div class="col-12 col-lg-7"><h4>1. Bring something in</h4><p>Open a photo, a PSD or GIMP file, a camera RAW or an HDR image, or start from a template: A4, Letter, social posts, video frames or a custom canvas.</p><h4>2. Explore the possibilities</h4><p>Arrange layers, refine selections, retouch details and experiment with adjustments. Use History to follow your edits and undo or redo changes.</p><h4>3. Save what you made</h4><p>Save an editable .comp project, or export PNG, JPEG, TIFF, HEIC, WebP, AVIF, GIF, PDF or OpenEXR. Export artboards, slices or layers as separate files, or an animation as GIF, APNG or a movie.</p></div></div></section>
-        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Photo Editor</h2><p>Free creative tools for your Mac.</p><p id="release-status">Version 1.0 preview · Apple silicon and Intel · 23.5 MB. Developer ID-signed and notarized by Apple.</p><p>25 September update: smart objects, warps, CMYK and Lab modes, frame animation, plugins and a Photoshop-style File menu.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/photo-editor/Oanarina-Photo-Editor-1.0.0.dmg?v=806599fbbebb" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 26.5 or later</td></tr><tr><th scope="row">Price</th><td>Free</td></tr><tr><th scope="row">Imports</th><td>JPEG, PNG, HEIC, TIFF, WebP, GIF, BMP, AVIF, PSD, XCF, SVG, PDF, camera RAW, OpenEXR, Radiance HDR, movies (as frames)</td></tr><tr><th scope="row">Exports</th><td>PNG, JPEG, TIFF, HEIC, WebP, AVIF, GIF, PDF, OpenEXR; animated GIF and PNG; MP4 and MOV</td></tr><tr><th scope="row">Layered projects</th><td>.comp</td></tr></tbody></table></div></div></section>
-        <p class="text-center"><a href="photo-editor-guide.html">Detailed user guide</a> · <a href="downloads/photo-editor/SHA256SUMS.txt">Download checksum</a></p>
+        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>Start with an idea. Finish with a building.</h2><p>Sketch a plan, raise the walls and walk through the rooms — in one model.</p></div><div class="col-12 col-lg-7"><h4>1. Draw the plan</h4><p>Start a new drawing or a building template with levels, or open a DXF. Draw walls on a level and drop doors and windows into them; rooms find their own boundaries and areas.</p><h4>2. Shape it in 3D</h4><p>Add floors, a roof and stairs, switch to 3D or split the window to see plan and model together, and orbit, section or walk through the building.</p><h4>3. Share the result</h4><p>Place views on sheets and plot a PDF, render an image, or export DXF, SVG, IFC for BIM tools, OBJ, STL and glTF for 3D apps, and CSV schedules for spreadsheets.</p></div></div></section>
+        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>The command line</h2><p>Everything you can click, you can type — and everything you can type, a script or an AI agent can do.</p></div><div class="col-12 col-lg-7"><div class="archi-code"><b>Command:</b> WALL<br>Specify start point [Thickness/Height/Justify/Type]: 0,0<br>Specify next point: @12000,0<br>Specify next point: @0,8000<br><b>Command:</b> DOOR<br>Select wall: pick · Width &lt;900&gt;: ↵<br><b>Command:</b> ROOF<br>Specify boundary [Walls/Kind/Pitch]: W</div><p>Connect Claude Desktop with one line in its settings: <code>archi-cli --mcp ~/Documents/house.archi</code>. The <a href="https://github.com/oanaunc/archi_tool/blob/main/docs/AGENT-API.md">agent guide</a> explains the tools.</p></div></div></section>
+        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Archi Tool</h2><p>Free architecture software for your Mac.</p><p id="release-status">The first preview build is being finished and notarized by Apple. It will appear here very soon.</p><p>First public preview: drafting, building elements, 3D, rendering, sheets, scripting and AI agent connection.</p><a class="btn oneMusic-btn" href="https://github.com/oanaunc/archi_tool">Follow on GitHub <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018)</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4, OBJ, STL, glTF (GLB), CSV schedules, .archi</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div></div></section>
+        <p class="text-center"><a href="https://github.com/oanaunc/archi_tool">Source code</a></p>
         <section class="editor-faq mb-100"><div class="section-heading"><p>A few useful details</p><h2>Before you begin</h2></div>
-<details><summary>Does it work offline?</summary><p>Yes. Editing and project files stay on your Mac. The app does not require an account or upload your photographs to an editing service.</p></details>
-<details><summary>Can I keep editing my layers later?</summary><p>Yes. Save your work as a .comp project to preserve its layers and editable composition. PNG, JPEG and TIFF exports are flattened images.</p></details>
-<details><summary>Which workflows are supported?</summary><p>Layered photo editing, retouching and compositing; type, paths and page layout with artboards; print preparation with CMYK and soft proofing; frame animation; and automation with actions, scripts, data sets and plugins. Layers are 8 bits per channel: 16-bit precision is used only for linear-light blending, and HDR images are tone mapped when they open. Plugins are scripts of the app's own commands and can't run other code.</p></details>
-<details><summary>Who makes Oanarina Photo Editor?</summary><p>Oanarina Photo Editor is developed by Oana Rinaldi. Its native editing foundation is the MIT-licensed Compositor project by Wonder Assembly LLC. The original <a href="downloads/photo-editor/Open-Source-License.txt">open-source license</a> is included with the app.</p></details>
-<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
+<details><summary>Is it really free?</summary><p>Yes. Oanarina Archi Tool is free software under the GNU General Public License 3.0: no account, no subscription and no watermark. The <a href="https://github.com/oanaunc/archi_tool">source code</a> is public.</p></details>
+<details><summary>Can I open my AutoCAD drawings?</summary><p>Open and save DXF drawings, the open exchange format AutoCAD, LibreCAD, BricsCAD and most CAD tools read and write. To bring in a DWG file, save it as DXF from your CAD application first. For building models, export IFC.</p></details>
+<details><summary>Does it work offline?</summary><p>Yes. Drawings and models stay on your Mac. The optional agent server listens only on your own computer and is off until you turn it on.</p></details>
+<details><summary>How complete is it?</summary><p>This is an early preview of a long programme: the public <a href="https://github.com/oanaunc/archi_tool/blob/main/docs/FEATURE-REGISTER.md">feature register</a> lists more than a thousand planned capabilities and marks what is already done. New versions are published here.</p></details>
+<details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities. The <a href="https://github.com/oanaunc/archi_tool/blob/main/LICENSE">license</a> is included with the app.</p></details>
+<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a> or as an issue on GitHub. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
