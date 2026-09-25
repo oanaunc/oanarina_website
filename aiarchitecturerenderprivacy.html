@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Privacy Policy for AI Architecture Render — sketch to photorealistic render and floor plan. No accounts, no servers; images sent only to OpenAI with your own API key.">
+    <meta name="description" content="Privacy Policy for AI Architecture Render — use your own OpenAI API key, or buy credits. No login; what our render server keeps and how to delete it.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -246,40 +246,55 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Architecture Render</h1>
-    <p><strong>Last updated:</strong> 8 August 2026<br>
+    <p><strong>Last updated:</strong> 25 September 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle ID:</strong> com.oanarinaldi.aiarchitecturerender<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Architecture Render has no user accounts and no servers. We do not collect, store, receive or have access to any of your data. Everything the app creates stays on your device.</p>
-
-    <h2>What We Collect</h2>
-    <p>Nothing. There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app. We, the developer, never receive any information about you or your use of the app.</p>
+    <p>There is no login and no analytics. Your projects, uploads and renders stay on your device. You can use the app in two ways:</p>
+    <ul>
+        <li><strong>With your own OpenAI API key</strong> — images go directly from your device to OpenAI. We receive nothing.</li>
+        <li><strong>With a plan or credits</strong> bought in the app — your image passes through our render server on its way to OpenAI. The server keeps only what is needed to manage your credits (see below).</li>
+    </ul>
 
     <h2>What Stays on Your Device</h2>
     <ul>
         <li>The images you upload and the results the app generates, stored in the app’s private container.</li>
-        <li>Your projects and their settings, stored as a file in the app’s private container.</li>
-        <li>Your OpenAI API key, stored in the iOS Keychain with the “after first unlock, this device only” protection class, which means it is excluded from encrypted backups and never syncs to another device.</li>
+        <li>Your projects and their settings.</li>
+        <li>Your OpenAI API key, if you add one, in the iOS Keychain (this device only, never backed up or synced).</li>
         <li>Your app preferences.</li>
     </ul>
     <p>Deleting the app removes all of it permanently.</p>
 
-    <h2>What Is Sent to OpenAI</h2>
-    <p>To generate a render, the app sends the image you select and any text you type directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with the API key you supplied. This is the only network request the app makes, apart from a one-time check that your key is valid.</p>
-    <p>This data goes to OpenAI, not to us. It is processed under your own OpenAI account and is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
-    <p>The app asks for your explicit consent before this happens for the first time. You can decline; the app’s generation features will then not function.</p>
+    <h2>Using Your Own OpenAI API Key</h2>
+    <p>The app sends the image you select and any text you type directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with your key. This data goes to OpenAI, not to us, and is processed under your own OpenAI account and OpenAI’s policies (<a href="https://openai.com/policies" target="_blank" rel="noopener">openai.com/policies</a>).</p>
+
+    <h2>Using a Plan or Credits</h2>
+    <p>The app sends the image you select and any text you type to our render server, which forwards them to OpenAI using the developer’s OpenAI account and returns the result to your device. The finished image is kept on the server for up to 24 hours only so the app can collect it if your connection drops; your uploaded image and text are not stored. As of writing, OpenAI states that data submitted through its API is not used to train its models by default.</p>
+    <p>To manage your credits, the server stores:</p>
+    <ul>
+        <li>a random account ID created by the app (not linked to your name, email or Apple ID);</li>
+        <li>your App Store purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your credit balance and a history of changes to it (purchases, renders, refunds);</li>
+        <li>for each render: date, quality, output size, credits used and the processing cost reported by OpenAI.</li>
+    </ul>
+    <p>Payments are handled entirely by Apple; we never see your payment details. The account ID is kept in your iCloud Keychain so your balance survives a reinstall. A server record is only created once you buy a plan or credits, or sign in with Apple.</p>
+
+    <h2>Sign in with Apple (Optional)</h2>
+    <p>If you choose Sign in with Apple, we receive only Apple’s anonymous identifier for you in this app — never your name or email — and use it to make your credits available on all your devices. Apple also gives us a token that we use only to cancel the sign-in when you delete your account. Signing in is never required.</p>
+
+    <p>We ask for your consent before your first render is sent to OpenAI. You can decline; the app’s generation features will then not work.</p>
 
     <h2>Photos and Camera</h2>
     <p>The app requests access to your photo library so you can choose an image to work from, and to your camera so you can photograph a sketch or a plan. If you enable “Auto-save renders to Photos”, it requests add-only permission to save results. We do not read, scan or upload anything from your library other than the specific image you choose.</p>
 
     <h2>Children</h2>
-    <p>The app is not directed at children and collects no data from anyone.</p>
+    <p>The app is not directed at children.</p>
 
-    <h2>Your Rights</h2>
-    <p>Because we hold no data about you, there is nothing for us to disclose, correct or delete. To remove everything the app has stored, use Settings &gt; Delete all projects &amp; images, or delete the app.</p>
-    <p>For data held by OpenAI under your account, contact OpenAI directly.</p>
+    <h2>Deleting Your Data</h2>
+    <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, render history and any Sign in with Apple link from our server, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings. You can also email us to ask for deletion.</p>
+    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; images, or delete the app. For data held by OpenAI under your own API key, contact OpenAI directly.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>

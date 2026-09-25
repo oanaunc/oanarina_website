@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Support for AI Architecture Render — getting started with your OpenAI API key, costs, common problems, and what the app can and cannot do.">
+    <meta name="description" content="Support for AI Architecture Render — plans and credits, restoring purchases, cancelling, using your own OpenAI API key, and common problems.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -250,18 +250,36 @@
     <strong>Bundle ID:</strong> com.oanarinaldi.aiarchitecturerender<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
-    <h2>Getting Started</h2>
-    <p>The app runs on your own OpenAI account. To use it you need an API key:</p>
+    <h2>Two Ways to Render</h2>
+    <p><strong>Plans and credits</strong> — no OpenAI account needed. Choose Monthly or Pro, or buy a one-time credit pack, from Home &gt; Start rendering or Settings &gt; Plan &amp; credits.</p>
+    <p><strong>Your own OpenAI API key</strong> — the app is free, and each render is billed to your OpenAI account.</p>
+
+    <h2>How Credits Work</h2>
+    <ul>
+        <li>A Standard render uses 1 credit; High quality uses 3. “Render again” and variations are new renders and use credits too. The Generate button always shows what a render will use.</li>
+        <li>Monthly credits are used first. They refresh on your renewal date and don’t roll over.</li>
+        <li>Top-up credits never expire.</li>
+        <li>If a render fails, or the image never reaches your phone (for example your connection drops), its credits are returned automatically.</li>
+        <li>Choose Standard or High in Settings &gt; Render quality.</li>
+    </ul>
+
+    <h2>Restoring Purchases and Other Devices</h2>
+    <p>Open Settings &gt; Plan &amp; credits &gt; Restore, signed in with the same Apple ID you bought with. To use your credits on several devices, tap Sign in with Apple in the same place (optional).</p>
+
+    <h2>Cancelling and Refunds</h2>
+    <p>Subscriptions are managed by Apple: iPhone Settings &gt; your name &gt; Subscriptions. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+    <h2>Deleting Your Account</h2>
+    <p>Settings &gt; Plan &amp; credits &gt; Delete account &amp; data. Remaining credits are lost, and a subscription keeps running until you cancel it with Apple.</p>
+
+    <h2>Getting Started with Your Own API Key</h2>
     <ol>
         <li>Go to <a href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> and sign in or create an account.</li>
         <li>Open API keys and create a new secret key.</li>
         <li>Add a payment method under Billing. A key without billing enabled will be rejected by OpenAI.</li>
-        <li>Copy the key and paste it into the app when prompted, or under Settings &gt; OpenAI API key.</li>
+        <li>Copy the key and paste it into the app under Settings &gt; OpenAI API key.</li>
     </ol>
     <p>Your key is stored in your iPhone’s Keychain and is only ever sent to OpenAI.</p>
-
-    <h2>What Does It Cost?</h2>
-    <p>The app is free and has no subscription. Each render is a paid API call billed to you directly by OpenAI at their published rate. Standard quality costs less than High. You can set a spending limit on your OpenAI account.</p>
 
     <h2>Common Problems</h2>
     <p><strong>“Your API key was rejected (401)”</strong><br>
@@ -270,16 +288,18 @@
     Your OpenAI account may need verification before it can use image generation. Check <a href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a>.</p>
     <p><strong>“Rate limit or quota reached (429)”</strong><br>
     You have hit a spending limit or rate limit on your OpenAI account.</p>
+    <p><strong>My credits didn’t appear after buying</strong><br>
+    Open Settings &gt; Plan &amp; credits and tap Restore. If they still don’t appear, email us with the Support ID shown there.</p>
     <p><strong>The render doesn’t match my drawing</strong><br>
     Set “How closely to follow your design” to Faithful. Balanced and Creative both allow the model to reinterpret your geometry.</p>
     <p><strong>The plan I generated has wrong dimensions</strong><br>
-    Dimensions, areas and scale bars are drawn to look plausible. They are not measured and must never be used as construction information. The app warns you when you turn those options on.</p>
+    Dimensions, areas and scale bars are drawn to look plausible. They are not measured and must never be used as construction information.</p>
 
     <h2>What the App Can and Cannot Do</h2>
     <p>Results are generated by an image model. It does not build or measure a 3D model of your design. Sketch to Plan produces an image, not a CAD file. Render from Plan infers a view from the plan rather than reconstructing it geometrically. Always check output against your own drawings.</p>
 
     <h2>Privacy</h2>
-    <p>No account, no servers, no analytics. Everything is stored on your device.<br>
+    <p>No login and no analytics; your projects stay on your device. With a plan, our server keeps only your credit balance and purchase history.<br>
     Full policy: <a href="aiarchitecturerenderprivacy.html">AI Architecture Render Privacy Policy</a></p>
 
     <h2>Contact</h2>
