@@ -200,7 +200,7 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js?v=20260921-midjourney"></script>
+    <script defer src="js/motion-manifest.js?v=20260925b-archi"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 <style>
 .photo-editor-intro { text-align:center; max-width:850px; margin:0 auto 55px; }
@@ -381,18 +381,18 @@
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260925)">
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260925b)">
         <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Architecture &amp; Design</p><h2>Archi Tool</h2></div></div></div></div>
     </section>
     <main class="album-catagory section-padding-100-0" id="main"><div class="container">
         <div class="photo-editor-intro">
-            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260925" alt="Oanarina Archi Tool icon" width="92" height="92">
+            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260925b" alt="Oanarina Archi Tool icon" width="92" height="92">
             <h1>Oanarina Archi Tool</h1><h4>Draw it. Build it. See it.</h4>
             <p>A free, native Mac application for architecture: precise 2D drafting with an AutoCAD-style command line, intelligent building elements in the spirit of Revit, 3D views, rendering, sheets and printing — and a scripting interface that lets you, or an AI agent, design alongside you.</p>
             <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#features" class="btn oneMusic-btn">Explore the tools</a></div>
             <p>Free and open source (GPL-3.0) · macOS 14 or later</p>
         </div>
-        <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260925" alt="The Oanarina Archi Tool workspace with a house plan in 2D next to its shaded 3D model, the ribbon, properties panel and command line" loading="lazy">
+        <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260925b" alt="The Oanarina Archi Tool workspace with a house plan in 2D next to its shaded 3D model, the ribbon, properties panel and command line" loading="lazy">
         <p class="editor-caption">Plan and model side by side: every wall, door and window you draw in 2D is a real building element in 3D.</p>
         <div class="archi-grid">
             <div><strong>150+</strong>commands</div>
@@ -412,6 +412,7 @@
 <article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Script it, or let an AI help</h3><p>Automate with the JavaScript console, connect AI agents such as Claude through the built-in Model Context Protocol server or the local JSON-RPC interface, and run the headless archi-cli on your projects.</p></article>
 </div></section>
         <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>Start with an idea. Finish with a building.</h2><p>Sketch a plan, raise the walls and walk through the rooms — in one model.</p></div><div class="col-12 col-lg-7"><h4>1. Draw the plan</h4><p>Start a new drawing or a building template with levels, or open a DXF. Draw walls on a level and drop doors and windows into them; rooms find their own boundaries and areas.</p><h4>2. Shape it in 3D</h4><p>Add floors, a roof and stairs, switch to 3D or split the window to see plan and model together, and orbit, section or walk through the building.</p><h4>3. Share the result</h4><p>Place views on sheets and plot a PDF, render an image, or export DXF, SVG, IFC for BIM tools, OBJ, STL and glTF for 3D apps, and CSV schedules for spreadsheets.</p></div></div></section>
+        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>The Cedar House</h2><p>A contemporary residence modelled in Oanarina Archi Tool: a red-cedar tower, limestone wings and a long black canopy over the entrance. It ships with the app as a sample project.</p></div><div class="col-12 col-lg-7"><img class="editor-shot" src="images/apps/archi-tool/model-front.jpg?v=20260925b" alt="The Cedar House sample project in the Realistic 3D view: a cedar-clad tower with a tall window strip, limestone wings, a black canopy, trees and hedges" loading="lazy"><p class="editor-caption" style="margin-bottom:0">Realistic view with materials, textures and sun shadows, straight from the modelling window.</p></div></div></section>
         <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>The command line</h2><p>Everything you can click, you can type — and everything you can type, a script or an AI agent can do.</p></div><div class="col-12 col-lg-7"><div class="archi-code"><b>Command:</b> WALL<br>Specify start point [Thickness/Height/Justify/Type]: 0,0<br>Specify next point: @12000,0<br>Specify next point: @0,8000<br><b>Command:</b> DOOR<br>Select wall: pick · Width &lt;900&gt;: ↵<br><b>Command:</b> ROOF<br>Specify boundary [Walls/Kind/Pitch]: W</div><p>Connect Claude Desktop with one line in its settings: <code>archi-cli --mcp ~/Documents/house.archi</code>. The <a href="https://github.com/oanaunc/archi_tool/blob/main/docs/AGENT-API.md">agent guide</a> explains the tools.</p></div></div></section>
         <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Archi Tool</h2><p>Free architecture software for your Mac.</p><p id="release-status">Version 1.0 preview · Apple silicon and Intel · 13.3 MB. Developer ID-signed and notarized by Apple.</p><p>Preview build — 25 September: drafting and editing, the command line, walls, doors, windows, floors, roofs, stairs and rooms, 3D views, rendering, sheets and PDF, DXF and IFC exchange, and scripting for AI agents. Updated builds follow as development continues.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018)</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4, OBJ, STL, glTF (GLB), CSV schedules, .archi</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div></div></section>
         <p class="text-center"><a href="downloads/archi-tool/SHA256SUMS.txt">Download checksum</a> · <a href="https://github.com/oanaunc/archi_tool">Source code</a></p>

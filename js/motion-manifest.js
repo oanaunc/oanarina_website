@@ -1,8 +1,8 @@
 /* Higgsfield films generated from the original page header images. */
 window.OANA_MOTION = {
   "archi-tool": {
-    "src": "media/motion/archi-tool-midjourney.mp4",
-    "poster": "images/apps/archi-tool/breadcrumb.png",
+    "src": "media/motion/archi-tool-cedar.mp4",
+    "poster": "images/apps/archi-tool/breadcrumb.png?v=20260925b",
     "sameImage": true
   },
   "photo-editor": {
