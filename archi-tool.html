@@ -200,34 +200,188 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js?v=20260925b-archi"></script>
+    <script defer src="js/motion-manifest.js?v=20260926-archi"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 <style>
-.photo-editor-intro { text-align:center; max-width:850px; margin:0 auto 55px; }
-.photo-editor-intro .editor-icon { width:92px; height:92px; margin-bottom:24px; }
-.photo-editor-intro h1 { font-size:36px; margin-bottom:20px; }
-.editor-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:28px 0 18px; }
-.editor-shot { width:100%; border:1px solid #e5e5e5; margin-bottom:18px; }
-.editor-caption { text-align:center; font-size:13px; margin-bottom:60px; }
-.editor-feature { margin-bottom:35px; }
-.editor-feature h3 { font-size:20px; margin-bottom:14px; }
-.editor-feature p { font-size:15px; }
-.editor-section { padding:40px 0; border-top:1px solid #ebebeb; }
-#download, #features { scroll-margin-top:130px; }
-.editor-download { background:#f5f5f5; padding:40px; margin:25px 0 50px; }
-.editor-specs { width:100%; margin:25px 0; }
-.editor-specs th,.editor-specs td { padding:12px 0; border-bottom:1px solid #ddd; font-size:14px; }
-.editor-specs th { width:40%; }
-.editor-faq details { padding:20px 0; border-bottom:1px solid #e5e5e5; }
-.editor-faq summary { cursor:pointer; font-weight:600; }
-.editor-faq details p { margin:15px 0 0; }
 .editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:clamp(440px,75vh,900px); display:flex; align-items:center; }
 .editor-breadcrumb video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .editor-breadcrumb .container { position:relative; z-index:2; }
 .editor-breadcrumb .section-heading { margin-bottom:0; }
 .editor-breadcrumb .section-heading p { color:#fff; text-shadow:0 1px 8px #000; }
 .editor-motion-toggle { position:absolute; right:20px; bottom:15px; z-index:3; color:white; background:#0009; border:1px solid #fff7; padding:6px 12px; font-size:12px; }
-@media(max-width:575px) { .photo-editor-intro h1 {font-size:28px}.editor-download {padding:24px}.editor-actions .btn {width:100%} }
+.pe-page { --pink:#f06fa4; --pink-soft:#f6b6cf; --blue:#6fa8ff; --cyan:#4cc9f0; --ink:#16181c; --ink2:#1f2227; --ink3:#2a2e35; --line:#34383f; --paper:#fff; --muted:#6b6f76; display:block; overflow-x:hidden; }
+.pe-page .container { position:relative; }
+.pe-page h1, .pe-page h2, .pe-page h3 { letter-spacing:0; }
+#download, #studio, #features, #faq { scroll-margin-top:110px; }
+
+/* shared */
+.pe-section-head { text-align:center; margin:0 auto 38px; max-width:760px; }
+.pe-section-head > p:first-child { font-size:13px; text-transform:uppercase; letter-spacing:.18em; color:var(--pink); margin-bottom:10px; font-weight:600; }
+.pe-section-head h2 { font-size:clamp(30px,4vw,46px); line-height:1.05; margin:0; text-transform:none; letter-spacing:0; }
+.pe-section-sub { font-size:16px; color:var(--muted); margin:16px auto 0; max-width:640px; }
+.pe-left { text-align:left; margin-left:0; }
+.pe-btn { display:inline-flex; align-items:center; gap:12px; border-radius:999px; padding:14px 26px; font-weight:700; font-size:16px; line-height:1.15; transition:transform .2s, box-shadow .2s, background .2s; text-decoration:none; }
+.pe-btn small { display:block; font-weight:500; font-size:12px; opacity:.85; margin-top:2px; }
+.pe-btn-primary { color:#1b0d14; background:linear-gradient(135deg,#ffd0e2,var(--pink) 55%,#d85690); box-shadow:0 10px 30px rgba(240,111,164,.35); }
+.pe-btn-primary:hover, .pe-btn-primary:focus-visible { color:#1b0d14; transform:translateY(-2px); box-shadow:0 16px 40px rgba(240,111,164,.5); }
+.pe-btn-ghost { color:#fff; border:1px solid rgba(255,255,255,.35); }
+.pe-btn-ghost:hover, .pe-btn-ghost:focus-visible { color:#fff; border-color:var(--pink-soft); background:rgba(255,255,255,.06); }
+
+/* hero */
+.pe-hero { position:relative; background:var(--ink); color:#e9eaee; padding:90px 0 100px; overflow:hidden; }
+.pe-hero-glow { position:absolute; inset:-20% -10% auto; height:140%; pointer-events:none;
+  background:radial-gradient(40% 50% at 18% 30%, rgba(240,111,164,.28), transparent 70%), radial-gradient(35% 45% at 85% 20%, rgba(111,168,255,.25), transparent 70%), radial-gradient(30% 40% at 70% 90%, rgba(76,201,240,.14), transparent 70%); }
+.pe-hero-grid { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:56px; align-items:center; }
+.pe-hero-icon { width:84px; height:84px; border-radius:20px; box-shadow:0 12px 40px rgba(0,0,0,.45); margin-bottom:22px; }
+.pe-eyebrow { color:var(--pink-soft); font-size:13px; text-transform:uppercase; letter-spacing:.2em; margin-bottom:12px; font-weight:600; }
+.pe-hero h1 { color:#fff; font-size:clamp(40px,5.4vw,68px); line-height:.98; margin:0 0 20px; text-transform:none; }
+.pe-lede { color:#c8cad0; font-size:18px; line-height:1.55; max-width:520px; margin-bottom:30px; }
+.pe-hero-actions { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:18px; }
+.pe-trust { color:#9a9ea6; font-size:13px; margin-bottom:18px; max-width:520px; }
+.pe-chips { list-style:none; padding:0; margin:0 0 18px; display:flex; flex-wrap:wrap; gap:8px; }
+.pe-chips li { font-size:12px; color:#dfe1e6; padding:6px 12px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); }
+.pe-hero-links, .pe-hero-links a { color:#9a9ea6; font-size:13px; }
+.pe-hero-links a:hover { color:var(--pink-soft); }
+.pe-hero-shot { position:relative; perspective:1400px; }
+.pe-window { border-radius:14px; overflow:hidden; background:#101114; border:1px solid rgba(255,255,255,.1); box-shadow:0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.4); }
+.pe-window img { display:block; width:100%; height:auto; }
+.pe-window-tilt { transform:rotateX(var(--rx,4deg)) rotateY(var(--ry,-10deg)); transition:transform .35s ease-out; transform-style:preserve-3d; }
+.pe-titlebar, .pe-app-bar { display:flex; align-items:center; gap:7px; height:30px; padding:0 12px; background:#23262c; border-bottom:1px solid #2e3238; }
+.pe-titlebar i, .pe-app-bar > i { width:11px; height:11px; border-radius:50%; background:#ff5f57; display:block; flex:none; }
+.pe-titlebar i:nth-child(2), .pe-app-bar > i:nth-child(2) { background:#febc2e; }
+.pe-titlebar i:nth-child(3), .pe-app-bar > i:nth-child(3) { background:#8f96a3; }
+.pe-titlebar span { margin-left:10px; font-size:11px; color:#9da2ab; }
+.pe-float { position:absolute; border-radius:12px; border:1px solid rgba(255,255,255,.14); box-shadow:0 24px 60px rgba(0,0,0,.55); object-fit:cover; background:#000; animation:peFloat 7s ease-in-out infinite; }
+.pe-float-a { width:44%; aspect-ratio:1680/720; left:-8%; bottom:-10%; }
+.pe-float-b { width:26%; aspect-ratio:1; right:-4%; top:-12%; animation-delay:-3.5s; }
+@keyframes peFloat { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-10px) } }
+
+/* studio */
+.pe-studio { padding:100px 0 80px; background:linear-gradient(#fff, #f6f4f7); }
+.pe-app { border-radius:16px; overflow:hidden; background:var(--ink); border:1px solid #0c0d10; box-shadow:0 40px 100px rgba(22,24,28,.28); color:#e4e6ea; }
+.pe-app-bar { height:36px; }
+.pe-app-menu { display:flex; gap:18px; margin-left:18px; font-size:12px; color:#a8adb6; }
+.pe-app-menu span:first-child { color:#fff; font-weight:600; }
+.pe-app-doc { margin-left:auto; font-size:12px; color:#1b0d14; background:var(--pink-soft); padding:3px 12px; border-radius:999px; font-weight:600; }
+.pe-app-body { display:grid; grid-template-columns:86px minmax(0,1fr) 330px; height:clamp(520px,52vw,640px); }
+.pe-toolbar { display:flex; flex-direction:column; gap:4px; padding:12px 8px; overflow-y:auto; background:var(--ink2); border-right:1px solid var(--line); }
+.pe-tool { display:flex; flex-direction:column; align-items:center; gap:4px; padding:10px 4px; border:0; border-radius:10px; background:transparent; color:#aeb3bc; cursor:pointer; font:inherit; font-size:11px; transition:background .2s, color .2s; }
+.pe-tool:hover { background:var(--ink3); color:#fff; }
+.pe-tool.is-active { background:rgba(240,111,164,.18); color:var(--pink-soft); box-shadow:inset 0 0 0 1px rgba(240,111,164,.45); }
+.pe-tool:focus-visible, .pe-steps button:focus-visible, .pe-mini:focus-visible, .pe-ba-tab:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+.pe-stage { position:relative; background:#0d0e11; display:flex; flex-direction:column; }
+.pe-stage video { display:block; width:100%; flex:1 1 0; min-height:0; height:0; background:#0d0e11; object-fit:contain; cursor:pointer; }
+.pe-play { position:absolute; left:50%; top:calc(50% - 40px); transform:translate(-50%,-50%); width:74px; height:74px; border-radius:50%; border:0; color:#1b0d14; background:var(--pink); box-shadow:0 12px 40px rgba(240,111,164,.55); cursor:pointer; display:grid; place-items:center; transition:opacity .25s, transform .25s; }
+.pe-play:hover { transform:translate(-50%,-50%) scale(1.06); }
+.pe-app.is-playing .pe-play { opacity:0; pointer-events:none; }
+.pe-scrub { position:relative; height:6px; background:#2a2e35; cursor:pointer; flex:none; }
+.pe-scrub-fill { position:absolute; inset:0 auto 0 0; width:0; background:linear-gradient(90deg,var(--pink),var(--blue)); }
+.pe-scrub-marks i { position:absolute; top:-3px; width:2px; height:12px; background:#fff; opacity:.55; border-radius:1px; }
+.pe-stage-foot { display:flex; align-items:center; gap:10px; padding:10px 14px; font-size:12px; color:#9da2ab; margin-top:auto; }
+.pe-stage-foot #pe-time { margin-right:auto; font-variant-numeric:tabular-nums; }
+.pe-mini { border:1px solid var(--line); background:var(--ink2); color:#dfe1e6; border-radius:8px; padding:5px 12px; font:inherit; font-size:12px; cursor:pointer; }
+.pe-mini:hover { border-color:var(--pink-soft); }
+.pe-stage-foot #pe-toggle { order:-1; }
+.pe-panel { background:var(--ink2); border-left:1px solid var(--line); padding:0 18px 18px; display:flex; flex-direction:column; min-width:0; min-height:0; overflow:hidden; }
+.pe-panel-tabs { display:flex; gap:16px; font-size:12px; color:#8a8f98; border-bottom:1px solid var(--line); margin:0 -18px 16px; padding:10px 18px; }
+.pe-panel-tabs .is-on { color:#fff; font-weight:600; box-shadow:0 11px 0 -9px var(--pink); }
+.pe-panel h3 { color:#fff; font-size:20px; margin:0 0 6px; text-transform:none; line-height:1.2; }
+.pe-panel > p { color:#a8adb6; font-size:14px; line-height:1.5; margin-bottom:12px; }
+.pe-steps { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:4px; overflow:auto; flex:1 1 auto; min-height:0; }
+.pe-steps button { width:100%; display:grid; grid-template-columns:26px 1fr auto; gap:10px; align-items:start; text-align:left; background:transparent; border:0; border-radius:10px; padding:9px 8px; color:#c9ccd2; font:inherit; font-size:13.5px; line-height:1.4; cursor:pointer; transition:background .2s; }
+.pe-steps button:hover { background:var(--ink3); }
+.pe-n { width:24px; height:24px; border-radius:50%; display:grid; place-items:center; font-size:12px; font-weight:700; background:var(--ink3); color:#aeb3bc; transition:background .25s, color .25s; }
+.pe-at { font-size:11px; color:#6f747d; padding-top:3px; font-variant-numeric:tabular-nums; }
+.pe-steps .is-done .pe-n { background:rgba(111,168,255,.2); color:var(--blue); }
+.pe-steps .is-now button { background:rgba(240,111,164,.12); color:#fff; }
+.pe-steps .is-now .pe-n { background:var(--pink); color:#1b0d14; }
+.pe-panel-foot { margin:14px 0 0; padding-top:12px; border-top:1px solid var(--line); font-size:12px; color:#8a8f98; }
+.pe-link { background:none; border:0; padding:0; color:var(--pink-soft); font:inherit; cursor:pointer; text-align:left; }
+.pe-link:hover { text-decoration:underline; }
+
+/* compare */
+.pe-compare { padding:90px 0; background:#f6f4f7; }
+.pe-compare-grid { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr); gap:48px; align-items:center; }
+.pe-compare-copy p { font-size:16px; color:#4a4e55; }
+.pe-ba-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.pe-ba-tab { border:1px solid #d8d4da; background:#fff; border-radius:999px; padding:8px 16px; font:inherit; font-size:14px; cursor:pointer; color:#2a2e35; }
+.pe-ba-tab.is-active { background:var(--ink); color:#fff; border-color:var(--ink); }
+.pe-ba { position:relative; border-radius:16px; overflow:hidden; aspect-ratio:1680/720; box-shadow:0 30px 70px rgba(22,24,28,.25); background:#000; user-select:none; }
+.pe-ba-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.pe-ba-top { position:absolute; inset:0; clip-path:inset(0 calc(100% - var(--pos)) 0 0); }
+.pe-ba-handle { position:absolute; top:0; bottom:0; left:var(--pos); width:2px; background:#fff; transform:translateX(-1px); pointer-events:none; }
+.pe-ba-handle span { position:absolute; top:50%; left:50%; width:44px; height:44px; border-radius:50%; transform:translate(-50%,-50%); background:var(--pink); box-shadow:0 6px 20px rgba(0,0,0,.4); }
+.pe-ba-handle span::before, .pe-ba-handle span::after { content:""; position:absolute; top:50%; border:6px solid transparent; transform:translateY(-50%); }
+.pe-ba-handle span::before { left:6px; border-right-color:#1b0d14; }
+.pe-ba-handle span::after { right:6px; border-left-color:#1b0d14; }
+.pe-ba-range { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; margin:0; }
+.pe-ba-label { position:absolute; top:14px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:rgba(0,0,0,.45); padding:4px 10px; border-radius:999px; pointer-events:none; }
+.pe-ba-l { left:14px; } .pe-ba-r { right:14px; }
+
+/* made with */
+.pe-made { padding:90px 0 70px; }
+.pe-made-grid { display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:220px; gap:16px; }
+.pe-card { position:relative; margin:0; border-radius:14px; overflow:hidden; background:#111; box-shadow:0 16px 40px rgba(22,24,28,.15); }
+.pe-card img, .pe-card video { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s; }
+.pe-card:hover img, .pe-card:hover video { transform:scale(1.04); }
+.pe-card figcaption { position:absolute; left:12px; bottom:12px; font-size:12px; color:#fff; background:rgba(22,24,28,.7); padding:5px 12px; border-radius:999px; }
+.pe-tall { grid-row:span 2; }
+.pe-wide { grid-column:span 2; }
+.pe-credit { text-align:center; color:var(--muted); font-size:13px; margin-top:18px; }
+
+/* features */
+.pe-features { padding:90px 0; background:var(--ink); color:#dfe1e6; }
+.pe-features .pe-section-head h2 { color:#fff; }
+.pe-feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.pe-feature { background:var(--ink2); border:1px solid var(--line); border-radius:16px; padding:26px; transition:transform .25s, border-color .25s; }
+.pe-feature:hover { transform:translateY(-4px); border-color:rgba(240,111,164,.5); }
+.pe-feature svg { color:var(--pink-soft); margin-bottom:14px; }
+.pe-feature h3 { color:#fff; font-size:20px; margin:0 0 10px; text-transform:none; }
+.pe-feature p { color:#a8adb6; font-size:14.5px; line-height:1.6; margin:0; }
+
+/* specs, faq, final */
+.pe-specs { padding:80px 0 40px; }
+.pe-specs-grid { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr); gap:48px; }
+.pe-update { color:#4a4e55; font-size:15px; }
+.pe-page .editor-specs { width:100%; }
+.pe-page .editor-specs th, .pe-page .editor-specs td { padding:14px 0; border-bottom:1px solid #e3e0e5; font-size:14.5px; vertical-align:top; }
+.pe-page .editor-specs th { width:34%; color:#2a2e35; }
+.pe-faq { padding:50px 0 60px; }
+.pe-faq details { max-width:820px; margin:0 auto; padding:20px 0; border-bottom:1px solid #e5e5e5; }
+.pe-faq summary { cursor:pointer; font-weight:600; font-size:17px; }
+.pe-faq details p { margin:14px 0 0; }
+.pe-final { padding:0 0 100px; }
+.pe-final-inner { text-align:center; border-radius:22px; padding:56px 24px; color:#fff; background:radial-gradient(60% 90% at 20% 0%, rgba(240,111,164,.35), transparent 70%), radial-gradient(50% 80% at 90% 100%, rgba(111,168,255,.3), transparent 70%), var(--ink); }
+.pe-final-inner img { border-radius:16px; margin-bottom:16px; }
+.pe-final-inner h2 { color:#fff; font-size:clamp(26px,3.4vw,40px); margin:0 0 24px; text-transform:none; }
+.pe-final-inner p { margin:22px 0 0; }
+.pe-final-inner p a { color:#c8cad0; }
+
+/* responsive */
+@media (max-width:1199px) { .pe-app-body { grid-template-columns:80px minmax(0,1fr) 290px; } .pe-app-menu { display:none; } }
+@media (max-width:991px) {
+  .pe-hero { padding:64px 0 80px; } .pe-hero-grid { grid-template-columns:1fr; gap:50px; }
+  .pe-hero-shot { max-width:640px; margin:0 auto; width:92%; }
+  .pe-app-body { grid-template-columns:1fr; height:auto; }
+  .pe-toolbar { flex-direction:row; overflow-x:auto; border-right:0; border-bottom:1px solid var(--line); padding:8px; }
+  .pe-tool { flex:none; min-width:74px; }
+  .pe-panel { border-left:0; border-top:1px solid var(--line); }
+  .pe-steps { max-height:none; }
+  .pe-stage video { flex:none; height:auto; aspect-ratio:1920/1030; }
+  .pe-compare-grid, .pe-specs-grid { grid-template-columns:1fr; gap:28px; }
+  .pe-feature-grid { grid-template-columns:repeat(2,1fr); }
+  .pe-made-grid { grid-template-columns:repeat(2,1fr); grid-auto-rows:200px; }
+  .pe-wide { grid-column:span 2; }
+}
+@media (max-width:575px) {
+  .pe-hero-actions .pe-btn { width:100%; justify-content:center; }
+  .pe-feature-grid { grid-template-columns:1fr; }
+  .pe-made-grid { grid-template-columns:1fr; grid-auto-rows:240px; } .pe-tall { grid-row:span 1; } .pe-wide { grid-column:span 1; }
+  .pe-stage-foot #pe-full { display:none; }
+  .pe-float-a { left:-4%; } .pe-float-b { right:-2%; }
+}
+@media (prefers-reduced-motion: reduce) { .pe-float { animation:none; } .pe-window-tilt { transform:none; } }
+
 .archi-accent { color:#d9a400; }
 .archi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:10px 0 60px; }
 .archi-grid div { background:#f5f5f5; padding:18px; text-align:center; }
@@ -236,6 +390,161 @@
 .archi-code b { color:#f5c518; font-weight:normal; }
 </style>
 <link rel="canonical" href="https://oanarinaldi.com/archi-tool.html">
+<style>
+.at-page { --ink:#1e1f22; --ink2:#26272b; --acc:#f5c518; --muted:#9a9ca3; }
+.at-badges span { display:inline-block; margin:4px; padding:4px 12px; border:1px solid #ddd; font-size:12px; letter-spacing:.04em; }
+.at-stats { background:var(--ink); color:#fff; padding:56px 0; margin:30px 0 0; }
+.at-stats-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:24px; text-align:center; }
+.at-stats strong { display:block; font-size:44px; line-height:1.1; color:var(--acc); font-weight:700; }
+.at-stats span { font-size:13px; color:#c9cbd1; letter-spacing:.03em; }
+.at-studio { background:linear-gradient(180deg,var(--ink) 0%,#141518 100%); color:#e6e6e6; padding:70px 0 80px; }
+.at-studio h2, .at-ai h2 { color:inherit; }
+.at-studio h2 { color:#fff; font-size:32px; margin-bottom:16px; }
+.at-studio p { color:#c9cbd1; }
+.at-kicker { text-transform:uppercase; letter-spacing:.18em; font-size:12px; color:var(--acc) !important; margin-bottom:8px; font-weight:600; }
+.at-term { background:#101114; border:1px solid #2f3035; border-radius:10px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.35); margin:22px 0 14px; }
+.at-term-bar { display:flex; align-items:center; gap:6px; padding:9px 12px; background:#1b1c20; border-bottom:1px solid #2a2b30; }
+.at-term-bar i { width:11px; height:11px; border-radius:50%; background:#3a3b40; display:inline-block; }
+.at-term-bar i:first-child { background:#ff5f57; } .at-term-bar i:nth-child(2) { background:#febc2e; } .at-term-bar i:nth-child(3) { background:#28c840; }
+.at-term-bar span { margin-left:10px; font-size:12px; color:#8c8e95; }
+.at-term-body { font:13px/1.65 Menlo,Consolas,monospace; color:#d7d8dc; padding:14px 16px; height:250px; overflow:hidden; white-space:pre-wrap; }
+.at-term-body .c { color:var(--acc); } .at-term-body .o { color:#8c8e95; }
+.at-term-body .cur { display:inline-block; width:8px; height:15px; background:var(--acc); vertical-align:-2px; animation:atblink 1s steps(1) infinite; }
+@keyframes atblink { 50% { opacity:0; } }
+.at-replay { background:none; border:1px solid #3a3b40; color:#c9cbd1; padding:6px 14px; font-size:12px; border-radius:6px; cursor:pointer; }
+.at-replay:hover { border-color:var(--acc); color:var(--acc); }
+.at-plan { background:radial-gradient(ellipse at center,#23252a 0%,#17181b 75%); border:1px solid #2a2b30; border-radius:14px; padding:14px; min-height:420px; }
+.at-plan svg { width:100%; height:auto; max-height:640px; display:block; }
+.plan-anim { font-family:Helvetica,Arial,sans-serif; }
+.plan-anim .ps { fill:none; vector-effect:non-scaling-stroke; stroke-width:1.1px; stroke:#dcdcdc; stroke-linecap:round; stroke-linejoin:round; }
+.plan-anim .ps:not(.dashed) { stroke-dasharray:1; stroke-dashoffset:1; }
+.plan-anim .pf, .plan-anim .pt, .plan-anim .dashed { opacity:0; }
+.plan-anim .pt { fill:#c9cbd1; }
+.plan-anim .lyr-a-wall .pf { fill:#cfc6b4; } .plan-anim .lyr-a-wall .ps { stroke:#ffffff; stroke-width:1.4px; }
+.plan-anim .lyr-a-glaz .ps { stroke:#6fd3ff; } .plan-anim .lyr-a-glaz .pf { fill:#6fd3ff; }
+.plan-anim .lyr-a-door .ps { stroke:#f5c518; } .plan-anim .lyr-a-door .pf { fill:#f5c518; }
+.plan-anim .lyr-a-anno-dims .ps, .plan-anim .lyr-a-anno-dims .dashed { stroke:#f5c518; } .plan-anim .lyr-a-anno-dims .pt, .plan-anim .lyr-a-anno-dims .pf { fill:#f5c518; }
+.plan-anim .lyr-a-area .pf { fill:#e8a36b; fill-opacity:.08; } .plan-anim .lyr-a-area .pt { fill:#e8a36b; }
+.plan-anim .lyr-l-plnt .ps { stroke:#7bc47f; } .plan-anim .lyr-l-plnt .pf { fill:#7bc47f; fill-opacity:.25; }
+.plan-anim .lyr-a-elements .ps { stroke:#9a9ca3; } .plan-anim .lyr-a-elements .pf { fill:#55575d; }
+.plan-anim.play .ps:not(.dashed) { animation:atdraw .7s ease forwards; animation-delay:calc(var(--i) * 11ms); }
+.plan-anim.play .pf, .plan-anim.play .pt, .plan-anim.play .dashed { animation:atfade .8s ease forwards; animation-delay:calc(var(--i) * 11ms + .3s); }
+@keyframes atdraw { to { stroke-dashoffset:0; } }
+@keyframes atfade { to { opacity:1; } }
+.at-section { padding:70px 0 20px; }
+.at-section h2 { font-size:32px; margin-bottom:12px; }
+.at-lead { font-size:16px; max-width:760px; margin-bottom:28px; }
+.at-gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; margin-top:22px; }
+.at-gallery figure { margin:0; } .at-gallery img { width:100%; display:block; border:1px solid #e5e5e5; }
+.at-gallery figcaption { font-size:13px; padding-top:8px; color:#666; }
+.at-search { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
+.at-search input { flex:1; padding:12px 16px; border:1px solid #d8d8d8; font-size:15px; outline:none; }
+.at-search input:focus { border-color:#d9a400; box-shadow:0 0 0 3px rgba(245,197,24,.25); }
+.at-search span { font-size:13px; color:#888; white-space:nowrap; }
+.at-areas { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.at-areas button { border:1px solid #ddd; background:#fff; padding:7px 12px; font-size:13px; cursor:pointer; transition:all .15s; }
+.at-areas button b { color:#b58a00; margin-left:6px; font-weight:600; }
+.at-areas button[aria-selected="true"], .at-areas button:hover { background:#1e1f22; color:#fff; border-color:#1e1f22; }
+.at-areas button[aria-selected="true"] b, .at-areas button:hover b { color:#f5c518; }
+.at-list { list-style:none; padding:0; margin:0; columns:3 280px; column-gap:28px; }
+.at-list li { break-inside:avoid; padding:7px 0; border-bottom:1px solid #eee; font-size:14px; line-height:1.4; }
+.at-list li code { font-size:11px; color:#b58a00; background:#fff8dd; padding:1px 5px; margin-left:4px; }
+.at-list li small { display:block; color:#777; font-size:12px; margin-top:2px; }
+.at-steps .row > div { margin-bottom:24px; }
+.at-num { display:inline-flex; width:38px; height:38px; border-radius:50%; background:#1e1f22; color:#f5c518; align-items:center; justify-content:center; font-weight:700; margin-bottom:12px; }
+.at-tutorials { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:20px; }
+.at-tut { background:#1e1f22; color:#e6e6e6; border-radius:10px; overflow:hidden; }
+.at-tut video, .at-tut .at-tut-soon { width:100%; aspect-ratio:16/10; display:block; background:#101114; }
+.at-tut .at-tut-soon { display:flex; align-items:center; justify-content:center; color:#f5c518; font-size:36px; font-weight:700; }
+.at-tut div.t { padding:12px 14px 16px; } .at-tut h5 { color:#fff; font-size:15px; margin:0 0 4px; } .at-tut p { color:#9a9ca3; font-size:12px; margin:0; }
+.at-ai { background:#f7f7f5; padding:60px 40px; margin:70px 0 30px; }
+.at-code { margin:0; padding:18px 20px; font:13px/1.6 Menlo,Consolas,monospace; color:#e6e6e6; white-space:pre; overflow:auto; background:none; }
+.at-code b { color:#8c8e95; font-weight:normal; }
+@media (max-width:991px) { .at-stats-grid { grid-template-columns:repeat(2,1fr); } .at-plan { margin-top:24px; } }
+@media (prefers-reduced-motion: reduce) { .plan-anim .ps:not(.dashed) { stroke-dashoffset:0; } .plan-anim .pf, .plan-anim .pt, .plan-anim .dashed { opacity:1; } .plan-anim.play * { animation:none !important; } }
+
+.photo-editor-intro{text-align:center;max-width:860px;margin:0 auto 56px}
+.photo-editor-intro .editor-icon{width:92px;height:92px;border-radius:22px;box-shadow:0 12px 34px rgba(0,0,0,.22);margin:0 auto 22px;display:block}
+.photo-editor-intro h1{font-size:44px;margin-bottom:6px}
+.photo-editor-intro h4{color:#F5C518;font-weight:600;margin-bottom:18px}
+.photo-editor-intro p{font-size:17px;line-height:1.7}
+.editor-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 0 14px}
+.editor-actions .btn{margin:0}
+.editor-shot{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.28);margin:28px 0}
+.editor-download{text-align:center;padding:48px 24px;border-radius:18px;background:#111;color:#eee;margin:40px 0}
+.editor-download h2,.editor-download h3{color:#fff}
+.editor-download p{color:#c9c9c9}
+.editor-specs{width:100%;max-width:760px;margin:24px auto;border-collapse:collapse;text-align:left}
+.editor-specs th,.editor-specs td{padding:10px 14px;border-bottom:1px solid rgba(127,127,127,.25);vertical-align:top}
+.editor-specs th{width:36%;font-weight:600}
+.editor-faq{max-width:860px;margin:40px auto}
+.editor-faq details{border-bottom:1px solid rgba(127,127,127,.25);padding:14px 0}
+.editor-faq summary{cursor:pointer;font-weight:600;font-size:17px}
+.editor-faq details p{margin:10px 0 0}
+@media (max-width:767px){.photo-editor-intro h1{font-size:32px}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const onView = (el, fn, opts) => { if (!el) return; const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { fn(); io.disconnect(); } }), opts || { threshold: .35 }); io.observe(el); };
+  // Counters
+  document.querySelectorAll('.at-stats [data-count]').forEach(el => {
+    const end = +el.dataset.count; if (reduce) return;
+    onView(el, () => { const t0 = performance.now(), d = 1400; const step = t => { const k = Math.min(1, (t - t0) / d); el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))).toLocaleString('en-US'); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); });
+  });
+  // Plan + terminal
+  const holder = document.getElementById('at-plan'), term = document.getElementById('at-term');
+  const script = [
+    ['OPEN "Cedar House.archi"', 'Opened Cedar House.archi — 55 building elements.'],
+    ['WALL 0,1500 @6000,0 @0,8500 @-6000,0 C', '4 walls · Limestone · 300 mm · height 6200'],
+    ['WALL 6000,0 @5000,0 @0,7500 @-5000,0', 'Cedar tower · 7200 mm'],
+    ['WINDOW  Width 1300  Height 5300  Sill 1600', 'Window strip hosted in wall #6'],
+    ['DOOR  Width 1100  Style Single', 'Pivot entrance door placed'],
+    ['SLAB Walls  Thickness 250', 'Floor slab 21.0 × 8.5 m'],
+    ['ROOF Kind Shed  Pitch 4  Overhang 1300', 'Roof plate with deep overhang'],
+    ['STAIR Top "Upper Floor"', '18 risers · 177.8 mm · rule check OK'],
+    ['ROOM Pick', 'Living 01 · 46.4 m²'],
+    ['DIMLINEAR  Architectural 1:100', 'Dimension 21000'],
+    ['COMPONENT Tree  Birch', '6 trees placed'],
+    ['VS Realistic', 'Sun: golden hour · shadows on']
+  ];
+  let run = 0;
+  function play() {
+    const my = ++run; if (term) term.innerHTML = '';
+    const svg = holder && holder.querySelector('svg'); if (svg) { svg.classList.remove('play'); void svg.getBoundingClientRect(); svg.classList.add('play'); }
+    if (!term) return;
+    let li = 0;
+    const next = () => {
+      if (my !== run || li >= script.length) { if (my === run) term.insertAdjacentHTML('beforeend', '<span class="c">Command:</span> <span class="cur"></span>'); return; }
+      const [cmd, out] = script[li++]; const line = document.createElement('div'); line.innerHTML = '<span class="c">Command:</span> '; term.appendChild(line); term.scrollTop = term.scrollHeight;
+      const txt = document.createElement('span'); line.appendChild(txt); let ci = 0;
+      const type = () => { if (my !== run) return; if (ci < cmd.length) { txt.textContent += cmd[ci++]; setTimeout(type, reduce ? 0 : 28 + Math.random() * 40); } else { const o = document.createElement('div'); o.className = 'o'; o.textContent = out; term.appendChild(o); term.scrollTop = term.scrollHeight; while (term.children.length > 14) term.removeChild(term.firstChild); setTimeout(next, reduce ? 0 : 380); } };
+      type();
+    };
+    next();
+  }
+  if (holder) fetch(holder.dataset.src).then(r => r.text()).then(t => { holder.innerHTML = t; onView(holder, play, { threshold: .25 }); }).catch(() => {});
+  const rb = document.getElementById('at-replay'); if (rb) rb.addEventListener('click', play);
+  // Feature explorer
+  const areasEl = document.getElementById('at-areas'), listEl = document.getElementById('at-list'), q = document.getElementById('at-q'), countEl = document.getElementById('at-count');
+  if (areasEl) fetch('downloads/archi-tool/features.json?v=20260926').then(r => r.json()).then(data => {
+    const keys = Object.keys(data.areas); let current = keys[0];
+    const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const render = () => {
+      const term = (q.value || '').trim().toLowerCase(); let items = [];
+      if (term) keys.forEach(k => data.areas[k].items.forEach(it => { if ((it[0] + ' ' + it[1] + ' ' + it[2]).toLowerCase().includes(term)) items.push([...it, data.areas[k].name]); }));
+      else items = data.areas[current].items.map(it => [...it, '']);
+      [...areasEl.children].forEach(b => b.setAttribute('aria-selected', !term && b.dataset.k === current));
+      listEl.innerHTML = items.slice(0, 400).map(it => `<li><strong>${esc(it[0])}</strong>${it[1] && !/^[—–-]+$/.test(it[1].trim()) ? `<code>${esc(it[1].split(/[ (,]/)[0])}</code>` : ''}<small>${esc(it[3] ? it[3] + ' · ' : '')}${esc(it[2])}</small></li>`).join('') || '<li>No matching feature yet.</li>';
+      countEl.textContent = term ? `${items.length} found` : `${items.length} in ${data.areas[current].name}`;
+    };
+    areasEl.innerHTML = keys.map(k => `<button type="button" role="tab" data-k="${k}">${esc(data.areas[k].name)}<b>${data.areas[k].items.length}</b></button>`).join('');
+    areasEl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; current = b.dataset.k; q.value = ''; render(); });
+    q.addEventListener('input', render); render();
+  }).catch(() => {});
+});
+</script>
+
 </head>
 
 <body>
@@ -381,48 +690,103 @@
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260925b)">
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260926)">
         <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Architecture &amp; Design</p><h2>Archi Tool</h2></div></div></div></div>
     </section>
-    <main class="album-catagory section-padding-100-0" id="main"><div class="container">
+    <main class="album-catagory section-padding-100-0 at-page" id="main">
+    <div class="container">
         <div class="photo-editor-intro">
-            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260925b" alt="Oanarina Archi Tool icon" width="92" height="92">
+            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260926" alt="Oanarina Archi Tool icon" width="92" height="92">
             <h1>Oanarina Archi Tool</h1><h4>Draw it. Build it. See it.</h4>
-            <p>A free, native Mac application for architecture: precise 2D drafting with an AutoCAD-style command line, intelligent building elements in the spirit of Revit, 3D views, rendering, sheets and printing — and a scripting interface that lets you, or an AI agent, design alongside you.</p>
-            <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#features" class="btn oneMusic-btn">Explore the tools</a></div>
-            <p>Free and open source (GPL-3.0) · macOS 14 or later</p>
+            <p>A free, native Mac studio for architecture: precise 2D drafting with a command line that speaks AutoCAD, intelligent building elements in the spirit of Revit, parametric 3D modelling, realistic rendering, sheets and printing — and an open door for AI agents that can design alongside you.</p>
+            <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#watch" class="btn oneMusic-btn">Watch it draw</a><a href="#tutorials" class="btn oneMusic-btn">Tutorials</a></div>
+            <p class="at-badges"><span>Free</span><span>Open source · GPL-3.0</span><span>Apple silicon &amp; Intel</span><span>macOS 14+</span><span>No account</span></p>
         </div>
-        <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260925b" alt="The Oanarina Archi Tool workspace with a house plan in 2D next to its shaded 3D model, the ribbon, properties panel and command line" loading="lazy">
-        <p class="editor-caption">Plan and model side by side: every wall, door and window you draw in 2D is a real building element in 3D.</p>
-        <div class="archi-grid">
-            <div><strong>150+</strong>commands</div>
-            <div><strong>10</strong>file formats</div>
-            <div><strong>2D + 3D</strong>in one model</div>
-            <div><strong>Free</strong>no account, no subscription</div>
+    </div>
+
+    <section class="at-stats" aria-label="Oanarina Archi Tool in numbers"><div class="container"><div class="at-stats-grid">
+        <div><strong data-count="1114">1114</strong><span>features built and tested</span></div>
+        <div><strong data-count="1041">1041</strong><span>commands, each on the command line</span></div>
+        <div><strong data-count="945">945</strong><span>automated tests on every build</span></div>
+        <div><strong data-count="30">30</strong><span>file formats in and out</span></div>
+        <div><strong>0&nbsp;€</strong><span>forever — no subscription</span></div>
+    </div></div></section>
+
+    <section id="watch" class="at-studio"><div class="container"><div class="row align-items-center">
+        <div class="col-12 col-lg-5">
+            <p class="at-kicker">Watch it draw</p>
+            <h2>Every line starts on the command line</h2>
+            <p>Type what you want to build. The plan on the right is the Cedar House, the sample project that ships with the app — exported straight from Oanarina Archi Tool and replayed here, wall by wall.</p>
+            <div class="at-term" aria-hidden="true"><div class="at-term-bar"><i></i><i></i><i></i><span>Command line</span></div><div class="at-term-body" id="at-term"></div></div>
+            <button type="button" class="at-replay" id="at-replay">↻ Replay</button>
         </div>
-        <section id="features"><div class="section-heading"><p>From the first line to the finished building</p><h2>A complete studio for architecture</h2></div><div class="row">
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Draft with precision</h3><p>Lines, polylines with arcs, circles, arcs, ellipses, splines, rectangles, polygons, points and revision clouds. Object snaps, polar and ortho tracking, a grid and typed coordinates — absolute, relative and polar — put every point exactly where it belongs.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Edit like a professional</h3><p>Move, copy, rotate, scale, mirror, stretch, trim, extend, offset, fillet, chamfer, break, join, explode and arrays, with grips on every object and undo for every step. Select with windows, crossings, filters and similar objects.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Speak the command line</h3><p>Type LINE, WALL, DOOR or any of the familiar commands and aliases. Prompts offer their options, autocomplete suggests as you type, Enter repeats the last command and scripts replay whole sequences.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Design with building elements</h3><p>Walls with layered wall types and clean joins, doors and windows hosted in walls, curtain walls, slabs, roofs (flat, shed, gable and hip), stairs, railings, columns, beams, grids, levels, rooms with automatic areas, and furniture.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Annotate clearly</h3><p>Text and multiline text, linear, aligned, angular, radial, diameter, ordinate, baseline and continued dimensions, leaders, tables, 18 hatch patterns, layers with colours, linetypes and lineweights, blocks with attributes.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Step into 3D</h3><p>Orbit your building in a live 3D view with wireframe, hidden-line, shaded, realistic and X-ray styles, sun shadows and a walk mode. Elevations and sections are generated from the model.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Render the light</h3><p>Produce still renders up to 4K with the sun placed for your site, date and time, then save them as PNG or JPEG or export a turntable movie.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Sheets, plots and PDF</h3><p>Lay out plans, elevations and sections at 1:50, 1:100 or 1:200 on A-series or Letter sheets with a title block, north arrow and scale bar, then print or plot vector PDF.</p></article>
-<article class="col-12 col-md-6 col-lg-4 editor-feature"><h3>Script it, or let an AI help</h3><p>Automate with the JavaScript console, connect AI agents such as Claude through the built-in Model Context Protocol server or the local JSON-RPC interface, and run the headless archi-cli on your projects.</p></article>
-</div></section>
-        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>Start with an idea. Finish with a building.</h2><p>Sketch a plan, raise the walls and walk through the rooms — in one model.</p></div><div class="col-12 col-lg-7"><h4>1. Draw the plan</h4><p>Start a new drawing or a building template with levels, or open a DXF. Draw walls on a level and drop doors and windows into them; rooms find their own boundaries and areas.</p><h4>2. Shape it in 3D</h4><p>Add floors, a roof and stairs, switch to 3D or split the window to see plan and model together, and orbit, section or walk through the building.</p><h4>3. Share the result</h4><p>Place views on sheets and plot a PDF, render an image, or export DXF, SVG, IFC for BIM tools, OBJ, STL and glTF for 3D apps, and CSV schedules for spreadsheets.</p></div></div></section>
-        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>The Cedar House</h2><p>A contemporary residence modelled in Oanarina Archi Tool: a red-cedar tower, limestone wings and a long black canopy over the entrance. It ships with the app as a sample project.</p></div><div class="col-12 col-lg-7"><img class="editor-shot" src="images/apps/archi-tool/model-front.jpg?v=20260925b" alt="The Cedar House sample project in the Realistic 3D view: a cedar-clad tower with a tall window strip, limestone wings, a black canopy, trees and hedges" loading="lazy"><p class="editor-caption" style="margin-bottom:0">Realistic view with materials, textures and sun shadows, straight from the modelling window.</p></div></div></section>
-        <section class="editor-section"><div class="row"><div class="col-12 col-lg-5"><h2>The command line</h2><p>Everything you can click, you can type — and everything you can type, a script or an AI agent can do.</p></div><div class="col-12 col-lg-7"><div class="archi-code"><b>Command:</b> WALL<br>Specify start point [Thickness/Height/Justify/Type]: 0,0<br>Specify next point: @12000,0<br>Specify next point: @0,8000<br><b>Command:</b> DOOR<br>Select wall: pick · Width &lt;900&gt;: ↵<br><b>Command:</b> ROOF<br>Specify boundary [Walls/Kind/Pitch]: W</div><p>Connect Claude Desktop with one line in its settings: <code>archi-cli --mcp ~/Documents/house.archi</code>. The <a href="https://github.com/oanaunc/archi_tool/blob/main/docs/AGENT-API.md">agent guide</a> explains the tools.</p></div></div></section>
-        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Archi Tool</h2><p>Free architecture software for your Mac.</p><p id="release-status">Version 1.0 preview · Apple silicon and Intel · 13.3 MB. Developer ID-signed and notarized by Apple.</p><p>Preview build — 25 September: drafting and editing, the command line, walls, doors, windows, floors, roofs, stairs and rooms, 3D views, rendering, sheets and PDF, DXF and IFC exchange, and scripting for AI agents. Updated builds follow as development continues.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018)</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4, OBJ, STL, glTF (GLB), CSV schedules, .archi</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div></div></section>
-        <p class="text-center"><a href="downloads/archi-tool/SHA256SUMS.txt">Download checksum</a> · <a href="https://github.com/oanaunc/archi_tool">Source code</a></p>
+        <div class="col-12 col-lg-7"><div class="at-plan" id="at-plan" data-src="images/apps/archi-tool/plan-anim.svg?v=20260926"></div></div>
+    </div></div></section>
+
+    <div class="container">
+        <section class="at-section">
+            <p class="at-kicker">One model, every view</p>
+            <h2>Plan and model side by side</h2>
+            <p class="at-lead">Walls, doors, windows, floors and roofs are real building elements. Draw them in 2D and they stand up in 3D — with materials, sun and shadows.</p>
+            <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260926" alt="The Oanarina Archi Tool workspace with the Cedar House plan in 2D beside its realistic 3D model, the ribbon, properties panel and command line" loading="lazy">
+            <div class="at-gallery"><figure><img src="images/apps/archi-tool/model-front.jpg?v=20260926" alt="The Cedar House in the Realistic 3D view" loading="lazy"><figcaption>The Cedar House, Realistic view</figcaption></figure></div>
+        </section>
+
+        <section id="features" class="at-section">
+            <p class="at-kicker">Everything an architect reaches for</p>
+            <h2>Explore 1114 features</h2>
+            <p class="at-lead">Pick an area, or search for a command you know from AutoCAD, Revit, ArchiCAD, SketchUp or FreeCAD.</p>
+            <div class="at-search"><input id="at-q" type="search" placeholder="Search features — e.g. hatch, stair, IFC, fillet, render…" aria-label="Search features"><span id="at-count"></span></div>
+            <div class="at-areas" id="at-areas" role="tablist"></div>
+            <ul class="at-list" id="at-list" aria-live="polite"></ul>
+        </section>
+
+        <section class="at-section at-steps">
+            <p class="at-kicker">From idea to building</p>
+            <h2>Four steps, one app</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">1</span><h4>Draw the plan</h4><p>Levels, walls with real layer build-ups, doors and windows that cut their openings, rooms that find their own boundaries and areas.</p></div>
+                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">2</span><h4>Shape it in 3D</h4><p>Floors, roofs of every shape, stairs between levels, curtain walls, terrain, parametric families and solid modelling.</p></div>
+                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">3</span><h4>Render the light</h4><p>Sun for your site and hour, materials and textures, realistic views, walkthrough videos and 360° panoramas.</p></div>
+                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">4</span><h4>Share the drawings</h4><p>Sheets with title blocks and viewports at scale, PDF, DXF, IFC for BIM, glTF, USDZ, OBJ and schedules for spreadsheets.</p></div>
+            </div>
+        </section>
+
+        <section id="tutorials" class="at-section">
+            <p class="at-kicker">Learn by watching</p>
+            <h2>Tutorials: build the Cedar House with me</h2>
+            <p class="at-lead">Short videos recorded inside the app, from the first click to the final render.</p>
+            <div class="at-tutorials"><article class="at-tut"><div class="at-tut-soon">01</div><div class="t"><h5>01 · Getting started</h5><p>The start screen, the interface and the sample house · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">02</div><div class="t"><h5>02 · The command line</h5><p>Commands, aliases and coordinates · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">03</div><div class="t"><h5>03 · Drawing basics</h5><p>Lines, snaps, trim, offset and fillet · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">04</div><div class="t"><h5>04 · Levels and walls</h5><p>Levels, wall types and clean joins · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">05</div><div class="t"><h5>05 · Doors and windows</h5><p>Hosted openings, types and sizes · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">06</div><div class="t"><h5>06 · Floors, roofs and stairs</h5><p>Slabs, roofs with overhangs and stairs · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">07</div><div class="t"><h5>07 · Rooms and annotation</h5><p>Areas, dimensions, text and tags · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">08</div><div class="t"><h5>08 · 3D and materials</h5><p>Orbit, visual styles, materials and textures · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">09</div><div class="t"><h5>09 · Rendering</h5><p>Sun, presets, cameras and final images · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">10</div><div class="t"><h5>10 · Sheets and PDF</h5><p>Viewports at scale, title blocks, plotting · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">11</div><div class="t"><h5>11 · Import and export</h5><p>DXF, IFC, glTF and schedules · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">12</div><div class="t"><h5>12 · Scripting and AI</h5><p>JavaScript, plugins and AI agents over MCP · coming soon</p></div></article></div>
+        </section>
+
+        <section class="at-section at-ai"><div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+                <p class="at-kicker">Scripting &amp; AI agents</p>
+                <h2>Design together with an AI</h2>
+                <p>Everything you can click, you can type — and everything you can type, a script or an AI agent can do. Automate with the JavaScript console, visual node graphs and plugins, or connect Claude and other agents through the built-in Model Context Protocol server.</p>
+                <p><code>archi-cli --mcp ~/Documents/house.archi</code></p>
+            </div>
+            <div class="col-12 col-lg-7"><div class="at-term"><div class="at-term-bar"><i></i><i></i><i></i><span>JavaScript console</span></div><pre class="at-code"><b>// A row of houses, each one a real building element</b>
+for (let i = 0; i &lt; 4; i++) {
+  const x = i * 14000
+  const w = [[x,0],[x+10000,0],[x+10000,8000],[x,8000]]
+  w.forEach((p, k) =&gt; archi.wall(...p, ...w[(k+1)%4], { height: 3200 }))
+  archi.slab(w, { thickness: 250 })
+  archi.addElement({ type: "roof", boundary: w, kind: "gable", pitch: 35 })
+}
+archi.run("ZOOM E")</pre></div></div>
+        </div></section>
+
+        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Archi Tool</h2><p>Free architecture software for your Mac.</p><p id="release-status">Version 1.0 · Apple silicon and Intel · 13.3 MB. Developer ID-signed and notarized by Apple.</p><p>Preview build — the final 1.0 release with all features, realistic rendering and tutorials follows shortly.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later · Apple silicon and Intel</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div></div></section>
+        <p class="text-center"><a href="downloads/archi-tool/SHA256SUMS.txt">Download checksum</a></p>
         <section class="editor-faq mb-100"><div class="section-heading"><p>A few useful details</p><h2>Before you begin</h2></div>
-<details><summary>Is it really free?</summary><p>Yes. Oanarina Archi Tool is free software under the GNU General Public License 3.0: no account, no subscription and no watermark. The <a href="https://github.com/oanaunc/archi_tool">source code</a> is public.</p></details>
-<details><summary>Can I open my AutoCAD drawings?</summary><p>Open and save DXF drawings, the open exchange format AutoCAD, LibreCAD, BricsCAD and most CAD tools read and write. To bring in a DWG file, save it as DXF from your CAD application first. For building models, export IFC.</p></details>
+<details><summary>Is it really free?</summary><p>Yes. Oanarina Archi Tool is free software under the GNU General Public License 3.0: no account, no subscription and no watermark.</p></details>
+<details><summary>Can I open my AutoCAD, Revit or SketchUp work?</summary><p>Open and save DXF, the exchange format AutoCAD, LibreCAD and most CAD tools read and write; save DWG files as DXF first. Exchange building models as IFC with Revit, ArchiCAD and other BIM tools. Rhino 3DM files open directly; SketchUp files open through a free converter.</p></details>
 <details><summary>Does it work offline?</summary><p>Yes. Drawings and models stay on your Mac. The optional agent server listens only on your own computer and is off until you turn it on.</p></details>
-<details><summary>How complete is it?</summary><p>This is an early preview of a long programme: the public <a href="https://github.com/oanaunc/archi_tool/blob/main/docs/FEATURE-REGISTER.md">feature register</a> lists more than a thousand planned capabilities and marks what is already done. New versions are published here.</p></details>
-<details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities. The <a href="https://github.com/oanaunc/archi_tool/blob/main/LICENSE">license</a> is included with the app.</p></details>
-<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a> or as an issue on GitHub. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
+<details><summary>How complete is it?</summary><p>1114 of the 1157 capabilities in the public feature register are built and tested. The remaining ones are marked openly in the register, most of them waiting for outside validation.</p></details>
+<details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities.</p></details>
+<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
+
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
