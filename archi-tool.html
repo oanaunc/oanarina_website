@@ -200,7 +200,7 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js?v=20260926-archi"></script>
+    <script defer src="js/motion-manifest.js?v=20260927-archi"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 <style>
 .editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:clamp(440px,75vh,900px); display:flex; align-items:center; }
@@ -463,25 +463,52 @@
 @media (max-width:991px) { .at-stats-grid { grid-template-columns:repeat(2,1fr); } .at-plan { margin-top:24px; } }
 @media (prefers-reduced-motion: reduce) { .plan-anim .ps:not(.dashed) { stroke-dashoffset:0; } .plan-anim .pf, .plan-anim .pt, .plan-anim .dashed { opacity:1; } .plan-anim.play * { animation:none !important; } }
 
-.photo-editor-intro{text-align:center;max-width:860px;margin:0 auto 56px}
-.photo-editor-intro .editor-icon{width:92px;height:92px;border-radius:22px;box-shadow:0 12px 34px rgba(0,0,0,.22);margin:0 auto 22px;display:block}
-.photo-editor-intro h1{font-size:44px;margin-bottom:6px}
-.photo-editor-intro h4{color:#F5C518;font-weight:600;margin-bottom:18px}
-.photo-editor-intro p{font-size:17px;line-height:1.7}
-.editor-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 0 14px}
-.editor-actions .btn{margin:0}
-.editor-shot{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.28);margin:28px 0}
-.editor-download{text-align:center;padding:48px 24px;border-radius:18px;background:#111;color:#eee;margin:40px 0}
-.editor-download h2,.editor-download h3{color:#fff}
-.editor-download p{color:#c9c9c9}
-.editor-specs{width:100%;max-width:760px;margin:24px auto;border-collapse:collapse;text-align:left}
-.editor-specs th,.editor-specs td{padding:10px 14px;border-bottom:1px solid rgba(127,127,127,.25);vertical-align:top}
-.editor-specs th{width:36%;font-weight:600}
-.editor-faq{max-width:860px;margin:40px auto}
-.editor-faq details{border-bottom:1px solid rgba(127,127,127,.25);padding:14px 0}
-.editor-faq summary{cursor:pointer;font-weight:600;font-size:17px}
-.editor-faq details p{margin:10px 0 0}
-@media (max-width:767px){.photo-editor-intro h1{font-size:32px}}
+
+/* ---- Archi Tool on the shared pe-* layout: yellow and blueprint blue instead of pink and blue ---- */
+.pe-page.at-page { --pink:#f5c518; --pink-soft:#ffe07a; --blue:#6fb4ff; --cyan:#7fd4ff; --ink:#15171b; --ink2:#1d2025; --ink3:#282c33; --line:#31353c; }
+.at-page .pe-btn-primary { color:#1a1400; background:linear-gradient(135deg,#fff1b0,#f5c518 55%,#d9a400); box-shadow:0 10px 30px rgba(245,197,24,.32); }
+.at-page .pe-btn-primary:hover, .at-page .pe-btn-primary:focus-visible { color:#1a1400; box-shadow:0 16px 40px rgba(245,197,24,.48); }
+.at-page .pe-hero-glow { background:radial-gradient(40% 50% at 18% 30%, rgba(245,197,24,.20), transparent 70%), radial-gradient(35% 45% at 85% 20%, rgba(111,180,255,.22), transparent 70%), radial-gradient(30% 40% at 70% 90%, rgba(232,122,63,.16), transparent 70%); }
+.at-blueprint { position:absolute; inset:0; pointer-events:none; opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size:24px 24px, 24px 24px, 120px 120px, 120px 120px; -webkit-mask-image:radial-gradient(70% 80% at 60% 40%, #000 30%, transparent 85%); mask-image:radial-gradient(70% 80% at 60% 40%, #000 30%, transparent 85%); }
+.at-page .pe-app-doc { color:#1a1400; }
+.at-page .pe-tool.is-active { background:rgba(245,197,24,.16); color:var(--pink-soft); box-shadow:inset 0 0 0 1px rgba(245,197,24,.45); }
+.at-page .pe-play { color:#1a1400; box-shadow:0 12px 40px rgba(245,197,24,.45); }
+.at-page .pe-steps .is-now button { background:rgba(245,197,24,.12); }
+.at-page .pe-steps .is-now .pe-n { color:#1a1400; }
+.at-page .pe-steps .is-done .pe-n { background:rgba(111,180,255,.2); }
+.at-page .pe-feature:hover { border-color:rgba(245,197,24,.5); }
+.at-page .pe-ba-handle span::before { border-right-color:#1a1400; } .at-page .pe-ba-handle span::after { border-left-color:#1a1400; }
+.at-page .pe-final-inner { background:radial-gradient(60% 90% at 20% 0%, rgba(245,197,24,.28), transparent 70%), radial-gradient(50% 80% at 90% 100%, rgba(111,180,255,.26), transparent 70%), var(--ink); }
+.at-page .pe-app-body { grid-template-columns:136px minmax(0,1fr) 320px; height:auto; }
+.at-page .pe-toolbar { display:grid; grid-template-columns:1fr 1fr; align-content:start; gap:4px; padding:10px 8px; contain:size; overflow-y:auto; }
+.at-page .pe-tool { padding:8px 2px; font-size:10.5px; }
+.at-page .pe-stage video { flex:none; height:auto; aspect-ratio:16/10; object-fit:contain; }
+.at-page .pe-panel { contain:size; }
+.at-lesson { font-size:11px !important; text-transform:uppercase; letter-spacing:.14em; color:var(--pink) !important; margin:0 0 6px !important; font-weight:600; }
+.pe-steps .pe-t b { display:block; color:#fff; font-weight:600; margin-bottom:1px; }
+.pe-steps .pe-t i { font-style:normal; color:#9da2ab; font-size:12.5px; }
+.at-float-night { width:46%; aspect-ratio:16/9; left:-9%; bottom:-12%; }
+.at-float-cmd { right:-5%; top:-9%; padding:12px 16px; font:12px/1.6 Menlo,Consolas,monospace; color:#d7d8dc; background:rgba(16,17,20,.92); backdrop-filter:blur(8px); aspect-ratio:auto; width:auto; }
+.at-float-cmd span { color:var(--pink); } .at-float-cmd em { color:#8c8e95; font-style:normal; } .at-float-cmd b { color:#7bc47f; font-weight:normal; }
+.at-page .at-stats { margin:0; background:#101114; border-top:1px solid #23262c; padding:44px 0; }
+.at-ba { aspect-ratio:16/9; }
+.at-cmdline { margin-top:18px; } .at-cmdline code { font-size:12px; background:#fff8dd; color:#8a6a00; padding:3px 8px; border-radius:6px; margin-right:6px; }
+.at-made-grid { grid-auto-rows:230px; }
+.at-made-grid .pe-card img { object-position:center 60%; }
+.at-page .at-studio { padding:90px 0; }
+.at-page .at-studio h2 { font-size:clamp(28px,3.6vw,42px); }
+.at-explore { padding:90px 0 60px; background:#f6f5f2; }
+.at-explore .at-search input { border-radius:12px; background:#fff; }
+.at-explore .at-areas button { border-radius:999px; }
+.at-explore .at-list li { border-bottom-color:#e4e2dc; }
+.at-ai-band { padding:90px 0; background:var(--ink); color:#c8cad0; }
+.at-ai-band h2 { color:#fff; }
+.at-ai-band code { color:var(--pink-soft); background:#23262c; padding:3px 8px; border-radius:6px; }
+.at-page #watch, .at-page #features { scroll-margin-top:110px; }
+@media (max-width:1199px) { .at-page .pe-app-body { grid-template-columns:124px minmax(0,1fr) 270px; } }
+@media (max-width:991px) { .at-page .pe-app-body { grid-template-columns:1fr; } .at-page .pe-toolbar { display:flex; contain:none; overflow-x:auto; } .at-page .pe-tool { min-width:70px; } .at-page .pe-panel { contain:none; } .at-page .pe-steps { max-height:420px; } .at-float-cmd { display:none; } }
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -495,7 +522,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Plan + terminal
   const holder = document.getElementById('at-plan'), term = document.getElementById('at-term');
   const script = [
-    ['OPEN "Cedar House.archi"', 'Opened Cedar House.archi — 55 building elements.'],
+    ['OPEN "Cedar House.archi"', 'Opened Cedar House.archi — 408 objects, 59 building elements.'],
     ['WALL 0,1500 @6000,0 @0,8500 @-6000,0 C', '4 walls · Limestone · 300 mm · height 6200'],
     ['WALL 6000,0 @5000,0 @0,7500 @-5000,0', 'Cedar tower · 7200 mm'],
     ['WINDOW  Width 1300  Height 5300  Sill 1600', 'Window strip hosted in wall #6'],
@@ -527,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const rb = document.getElementById('at-replay'); if (rb) rb.addEventListener('click', play);
   // Feature explorer
   const areasEl = document.getElementById('at-areas'), listEl = document.getElementById('at-list'), q = document.getElementById('at-q'), countEl = document.getElementById('at-count');
-  if (areasEl) fetch('downloads/archi-tool/features.json?v=20260926').then(r => r.json()).then(data => {
+  if (areasEl) fetch('downloads/archi-tool/features.json?v=20260927').then(r => r.json()).then(data => {
     const keys = Object.keys(data.areas); let current = keys[0];
     const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const render = () => {
@@ -542,6 +569,87 @@ document.addEventListener('DOMContentLoaded', () => {
     areasEl.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; current = b.dataset.k; q.value = ''; render(); });
     q.addEventListener('input', render); render();
   }).catch(() => {});
+  // ---- Tutorial studio (same player as the Photo Editor page) ----
+  (function () {
+    const app = document.querySelector('.at-page .pe-app'); if (!app) return;
+    const data = JSON.parse(app.getAttribute('data-tutorials'));
+    const $ = id => document.getElementById(id);
+    const v = $('pe-video'), steps = $('pe-steps'), fill = $('pe-fill'), marks = $('pe-marks'), time = $('pe-time'), speed = $('pe-speed');
+    const tools = [...document.querySelectorAll('.at-page .pe-tool')]; let cur = 0, lastK = -1, rate = 1;
+    const fmt = t => { t = Math.max(0, Math.floor(t || 0)); return Math.floor(t / 60) + ':' + ('0' + t % 60).slice(-2); };
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    function layoutMarks() { if (!v.duration) return; [...marks.children].forEach(m => m.style.left = (m.dataset.t / v.duration * 100) + '%'); }
+    function sync() {
+      const d = data[cur], t = v.currentTime; let k = 0;
+      d.steps.forEach((s, i) => { if (t >= s[0] - 0.05) k = i; });
+      [...steps.children].forEach((li, i) => { li.classList.toggle('is-now', i === k); li.classList.toggle('is-done', i < k); });
+      if (k !== lastK) { lastK = k; const li = steps.children[k]; if (li) { const top = li.offsetTop - steps.offsetTop; if (top < steps.scrollTop || top + li.offsetHeight > steps.scrollTop + steps.clientHeight) steps.scrollTop = Math.max(0, top - 8); } }
+      fill.style.width = (v.duration ? t / v.duration * 100 : 0) + '%';
+      time.textContent = fmt(t) + ' / ' + (v.duration ? fmt(v.duration) : d.dur);
+    }
+    function render() {
+      const d = data[cur]; steps.innerHTML = ''; marks.innerHTML = ''; lastK = -1; steps.scrollTop = 0;
+      $('pe-title').textContent = d.title; $('pe-summary').textContent = d.summary;
+      $('at-lesson').textContent = 'Lesson ' + d.n + ' of ' + data.length + ' · ' + d.dur;
+      const nx = data[(cur + 1) % data.length];
+      $('pe-next').innerHTML = 'Next: <button type="button" class="pe-link">' + esc(nx.title) + ' →</button>';
+      $('pe-next').querySelector('.pe-link').onclick = () => select((cur + 1) % data.length, true);
+      d.steps.forEach((s, i) => {
+        const li = document.createElement('li'), b = document.createElement('button'); b.type = 'button';
+        b.innerHTML = '<span class="pe-n">' + (i + 1) + '</span><span class="pe-t"><b>' + esc(s[1]) + '</b>' + (s[2] ? '<i>' + esc(s[2]) + '</i>' : '') + '</span><span class="pe-at">' + fmt(s[0]) + '</span>';
+        b.onclick = () => { v.currentTime = s[0] + 0.05; start(); };
+        li.appendChild(b); steps.appendChild(li);
+        const m = document.createElement('i'); m.dataset.t = s[0]; marks.appendChild(m);
+      });
+      layoutMarks(); sync();
+    }
+    function start() { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+    function select(i, autoplay) {
+      cur = i; tools.forEach((b, j) => { b.classList.toggle('is-active', j === i); b.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+      const d = data[i]; v.poster = d.poster; v.src = d.video; v.playbackRate = rate; v.setAttribute('aria-label', 'Screen recording: ' + d.title); render(); if (autoplay) start();
+    }
+    tools.forEach((b, i) => b.onclick = () => select(i, true));
+    $('pe-play').onclick = start;
+    $('pe-toggle').onclick = () => v.paused ? start() : v.pause();
+    speed.onclick = () => { rate = rate === 1 ? 1.5 : rate === 1.5 ? 2 : 1; v.playbackRate = rate; speed.textContent = rate + '×'; };
+    $('pe-full').onclick = () => (v.requestFullscreen || v.webkitRequestFullscreen || v.webkitEnterFullscreen || function () {}).call(v);
+    v.addEventListener('click', () => v.paused ? start() : v.pause());
+    v.addEventListener('play', () => { app.classList.add('is-playing'); $('pe-toggle').textContent = 'Pause'; });
+    v.addEventListener('pause', () => { app.classList.remove('is-playing'); $('pe-toggle').textContent = 'Play'; });
+    v.addEventListener('timeupdate', sync); v.addEventListener('loadedmetadata', () => { v.playbackRate = rate; layoutMarks(); sync(); });
+    v.addEventListener('ended', () => select((cur + 1) % data.length, true));
+    document.querySelector('.at-page .pe-scrub').addEventListener('click', function (e) { const r = this.getBoundingClientRect(); if (v.duration) { v.currentTime = (e.clientX - r.left) / r.width * v.duration; start(); } });
+    document.querySelector('.at-page .pe-toolbar').addEventListener('keydown', e => {
+      if (!['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft'].includes(e.key)) return;
+      e.preventDefault(); const n = (cur + ((e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : -1) + data.length) % data.length; select(n, false); tools[n].focus();
+    });
+    if (!reduce) new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.intersectionRatio > .45) { if (v.paused && !v.ended) start(); } else if (!e.isIntersecting) v.pause(); }), { threshold: [0, .45] }).observe(v);
+    render();
+  })();
+  // ---- Lighting slider ----
+  (function () {
+    const ba = document.getElementById('pe-ba'); if (!ba) return;
+    const range = ba.querySelector('.pe-ba-range'), base = 'images/apps/archi-tool/renders/', Q = '.jpg?v=20260927';
+    range.addEventListener('input', () => ba.style.setProperty('--pos', range.value + '%'));
+    const tabs = [...document.querySelectorAll('.at-page .pe-ba-tab')];
+    tabs.forEach(b => b.onclick = () => {
+      tabs.forEach(x => x.classList.toggle('is-active', x === b));
+      document.getElementById('pe-ba-after').src = base + b.dataset.a + Q; document.getElementById('pe-ba-before').src = base + b.dataset.b + Q;
+      document.getElementById('pe-ba-la').textContent = b.dataset.la; document.getElementById('pe-ba-lb').textContent = b.dataset.lb;
+      document.querySelector('.at-cmdline code').textContent = 'RENDERPRESET ' + b.dataset.lb.replace(' ', '');
+      range.value = 50; ba.style.setProperty('--pos', '50%');
+    });
+    // a gentle sweep the first time the slider comes into view
+    if (!reduce) { const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; io.disconnect(); const t0 = performance.now();
+      const f = t => { const k = Math.min(1, (t - t0) / 2200), p = 50 + 32 * Math.sin(k * Math.PI * 2) * (1 - k); range.value = p; ba.style.setProperty('--pos', p + '%'); if (k < 1) requestAnimationFrame(f); }; requestAnimationFrame(f); }), { threshold: .6 }); io.observe(ba); }
+  })();
+  // ---- Hero window parallax ----
+  (function () {
+    const shot = document.querySelector('.at-page .pe-hero-shot');
+    if (!shot || reduce || !matchMedia('(pointer:fine)').matches) return;
+    shot.addEventListener('mousemove', e => { const r = shot.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; shot.style.setProperty('--rx', (-y * 6) + 'deg'); shot.style.setProperty('--ry', (x * 8) + 'deg'); });
+    shot.addEventListener('mouseleave', () => { shot.style.removeProperty('--rx'); shot.style.removeProperty('--ry'); });
+  })();
 });
 </script>
 
@@ -690,83 +798,156 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260926)">
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/archi-tool/breadcrumb.png?v=20260927)">
         <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Architecture &amp; Design</p><h2>Archi Tool</h2></div></div></div></div>
     </section>
-    <main class="album-catagory section-padding-100-0 at-page" id="main">
-    <div class="container">
-        <div class="photo-editor-intro">
-            <img class="editor-icon" src="images/apps/archi-tool/icon.png?v=20260926" alt="Oanarina Archi Tool icon" width="92" height="92">
-            <h1>Oanarina Archi Tool</h1><h4>Draw it. Build it. See it.</h4>
-            <p>A free, native Mac studio for architecture: precise 2D drafting with a command line that speaks AutoCAD, intelligent building elements in the spirit of Revit, parametric 3D modelling, realistic rendering, sheets and printing — and an open door for AI agents that can design alongside you.</p>
-            <div class="editor-actions"><a href="#download" class="btn oneMusic-btn">Get the app <i class="fa fa-angle-double-right" aria-hidden="true"></i></a><a href="#watch" class="btn oneMusic-btn">Watch it draw</a><a href="#tutorials" class="btn oneMusic-btn">Tutorials</a></div>
-            <p class="at-badges"><span>Free</span><span>Open source · GPL-3.0</span><span>Apple silicon &amp; Intel</span><span>macOS 14+</span><span>No account</span></p>
-        </div>
-    </div>
+<main class="pe-page at-page" id="main">
+<section class="pe-hero" id="download" aria-labelledby="at-hero-title">
+<div class="pe-hero-glow" aria-hidden="true"></div>
+<div class="at-blueprint" aria-hidden="true"></div>
+<div class="container"><div class="pe-hero-grid">
+<div class="pe-hero-copy">
+<img class="pe-hero-icon" src="images/apps/archi-tool/icon.png?v=20260927" alt="" width="84" height="84">
+<p class="pe-eyebrow">Free for Mac · open source · no account</p>
+<h1 id="at-hero-title">Oanarina Archi Tool</h1>
+<p class="pe-lede">Draw it. Build it. See it. Precise 2D drafting with a command line that speaks AutoCAD, real building elements, 3D modelling, photographic renders and drawing sheets — and an open door for AI agents that design alongside you.</p>
+<div class="pe-hero-actions">
+<a class="pe-btn pe-btn-primary" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · 13.3 MB · notarized by Apple</small></span></a>
+<a class="pe-btn pe-btn-ghost" href="#studio">Watch it build a house</a>
+</div>
+<p class="pe-trust" id="release-status">Version 1.0 · Apple silicon and Intel · 13.3 MB. Developer ID-signed and notarized by Apple.</p>
+<ul class="pe-chips" aria-label="Highlights">
+<li>macOS 14 or later</li><li>Apple silicon &amp; Intel</li><li>DXF · IFC · PDF</li><li>GPL-3.0</li>
+</ul>
+<p class="pe-hero-links"><a href="downloads/archi-tool/SHA256SUMS.txt">Checksum</a> · <a href="#faq">FAQ</a></p>
+</div>
+<div class="pe-hero-shot" aria-hidden="true">
+<div class="pe-window pe-window-tilt">
+<div class="pe-titlebar"><i></i><i></i><i></i><span>Cedar House.archi</span></div>
+<img src="images/apps/archi-tool/workspace.jpg?v=20260927" alt="" loading="eager">
+</div>
+<img class="pe-float pe-float-a at-float-night" src="images/apps/archi-tool/renders/front-night.jpg?v=20260927" alt="">
+<div class="pe-float pe-float-b at-float-cmd"><span>Command:</span> WALL<br><em>Thickness 300 · Height 6200</em><br><b>4 wall(s) created.</b></div>
+</div>
+</div></div>
+</section>
 
-    <section class="at-stats" aria-label="Oanarina Archi Tool in numbers"><div class="container"><div class="at-stats-grid">
-        <div><strong data-count="1114">1114</strong><span>features built and tested</span></div>
-        <div><strong data-count="1041">1041</strong><span>commands, each on the command line</span></div>
-        <div><strong data-count="945">945</strong><span>automated tests on every build</span></div>
-        <div><strong data-count="30">30</strong><span>file formats in and out</span></div>
-        <div><strong>0&nbsp;€</strong><span>forever — no subscription</span></div>
-    </div></div></section>
+<section class="at-stats" aria-label="Oanarina Archi Tool in numbers"><div class="container"><div class="at-stats-grid">
+<div><strong data-count="1114">1114</strong><span>features built and tested</span></div>
+<div><strong data-count="1041">1041</strong><span>commands on the command line</span></div>
+<div><strong data-count="945">945</strong><span>automated tests on every build</span></div>
+<div><strong data-count="30">30</strong><span>file formats in and out</span></div>
+<div><strong data-count="12">12</strong><span>video tutorials, one house</span></div>
+</div></div></section>
 
-    <section id="watch" class="at-studio"><div class="container"><div class="row align-items-center">
-        <div class="col-12 col-lg-5">
-            <p class="at-kicker">Watch it draw</p>
-            <h2>Every line starts on the command line</h2>
-            <p>Type what you want to build. The plan on the right is the Cedar House, the sample project that ships with the app — exported straight from Oanarina Archi Tool and replayed here, wall by wall.</p>
-            <div class="at-term" aria-hidden="true"><div class="at-term-bar"><i></i><i></i><i></i><span>Command line</span></div><div class="at-term-body" id="at-term"></div></div>
-            <button type="button" class="at-replay" id="at-replay">↻ Replay</button>
-        </div>
-        <div class="col-12 col-lg-7"><div class="at-plan" id="at-plan" data-src="images/apps/archi-tool/plan-anim.svg?v=20260926"></div></div>
-    </div></div></section>
+<section class="pe-studio" id="studio" aria-labelledby="at-studio-title">
+<div class="container">
+<div class="pe-section-head"><p>Twelve lessons, recorded in the app</p><h2 id="at-studio-title">Build the Cedar House with me</h2>
+<p class="pe-section-sub">Pick a lesson on the left. The window plays a real recording of the Mac app, from the first wall to the printed sheet, and the steps on the right follow along. Click any step to jump to it.</p></div>
+<div class="pe-app" data-tutorials='[{"n": 1, "slug": "01-getting-started", "title": "Getting started", "summary": "The start screen, the interface tour and the Cedar House sample", "dur": "1:28", "steps": [[0.0, "Welcome to Oanarina Archi Tool", "A free, native Mac app for drafting and building design"], [7.8, "Sample projects", "The Cedar House: the house this tutorial series builds step by step"], [16.7, "The ribbon", "Tools grouped in tabs; every button runs a command you could also type"], [26.4, "The canvas", "The 2D plan of the current level: scroll to zoom, drag to pan"], [29.9, "The command line", "Just start typing: commands, options and coordinates"], [37.0, "Side panels", "Properties, Layers, Levels, project Browser, Materials and more"], [52.0, "The status bar", "Snaps, grid, ortho and polar tracking toggles, cursor coordinates"], [55.7, "2D, 3D, Split and Sheet", "Switch the workspace with these buttons or ⌥⌘1–4"], [82.2, "Next: the command line", "Tutorial 02 shows how to drive the app by typing"]], "video": "videos/archi-tool/01-getting-started.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/01-getting-started.jpg?v=20260927"}, {"n": 2, "slug": "02-command-line", "title": "The command line", "summary": "Commands, aliases, coordinates, options, repeat and undo", "dur": "1:15", "steps": [[0.0, "Just start typing", "Commands go straight to the command line; Enter or Space confirms"], [11.9, "Aliases", "L is LINE, C is CIRCLE, REC is RECTANG, PL is PLINE…"], [20.0, "Absolute coordinates", "x,y measured from the origin"], [25.1, "Relative coordinates", "@dx,dy measured from the last point"], [32.5, "Polar coordinates", "@distance&lt;angle, angles in degrees counter-clockwise"], [39.2, "Options", "Type the capital letters of an option: D for Diameter"], [46.3, "Enter repeats the last command", "An empty Enter starts CIRCLE again"], [51.1, "Undo and redo", "U undoes the last command, REDO brings it back"], [55.9, "Units and arithmetic", "2.5m, 30cm, 3&#39;6\" and 2400/2 are all valid input"], [63.0, "History", "↑ and ↓ recall earlier lines; F2 shows the whole history"], [68.8, "Next: drawing basics", "Tutorial 03 covers snaps, ortho, trim, offset and fillet"]], "video": "videos/archi-tool/02-command-line.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/02-command-line.jpg?v=20260927"}, {"n": 3, "slug": "03-drawing-basics", "title": "Drawing basics", "summary": "Lines, polylines, rectangles, circles, snaps, ortho, trim, offset and fillet", "dur": "1:08", "steps": [[0.0, "Shapes", "Rectangles, circles and polylines with arc segments"], [19.4, "Object snaps", "OSNAP locks the cursor to endpoints, midpoints and centres"], [27.9, "Ortho", "F8 keeps lines horizontal or vertical; type a length to go that far"], [36.4, "Fillet", "FILLET rounds the corner between two lines"], [43.1, "Trim", "TRIM cuts objects back to the edges they cross"], [52.3, "Offset", "OFFSET makes parallel copies at a distance"], [60.9, "Next: levels and walls", "Tutorial 04 starts the Cedar House"]], "video": "videos/archi-tool/03-drawing-basics.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/03-drawing-basics.jpg?v=20260927"}, {"n": 4, "slug": "04-levels-and-walls", "title": "Levels and walls", "summary": "Levels, walls with thickness, height and justification, wall types and joins", "dur": "1:45", "steps": [[0.0, "Levels", "Every building element belongs to a level (storey)"], [21.8, "Walls", "WALL draws a chain of joined walls; Thickness and Height are options"], [33.6, "The cedar tower", "A taller chain: 7.2 m, joined to the wing"], [43.1, "The entry wing", "3.3 m walls around the entrance and the kitchen"], [53.1, "Justification", "Walls are drawn by their centre line, or their left or right face"], [63.2, "Wall types", "The Type option lists and edits layered wall types"], [68.6, "Partitions and joins", "A thin 120 mm partition T-joins the walls automatically"], [87.9, "In 3D", "The walls with their heights"], [98.8, "Next: doors and windows", "Tutorial 05 cuts the openings"]], "video": "videos/archi-tool/04-levels-and-walls.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/04-levels-and-walls.jpg?v=20260927"}, {"n": 5, "slug": "05-doors-and-windows", "title": "Doors and windows", "summary": "Placing windows and doors in walls, types, sizes, openings and flipping", "dur": "1:54", "steps": [[0.0, "Windows", "WINDOW places a window where you pick a wall"], [13.1, "Sizes by option", "Width, Height and Sill: a tall window high in the wall"], [34.0, "The cedar tower", "A 5.3 m glazing strip and a high window"], [48.5, "Door types", "The Type option lists the door types of the project"], [52.1, "The entrance", "A 1100 × 2700 pivot door, full-height glazing and a sidelight"], [78.3, "Flipping", "OPENINGFLIP turns a door to open the other way"], [83.4, "Openings", "OPENING cuts an empty doorway in the partition"], [99.0, "In 3D", "Openings cut through their walls and move with them"], [108.0, "Next: floors, roofs and stairs", "Tutorial 06 closes the house"]], "video": "videos/archi-tool/05-doors-and-windows.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/05-doors-and-windows.jpg?v=20260927"}, {"n": 6, "slug": "06-floors-roofs-stairs", "title": "Floors, roofs and stairs", "summary": "Slabs, flat and shed roofs with overhangs, a stair between levels and the canopy", "dur": "1:58", "steps": [[0.0, "Floor slabs", "SLAB from points: 250 mm oak floors"], [24.7, "The porch", "Offset raises a slab above its level: 180 mm"], [34.2, "Flat roof", "Kind, Overhang and Base (eave height) are options"], [46.3, "Shed roof", "A 4° mono-pitch plate with a deep 1.3 m overhang on the tower"], [69.3, "The canopy", "A 450 mm slab at 3.75 m over the whole entry wing"], [79.6, "Stair", "STAIR runs to the Upper Floor level; the risers are computed"], [87.2, "The upper floor", "Set the level current and draw its slab"], [100.7, "In 3D", "Floors, roofs, canopy and stair"], [111.7, "Next: rooms and annotation", "Tutorial 07 documents the plan"]], "video": "videos/archi-tool/06-floors-roofs-stairs.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/06-floors-roofs-stairs.jpg?v=20260927"}, {"n": 7, "slug": "07-rooms-and-annotation", "title": "Rooms and annotation", "summary": "Rooms with areas, dimensions, text, tags and hatches", "dur": "1:08", "steps": [[0.0, "Rooms", "ROOM: click inside the walls; the area is computed"], [21.7, "Dimensions", "DIMLINEAR: two points, then where the dimension line goes"], [31.6, "Text", "TEXT: position, height, rotation, then the words"], [38.1, "Tags", "TAGALL labels every door, window and room with live values"], [44.3, "Hatches", "Draw a boundary and fill it with a pattern"], [56.5, "Schedules", "SCHEDULE lists the rooms with their areas and volumes"], [62.4, "Next: 3D and materials", "Tutorial 08 goes into the model"]], "video": "videos/archi-tool/07-rooms-and-annotation.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/07-rooms-and-annotation.jpg?v=20260927"}, {"n": 8, "slug": "08-3d-and-materials", "title": "3D and materials", "summary": "The 3D view, orbiting, visual styles, materials and textures, and the section box", "dur": "1:27", "steps": [[0.0, "The 3D view", "The model is always live: every plan edit shows in 3D"], [8.5, "Orbit", "Drag to orbit, scroll to zoom, the view cube jumps to standard views"], [9.5, "Visual styles", "VSCURRENT: Realistic, Shaded, Hidden line, Conceptual, X-ray, Sketchy"], [19.0, "Materials", "Colour, roughness, metalness, transparency and textures"], [47.4, "Assign a material", "Pick in the plan, then CHPROP Material"], [63.5, "Section box", "Cut the model live to look inside"], [80.8, "Next: rendering", "Tutorial 09 renders the house"]], "video": "videos/archi-tool/08-3d-and-materials.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/08-3d-and-materials.jpg?v=20260927"}, {"n": 9, "slug": "09-rendering", "title": "Rendering", "summary": "Sun position, render presets, saved cameras and a final render to an image", "dur": "1:11", "steps": [[0.0, "Saved cameras", "CAMERA restores the views saved with the project"], [11.5, "The sun", "SUNSTUDY: date and time sliders; the shadows follow the solar position"], [25.0, "Your own camera", "Orbit to a view you like and SAVECAMERA it"], [32.9, "Render settings", "RENDER opens the render window: presets from Draft to Print 4K"], [38.7, "Render", "Sky, sun, exposure, ambient occlusion and soft shadows"], [48.3, "Render to a file", "RENDERTOFILE: size, pass, style and the image path"], [61.4, "Next: sheets and PDF", "Tutorial 10 lays out drawings on paper"]], "video": "videos/archi-tool/09-rendering.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/09-rendering.jpg?v=20260927"}, {"n": 10, "slug": "10-sheets-and-pdf", "title": "Sheets and PDF", "summary": "Sheets, viewports at a scale, the title block and plotting to PDF", "dur": "1:15", "steps": [[0.0, "Sheets", "LAYOUT New adds a paper sheet (A3 landscape by default)"], [10.4, "Viewports", "MVIEW: corners in paper millimetres, a scale and a view"], [32.3, "Elevations on paper", "Elevations, sections and 3D views are generated from the model"], [41.5, "Title block", "Sheet title, number, scale and date, plus project information"], [50.7, "Plot to PDF", "PLOT writes the current sheet to a vector PDF at true scale"], [54.3, "Publish", "PUBLISH writes every sheet into one multi-page PDF"], [69.1, "Next: import and export", "Tutorial 11 exchanges the model with other software"]], "video": "videos/archi-tool/10-sheets-and-pdf.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/10-sheets-and-pdf.jpg?v=20260927"}, {"n": 11, "slug": "11-import-export", "title": "Import and export", "summary": "DXF, IFC, OBJ and GLB export, schedules to CSV and IFC import", "dur": "1:11", "steps": [[0.0, "DXF", "EXPORT DXF: the plan for AutoCAD and other CAD software"], [7.3, "IFC", "EXPORT IFC: walls, slabs, doors, windows and spaces for BIM software"], [14.2, "3D models", "OBJ and GLB for 3D software, game engines and the web"], [25.5, "Schedules", "SCHEDULE builds tables of doors, windows, rooms and walls"], [38.0, "Schedules to CSV", "EXPORT CSV writes the schedules for spreadsheets"], [41.9, "Importing IFC", "IFCIMPORT reads IFC into native, editable elements"], [64.6, "Also: DWG, Rhino, SketchUp, STEP, PDF…", "File ▸ Import and IMPORTFILE accept many more formats"]], "video": "videos/archi-tool/11-import-export.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/11-import-export.jpg?v=20260927"}, {"n": 12, "slug": "12-scripting-and-ai", "title": "Scripting and AI", "summary": "The JavaScript console, the archi API, the agent server and archi-cli --mcp for Claude", "dur": "0:52", "steps": [[0.0, "The script console", "SCRIPTCONSOLE (⌥⌘J): JavaScript with an archi object"], [7.6, "The archi API", "Commands, documents and building elements from code"], [29.0, "The agent server", "AI agents drive the open drawing through a local JSON-RPC server"], [34.9, "Claude and MCP", "archi-cli --mcp is a Model Context Protocol server for Claude"], [45.8, "That&#39;s the series", "Free for macOS · www.oanarinaldi.com"]], "video": "videos/archi-tool/12-scripting-and-ai.mp4?v=20260927", "poster": "images/apps/archi-tool/tutorials/12-scripting-and-ai.jpg?v=20260927"}]'>
+<div class="pe-app-bar"><i></i><i></i><i></i><div class="pe-app-menu" aria-hidden="true"><span>Archi Tool</span><span>File</span><span>Edit</span><span>View</span><span>Draw</span><span>Modify</span><span>Architecture</span><span>Modeling</span><span>Output</span><span>Script</span></div><span class="pe-app-doc" id="pe-doc">Cedar House.archi</span></div>
+<div class="pe-app-body">
+<div class="pe-toolbar" role="tablist" aria-label="Tutorials"><button type="button" class="pe-tool is-active" role="tab" aria-selected="true" aria-controls="pe-stage" data-index="0" title="01 · Getting started"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg><span>Start</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="1" title="02 · The command line"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="m5 8 4 4-4 4M11 16h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Command</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="2" title="03 · Drawing basics"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 20 20 4M4 20h6M4 20v-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Draw</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="3" title="04 · Levels and walls"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 5h18v14H3zM3 12h18M9 5v7M15 12v7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>Walls</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="4" title="05 · Doors and windows"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 20V4h16v16M4 20h16M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Openings</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="5" title="06 · Floors, roofs and stairs"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 12 12 4l10 8M5 10v10h14V10M9 20v-5h6v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>Roofs</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="6" title="07 · Rooms and annotation"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 3h18v18H3zM3 12h9V3M12 12v9" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Rooms</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="7" title="08 · 3D and materials"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 0v20M3 7l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>3D</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="8" title="09 · Rendering"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Render</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="9" title="10 · Sheets and PDF"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 14h8M13 14v6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Sheets</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="10" title="11 · Import and export"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 8h14l-4-4M20 16H6l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Exchange</span></button><button type="button" class="pe-tool" role="tab" aria-selected="false" aria-controls="pe-stage" data-index="11" title="12 · Scripting and AI"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Script</span></button></div>
+<div class="pe-stage" id="pe-stage">
+<video id="pe-video" playsinline muted preload="metadata" poster="images/apps/archi-tool/tutorials/01-getting-started.jpg?v=20260927" src="videos/archi-tool/01-getting-started.mp4?v=20260927" aria-label="Screen recording"></video>
+<button type="button" class="pe-play" id="pe-play" aria-label="Play"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+<div class="pe-scrub"><div class="pe-scrub-fill" id="pe-fill"></div><div class="pe-scrub-marks" id="pe-marks"></div></div>
+<div class="pe-stage-foot"><button type="button" id="pe-toggle" class="pe-mini">Play</button><span id="pe-time">0:00</span><button type="button" id="pe-speed" class="pe-mini">1×</button><button type="button" id="pe-full" class="pe-mini">Full screen</button></div>
+</div>
+<aside class="pe-panel" aria-live="polite">
+<div class="pe-panel-tabs"><span class="is-on">Steps</span><span>Properties</span><span>Levels</span></div>
+<p class="at-lesson" id="at-lesson">Lesson 1 of 12</p>
+<h3 id="pe-title"></h3>
+<p id="pe-summary"></p>
+<ol class="pe-steps" id="pe-steps"></ol>
+<p class="pe-panel-foot" id="pe-next"></p>
+</aside>
+</div>
+</div>
+<noscript><p class="pe-section-sub">The recordings are in videos/archi-tool/ on this site.</p></noscript>
+</div>
+</section>
 
-    <div class="container">
-        <section class="at-section">
-            <p class="at-kicker">One model, every view</p>
-            <h2>Plan and model side by side</h2>
-            <p class="at-lead">Walls, doors, windows, floors and roofs are real building elements. Draw them in 2D and they stand up in 3D — with materials, sun and shadows.</p>
-            <img class="editor-shot" src="images/apps/archi-tool/workspace.png?v=20260926" alt="The Oanarina Archi Tool workspace with the Cedar House plan in 2D beside its realistic 3D model, the ribbon, properties panel and command line" loading="lazy">
-            <div class="at-gallery"><figure><img src="images/apps/archi-tool/model-front.jpg?v=20260926" alt="The Cedar House in the Realistic 3D view" loading="lazy"><figcaption>The Cedar House, Realistic view</figcaption></figure></div>
-        </section>
+<section class="pe-compare" aria-labelledby="at-compare-title">
+<div class="container"><div class="pe-compare-grid">
+<div class="pe-compare-copy">
+<div class="pe-section-head pe-left"><p>One model, every sky</p><h2 id="at-compare-title">Drag the sun across</h2></div>
+<p>Same house, same camera, a different lighting preset: Daylight, Golden hour, Overcast and Night each bring their own sun, sky, shadows and exposure. At night the windows light up on their own. Every picture here was rendered by the app from the Cedar House sample.</p>
+<div class="pe-ba-tabs" role="group" aria-label="Choose a view">
+<button type="button" class="pe-ba-tab is-active" data-a="front-daylight" data-b="front-night" data-la="Daylight" data-lb="Night">Front · night</button>
+<button type="button" class="pe-ba-tab" data-a="corner-daylight" data-b="corner-golden-hour" data-la="Daylight" data-lb="Golden hour">Corner · golden hour</button>
+<button type="button" class="pe-ba-tab" data-a="corner-overcast" data-b="corner-golden-hour" data-la="Overcast" data-lb="Golden hour">Corner · overcast</button>
+<button type="button" class="pe-ba-tab" data-a="aerial-daylight" data-b="aerial-golden-hour" data-la="Daylight" data-lb="Golden hour">Aerial</button>
+</div>
+<p class="at-cmdline"><code>RENDERPRESET Night</code> <code>RENDERSAVE</code></p>
+</div>
+<div class="pe-ba at-ba" id="pe-ba" style="--pos:50%">
+<img class="pe-ba-img" id="pe-ba-before" src="images/apps/archi-tool/renders/front-night.jpg?v=20260927" alt="The Cedar House at night">
+<div class="pe-ba-top"><img class="pe-ba-img" id="pe-ba-after" src="images/apps/archi-tool/renders/front-daylight.jpg?v=20260927" alt="The Cedar House in daylight"></div>
+<span class="pe-ba-label pe-ba-l" id="pe-ba-la">Daylight</span><span class="pe-ba-label pe-ba-r" id="pe-ba-lb">Night</span>
+<div class="pe-ba-handle" aria-hidden="true"><span></span></div>
+<input class="pe-ba-range" type="range" min="0" max="100" value="50" aria-label="Lighting divider">
+</div>
+</div></div>
+</section>
 
-        <section id="features" class="at-section">
-            <p class="at-kicker">Everything an architect reaches for</p>
-            <h2>Explore 1114 features</h2>
-            <p class="at-lead">Pick an area, or search for a command you know from AutoCAD, Revit, ArchiCAD, SketchUp or FreeCAD.</p>
-            <div class="at-search"><input id="at-q" type="search" placeholder="Search features — e.g. hatch, stair, IFC, fillet, render…" aria-label="Search features"><span id="at-count"></span></div>
-            <div class="at-areas" id="at-areas" role="tablist"></div>
-            <ul class="at-list" id="at-list" aria-live="polite"></ul>
-        </section>
+<section id="watch" class="at-studio"><div class="container"><div class="row align-items-center">
+<div class="col-12 col-lg-5">
+<p class="at-kicker">Every line starts on the command line</p>
+<h2>Type it, and it is drawn</h2>
+<p>The plan on the right is the Cedar House, exported from Oanarina Archi Tool as SVG and replayed here wall by wall. Commands, aliases and coordinates work the way your fingers already know them from AutoCAD.</p>
+<div class="at-term" aria-hidden="true"><div class="at-term-bar"><i></i><i></i><i></i><span>Command line</span></div><div class="at-term-body" id="at-term"></div></div>
+<button type="button" class="at-replay" id="at-replay">↻ Replay</button>
+</div>
+<div class="col-12 col-lg-7"><div class="at-plan" id="at-plan" data-src="images/apps/archi-tool/plan-anim.svg?v=20260927"></div></div>
+</div></div></section>
 
-        <section class="at-section at-steps">
-            <p class="at-kicker">From idea to building</p>
-            <h2>Four steps, one app</h2>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">1</span><h4>Draw the plan</h4><p>Levels, walls with real layer build-ups, doors and windows that cut their openings, rooms that find their own boundaries and areas.</p></div>
-                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">2</span><h4>Shape it in 3D</h4><p>Floors, roofs of every shape, stairs between levels, curtain walls, terrain, parametric families and solid modelling.</p></div>
-                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">3</span><h4>Render the light</h4><p>Sun for your site and hour, materials and textures, realistic views, walkthrough videos and 360° panoramas.</p></div>
-                <div class="col-12 col-md-6 col-lg-3"><span class="at-num">4</span><h4>Share the drawings</h4><p>Sheets with title blocks and viewports at scale, PDF, DXF, IFC for BIM, glTF, USDZ, OBJ and schedules for spreadsheets.</p></div>
-            </div>
-        </section>
+<section class="pe-made" aria-labelledby="at-made-title">
+<div class="container">
+<div class="pe-section-head"><p>Straight out of the app</p><h2 id="at-made-title">Made in Archi Tool</h2></div>
+<div class="pe-made-grid at-made-grid">
+<figure class="pe-card pe-wide"><img src="images/apps/archi-tool/renders/corner-golden-hour.jpg?v=20260927" alt="The Cedar House at golden hour: limestone wing, cedar tower and lit path" loading="lazy"><figcaption>Render · golden hour</figcaption></figure>
+<figure class="pe-card"><img src="images/apps/archi-tool/renders/front-night.jpg?v=20260927" alt="The Cedar House at night with glowing windows under the stars" loading="lazy"><figcaption>Render · night</figcaption></figure>
+<figure class="pe-card"><img src="images/apps/archi-tool/renders/sheet-a102.jpg?v=20260927" alt="Sheet A-102 with ground and upper floor plans, the south elevation and a title block" loading="lazy"><figcaption>Sheet A-102 · PDF</figcaption></figure>
+<figure class="pe-card"><img src="images/apps/archi-tool/renders/aerial-golden-hour.jpg?v=20260927" alt="Aerial view of the Cedar House and its drive at golden hour" loading="lazy"><figcaption>Render · aerial</figcaption></figure>
+<figure class="pe-card"><img src="images/apps/archi-tool/renders/front-golden-hour.jpg?v=20260927" alt="The cedar tower and the entrance canopy at dusk" loading="lazy"><figcaption>Render · front at dusk</figcaption></figure>
+</div>
+<p class="pe-credit">The Cedar House ships with the app as a sample project: open it from the start screen and render it yourself.</p>
+</div>
+</section>
 
-        <section id="tutorials" class="at-section">
-            <p class="at-kicker">Learn by watching</p>
-            <h2>Tutorials: build the Cedar House with me</h2>
-            <p class="at-lead">Short videos recorded inside the app, from the first click to the final render.</p>
-            <div class="at-tutorials"><article class="at-tut"><div class="at-tut-soon">01</div><div class="t"><h5>01 · Getting started</h5><p>The start screen, the interface and the sample house · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">02</div><div class="t"><h5>02 · The command line</h5><p>Commands, aliases and coordinates · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">03</div><div class="t"><h5>03 · Drawing basics</h5><p>Lines, snaps, trim, offset and fillet · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">04</div><div class="t"><h5>04 · Levels and walls</h5><p>Levels, wall types and clean joins · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">05</div><div class="t"><h5>05 · Doors and windows</h5><p>Hosted openings, types and sizes · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">06</div><div class="t"><h5>06 · Floors, roofs and stairs</h5><p>Slabs, roofs with overhangs and stairs · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">07</div><div class="t"><h5>07 · Rooms and annotation</h5><p>Areas, dimensions, text and tags · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">08</div><div class="t"><h5>08 · 3D and materials</h5><p>Orbit, visual styles, materials and textures · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">09</div><div class="t"><h5>09 · Rendering</h5><p>Sun, presets, cameras and final images · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">10</div><div class="t"><h5>10 · Sheets and PDF</h5><p>Viewports at scale, title blocks, plotting · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">11</div><div class="t"><h5>11 · Import and export</h5><p>DXF, IFC, glTF and schedules · coming soon</p></div></article><article class="at-tut"><div class="at-tut-soon">12</div><div class="t"><h5>12 · Scripting and AI</h5><p>JavaScript, plugins and AI agents over MCP · coming soon</p></div></article></div>
-        </section>
+<section class="pe-features" aria-labelledby="at-features-title">
+<div class="container">
+<div class="pe-section-head"><p>From the first line to the finished building</p><h2 id="at-features-title">A studio for architecture</h2></div>
+<div class="pe-feature-grid">
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 20 20 4M4 20h6M4 20v-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="20" cy="4" r="1.8" fill="currentColor"/></svg><h3>Draft with precision</h3><p>Lines, polylines, arcs, splines and hatches with object snaps, polar and object tracking, dynamic input, layers, blocks and dimensions. Trim, extend, offset, fillet, array and stretch, all from the command line or the ribbon.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12H3zm6 0v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><h3>Build with real elements</h3><p>Levels, layered walls that join cleanly, doors and windows that cut their openings, floors, roofs with overhangs, stairs, railings, curtain walls, columns and rooms that find their own boundaries and areas.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 0v20M3 7l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><h3>Model in 3D</h3><p>Extrude, revolve, sweep and loft; solids with union, subtract and intersect; parametric families, terrain from contours, section boxes and six visual styles from wireframe to sketchy.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><h3>Render the light</h3><p>A sun for your site and hour, lighting presets, textured materials with bump and roughness, soft shadows, bloom and ambient occlusion. Save stills, walkthrough videos and 360° panoramas.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M13 14h8M13 14v6M3 12h8V4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><h3>Draw the sheets</h3><p>Sheets with title blocks, viewports at scale, elevations and sections, schedules of doors, windows and rooms, then plot to PDF or publish a whole set in one multi-page file.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m15 15 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Check the design</h3><p>Areas and volumes, clash detection, code checks for stairs and egress, sun and shadow studies, energy estimates and quantity take-offs that update as you draw.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 7h10v10H7z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h4M17 12h4M12 3v4M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><h3>Work with others</h3><p>Open and save DXF for AutoCAD, exchange IFC with Revit and ArchiCAD, read Rhino, send glTF, USDZ, OBJ and STEP, share BCF issues and keep versions you can compare and restore.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Script it</h3><p>A JavaScript console, visual node graphs, macros and plugins. Every command, typed or clicked, can be recorded and replayed.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 3a7 7 0 0 0-4 12.7V19h8v-3.3A7 7 0 0 0 12 3zM9 22h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Design with an AI</h3><p>A built-in Model Context Protocol server lets Claude and other agents read the model and draw walls, rooms and sheets with you, on your own Mac only, and only when you turn it on.</p></article>
+</div>
+</div>
+</section>
 
-        <section class="at-section at-ai"><div class="row align-items-center">
-            <div class="col-12 col-lg-5">
-                <p class="at-kicker">Scripting &amp; AI agents</p>
-                <h2>Design together with an AI</h2>
-                <p>Everything you can click, you can type — and everything you can type, a script or an AI agent can do. Automate with the JavaScript console, visual node graphs and plugins, or connect Claude and other agents through the built-in Model Context Protocol server.</p>
-                <p><code>archi-cli --mcp ~/Documents/house.archi</code></p>
-            </div>
-            <div class="col-12 col-lg-7"><div class="at-term"><div class="at-term-bar"><i></i><i></i><i></i><span>JavaScript console</span></div><pre class="at-code"><b>// A row of houses, each one a real building element</b>
+<section id="features" class="at-explore"><div class="container">
+<div class="pe-section-head"><p>Everything an architect reaches for</p><h2>Explore 1114 features</h2>
+<p class="pe-section-sub">Pick an area, or search for a command you know from AutoCAD, Revit, ArchiCAD, SketchUp or FreeCAD.</p></div>
+<div class="at-search"><input id="at-q" type="search" placeholder="Search features — e.g. hatch, stair, IFC, fillet, render…" aria-label="Search features"><span id="at-count"></span></div>
+<div class="at-areas" id="at-areas" role="tablist"></div>
+<ul class="at-list" id="at-list" aria-live="polite"></ul>
+</div></section>
+
+<section class="at-ai-band"><div class="container"><div class="row align-items-center">
+<div class="col-12 col-lg-5">
+<div class="pe-section-head pe-left"><p>Scripting &amp; AI agents</p><h2>Everything you can click, a script can do</h2></div>
+<p>Automate with the JavaScript console, node graphs and plugins, or connect Claude and other agents through the built-in MCP server.</p>
+<p><code>archi-cli --mcp ~/Documents/house.archi</code></p>
+</div>
+<div class="col-12 col-lg-7"><div class="at-term"><div class="at-term-bar"><i></i><i></i><i></i><span>JavaScript console</span></div><pre class="at-code"><b>// A row of houses, each one a real building element</b>
 for (let i = 0; i &lt; 4; i++) {
   const x = i * 14000
   const w = [[x,0],[x+10000,0],[x+10000,8000],[x,8000]]
@@ -775,17 +956,34 @@ for (let i = 0; i &lt; 4; i++) {
   archi.addElement({ type: "roof", boundary: w, kind: "gable", pitch: 35 })
 }
 archi.run("ZOOM E")</pre></div></div>
-        </div></section>
+</div></div></section>
 
-        <section id="download" class="editor-download"><div class="row"><div class="col-12 col-lg-6"><h2>Get Oanarina Archi Tool</h2><p>Free architecture software for your Mac.</p><p id="release-status">Version 1.0 · Apple silicon and Intel · 13.3 MB. Developer ID-signed and notarized by Apple.</p><p>Preview build — the final 1.0 release with all features, realistic rendering and tutorials follows shortly.</p><a class="btn oneMusic-btn" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download>Download for Mac <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div><div class="col-12 col-lg-6"><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later · Apple silicon and Intel</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div></div></section>
-        <p class="text-center"><a href="downloads/archi-tool/SHA256SUMS.txt">Download checksum</a></p>
-        <section class="editor-faq mb-100"><div class="section-heading"><p>A few useful details</p><h2>Before you begin</h2></div>
+<section class="pe-specs" aria-labelledby="at-specs-title">
+<div class="container"><div class="pe-specs-grid">
+<div><div class="pe-section-head pe-left"><p>Opens and saves</p><h2 id="at-specs-title">Formats &amp; system</h2></div><p class="pe-update">Preview build — the final 1.0 release with all features, realistic rendering and tutorials follows shortly.</p></div>
+<div><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later · Apple silicon and Intel</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div>
+</div></div>
+</section>
+
+<section class="pe-faq editor-faq" id="faq" aria-labelledby="at-faq-title">
+<div class="container"><div class="pe-section-head"><p>A few useful details</p><h2 id="at-faq-title">Before you begin</h2></div>
 <details><summary>Is it really free?</summary><p>Yes. Oanarina Archi Tool is free software under the GNU General Public License 3.0: no account, no subscription and no watermark.</p></details>
 <details><summary>Can I open my AutoCAD, Revit or SketchUp work?</summary><p>Open and save DXF, the exchange format AutoCAD, LibreCAD and most CAD tools read and write; save DWG files as DXF first. Exchange building models as IFC with Revit, ArchiCAD and other BIM tools. Rhino 3DM files open directly; SketchUp files open through a free converter.</p></details>
 <details><summary>Does it work offline?</summary><p>Yes. Drawings and models stay on your Mac. The optional agent server listens only on your own computer and is off until you turn it on.</p></details>
 <details><summary>How complete is it?</summary><p>1114 of the 1157 capabilities in the public feature register are built and tested. The remaining ones are marked openly in the register, most of them waiting for outside validation.</p></details>
 <details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities.</p></details>
-<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></section><p class="text-center mb-100"><a href="apps.html">← Back to all apps</a></p></div></main>
+<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></div>
+</section>
+
+<section class="pe-final" aria-label="Download">
+<div class="container"><div class="pe-final-inner">
+<img src="images/apps/archi-tool/icon.png?v=20260927" alt="" width="64" height="64">
+<h2>Draw it. Build it. See it.</h2>
+<a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=10ea21d8c070" download><span>Download for Mac<small>Free · 13.3 MB</small></span></a>
+<p><a href="apps.html">← Back to all apps</a></p>
+</div></div>
+</section>
+</main>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
