@@ -245,17 +245,71 @@
                         <div class="blog-content">
 
                           <!-- Post Excerpt -->
-<h1>Privacy policy</h1><p class="muted">Last updated: 19 September 2026<br>Developer: Oana Rinaldi<br>Contact: <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
-<h2>What the app does</h2><p>AI Architecture Vision turns photos of everyday objects into architectural concept images. Projects are stored locally. AI generation sends selected images and instructions directly to OpenAI, using your own API key and after your consent. The developer does not operate a generation backend.</p>
-<h2>On your device</h2><p>The app stores your source images, generated results, project settings and preferences in its local container. Your OpenAI API key is stored in the device Keychain with device-only protection. It is not included in project exports. The app has no project-sync service; device or operating-system backups may include local app files according to your settings.</p>
-<h2>Data sent to OpenAI</h2><p>Generating sends the selected image, your instructions, relevant tool settings and your API credential over HTTPS to api.openai.com. Text descriptions may also be sent to OpenAI's moderation endpoint. A key check requests the models endpoint. OpenAI receives normal network and authentication information needed to provide its service. The developer does not receive these API requests.</p><p>OpenAI processes these requests under your account and its applicable policies. API data is not used for training by default, but account settings and service/security retention rules apply. We do not promise zero retention. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data controls</a>. Deleting a local project does not itself delete data already processed by OpenAI.</p>
-<h2>Your choices</h2><p>You can decline AI data sharing and use the offline Learn library. Choose only images you intend to send and avoid unnecessary personal or confidential details. Delete individual projects or use Settings → Delete all projects &amp; images to remove local project data. Remove the API key in Settings when it is no longer needed. Deleting the app removes its local container; Keychain items may survive app removal, so remove the key explicitly or revoke it in your OpenAI account.</p>
-<h2>Photos, camera and files</h2><p>The app uses the images or files you select. Camera access is requested when you take a picture; saving to Photos may request add-only access. PDF import uses the first page. The app does not upload your entire photo library.</p>
-<h2>Advertising and analytics</h2><p>The app has no advertising SDK, tracking SDK, developer analytics service or developer crash-reporting service. It does not request location or contacts. OpenAI's handling of API traffic is separate from local storage.</p>
-<h2>Support and external links</h2><p>If you email support, your email address and the information you send are used to respond to your request and are handled by the email provider. Do not include your API key. External reference links open services governed by their own policies.</p>
-<h2>Children and changes</h2><p>The app is not directed at children. Use of OpenAI requires meeting its account eligibility requirements. Changes to this policy will be posted here with an updated date. Contact <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a> with questions.</p>
+    <h1>Privacy Policy — AI Architecture Vision</h1>
+    <p><strong>Last updated:</strong> 29 September 2026<br>
+    <strong>Developer:</strong> Oana Rinaldi<br>
+    <strong>Bundle ID:</strong> com.oanarinaldi.aiarchitecturevision<br>
+    <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
-                      </div>
+    <h2>Summary</h2>
+    <p>There is no login requirement and no analytics. Your projects, photos and generated images stay on your device. You can use the app in two ways:</p>
+    <ul>
+        <li><strong>With your own OpenAI API key</strong> — images go directly from your device to OpenAI. We receive nothing.</li>
+        <li><strong>With a plan or credits</strong> bought in the app — your image passes through our render server on its way to OpenAI. The server keeps only what is needed to manage your credits (see below).</li>
+    </ul>
+
+    <h2>What Stays on Your Device</h2>
+    <ul>
+        <li>The photos you choose and the images the app generates, stored in the app’s private container.</li>
+        <li>Your projects, favourites and their settings.</li>
+        <li>Your OpenAI API key, if you add one, in the iOS Keychain (this device only, never backed up or synced). It is not included in project exports.</li>
+        <li>Your app preferences.</li>
+    </ul>
+    <p>The app has no project-sync service. Device backups may include local app files according to your settings. Deleting the app removes its local container.</p>
+
+    <h2>Using Your Own OpenAI API Key</h2>
+    <p>The app sends the image you select, your instructions and the relevant tool settings directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with your key. Text descriptions may also be sent to OpenAI’s moderation endpoint, and a key check requests the models endpoint. This data goes to OpenAI, not to us, and is processed under your own OpenAI account and OpenAI’s policies (<a href="https://openai.com/policies" target="_blank" rel="noopener">openai.com/policies</a>).</p>
+
+    <h2>Using a Plan or Credits</h2>
+    <p>The app sends the image you select and your instructions to our render server (hosted on Cloudflare), which forwards them to OpenAI using the developer’s OpenAI account and returns the result to your device. Your uploaded image and text are not stored. The finished image is kept on the server for up to 24 hours only so the app can collect it if your connection drops, then it expires automatically. As of writing, OpenAI states that data submitted through its API is not used to train its models by default.</p>
+    <p>To manage your credits, the server stores:</p>
+    <ul>
+        <li>a random account ID created by the app (not linked to your name, email or Apple ID, unless you choose Sign in with Apple);</li>
+        <li>your App Store purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your credit balance and a history of changes to it (purchases, renders, refunds);</li>
+        <li>for each render: date, quality, output size, credits used and the processing cost reported by OpenAI.</li>
+    </ul>
+    <p>Payments are handled entirely by Apple; we never see your payment details. The account ID is kept in your iCloud Keychain so your balance survives a reinstall. A server record is only created once you buy a plan or credits, or sign in with Apple. If you only use your own API key, nothing about you is stored on our server.</p>
+
+    <h2>Sign in with Apple (Optional)</h2>
+    <p>If you choose Sign in with Apple, we receive only Apple’s anonymous identifier for you in this app — never your name or email — and use it to make your credits available on all your devices. Apple also gives us a token that we use only to cancel the sign-in when you delete your account. Signing in is never required.</p>
+
+    <p>We ask for your consent before your first image is sent to OpenAI. You can decline and still use the offline Learn library; the generation features will then not work.</p>
+
+    <h2>Photos, Camera and Files</h2>
+    <p>The app uses only the images or files you select. Camera access is requested when you take a picture; saving to Photos may request add-only access. PDF import uses the first page. The app does not upload your photo library.</p>
+
+    <h2>Advertising and Analytics</h2>
+    <p>The app has no advertising, tracking or analytics SDK and no developer crash-reporting service. It does not request location or contacts.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children.</p>
+
+    <h2>Deleting Your Data</h2>
+    <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, render history and any Sign in with Apple link from our server, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings. You can also email us to ask for deletion.</p>
+    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; images, or delete the app. Keychain items may survive app removal, so remove your API key in Settings or revoke it in your OpenAI account. For data held by OpenAI under your own API key, contact OpenAI directly.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
+
+    <h2>Support and Terms</h2>
+    <p>See the <a href="aiarchitecturevisionsupport.html">AI Architecture Vision Support page</a> and the <a href="aiarchitecturevisionterms.html">Terms of Use</a>.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this policy, contact us at: <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
+
+                      
+</div>
                     </div>
 	    		 <!-- Algorithm book End -->
                 
