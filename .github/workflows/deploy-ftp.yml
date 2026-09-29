@@ -16,6 +16,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # The Archi Tool Windows installer (~130 MB) is too big for git (GitHub's 100 MB file limit). Each .exe listed in
+      # downloads/archi-tool/SHA256SUMS.txt is fetched from its GitHub release (windows-v<version> in the public
+      # oanaunc/archi_tool repository, published by that repository's "Windows app" workflow after its tests passed),
+      # checked against the committed SHA-256 and then uploaded with the rest of the site.
+      - name: Archi Tool Windows installer from its GitHub release
+        shell: bash
+        run: |
+          set -euo pipefail
+          sums=downloads/archi-tool/SHA256SUMS.txt
+          [ -f "$sums" ] || exit 0
+          grep -E '^[0-9a-f]{64}  Oanarina-Archi-Tool-Setup-[0-9.]+\.exe$' "$sums" | while read -r sha name; do
+            ver="${name#Oanarina-Archi-Tool-Setup-}"; ver="${ver%.exe}"
+            url="https://github.com/oanaunc/archi_tool/releases/download/windows-v$ver/$name"
+            echo "fetching $url"
+            curl -fsSL --retry 3 -o "downloads/archi-tool/$name" "$url"
+            echo "$sha  downloads/archi-tool/$name" | sha256sum -c -
+            ls -la "downloads/archi-tool/$name"
+          done
+
       # Strip BOM/CR/LF from secrets (common when pasting). Resolve hostname to IPv4 for the
       # FTP client: many hosts mis-report PASV; using the literal IP avoids getaddrinfo ENOTFOUND
       # on the control/data path (see SamKirkland/FTP-Deploy-Action issues #293, #400).

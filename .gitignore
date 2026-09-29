@@ -1,0 +1,2 @@
+# Windows installers are too big for git: fetched from the GitHub release by the deploy workflow
+downloads/archi-tool/*.exe

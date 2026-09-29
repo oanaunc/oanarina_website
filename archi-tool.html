@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Oanarina Archi Tool: a free native Mac app for architectural drafting, building design (BIM), 3D modelling, rendering and printing, with an AutoCAD-style command line and scripting for AI agents.">
+    <meta name="description" content="Oanarina Archi Tool: a free app for Mac and Windows for architectural drafting, building design (BIM), 3D modelling, rendering and printing, with an AutoCAD-style command line and scripting for AI agents.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -480,6 +480,8 @@
 .at-page .pe-steps .is-done .pe-n { background:rgba(111,180,255,.2); }
 .at-page .pe-feature:hover { border-color:rgba(245,197,24,.5); }
 .at-page .pe-ba-handle span::before { border-right-color:#1a1400; } .at-page .pe-ba-handle span::after { border-left-color:#1a1400; }
+.at-page .pe-hero-actions { flex-wrap:wrap; }
+.at-page .at-final-buttons { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin:0 auto 18px; }
 .at-page .pe-final-inner { background:radial-gradient(60% 90% at 20% 0%, rgba(245,197,24,.28), transparent 70%), radial-gradient(50% 80% at 90% 100%, rgba(111,180,255,.26), transparent 70%), var(--ink); }
 .at-page .pe-app-body { grid-template-columns:136px minmax(0,1fr) 320px; height:auto; }
 .at-page .pe-toolbar { display:grid; grid-template-columns:1fr 1fr; align-content:start; gap:4px; padding:10px 8px; contain:size; overflow-y:auto; }
@@ -745,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             <li><a href="3dmodels.html">3D Models</a></li>
                                             <li><a href="origami.html">Origami Polyhedra</a></li>
                                             <li><a href="archipublications.html">Publications</a></li>
-                                            <li><a href="archi-tool.html">Archi Tool for Mac</a></li>
+                                            <li><a href="archi-tool.html">Archi Tool</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="index.html#contact">Contact</a></li>
@@ -808,16 +810,16 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="container"><div class="pe-hero-grid">
 <div class="pe-hero-copy">
 <img class="pe-hero-icon" src="images/apps/archi-tool/icon.png?v=20260927b" alt="" width="84" height="84">
-<p class="pe-eyebrow">Free for Mac · open source · no account</p>
+<p class="pe-eyebrow">Free for Mac and Windows · open source · no account</p>
 <h1 id="at-hero-title">Oanarina Archi Tool</h1>
 <p class="pe-lede">Draw it. Build it. See it. Precise 2D drafting with a command line that speaks AutoCAD, real building elements, 3D modelling, photographic renders and drawing sheets — and an open door for AI agents that design alongside you.</p>
 <div class="pe-hero-actions">
-<a class="pe-btn pe-btn-primary" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=3ad649bd3079" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · 83.1 MB · notarized by Apple</small></span></a>
+<a class="pe-btn pe-btn-primary" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=3ad649bd3079" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · 83.1 MB · notarized by Apple</small></span></a><a class="pe-btn pe-btn-primary" id="download-button-windows" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.0.exe?v=5bdb9d9462c5" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Windows<small>Free · 132.5 MB · Windows 10 and 11</small></span></a>
 <a class="pe-btn pe-btn-ghost" href="#studio">Watch it build a house</a>
 </div>
-<p class="pe-trust" id="release-status">Version 1.0 · Apple silicon and Intel · 83.1 MB. Developer ID-signed and notarized by Apple.</p>
+<p class="pe-trust" id="release-status">Version 1.0. Mac: Apple silicon and Intel, notarized by Apple. Windows 10 and 11 (64-bit): the installer is not code-signed yet, so if Windows shows “Windows protected your PC”, click More info, then Run anyway.</p>
 <ul class="pe-chips" aria-label="Highlights">
-<li>macOS 14 or later</li><li>Apple silicon &amp; Intel</li><li>DXF · IFC · PDF</li><li>GPL-3.0</li>
+<li>macOS 14 or later</li><li>Windows 10 &amp; 11</li><li>DXF · IFC · PDF</li><li>GPL-3.0</li>
 </ul>
 <p class="pe-hero-links"><a href="archi-tool-guide.html">User guide</a> · <a href="downloads/archi-tool/SHA256SUMS.txt">Checksum</a> · <a href="https://github.com/oanaunc/archi_tool">Source code</a> · <a href="#faq">FAQ</a></p>
 </div>
@@ -928,7 +930,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m15 15 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Check the design</h3><p>Areas and volumes, clash detection, code checks for stairs and egress, sun and shadow studies, energy estimates and quantity take-offs that update as you draw.</p></article>
 <article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 7h10v10H7z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h4M17 12h4M12 3v4M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><h3>Work with others</h3><p>Open and save DXF for AutoCAD, exchange IFC with Revit and ArchiCAD, read Rhino, send glTF, USDZ, OBJ and STEP, share BCF issues and keep versions you can compare and restore.</p></article>
 <article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Script it</h3><p>A JavaScript console, visual node graphs, macros and plugins. Every command, typed or clicked, can be recorded and replayed.</p></article>
-<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 3a7 7 0 0 0-4 12.7V19h8v-3.3A7 7 0 0 0 12 3zM9 22h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Design with an AI</h3><p>A built-in Model Context Protocol server lets Claude and other agents read the model and draw walls, rooms and sheets with you, on your own Mac only, and only when you turn it on.</p></article>
+<article class="pe-feature"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 3a7 7 0 0 0-4 12.7V19h8v-3.3A7 7 0 0 0 12 3zM9 22h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Design with an AI</h3><p>A built-in Model Context Protocol server lets Claude and other agents read the model and draw walls, rooms and sheets with you, on your own computer only, and only when you turn it on.</p></article>
 </div>
 </div>
 </section>
@@ -961,7 +963,7 @@ archi.run("ZOOM E")</pre></div></div>
 <section class="pe-specs" aria-labelledby="at-specs-title">
 <div class="container"><div class="pe-specs-grid">
 <div><div class="pe-section-head pe-left"><p>Opens and saves</p><h2 id="at-specs-title">Formats &amp; system</h2></div><p class="pe-update">Version 1.0, build 3 (27 September): photographic rendering with Daylight, Golden hour, Overcast and Night presets, bump and roughness textures, twelve recorded tutorials and the full user guide.</p></div>
-<div><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later · Apple silicon and Intel</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div>
+<div><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later (Apple silicon and Intel) · Windows 10 and 11 (64-bit)</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div>
 </div></div>
 </section>
 
@@ -969,17 +971,17 @@ archi.run("ZOOM E")</pre></div></div>
 <div class="container"><div class="pe-section-head"><p>A few useful details</p><h2 id="at-faq-title">Before you begin</h2></div>
 <details><summary>Is it really free?</summary><p>Yes. Oanarina Archi Tool is free software under the GNU General Public License 3.0: no account, no subscription and no watermark.</p></details>
 <details><summary>Can I open my AutoCAD, Revit or SketchUp work?</summary><p>Open and save DXF, the exchange format AutoCAD, LibreCAD and most CAD tools read and write; save DWG files as DXF first. Exchange building models as IFC with Revit, ArchiCAD and other BIM tools. Rhino 3DM files open directly; SketchUp files open through a free converter.</p></details>
-<details><summary>Does it work offline?</summary><p>Yes. Drawings and models stay on your Mac. The optional agent server listens only on your own computer and is off until you turn it on.</p></details>
+<details><summary>Does it work offline?</summary><p>Yes. Drawings and models stay on your computer. The optional agent server listens only on your own computer and is off until you turn it on.</p></details>
 <details><summary>How complete is it?</summary><p>1114 of the 1157 capabilities in the public feature register are built and tested. The remaining ones are marked openly in the register, most of them waiting for outside validation.</p></details>
 <details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities.</p></details>
-<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS version and the steps that led to the problem.</p></details></div>
+<details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS or Windows version and the steps that led to the problem.</p></details></div>
 </section>
 
 <section class="pe-final" aria-label="Download">
 <div class="container"><div class="pe-final-inner">
 <img src="images/apps/archi-tool/icon.png?v=20260927b" alt="" width="64" height="64">
 <h2>Draw it. Build it. See it.</h2>
-<a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=3ad649bd3079" download><span>Download for Mac<small>Free · 83.1 MB</small></span></a>
+<div class="at-final-buttons"><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.0.dmg?v=3ad649bd3079" download><span>Download for Mac<small>Free · 83.1 MB</small></span></a><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.0.exe?v=5bdb9d9462c5" download><span>Download for Windows<small>Free · 132.5 MB</small></span></a></div>
 <p><a href="apps.html">← Back to all apps</a></p>
 </div></div>
 </section>
