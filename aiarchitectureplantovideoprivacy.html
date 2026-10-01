@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Privacy Policy for AI Architecture Plan to Video — turn a 2D floor plan into a 3D house video. Projects stay on your device; generation via Google Gemini and OpenAI.">
+    <meta name="description" content="Privacy Policy for AI Architecture Plan to Video — turn floor plans, sketches and photos into architecture videos. Projects stay on your device; generation via Google Gemini.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -252,32 +252,32 @@
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Architecture Plan to Video turns a 2D floor plan into a 3D model image and a short video. There is no login requirement, no advertising and no analytics. Your projects, plans, 3D model images and videos are stored on your device. You can use the app in two ways:</p>
+    <p>AI Architecture Plan to Video turns a picture you choose — a 2D floor plan, a sketch, or a photo of a plot, a room, a facade or a render — into an AI result picture (for example a 3D model or a redesign) and a short video. The only AI provider it uses is Google (Gemini). There is no login requirement, no advertising and no analytics. Your projects, pictures, result pictures and videos are stored on your device. You can use the app in two ways:</p>
     <ul>
-        <li><strong>With your own Google (Gemini) API key</strong>, and optionally your own OpenAI key — your plan goes directly from your device to Google (and to OpenAI if you chose it for 3D models). We receive nothing.</li>
-        <li><strong>With a plan or credits</strong> bought in the app — your plan passes through our server, which asks OpenAI and Google to make the 3D model and the video and holds the result until your device collects it (see below).</li>
+        <li><strong>With your own Google (Gemini) API key</strong> — your picture goes directly from your device to Google. We receive nothing.</li>
+        <li><strong>With a plan or credits</strong> bought in the app — your picture passes through our server, which asks Google to make the result picture and the video and holds the result until your device collects it (see below).</li>
     </ul>
 
     <h2>What Stays on Your Device</h2>
     <ul>
-        <li>The plans and images you choose and the 3D model images, in the app’s private container.</li>
+        <li>The pictures you choose and the AI result pictures, in the app’s private container.</li>
         <li>Finished videos, which the app saves into a “Plan to Video” album in your Photos library (you can turn this off, or keep an extra copy in the app, in Settings). The app asks for Photos access so it can play its own videos from that album; “Limited” access is enough. It does not read or upload your other photos.</li>
         <li>Your projects, favourites and video settings, and a list of videos still being made so they can be collected after the app is closed.</li>
-        <li>Your API keys, if you add them, in the iOS Keychain (this device only, never backed up or synced).</li>
+        <li>Your API key, if you add one, in the iOS Keychain (this device only, never backed up or synced).</li>
         <li>Your preferences.</li>
     </ul>
 
-    <h2>Using Your Own API Keys</h2>
-    <p>The app sends your plan image, the 3D model image, your style choices and notes directly from your device to the Gemini API (<code>generativelanguage.googleapis.com</code>), authenticated with your key. If you added an OpenAI key and chose it for 3D models, the plan and instructions for the 3D model go to OpenAI’s API (<code>api.openai.com</code>). Generation runs on the provider’s servers; Google keeps generated videos for about 2 days so the app can download them. This data is processed under your own account and the provider’s terms: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms</a> and <a href="https://openai.com/policies" target="_blank" rel="noopener">OpenAI policies</a>. Some Gemini models in preview may use submitted content to improve Google’s products; check Google’s terms for your account.</p>
+    <h2>Using Your Own API Key</h2>
+    <p>The app sends your picture, the result picture, your style choices and notes directly from your device to the Gemini API (<code>generativelanguage.googleapis.com</code>), authenticated with your key. Generation runs on Google’s servers; Google keeps generated videos for about 2 days so the app can download them. This data is processed under your own account and the provider’s terms: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms</a>. Some Gemini models in preview may use submitted content to improve Google’s products; check Google’s terms for your account.</p>
 
     <h2>Using a Plan or Credits</h2>
-    <p>The app uploads your plan, the 3D model image, your settings and notes to our server (hosted on Cloudflare). The server stores the uploads only while your 3D model or video is being made and deletes them when it finishes. It asks OpenAI (gpt-image-2) to make the 3D model image and Google (Gemini Omni Flash or Veo) to make the video, using the developer’s accounts. Notes may be checked by OpenAI’s moderation service. The finished image or video is kept on our server so your device can collect it even if the app was closed or offline: it is deleted one day after your device has downloaded it, or after 7 days if it is never collected (in which case the credits are returned).</p>
+    <p>The app uploads your picture, the result picture, your settings and notes to our server (hosted on Cloudflare). The server stores the uploads only while your result picture or video is being made and deletes them when it finishes. It asks Google to make the result picture (Gemini image) and the video (Gemini Omni Flash or Veo), using the developer’s Google account. The finished image or video is kept on our server so your device can collect it even if the app was closed or offline: it is deleted one day after your device has downloaded it, or after 30 days if it is never collected.</p>
     <p>To manage your credits and jobs, the server stores:</p>
     <ul>
         <li>a random account ID created by the app (not linked to your name, email or Apple ID, unless you choose Sign in with Apple);</li>
         <li>your App Store purchases (product, dates and transaction IDs), as signed by Apple;</li>
         <li>your credit balance and a history of changes to it;</li>
-        <li>for each 3D model or video: date, settings, the instructions sent to the AI provider, status, credits used and an estimated processing cost (kept up to 90 days for support);</li>
+        <li>for each result picture or video: date, settings, the instructions sent to the AI provider, status, credits used and an estimated processing cost (kept up to 90 days for support);</li>
         <li>if you allow notifications, the push token used to tell your device that a video is ready.</li>
     </ul>
     <p>Payments are handled entirely by Apple; we never see your payment details. A server record is only created once you buy a plan or credits, or sign in with Apple.</p>
@@ -286,10 +286,10 @@
     <p>If you choose Sign in with Apple, we receive only Apple’s anonymous identifier for you in this app — never your name or email — and use it to make your credits available on all your devices. Apple also gives us a token that we use only to cancel the sign-in when you delete your account.</p>
 
     <h2>Consent</h2>
-    <p>The app asks for your consent before your first plan is sent to an AI provider. Without it, generation features do not work.</p>
+    <p>The app asks for your consent before your first picture is sent to Google. Without it, generation features do not work.</p>
 
     <h2>Photos, Camera, Files and Notifications</h2>
-    <p>The app uses only the images or files you select. Camera access is requested when you take a picture. Photos access is used to save your videos and play them back; the app only reads the videos it created. PDF import uses the first page. Notifications are optional and only used to tell you that a video is ready or could not be made.</p>
+    <p>The app uses only the images or files you select. Please avoid photos that show people or personal information; if they do, they are sent to Google with the rest of the picture. Camera access is requested when you take a picture. Photos access is used to save your videos and play them back; the app only reads the videos it created. PDF import uses the first page. Notifications are optional and only used to tell you that a video is ready or could not be made.</p>
 
     <h2>Advertising and Analytics</h2>
     <p>The app has no advertising, tracking or analytics SDK and no crash-reporting service. It does not request location or contacts.</p>
@@ -299,7 +299,7 @@
 
     <h2>Deleting Your Data</h2>
     <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, job history, any uploads or videos still on our server, and any Sign in with Apple link, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings. You can also email us to ask for deletion.</p>
-    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; videos, or delete the app. Remove your API keys in Settings or revoke them in your Google or OpenAI account. For data held by Google or OpenAI under your own keys, contact them directly.</p>
+    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; videos, or delete the app. Remove your API key in Settings or revoke it in your Google account. For data held by Google under your own key, contact Google directly.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
