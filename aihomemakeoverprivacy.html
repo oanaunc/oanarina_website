@@ -246,33 +246,48 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Home Makeover</h1>
-    <p><strong>Last updated:</strong> 4 August 2026<br>
+    <p><strong>Last updated:</strong> 5 October 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle ID:</strong> com.oanarinaldi.aihomemakeover<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Overview</h2>
-    <p>AI Home Makeover (“the App”) is designed to protect your privacy. It reimagines rooms with AI using a photo you choose and styles or instructions you provide. This policy explains what happens to your information.</p>
+    <p>AI Home Makeover (“the App”) reimagines rooms with AI using a photo you choose and styles or instructions you provide. It has no login, no analytics and no advertising, and your projects stay on your device. You can use it in two ways: <strong>free with your own OpenAI API key</strong>, in which case your room photo goes directly to OpenAI and nothing passes through us; or with an optional <strong>plan or credit pack</strong>, in which case it passes through our render server on its way to OpenAI and is not stored. This policy explains exactly what happens to your information.</p>
 
-    <h2>No Account, No Tracking</h2>
-    <p>The App has no account system and no analytics or advertising. We (the developer) do not operate a server and do not collect, store, receive, or have access to your photos, your designs, your API key, or any personal information.</p>
-    <p>We do not collect, store, or sell:</p>
-    <ul>
-        <li>Name, email, or contact details (unless you email us for support)</li>
-        <li>Location data</li>
-        <li>Usage analytics or advertising identifiers</li>
-        <li>Payment information</li>
-        <li>Your photos, makeovers, or project data on our servers</li>
-    </ul>
-    <p>In App Store Connect, the App Privacy “nutrition label” for this App is <strong>Data Not Collected</strong>.</p>
+    <h2>What We Collect</h2>
+    <p>There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in the App.</p>
+    <p><strong>With your own API key, we collect nothing.</strong> Your photo and description go directly from your device to OpenAI, and we never receive any information about you or your use of the App.</p>
+    <p><strong>With a plan or credits, we keep only what is needed to count your credits</strong>, described under <a href="#plans">Plans, Credits and Subscriptions</a>. Your room photo and description pass through our server to OpenAI and are not stored.</p>
+    <p>We never collect your name, email address, contacts, location or payment details.</p>
 
     <h2>On-Device Storage</h2>
-    <p>Your original photos, generated makeovers, and project details are stored only in the App’s local storage on your device. Your OpenAI API key is stored securely in the iOS Keychain on your device. Deleting the App removes this data.</p>
+    <p>Your original photos, generated makeovers, and project details are stored only in the App’s local storage on your device. Your OpenAI API key, if you add one, is stored securely in the iOS Keychain on your device. Deleting the App removes this data.</p>
 
-    <h2>Use of OpenAI</h2>
-    <p>The App requires you to provide your own OpenAI API key. When you generate a makeover, the App sends the room photo you selected and the text description you enter directly from your device to OpenAI, using your key, solely to produce your design. This transmission goes to OpenAI and to no one else.</p>
-    <p>Your use of OpenAI is governed by OpenAI’s own Privacy Policy and Usage Policies: <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. We recommend reviewing them. Text descriptions may also be sent to OpenAI’s moderation service to enforce content guidelines.</p>
-    <p>Your OpenAI API key is stored in the iOS Keychain on your device. It is sent only to OpenAI when you generate a makeover. It is not sent to us.</p>
+    <h2 id="sent-to-openai">Use of OpenAI</h2>
+    <p>When you generate a makeover, the App sends the room photo you selected and the text description you entered to OpenAI’s image API (<code>api.openai.com/v1/images/edits</code>), solely to produce your design: directly from your device if you use your own API key, or through our render server if you use a plan or credits. The request is authorised with your OpenAI API key (own-key use) or with the App’s random account ID (plan or credits). Photos are re-encoded before they are sent, which removes location and other metadata. Text descriptions are also checked by OpenAI’s moderation service to enforce content guidelines.</p>
+    <p>With your own key, this data is processed under your own OpenAI account. With a plan or credits, our server forwards it to OpenAI using the developer’s OpenAI account and returns the result to your device; your photo and description are not written to storage on our server. Either way it is subject to OpenAI’s Privacy Policy and Usage Policies: <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
+    <p>Before your first makeover the App shows a screen that names OpenAI, lists what is sent and where it goes, and asks you to agree. Nothing is sent unless you agree and request a makeover. Your OpenAI API key is sent only to OpenAI, never to our server.</p>
+
+    <h2 id="plans">Plans, Credits and Subscriptions</h2>
+    <p>Plans are optional. Without one, the App works with your own OpenAI API key. With one, you can create makeovers without an OpenAI account. Purchases are made with Apple’s In-App Purchase:</p>
+    <ul>
+        <li><strong>Monthly</strong> — auto-renewing subscription, US$9.99 per month, 30 credits each month.</li>
+        <li><strong>Pro</strong> — auto-renewing subscription, US$24.99 per month, 100 credits each month.</li>
+        <li><strong>15 credits</strong> — one-time purchase, US$5.99.</li>
+        <li><strong>50 credits</strong> — one-time purchase, US$14.99.</li>
+    </ul>
+    <p>Prices are shown in your local currency in the App and may vary by country. A Standard makeover uses 1 credit and a High-quality makeover uses 3. Monthly credits are used first, refresh at each renewal and do not roll over; one-time credits never expire. If a makeover fails, or the finished image never reaches your device, its credits are returned automatically.</p>
+    <p>Subscriptions renew automatically each month at the price shown until cancelled. Payment is charged to your Apple ID at confirmation of purchase, and the subscription renews unless it is cancelled at least 24 hours before the end of the current period. You can manage or cancel it in your App Store account settings (iPhone Settings › your name › Subscriptions) or from Profile › Settings › Plan &amp; Credits in the App. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Payments are processed entirely by Apple; we never see your payment details.</p>
+    <p><strong>What our server stores for a plan or credits.</strong> Only once you buy a plan or credits, our render server (hosted on Cloudflare) keeps:</p>
+    <ul>
+        <li>a random account ID created by the App, which is not linked to your name, email address or Apple ID, and is kept in your iCloud Keychain so your balance survives a reinstall;</li>
+        <li>the App Store transactions for your purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your credit balance and a history of changes to it (purchases, makeovers, refunds);</li>
+        <li>for each makeover: its date, quality, output size, credits used and the processing cost reported by OpenAI;</li>
+        <li>the finished makeover image, for up to 24 hours, only so the App can still collect it if the connection drops. It is then deleted automatically.</li>
+    </ul>
+    <p>Your room photo and description are never stored on our server. If you only use your own API key, nothing about you is stored there.</p>
+    <p><strong>Deleting it.</strong> In the App, open Profile › Settings › Plan &amp; Credits › Delete account &amp; data. This immediately deletes your account record, credit balance and history and makeover history from our server and gives the App a new, empty account. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription; cancel it with Apple. You can also email us to ask for deletion, quoting the Support ID shown in Settings.</p>
 
     <h2>Photos Permission</h2>
     <p>The App requests access to your photo library and camera only so you can choose or capture a room photo, and to save results if you ask it to. These images are used only for the features you initiate.</p>
@@ -284,7 +299,7 @@
     <p>The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
     <h2>Data Retention and Deletion</h2>
-    <p>Your photos, makeovers, and project data remain on your device until you delete them in the App or uninstall the App. Uninstalling the App removes locally stored data. Your OpenAI API key is removed from the Keychain when you delete it in the App or uninstall the App.</p>
+    <p>Your photos, makeovers, and project data remain on your device until you delete them in the App or uninstall the App. Your OpenAI API key is removed from the Keychain when you delete it in the App or uninstall the App. Data held by our server for a plan is kept until you delete it as described above; for data held by OpenAI under your own API key, contact OpenAI directly.</p>
 
     <h2>Support</h2>
     <p>For questions about the App or this policy, contact <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a>. This page also serves as the App Store Support URL for AI Home Makeover.</p>
