@@ -246,30 +246,54 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Fashion: Dress Me Up</h1>
-    <p><strong>Last updated:</strong> 15 August 2026<br>
+    <p><strong>Last updated:</strong> 5 October 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle ID:</strong> com.oanarinaldi.aifashion<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Fashion has no user accounts and no servers. We do not collect, store, receive or have access to any of your data. Every look you make stays on your iPhone. The two photos you choose for a generation are sent to OpenAI, because that is where the image is made — this page sets out exactly what leaves your device, and when.</p>
+    <p>AI Fashion has no login, no analytics and no advertising, and every look you make stays on your device. The two photos you choose for a generation are sent to OpenAI, because that is where the image is made. You can use the app in two ways: <strong>free with your own OpenAI API key</strong>, in which case your photos go directly to OpenAI and nothing passes through us; or with an optional <strong>plan or credit pack</strong>, in which case they pass through our render server on their way to OpenAI and are not stored. This page sets out exactly what leaves your device, and when.</p>
 
     <h2>What We Collect</h2>
-    <p>Nothing. There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app. We, the developer, never receive any information about you or your use of the app.</p>
+    <p>There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app.</p>
+    <p><strong>With your own API key, we collect nothing.</strong> Your photos and instruction go directly from your device to OpenAI, and we never receive any information about you or your use of the app.</p>
+    <p><strong>With a plan or credits, we keep only what is needed to count your credits</strong>, described under <a href="#plans">Plans, Credits and Subscriptions</a>. Your photos and instruction pass through our server to OpenAI and are not stored.</p>
+    <p>We never collect your name, email address, contacts, location or payment details.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
         <li>Every look you generate — the finished image and both source photos — stored in the app’s private container and excluded from iCloud and iTunes backups.</li>
         <li>The date, the garment type and any instruction you typed, stored alongside each look.</li>
-        <li>Your OpenAI API key, stored in the iOS Keychain with the “when unlocked, this device only” protection class, which means it is excluded from backups and never syncs to another device.</li>
+        <li>Your OpenAI API key, if you add one, stored in the iOS Keychain with the “when unlocked, this device only” protection class, which means it is excluded from backups and never syncs to another device.</li>
         <li>Your app preferences, such as image quality and how long to keep looks.</li>
     </ul>
     <p>Deleting the app removes all of it permanently.</p>
 
-    <h2>What Is Sent to OpenAI</h2>
-    <p>When you tap Dress Me Up, the app sends the two photos you selected and a text instruction directly from your device to OpenAI’s API (<code>api.openai.com</code>), authenticated with the API key you supplied. This is the only network request the app makes, apart from a check that your key is valid when you tap Test Connection.</p>
-    <p>This data goes to OpenAI, not to us. It is processed under your own OpenAI account and is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
+    <h2 id="sent-to-openai">What Is Sent to OpenAI</h2>
+    <p>When you tap Dress Me Up, the app sends the two photos you selected and a text instruction to OpenAI’s image API (<code>api.openai.com</code>), solely to produce your look: directly from your device if you use your own API key, or through our render server if you use a plan or credits. The request is authorised with your OpenAI API key (own-key use) or with the app’s random account ID (plan or credits). Photos are re-encoded before they are sent, which removes location and other metadata. With a plan, any instruction you typed is also checked by OpenAI’s moderation service before the look is made.</p>
+    <p>With your own key, this data is processed under your own OpenAI account. With a plan or credits, our server forwards it to OpenAI using the developer’s OpenAI account and returns the result to your device; your photos and instruction are not written to storage on our server. Either way it is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default. Your OpenAI API key is sent only to OpenAI, never to our server.</p>
     <p>Nothing is sent unless you tap Dress Me Up. Browsing the Styles guide, taking the “What’s my style?” quiz and looking through your saved looks all work entirely offline.</p>
+
+    <h2 id="plans">Plans, Credits and Subscriptions</h2>
+    <p>Plans are optional. Without one, the app works with your own OpenAI API key, exactly as before. With one, you can create looks without an OpenAI account. Purchases are made with Apple’s In-App Purchase:</p>
+    <ul>
+        <li><strong>Monthly</strong> — auto-renewing subscription, US$9.99 per month, 30 credits each month.</li>
+        <li><strong>Pro</strong> — auto-renewing subscription, US$24.99 per month, 100 credits each month.</li>
+        <li><strong>15 credits</strong> — one-time purchase, US$5.99.</li>
+        <li><strong>50 credits</strong> — one-time purchase, US$14.99.</li>
+    </ul>
+    <p>Prices are shown in your local currency in the app and may vary by country. A Draft or Standard look uses 1 credit and a Best-quality look uses 3. Monthly credits are used first, refresh at each renewal and do not roll over; one-time credits never expire. If a look fails, or the finished image never reaches your device, its credits are returned automatically.</p>
+    <p>Subscriptions renew automatically each month at the price shown until cancelled. Payment is charged to your Apple ID at confirmation of purchase, and the subscription renews unless it is cancelled at least 24 hours before the end of the current period. You can manage or cancel it in your App Store account settings (iPhone Settings › your name › Subscriptions) or from Settings › Plan &amp; credits in the app. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Payments are processed entirely by Apple; we never see your payment details.</p>
+    <p><strong>What our server stores for a plan or credits.</strong> Only once you buy a plan or credits, our render server (hosted on Cloudflare) keeps:</p>
+    <ul>
+        <li>a random account ID created by the app, which is not linked to your name, email address or Apple ID, and is kept in your iCloud Keychain so your balance survives a reinstall;</li>
+        <li>the App Store transactions for your purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your credit balance and a history of changes to it (purchases, looks, refunds);</li>
+        <li>for each look: its date, quality, output size, credits used and the processing cost reported by OpenAI;</li>
+        <li>the finished look, for up to 24 hours, only so the app can still collect it if the connection drops. It is then deleted automatically.</li>
+    </ul>
+    <p>Your photos and instruction are never stored on our server. If you only use your own API key, nothing about you is stored there.</p>
+    <p><strong>Deleting it.</strong> In the app, open Settings › Plan &amp; credits › Delete Account &amp; Data. This immediately deletes your account record, credit balance and history and look history from our server and gives the app a new, empty account. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription; cancel it with Apple. You can also email us to ask for deletion, quoting the Support ID shown in Settings.</p>
 
     <h2>Photos and Camera</h2>
     <p>The app never asks for access to your photo library. Choosing a picture uses Apple’s system photo picker, which runs outside the app and hands over only the single image you select — the app cannot see anything else in your library.</p>
@@ -285,10 +309,10 @@
     <p>The image model regenerates your photograph rather than cutting and pasting clothing onto it. The app instructs it to preserve your face, hair, body, pose, background and lighting, and that instruction works well — but it is guidance to a model, not a guarantee. Every result opens on a before-and-after comparison slider so you can judge the likeness for yourself rather than take our word for it.</p>
 
     <h2>Children</h2>
-    <p>The app is not directed at children and collects no data from anyone. Generating images requires an OpenAI account, which OpenAI restricts by age.</p>
+    <p>The app is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
     <h2>Your Rights</h2>
-    <p>Because we hold no data about you, there is nothing for us to disclose, correct or delete. To remove everything the app has stored, use Settings &gt; Delete AI Fashion Data, or delete the app.</p>
+    <p>To remove everything the app has stored on your device, use Settings &gt; Delete AI Fashion Data, or delete the app. If you have used a plan or credits, Settings › Plan &amp; credits › Delete Account &amp; Data deletes what our server holds, as described above. If you only use your own API key, we hold no data about you.</p>
     <p>For data held by OpenAI under your account, contact OpenAI directly.</p>
 
     <h2>Changes</h2>
