@@ -246,17 +246,18 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Beauty Makeover</h1>
-    <p><strong>Last updated:</strong> 24 August 2026<br>
+    <p><strong>Last updated:</strong> 5 October 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle ID:</strong> com.oanarinaldi.aibeautymakeover<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Beauty Makeover has no user accounts and no developer-operated servers. We do not collect, store, receive or have access to your data. Every saved makeover stays on your iPhone or iPad. The portrait and makeup reference you choose for a generation are sent directly to OpenAI, because that is where the image is created — and only after you have explicitly agreed to it on a screen that names OpenAI and lists what is sent. This page explains exactly what leaves your device, when, and how to stop it.</p>
+    <p>AI Beauty Makeover has no login, no analytics and no advertising. Every saved makeover stays on your iPhone or iPad. You can use the app in two ways: <strong>free with your own OpenAI API key</strong>, in which case the portrait and makeup reference you choose are sent directly to OpenAI and nothing passes through us; or with an optional <strong>plan or credit pack</strong>, in which case they pass through our render server on their way to OpenAI and are not stored. Either way, nothing is sent until you have explicitly agreed on a screen that names OpenAI and lists what is sent. This page explains exactly what leaves your device, when, and how to stop it.</p>
 
     <h2>What We Collect</h2>
-    <p><strong>We collect nothing.</strong> There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app, and we, the developer, never receive any information about you or your use of the app.</p>
-    <p>The app does, with your permission and at your request, send the photographs you choose directly to one third party — OpenAI — because that is where the image is created. It never passes through us. See <a href="#sent-to-openai">What Is Sent to OpenAI</a> below for exactly what is sent, who receives it, and how your permission is asked for and withdrawn.</p>
+    <p>There is no analytics, no crash reporting, no advertising identifier, no tracking and no third-party SDK of any kind in this app.</p>
+    <p><strong>With your own API key, we collect nothing.</strong> The photographs you choose go directly from your device to OpenAI, and we never receive any information about you or your use of the app.</p>
+    <p><strong>With a plan or credits, we keep only what is needed to count your credits</strong>, described under <a href="#plans">Plans, Credits and Subscriptions</a>. Your photographs and instructions pass through our server to OpenAI and are not stored. See <a href="#sent-to-openai">What Is Sent to OpenAI</a> for exactly what is sent, who receives it, and how your permission is asked for and withdrawn.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
@@ -268,23 +269,44 @@
     <p>Deleting the app removes all of it permanently.</p>
 
     <h2 id="sent-to-openai">What Is Sent to OpenAI</h2>
-    <p>When you tap <strong>Create My Makeover</strong>, the app sends the following directly from your device to OpenAI’s API (<code>api.openai.com/v1/images/edits</code>):</p>
+    <p>When you tap <strong>Create My Makeover</strong>, the app sends the following to OpenAI’s image API (<code>api.openai.com/v1/images/edits</code>) — directly from your device if you use your own API key, or through our render server if you use a plan or credits:</p>
     <ul>
         <li>the portrait you selected;</li>
         <li>the makeup reference you selected;</li>
         <li>any instruction you typed, if you added one;</li>
-        <li>your OpenAI API key, to authorise the request.</li>
+        <li>to authorise the request: your OpenAI API key (own-key use), or the app’s random account ID (plan or credits).</li>
     </ul>
-    <p>Photographs are re-encoded before they are sent, which removes EXIF metadata including any location recorded by the camera. Your name, email address and contacts are never sent, because the app never asks for them. This is the only network request the app makes, apart from a check that your key is valid when you tap Test Connection.</p>
-    <p>This data goes to OpenAI, not to us. It is processed under your own OpenAI account and is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
+    <p>Photographs are re-encoded before they are sent, which removes EXIF metadata including any location recorded by the camera. Your name, email address and contacts are never sent, because the app never asks for them. Apart from makeovers, the app only checks that your key is valid when you tap Test Connection, and, if you use or open the plans, asks our server for your credit balance and sends it your App Store purchases to be credited.</p>
+    <p>With your own key, this data goes to OpenAI, not to us, and is processed under your own OpenAI account. With a plan or credits, our server forwards it to OpenAI using the developer’s OpenAI account and returns the result to your device; your portrait, makeup reference and instruction are not written to storage on our server. Either way it is subject to OpenAI’s privacy policy and API data usage policies, which you can read at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. As of writing, OpenAI states that data submitted through the API is not used to train its models by default.</p>
     <p>Nothing is sent unless you request a makeover. Browsing the makeup Styles guide, taking the style quiz and looking through saved looks all work entirely offline.</p>
 
+    <h2 id="plans">Plans, Credits and Subscriptions</h2>
+    <p>Plans are optional. Without one, the app works exactly as before with your own OpenAI API key. With one, you can create makeovers without an OpenAI account. Purchases are made with Apple’s In-App Purchase:</p>
+    <ul>
+        <li><strong>Monthly</strong> — auto-renewing subscription, US$9.99 per month, 30 credits each month.</li>
+        <li><strong>Pro</strong> — auto-renewing subscription, US$24.99 per month, 100 credits each month.</li>
+        <li><strong>15 credits</strong> — one-time purchase, US$5.99.</li>
+        <li><strong>50 credits</strong> — one-time purchase, US$14.99.</li>
+    </ul>
+    <p>Prices are shown in your local currency in the app and may vary by country. A Draft or Standard makeover uses 1 credit and a Best-quality makeover uses 3. Monthly credits are used first, refresh at each renewal and do not roll over; one-time credits never expire. If a makeover fails, or the finished image never reaches your device, its credits are returned automatically.</p>
+    <p>Subscriptions renew automatically each month at the price shown until cancelled. Payment is charged to your Apple ID at confirmation of purchase, and the subscription renews unless it is cancelled at least 24 hours before the end of the current period. You can manage or cancel it in your App Store account settings (iPhone Settings › your name › Subscriptions) or from Settings › Plan &amp; credits in the app. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Payments are processed entirely by Apple; we never see your payment details.</p>
+    <p><strong>What our server stores for a plan or credits.</strong> Only once you buy a plan or credits, our render server (hosted on Cloudflare) keeps:</p>
+    <ul>
+        <li>a random account ID created by the app, which is not linked to your name, email address or Apple ID, and is kept in your iCloud Keychain so your balance survives a reinstall;</li>
+        <li>the App Store transactions for your purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your credit balance and a history of changes to it (purchases, makeovers, refunds);</li>
+        <li>for each makeover: its date, quality, output size, credits used and the processing cost reported by OpenAI;</li>
+        <li>the finished makeover image, for up to 24 hours, only so the app can still collect it if the connection drops. It is then deleted automatically.</li>
+    </ul>
+    <p>Your portrait, makeup reference and instruction are never stored on our server. If you only use your own API key, nothing about you is stored there.</p>
+    <p><strong>Deleting it.</strong> In the app, open Settings › Plan &amp; credits › Delete Account &amp; Data. This immediately deletes your account record, credit balance and history and makeover history from our server and gives the app a new, empty account. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription; cancel it with Apple. You can also email us to ask for deletion, quoting the Support ID shown in Settings.</p>
+
     <h2>Your permission</h2>
-    <p>Nothing is sent to OpenAI without your explicit agreement. Before your first makeover, AI Beauty Makeover shows a screen that names OpenAI, lists exactly what will be sent — the four items above — and asks you to agree. If you decline, no image is transmitted and the rest of the app continues to work.</p>
+    <p>Nothing is sent to OpenAI without your explicit agreement. Before your first makeover, AI Beauty Makeover shows a screen that names OpenAI, lists exactly what will be sent — the items above — and says whether it goes directly to OpenAI or through our server, and asks you to agree. If you decline, no image is transmitted and the rest of the app continues to work.</p>
     <p>You can withdraw that agreement at any time in <strong>Settings › Privacy</strong>, using the “Send photos to OpenAI” switch. Turning it off immediately stops the app from sending anything; your saved looks, your preferences and your API key are untouched. Turning it back on asks for your agreement again, on the same screen, so permission is never granted without the disclosure.</p>
 
     <h2>Protection by OpenAI</h2>
-    <p>OpenAI, L.L.C. is the only third party that ever receives data from this app. Under OpenAI’s API terms and API data usage policies, OpenAI commits to protections for data submitted through the API that are equal to or greater than the protections described in this policy: data submitted through the API is not used to train OpenAI’s models by default, and OpenAI applies its own security, retention and deletion controls to it. Those terms are published at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. No other third party — no analytics provider, no advertising network, no SDK — receives anything, because the app contains none.</p>
+    <p>OpenAI, L.L.C. is the only third party that receives your photographs. With a plan, they pass through our render server, which runs on Cloudflare’s network and does not store them. Under OpenAI’s API terms and API data usage policies, OpenAI commits to protections for data submitted through the API that are equal to or greater than the protections described in this policy: data submitted through the API is not used to train OpenAI’s models by default, and OpenAI applies its own security, retention and deletion controls to it. Those terms are published at <a href="https://openai.com/policies" target="_blank" rel="noopener">https://openai.com/policies</a>. No other third party — no analytics provider, no advertising network, no SDK — receives anything, because the app contains none.</p>
 
     <h2>Photos and Camera</h2>
     <p>The app never asks for access to your photo library. Choosing a picture uses Apple’s system photo picker, which runs outside the app and hands over only the single image you select — the app cannot see anything else in your library.</p>
@@ -300,12 +322,12 @@
     <p>The image model regenerates your photograph rather than painting makeup pixels onto the original. The app instructs it to preserve your identity, facial structure, hair, pose, background and lighting while transferring only the makeup look, but this is guidance to an AI model, not a guarantee. Every result opens on a before-and-after comparison so you can judge the likeness yourself.</p>
 
     <h2>Children</h2>
-    <p>The app is not directed at children and collects no data from anyone. Generating images requires an OpenAI account, which OpenAI restricts by age.</p>
+    <p>The app is not directed at children.</p>
 
     <h2>Your Rights</h2>
-    <p>Because we hold no data about you, there is nothing for us to disclose, correct or delete. To remove locally stored content, use the delete-data controls in Settings or delete the app.</p>
+    <p>If you use only your own API key, we hold no data about you, so there is nothing for us to disclose, correct or delete. If you use a plan or credits, you can delete everything our server holds at any time in Settings › Plan &amp; credits › Delete Account &amp; Data, or ask us by email. To remove locally stored content, use the delete-data controls in Settings or delete the app.</p>
     <p><strong>To withdraw your consent</strong> to photographs being sent to OpenAI, switch off “Send photos to OpenAI” in Settings › Privacy. This takes effect immediately and nothing further is transmitted. You can turn it back on at any time.</p>
-    <p>For data held by OpenAI under your account — including any request to access or delete it — contact OpenAI directly, since that data sits in your own OpenAI account and we have no access to it.</p>
+    <p>For data held by OpenAI under your own API key — including any request to access or delete it — contact OpenAI directly, since that data sits in your own OpenAI account and we have no access to it.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
