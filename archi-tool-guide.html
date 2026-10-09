@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="User guide for Oanarina Archi Tool, the free Mac app for architectural drafting, BIM, 3D and rendering.">
+    <meta name="description" content="User guide for Oanarina Archi Tool, the free Mac and Windows app for architectural drafting, BIM, 3D and rendering.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -231,7 +231,7 @@
 @media(max-width:575px) { .photo-editor-intro h1 {font-size:28px}.editor-download {padding:24px}.editor-actions .btn {width:100%} }
 .editor-manual table{width:100%;margin-bottom:24px;font-size:14px}.editor-manual code{color:#b58900}.editor-manual pre{background:#1e1f22;color:#e6e6e6;padding:16px;overflow:auto}
 </style>
-<link rel="canonical" href="https://oanarinaldi.com/archi-tool-guide.html">
+<link rel="canonical" href="https://www.oanarinaldi.com/archi-tool-guide.html">
 </head>
 
 <body>
@@ -7005,6 +7005,37 @@ command inside the app. This table is generated from the command definitions in 
 </table>
 <p><em>(app)</em>: available in the Mac app (command line, menus, scripts and the agent server), not in headless <code>archi-cli</code>.</p>
 <!-- END COMMAND REFERENCE -->
+
+<h2 id="mac-display-recovery-and-section-print-styles-102">Mac display recovery and section print styles (1.0.2)</h2>
+<p>The top ribbon repaints after activation, resizing, display changes and full-screen transitions.
+The 2D canvas paints its own opaque backing surface. If you have hidden or collapsed the
+ribbon, type <code>RIBBON</code> (alias <code>RB</code>, also <code>CLEANSCREENOFF</code>) and press Return to restore and expand it.</p>
+<p>Open a sheet containing a section viewport and click <strong>Section Style</strong>, or open <strong>Page Setup</strong>.
+Enable <strong>Customize section graphics on this sheet</strong>, choose section line and cut fill colours,
+set cut and projection weights in millimetres, and switch <strong>Shaded surfaces</strong> off for linework.
+Use <strong>Color</strong> in Plot style to preserve the selected colours, or Monochrome/Grayscale for those
+outputs. A selected plot style table can override colours and weights. Click <strong>Preview</strong> to
+inspect the final output, then print or export PDF. These settings are saved in the drawing,
+are undoable, and apply only to section viewports on that sheet. Disable customization to
+return to project defaults.</p>
+<p>The command line, scripts and agent API use the same command:</p>
+<pre><code class="language-text">SECTIONSTYLE Set &quot;Sheet 1&quot; &quot;color:black;fill:0.7,0.7,0.7;cut:0.5;proj:0.25;shading:off&quot;
+SECTIONSTYLE List &quot;Sheet 1&quot;
+SECTIONSTYLE Reset &quot;Sheet 1&quot;
+</code></pre>
+<p>Aliases: <code>SECSTYLE</code>, <code>SSTYLE</code>. Existing <code>.archi</code> files open unchanged; the style uses the
+existing sheet metadata dictionary, with no format change.</p>
+<h3 id="reusable-page-setups-pagepreset">Reusable page setups (PAGEPRESET)</h3>
+<p>Page Setup includes <strong>Named Page Setups</strong>. Set paper, orientation, plot pens and section appearance, enter a name and click <strong>Save</strong>. <strong>Load</strong> brings a preset into the current form. Choose target sheets and <strong>Apply to Selected</strong>, or <strong>Apply to All</strong>. <strong>Import…</strong> reads setups saved in another <code>.archi</code> project. Imported pen tables with conflicting names receive a unique name so other sheets keep their output. Each operation can be undone; presets persist in the drawing.</p>
+<p>Commands (quote each preset name when another argument follows, and sheet names containing spaces):</p>
+<pre><code class="language-text">PAGEPRESET Save &quot;Presentation&quot; &quot;Sheet 1&quot;
+PAGEPRESET Apply &quot;Presentation&quot; &quot;Sheet 1|Sheet 2&quot;
+PAGEPRESET Apply &quot;Presentation&quot; All
+PAGEPRESET Import &quot;/path/to/project.archi&quot;
+PAGEPRESET List
+PAGEPRESET Delete &quot;Presentation&quot;
+</code></pre>
+<p>Aliases: <code>PSPRESET</code>, <code>NAMEDPAGESETUP</code>. Viewport positions/scales, geometry and title-block text stay intact. Presets include section graphics when present; use <strong>Customize section graphics on this sheet</strong> to edit those settings.</p>
 <p class="text-center mb-100"><a href="archi-tool.html">← Back to Oanarina Archi Tool</a></p></article></main>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
