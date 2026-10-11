@@ -5,6 +5,118 @@
     // These event galleries use the standard overlay only.
     if ($.fn.lightGallery) delete $.fn.lightGallery.modules.fullscreen;
     var galleries = {
+    "fe-mail-art": [
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5065.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5065.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5036.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5036.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5037.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5037.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5038.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5038.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5039.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5039.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5040.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5040.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5041.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5041.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5042.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5042.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5043.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5043.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5044.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5044.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5087.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5087.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5232.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5232.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5305.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5305.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5306.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5306.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5307.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5307.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5309.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5309.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5312.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5312.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5313.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5313.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5315.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5315.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5316.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5316.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5317.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5317.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        },
+        {
+            "src": "images/exhibitions/web/fe-mail-art/IMG_5318.jpg",
+            "thumb": "images/exhibitions/web/fe-mail-art/IMG_5318.jpg",
+            "subHtml": "<h4>Fe-Mail Art</h4><p>Bienala Internațională de Mail Art Constanța · First edition<br>Constanța Art Museum · Constanța, Romania<br>10 October – 29 November 2026</p><p>Curators: Ramona Popescu and Raluca Necula</p>"
+        }
+    ],
     "spring-salon-2026": [
         {
             "src": "images/exhibitions/web/spring-salon-2026/01.jpg",
