@@ -1,0 +1,20 @@
+{
+  "image_tool": "built-in imagegen",
+  "image": "images/apps/architecture-apps-header.jpg",
+  "sources": [
+    "images/apps/ai-architecture-plan-to-video-app.jpg",
+    "images/apps/app15-single-screen.jpg",
+    "images/apps/app11.jpg",
+    "images/apps/app12.jpg",
+    "images/apps/archi-tool/workspace.jpg"
+  ],
+  "composition": "Four upright phones and one central laptop in a single row on a dark studio background, showing only the five architecture apps.",
+  "installed_video": "media/motion/architecture-apps-header.mp4",
+  "installed_video_origin": "Locally rendered camera glide of the architecture-only image.",
+  "duration_seconds": 8,
+  "width": 1440,
+  "height": 480,
+  "fps": 24,
+  "audio": false,
+  "render_command": "ffmpeg -loop 1 -i images/apps/architecture-apps-header.jpg -vf 'scale=2400:800,crop=2160:720:x=120+25*sin(2*PI*t/8):y=40,scale=1440:480' -t 8 -r 24 -an -c:v libx264 -threads 2 -preset fast -crf 20 -g 6 -keyint_min 6 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart media/motion/architecture-apps-header.mp4"
+}

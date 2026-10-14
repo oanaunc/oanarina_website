@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Architecture apps by Oana Rinaldi: drafting, 3D building design, AI floor plans, architectural renders, interior makeovers and cinematic architecture videos.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Architecture Apps by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .apps-intro {
+            max-width: 760px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .apps-collage-header {
+            position: relative;
+            min-height: 620px;
+            padding: 160px 0 0;
+            background-color: #17191b;
+            background-size: 100% auto;
+            background-position: center 65%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .apps-collage-header .motion-video {
+            object-fit: contain;
+            object-position: center 65%;
+        }
+
+        .apps-collage-header.bg-overlay::after {
+            background-color: rgba(0, 0, 0, .08);
+        }
+
+        .apps-collage-header .section-heading {
+            margin-bottom: 0;
+        }
+
+        .architecture-apps-header {
+            padding-top: 115px;
+        }
+
+        .motion-off .motion-scroll > .contact-area.architecture-apps-header.motion-stage {
+            min-height: 620px;
+        }
+
+        @media (max-width: 767px) {
+            .contact-area.apps-collage-header {
+                min-height: 480px;
+                padding-top: 140px;
+                background-size: auto 58% !important;
+                background-position: center 65% !important;
+            }
+
+            .apps-collage-header .motion-video {
+                top: 27.3%;
+                height: 58%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .contact-area.architecture-apps-header {
+                background-size: 100% auto !important;
+            }
+
+            .architecture-apps-header .motion-video {
+                object-fit: contain;
+                object-position: center 65%;
+            }
+
+            .motion-off .motion-scroll > .contact-area.architecture-apps-header.motion-stage {
+                min-height: 480px;
+            }
+        }
+
+        .apps-intro h3,
+        .more-apps-heading h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .app-store-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 22px;
+            border-radius: 24px;
+            color: #fff;
+            background: #000;
+            font-weight: 600;
+        }
+
+        .app-store-link:hover,
+        .app-store-link:focus {
+            color: #fff;
+            background: #5f2eea;
+        }
+
+        .more-apps-heading {
+            margin: 25px 0 30px;
+            text-align: center;
+        }
+
+        .more-apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        .compact-app {
+            display: flex;
+            gap: 16px;
+            min-height: 150px;
+            padding: 20px;
+            border: 1px solid #ededf2;
+            border-radius: 16px;
+            color: #232323;
+            background: #fff;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .compact-app:hover,
+        .compact-app:focus {
+            color: #232323;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(21, 21, 40, .1);
+        }
+
+        .compact-app img {
+            flex: 0 0 76px;
+            width: 76px;
+            height: 76px;
+            border-radius: 17px;
+        }
+
+        .compact-app h4 {
+            margin: 1px 0 4px;
+            font-size: 17px;
+            line-height: 1.25;
+        }
+
+        .compact-app .app-category {
+            margin-bottom: 7px;
+            color: #8b8b94;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        .compact-app p:last-child {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 991px) {
+            .more-apps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 767px) {
+            .more-apps-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- Additive motion: original design and content retained. -->
+    <link rel="stylesheet" href="css/experience.css">
+    <script defer src="js/motion-manifest.js?v=20261014-architecture-apps"></script>
+    <script defer src="js/experience.js?v=20260913-memory"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="musicvideos.html">Music</a>
+                                        <ul class="dropdown">
+                                            <li><a href="musicvideos.html">Music Videos</a></li>
+                                            <li><a target="_blank" href="https://rockfest.blog/">Rock Music Blog</a></li>
+                                            <li><a target="_blank" href="https://thepoeticpage.com/">Poetry Blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="jackets.html">Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="jackets.html">Jackets</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="photo-editor.html">Photo Editor for Mac</a></li>
+                                            <li><a href="https://aetherfold4d.com">Aetherfold 4D</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="architectureapps.html">Architecture Apps</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                            <li><a href="archi-tool.html">Archi Tool</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+        <!-- ##### Area Start ##### -->
+    <section class="contact-area apps-collage-header architecture-apps-header bg-img bg-overlay has-bg-img" style="background-image: url(images/apps/architecture-apps-header.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                         <h2>Architecture</h2>
+                        <h2>Apps</h2>
+                        
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ##### Area End ##### -->
+    
+
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="apps-intro wow fadeInUp" data-wow-delay="100ms">
+                        <h3>Apps for architecture &amp; design</h3>
+                        <p>Explore my architecture tools for Mac, Windows, iPhone and iPad — from drawing plans and building in 3D to creating renders, reimagining interiors and turning designs into video.</p>
+                    </div>
+
+                    <div id="oanarina-archi-tool" class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="blog-post-thumb mt-30">
+                            <a href="archi-tool.html"><img src="images/apps/archi-tool/workspace.jpg?v=20260927" width="2000" height="1250" style="width:100%;height:auto;object-fit:contain;background:#1e1f22" alt="Oanarina Archi Tool with the Cedar House rendered at golden hour in the 3D view" loading="lazy"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href="archi-tool.html" class="post-title">Oanarina Archi Tool</a>
+                            <div class="post-meta d-flex mb-30"><p class="post-author">Architecture &amp; design</p><p class="tags">Free &amp; open source</p><p class="tags">Mac &amp; Windows</p></div>
+                            <h4>Draw it. Build it. See it.</h4>
+                            <p>Architectural drafting and building design for Mac and Windows. Draw precise plans with an AutoCAD-style command line, raise walls, doors, windows, floors, roofs and stairs as real building elements, and explore them in 3D.</p>
+                            <p>Render, lay out sheets, print PDF and exchange DXF and IFC files — or let an AI agent draw with you through the scripting interface.</p>
+                            <a class="app-store-link" href="archi-tool.html">Explore &amp; download Archi Tool →</a>
+                        </div>
+                    </div>
+
+                    <div id="ai-architecture-plan-to-video" class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-plan-to-video/id6818145793" target="_blank" rel="noopener"><img src="images/apps/ai-architecture-plan-to-video-app.jpg" width="1200" height="635" style="width:100%;height:auto" alt="AI Architecture Plan to Video iPhone screenshots showing video creation tools, a floor plan and 3D house, the project library, a room renovation and a house generated from a sketch" loading="lazy"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-plan-to-video/id6818145793" target="_blank" rel="noopener" class="post-title">AI Architecture Plan to Video</a>
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Latest creation</p>
+                                <p class="tags">Free download · In-app purchases</p>
+                                <p class="tags">iPhone &amp; iPad</p>
+                            </div>
+                            <h4>Watch your architecture come to life</h4>
+                            <p>Turn floor plans, hand-drawn sketches, empty plots, rooms and architectural images into cinematic videos. Choose from six video types: Plan to House, Sketch to House, Build on Your Land, Room Tour, Renovation and Day to Night. Import an image from Photos, Camera or Files, including PDFs for plans and sketches.</p>
+                            <p>Preview the generated house, 3D model or redesign before creating an 8–10 second video. Explore ten architectural and interior styles, choose the lighting and final camera view, and export in vertical or landscape format at draft, HD or Full HD quality.</p>
+                            <p>Keep projects in a searchable video library, save to Photos and share your creations. Learn with 20 free illustrated architecture guides that work offline. Create with credits or connect your own Google Gemini API key.</p>
+                            <a class="app-store-link" href="https://apps.apple.com/us/app/ai-architecture-plan-to-video/id6818145793" target="_blank" rel="noopener">View on the App Store</a>
+                            <p><a href="aiarchitectureplantovideosupport.html">Support</a> &nbsp; · &nbsp; <a href="aiarchitectureplantovideoprivacy.html">Privacy policy</a></p>
+                        </div>
+                    </div>
+
+                    <div id="ai-architecture-plan" class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-plan/id6809520926" target="_blank" rel="noopener"><img src="images/apps/app15.jpg" alt="AI Architecture Plan screenshots showing floor plan tools, materials, before-and-after comparisons, illustrated guides and interior renders"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-plan/id6809520926" target="_blank" rel="noopener" class="post-title">AI Architecture Plan</a>
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Architecture &amp; design</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iPhone &amp; iPad</p>
+                            </div>
+                            <h4>Floor plans, layouts &amp; renders</h4>
+                            <p>Start with your floor plan. Refine details, rethink layouts, add 2D furniture and explore materials or rendered views — all in one workspace for iPhone and iPad. Import a drawing, scanned plan or sketch from Photos, Camera or Files, including the first page of a PDF.</p>
+                            <p>Refine wall linework, door swings and labels, turn a hand-drawn sketch into a clean-looking 2D plan, or rethink furniture arrangements and circulation with walls kept in place by default. Clear loose furniture while retaining walls, openings and fixed fixtures, then add top-down symbols for seating, beds, tables and storage.</p>
+                            <p>Explore colour, floor finishes and furniture in a top-down presentation plan, position a viewing cone to generate a view from your plan, or develop sketches, interiors and exteriors into rendered concepts. Compare source images with generated results, keep versions in local projects, mark favourites, and save or share your images.</p>
+                            <p>Learn to read and design space with 24 illustrated guides covering plans, dimensions, circulation, furniture, materials, daylight and building design. Focused chapters, image studies, practical exercises and key terms help you explore each subject, with a searchable learning library that works offline.</p>
+                            <a class="app-store-link" href="https://apps.apple.com/us/app/ai-architecture-plan/id6809520926" target="_blank" rel="noopener">View on the App Store</a>
+                        </div>
+                    </div>
+
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802"
+                            target="_blank"><img src="images/apps/app11.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-home-makeover/id6797901802"
+                            target="_blank" class="post-title">AI Home Makeover</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Lifestyle</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Reimagine any room in seconds. Upload a photo, choose from 12 designer styles, fine-tune the color mood and decide exactly what to keep or change. Every makeover is saved to Projects, with unlimited variations and a before-and-after slider to make comparisons easy.</p>
+                        </div>
+                    </div>
+
+                    <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Post Thumb -->
+                        <div class="blog-post-thumb mt-30">
+                            <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681"
+                            target="_blank"><img src="images/apps/app12.jpg" alt=""></a>
+
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <!-- Post Title -->
+                            <a href="https://apps.apple.com/us/app/ai-architecture-render/id6799261681"
+                            target="_blank" class="post-title">AI Architecture Render</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta d-flex mb-30">
+                                <p class="post-author">Graphics &amp; Design</p>
+                                <p class="tags">Free App</p>
+                                <p class="tags">iOS</p>
+                            </div>
+                            <!-- Post Excerpt -->
+                            <p align="justify">Turn hand sketches, 3D model screenshots, room photos and floor plans into finished architectural images. Create interior and exterior renders, clean presentation plans and views generated from floor plans, with controls for style, light, materials and how faithfully the original geometry is preserved.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

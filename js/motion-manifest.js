@@ -46,6 +46,11 @@ window.OANA_MOTION = {
     "poster": "images/apps/apps-collage-header.jpg",
     "sameImage": true
   },
+  "architectureapps": {
+    "src": "media/motion/architecture-apps-header.mp4?v=20261014",
+    "poster": "images/apps/architecture-apps-header.jpg",
+    "sameImage": true
+  },
   "algorithmsbook": {
     "src": "media/motion/algorithmsbook.mp4",
     "poster": "img/bg-img/breadcumb16.jpg",

@@ -1,5 +1,7 @@
 # Website motion assets
 
+`architectureapps.html` has an architecture-only header featuring Archi Tool, AI Architecture Plan to Video, AI Architecture Plan, AI Home Makeover and AI Architecture Render. Its poster is `images/apps/architecture-apps-header.jpg`; its silent eight-second camera-glide video is `architecture-apps-header.mp4`. The page uses the shared forward/reverse scroll animation, motion toggle and static fallback. `architecture-apps-header-source.json` records the screenshots and local video-render command.
+
 The original 24 local menu pages retain their complete HTML content and original styling. Each adds only the shared motion CSS, manifest, and JavaScript. The original header image remains underneath its generated film, including when motion is disabled or the media cannot load.
 
 `js/motion-manifest.js` maps each page to its film and original header reference. The homepage uses two films for its original two slideshow images. The 3D models and architecture publications pages share a film because their original header image is the same.
