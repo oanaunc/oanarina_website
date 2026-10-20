@@ -247,9 +247,9 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Architecture Plan to Video</h1>
-    <p><strong>Last updated:</strong> 1 October 2026<br>
+    <p><strong>Last updated:</strong> 20 October 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
-    <strong>Bundle ID:</strong> com.oanarinaldi.aiarchitectureplantovideo<br>
+    <strong>Bundle / Android package:</strong> com.oanarinaldi.aiarchitectureplantovideo<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
@@ -262,9 +262,9 @@
     <h2>What Stays on Your Device</h2>
     <ul>
         <li>The pictures you choose and the AI result pictures, in the app’s private container.</li>
-        <li>Finished videos, which the app saves into a “Plan to Video” album in your Photos library (you can turn this off, or keep an extra copy in the app, in Settings). The app asks for Photos access so it can play its own videos from that album; “Limited” access is enough. It does not read or upload your other photos.</li>
+        <li>Finished videos, which the app saves into a “Plan to Video” album in your Photos library (you can turn this off, or keep an extra copy in the app, in Settings). On iOS, the app asks for Photos access so it can play its own videos from that album; “Limited” access is enough. On Android, saving uses MediaStore and imports use the system picker, so broad photo-library access is not requested. The app does not read or upload your other photos.</li>
         <li>Your projects, favourites and video settings, and a list of videos still being made so they can be collected after the app is closed.</li>
-        <li>Your API key, if you add one, in the iOS Keychain (this device only, never backed up or synced).</li>
+        <li>Your API key, if you add one, in the iOS Keychain or encrypted with Android Keystore (this device only, excluded from app backup).</li>
         <li>Your preferences.</li>
     </ul>
 
@@ -276,15 +276,18 @@
     <p>To manage your credits and jobs, the server stores:</p>
     <ul>
         <li>a random account ID created by the app (not linked to your name, email or Apple ID, unless you choose Sign in with Apple);</li>
-        <li>your App Store purchases (product, dates and transaction IDs), as signed by Apple;</li>
+        <li>your App Store or Google Play purchases (product, dates and transaction/order identifiers), verified with the relevant store. Google purchase tokens are encrypted on the server for purchase validation, restore, renewal and refunds;</li>
         <li>your credit balance and a history of changes to it;</li>
         <li>for each result picture or video: date, settings, the instructions sent to the AI provider, status, credits used and an estimated processing cost (kept up to 90 days for support);</li>
         <li>if you allow notifications, the push token used to tell your device that a video is ready.</li>
     </ul>
-    <p>Payments are handled entirely by Apple; we never see your payment details. A server record is only created once you buy a plan or credits, or sign in with Apple.</p>
+    <p>Payments are handled entirely by Apple or Google Play; we never receive your card or payment-instrument details. The app creates a random device account for credits and jobs; reading the available plans and balance does not require a name, email or login. Android purchase notifications arrive through authenticated Google Cloud Pub/Sub. Android video-ready notifications are generated locally by the background job worker; no Android push token is uploaded.</p>
 
-    <h2>Sign in with Apple (Optional)</h2>
+    <h2>Sign in with Apple (Optional, iOS)</h2>
     <p>If you choose Sign in with Apple, we receive only Apple’s anonymous identifier for you in this app — never your name or email — and use it to make your credits available on all your devices. Apple also gives us a token that we use only to cancel the sign-in when you delete your account.</p>
+
+    <h2>AI Content Reports</h2>
+    <p>If you report a generated result on Android, we store your random account ID, the result reference, the reason you select and the report date. The reporting request does not send the image, video or prompt. Reports are used to investigate harmful generated content and are removed when you delete your account.</p>
 
     <h2>Consent</h2>
     <p>The app asks for your consent before your first picture is sent to Google. Without it, generation features do not work.</p>
@@ -298,8 +301,8 @@
     <h2>Children</h2>
     <p>The app is not directed at children.</p>
 
-    <h2>Deleting Your Data</h2>
-    <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, job history, any uploads or videos still on our server, and any Sign in with Apple link, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs are kept, no longer linked to any account, only so the same purchase cannot be credited twice. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings. You can also email us to ask for deletion.</p>
+    <h2 id="delete-account">Deleting Your Data</h2>
+    <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, job history, any uploads or videos still on our server, and any Sign in with Apple link, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs and Google purchase/order hashes are kept, no longer linked to your account, only so the same purchase cannot be credited twice. Google purchase-token ciphertext and content reports are erased. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings or Google Play’s Subscriptions page. You can also email <a href="mailto:oanarinaldi@gmail.com?subject=Plan%20to%20Video%20data%20deletion">oanarinaldi@gmail.com</a> with the subject “Plan to Video data deletion” and your Support ID to request deletion without the app. Do not include your API key or payment details.</p>
     <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; videos, or delete the app. Remove your API key in Settings or revoke it in your Google account. For data held by Google under your own key, contact Google directly.</p>
 
     <h2>Changes</h2>
