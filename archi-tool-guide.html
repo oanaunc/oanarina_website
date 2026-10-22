@@ -1103,6 +1103,7 @@ renders and shaded elevations, sections and axonometric/perspective views (and t
 <ul>
 <li><strong>Sheets:</strong> <code>LAYOUT</code> creates and manages sheets and their paper size. <code>MVIEW</code> places viewports (plan, elevation,
   section, 3D) at a scale such as 1:100, and <code>VPLOCK</code> locks a viewport's scale and position.</li>
+<li><strong>Blank or off-centre viewport (Mac 1.0.3):</strong> on the sheet, open <strong>Viewports</strong>, choose the viewport, then <strong>Fit Content (VPFIT)</strong>. You can also type <code>VPFIT</code> or <code>VPF</code> and its number. This centres the plotted content and adjusts its scale inside the existing frame; Undo restores the previous framing. Unlock a locked viewport first. If no content is found, check the level named below the viewport and the layers’ visibility and Plot settings. To show another level, make it current in Model and add its plan from <strong>Add Viewport</strong>.</li>
 <li><strong>Title blocks:</strong> <code>TITLEBLOCK</code> edits the sheet's title block fields (sheet title and number, scale, date, revision)
   and the project information shared by all sheets.</li>
 <li><strong>Page setup</strong> (<code>PAGESETUP</code>, ⇧⌘P): paper, scale, lineweights, colour/monochrome/greyscale plotting and a plot
@@ -1685,7 +1686,7 @@ Any system variable can also be typed as a command (for example <code>TEXTSIZE 3
 command inside the app. This table is generated from the command definitions in the source
 (<code>python3 docs/gen_command_reference.py</code>).</p>
 <!-- BEGIN COMMAND REFERENCE -->
-<p>994 commands.</p>
+<p>995 commands.</p>
 <h3 id="draw">Draw</h3>
 <table class="table table-sm">
 <thead>
@@ -5243,6 +5244,11 @@ command inside the app. This table is generated from the command definitions in 
 <td><code>MVIEW</code></td>
 <td><code>MV</code>, <code>VIEWPORT</code></td>
 <td>Places a viewport on the current sheet (corners in paper mm, scale 1:n, view kind, level).</td>
+</tr>
+<tr>
+<td><code>VPFIT</code></td>
+<td><code>VPF</code>, <code>FITVIEWPORT</code></td>
+<td>Mac 1.0.3: centres and fits the plotted content of a sheet viewport; preserves its paper frame and level.</td>
 </tr>
 <tr>
 <td><code>MVIEWPOLY</code></td>
