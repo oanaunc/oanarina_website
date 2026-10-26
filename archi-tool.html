@@ -816,14 +816,14 @@ document.addEventListener('DOMContentLoaded', () => {
 <h1 id="at-hero-title">Oanarina Archi Tool</h1>
 <p class="pe-lede">Draw it. Build it. See it. Precise 2D drafting with a command line that speaks AutoCAD, real building elements, 3D modelling, photographic renders and drawing sheets — and an open door for AI agents that design alongside you.</p>
 <div class="pe-hero-actions">
-<a class="pe-btn pe-btn-primary" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.3.dmg?v=85ac4180a12c" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · v1.0.3 · 91.4 MB · notarized by Apple</small></span></a><a class="pe-btn pe-btn-primary" id="download-button-windows" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.2.exe?v=a0ff1c5d3859" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Windows<small>Free · v1.0.2 · 132.6 MB · Windows 10 and 11</small></span></a>
+<a class="pe-btn pe-btn-primary" id="download-button" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.4.dmg?v=8ed26337af32" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · v1.0.4 · 91.8 MB · notarized by Apple</small></span></a><a class="pe-btn pe-btn-primary" id="download-button-windows" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.2.exe?v=a0ff1c5d3859" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Windows<small>Free · v1.0.2 · 132.6 MB · Windows 10 and 11</small></span></a>
 <a class="pe-btn pe-btn-ghost" href="#studio">Watch it build a house</a>
 </div>
-<p class="pe-trust" id="release-status">Mac version 1.0.3: Apple silicon and Intel, notarized by Apple. Windows version 1.0.2 for Windows 10 and 11 (64-bit): the installer is not code-signed yet, so if Windows shows “Windows protected your PC”, click More info, then Run anyway.</p>
+<p class="pe-trust" id="release-status">Mac version 1.0.4: Apple silicon and Intel, notarized by Apple. Windows version 1.0.2 for Windows 10 and 11 (64-bit): the installer is not code-signed yet, so if Windows shows “Windows protected your PC”, click More info, then Run anyway.</p>
 <ul class="pe-chips" aria-label="Highlights">
 <li>macOS 14 or later</li><li>Windows 10 &amp; 11</li><li>DXF · IFC · PDF</li><li>GPL-3.0</li>
 </ul>
-<p class="pe-hero-links"><a href="archi-tool-guide.html">User guide</a> · <a href="archi-tool-privacy.html">Privacy policy</a> · <a href="downloads/archi-tool/SHA256SUMS.txt">Checksum</a> · <a href="https://github.com/oanaunc/archi_tool">Source code</a> · <a href="#faq">FAQ</a></p>
+<p class="pe-hero-links"><a href="archi-tool-guide.html">User guide</a> · <a href="archi-tool-privacy.html">Privacy policy</a> · <a href="downloads/archi-tool/SHA256SUMS.txt">Checksum</a> · <a href="https://github.com/oanaunc/archi_tool">Source code</a> · <a href="#faq">FAQ</a> · <a href="#sheet-customization">Personalizzare lo sheet</a></p>
 </div>
 <div class="pe-hero-shot" aria-hidden="true">
 <div class="pe-window pe-window-tilt">
@@ -836,12 +836,24 @@ document.addEventListener('DOMContentLoaded', () => {
 </div></div>
 </section>
 
+<section id="sheet-customization" aria-labelledby="sheet-customization-title" style="padding:64px 0;background:#f7f7f7">
+<div class="container"><div class="pe-section-head"><p>Guida in italiano · Mac 1.0.4</p><h2 id="sheet-customization-title">Personalizzare sheet, cartiglio e Nord</h2></div>
+<p>Prima installa la nuova versione Mac 1.0.4: chiudi l’app, apri il DMG e sostituisci la vecchia copia in Applicazioni. Richiede macOS 14 o successivo, su Mac Intel o Apple silicon.</p>
+<video controls playsinline preload="metadata" poster="images/apps/archi-tool/sheet-customization-1.0.4.jpg" style="display:block;width:100%;max-width:1100px;height:auto;margin:24px auto;background:#222" aria-label="Guida: personalizzare il foglio, il cartiglio e il Nord"><source src="videos/archi-tool/Personalizzare-sheet-cartiglio-Nord-Mac-1.0.4.mp4" type="video/mp4">Il tuo browser non supporta questo video.</video>
+<p><a href="https://youtu.be/7runIxmvS-E" target="_blank" rel="noopener">Guarda la guida su YouTube</a> · <a href="videos/archi-tool/Personalizzare-sheet-cartiglio-Nord-Mac-1.0.4.mp4" download>Scarica il video MP4</a> · <a href="downloads/archi-tool/SHEET-CUSTOMIZATION-IT.md">Istruzioni complete in italiano</a></p>
+<ol><li>Apri il foglio e premi <strong>Customize Sheet…</strong>. <strong>Centre Content (keep scale)</strong> centra la planimetria mantenendo la scala; posizione e dimensioni usano millimetri del foglio.</li>
+<li>Togli la spunta a <strong>North arrow / Nord</strong> per nascondere il simbolo automatico. Puoi nascondere o spostare anche gli altri elementi.</li>
+<li>In <strong>Free text on this sheet</strong> puoi scrivere quello che vuoi, anche al posto del Nord: imposta posizione e altezza, poi premi <strong>Add Sheet Text</strong>.</li>
+<li><strong>Edit Title Block…</strong> cambia testi e logo. <strong>Redesign Cartiglio Drawing…</strong> apre il cartiglio in 2D per modificarne linee, scritte, immagini e disposizione; termina con <code>BCLOSE Save</code> e torna a Sheet.</li>
+<li>Salva con ⌘S ed esporta con PDF / PLOT. Le modifiche si annullano con ⌘Z.</li></ol>
+</div></section>
+
 <section class="at-stats" aria-label="Oanarina Archi Tool in numbers"><div class="container"><div class="at-stats-grid">
-<div><strong data-count="1117">1117</strong><span>features built and tested</span></div>
-<div><strong data-count="1046">1046</strong><span>commands on the command line</span></div>
-<div><strong data-count="951">951</strong><span>app self-test checks</span></div>
+<div><strong data-count="1120">1120</strong><span>features built and tested</span></div>
+<div><strong data-count="1051">1051</strong><span>commands on the command line</span></div>
+<div><strong data-count="966">966</strong><span>app self-test checks</span></div>
 <div><strong data-count="30">30</strong><span>file formats in and out</span></div>
-<div><strong data-count="12">12</strong><span>video tutorials, one house</span></div>
+<div><strong data-count="12">12</strong><span>core video lessons, one house</span></div>
 </div></div></section>
 
 <section class="pe-studio" id="studio" aria-labelledby="at-studio-title">
@@ -964,7 +976,7 @@ archi.run("ZOOM E")</pre></div></div>
 
 <section class="pe-specs" aria-labelledby="at-specs-title">
 <div class="container"><div class="pe-specs-grid">
-<div><div class="pe-section-head pe-left"><p>Opens and saves</p><h2 id="at-specs-title">Formats &amp; system</h2></div><p class="pe-update">Mac version 1.0.3, build 8 (22 October): sheet viewports centre on the plotted content of their level and view, keeping other levels and non-printing objects from shifting the plan outside the frame. Recover existing viewports with Viewports → Fit Content (VPFIT), with Undo and saved framing. Windows remains at version 1.0.2.</p></div>
+<div><div class="pe-section-head pe-left"><p>Opens and saves</p><h2 id="at-specs-title">Formats &amp; system</h2></div><p class="pe-update">Mac version 1.0.4, build 10 (26 October): per-sheet visibility and positioning for the North arrow, title block, scale bar, border and automatic captions; free sheet text; a direct cartiglio drawing editor; precise viewport positions and sizes; centring content while preserving print scale. Changes support Undo and save in the project. Windows remains at version 1.0.2.</p></div>
 <div><table class="editor-specs"><caption class="sr-only">System requirements and file formats</caption><tbody><tr><th scope="row">Platform</th><td>macOS 14 or later (Apple silicon and Intel) · Windows 10 and 11 (64-bit)</td></tr><tr><th scope="row">Price</th><td>Free · open source (GPL-3.0)</td></tr><tr><th scope="row">Opens</th><td>.archi, DXF (R12–R2018), IFC 2x3/4, Rhino 3DM, SketchUp (with converter), SVG, OBJ, STL, 3MF, glTF, GeoJSON, point clouds (XYZ, PTS, PLY, E57, LAS), images</td></tr><tr><th scope="row">Exports</th><td>PDF, DXF, SVG, PNG, IFC4 / IFC4.3, glTF (GLB), USDZ, OBJ, STL, 3MF, STEP, Collada, KML, Rhino 3DM, CSV and Excel schedules, BCF, MP4 walkthroughs, 360° panoramas</td></tr><tr><th scope="row">Projects</th><td>.archi</td></tr></tbody></table></div>
 </div></div>
 </section>
@@ -977,7 +989,8 @@ archi.run("ZOOM E")</pre></div></div>
 <details><summary>How complete is it?</summary><p>1117 of the 1160 capabilities in the public feature register are built and tested. The remaining ones are marked openly in the register, most of them waiting for outside validation.</p></details>
 <details><summary>Who makes Oanarina Archi Tool?</summary><p>Oanarina Archi Tool is developed by Oana Rinaldi, with ideas drawn from the open-source FreeCAD, LibreCAD, IfcOpenShell, SolveSpace, OpenSCAD, BRL-CAD, Sverchok and CAD Sketcher communities.</p></details>
 <details><summary>How do I restore a missing toolbar?</summary><p>Download the latest Mac build, replace the old app in Applications and reopen it. Type <code>RIBBON</code> (or <code>RB</code>) in the command line to restore and expand the toolbar. The updated build refreshes the ribbon and 2D canvas when windows resize, become active or move between displays.</p></details>
-<details><summary>My sheet is blank. How do I bring the plan into view?</summary><p>In Mac version 1.0.3, open the sheet’s Viewports menu, choose the plan viewport and select Fit Content (VPFIT). This centres and scales its plotted content inside the frame. Undo restores the previous framing. Unlock the viewport first if necessary. If it reports no plotted content, check the level named below the viewport and the layers’ visibility and Plot settings. To show a different level, select it in Model and add a new plan from Add Viewport.</p></details>
+<details><summary>Can I remove North, add my own sheet text and redesign the title block?</summary><p>Yes. In Mac 1.0.4, open Customize Sheet below the sheet toolbar. Uncheck North arrow / Nord, add arbitrary text with Free text on this sheet, and edit title-block fields and the logo with Edit Title Block. Redesign Cartiglio Drawing opens its drawing block in 2D: edit lines, texts and images, finish with BCLOSE Save, then return to Sheet. All changes support Undo and save with the project. The controls affect automatic decorations; manually drawn symbols remain drawing objects. <a href="#sheet-customization">Watch the Italian guide.</a></p></details>
+<details><summary>My sheet is blank. How do I bring the plan into view?</summary><p>In Mac version 1.0.4, open the sheet’s Viewports menu, choose the plan viewport and select Fit Content (VPFIT). This centres and scales its plotted content inside the frame. Undo restores the previous framing. Unlock the viewport first if necessary. If it reports no plotted content, check the level named below the viewport and the layers’ visibility and Plot settings. To show a different level, select it in Model and add a new plan from Add Viewport.</p></details>
 <details><summary>Can I change section colours for printing?</summary><p>Yes, in version 1.0.2 or later. On a sheet containing a section, open Page Setup and enable “Customize section graphics on this sheet”. Choose line and cut-fill colours, cut and projection lineweights, and shaded surfaces or linework. Select Color to retain colours in print, or Monochrome/Grayscale. Preview shows the final PDF. Save a named page setup to reuse these settings on selected or all sheets, or import presets from another .archi project.</p></details>
 <details><summary>Does the app open with the house from the videos?</summary><p>Cedar House is the bundled sample used in the preview videos. Choose Sample House from the start screen to explore it, or New Drawing to begin your own project.</p></details>
 <details><summary>How can I share feedback?</summary><p>Report a reproducible problem or suggest an improvement through the <a href="index.html#contact">contact page</a>. Include your macOS or Windows version and the steps that led to the problem.</p></details></div>
@@ -987,7 +1000,7 @@ archi.run("ZOOM E")</pre></div></div>
 <div class="container"><div class="pe-final-inner">
 <img src="images/apps/archi-tool/icon.png?v=20260927b" alt="" width="64" height="64">
 <h2>Draw it. Build it. See it.</h2>
-<div class="at-final-buttons"><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.3.dmg?v=85ac4180a12c" download><span>Download for Mac<small>Free · v1.0.3 · 91.4 MB</small></span></a><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.2.exe?v=a0ff1c5d3859" download><span>Download for Windows<small>Free · v1.0.2 · 132.6 MB</small></span></a></div>
+<div class="at-final-buttons"><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-1.0.4.dmg?v=8ed26337af32" download><span>Download for Mac<small>Free · v1.0.4 · 91.8 MB</small></span></a><a class="pe-btn pe-btn-primary" href="downloads/archi-tool/Oanarina-Archi-Tool-Setup-1.0.2.exe?v=a0ff1c5d3859" download><span>Download for Windows<small>Free · v1.0.2 · 132.6 MB</small></span></a></div>
 <p><a href="apps.html">← Back to all apps</a></p>
 </div></div>
 </section>
