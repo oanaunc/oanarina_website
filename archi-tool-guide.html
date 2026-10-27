@@ -1104,7 +1104,8 @@ renders and shaded elevations, sections and axonometric/perspective views (and t
 <ul>
 <li><strong>Sheets:</strong> <code>LAYOUT</code> creates and manages sheets and their paper size. <code>MVIEW</code> places viewports (plan, elevation,
   section, 3D) at a scale such as 1:100, and <code>VPLOCK</code> locks a viewport's scale and position.</li>
-<li><strong>Blank or off-centre viewport (Mac 1.0.3):</strong> on the sheet, open <strong>Viewports</strong>, choose the viewport, then <strong>Fit Content (VPFIT)</strong>. You can also type <code>VPFIT</code> or <code>VPF</code> and its number. This centres the plotted content and adjusts its scale inside the existing frame; Undo restores the previous framing. Unlock a locked viewport first. If no content is found, check the level named below the viewport and the layers’ visibility and Plot settings. To show another level, make it current in Model and add its plan from <strong>Add Viewport</strong>.</li>
+<li><strong>Blank or off-centre viewport:</strong> open the sheet’s <strong>Viewports</strong> menu, choose the viewport and <strong>Fit Content (VPFIT)</strong>, or type <code>VPFIT</code> (<code>VPF</code>) and its number. This centres the plotted content and changes its scale to fit the existing frame; undo restores the previous framing. Locked viewports must be unlocked first. If no content is found, check the level named below the viewport and the layers’ visibility/Plot settings. To show another level, make it current in Model and add its plan from <strong>Add Viewport</strong>.</li>
+<li><strong>Windows viewport recovery (1.0.3):</strong> right-click the sheet viewport and choose <strong>Fit Content (VPFIT)</strong>, or type <code>VPFIT</code> and its number. The shared command centres and scales plotted content, respects locks, and supports undo and persistence.</li>
 <li><strong>Title blocks:</strong> <code>TITLEBLOCK</code> edits the sheet's title block fields (sheet title and number, scale, date, revision)
   and the project information shared by all sheets.</li>
 <li><strong>Page setup</strong> (<code>PAGESETUP</code>, ⇧⌘P): paper, scale, lineweights, colour/monochrome/greyscale plotting and a plot
@@ -1687,7 +1688,7 @@ Any system variable can also be typed as a command (for example <code>TEXTSIZE 3
 command inside the app. This table is generated from the command definitions in the source
 (<code>python3 docs/gen_command_reference.py</code>).</p>
 <!-- BEGIN COMMAND REFERENCE -->
-<p>995 commands.</p>
+<p>998 commands.</p>
 <h3 id="draw">Draw</h3>
 <table class="table table-sm">
 <thead>
@@ -4054,6 +4055,11 @@ command inside the app. This table is generated from the command definitions in 
 <td>Sets door/window casings (architraves), an interior window board and a lintel with bearings on selected openings.</td>
 </tr>
 <tr>
+<td><code>OPENINGSIZES</code></td>
+<td><code>DOORWINDOWSIZES</code>, <code>QUOTAINFISSI</code></td>
+<td>Places live door/window width × height labels; units, text height and automatic labelling of new openings are configurable.</td>
+</tr>
+<tr>
 <td><code>OPENINGTYPE</code></td>
 <td><code>DOORTYPE</code>, <code>WINDOWTYPE</code>, <code>TYPECATALOG</code></td>
 <td>Door/window type catalog: list, new, set type parameters and sub-parts (mullions, transoms, threshold), formulas, apply to openings, delete, import CSV.</td>
@@ -5249,7 +5255,7 @@ command inside the app. This table is generated from the command definitions in 
 <tr>
 <td><code>VPFIT</code></td>
 <td><code>VPF</code>, <code>FITVIEWPORT</code></td>
-<td>Mac 1.0.3: centres and fits the plotted content of a sheet viewport; preserves its paper frame and level.</td>
+<td>Centres and fits the plotted content of a sheet viewport; preserves its paper frame and level.</td>
 </tr>
 <tr>
 <td><code>MVIEWPOLY</code></td>
@@ -5772,6 +5778,26 @@ command inside the app. This table is generated from the command definitions in 
 <td><code>WEBVIEWEREXPORT</code></td>
 <td><code>WEBEXPORT</code>, <code>EXPORTWEB</code>, <code>WEBVIEWER</code></td>
 <td>Exports the 3D model as one standalone HTML file with a WebGL viewer (orbit, pan, zoom, views) that opens in any browser. <em>(app)</em></td>
+</tr>
+<tr>
+<td><code>SHEETSTYLE</code></td>
+<td><code>SHTSTYLE</code>, <code>SHEETCUSTOMIZE</code></td>
+<td>Shows, hides or moves the current sheet's frame, title block, north arrow, scale bar or captions. Offsets are paper mm.</td>
+</tr>
+<tr>
+<td><code>VPEDIT</code></td>
+<td><code>VPE</code>, <code>VIEWPORTEDIT</code></td>
+<td>Edits a viewport's paper Position/Size, model Center, print Scale, or centres content without changing scale (CenterContent), or centres its frame on the page (CenterOnSheet).</td>
+</tr>
+<tr>
+<td><code>SHEETREVTABLE</code></td>
+<td><code>REVSTYLE</code>, <code>REVISIONSTYLE</code></td>
+<td>Configures revision history above/inside the cartiglio or cartiglio fields only, with paper width and row height.</td>
+</tr>
+<tr>
+<td><code>SHEETTEXT</code></td>
+<td><code>SHTTEXT</code>, <code>PAPERTEXT</code></td>
+<td>Adds, edits, moves or deletes free text on the current sheet in paper millimetres.</td>
 </tr>
 </tbody>
 </table>
@@ -7044,6 +7070,19 @@ PAGEPRESET List
 PAGEPRESET Delete &quot;Presentation&quot;
 </code></pre>
 <p>Aliases: <code>PSPRESET</code>, <code>NAMEDPAGESETUP</code>. Viewport positions/scales, geometry and title-block text stay intact. Presets include section graphics when present; use <strong>Customize section graphics on this sheet</strong> to edit those settings.</p>
+<h2 id="text-editing-revisions-and-opening-sizes-mac-105">Text editing, revisions and opening sizes (Mac 1.0.5)</h2>
+<p>Double-click drawing text to edit it in place. Font and Height are on the first toolbar row; <strong>Apply</strong> and <strong>Cancel</strong> are on the second. Apply saves the edit and closes the editor; Escape discards it. Single-line text also accepts Enter; multiline text accepts Command-Return. <strong>Command-S saves pending text and formatting in the project</strong>, including a height typed with an Italian decimal comma. An applied edit is one Undo step.</p>
+<p>On a sheet, open <strong>Customize Sheet</strong>. <strong>Cartiglio drawing</strong> selects the built-in title block or any project block, including one imported from DXF. A custom block uses paper millimetres, with its base point anchored at the lower-right of the frame: draw left and up from it. <strong>Redesign Cartiglio Drawing</strong> opens the selected block in 2D; finish with <code>BCLOSE Save</code>. Shared blocks update every sheet using them.</p>
+<p><strong>Revision history / revisioni</strong> is available in Customize Sheet and in the Sheets panel. Choose <strong>Above cartiglio</strong>, <strong>Inside cartiglio</strong>, or <strong>Cartiglio fields only</strong>. Fields only removes the separate history table and keeps the current revision in the cartiglio. Inside adds a history band under the built-in fields; in a custom cartiglio, reserve the appropriate space yourself. Table width (40–1000 mm) and row height (3–30 mm) are configurable. Use <strong>Move element → Revision history table</strong> to adjust its offset independently, or its checkbox to hide it. Revisions still update when the table is hidden.</p>
+<p>Custom blocks accept <code>{revision}</code>, <code>{revisionDate}</code>, <code>{revisionDescription}</code>, <code>{revisionBy}</code> and indexed rows such as <code>{revision.1.code}</code>, <code>{revision.1.date}</code>, <code>{revision.1.description}</code>, <code>{revision.1.by}</code>. Rows are oldest-first. Add revisions from <strong>Sheets → Revisions → Description / By → Add</strong> or <code>SHEETREVISION</code>. <code>SHEETREVTABLE Fields 180 5</code> selects fields only; <code>SHEETREVTABLE Inside 180 5</code> adds the history band. Aliases: <code>REVSTYLE</code>, <code>REVISIONSTYLE</code>. <code>SHEETSTYLE Revisions Move -10,5</code> sets the independent offset in paper mm. Existing files keep their previous appearance until configured.</p>
+<p>Use <strong>Annotate → Door / Window Sizes</strong>, or type <code>QUOTAINFISSI</code> (<code>OPENINGSIZES</code>, <code>DOORWINDOWSIZES</code>), to add live <strong>width × height</strong> labels to BIM doors and windows of the current level:</p>
+<ul>
+<li><code>QUOTAINFISSI All Centimetres 180</code> labels both categories; <code>Doors</code> or <code>Windows</code> selects one category. 180 is the text height in drawing units (1.8 mm on paper at 1:100 when the drawing uses mm).</li>
+<li>Choose Drawing, Millimetres, Centimetres or Metres. For example a 900 × 2100 mm door is labelled <strong>90×210 cm</strong>.</li>
+<li><code>QUOTAINFISSI Automatic Centimetres 180</code> labels subsequently created BIM doors and windows. Run All separately for existing openings.</li>
+<li><code>QUOTAINFISSI Off</code> disables labels on future openings and keeps existing labels.</li>
+</ul>
+<p>Repeating the bulk command updates the size labels without duplicating them or replacing existing marks. Labels follow changes to the opening's width and height in the plan and plotted output. They support Undo and save in <code>.archi</code>. These labels measure BIM openings; arbitrary lines or blocks in an imported 2D drawing must first be modelled as doors/windows, or dimensioned with the normal dimension tools. The commands also run through the scripting/agent command API.</p>
 <p class="text-center mb-100"><a href="archi-tool.html">← Back to Oanarina Archi Tool</a></p></article></main>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
