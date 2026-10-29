@@ -1,6 +1,6 @@
 # Oanarina UI Tool MCP — standalone local server
 
-For current 0.2.0-dev.3 development builds and version-two .oui projects. This download is separate from the public notarized v0.1.0 installer. The server writes version-two documents; compatibility with that older installer is not claimed.
+For current 0.2.0-dev.4 development builds and version-two .oui projects. This download is separate from the public notarized v0.1.0 installer. The server writes version-two documents; compatibility with that older installer is not claimed.
 
 Free MIT-licensed local MCP server. No account, API key or subscription is required by this server. AI hosts/models are separate products with their own terms.
 
