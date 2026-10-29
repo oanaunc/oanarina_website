@@ -35,9 +35,10 @@
     const shift = smooth(.04, .64, progress);
     const exit = smooth(.80, 1, progress);
     // Focus or hover holds cards still so moving targets remain usable.
-    if (!focusCard && !hovering) phase += delta * (.075 + momentum * 1.8);
-    momentum *= Math.exp(-delta * 4);
-    const rotation = phase + progress * 3.8;
+    if (!focusCard && !hovering) phase += delta * (.04 + momentum * .22);
+    momentum *= Math.exp(-delta * 6);
+    // A small arc keeps each app recognisable throughout the scroll chapter.
+    const rotation = phase + progress * .85;
     const headingScale = 1 - shift * (compact ? .49 : .68);
     const targetX = compact ? width * .20 : width * .30;
     const targetY = -height * (compact ? .235 : .16);
@@ -64,8 +65,8 @@
       const scale = .65 + (depth + 1) * .22;
       const x = Math.cos(angle) * rx + shift * width * (compact ? .34 : .17);
       const y = Math.sin(angle) * ry + Math.cos(angle) * height * (ring - 1) * .11;
-      const bank = Math.sin(angle + ring) * 13;
-      const yaw = Math.sin(angle) * 22;
+      const bank = Math.sin(angle + ring) * 8;
+      const yaw = Math.sin(angle) * 14;
       card.style.transform = `translate(-50%, -50%) translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) perspective(900px) rotateY(${yaw.toFixed(2)}deg) rotateZ(${bank.toFixed(2)}deg) scale(${scale.toFixed(3)})`;
       card.style.zIndex = String(Math.round((depth + 1) * 8));
       card.style.opacity = String(.46 + (depth + 1) * .27);
@@ -109,7 +110,9 @@
   addEventListener('scroll', () => {
     const now = performance.now();
     if (inView) {
-      momentum = Math.min(5, momentum + Math.abs(scrollY - lastScroll) / Math.max(16, now - lastScrollTime) * .45);
+      // Cap the speed boost instead of accumulating it across wheel events.
+      const scrollSpeed = Math.abs(scrollY - lastScroll) / Math.max(16, now - lastScrollTime);
+      momentum = Math.min(.65, Math.max(momentum, scrollSpeed * .12));
       measure();
     }
     lastScroll = scrollY;
