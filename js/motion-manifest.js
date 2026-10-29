@@ -1,13 +1,13 @@
-/* Shared scroll-header films; Forma uses a real editor recording, other entries retain their existing artwork films. */
+/* Shared scroll-header films; Forma uses generated brand artwork, while its product walkthroughs remain real editor recordings. */
 window.OANA_MOTION = {
   "forma": {
-    "src": "videos/forma/header.mp4",
-    "poster": "images/apps/forma/header.jpg",
+    "src": "videos/forma/brand-film.mp4",
+    "poster": "images/apps/forma/brand-film-poster.jpg",
     "sameImage": true
   },
   "ui-tool": {
-    "src": "videos/forma/header.mp4",
-    "poster": "images/apps/forma/header.jpg",
+    "src": "videos/forma/brand-film.mp4",
+    "poster": "images/apps/forma/brand-film-poster.jpg",
     "sameImage": true
   },
   "archi-tool": {

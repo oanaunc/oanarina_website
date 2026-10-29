@@ -1,14 +1,16 @@
 {
-  "version": "0.2.0-dev.6",
-  "source": "https://github.com/oanaunc/oanarina_ui_tool",
+  "version": "0.2.0-dev.8",
+  "source": "Forma application release build",
+  "sourceGitHash": "47df7b52b7af730031401d2fd36be7b684166a96",
+  "sourceDirtySnapshot": false,
   "purpose": "Static browser demo snapshot. Only local storage/cache identifiers are namespaced to isolate website demo data. No user projects included.",
   "sourceAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
-    "assets/index-BsvFkDR0.css": "d19c2fd7df3124d066f25583e020d2d5c6963c177367d30000792c279dfeca56",
-    "assets/index-C_O7ytJD.js": "76bef9db41e0c79682c1d21457caceff51cf7838d022bcb47fcbbc27a1efac13",
+    "assets/index-2Abf-O1e.css": "adb5b8b5c46e649f7c235855caeca1d91150ebfd0e194ed1a07371fb73affa0e",
+    "assets/index-Dwcexzai.js": "456e406e92a039b7d95944f1553c464b236de5bccab1a695a4329c3a822cc1f7",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-CJ8rJTty.js": "b08b477b5926b01adc7850c3ff617e696ebe958dece04a152690d248df8f0807",
-    "assets/svg-import-JuDeHXKa.js": "4791646656229630d2cd7fd68c1b9250682a10facec3d6fd996b2d91d2c92955"
+    "assets/slides-export-ChtaNcwc.js": "db51f986da2d2b2ca56846598bbff6ca233a4f07342f3b07d293618e46147769",
+    "assets/svg-import-ClqmEbLF.js": "818f1eeacc245c68733d94a750a096f5d2817430b284850ad1b5e4ccc298b879"
   },
   "storageKeys": [
     "oui-action-history",
@@ -27,13 +29,10 @@
   ],
   "demoAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
-    "assets/index-BsvFkDR0.css": "d19c2fd7df3124d066f25583e020d2d5c6963c177367d30000792c279dfeca56",
-    "assets/index-C_O7ytJD.js": "80bde911199580188eabdbd8ae06cd1ec05cac478fd361f87c084b1534327803",
+    "assets/index-2Abf-O1e.css": "adb5b8b5c46e649f7c235855caeca1d91150ebfd0e194ed1a07371fb73affa0e",
+    "assets/index-Dwcexzai.js": "3d8d83d40f06c76c4988cde36cab31024ac480b2eb9d412e5c9b982d0f76ef88",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-CJ8rJTty.js": "b08b477b5926b01adc7850c3ff617e696ebe958dece04a152690d248df8f0807",
-    "assets/svg-import-JuDeHXKa.js": "4791646656229630d2cd7fd68c1b9250682a10facec3d6fd996b2d91d2c92955"
-  },
-  "sourceGitHash": "0cda725b6760dc6376cd09bac9f00f0d8fd86e34",
-  "sourceDirtySnapshot": false,
-  "provenanceNote": "Release commit is clean and its final dist asset hashes match this demo snapshot; storage identifiers alone are namespaced as documented."
+    "assets/slides-export-ChtaNcwc.js": "db51f986da2d2b2ca56846598bbff6ca233a4f07342f3b07d293618e46147769",
+    "assets/svg-import-ClqmEbLF.js": "818f1eeacc245c68733d94a750a096f5d2817430b284850ad1b5e4ccc298b879"
+  }
 }

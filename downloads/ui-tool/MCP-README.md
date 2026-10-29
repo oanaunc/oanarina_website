@@ -1,6 +1,6 @@
 # Forma MCP — standalone local server
 
-For 0.2.0-dev.6 and version-two .oui projects. Compatibility with the older v0.1.0 installer is not claimed.
+For 0.2.0-dev.8 and version-two .oui projects. Compatibility with the older v0.1.0 installer is not claimed.
 
 Free MIT-licensed local MCP server. No account, API key or subscription is required by this server. AI hosts/models are separate products with their own terms.
 
@@ -18,6 +18,8 @@ Save changes in the Mac editor first. MCP writes the saved .oui file; reopen it 
 
 SVG export supports vector/text pages, refuses images/raster paints, and uses approximate headless font metrics. Review typography in the Mac app. Installed font files are not copied. Direct binary .fig access and Figma cloud control are not included. No user files, credentials or font binaries are bundled.
 
-Source and full operation documentation: https://github.com/oanaunc/oanarina_ui_tool/tree/main/mcp
+Public startup and operation guide: https://www.oanarinaldi.com/ui-tool-guide.html#mcp-development
+
+The archive includes its runnable server and licenses. Its optional repository documentation link requires repository access; it is not required to start the server.
 
 Original dependency licenses are in THIRD-PARTY-NOTICES.txt.

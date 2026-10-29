@@ -8,5 +8,7 @@
 
 /* Match the shared Photo Editor / Archi Tool product window, with real Forma footage. */
 .forma-page .pe-window video{display:block;width:100%;height:auto;aspect-ratio:1512/982}
-/* Keep the shared white breadcrumb title readable over Forma's light canvas. */
-.editor-breadcrumb .motion-video{filter:brightness(.4)}
+/* Keep the sculptural edge visible in the narrow cover crop, with matching static fallback. */
+@media(max-width:600px){.editor-breadcrumb.contact-area{background-position:30% center!important;background-size:cover!important}.editor-breadcrumb .motion-video{object-position:30% center}}
+/* The shared back-to-top button must not cover the fixed motion controls. */
+#scrollUp{bottom:76px;right:20px}
