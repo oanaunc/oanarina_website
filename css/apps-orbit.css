@@ -1,0 +1,92 @@
+/* Homepage app chapter. All styles are scoped to this section. */
+.apps-orbit {
+  --orbit-ink: #f7f5f0;
+  position: relative;
+  color: var(--orbit-ink);
+  background: #101113;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.apps-orbit-stage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 90px 6vw 60px;
+  background: radial-gradient(ellipse at 76% 64%, #45304c33, transparent 58%), #101113;
+}
+.apps-orbit p, .apps-orbit h2, .apps-orbit h3, .apps-orbit a { font-family: inherit; color: inherit; }
+.apps-orbit-heading { position: relative; z-index: 25; text-align: center; pointer-events: none; }
+.apps-orbit .apps-orbit-eyebrow { margin: 0 0 22px; color: #bcb8c5; font-size: 10px; line-height: 1.4; letter-spacing: .22em; text-transform: uppercase; }
+.apps-orbit h2 { margin: 0; font-size: clamp(48px, 9.6vw, 154px); line-height: .95; letter-spacing: -.075em; font-weight: 600; white-space: nowrap; }
+.apps-orbit h2 span { color: #d8bfdc; }
+.apps-orbit h2 sup { display: inline-block; top: -.85em; margin-left: .5em; font-size: .19em; font-weight: 400; letter-spacing: 0; }
+.apps-orbit-intro { position: relative; z-index: 25; order: 1; margin: 30px auto; text-align: center; }
+.apps-orbit-intro > p { margin: 0 0 14px; font-size: clamp(24px, 2.5vw, 38px); line-height: 1.15; letter-spacing: -.04em; }
+.apps-orbit-intro > span { display: block; margin-bottom: 26px; color: #aaa6b2; font-size: 13px; line-height: 1.6; }
+.apps-orbit a.apps-orbit-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 32px; padding: 16px 22px; border: 1px solid #e5d6e55c; background: #e6d0e8; color: #19131e; border-radius: 3px; font-size: 12px; line-height: 1.2; font-weight: 600; transition: background .2s, border-color .2s; }
+.apps-orbit a.apps-orbit-cta:hover { background: #faf5fb; border-color: #faf5fb; }
+.apps-orbit a.apps-orbit-cta > span { font-size: 20px; line-height: .8; }
+.apps-orbit a:focus-visible { outline: 2px solid #f4d5f8; outline-offset: 5px; }
+.apps-orbit-cards { position: relative; z-index: 2; order: 2; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; width: 100%; max-width: 1100px; margin: 55px auto; }
+.apps-orbit a.apps-orbit-card { display: block; padding: 6px; border: 1px solid #ffffff26; border-radius: 17px; background: #1c1c23; color: #e7e1ec; box-shadow: 0 12px 30px #0005; font-size: 9px; line-height: 1.3; font-weight: 400; transition: border-color .2s, background .2s; }
+.apps-orbit-card img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
+.apps-orbit-card > span { display: block; padding: 9px 2px 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+.apps-orbit a.apps-orbit-card:hover, .apps-orbit a.apps-orbit-card:focus-visible { border-color: #e9c9f4ba; background: #302536; }
+.apps-orbit .apps-orbit-card-wide img { aspect-ratio: 1.6; }
+.apps-orbit-discover, .apps-orbit-grid, .apps-orbit-rings, .apps-orbit-shade, .apps-orbit-progress { display: none; }
+.apps-orbit-footer { position: relative; z-index: 26; order: 3; display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-top: 40px; color: #88838f; font-size: 9px; line-height: 1.4; letter-spacing: .08em; }
+.apps-orbit-scroll { display: none; }
+
+/* JS adds this class only when motion is enabled. Native page scrolling stays intact. */
+.apps-orbit.is-animated { height: 225svh; min-height: 1350px; }
+.apps-orbit.is-animated .apps-orbit-stage { position: sticky; top: 0; height: 100svh; min-height: 600px; padding: 0; }
+.is-animated .apps-orbit-grid { display: block; position: absolute; inset: 0; opacity: .19; background-image: linear-gradient(#b5a5ce12 1px, transparent 1px), linear-gradient(90deg, #b5a5ce12 1px, transparent 1px); background-size: 80px 80px; mask-image: radial-gradient(ellipse, #000, transparent 75%); }
+.is-animated .apps-orbit-rings { display: block; position: absolute; inset: 0; pointer-events: none; }
+.apps-orbit-rings span { position: absolute; left: 50%; top: 50%; width: 89%; height: 92%; border: 1px solid #c5a8dc16; border-radius: 50%; transform: translate(-50%, -50%) rotate(-22deg); }
+.apps-orbit-rings span:nth-child(2) { width: 72%; height: 125%; border-color: #bca1d00f; transform: translate(-50%, -50%) rotate(37deg); }
+.apps-orbit-rings span:nth-child(3) { width: 120%; height: 70%; border-color: #e3bdd811; transform: translate(-50%, -50%) rotate(18deg); }
+.is-animated .apps-orbit-cards { position: absolute; inset: 0; display: block; margin: 0; max-width: none; }
+.is-animated a.apps-orbit-card { position: absolute; left: 50%; top: 50%; width: clamp(94px, 9.7vw, 148px); margin: 0; will-change: transform; }
+.is-animated a.apps-orbit-card-wide { width: clamp(180px, 18vw, 260px); }
+.is-animated .apps-orbit-shade { display: block; position: absolute; inset: 0; z-index: 23; background: radial-gradient(ellipse 35% 37% at 50% 47%, #101113ed 15%, #101113af 65%, transparent 100%); pointer-events: none; }
+.is-animated .apps-orbit-heading { position: absolute; left: 0; top: 29%; width: 100%; will-change: transform; transform-origin: center center; }
+.is-animated .apps-orbit-intro { position: absolute; top: 53%; left: 0; width: 100%; margin: 0; }
+.is-animated .apps-orbit-discover { display: block; position: absolute; left: 7.5%; top: 34%; width: min(350px, 29%); z-index: 25; opacity: 0; visibility: hidden; }
+.apps-orbit-discover h3 { margin: 0 0 22px; color: #f7f5f0; font-size: clamp(36px, 4.2vw, 68px); font-weight: 500; line-height: 1.03; letter-spacing: -.06em; }
+.apps-orbit-discover > p:not(.apps-orbit-eyebrow) { margin-bottom: 26px; color: #b3acbb; font-size: 13px; line-height: 1.8; }
+.is-animated .apps-orbit-footer { position: absolute; left: 4%; right: 4%; bottom: 33px; margin: 0; }
+.is-animated .apps-orbit-scroll { display: inline-flex; align-items: center; gap: 22px; color: #d2c7d7; text-transform: uppercase; font-size: 8px; letter-spacing: .16em; }
+.apps-orbit-scroll > span { font-size: 18px; }
+.is-animated .apps-orbit-progress { display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #ffffff0c; z-index: 27; }
+.apps-orbit-progress > span { display: block; width: 100%; height: 100%; background: #d8bfdc; transform: scaleX(0); transform-origin: left; }
+
+@media (max-width: 767px) {
+  .apps-orbit-stage { padding: 70px 22px 35px; }
+  .apps-orbit h2 { font-size: 12vw; }
+  .apps-orbit h2 sup { margin-left: .35em; }
+  .apps-orbit .apps-orbit-eyebrow { font-size: 8px; letter-spacing: .16em; margin-bottom: 18px; }
+  .apps-orbit-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 35px auto; }
+  .apps-orbit a.apps-orbit-card { border-radius: 13px; padding: 4px; font-size: 8px; }
+  .apps-orbit-card img { border-radius: 9px; }
+  .apps-orbit-footer { font-size: 8px; }
+  .apps-orbit-footer > span:last-child { display: none; }
+  .apps-orbit.is-animated { height: 205svh; min-height: 1120px; }
+  .apps-orbit.is-animated .apps-orbit-stage { min-height: 540px; }
+  .is-animated .apps-orbit-heading { top: 33%; }
+  .is-animated .apps-orbit-intro { top: 47%; padding: 0 24px; }
+  .apps-orbit-intro > p { font-size: 27px; }
+  .apps-orbit-intro > span { max-width: 250px; margin: 0 auto 22px; font-size: 11px; }
+  .is-animated a.apps-orbit-card { width: 87px; }
+  .is-animated a.apps-orbit-card-wide { width: 146px; }
+  .is-animated .apps-orbit-shade { background: radial-gradient(ellipse 65% 32% at 50% 48%, #101113f5 18%, #101113ad 70%, transparent 100%); }
+  .is-animated .apps-orbit-discover { left: 7%; top: 32%; width: 72%; }
+  .apps-orbit-discover h3 { font-size: 44px; }
+  .apps-orbit-discover > p:not(.apps-orbit-eyebrow) { font-size: 12px; max-width: 250px; }
+  .is-animated .apps-orbit-footer { left: 6%; right: 6%; bottom: 76px; }
+  .apps-orbit-footer > span:first-child { max-width: 130px; }
+  .is-animated .apps-orbit-scroll { font-size: 7px; gap: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .apps-orbit *, .apps-orbit *::before, .apps-orbit *::after { transition: none !important; }
+}
