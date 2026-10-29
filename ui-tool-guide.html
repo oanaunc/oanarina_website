@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A free interface design preview for Mac: frames, layers, drawing, text, 1,959 Google Fonts, local project files and a Figma Bridge.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Oanarina UI Tool User Guide — Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+        
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .apps-intro {
+            max-width: 760px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .apps-collage-header {
+            position: relative;
+            min-height: 620px;
+            padding: 160px 0 0;
+            background-color: #17191b;
+            background-size: 100% auto;
+            background-position: center 65%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .apps-collage-header .motion-video {
+            object-fit: contain;
+            object-position: center 65%;
+        }
+
+        .apps-collage-header.bg-overlay::after {
+            background-color: rgba(0, 0, 0, .08);
+        }
+
+        .apps-collage-header .section-heading {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .contact-area.apps-collage-header {
+                min-height: 480px;
+                padding-top: 140px;
+                background-size: auto 58% !important;
+                background-position: center 65% !important;
+            }
+
+            .apps-collage-header .motion-video {
+                top: 27.3%;
+                height: 58%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .apps-intro h3,
+        .more-apps-heading h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .app-store-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 22px;
+            border-radius: 24px;
+            color: #fff;
+            background: #000;
+            font-weight: 600;
+        }
+
+        .app-store-link:hover,
+        .app-store-link:focus {
+            color: #fff;
+            background: #5f2eea;
+        }
+
+        .more-apps-heading {
+            margin: 25px 0 30px;
+            text-align: center;
+        }
+
+        .more-apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        .compact-app {
+            display: flex;
+            gap: 16px;
+            min-height: 150px;
+            padding: 20px;
+            border: 1px solid #ededf2;
+            border-radius: 16px;
+            color: #232323;
+            background: #fff;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .compact-app:hover,
+        .compact-app:focus {
+            color: #232323;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(21, 21, 40, .1);
+        }
+
+        .compact-app img {
+            flex: 0 0 76px;
+            width: 76px;
+            height: 76px;
+            border-radius: 17px;
+        }
+
+        .compact-app h4 {
+            margin: 1px 0 4px;
+            font-size: 17px;
+            line-height: 1.25;
+        }
+
+        .compact-app .app-category {
+            margin-bottom: 7px;
+            color: #8b8b94;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        .compact-app p:last-child {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 991px) {
+            .more-apps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 767px) {
+            .more-apps-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- Additive motion: original design and content retained. -->
+    <link rel="stylesheet" href="css/experience.css">
+    <script defer src="js/motion-manifest.js?v=20260921-midjourney"></script>
+    <script defer src="js/experience.js?v=20260913-memory"></script>
+<style>
+.editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:clamp(440px,75vh,900px); display:flex; align-items:center; }
+.editor-breadcrumb video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.editor-breadcrumb .container { position:relative; z-index:2; }
+.editor-breadcrumb .section-heading { margin-bottom:0; }
+.editor-breadcrumb .section-heading p { color:#fff; text-shadow:0 1px 8px #000; }
+.editor-motion-toggle { position:absolute; right:20px; bottom:15px; z-index:3; color:white; background:#0009; border:1px solid #fff7; padding:6px 12px; font-size:12px; }
+.pe-page { --pink:#f06fa4; --pink-soft:#f6b6cf; --blue:#6fa8ff; --cyan:#4cc9f0; --ink:#16181c; --ink2:#1f2227; --ink3:#2a2e35; --line:#34383f; --paper:#fff; --muted:#6b6f76; display:block; overflow-x:hidden; }
+.pe-page .container { position:relative; }
+.pe-page h1, .pe-page h2, .pe-page h3 { letter-spacing:0; }
+#download, #studio, #features, #faq { scroll-margin-top:110px; }
+
+/* shared */
+.pe-section-head { text-align:center; margin:0 auto 38px; max-width:760px; }
+.pe-section-head > p:first-child { font-size:13px; text-transform:uppercase; letter-spacing:.18em; color:var(--pink); margin-bottom:10px; font-weight:600; }
+.pe-section-head h2 { font-size:clamp(30px,4vw,46px); line-height:1.05; margin:0; text-transform:none; letter-spacing:0; }
+.pe-section-sub { font-size:16px; color:var(--muted); margin:16px auto 0; max-width:640px; }
+.pe-left { text-align:left; margin-left:0; }
+.pe-btn { display:inline-flex; align-items:center; gap:12px; border-radius:999px; padding:14px 26px; font-weight:700; font-size:16px; line-height:1.15; transition:transform .2s, box-shadow .2s, background .2s; text-decoration:none; }
+.pe-btn small { display:block; font-weight:500; font-size:12px; opacity:.85; margin-top:2px; }
+.pe-btn-primary { color:#1b0d14; background:linear-gradient(135deg,#ffd0e2,var(--pink) 55%,#d85690); box-shadow:0 10px 30px rgba(240,111,164,.35); }
+.pe-btn-primary:hover, .pe-btn-primary:focus-visible { color:#1b0d14; transform:translateY(-2px); box-shadow:0 16px 40px rgba(240,111,164,.5); }
+.pe-btn-ghost { color:#fff; border:1px solid rgba(255,255,255,.35); }
+.pe-btn-ghost:hover, .pe-btn-ghost:focus-visible { color:#fff; border-color:var(--pink-soft); background:rgba(255,255,255,.06); }
+
+/* hero */
+.pe-hero { position:relative; background:var(--ink); color:#e9eaee; padding:90px 0 100px; overflow:hidden; }
+.pe-hero-glow { position:absolute; inset:-20% -10% auto; height:140%; pointer-events:none;
+  background:radial-gradient(40% 50% at 18% 30%, rgba(240,111,164,.28), transparent 70%), radial-gradient(35% 45% at 85% 20%, rgba(111,168,255,.25), transparent 70%), radial-gradient(30% 40% at 70% 90%, rgba(76,201,240,.14), transparent 70%); }
+.pe-hero-grid { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:56px; align-items:center; }
+.pe-hero-icon { width:84px; height:84px; border-radius:20px; box-shadow:0 12px 40px rgba(0,0,0,.45); margin-bottom:22px; }
+.pe-eyebrow { color:var(--pink-soft); font-size:13px; text-transform:uppercase; letter-spacing:.2em; margin-bottom:12px; font-weight:600; }
+.pe-hero h1 { color:#fff; font-size:clamp(40px,5.4vw,68px); line-height:.98; margin:0 0 20px; text-transform:none; }
+.pe-lede { color:#c8cad0; font-size:18px; line-height:1.55; max-width:520px; margin-bottom:30px; }
+.pe-hero-actions { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:18px; }
+.pe-trust { color:#9a9ea6; font-size:13px; margin-bottom:18px; max-width:520px; }
+.pe-chips { list-style:none; padding:0; margin:0 0 18px; display:flex; flex-wrap:wrap; gap:8px; }
+.pe-chips li { font-size:12px; color:#dfe1e6; padding:6px 12px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); }
+.pe-hero-links, .pe-hero-links a { color:#9a9ea6; font-size:13px; }
+.pe-hero-links a:hover { color:var(--pink-soft); }
+.pe-hero-shot { position:relative; perspective:1400px; }
+.pe-window { border-radius:14px; overflow:hidden; background:#101114; border:1px solid rgba(255,255,255,.1); box-shadow:0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.4); }
+.pe-window img { display:block; width:100%; height:auto; }
+.pe-window-tilt { transform:rotateX(var(--rx,4deg)) rotateY(var(--ry,-10deg)); transition:transform .35s ease-out; transform-style:preserve-3d; }
+.pe-titlebar, .pe-app-bar { display:flex; align-items:center; gap:7px; height:30px; padding:0 12px; background:#23262c; border-bottom:1px solid #2e3238; }
+.pe-titlebar i, .pe-app-bar > i { width:11px; height:11px; border-radius:50%; background:#ff5f57; display:block; flex:none; }
+.pe-titlebar i:nth-child(2), .pe-app-bar > i:nth-child(2) { background:#febc2e; }
+.pe-titlebar i:nth-child(3), .pe-app-bar > i:nth-child(3) { background:#8f96a3; }
+.pe-titlebar span { margin-left:10px; font-size:11px; color:#9da2ab; }
+.pe-float { position:absolute; border-radius:12px; border:1px solid rgba(255,255,255,.14); box-shadow:0 24px 60px rgba(0,0,0,.55); object-fit:cover; background:#000; animation:peFloat 7s ease-in-out infinite; }
+.pe-float-a { width:44%; aspect-ratio:1680/720; left:-8%; bottom:-10%; }
+.pe-float-b { width:26%; aspect-ratio:1; right:-4%; top:-12%; animation-delay:-3.5s; }
+@keyframes peFloat { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-10px) } }
+
+/* studio */
+.pe-studio { padding:100px 0 80px; background:linear-gradient(#fff, #f6f4f7); }
+.pe-app { border-radius:16px; overflow:hidden; background:var(--ink); border:1px solid #0c0d10; box-shadow:0 40px 100px rgba(22,24,28,.28); color:#e4e6ea; }
+.pe-app-bar { height:36px; }
+.pe-app-menu { display:flex; gap:18px; margin-left:18px; font-size:12px; color:#a8adb6; }
+.pe-app-menu span:first-child { color:#fff; font-weight:600; }
+.pe-app-doc { margin-left:auto; font-size:12px; color:#1b0d14; background:var(--pink-soft); padding:3px 12px; border-radius:999px; font-weight:600; }
+.pe-app-body { display:grid; grid-template-columns:86px minmax(0,1fr) 330px; height:clamp(520px,52vw,640px); }
+.pe-toolbar { display:flex; flex-direction:column; gap:4px; padding:12px 8px; overflow-y:auto; background:var(--ink2); border-right:1px solid var(--line); }
+.pe-tool { display:flex; flex-direction:column; align-items:center; gap:4px; padding:10px 4px; border:0; border-radius:10px; background:transparent; color:#aeb3bc; cursor:pointer; font:inherit; font-size:11px; transition:background .2s, color .2s; }
+.pe-tool:hover { background:var(--ink3); color:#fff; }
+.pe-tool.is-active { background:rgba(240,111,164,.18); color:var(--pink-soft); box-shadow:inset 0 0 0 1px rgba(240,111,164,.45); }
+.pe-tool:focus-visible, .pe-steps button:focus-visible, .pe-mini:focus-visible, .pe-ba-tab:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+.pe-stage { position:relative; background:#0d0e11; display:flex; flex-direction:column; }
+.pe-stage video { display:block; width:100%; flex:1 1 0; min-height:0; height:0; background:#0d0e11; object-fit:contain; cursor:pointer; }
+.pe-play { position:absolute; left:50%; top:calc(50% - 40px); transform:translate(-50%,-50%); width:74px; height:74px; border-radius:50%; border:0; color:#1b0d14; background:var(--pink); box-shadow:0 12px 40px rgba(240,111,164,.55); cursor:pointer; display:grid; place-items:center; transition:opacity .25s, transform .25s; }
+.pe-play:hover { transform:translate(-50%,-50%) scale(1.06); }
+.pe-app.is-playing .pe-play { opacity:0; pointer-events:none; }
+.pe-scrub { position:relative; height:6px; background:#2a2e35; cursor:pointer; flex:none; }
+.pe-scrub-fill { position:absolute; inset:0 auto 0 0; width:0; background:linear-gradient(90deg,var(--pink),var(--blue)); }
+.pe-scrub-marks i { position:absolute; top:-3px; width:2px; height:12px; background:#fff; opacity:.55; border-radius:1px; }
+.pe-stage-foot { display:flex; align-items:center; gap:10px; padding:10px 14px; font-size:12px; color:#9da2ab; margin-top:auto; }
+.pe-stage-foot #pe-time { margin-right:auto; font-variant-numeric:tabular-nums; }
+.pe-mini { border:1px solid var(--line); background:var(--ink2); color:#dfe1e6; border-radius:8px; padding:5px 12px; font:inherit; font-size:12px; cursor:pointer; }
+.pe-mini:hover { border-color:var(--pink-soft); }
+.pe-stage-foot #pe-toggle { order:-1; }
+.pe-panel { background:var(--ink2); border-left:1px solid var(--line); padding:0 18px 18px; display:flex; flex-direction:column; min-width:0; min-height:0; overflow:hidden; }
+.pe-panel-tabs { display:flex; gap:16px; font-size:12px; color:#8a8f98; border-bottom:1px solid var(--line); margin:0 -18px 16px; padding:10px 18px; }
+.pe-panel-tabs .is-on { color:#fff; font-weight:600; box-shadow:0 11px 0 -9px var(--pink); }
+.pe-panel h3 { color:#fff; font-size:20px; margin:0 0 6px; text-transform:none; line-height:1.2; }
+.pe-panel > p { color:#a8adb6; font-size:14px; line-height:1.5; margin-bottom:12px; }
+.pe-steps { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:4px; overflow:auto; flex:1 1 auto; min-height:0; }
+.pe-steps button { width:100%; display:grid; grid-template-columns:26px 1fr auto; gap:10px; align-items:start; text-align:left; background:transparent; border:0; border-radius:10px; padding:9px 8px; color:#c9ccd2; font:inherit; font-size:13.5px; line-height:1.4; cursor:pointer; transition:background .2s; }
+.pe-steps button:hover { background:var(--ink3); }
+.pe-n { width:24px; height:24px; border-radius:50%; display:grid; place-items:center; font-size:12px; font-weight:700; background:var(--ink3); color:#aeb3bc; transition:background .25s, color .25s; }
+.pe-at { font-size:11px; color:#6f747d; padding-top:3px; font-variant-numeric:tabular-nums; }
+.pe-steps .is-done .pe-n { background:rgba(111,168,255,.2); color:var(--blue); }
+.pe-steps .is-now button { background:rgba(240,111,164,.12); color:#fff; }
+.pe-steps .is-now .pe-n { background:var(--pink); color:#1b0d14; }
+.pe-panel-foot { margin:14px 0 0; padding-top:12px; border-top:1px solid var(--line); font-size:12px; color:#8a8f98; }
+.pe-link { background:none; border:0; padding:0; color:var(--pink-soft); font:inherit; cursor:pointer; text-align:left; }
+.pe-link:hover { text-decoration:underline; }
+
+/* compare */
+.pe-compare { padding:90px 0; background:#f6f4f7; }
+.pe-compare-grid { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr); gap:48px; align-items:center; }
+.pe-compare-copy p { font-size:16px; color:#4a4e55; }
+.pe-ba-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.pe-ba-tab { border:1px solid #d8d4da; background:#fff; border-radius:999px; padding:8px 16px; font:inherit; font-size:14px; cursor:pointer; color:#2a2e35; }
+.pe-ba-tab.is-active { background:var(--ink); color:#fff; border-color:var(--ink); }
+.pe-ba { position:relative; border-radius:16px; overflow:hidden; aspect-ratio:1680/720; box-shadow:0 30px 70px rgba(22,24,28,.25); background:#000; user-select:none; }
+.pe-ba-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.pe-ba-top { position:absolute; inset:0; clip-path:inset(0 calc(100% - var(--pos)) 0 0); }
+.pe-ba-handle { position:absolute; top:0; bottom:0; left:var(--pos); width:2px; background:#fff; transform:translateX(-1px); pointer-events:none; }
+.pe-ba-handle span { position:absolute; top:50%; left:50%; width:44px; height:44px; border-radius:50%; transform:translate(-50%,-50%); background:var(--pink); box-shadow:0 6px 20px rgba(0,0,0,.4); }
+.pe-ba-handle span::before, .pe-ba-handle span::after { content:""; position:absolute; top:50%; border:6px solid transparent; transform:translateY(-50%); }
+.pe-ba-handle span::before { left:6px; border-right-color:#1b0d14; }
+.pe-ba-handle span::after { right:6px; border-left-color:#1b0d14; }
+.pe-ba-range { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; margin:0; }
+.pe-ba-label { position:absolute; top:14px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:rgba(0,0,0,.45); padding:4px 10px; border-radius:999px; pointer-events:none; }
+.pe-ba-l { left:14px; } .pe-ba-r { right:14px; }
+
+/* made with */
+.pe-made { padding:90px 0 70px; }
+.pe-made-grid { display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:220px; gap:16px; }
+.pe-card { position:relative; margin:0; border-radius:14px; overflow:hidden; background:#111; box-shadow:0 16px 40px rgba(22,24,28,.15); }
+.pe-card img, .pe-card video { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s; }
+.pe-card:hover img, .pe-card:hover video { transform:scale(1.04); }
+.pe-card figcaption { position:absolute; left:12px; bottom:12px; font-size:12px; color:#fff; background:rgba(22,24,28,.7); padding:5px 12px; border-radius:999px; }
+.pe-tall { grid-row:span 2; }
+.pe-wide { grid-column:span 2; }
+.pe-credit { text-align:center; color:var(--muted); font-size:13px; margin-top:18px; }
+
+/* features */
+.pe-features { padding:90px 0; background:var(--ink); color:#dfe1e6; }
+.pe-features .pe-section-head h2 { color:#fff; }
+.pe-feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.pe-feature { background:var(--ink2); border:1px solid var(--line); border-radius:16px; padding:26px; transition:transform .25s, border-color .25s; }
+.pe-feature:hover { transform:translateY(-4px); border-color:rgba(240,111,164,.5); }
+.pe-feature svg { color:var(--pink-soft); margin-bottom:14px; }
+.pe-feature h3 { color:#fff; font-size:20px; margin:0 0 10px; text-transform:none; }
+.pe-feature p { color:#a8adb6; font-size:14.5px; line-height:1.6; margin:0; }
+
+/* specs, faq, final */
+.pe-specs { padding:80px 0 40px; }
+.pe-specs-grid { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr); gap:48px; }
+.pe-update { color:#4a4e55; font-size:15px; }
+.pe-page .editor-specs { width:100%; }
+.pe-page .editor-specs th, .pe-page .editor-specs td { padding:14px 0; border-bottom:1px solid #e3e0e5; font-size:14.5px; vertical-align:top; }
+.pe-page .editor-specs th { width:34%; color:#2a2e35; }
+.pe-faq { padding:50px 0 60px; }
+.pe-faq details { max-width:820px; margin:0 auto; padding:20px 0; border-bottom:1px solid #e5e5e5; }
+.pe-faq summary { cursor:pointer; font-weight:600; font-size:17px; }
+.pe-faq details p { margin:14px 0 0; }
+.pe-final { padding:0 0 100px; }
+.pe-final-inner { text-align:center; border-radius:22px; padding:56px 24px; color:#fff; background:radial-gradient(60% 90% at 20% 0%, rgba(240,111,164,.35), transparent 70%), radial-gradient(50% 80% at 90% 100%, rgba(111,168,255,.3), transparent 70%), var(--ink); }
+.pe-final-inner img { border-radius:16px; margin-bottom:16px; }
+.pe-final-inner h2 { color:#fff; font-size:clamp(26px,3.4vw,40px); margin:0 0 24px; text-transform:none; }
+.pe-final-inner p { margin:22px 0 0; }
+.pe-final-inner p a { color:#c8cad0; }
+
+/* responsive */
+@media (max-width:1199px) { .pe-app-body { grid-template-columns:80px minmax(0,1fr) 290px; } .pe-app-menu { display:none; } }
+@media (max-width:991px) {
+  .pe-hero { padding:64px 0 80px; } .pe-hero-grid { grid-template-columns:1fr; gap:50px; }
+  .pe-hero-shot { max-width:640px; margin:0 auto; width:92%; }
+  .pe-app-body { grid-template-columns:1fr; height:auto; }
+  .pe-toolbar { flex-direction:row; overflow-x:auto; border-right:0; border-bottom:1px solid var(--line); padding:8px; }
+  .pe-tool { flex:none; min-width:74px; }
+  .pe-panel { border-left:0; border-top:1px solid var(--line); }
+  .pe-steps { max-height:none; }
+  .pe-stage video { flex:none; height:auto; aspect-ratio:1920/1030; }
+  .pe-compare-grid, .pe-specs-grid { grid-template-columns:1fr; gap:28px; }
+  .pe-feature-grid { grid-template-columns:repeat(2,1fr); }
+  .pe-made-grid { grid-template-columns:repeat(2,1fr); grid-auto-rows:200px; }
+  .pe-wide { grid-column:span 2; }
+}
+@media (max-width:575px) {
+  .pe-hero-actions .pe-btn { width:100%; justify-content:center; }
+  .pe-feature-grid { grid-template-columns:1fr; }
+  .pe-made-grid { grid-template-columns:1fr; grid-auto-rows:240px; } .pe-tall { grid-row:span 1; } .pe-wide { grid-column:span 1; }
+  .pe-stage-foot #pe-full { display:none; }
+  .pe-float-a { left:-4%; } .pe-float-b { right:-2%; }
+}
+@media (prefers-reduced-motion: reduce) { .pe-float { animation:none; } .pe-window-tilt { transform:none; } }
+
+</style>
+<link rel="canonical" href="https://www.oanarinaldi.com/ui-tool-guide.html">
+<style>.ui-shot{width:100%;border:1px solid #ffffff20;border-radius:12px;box-shadow:0 20px 75px #0005}.ui-studio{background:#f7f4f5;padding:85px 0}.ui-studio .ui-shot{margin-top:25px}.ui-notice{border-left:3px solid #c8a4ce;padding:15px 20px;background:#ffffff07;color:#bdafc3;font-size:14px;line-height:1.8}.ui-roadmap{padding:80px 0;background:#f7f4f5}.ui-roadmap-controls{display:grid;grid-template-columns:2fr 1.5fr 1fr;gap:12px;margin:25px 0}.ui-roadmap input,.ui-roadmap select{width:100%;padding:12px;border:1px solid #ddd5df;border-radius:7px;background:white;color:#403445;font-size:14px}.ui-register{max-height:510px;overflow:auto;border:1px solid #ddd5df;border-radius:8px;background:white}.ui-register-row{display:flex;gap:14px;padding:16px;border-bottom:1px solid #eee8ef;align-items:center}.ui-register-row>div{flex:1}.ui-register-row strong{display:block;font-size:14px;color:#433549}.ui-register-row small{display:block;font-size:11px;color:#8e8292;margin-top:5px}.ui-register-row code{font-size:10px;color:#8f7a99;flex-shrink:0}.ui-status{font-size:10px;background:#f2edf3;padding:5px 8px;border-radius:5px;color:#89778e}.ui-status.implemented{background:#e5f0e8;color:#52775d}.ui-status.partial{background:#f6eddc;color:#927546}.ui-guide{padding:75px 0;background:#f7f4f5}.ui-guide article{background:white;border:1px solid #e8e0e9;border-radius:12px;padding:30px;margin-bottom:20px}.ui-guide article h2{font-size:25px;text-transform:none}.ui-guide p,.ui-guide li{font-size:15px;color:#6b606f;line-height:1.9}.ui-guide kbd{background:#f1e9f4;color:#67506e;border-radius:4px;padding:2px 5px}.ui-guide img{width:100%;border-radius:9px;margin-top:16px}.ui-warning{font-size:13px;color:#a9a0b0;line-height:1.8;margin-top:16px}.ui-statline{font-size:15px;color:#8d759b;margin:20px 0}@media(max-width:767px){.ui-roadmap-controls{grid-template-columns:1fr}.ui-register-row{gap:8px;padding:12px}.ui-register-row strong{font-size:12px}.ui-register-row code{font-size:8px}}</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="musicvideos.html">Music</a>
+                                        <ul class="dropdown">
+                                            <li><a href="musicvideos.html">Music Videos</a></li>
+                                            <li><a target="_blank" href="https://rockfest.blog/">Rock Music Blog</a></li>
+                                            <li><a target="_blank" href="https://thepoeticpage.com/">Poetry Blog</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/5EHOfrYOGfUSAWzCk8MwGg">Art History 101 Podcast</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="jackets.html">Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="jackets.html">Jackets</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="photo-editor.html">Photo Editor for Mac</a></li>
+                                            <li><a href="https://aetherfold4d.com">Aetherfold 4D</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="architectureapps.html">Architecture Apps</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                            <li><a href="archi-tool.html">Archi Tool</a></li>
+                                            <li><a href="ui-tool.html">UI Tool for Mac</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art"><i class="fa fa-paint-brush"></i></a>
+                                    </div>
+
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+<main class="pe-page ui-guide"><div class="container"><div class="pe-section-head"><p>Oanarina UI Tool · Mac preview</p><h1>From blank canvas to first screen.</h1><p class="pe-section-sub">A practical guide to the tools that work in version 0.1.0.</p></div><article><h2>1. Begin with a file</h2><p>Open the Mac app and explore the editable sample. Click the home icon for recent files, a fresh design or an existing .oui project. The browser and native app keep their own local recovery stores.</p><img src="images/apps/ui-tool/home.png" alt="Oanarina UI Tool recent files and starter choices"></article><article><h2>2. Draw and select</h2><p>Use <kbd>F</kbd> for frames, <kbd>R</kbd> for rectangles, <kbd>O</kbd> for ellipses, <kbd>L</kbd> for lines, <kbd>Shift L</kbd> for arrows and <kbd>T</kbd> for text. The shape dropdown includes stars and polygons. <kbd>P</kbd> draws straight pen segments; Enter finishes. <kbd>Shift P</kbd> is freehand pencil.</p><p><kbd>V</kbd> selects and moves. Shift-click selects several layers. Drag a blank region for a marquee. Use the hierarchical layer tree to choose nested layers, hide or lock them. Hold Space and drag to pan; Command-scroll zooms around your pointer.</p></article><article><h2>3. Refine properties and type</h2><p>Select a layer and edit coordinates, dimensions, angle, radius, fill, stroke and typography in the inspector. Double-click text to edit it. In Typography, choose Browse Google &amp; Mac fonts to search the 1,959-family catalog. Preview a font and apply it. Twenty-four bundled families work offline; others download and cache. Installed commercial fonts are listed only in the native Mac app.</p><p>Rich text, italics, automatic paragraph wrapping and full variable-axis controls are still planned.</p></article><article><h2>4. Arrange a layout</h2><p>Command-G groups; Command-Shift-G ungroups. Command-D duplicates. Object and Arrange menus expose components, ordering, alignment and distribution. Containers support basic Row, Stack and fixed-column Grid layout, with gap and uniform padding. Responsive constraints, wrap, hug/fill sizing, variants and live component propagation are not complete.</p></article><article><h2>5. Preview and leave a note</h2><p>In Prototype, give a layer a destination frame. Present and click the layer to navigate. Use the previous/next buttons to browse frames. This is simple click-through navigation, without animation or conditional state. Press C and click the canvas for a local note; View → Comments lets you resolve or reopen it.</p></article><article><h2>6. Save and export</h2><p>Command-S saves an editable .oui; Command-Shift-S saves a separate copy. Browser saves download a file; the Mac app uses native file dialogs and atomic writes. Recovery and recent files are local and quota limited. File → Save a named version stores a local checkpoint. Command-Z and Command-Shift-Z undo and redo.</p><p>Select layers or a frame, then export SVG, PNG or JPEG at 1×–4×. With nothing selected, the current page is exported. SVG imports as one visual asset. Save .oui to preserve editable layer structure.</p></article><article><h2>7. Transfer to and from Figma</h2><p>Download <a href="downloads/ui-tool/figma-bridge.zip" download>Figma Bridge</a> and unzip it. In Figma desktop, choose Plugins → Development → Import plugin from manifest and choose manifest.json. Run Oanarina Bridge. Export selected layers, the current page or all pages as .oui, then open the file in Oanarina. To go back, save/export .oui and import through the plugin.</p><p>Frames, shapes, simple text, solid fills, basic strokes and raster images have transfer paths. Advanced effects, text ranges, variants, linkage, layout sizing and prototypes are reduced or omitted. Read the report and inspect the result. Automated API-mock tests pass; the real plugin round trip still needs validation. Binary .fig files are not supported.</p></article><article><h2>8. Find a command or check the plan</h2><p>Command-K searches available actions. Help → Keyboard shortcuts lists this build’s shortcuts. Help → Feature register provides all 1,860 requirements and their status. Planned and partial requirements are not promises of completed functionality.</p><p><a href="ui-tool.html">Return to UI Tool &amp; downloads →</a></p></article></div></main>    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
