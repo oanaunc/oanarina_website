@@ -1,11 +1,11 @@
 # Forma product page
 
-`forma.html` is the canonical page. `ui-tool.html` retains the full page for old links and fragment bookmarks, with the Forma canonical URL. The site’s shared header, breadcrumb, footer, navigation scripts and visual pattern are retained. The page borrows the existing Photo Editor / Archi Tool tutorial-player and scrolling-gallery approach.
+`forma.html` is the canonical page. `ui-tool.html` retains the full page for old links and fragment bookmarks, with the Forma canonical URL. The site’s shared header, breadcrumb, footer, navigation scripts and visual pattern are retained. The header uses the exact shared Photo Editor / Archi Tool breadcrumb, hero grid/window DOM, and experience.js scroll-timeline engine. Forma and legacy ui-tool entries in motion-manifest.js choose the existing recorded Forma film. The breadcrumb film is darkened locally for legible shared white type over its light canvas; the shared engine and reference pages are unchanged.
 
 ## What visitors can do
 
 - Watch real Design, Whiteboard and Slides captures from the tested 0.2.0-dev.5 browser editor, jump to chapter times, read the step text and download each MP4.
-- Pause both ambient videos with the header control. Reduced-motion preference leaves their posters in place until explicit playback. Ambient clips pause offscreen and when the page is hidden. Walkthroughs require explicit playback and have native controls. There is no audio track.
+- Scroll the shared pinned breadcrumb to scrub its Forma film, using the exact Photo Editor / Archi Tool motion engine and layout. Shared Motion on/off and Skip animation controls remain available; reduced motion removes the extra scroll chapter and leaves the static poster. The decorative hero video follows the same global motion preference and pauses offscreen or when hidden. Walkthroughs require explicit playback and have native controls. There is no audio track.
 - Load the real editor on demand, open it separately, or fullscreen its frame. On narrow displays the editor has a horizontally scrollable desktop workspace. The outer page remains responsive.
 - Download the notarized Forma 0.2.0-dev.6 Mac preview, verify its checksum, use the v0.1.0 archive, read the current source/register or download the independent local MCP package. Labels distinguish preview versions and historical recordings.
 - Find Forma under Algorithms on every shared-header page. Standalone policy/support pages and the WLE tool receive a small scoped discovery menu instead of replacing their custom layout. Vendored font specimen pages and the embedded editor bundle are not marketing pages and are excluded.
@@ -34,6 +34,7 @@ From this repository, with the sibling editor’s Playwright dependency availabl
 ```sh
 python3 scripts/serve-preview.py 5182
 node scripts/verify-forma.mjs
+node scripts/verify-forma-header.mjs
 ```
 
 Use a byte-range-aware server for the chapter-seeking check; Python’s standard `http.server` does not implement range requests and is insufficient for that check. `FORMA_TEST_URL` overrides the test origin. `FORMA_PLAYWRIGHT_PACKAGE` can point to another package.json with Playwright installed.
@@ -47,3 +48,5 @@ The public v0.1.0 DMG and its checksum are preserved. No newer installer should 
 The new bundle is `Forma.app`, replacing the former product name `Oanarina UI Tool.app`. Tell users to quit the old app, copy Forma to Applications, then optionally remove only the old application bundle. Keep .oui projects, exported backups and app data. The same bundle ID preserves compatible local data. The different app filename does not automatically replace the old bundle, and there is no silent updater. No installed app is removed by the agent. This guidance is published beside the dev6 download and at the start of the guide.
 
 Mac WebKit manual acceptance: after Play walkthrough, the visible in-app browser reported currentTime 2.9, paused false, readyState 4 and no media error. Header and inline ambient videos also decoded with readyState 4 and no errors, and paused offscreen. Tutorial metadata now loads on tab selection to avoid an empty-source media error before playback.
+
+The header-specific checks cover the shared DOM structure, full-viewport desktop/mobile pinning, forward/backward timeline seeks while paused, global Motion off/on, Skip animation, original hero icon/type/grid dimensions, reduced-motion static fallback and no horizontal overflow. Header screenshots use `/tmp/forma-shared-header-desktop.png`, `/tmp/forma-shared-hero-desktop.png`, `/tmp/forma-shared-header-mobile.png` and `/tmp/forma-shared-header-reduced-motion.png`.

@@ -200,7 +200,7 @@
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js?v=20260921-midjourney"></script>
+    <script defer src="js/motion-manifest.js?v=20261029-forma-scroll"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 <style>
 .editor-breadcrumb { position:relative; overflow:hidden; background-size:cover !important; background-position:center !important; min-height:clamp(440px,75vh,900px); display:flex; align-items:center; }
@@ -388,7 +388,7 @@
 <style>
 #development{scroll-margin-top:110px}.ui-development .pe-section-sub{color:#c3bac9}.ui-development a:not(.pe-btn){color:#e5b8ef;text-decoration:underline}.ui-development-status{color:#d3c9da;font-size:15px;line-height:1.8;margin-bottom:28px}.ui-development-status strong{color:#fff}
 </style>
-<link rel="stylesheet" href="css/forma.css">
+<link rel="stylesheet" href="css/forma.css?v=20261029-shared-header">
 </head>
 
 <body>
@@ -537,19 +537,18 @@
     <!-- ##### Header Area End ##### -->
 
 
-<section class="contact-area section-padding-100 bg-img has-bg-img editor-breadcrumb forma-breadcrumb" aria-label="Forma introduction">
-<video data-ambient data-src="videos/forma/header.mp4" muted loop playsinline preload="none" poster="images/apps/forma/header.jpg" aria-hidden="true"></video>
-<div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>A little space for big ideas</p><h2>FORMA</h2></div></div></div></div>
-<button class="forma-motion-toggle" id="forma-motion" type="button" aria-pressed="false">Play background videos</button></section>
+    <section class="contact-area section-padding-100 bg-img bg-overlay has-bg-img editor-breadcrumb" style="background-image:url(images/apps/forma/header.jpg)">
+        <div class="container"><div class="row"><div class="col-12"><div class="section-heading white"><p>Interface Design</p><h2>Forma</h2></div></div></div></div>
+    </section>
 <main class="pe-page forma-page" id="main">
-<section class="pe-hero" id="download"><div class="container"><div class="pe-hero-grid"><div class="pe-hero-copy">
-<img class="pe-hero-icon" src="images/apps/forma/icon.png" alt="" width="66" height="66"><p class="pe-eyebrow">Design · Whiteboard · Slides</p><h1>Forma</h1>
+<section class="pe-hero" id="download" aria-labelledby="forma-hero-title"><div class="pe-hero-glow" aria-hidden="true"></div><div class="container"><div class="pe-hero-grid"><div class="pe-hero-copy">
+<img class="pe-hero-icon" src="images/apps/forma/icon.png" alt="" width="84" height="84"><p class="pe-eyebrow">Free Mac preview · no account</p><h1 id="forma-hero-title">Forma</h1>
 <p class="pe-lede">A little space for big ideas. Shape an interface, follow a thought, tell a story. An independent design studio with your files close to home.</p>
-<div class="pe-hero-actions"><a class="pe-btn pe-btn-primary" href="#studio">Try the live editor</a><a class="pe-btn pe-btn-ghost" href="downloads/ui-tool/Forma-0.2.0-dev.6.dmg" download><span>Download for Mac<small>0.2.0-dev.6 preview · 32.5 MB · notarized</small></span></a></div>
-<ul class="pe-badges"><li>Local .oui files</li><li>24 offline font families</li><li>Mac first</li><li>Free &amp; open source</li></ul>
+<div class="pe-hero-actions"><a class="pe-btn pe-btn-primary" id="download-button" href="downloads/ui-tool/Forma-0.2.0-dev.6.dmg" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download for Mac<small>Free · 0.2.0-dev.6 · 32.5 MB · notarized by Apple</small></span></a><a class="pe-btn pe-btn-ghost" href="#studio">Try the live editor</a></div><p class="pe-trust" id="release-status">0.2.0-dev.6 preview · Apple silicon and Intel · 32.5 MB. Developer ID-signed and notarized by Apple. Intel runtime validation is pending.</p>
+<ul class="pe-chips" aria-label="Highlights"><li>Local .oui files</li><li>24 offline font families</li><li>Mac first</li><li>Free &amp; open source</li></ul>
 <p class="pe-hero-links"><a href="#tutorials">Watch the workflows</a> · <a href="ui-tool-guide.html">User guide</a> · <a href="ui-tool-privacy.html">Privacy</a> · <a href="https://github.com/oanaunc/oanarina_ui_tool">Source code</a></p>
 <p class="ui-warning">Forma is in active development, targeting Figma parity in stages. The Mac preview and browser demo are 0.2.0-dev.6, with substantial parity work still ahead. Windows comes later.</p></div>
-<div><div class="forma-window"><div class="forma-window-bar" aria-hidden="true"><i></i><i></i><i></i><span>Forma — a little space for ideas</span></div><video data-ambient data-src="videos/forma/design.mp4" muted loop playsinline preload="none" poster="images/apps/forma/workspace.png" aria-label="Recorded interface design workflow"></video></div><p class="forma-media-caption">Real editor footage · development 0.2.0-dev.5 · synthetic example artwork</p></div>
+<div class="pe-hero-shot"><div class="pe-window pe-window-tilt"><div class="pe-titlebar" aria-hidden="true"><i></i><i></i><i></i><span>Forma — a little space for ideas</span></div><video data-ambient data-src="videos/forma/design.mp4" muted loop playsinline preload="none" poster="images/apps/forma/workspace.png" aria-label="Recorded interface design workflow"></video></div><p class="forma-media-caption">Real editor footage · development 0.2.0-dev.5 · synthetic example artwork</p></div>
 </div></div></section>
 <nav class="forma-jump" aria-label="On this page"><a href="#studio">Live editor</a><a href="#tutorials">Watch &amp; learn</a><a href="#workspaces">Three workspaces</a><a href="#development">Development</a><a href="#roadmap">Feature register</a><a href="#editions">Mac download</a></nav>
 <section class="forma-section forma-live" id="studio"><div class="container"><div class="pe-section-head"><p>Open the canvas</p><h2>A real editor. Right here.</h2><p class="pe-section-sub">Try the editable example, draw a frame or start a whiteboard. No sign-in. This browser demo runs the tested development build; save a .oui file to keep a portable copy of your work.</p></div>
@@ -630,7 +629,7 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-<script src="js/forma.js"></script>
+<script src="js/forma.js?v=20261029-shared-header"></script>
 </body>
 
 </html>

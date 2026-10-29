@@ -1,5 +1,15 @@
-/* Higgsfield films generated from the original page header images. */
+/* Shared scroll-header films; Forma uses a real editor recording, other entries retain their existing artwork films. */
 window.OANA_MOTION = {
+  "forma": {
+    "src": "videos/forma/header.mp4",
+    "poster": "images/apps/forma/header.jpg",
+    "sameImage": true
+  },
+  "ui-tool": {
+    "src": "videos/forma/header.mp4",
+    "poster": "images/apps/forma/header.jpg",
+    "sameImage": true
+  },
   "archi-tool": {
     "src": "media/motion/archi-tool-cedar.mp4",
     "poster": "images/apps/archi-tool/breadcrumb.png?v=20260925b",
