@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0-dev.6",
+  "source": "https://github.com/oanaunc/oanarina_ui_tool",
+  "purpose": "Static browser demo snapshot. Only local storage/cache identifiers are namespaced to isolate website demo data. No user projects included.",
+  "sourceAssetHashes": {
+    "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
+    "assets/index-BsvFkDR0.css": "d19c2fd7df3124d066f25583e020d2d5c6963c177367d30000792c279dfeca56",
+    "assets/index-C_O7ytJD.js": "76bef9db41e0c79682c1d21457caceff51cf7838d022bcb47fcbbc27a1efac13",
+    "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
+    "assets/slides-export-CJ8rJTty.js": "b08b477b5926b01adc7850c3ff617e696ebe958dece04a152690d248df8f0807",
+    "assets/svg-import-JuDeHXKa.js": "4791646656229630d2cd7fd68c1b9250682a10facec3d6fd996b2d91d2c92955"
+  },
+  "storageKeys": [
+    "oui-action-history",
+    "oui-active",
+    "oui-doc-",
+    "oui-file-browser",
+    "oui-font-favorites",
+    "oui-library-revision",
+    "oui-preferences",
+    "oui-theme",
+    "oui-versions-"
+  ],
+  "databaseNames": [
+    "forma-website-demo-projects-v1",
+    "forma-website-demo-fonts-v1"
+  ],
+  "demoAssetHashes": {
+    "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
+    "assets/index-BsvFkDR0.css": "d19c2fd7df3124d066f25583e020d2d5c6963c177367d30000792c279dfeca56",
+    "assets/index-C_O7ytJD.js": "80bde911199580188eabdbd8ae06cd1ec05cac478fd361f87c084b1534327803",
+    "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
+    "assets/slides-export-CJ8rJTty.js": "b08b477b5926b01adc7850c3ff617e696ebe958dece04a152690d248df8f0807",
+    "assets/svg-import-JuDeHXKa.js": "4791646656229630d2cd7fd68c1b9250682a10facec3d6fd996b2d91d2c92955"
+  },
+  "sourceGitHash": "0cda725b6760dc6376cd09bac9f00f0d8fd86e34",
+  "sourceDirtySnapshot": false,
+  "provenanceNote": "Release commit is clean and its final dist asset hashes match this demo snapshot; storage identifiers alone are namespaced as documented."
+}
