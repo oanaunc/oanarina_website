@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-30",
+  "version": "0.2.0-dev.12",
+  "product": "Forma",
+  "nativeBundleVersion": "0.2.0",
+  "nativeBuild": 13,
+  "rendererSourceGitHash": "1b64b0a2db18266d865c00fbef04ee11ac95f3b4",
+  "releaseSourceGitHash": "a5146fbe622f817db1fa18a6fc86f9e24cae0e4b",
+  "download": {
+    "file": "Forma-0.2.0-dev.12.dmg",
+    "bytes": 32440052,
+    "sha256": "04d603bf4ee76d44a978388eb2e9b078719ff4bedb631c275c2c916143c6a86a"
+  },
+  "acceptance": {
+    "appNotarization": "Accepted",
+    "dmgNotarization": "Accepted",
+    "appStapled": true,
+    "dmgStapled": true,
+    "appGatekeeper": "accepted; Notarized Developer ID",
+    "dmgGatekeeper": "accepted; Notarized Developer ID",
+    "physicalIntelRuntimeValidated": false,
+    "readOnlyDmgBundleMatchesSignedArchiveFiles": 312
+  },
+  "validation": {
+    "coreTests": 707,
+    "coreFiles": 70,
+    "productionBrowserChecks": 293,
+    "developmentModuleChecks": 2,
+    "mcpTests": 40,
+    "nativeCameraMenuChecks": 7,
+    "nativeFindChecks": 5,
+    "nativeLifecycleChecks": 37,
+    "nativePrivateClipboardChecks": 29,
+    "nativeSyntheticFigChecks": 13,
+    "nativeStderrEmpty": true
+  },
+  "featureRegister": {
+    "requirements": 2022,
+    "categories": 60,
+    "implemented": 1075,
+    "partial": 173,
+    "planned": 774
+  },
+  "documentationSourceGitHash": "7887d8fc7ee36731fea500f90be4a25a4f050a6d"
+}

@@ -1,8 +1,8 @@
 """Refresh the public static editor snapshot; never copies project/recovery directories."""
 from pathlib import Path
-import hashlib,json,re,shutil,subprocess,sys
+import hashlib,json,os,re,shutil,subprocess,sys
 site=Path(__file__).resolve().parents[1]
-source=site.parent/'oanarina_ui_tool'
+source=Path(os.environ.get('FORMA_EDITOR_SOURCE',site.parent/'oanarina_ui_tool')).resolve()
 public_build=source/'dist'
 version=sys.argv[1] if len(sys.argv)>1 else json.loads((source/'package.json').read_text())['version']
 source_hash=subprocess.check_output(['git','-C',str(source),'rev-parse','HEAD'],text=True).strip()

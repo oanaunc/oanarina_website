@@ -1,17 +1,17 @@
 {
-  "version": "0.2.0-dev.11",
+  "version": "0.2.0-dev.12",
   "source": "Forma application release build",
-  "sourceGitHash": "12834356d8111a86c9ccac9b75287ad0d99fbbbc",
+  "sourceGitHash": "a5146fbe622f817db1fa18a6fc86f9e24cae0e4b",
   "sourceDirtySnapshot": false,
   "purpose": "Static browser demo snapshot. Only local storage/cache identifiers are namespaced to isolate website demo data. No user projects included.",
   "sourceAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
     "assets/fig-container.worker-CK5F3IVr.js": "292f8b549303e3fa45f7723ea6565dfc366821b0d8fd5a12e300f11aa3221a4b",
-    "assets/index-Bt9XBM_k.js": "a0b620aa1316a873ba5258a61f15775ace6880625465ecfb9dfc4b02fdedb148",
-    "assets/index-By9Mg5tH.css": "ca4e75602f956c7cb248081437e16f0971fb7e5f3cf988c79fb2a44dba0980ba",
+    "assets/index-CI1f9drT.js": "499df0066eadac2a96559eb625cc73586ac54332d36e7db815ac23365486dcde",
+    "assets/index-DBNATxXE.css": "a2a6f587b3cb51b2398c77b89cd870ba4e1b8ef0b304132650263522df178e0c",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-DwKvOoeD.js": "9218cd2d20d54e3a0490a87908e42139904e8ed55a0f10fad88814b003c6a000",
-    "assets/svg-import-D2tarrOv.js": "5fbef9d1cf59390823ad0f05a3d7deabaf098aba9b67a1b2420ef8b6a82f2879"
+    "assets/slides-export-B8OEmwkg.js": "2cf5d957dfa608a92f5430e4a835bfdc6f001083993b2fa223e445f4a3aa5d2b",
+    "assets/svg-import-Dqd-p62e.js": "e3280db0e8fc408a3a3aebe3b4f60539527baf939e50fc584bd5d5919944f55d"
   },
   "storageKeys": [
     "oui-action-history",
@@ -34,10 +34,10 @@
   "demoAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
     "assets/fig-container.worker-CK5F3IVr.js": "292f8b549303e3fa45f7723ea6565dfc366821b0d8fd5a12e300f11aa3221a4b",
-    "assets/index-Bt9XBM_k.js": "1d8e43db9cd593c8ca7f8049b272b4b8dc2b57de85e77e6a93cd37020d6655b4",
-    "assets/index-By9Mg5tH.css": "ca4e75602f956c7cb248081437e16f0971fb7e5f3cf988c79fb2a44dba0980ba",
+    "assets/index-CI1f9drT.js": "4f8aab86164a6803af4f6fc4aa45478e69e9c41bb5a1cc644e1986a19f5d31f4",
+    "assets/index-DBNATxXE.css": "a2a6f587b3cb51b2398c77b89cd870ba4e1b8ef0b304132650263522df178e0c",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-DwKvOoeD.js": "9218cd2d20d54e3a0490a87908e42139904e8ed55a0f10fad88814b003c6a000",
-    "assets/svg-import-D2tarrOv.js": "5fbef9d1cf59390823ad0f05a3d7deabaf098aba9b67a1b2420ef8b6a82f2879"
+    "assets/slides-export-B8OEmwkg.js": "2cf5d957dfa608a92f5430e4a835bfdc6f001083993b2fa223e445f4a3aa5d2b",
+    "assets/svg-import-Dqd-p62e.js": "e3280db0e8fc408a3a3aebe3b4f60539527baf939e50fc584bd5d5919944f55d"
   }
 }
