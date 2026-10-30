@@ -14,3 +14,9 @@ The source image was animated through Higgsfield Seedance 2.5, requesting ten se
 The original output was 1920 × 1080, 24 fps, 10.041667 seconds, HEVC Main 10 with BT.709 colour and no audio. Its SHA-256 is recorded in the manifest. The public copy is H.264, 8-bit yuv420p, with faststart and a twelve-frame keyframe interval (half a second) to support the shared website scroll timeline. The original download is retained in the release workspace; the optimized public copy is linked above.
 
 The shared Photo Editor / Archi Tool header structure and scroll engine are preserved. Motion on/off, Skip animation and the reduced-motion static poster remain available. The generated backdrop uses a distinct filename, so cached pages using the old app-recording backdrop continue to work.
+
+## Sculptural transformation revision
+
+The current header uses [the transformation film](../../../videos/forma/brand-transformation.mp4), generated from the same source artwork with [this prompt](transformation-prompt.txt). It keeps the starting composition, then unfurls the ribbons across the scene and rebuilds them into a large layered iris/portal. The opening poster remains unchanged. The earlier ten-second film is retained at its original URL for cached pages.
+
+The new Seedance 2.5 generation requested 14 seconds at 1080p with no audio; its preflight estimate was 224 credits, not a billing receipt. The completed original is 1920×1080, 24fps, 14.041667 seconds, HEVC10-bit BT.709. The public H.264 8-bit copy retains half-second keyframes, faststart and no audio for forward/reverse scroll seeking. Exact source/output hashes and encoding are in the media manifest. This is artistic brand imagery, separate from actual app footage.

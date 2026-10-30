@@ -102,6 +102,52 @@
         "bytes": 211438,
         "sha256": "11057a299f580b8e623fbe0a3e8d0e79bbbf6fa5adec64b74d606a9aef100e89"
       }
+    },
+    {
+      "file": "brand-transformation.mp4",
+      "kind": "generated-brand-film",
+      "bytes": 8788956,
+      "durationSeconds": 14.041667,
+      "sha256": "c187fe19b8c8233c34cfa60e23144a7f62b199f462384440b9cc60c3518bb8e2",
+      "generation": {
+        "sourceImage": "../../docs/media/forma-brand-film/source-art.png",
+        "sourceImageSha256": "1ac0a634c7ee55b41cc1438ab5fbb0683c64ed6eeed2bd706aafd2653f0fad02",
+        "imageTool": "Built-in image generation",
+        "videoService": "Higgsfield",
+        "videoModel": "Seedance 2.5",
+        "requestedDurationSeconds": 14,
+        "requestedResolution": "1080p",
+        "estimatedCredits": 224,
+        "estimatedCreditsNote": "Job estimate, not a billing receipt.",
+        "imagePrompt": "../../docs/media/forma-brand-film/image-prompt.txt",
+        "videoPrompt": "../../docs/media/forma-brand-film/transformation-prompt.txt"
+      },
+      "originalVideo": {
+        "bytes": 6634874,
+        "sha256": "dfffd0d784f3972dc294aa7798d1f2f9effd499d5d5ec7ab6e44c60eafcfac75",
+        "codec": "HEVC Main 10",
+        "pixelFormat": "yuv420p10le",
+        "width": 1920,
+        "height": 1080,
+        "framesPerSecond": 24
+      },
+      "webEncoding": {
+        "codec": "H.264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "BT.709",
+        "width": 1920,
+        "height": 1080,
+        "framesPerSecond": 24,
+        "keyframeIntervalFrames": 12,
+        "faststart": true,
+        "audio": false
+      },
+      "poster": {
+        "file": "../../images/apps/forma/brand-film-poster.jpg",
+        "bytes": 211438,
+        "sha256": "11057a299f580b8e623fbe0a3e8d0e79bbbf6fa5adec64b74d606a9aef100e89"
+      },
+      "transformation": "Opening side sculptures unfurl, cross the scene and reorganize into a large layered iris/portal. Starting poster preserved."
     }
   ]
 }
