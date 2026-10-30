@@ -124,6 +124,8 @@
       (name !== 'index' || video.closest('.owl-item')?.classList.contains('active'))) : null;
     videos.forEach(item => { if (item !== active) releaseHeader(item); });
     if (active && !active.video.getAttribute('src')) {
+      // A paused, scroll-scrubbed Forma film needs its later frames buffered before random seeks.
+      if (name === 'forma' || name === 'ui-tool') active.video.preload = 'auto';
       active.video.src = active.video.dataset.src;
       active.video.load();
     }

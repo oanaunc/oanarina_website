@@ -20,3 +20,9 @@ The shared Photo Editor / Archi Tool header structure and scroll engine are pres
 The current header uses [the transformation film](../../../videos/forma/brand-transformation.mp4), generated from the same source artwork with [this prompt](transformation-prompt.txt). It keeps the starting composition, then unfurls the ribbons across the scene and rebuilds them into a large layered iris/portal. The opening poster remains unchanged. The earlier ten-second film is retained at its original URL for cached pages.
 
 The new Seedance 2.5 generation requested 14 seconds at 1080p with no audio; its preflight estimate was 224 credits, not a billing receipt. The completed original is 1920×1080, 24fps, 14.041667 seconds, HEVC10-bit BT.709. The public H.264 8-bit copy retains half-second keyframes, faststart and no audio for forward/reverse scroll seeking. Exact source/output hashes and encoding are in the media manifest. This is artistic brand imagery, separate from actual app footage.
+
+## Cold seek validation — October 30, 2026
+
+The active Forma and legacy `ui-tool.html` header films use `preload="auto"` after the existing visibility, proximity, reduced-motion and data-saving checks permit loading. Inactive films still have no source; leaving the area, hiding the document or disabling motion releases the decoder.
+
+A live Chromium diagnostic reproduced stalled paused seeks with `preload="none"`, despite correct, fast HTTP byte ranges and the expected film checksum. A controlled activation-only change buffered the 8.79 MB film and completed the same six alternating seeks (60%, 20%, 98%, 5%, 85%, 48%). The unchanged nine header checks, legacy cold seeks, visibility/proximity release, reduced motion and forced data-saving checks passed with that change. Local website checks also passed (12 general and nine header checks). This changes loading of the existing film; no new generation or credits were used.
