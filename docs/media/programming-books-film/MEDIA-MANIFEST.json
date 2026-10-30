@@ -1,0 +1,55 @@
+{
+  "generated": "2026-10-30",
+  "provider": "Higgsfield",
+  "model": "Seedance 2.5",
+  "estimate_credits": 192,
+  "estimate_is_billing_receipt": false,
+  "reference_images": [
+    {
+      "role": "image",
+      "value": "https://www.oanarinaldi.com/images/artbooks/41.jpg"
+    },
+    {
+      "role": "image",
+      "value": "https://www.oanarinaldi.com/images/artbooks/40.jpg"
+    },
+    {
+      "role": "image",
+      "value": "https://www.oanarinaldi.com/images/artbooks/26.jpg"
+    },
+    {
+      "role": "image",
+      "value": "https://www.oanarinaldi.com/images/artbooks/36.jpg"
+    }
+  ],
+  "encoding": {
+    "codec": "H.264",
+    "pixel_format": "yuv420p",
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "keyframe_interval_frames": 12,
+    "audio": false,
+    "faststart": true,
+    "filter": "crop=1776:998:72:82,scale=1920:1080:flags=lanczos,format=yuv420p"
+  },
+  "files": {
+    "original": {
+      "name": "algorithms-books-header-original.mp4",
+      "bytes": 24606503,
+      "sha256": "edca6eb8ec5cfa6e0628c4b28e9da9d436b6b889b665391e16fb34be7db60e8a"
+    },
+    "web": {
+      "name": "algorithms-books-worlds.mp4",
+      "bytes": 5881342,
+      "sha256": "0ed4047324c5d03c113677bd6dccda41ccbd21dfa2c313887f6e79a8d4c09d9b"
+    },
+    "poster": {
+      "name": "algorithms-books-worlds.jpg",
+      "bytes": 152929,
+      "sha256": "6494fa7a57682556dd6a0661194306d19f0b975faf0e734c35db0b2032c8382b"
+    }
+  }
+}

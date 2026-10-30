@@ -62,11 +62,18 @@
             opacity: 1;
             visibility: visible;
         }
+        #programming-books-hero::after {
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(5, 10, 18, .3), rgba(5, 10, 18, .48) 34%, rgba(5, 10, 18, .08) 65%, rgba(5, 10, 18, .15));
+        }
+        #programming-books-hero .section-heading {
+            text-shadow: 0 2px 16px rgba(0, 0, 0, .85);
+        }
     </style>
 
     <!-- Additive motion: original design and content retained. -->
     <link rel="stylesheet" href="css/experience.css">
-    <script defer src="js/motion-manifest.js"></script>
+    <script defer src="js/motion-manifest.js?v=20261030-books"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
 </head>
 
@@ -216,7 +223,7 @@
     <!-- ##### Header Area End ##### -->
     
         <!-- ##### Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/breadcumb16.jpg);">
+    <section id="programming-books-hero" class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/algorithms-books-worlds.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">

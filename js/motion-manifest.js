@@ -62,8 +62,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "algorithmsbook": {
-    "src": "media/motion/algorithmsbook.mp4",
-    "poster": "img/bg-img/breadcumb16.jpg",
+    "src": "media/motion/algorithms-books-worlds.mp4",
+    "poster": "img/bg-img/algorithms-books-worlds.jpg",
     "sameImage": true
   },
   "architecture": {
