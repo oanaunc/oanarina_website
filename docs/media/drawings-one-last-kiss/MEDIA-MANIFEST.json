@@ -46,5 +46,6 @@
     "bytes": 3324555,
     "sha256": "369011435ecc0433d8ca085d261e689736dbd780975e8a8c17eae710fc789740",
     "location": "Local workspace outside website"
-  }
+  },
+  "deployment": "retired-outside-website"
 }

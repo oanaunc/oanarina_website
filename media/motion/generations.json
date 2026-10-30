@@ -389,5 +389,97 @@
       "faststart": true,
       "audio": false
     }
+  },
+  {
+    "index": 43,
+    "job_id": "a0c77042-ae08-4ccb-a756-3f21e8e591ee",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_162350_a0c77042-ae08-4ccb-a756-3f21e8e591ee.mp4",
+    "name": "drawings-born-to-break-horizon",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 9.041667,
+      "crf": 27,
+      "preset": "slow",
+      "videoFilter": "hue=s=0",
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false
+    }
+  },
+  {
+    "index": 44,
+    "job_id": "02aa1eba-386a-484d-88d3-ad4210e0d1a5",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124404_02aa1eba-386a-484d-88d3-ad4210e0d1a5.mp4",
+    "name": "jackets-red-editorial",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 5.041667,
+      "crf": 25,
+      "preset": "slow",
+      "videoFilter": "scale=1280:720",
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false
+    }
+  },
+  {
+    "index": 45,
+    "job_id": "64ab3b6e-e5e7-45f0-aeb2-ca878cb6e77d",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124416_64ab3b6e-e5e7-45f0-aeb2-ca878cb6e77d.mp4",
+    "name": "shoes-painted-heels",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 5.041667,
+      "crf": 25,
+      "preset": "slow",
+      "videoFilter": "scale=1280:720",
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false
+    }
+  },
+  {
+    "index": 46,
+    "job_id": "10f9ee81-3ec4-4b4a-a8be-78b2e73f498e",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124353_10f9ee81-3ec4-4b4a-a8be-78b2e73f498e.mp4",
+    "name": "photography-steel-glide",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 5.041667,
+      "crf": 25,
+      "preset": "slow",
+      "videoFilter": "scale=1280:720",
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false
+    }
   }
 ]

@@ -16,8 +16,10 @@ def prepare(job):
  with tempfile.TemporaryDirectory(prefix='oana-motion-') as folder:
   raw=Path(folder)/'source.mp4'
   urllib.request.urlretrieve(job['result_url'],raw)
-  filters=['-vf','crop='+job['crop']] if job.get('crop') else []
   encoding=job.get('encoding',{})
+  chain=['crop='+job['crop']] if job.get('crop') else []
+  if encoding.get('videoFilter'):chain.append(encoding['videoFilter'])
+  filters=['-vf',','.join(chain)] if chain else []
   gop=str(encoding.get('keyframeIntervalFrames',6))
   subprocess.run([FFMPEG,'-loglevel','error','-y','-i',str(raw),*filters,'-an','-c:v','libx264','-threads','2','-preset',encoding.get('preset','fast'),'-crf',str(encoding.get('crf',22)),'-g',gop,'-keyint_min',gop,'-sc_threshold','0','-pix_fmt','yuv420p','-movflags','+faststart',str(target)],check=True)
   print(job['name'],target.stat().st_size,flush=True)

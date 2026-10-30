@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-30",
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "10f9ee81-3ec4-4b4a-a8be-78b2e73f498e",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124353_10f9ee81-3ec4-4b4a-a8be-78b2e73f498e.mp4",
+    "newGenerationRequested": false,
+    "selectedAssetUrl": "https://higgsfield.ai/asset/all/10f9ee81-3ec4-4b4a-a8be-78b2e73f498e"
+  },
+  "video": {
+    "file": "media/motion/photography-steel-glide.mp4",
+    "bytes": 1333596,
+    "sha256": "1301c4d89e49131847114fdfe819bcc3630df9324ca17b2f3730a7ca1a79a082"
+  },
+  "poster": {
+    "file": "img/bg-img/photography-steel-glide.jpg",
+    "bytes": 120719,
+    "sha256": "bacd3222cc606e4ae6962ba3d4c4cbe06d77b334f0375cf9aeeb95d36ce49c4c"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 5.041667,
+    "crf": 25,
+    "preset": "slow",
+    "videoFilter": "scale=1280:720",
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  },
+  "sourceVideo": {
+    "bytes": 5997781,
+    "sha256": "563f190bb9f990f2c9f6a19676cca064ec49f44f0150e3dbbe3d136b66ff1058",
+    "location": "Local workspace outside website"
+  }
+}

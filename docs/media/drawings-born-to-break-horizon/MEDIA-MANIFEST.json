@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-30",
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "a0c77042-ae08-4ccb-a756-3f21e8e591ee",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_162350_a0c77042-ae08-4ccb-a756-3f21e8e591ee.mp4",
+    "newGenerationRequested": true,
+    "estimatedCredits": 63,
+    "estimateNote": "Preflight estimate, not a billing receipt."
+  },
+  "video": {
+    "file": "media/motion/drawings-born-to-break-horizon.mp4",
+    "bytes": 2638037,
+    "sha256": "ea133fba3a4ed710b0523258398a75802a5685c2aef2b72a392d2c71adb44793"
+  },
+  "poster": {
+    "file": "img/bg-img/drawings-born-to-break-horizon.jpg",
+    "bytes": 139802,
+    "sha256": "0d1ee610dc85d2137d05f6f45e099b0dc00537a3f4651eea70763d28a8cb3e97"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 9.041667,
+    "crf": 27,
+    "preset": "slow",
+    "videoFilter": "hue=s=0",
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  },
+  "sourceVideo": {
+    "bytes": 6058304,
+    "sha256": "10dfba26ea45f449e31bde21c23c113de2a98319143798f68131f52df4f21de6",
+    "location": "Local workspace outside website"
+  },
+  "artwork": {
+    "filename": "Born to Break the Horizon, Ink on paper, A4, 2026.jpg",
+    "title": "Born to Break the Horizon",
+    "medium": "Ink on paper",
+    "dimensions": "A4",
+    "year": 2026,
+    "bytes": 9623540,
+    "sha256": "23ef4b7fb1a4de3dbe1fc59ab298ca454e8b7a79037ed8a3ddca32fd9903bc35"
+  }
+}

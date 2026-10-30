@@ -138,6 +138,30 @@
       "bytes": 4719073,
       "sha256": "c7bf78cf940c4f5038bbf434aa24406c628867a217c3e4270928fd895c165b94",
       "reason": "Replaced by the Bells From The Deep fantasy animation on Art Bio."
+    },
+    {
+      "path": "media/motion/drawings-one-last-kiss.mp4",
+      "bytes": 2115762,
+      "sha256": "918822e0e0ba58a7765a0405fb6fc045cfa9018e23638616c558b4529109d781",
+      "reason": "Replaced on drawings by drawings-born-to-break-horizon.mp4 at the user's request."
+    },
+    {
+      "path": "media/motion/jackets-header.mp4",
+      "bytes": 3202458,
+      "sha256": "5caa2537ca5df5ca0fefb634fbbd0f6b5e58df947b7cb4ebc2b8d1fc39447267",
+      "reason": "Replaced on jackets by jackets-red-editorial.mp4 at the user's request."
+    },
+    {
+      "path": "media/motion/shoes-header.mp4",
+      "bytes": 2718346,
+      "sha256": "aa757a8c9a133233ee76fa895e6c82ffeb7e54543fd8586c30fda7ea15c3c144",
+      "reason": "Replaced on shoes by shoes-painted-heels.mp4 at the user's request."
+    },
+    {
+      "path": "media/motion/photography-header.mp4",
+      "bytes": 3203873,
+      "sha256": "32e830bd214634bb66e671658e9aec8c8227ac65ad26025895635704c8bf53ad",
+      "reason": "Replaced by the exact Photography film selected by the user."
     }
   ]
 }

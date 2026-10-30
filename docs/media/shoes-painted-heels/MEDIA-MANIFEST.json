@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-30",
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "64ab3b6e-e5e7-45f0-aeb2-ca878cb6e77d",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124416_64ab3b6e-e5e7-45f0-aeb2-ca878cb6e77d.mp4",
+    "newGenerationRequested": false,
+    "selectedAssetUrl": "https://higgsfield.ai/asset/all/64ab3b6e-e5e7-45f0-aeb2-ca878cb6e77d"
+  },
+  "video": {
+    "file": "media/motion/shoes-painted-heels.mp4",
+    "bytes": 979353,
+    "sha256": "04174d28190b3a5692ca9049c7e1e7435f51b7f91b1a0009005c4c17675c590c"
+  },
+  "poster": {
+    "file": "img/bg-img/shoes-painted-heels.jpg",
+    "bytes": 75939,
+    "sha256": "a7307950fe64de92e5e4c06692011d2e2327ca6ec9c8bc1e957623e3d000570c"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 5.041667,
+    "crf": 25,
+    "preset": "slow",
+    "videoFilter": "scale=1280:720",
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  },
+  "sourceVideo": {
+    "bytes": 2504092,
+    "sha256": "7d0f96ebd40ce18947526b6d1985e93726aec06f73ae0f3687faf58b3997bd65",
+    "location": "Local workspace outside website"
+  }
+}

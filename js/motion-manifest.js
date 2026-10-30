@@ -32,8 +32,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "drawings": {
-    "src": "media/motion/drawings-one-last-kiss.mp4",
-    "poster": "img/bg-img/drawings-one-last-kiss.jpg",
+    "src": "media/motion/drawings-born-to-break-horizon.mp4",
+    "poster": "img/bg-img/drawings-born-to-break-horizon.jpg",
     "sameImage": true
   },
   "aiart": {
@@ -42,8 +42,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "photography": {
-    "src": "media/motion/photography-header.mp4",
-    "poster": "img/bg-img/breadcumb14.jpg",
+    "src": "media/motion/photography-steel-glide.mp4",
+    "poster": "img/bg-img/photography-steel-glide.jpg",
     "sameImage": true
   },
   "artvideos": {
@@ -92,8 +92,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "jackets": {
-    "src": "media/motion/jackets-header.mp4",
-    "poster": "img/bg-img/breadcumb22.jpg",
+    "src": "media/motion/jackets-red-editorial.mp4",
+    "poster": "img/bg-img/jackets-red-editorial.jpg",
     "sameImage": true
   },
   "aiartvideos": {
@@ -117,8 +117,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "shoes": {
-    "src": "media/motion/shoes-header.mp4",
-    "poster": "img/bg-img/breadcumb18.jpg",
+    "src": "media/motion/shoes-painted-heels.mp4",
+    "poster": "img/bg-img/shoes-painted-heels.jpg",
     "sameImage": true
   },
   "musicvideos": {

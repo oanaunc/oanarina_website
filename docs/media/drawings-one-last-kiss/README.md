@@ -1,3 +1,5 @@
+> Retired on October 30, 2026 at the user's request. Replaced by the Born to Break the Horizon car animation. The old film and poster were archived outside the website and removed from hosting. The following notes are historical.
+
 # One Last Kiss drawing header
 
 The Drawings header starts with Oana Rinaldi's supplied 2025 ink drawing, then gently unwinds its dense shading and hair into spare outlines of the two kissing profiles. The composition remains monochrome. Higgsfield Seedance 2.5 generated the ten-second animation using the original drawing as the starting image. The 70-credit preflight estimate is not a billing receipt.

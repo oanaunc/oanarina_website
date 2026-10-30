@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-30",
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "02aa1eba-386a-484d-88d3-ad4210e0d1a5",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_124404_02aa1eba-386a-484d-88d3-ad4210e0d1a5.mp4",
+    "newGenerationRequested": false,
+    "selectedAssetUrl": "https://higgsfield.ai/asset/all/02aa1eba-386a-484d-88d3-ad4210e0d1a5"
+  },
+  "video": {
+    "file": "media/motion/jackets-red-editorial.mp4",
+    "bytes": 953367,
+    "sha256": "a3b36c3ad61442c5c70803ec0f4f3072a2aed0fe0d900776207fa4e282cc500b"
+  },
+  "poster": {
+    "file": "img/bg-img/jackets-red-editorial.jpg",
+    "bytes": 61638,
+    "sha256": "aeff6c04cf6987f4643e364bfc6ce97530eb3a54ed731fa5545c2beb321ffe85"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 5.041667,
+    "crf": 25,
+    "preset": "slow",
+    "videoFilter": "scale=1280:720",
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  },
+  "sourceVideo": {
+    "bytes": 3362163,
+    "sha256": "6181164e05e97a0cd25cd2a68c0778a2d28f512d1b461e4c6000cb0c7a868c59",
+    "location": "Local workspace outside website"
+  }
+}

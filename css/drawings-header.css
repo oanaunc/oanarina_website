@@ -1,13 +1,13 @@
-/* Leave the kiss unobstructed; frame the page links beneath the artwork. */
+/* Keep the racing car clear; place the page links in the paper above it. */
 #drawings-hero {
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 140px 0 105px !important;
   background-position: center;
 }
 #drawings-hero.bg-overlay::after {
-  background: linear-gradient(180deg, #0009 0%, #0001 28%, #0000 50%, #0002 65%, #000b 100%);
+  background: linear-gradient(180deg, #0009 0, #0003 90px, #0000 160px);
 }
 #drawings-hero .section-heading { margin: 0; text-align: left; }
 #drawings-hero .section-heading pre { display: none; }
@@ -15,14 +15,23 @@
   font-size: clamp(28px, 4vw, 48px);
   letter-spacing: .14em;
   margin-bottom: 0;
-  text-shadow: 0 2px 18px #0009;
+  color: #151515;
+  text-shadow: 0 1px 14px #fffe;
 }
 #drawings-hero .art-social-wrap { justify-content: flex-start; gap: 28px; margin: 20px 0 0; }
 #drawings-hero .art-social-item a { width: 46px; height: 46px; }
 #drawings-hero .art-social-item a svg { width: 25px; height: 25px; }
 #drawings-hero .art-social-item a i { font-size: 23px; }
-#drawings-hero .art-social-label { font-size: 10px; letter-spacing: .08em; }
+#drawings-hero .art-social-label { font-size: 10px; letter-spacing: .08em; color: #151515; text-shadow: 0 1px 10px #fff; }
 @media (max-width: 600px) {
-  #drawings-hero { min-height: 640px; padding-bottom: 110px !important; }
+  #drawings-hero {
+    min-height: 640px;
+    padding-bottom: 110px !important;
+    background-color: #fff;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center 65% !important;
+  }
+  #drawings-hero .motion-video { object-fit: contain; object-position: center 65%; }
   #drawings-hero .art-social-wrap { gap: 22px; }
 }
