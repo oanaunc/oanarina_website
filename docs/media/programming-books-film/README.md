@@ -1,3 +1,18 @@
+# Approved gothic-library header
+
+The current Programming Books header animates the user's approved option B: a quiet gothic library containing all four featured computer-science books. Nano Banana 2.1 generated the approved still through Higgsfield. That completed image was used as the first-frame reference for a 12-second Seedance 2.5 film, also generated through Higgsfield.
+
+The blue book opens further and its pages turn in the breeze; candlelight flickers and dust moves through the window light. The dark, restrained setting and four-book arrangement are retained. The matching opening poster supplies the static fallback. The shared scroll engine supports forward/reverse seeking and existing motion controls.
+
+- [Current film](../../../media/motion/algorithms-books-gothic-library.mp4)
+- [Opening poster](../../../img/bg-img/algorithms-books-gothic-library.jpg)
+- [Animation prompt](gothic-video-prompt.txt)
+- [Hashes and encoding](GOTHIC-MEDIA-MANIFEST.json)
+
+The browser film is 1920×1080 at 24fps, 12.041667 seconds, approximately 5.3MB. H.264, yuv420p, faststart and half-second keyframes support browser playback and scroll seeking. It has no audio. The approved full-resolution still and 19.6MB original HEVC film remain in the book workspace. The preflight estimate was 192 credits, not a billing receipt. The user approved the starting image before generation and explicitly requested applying, committing and pushing the film.
+
+## Previous fantasy revision
+
 # Fantasy observatory book film
 
 The current Programming Books header uses a fantasy world of algorithm books above the clouds. Wind bends and turns the book pages; loose diagram sheets lift into the air and unfold into a luminous bridge between floating islands. A teal sphere travels toward a crystal portal, while clouds and waterfalls move independently.

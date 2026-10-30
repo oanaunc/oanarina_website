@@ -1,0 +1,45 @@
+{
+  "created": "2026-10-30",
+  "approved_option": "B \u2014 Higgsfield gothic library",
+  "source_image_model": "Nano Banana 2.1",
+  "video_provider": "Higgsfield",
+  "video_model": "Seedance 2.5",
+  "estimate_credits": 192,
+  "estimate_is_billing_receipt": false,
+  "duration_seconds": 12.041667,
+  "encoding": {
+    "codec": "H.264",
+    "pixel_format": "yuv420p",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "crf": 22,
+    "keyframe_interval_frames": 12,
+    "audio": false,
+    "faststart": true
+  },
+  "files": {
+    "approved_B_image": {
+      "name": "B-gothic-library-higgsfield.png",
+      "bytes": 7771127,
+      "sha256": "041481d04b862717515b1926ac961783ac4b99b69235de92d78d96a8d93c7c3a"
+    },
+    "original_movie": {
+      "name": "gothic-library-original.mp4",
+      "bytes": 19627997,
+      "sha256": "1e656c493f07452bfc935a2913e291ac497124d0b7885fd375882ba4973d5e25"
+    },
+    "web_movie": {
+      "name": "algorithms-books-gothic-library.mp4",
+      "bytes": 5310917,
+      "sha256": "9569e9ccd4d6c50301cfd5ed22b6fc4430d2e4cf3268b7923e802a68eb4f70b0"
+    },
+    "poster": {
+      "name": "algorithms-books-gothic-library.jpg",
+      "bytes": 210111,
+      "sha256": "2715e5826dfa5c85b6aa04fdfd6ec639d7fa7a4e27874bc49933ae3fa4ed2872"
+    }
+  }
+}
