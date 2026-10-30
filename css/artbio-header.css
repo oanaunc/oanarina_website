@@ -1,0 +1,20 @@
+#artbio-hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  padding: 140px 0 120px !important;
+  background-position: center;
+}
+#artbio-hero.bg-overlay::after {
+  background: linear-gradient(90deg, #03132288, #03132200 70%),
+    linear-gradient(180deg, #0008, #0000 35%, #0000 65%, #0009);
+}
+#artbio-hero .section-heading { margin: 0; text-align: left; }
+#artbio-hero pre { display: none; }
+#artbio-hero .section-heading h2 { text-shadow: 0 2px 18px #0009; }
+#artbio-hero .section-heading h2:first-of-type { font-size: 14px; letter-spacing: .22em; margin-bottom: 14px; }
+#artbio-hero .section-heading h2:last-of-type { font-size: clamp(32px, 5vw, 54px); letter-spacing: .13em; margin: 0; }
+@media (max-width: 600px) {
+  #artbio-hero { min-height: 640px; background-position: 70% center; }
+  #artbio-hero .motion-video { object-position: 70% center; }
+}

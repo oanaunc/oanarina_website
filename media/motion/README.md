@@ -1,5 +1,7 @@
 # Website motion assets
 
+The Drawings header now uses `drawings-one-last-kiss.mp4`, a monochrome transformation from the supplied ink drawing into simple contour lines. Art Bio uses `artbio-bells-from-the-deep.mp4`, an underwater fantasy animated from the supplied oil painting. Both are silent 720p films with half-second keyframes, matching posters and the shared visibility/motion/source-release lifecycle. Prompts, hashes and encoding are recorded under `docs/media/`. Superseded video cleanup removed 23 files (86,742,441 bytes), with local archival copies outside the deployed website.
+
 `architectureapps.html` has an architecture-only header featuring Archi Tool, AI Architecture Plan to Video, AI Architecture Plan, AI Home Makeover and AI Architecture Render. Its poster is `images/apps/architecture-apps-header.jpg`; its silent eight-second camera-glide video is `architecture-apps-header.mp4`. The page uses the shared forward/reverse scroll animation, motion toggle and static fallback. `architecture-apps-header-source.json` records the screenshots and local video-render command.
 
 The original 24 local menu pages retain their complete HTML content and original styling. Each adds only the shared motion CSS, manifest, and JavaScript. The original header image remains underneath its generated film, including when motion is disabled or the media cannot load.

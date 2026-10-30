@@ -132,8 +132,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "artbio": {
-    "src": "media/motion/artbio.mp4",
-    "poster": "img/bg-img/breadcumb2.jpg",
+    "src": "media/motion/artbio-bells-from-the-deep.mp4",
+    "poster": "img/bg-img/artbio-bells-from-the-deep.jpg",
     "sameImage": true
   },
   "archipublications": {

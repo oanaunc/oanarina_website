@@ -132,6 +132,12 @@
       "bytes": 3883955,
       "sha256": "3f3f0fe2c42ff51bc2fc9eff405dc5c77f7d7046cf8aa58e53469818d533a4a7",
       "reason": "Replaced by the One Last Kiss drawing animation."
+    },
+    {
+      "path": "media/motion/artbio.mp4",
+      "bytes": 4719073,
+      "sha256": "c7bf78cf940c4f5038bbf434aa24406c628867a217c3e4270928fd895c165b94",
+      "reason": "Replaced by the Bells From The Deep fantasy animation on Art Bio."
     }
   ]
 }

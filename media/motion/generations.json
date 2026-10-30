@@ -367,5 +367,27 @@
       "audio": false,
       "preset": "slow"
     }
+  },
+  {
+    "index": 42,
+    "job_id": "31df2da8-c49a-48f4-80bf-0c941cc952ff",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_160943_31df2da8-c49a-48f4-80bf-0c941cc952ff.mp4",
+    "name": "artbio-bells-from-the-deep",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 10.041667,
+      "crf": 25,
+      "preset": "slow",
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false
+    }
   }
 ]

@@ -1,0 +1,50 @@
+{
+  "title": "Bells From The Deep",
+  "artist": "Dr. Oana Rinaldi",
+  "date": "2026-10-30",
+  "artwork": {
+    "filename": "Bells From The Deep, 120-80cm, 2018, oil on canvas.jpg",
+    "dimensions": "120 × 80 cm",
+    "medium": "Oil on canvas",
+    "year": 2018,
+    "sha256": "037cf2ce156937401fe43826238ba4cbcab680a712ba923a8b1e379e350a87bc"
+  },
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "31df2da8-c49a-48f4-80bf-0c941cc952ff",
+    "durationRequested": 10,
+    "resolutionRequested": "720p",
+    "estimatedCredits": 70,
+    "estimateNote": "Preflight estimate, not a billing receipt.",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_160943_31df2da8-c49a-48f4-80bf-0c941cc952ff.mp4"
+  },
+  "video": {
+    "file": "media/motion/artbio-bells-from-the-deep.mp4",
+    "bytes": 2400273,
+    "sha256": "f3a8fc122c80c742f68aefaae2bc8d73abf0c595ca6a7ea9066ab85d05712dfe"
+  },
+  "poster": {
+    "file": "img/bg-img/artbio-bells-from-the-deep.jpg",
+    "bytes": 83004,
+    "sha256": "3385c9e24c1da0f8910757678cc3837ea81d38d1878f3ef4ff6bf09bc3fc8bdc"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 10.041667,
+    "crf": 25,
+    "preset": "slow",
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  },
+  "sourceVideo": {
+    "bytes": 2812050,
+    "sha256": "04a05af0672ee70340698574f4b11647fb419a6bbbbfd90530e1ea7d8c2e6542",
+    "location": "Local workspace outside website"
+  }
+}
