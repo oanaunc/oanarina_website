@@ -345,5 +345,27 @@
     "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20260913_125014_6cefc4ea-9ec7-4f7d-8d71-fd560bb4d91c.mp4",
     "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/5d7fa0b7-ce87-40b6-8712-c9459695ae6c.png",
     "name": "index-second-header"
+  },
+  {
+    "index": 41,
+    "job_id": "415293c4-c9ff-4923-906b-3dd668592ac1",
+    "status": "completed",
+    "type": "video",
+    "model": "seedance_2_5",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_160143_415293c4-c9ff-4923-906b-3dd668592ac1.mp4",
+    "name": "drawings-one-last-kiss",
+    "encoding": {
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "duration": 10.041667,
+      "crf": 27,
+      "keyframeIntervalFrames": 12,
+      "faststart": true,
+      "audio": false,
+      "preset": "slow"
+    }
   }
 ]

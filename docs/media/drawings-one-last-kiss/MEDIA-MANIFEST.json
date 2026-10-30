@@ -1,0 +1,50 @@
+{
+  "title": "One Last Kiss",
+  "artist": "Dr. Oana Rinaldi",
+  "date": "2026-10-30",
+  "artwork": {
+    "filename": "One Last Kiss, 21 x 29 cm, ink on paper, 2025.jpg",
+    "dimensions": "21 × 29 cm",
+    "medium": "Ink on paper",
+    "year": 2025,
+    "sha256": "81940396be3d8836144af45ceb28dbca58b57bc0fdfe2d34aa3b37ef61c17b4a"
+  },
+  "generation": {
+    "service": "Higgsfield",
+    "model": "Seedance 2.5",
+    "job_id": "415293c4-c9ff-4923-906b-3dd668592ac1",
+    "durationRequested": 10,
+    "resolutionRequested": "720p",
+    "estimatedCredits": 70,
+    "estimateNote": "Preflight estimate, not a billing receipt.",
+    "resultUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3JGxtGdyHp2DccW15xc2g5jij1B/hf_20261030_160143_415293c4-c9ff-4923-906b-3dd668592ac1.mp4"
+  },
+  "video": {
+    "file": "media/motion/drawings-one-last-kiss.mp4",
+    "bytes": 2115762,
+    "sha256": "918822e0e0ba58a7765a0405fb6fc045cfa9018e23638616c558b4529109d781"
+  },
+  "poster": {
+    "file": "img/bg-img/drawings-one-last-kiss.jpg",
+    "bytes": 168161,
+    "sha256": "978b0690ceed6cf430077bc5f54d89b5d511814499bace7c05113f2133c00a26"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 10.041667,
+    "crf": 27,
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false,
+    "preset": "slow"
+  },
+  "sourceVideo": {
+    "bytes": 3324555,
+    "sha256": "369011435ecc0433d8ca085d261e689736dbd780975e8a8c17eae710fc789740",
+    "location": "Local workspace outside website"
+  }
+}

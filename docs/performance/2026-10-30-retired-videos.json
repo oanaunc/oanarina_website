@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-30",
+  "files": [
+    {
+      "path": "media/motion/jackets.mp4",
+      "bytes": 3569643,
+      "sha256": "ad67f5313b4e8d916540f0e6306b8e3c4e37f2639841b2ed4b2011bf2978246f",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/architecture.mp4",
+      "bytes": 2033340,
+      "sha256": "89eb0d426ada1250fc9f1a1fa2eb6380e2b41b1b19f40706399928ea5db468c5",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/apps-camera-motion.mp4",
+      "bytes": 726536,
+      "sha256": "5e763fb86e80f1fce6c7cf65f283372cd9b4b1ea0b646696ec2a580b9e89d0f0",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/aiart.mp4",
+      "bytes": 6378827,
+      "sha256": "95f7cbaf843423279a09e2816d89862e354bd6360bb783a1880821f933e4f7ca",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/shoes.mp4",
+      "bytes": 3559970,
+      "sha256": "9f35373590431bc01b73b931d3d76f769b852026286053f25cbccfe4f9f69af7",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/exhibitions.mp4",
+      "bytes": 2831066,
+      "sha256": "af2dd07bf5b142ea8826e6b32e6dc64f62aaa70bfc899d777533d1cd5293972d",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/painting.mp4",
+      "bytes": 3849710,
+      "sha256": "41acb85a0b680695c329c4a4411b971076797791299478f208e4c94e54aa5b10",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/photography.mp4",
+      "bytes": 5120233,
+      "sha256": "2def1f3b68b93f0807f15d67d49ffe0fa21006195f8078ef2044da01c85eee4d",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/shop.mp4",
+      "bytes": 3254082,
+      "sha256": "1cfb296b29562dcf489c5755bdc7589afa26acc0e81ffce000f06aa6d79d8043",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/origami-header.mp4",
+      "bytes": 2354821,
+      "sha256": "a90e869e4ab7124bb95a627937bf06843f29dc21579740cb00c10743b268a359",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/algorithms-books-fantasy.mp4",
+      "bytes": 9681556,
+      "sha256": "a8a7f431cd8d72781c97faff17438f67951e701647f36f28dc261d03c188deb7",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/algorithmsbook.mp4",
+      "bytes": 8096892,
+      "sha256": "11d60d1e8fb5b37b1f8e3108fd2747f75d82c93038387e814de439cd59b23644",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/graphicdesign-header.mp4",
+      "bytes": 871896,
+      "sha256": "b31a04a0a46b947c6ffb9f6faab191c781a916fa41d417510643f7ab6ff7da07",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/apps.mp4",
+      "bytes": 2196817,
+      "sha256": "7e67418b11c059493bdc5422fc5f85cf1f8b88e4cbb08cbfd59db979df654399",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/algorithms-books-worlds.mp4",
+      "bytes": 5881342,
+      "sha256": "0ed4047324c5d03c113677bd6dccda41ccbd21dfa2c313887f6e79a8d4c09d9b",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/header.mp4",
+      "bytes": 124762,
+      "sha256": "9d886ef16bed676e078f629edc0dd16ba48e227a4b1b2a709ced01a0c8c65a6a",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/brand-film.mp4",
+      "bytes": 3680036,
+      "sha256": "e88cfec8783fa0fa2a3b6b8f2acaf5f1f4ca8bd5e68a417938a95c1b6592bf09",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/brand-transformation.mp4",
+      "bytes": 8788956,
+      "sha256": "c187fe19b8c8233c34cfa60e23144a7f62b199f462384440b9cc60c3518bb8e2",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/editor-recording.webm",
+      "bytes": 2132554,
+      "sha256": "7f286779223b754f52cdab88d76909670730ede15ab280ce59f30fd10f3ab6ab",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/whiteboard-recording.webm",
+      "bytes": 1179248,
+      "sha256": "713989ecba30a3600bcc9482622f0dd4f05473180b447e184305a0369b5df71e",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "videos/forma/slides-recording.webm",
+      "bytes": 1827126,
+      "sha256": "ef436c04992cada2051060c02db2ee90803d52b3ebdba9761b2e19e880c9792d",
+      "reason": "Superseded website header or unused source recording; no current runtime reference."
+    },
+    {
+      "path": "media/motion/drawings-header.mp4",
+      "bytes": 3883955,
+      "sha256": "3f3f0fe2c42ff51bc2fc9eff405dc5c77f7d7046cf8aa58e53469818d533a4a7",
+      "reason": "Replaced by the One Last Kiss drawing animation."
+    }
+  ]
+}

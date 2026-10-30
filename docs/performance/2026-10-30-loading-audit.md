@@ -5,7 +5,7 @@ The reported symptoms were pages stalling when opened, particularly Forma and th
 ## Changes
 
 - The Algorithms menu Aetherfold 4D link opens a separate tab with `rel="noopener"` on all 96 pages containing that menu. The navigation maintenance script preserves this behavior.
-- The same Forma header scene has a 4,064,679-byte 720p derivative, quarter-second keyframes, faststart and no audio. Both Forma entry pages reference it. The 1080p asset is retained for cached pages. Its byte count and hash are recorded in the media manifest.
+- The same Forma header scene has a 4,064,679-byte 720p derivative, quarter-second keyframes, faststart and no audio. Both Forma entry pages reference it. The 1080p asset was subsequently archived outside the website during the requested unused-video cleanup. Its byte count and hash are recorded in the media manifest.
 - Forma's ambient walkthrough and tutorial release media sources offscreen, on pagehide and while hidden. A requested tutorial restores its previous position when revisited. The editor iframe still loads only on explicit launch.
 - The register waits until it is near view, adds 100 rows at a time via a fragment, and searches/filters all 2,022 requirements. Show more explicitly adds the next 100. The tested initial DOM shrank from 12,810 elements to 650.
 - The home-page app chapter contains a fixed 16 DOM cards, not a WebGL scene. It already canceled its animation callback offscreen. It now also clears offscreen 3D transforms and layer hints, guards page lifecycle state, and limits visual updates to 30fps. Resizing offscreen no longer repaints cards. Its two wide app screenshots use 520px thumbnails rather than 1381px/2000px originals.

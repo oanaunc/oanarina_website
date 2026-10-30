@@ -22,7 +22,7 @@ The new source artwork was generated with the built-in image tool using the publ
 - [Source artwork](../../../img/bg-img/algorithms-books-fantasy-source.jpg)
 - [Image prompt](fantasy-image-prompt.txt)
 - [Animation prompt](fantasy-video-prompt.txt)
-- [Current browser film](../../../media/motion/algorithms-books-fantasy.mp4)
+- Retired browser film: `algorithms-books-fantasy.mp4` (archived outside deployment)
 - [Matching poster](../../../img/bg-img/algorithms-books-fantasy-poster.jpg)
 - [Hashes and encoding](FANTASY-MEDIA-MANIFEST.json)
 
@@ -36,9 +36,9 @@ The Art of Coding section uses the user's replacement screenshot showing the Pyt
 Generated with the Higgsfield plugin using Seedance 2.5 and the four published-book reference images listed in [the manifest](MEDIA-MANIFEST.json). The 12-second sequence opens a physical book, raises amber sorting bars, animates a graph, and sends a teal sphere across miniature game platforms. This is conceptual promotional animation.
 
 - [Generation prompt](prompt.txt)
-- [Browser film](../../../media/motion/algorithms-books-worlds.mp4)
+- Retired browser film: `algorithms-books-worlds.mp4` (archived outside deployment)
 - [Matching first-frame poster](../../../img/bg-img/algorithms-books-worlds.jpg)
 
 The original 1920×1080, 24fps, 12.041667-second HEVC download is retained in the book release workspace. The 5.9MB public H.264 derivative has no audio, faststart, and half-second keyframes for forward/reverse scroll seeking. A modest crop excludes unwanted generated lettering from the top margin while preserving the books and animated objects. Exact hashes and encoding are recorded in the manifest. The 192-credit preflight estimate is not a billing receipt.
 
-Only algorithmsbook.html uses this film. The shared scroll engine, motion toggle, Skip animation control, and reduced-motion/save-data fallback are retained. The page uses the matching poster and a scoped gradient for heading readability. Earlier assets remain available for cached pages.
+Only algorithmsbook.html uses this film. The shared scroll engine, motion toggle, Skip animation control, and reduced-motion/save-data fallback are retained. The page uses the matching poster and a scoped gradient for heading readability. Superseded video files were archived outside the website on October 30, 2026. All motion-manifest script URLs were versioned to refresh current pages.

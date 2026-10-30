@@ -32,8 +32,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "drawings": {
-    "src": "media/motion/drawings-header.mp4",
-    "poster": "img/bg-img/breadcumb13.jpg",
+    "src": "media/motion/drawings-one-last-kiss.mp4",
+    "poster": "img/bg-img/drawings-one-last-kiss.jpg",
     "sameImage": true
   },
   "aiart": {

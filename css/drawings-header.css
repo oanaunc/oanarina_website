@@ -1,0 +1,28 @@
+/* Leave the kiss unobstructed; frame the page links beneath the artwork. */
+#drawings-hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  padding: 140px 0 105px !important;
+  background-position: center;
+}
+#drawings-hero.bg-overlay::after {
+  background: linear-gradient(180deg, #0009 0%, #0001 28%, #0000 50%, #0002 65%, #000b 100%);
+}
+#drawings-hero .section-heading { margin: 0; text-align: left; }
+#drawings-hero .section-heading pre { display: none; }
+#drawings-hero .section-heading h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: .14em;
+  margin-bottom: 0;
+  text-shadow: 0 2px 18px #0009;
+}
+#drawings-hero .art-social-wrap { justify-content: flex-start; gap: 28px; margin: 20px 0 0; }
+#drawings-hero .art-social-item a { width: 46px; height: 46px; }
+#drawings-hero .art-social-item a svg { width: 25px; height: 25px; }
+#drawings-hero .art-social-item a i { font-size: 23px; }
+#drawings-hero .art-social-label { font-size: 10px; letter-spacing: .08em; }
+@media (max-width: 600px) {
+  #drawings-hero { min-height: 640px; padding-bottom: 110px !important; }
+  #drawings-hero .art-social-wrap { gap: 22px; }
+}

@@ -8,7 +8,8 @@
       "durationSeconds": 12.2,
       "sha256": "2a7e246751e697431d1a81b32755f514ff73b38ab283eab97873640722deb03e",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "active"
     },
     {
       "file": "editor-recording.webm",
@@ -16,7 +17,8 @@
       "durationSeconds": 14.2,
       "sha256": "7f286779223b754f52cdab88d76909670730ede15ab280ce59f30fd10f3ab6ab",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "archived-outside-website"
     },
     {
       "file": "header.mp4",
@@ -24,7 +26,8 @@
       "durationSeconds": 5.6,
       "sha256": "9d886ef16bed676e078f629edc0dd16ba48e227a4b1b2a709ced01a0c8c65a6a",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "archived-outside-website"
     },
     {
       "file": "slides-recording.webm",
@@ -32,7 +35,8 @@
       "durationSeconds": 10.76,
       "sha256": "ef436c04992cada2051060c02db2ee90803d52b3ebdba9761b2e19e880c9792d",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "archived-outside-website"
     },
     {
       "file": "slides.mp4",
@@ -40,7 +44,8 @@
       "durationSeconds": 8.76,
       "sha256": "87e050fb2d79fb3c0af74b03e68a4ad787fa421502c6a25a982a3a4dea9e4797",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "active"
     },
     {
       "file": "whiteboard-recording.webm",
@@ -48,7 +53,8 @@
       "durationSeconds": 8.6,
       "sha256": "713989ecba30a3600bcc9482622f0dd4f05473180b447e184305a0369b5df71e",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "archived-outside-website"
     },
     {
       "file": "whiteboard.mp4",
@@ -56,7 +62,8 @@
       "durationSeconds": 6.6,
       "sha256": "75fa832c87405c35f33563033b5606b92501890fbfcae53eacf6f0dcfe7644b0",
       "kind": "app-recording",
-      "capturedFrom": "Forma development browser editor 0.2.0-dev.5"
+      "capturedFrom": "Forma development browser editor 0.2.0-dev.5",
+      "deployment": "active"
     },
     {
       "file": "brand-film.mp4",
@@ -101,7 +108,8 @@
         "file": "../../images/apps/forma/brand-film-poster.jpg",
         "bytes": 211438,
         "sha256": "11057a299f580b8e623fbe0a3e8d0e79bbbf6fa5adec64b74d606a9aef100e89"
-      }
+      },
+      "deployment": "archived-outside-website"
     },
     {
       "file": "brand-transformation.mp4",
@@ -147,7 +155,8 @@
         "bytes": 211438,
         "sha256": "11057a299f580b8e623fbe0a3e8d0e79bbbf6fa5adec64b74d606a9aef100e89"
       },
-      "transformation": "Opening side sculptures unfurl, cross the scene and reorganize into a large layered iris/portal. Starting poster preserved."
+      "transformation": "Opening side sculptures unfurl, cross the scene and reorganize into a large layered iris/portal. Starting poster preserved.",
+      "deployment": "archived-outside-website"
     },
     {
       "file": "brand-transformation-web.mp4",
@@ -166,7 +175,8 @@
         "crf": 25,
         "faststart": true,
         "audio": false
-      }
+      },
+      "deployment": "active"
     }
   ]
 }
