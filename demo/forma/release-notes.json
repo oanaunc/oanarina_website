@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-30",
+  "releases": [
+    {
+      "version": "0.2.0-dev.10",
+      "channel": "preview",
+      "title": "Offline Figma Design import",
+      "notes": [
+        "Open supported local binary .fig Design files in the browser or Mac app, without uploading the source file.",
+        "Preserve supported page/layer geometry, embedded images and original glyph shapes while keeping text editable. Review any feature reductions after import.",
+        "Import component instances as detached editable layers. Native annotation blocks can retain their own embedded visual snapshots.",
+        "Imported Mac files start as new unsaved projects. Save a .oui copy; the Figma source is never a save destination.",
+        "Cancel obsolete imports before they can replace current edits or the active recovery identity."
+      ],
+      "limits": [
+        "This is a development preview. Current installer metadata and checksums are published on the Forma website.",
+        "Binary .fig import supports a documented subset of Design files. Live component linkage, native rich annotation editing, complete prototype/layout semantics and full visual parity are not promised.",
+        "Binary .fig export and substantial Figma suite parity remain unfinished."
+      ]
+    },
+    {
+      "version": "0.2.0-dev.9",
+      "channel": "preview",
+      "title": "Pages, local layouts and image clipboard",
+      "notes": [
+        "Duplicate, reorder and search pages with contextual and keyboard actions; shared component links stay intact and unsafe deletion is refused.",
+        "Remember each Design/Whiteboard page's pan and zoom locally, and preview its static artwork on hover or keyboard focus.",
+        "Paste bounded PNG/TIFF image data into the Mac canvas, including the active slide. Copy as PNG creates a transparent 2\u00d7 selection snapshot.",
+        "Follow system light/dark appearance, or retain an explicit interface theme.",
+        "Saved-file MCP adds atomic page duplication and reordering. Browser startup waits for recovery before editing or autosave.",
+        "Move supported complete layer trees between pages with stable identities and live component links; unsafe contextual cases are refused.",
+        "Add a plain-text project description through File information, with Undo and saved-file MCP metadata reads.",
+        "Collapse and resize layers/properties sidebars with pointer or keyboard controls; local layout stays outside project files.",
+        "Browse bundled release notes from Help, with development/preview labels and public download checksums.",
+        "Open registered local file actions from the document-title menu, with keyboard navigation and focus return.",
+        "Follow system reduced-motion preferences for editor chrome, with a local override; deliberate authored animation and exports retain their settings.",
+        "Identify mask sources, modes and nearest affected artwork in the layer tree with bounded accessible descriptions."
+      ],
+      "limits": [
+        "This is a development preview with documented limits. Current installer metadata and checksums are published on the Forma website.",
+        "Browser/Windows system-image clipboard and private Figma editable clipboard remain unfinished.",
+        "Substantial Figma suite parity remains unfinished, including binary .fig interchange and cloud collaboration."
+      ]
+    },
+    {
+      "version": "0.2.0-dev.8",
+      "channel": "preview",
+      "title": "Native editable clipboard and canvas backgrounds",
+      "notes": [
+        "Transfer editable Forma layers between Mac document windows, with validated component/style/variable/font dependencies and one-step Undo.",
+        "Edit page canvas color, opacity and visibility; use an explicit color-pair contrast checker.",
+        "Use the local vector, typography, layout, components, variables, prototype, whiteboard, Slides and motion workspaces."
+      ],
+      "limits": [
+        "This Mac preview is earlier than the current development source and has documented feature limits.",
+        "The app and DMG were Developer ID signed, notarized, stapled and Gatekeeper checked. The universal binary includes Intel; Intel runtime validation is pending.",
+        "Keep .oui projects and backups when upgrading. There is no silent updater."
+      ],
+      "download": {
+        "url": "https://www.oanarinaldi.com/downloads/ui-tool/Forma-0.2.0-dev.8.dmg",
+        "sha256": "9d6ec589ee35058b1e7b55aa87214dd6d6cc7a390459aa06405a9e23dd90a716",
+        "bytes": 31747674,
+        "notarized": true
+      }
+    }
+  ]
+}

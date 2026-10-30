@@ -1,16 +1,17 @@
 {
-  "version": "0.2.0-dev.8",
+  "version": "0.2.0-dev.10",
   "source": "Forma application release build",
-  "sourceGitHash": "47df7b52b7af730031401d2fd36be7b684166a96",
+  "sourceGitHash": "7d3591446c025b6c177152400dc7c7274d49514d",
   "sourceDirtySnapshot": false,
   "purpose": "Static browser demo snapshot. Only local storage/cache identifiers are namespaced to isolate website demo data. No user projects included.",
   "sourceAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
-    "assets/index-2Abf-O1e.css": "adb5b8b5c46e649f7c235855caeca1d91150ebfd0e194ed1a07371fb73affa0e",
-    "assets/index-Dwcexzai.js": "456e406e92a039b7d95944f1553c464b236de5bccab1a695a4329c3a822cc1f7",
+    "assets/fig-container.worker-CK5F3IVr.js": "292f8b549303e3fa45f7723ea6565dfc366821b0d8fd5a12e300f11aa3221a4b",
+    "assets/index-By9Mg5tH.css": "ca4e75602f956c7cb248081437e16f0971fb7e5f3cf988c79fb2a44dba0980ba",
+    "assets/index-CeJTdHZL.js": "f745e082eee052dae8e97e42afeb71c0342cf928accce647be869ee5ef238c82",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-ChtaNcwc.js": "db51f986da2d2b2ca56846598bbff6ca233a4f07342f3b07d293618e46147769",
-    "assets/svg-import-ClqmEbLF.js": "818f1eeacc245c68733d94a750a096f5d2817430b284850ad1b5e4ccc298b879"
+    "assets/slides-export-CiadRfmQ.js": "d30d0243520d88d1010c9a3e7d22d583d332f303529ca399d54416f79201ede0",
+    "assets/svg-import-C-j5yYmk.js": "f8d6f574eb17241309da3077983678b1a79b6a86566fee404821c8546912d57d"
   },
   "storageKeys": [
     "oui-action-history",
@@ -18,7 +19,10 @@
     "oui-doc-",
     "oui-file-browser",
     "oui-font-favorites",
+    "oui-interface-motion",
     "oui-library-revision",
+    "oui-page-viewports",
+    "oui-panel-layout",
     "oui-preferences",
     "oui-theme",
     "oui-versions-"
@@ -29,10 +33,11 @@
   ],
   "demoAssetHashes": {
     "assets/es-CzXjc7l_.js": "038be7b9cd483032dcd0ddc870895652ffebebb9df7bf6e4ba797e37deb52975",
-    "assets/index-2Abf-O1e.css": "adb5b8b5c46e649f7c235855caeca1d91150ebfd0e194ed1a07371fb73affa0e",
-    "assets/index-Dwcexzai.js": "3d8d83d40f06c76c4988cde36cab31024ac480b2eb9d412e5c9b982d0f76ef88",
+    "assets/fig-container.worker-CK5F3IVr.js": "292f8b549303e3fa45f7723ea6565dfc366821b0d8fd5a12e300f11aa3221a4b",
+    "assets/index-By9Mg5tH.css": "ca4e75602f956c7cb248081437e16f0971fb7e5f3cf988c79fb2a44dba0980ba",
+    "assets/index-CeJTdHZL.js": "5a9f2a144f91fff6196fded08c80f327e69a8607e6374a6fbb9afaf898640ba5",
     "assets/rolldown-runtime-WkwZ5CU-.js": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
-    "assets/slides-export-ChtaNcwc.js": "db51f986da2d2b2ca56846598bbff6ca233a4f07342f3b07d293618e46147769",
-    "assets/svg-import-ClqmEbLF.js": "818f1eeacc245c68733d94a750a096f5d2817430b284850ad1b5e4ccc298b879"
+    "assets/slides-export-CiadRfmQ.js": "d30d0243520d88d1010c9a3e7d22d583d332f303529ca399d54416f79201ede0",
+    "assets/svg-import-C-j5yYmk.js": "f8d6f574eb17241309da3077983678b1a79b6a86566fee404821c8546912d57d"
   }
 }
