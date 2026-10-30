@@ -47,10 +47,11 @@
 .apps-orbit-rings span:nth-child(2) { width: 72%; height: 125%; border-color: #bca1d00f; transform: translate(-50%, -50%) rotate(37deg); }
 .apps-orbit-rings span:nth-child(3) { width: 120%; height: 70%; border-color: #e3bdd811; transform: translate(-50%, -50%) rotate(18deg); }
 .is-animated .apps-orbit-cards { position: absolute; inset: 0; display: block; margin: 0; max-width: none; }
-.is-animated a.apps-orbit-card { position: absolute; left: 50%; top: 50%; width: clamp(94px, 9.7vw, 148px); margin: 0; will-change: transform; }
+.is-animated a.apps-orbit-card { position: absolute; left: 50%; top: 50%; width: clamp(94px, 9.7vw, 148px); margin: 0; }
+.apps-orbit.is-running .apps-orbit-card, .apps-orbit.is-running .apps-orbit-heading { will-change: transform; }
 .is-animated a.apps-orbit-card-wide { width: clamp(180px, 18vw, 260px); }
 .is-animated .apps-orbit-shade { display: block; position: absolute; inset: 0; z-index: 23; background: radial-gradient(ellipse 35% 37% at 50% 47%, #101113ed 15%, #101113af 65%, transparent 100%); pointer-events: none; }
-.is-animated .apps-orbit-heading { position: absolute; left: 0; top: 29%; width: 100%; will-change: transform; transform-origin: center center; }
+.is-animated .apps-orbit-heading { position: absolute; left: 0; top: 29%; width: 100%; transform-origin: center center; }
 .is-animated .apps-orbit-intro { position: absolute; top: 53%; left: 0; width: 100%; margin: 0; }
 .is-animated .apps-orbit-discover { display: block; position: absolute; left: 7.5%; top: 34%; width: min(350px, 29%); z-index: 25; opacity: 0; visibility: hidden; }
 .apps-orbit-discover h3 { margin: 0 0 22px; color: #f7f5f0; font-size: clamp(36px, 4.2vw, 68px); font-weight: 500; line-height: 1.03; letter-spacing: -.06em; }

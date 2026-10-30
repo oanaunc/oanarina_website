@@ -1,12 +1,12 @@
 /* Shared scroll-header films; Forma uses generated brand artwork, while its product walkthroughs remain real editor recordings. */
 window.OANA_MOTION = {
   "forma": {
-    "src": "videos/forma/brand-transformation.mp4",
+    "src": "videos/forma/brand-transformation-web.mp4",
     "poster": "images/apps/forma/brand-film-poster.jpg",
     "sameImage": true
   },
   "ui-tool": {
-    "src": "videos/forma/brand-transformation.mp4",
+    "src": "videos/forma/brand-transformation-web.mp4",
     "poster": "images/apps/forma/brand-film-poster.jpg",
     "sameImage": true
   },

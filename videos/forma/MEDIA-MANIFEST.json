@@ -148,6 +148,25 @@
         "sha256": "11057a299f580b8e623fbe0a3e8d0e79bbbf6fa5adec64b74d606a9aef100e89"
       },
       "transformation": "Opening side sculptures unfurl, cross the scene and reorganize into a large layered iris/portal. Starting poster preserved."
+    },
+    {
+      "file": "brand-transformation-web.mp4",
+      "kind": "optimized-generated-brand-film",
+      "source": "brand-transformation.mp4",
+      "bytes": 4064679,
+      "durationSeconds": 14.041667,
+      "sha256": "2719eeaffa88c6f71f6d685d460d2ce9acb72528315be2942f69eba1e07a1de5",
+      "encoding": {
+        "codec": "H.264",
+        "pixelFormat": "yuv420p",
+        "width": 1280,
+        "height": 720,
+        "fps": 24,
+        "keyframeIntervalFrames": 6,
+        "crf": 25,
+        "faststart": true,
+        "audio": false
+      }
     }
   ]
 }

@@ -26,3 +26,10 @@ The new Seedance 2.5 generation requested 14 seconds at 1080p with no audio; its
 The active Forma and legacy `ui-tool.html` header films use `preload="auto"` after the existing visibility, proximity, reduced-motion and data-saving checks permit loading. Inactive films still have no source; leaving the area, hiding the document or disabling motion releases the decoder.
 
 A live Chromium diagnostic reproduced stalled paused seeks with `preload="none"`, despite correct, fast HTTP byte ranges and the expected film checksum. A controlled activation-only change buffered the 8.79 MB film and completed the same six alternating seeks (60%, 20%, 98%, 5%, 85%, 48%). The unchanged nine header checks, legacy cold seeks, visibility/proximity release, reduced motion and forced data-saving checks passed with that change. Local website checks also passed (12 general and nine header checks). This changes loading of the existing film; no new generation or credits were used.
+
+
+## Lighter website delivery — October 30, 2026
+
+Forma and the legacy UI Tool page now use `videos/forma/brand-transformation-web.mp4`: the same 14.041667-second scene, encoded at 1280×720, H.264/yuv420p, 24fps, CRF 25, no audio, faststart and six-frame keyframes (quarter-second seeking). The file is 4,064,679 bytes versus 8,788,956 bytes for the retained 1080p version, a 53.8% transfer reduction and 55.6% fewer pixels per decoded frame. Activation-only prebuffering remains in place to preserve reliable paused seeks.
+
+The walkthrough clips now have no source until near their section and release it when offscreen or the page is hidden/left. A viewed walkthrough retains its playback position for returning to the section. The feature register initializes only near its section, renders 100 matching requirements at a time, and keeps full-list search and filters. This reduced initial Forma DOM elements from 12,810 to 650 in the browser check. The new static web icon is 256×256 instead of decoding the 1254×1254 app asset for small website icons.

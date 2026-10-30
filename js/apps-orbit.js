@@ -15,7 +15,7 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   const smooth = (start, end, value) => { const t = clamp((value - start) / (end - start)); return t * t * (3 - 2 * t); };
-  let enabled = false, inView = false, frame = null, previousTime = 0;
+  let enabled = false, inView = false, pageActive = true, frame = null, previousTime = 0;
   let width = 1, height = 1, progress = 0, phase = 0, momentum = 0;
   let lastScroll = scrollY, lastScrollTime = performance.now(), focusCard = null, hovering = false;
 
@@ -53,7 +53,12 @@
     progressBar.style.transform = `scaleX(${progress})`;
 
     cards.forEach((card, index) => {
-      if (card === focusCard) return;
+      if (card === focusCard) {
+        card.style.transform = `translate(-50%, -50%) translate3d(${width * .28}px, 0, 0) scale(1.12)`;
+        card.style.opacity = '1';
+        card.style.zIndex = '20';
+        return;
+      }
       const ring = index % 3;
       const slot = Math.floor(index / 3);
       const direction = ring === 1 ? -.8 : 1;
@@ -74,19 +79,30 @@
   }
   function tick(time) {
     frame = null;
-    if (!enabled || !inView || document.hidden) { previousTime = 0; return; }
+    if (!enabled || !inView || !pageActive || document.hidden) { cancel(); return; }
+    // Thirty paints per second keeps the cards fluid without rewriting every layer at 60/120Hz.
+    if (previousTime && time - previousTime < 1000 / 30) {
+      frame = requestAnimationFrame(tick);
+      return;
+    }
     const delta = previousTime ? Math.min((time - previousTime) / 1000, .05) : 0;
     previousTime = time;
     paint(delta);
     frame = requestAnimationFrame(tick);
   }
   function schedule() {
-    if (enabled && inView && !document.hidden && frame === null) frame = requestAnimationFrame(tick);
+    if (enabled && inView && pageActive && !document.hidden && frame === null) {
+      section.classList.add('is-running');
+      frame = requestAnimationFrame(tick);
+    }
   }
   function cancel() {
     if (frame !== null) cancelAnimationFrame(frame);
     frame = null;
     previousTime = 0;
+    section.classList.remove('is-running');
+    // Drop 3D transforms as well as will-change so offscreen cards need no dedicated layers.
+    [heading, intro, discover, shade, ...cards].forEach(element => element.style.removeProperty('transform'));
   }
   function applyPreference() {
     const next = !reduced.matches && !document.documentElement.classList.contains('motion-off');
@@ -104,7 +120,7 @@
     // Preserve the following content's position when the global motion switch is used.
     if (previousTop + previousHeight < 0) scrollBy(0, section.offsetHeight - previousHeight);
     measure();
-    if (enabled) paint(0);
+    if (enabled && inView && pageActive && !document.hidden) paint(0);
     schedule();
   }
   addEventListener('scroll', () => {
@@ -122,22 +138,24 @@
   new IntersectionObserver(entries => {
     inView = entries[0].isIntersecting;
     if (inView) { measure(); schedule(); } else cancel();
-  }).observe(section);
-  new ResizeObserver(() => { measure(); if (enabled) paint(0); }).observe(stage);
+  }).observe(stage);
+  new ResizeObserver(() => { measure(); if (enabled && inView && pageActive && !document.hidden) paint(0); }).observe(stage);
   new MutationObserver(applyPreference).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
   reduced.addEventListener('change', applyPreference);
   document.addEventListener('visibilitychange', () => { if (document.hidden) cancel(); else schedule(); });
-  addEventListener('pagehide', cancel);
-  addEventListener('pageshow', () => { measure(); schedule(); });
+  addEventListener('pagehide', () => { pageActive = false; cancel(); });
+  addEventListener('pageshow', () => {
+    pageActive = true;
+    const bounds = stage.getBoundingClientRect();
+    inView = bounds.bottom > 0 && bounds.top < innerHeight;
+    measure(); schedule();
+  });
   cards.forEach(card => {
     card.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') hovering = true; });
     card.addEventListener('pointerleave', () => { hovering = false; });
     card.addEventListener('focus', () => {
       focusCard = card;
-      if (!enabled) return;
-      card.style.transform = `translate(-50%, -50%) translate3d(${width * .28}px, 0, 0) scale(1.12)`;
-      card.style.opacity = '1';
-      card.style.zIndex = '20';
+      if (enabled && inView && pageActive && !document.hidden) paint(0);
     });
     card.addEventListener('blur', () => { focusCard = null; });
   });

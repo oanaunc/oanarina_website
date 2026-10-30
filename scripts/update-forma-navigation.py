@@ -11,7 +11,7 @@ for path in list(Path('.').glob('*.html'))+[Path('wle/index.html')]:
  s=re.sub(r'\s*<li><a href="ui-tool.html">UI Tool for Mac</a></li>', '',s)
  pattern=r'(<li><a href="apps.html">Algorithms</a>\s*<ul class="dropdown">)(.*?)(</ul>)'
  def menu(m):
-  items=m[2]
+  items=m[2].replace('<a href="https://aetherfold4d.com">Aetherfold 4D</a>', '<a href="https://aetherfold4d.com" target="_blank" rel="noopener">Aetherfold 4D</a>')
   if 'href="forma.html"' not in items:
    forma='\n                                            <li><a href="forma.html">Forma</a></li>'
    if '<li><a href="photo-editor.html">Photo Editor for Mac</a></li>' in items:

@@ -104,6 +104,31 @@
                 }
             }
         });
+
+        // These carousels have no reason to keep timers and transitions alive offscreen.
+        var idleCarousels = testimonials.add(albumSlides);
+        if (idleCarousels.length && window.IntersectionObserver) {
+            var carouselVisibility = new Map();
+            var carouselPageActive = true;
+            var carouselReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+            function syncIdleCarousels() {
+                var allowMotion = carouselPageActive && !document.hidden && !carouselReduced.matches &&
+                    !document.documentElement.classList.contains('motion-off');
+                idleCarousels.each(function () {
+                    $(this).trigger(allowMotion && carouselVisibility.get(this) ? 'play.owl.autoplay' : 'stop.owl.autoplay');
+                });
+            }
+            var carouselObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) { carouselVisibility.set(entry.target, entry.isIntersecting); });
+                syncIdleCarousels();
+            });
+            idleCarousels.each(function () { $(this).trigger('stop.owl.autoplay'); carouselObserver.observe(this); });
+            document.addEventListener('visibilitychange', syncIdleCarousels);
+            carouselReduced.addEventListener('change', syncIdleCarousels);
+            new MutationObserver(syncIdleCarousels).observe(document.documentElement, {attributes:true, attributeFilter:['class']});
+            window.addEventListener('pagehide', function () { carouselPageActive = false; syncIdleCarousels(); });
+            window.addEventListener('pageshow', function () { carouselPageActive = true; syncIdleCarousels(); });
+        }
     }
 
     // :: 4.0 Masonary Gallery Active Code
