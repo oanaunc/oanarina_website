@@ -1,4 +1,22 @@
-# Programming books scroll film
+# Fantasy observatory book film
+
+The current Programming Books header uses a fantasy world of algorithm books above the clouds. Wind bends and turns the book pages; loose diagram sheets lift into the air and unfold into a luminous bridge between floating islands. A teal sphere travels toward a crystal portal, while clouds and waterfalls move independently.
+
+The new source artwork was generated with the built-in image tool using the published covers as identity references, then animated through the Higgsfield plugin with Seedance 2.5. The original source image and first video frame supply a deliberate, inviting opening composition.
+
+- [Source artwork](../../../img/bg-img/algorithms-books-fantasy-source.jpg)
+- [Image prompt](fantasy-image-prompt.txt)
+- [Animation prompt](fantasy-video-prompt.txt)
+- [Current browser film](../../../media/motion/algorithms-books-fantasy.mp4)
+- [Matching poster](../../../img/bg-img/algorithms-books-fantasy-poster.jpg)
+- [Hashes and encoding](FANTASY-MEDIA-MANIFEST.json)
+
+The 14.041667-second 1080p H.264 film is approximately 9.7MB, silent, with half-second keyframes and faststart for forward/reverse scroll seeking. The 224-credit preflight estimate is not a billing receipt. The original 48.6MB HEVC download is retained in the book workspace. Motion controls, save-data behavior and the reduced-motion fallback use the existing shared engine. The heading is positioned higher to leave the books and page motion visible.
+
+The Art of Coding section uses the user's replacement screenshot showing the Python decorators tutorial, with a cache-versioned URL and descriptive alternative text. Its hash is recorded alongside the film assets.
+
+## Previous studio film
+
 
 Generated with the Higgsfield plugin using Seedance 2.5 and the four published-book reference images listed in [the manifest](MEDIA-MANIFEST.json). The 12-second sequence opens a physical book, raises amber sorting bars, animates a graph, and sends a teal sphere across miniature game platforms. This is conceptual promotional animation.
 

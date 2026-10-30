@@ -62,8 +62,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "algorithmsbook": {
-    "src": "media/motion/algorithms-books-worlds.mp4",
-    "poster": "img/bg-img/algorithms-books-worlds.jpg",
+    "src": "media/motion/algorithms-books-fantasy.mp4",
+    "poster": "img/bg-img/algorithms-books-fantasy-poster.jpg",
     "sameImage": true
   },
   "architecture": {

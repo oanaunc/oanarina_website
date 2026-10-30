@@ -1,0 +1,48 @@
+{
+  "generated": "2026-10-30",
+  "provider": "Higgsfield",
+  "model": "Seedance 2.5",
+  "estimate_credits": 224,
+  "estimate_is_billing_receipt": false,
+  "duration_seconds": 14.041667,
+  "encoding": {
+    "codec": "H.264",
+    "pixel_format": "yuv420p",
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "keyframe_interval_frames": 12,
+    "audio": false,
+    "faststart": true,
+    "crf": 23
+  },
+  "files": {
+    "original": {
+      "name": "fantasy-observatory-original.mp4",
+      "bytes": 48649883,
+      "sha256": "1ff633481e12088da212d20c13e85a400111af7607ba7d9cbac7455de72e9274"
+    },
+    "source_image": {
+      "name": "algorithms-books-fantasy-source.jpg",
+      "bytes": 761968,
+      "sha256": "d0363cbb6d938e7905af6be50985574b493c6817ab178185ad7999fc2e08c7d9"
+    },
+    "web": {
+      "name": "algorithms-books-fantasy.mp4",
+      "bytes": 9681556,
+      "sha256": "a8a7f431cd8d72781c97faff17438f67951e701647f36f28dc261d03c188deb7"
+    },
+    "poster": {
+      "name": "algorithms-books-fantasy-poster.jpg",
+      "bytes": 386235,
+      "sha256": "ebdc5f73e843ad316b3f6de0c5153ce8e6ed639524818296d2a412713665e463"
+    },
+    "user_blog_preview": {
+      "name": "art-of-coding-blog-preview.jpg",
+      "bytes": 254311,
+      "sha256": "0b34913a9785fdaa75084fc1872fe70683c49945cf444fc18c0d51d8d2d11dbd"
+    }
+  }
+}
