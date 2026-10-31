@@ -55,7 +55,7 @@
         const option = document.createElement('option'); option.textContent = value; options.append(option);
       }
       category.append(options);
-      section.querySelector('#feature-stats').textContent = ['implemented', 'partial', 'planned']
+      section.querySelector('#feature-stats').textContent = ['implemented', 'partial', 'planned', 'retired']
         .map(value => data.filter(feature => feature.status === value).length.toLocaleString() + ' ' + value).join(' · ');
       render();
     }).catch(() => {

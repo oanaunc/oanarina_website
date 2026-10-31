@@ -20,7 +20,7 @@ Forma is an offline Mac app. This release adds:
 
 Every area has documented limits. Read the [preview contents](PREVIEW-CONTENTS-dev13.md), [validation record](VALIDATION-v0.2-offline-dev13.md) and [preview guide](../../ui-tool-guide.html#dev13-guide). Behavior changes: installed variable collections are read-only until detached, and a saved auto layout with a rotated or scaled child reflows the next time its page is edited. Files using the newest features are refused by older builds; legacy files open unchanged.
 
-Multiplayer, accounts, hosted publishing and AI generation are not included. Full Figma parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
+Multiplayer, accounts, hosted publishing and AI generation are not included. Those 183 online-only requirements are now marked retired in the register, leaving 17 planned. Full Figma parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
 
 ## 0.2.0-dev.12 — archived Mac preview
 
