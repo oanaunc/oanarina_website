@@ -1,54 +1,48 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-31",
-  "version": "0.2.0-dev.15",
+  "asOf": "2026-11-01",
+  "version": "1.0.0",
   "product": "Forma",
-  "nativeBundleVersion": "0.2.0",
-  "nativeBuild": 16,
-  "rendererSourceGitHash": "bcb3a239539e31a99bd05f988e2e10520fe496a7",
-  "releaseSourceGitHash": "bcb3a239539e31a99bd05f988e2e10520fe496a7",
+  "nativeBundleVersion": "1.0.0",
+  "nativeBuild": 17,
+  "rendererSourceGitHash": "e73ba33a97685a65def8fc4958b7768c4355f4fe",
+  "releaseSourceGitHash": "e73ba33a97685a65def8fc4958b7768c4355f4fe",
   "download": {
-    "file": "Forma-0.2.0-dev.15.dmg",
-    "bytes": 38784279,
-    "sha256": "1c1391ec11ef1e3147f4d58c26e025c16eb6d8bf7327ef28b1e193b8b4d03ad2"
+    "file": "Forma-1.0.0.dmg",
+    "bytes": 39437723,
+    "sha256": "ac38d7bfa50cf1d1a1dc3ffc1a73a20ca60e81b25911a5e4d40ea0272ae57472"
   },
   "acceptance": {
-    "appNotarization": "Accepted",
-    "dmgNotarization": "Accepted",
-    "appStapled": true,
-    "dmgStapled": true,
-    "appGatekeeper": "accepted; Notarized Developer ID",
-    "dmgGatekeeper": "accepted; Notarized Developer ID",
-    "physicalIntelRuntimeValidated": false,
-    "readOnlyDmgBundleMatchesSignedArchiveFiles": 378,
     "signedAppFromReadOnlyDmgSmoke": true,
     "signedAppFromReadOnlyDmgLifecycleChecks": 37,
-    "signedAppFromReadOnlyDmgAcceptanceChecks": 92
+    "signedAppFromReadOnlyDmgAcceptanceChecks": 112,
+    "signedAppFromReadOnlyDmgAcceptanceGroups": 25,
+    "acceptanceGroupNotCompleted": "zoom: injected wheel events did not arrive on the final runs; it passed on the same zoom code earlier",
+    "readOnlyDmgBundleMatchesSignedArchiveFiles": 385
   },
   "validation": {
-    "coreTests": 3850,
-    "coreFiles": 324,
+    "coreTests": 4003,
+    "coreFiles": 337,
     "completeBrowserRun": {
-      "passed": 2514,
-      "failed": 0,
-      "skipped": 1,
-      "note": "Final source before the version bump."
+      "passed": 2617,
+      "failed": 2,
+      "skipped": 2,
+      "note": "One spec was corrected afterwards; the other passes alone."
     },
-    "mcpTests": 128,
+    "mcpTests": 133,
     "nativeLifecycleChecks": 37,
     "nativeClipboardChecks": 38,
-    "nativeSyntheticFigChecks": 13,
-    "nativeIntegrationChecks": 85,
-    "nativeAcceptanceChecks": 92,
+    "nativeSyntheticImportChecks": 13,
+    "nativeIntegrationChecks": 86,
+    "nativeAcceptanceChecks": 112,
     "nativeRendererRestart": true
   },
   "featureRegister": {
-    "requirements": 2022,
-    "categories": 60,
-    "implemented": 1591,
-    "partial": 232,
-    "planned": 13,
-    "retired": 186
+    "requirements": 1808,
+    "categories": 57,
+    "implemented": 1624,
+    "partial": 179,
+    "planned": 5
   },
-  "documentationSourceGitHash": "bcb3a239539e31a99bd05f988e2e10520fe496a7"
+  "documentationSourceGitHash": "e73ba33a97685a65def8fc4958b7768c4355f4fe"
 }

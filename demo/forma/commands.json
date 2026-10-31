@@ -123,7 +123,7 @@
     "vector-outline-stroke",
     "Outline vector stroke…",
     "Vector",
-    ""
+    "⇧⌘O"
   ],
   [
     "slice-manager",
@@ -147,13 +147,13 @@
     "selection-box",
     "Select layers in box…",
     "Edit",
-    "⌥⌘B"
+    "⌥⌘X"
   ],
   [
     "document-outline",
     "Document outline…",
     "View",
-    "⌥⌘L"
+    "⌥⌘O"
   ],
   [
     "keyboard-insert",
@@ -270,6 +270,12 @@
     "H"
   ],
   [
+    "tool-zoom",
+    "Zoom tool",
+    "Tools",
+    "Z"
+  ],
+  [
     "tool-scale",
     "Scale tool",
     "Tools",
@@ -372,8 +378,8 @@
     ""
   ],
   [
-    "figma",
-    "Figma import / export",
+    "interchange",
+    "Import and export",
     "File",
     ""
   ],
@@ -627,7 +633,7 @@
     "detach",
     "Detach instance",
     "Object",
-    ""
+    "⌥⌘B"
   ],
   [
     "sync",
@@ -855,7 +861,7 @@
     "outlines",
     "Show outlines",
     "View",
-    "⇧O"
+    "⌘Y"
   ],
   [
     "toggle-ui",
@@ -957,25 +963,25 @@
     "text-left",
     "Align text left",
     "Text",
-    ""
+    "⌥⌘L"
   ],
   [
     "text-center",
     "Align text center",
     "Text",
-    ""
+    "⌥⌘T"
   ],
   [
     "text-right",
     "Align text right",
     "Text",
-    ""
+    "⌥⌘R"
   ],
   [
     "text-justify",
     "Justify text",
     "Text",
-    ""
+    "⌥⌘J"
   ],
   [
     "text-uppercase",
@@ -999,13 +1005,13 @@
     "text-size-up",
     "Increase font size",
     "Text",
-    ""
+    "⇧⌘>"
   ],
   [
     "text-size-down",
     "Decrease font size",
     "Text",
-    ""
+    "⇧⌘<"
   ],
   [
     "text-weight-up",
@@ -1065,7 +1071,7 @@
     "flatten",
     "Flatten selection",
     "Vector",
-    "⌥⇧F"
+    "⌘E"
   ],
   [
     "edit-vector",
@@ -1194,6 +1200,30 @@
     "⌘["
   ],
   [
+    "control-button",
+    "Insert interactive button",
+    "Prototype",
+    ""
+  ],
+  [
+    "control-toggle",
+    "Insert interactive toggle",
+    "Prototype",
+    ""
+  ],
+  [
+    "control-checkbox",
+    "Insert interactive checkbox",
+    "Prototype",
+    ""
+  ],
+  [
+    "control-radio",
+    "Insert interactive radio",
+    "Prototype",
+    ""
+  ],
+  [
     "present",
     "Present prototype",
     "Prototype",
@@ -1239,7 +1269,7 @@
     "layout-guides",
     "Show layout guides",
     "View",
-    "⇧G"
+    "⌃G"
   ],
   [
     "inspect",

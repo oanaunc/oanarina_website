@@ -1,28 +1,24 @@
-# Forma preview change notes
+# Forma change notes
 
-## 0.2.0-dev.15 — published preview
+## 1.0.0
 
-The dev.15 Mac package is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 0.2.0-dev.15](Forma-0.2.0-dev.15.dmg) (38,784,279 bytes; 38.8 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later. Intel runtime validation remains pending.
+Forma 1.0.0 is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 1.0.0](Forma-1.0.0.dmg) (39,437,723 bytes; 39.4 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later. Intel runtime validation remains pending.
 
-SHA-256: `1c1391ec11ef1e3147f4d58c26e025c16eb6d8bf7327ef28b1e193b8b4d03ad2`.
+SHA-256: `ac38d7bfa50cf1d1a1dc3ffc1a73a20ca60e81b25911a5e4d40ea0272ae57472`.
 
-**Update from dev.14 or earlier.** A redone edit could be lost if the app reloaded or quit within about a second of Redo, longer on a large file. This release fixes it.
+**New in version 1**
 
-This release also comes from building real screens in Forma and fixing what got in the way:
+- A rebuilt right panel with Position, Layout, Appearance, Typography, Fill, Stroke, Effects and Export.
+- Blue selection, frame labels, default shortcuts, the toolbar and the left panel follow the conventions designers already know.
+- A click reaches the object on a frame, and hovering a row in Layers outlines it on the canvas.
+- Pressing F or choosing the Frame tool lists sizes for phones, tablets, desktops, presentations, watches, paper and social media.
+- Zoom and pan stay smooth, and a mouse wheel moves a clear step.
+- Text sits properly in its line height, double-click puts the caret where you click, and mixed styles stay visible while editing.
+- Option-drag copies, and dragging moves layers into and out of frames.
+- Quick Look previews and Spotlight search for .oui files.
+- Deeper import, drawing, typography, design systems, plugins, prototypes, slides and sites.
+- Fixes a redone edit being lost if the app reloaded or quit right after Redo.
 
-- A click now reaches objects on a page-level frame, as on an artboard. The frame's empty area and name still select it.
-- Option-drag copies layers, and dragging moves layers into and out of frames, with one Undo.
-- X and Y read relative to the parent frame. Undo keeps your selection. Copy and paste properties and alignment keys are in.
-- Text types where it will land, and new text is legible on the dark canvas.
-- Shift-A reads direction and gap from what you drew, with a nine-point align grid.
-- The inspector is about half as tall, with the color picker folded to one row. The Mac menus use the same tidy order as the in-app menus.
+Limits are listed in the [validation record](VALIDATION-v1.0.md). Importing .fig and Sketch files is tested on self-authored files only, so some content may arrive reduced or as an image, and the import report says what happened. Binary .fig export is not available. A saved file with a tile offset paints differently, because offsets now shift the whole repeat.
 
-And deeper work underneath:
-
-- SVG, Sketch, PDF and .fig import keep much more live structure. PDF pages open as editable shapes, images and text.
-- Vector networks gain faces and holes, and strokes run on curves and closed contours.
-- Plugins and code layers run in a worker, so a runaway script can be stopped instead of freezing Forma. A guest canvas cannot read itself synchronously or draw an image element.
-
-Every area has limits. Read the [validation record](VALIDATION-v0.2-dev15.md). `.fig` and Sketch import are tested on self-authored fixtures only, not on files from those apps. Behavior changes: a canvas click now selects an object on a page-level frame instead of the frame, and nested frame labels are off by default, with a toggle in View.
-
-Multiplayer, accounts, hosted publishing and AI generation are not included. Full parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
+Multiplayer, accounts, hosted publishing and AI generation are not included.
