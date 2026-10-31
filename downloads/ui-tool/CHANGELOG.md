@@ -1,6 +1,34 @@
 # Forma preview change notes
 
-## 0.2.0-dev.13 — published preview
+## 0.2.0-dev.14 — published preview
+
+The dev.14 Mac package is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 0.2.0-dev.14](Forma-0.2.0-dev.14.dmg) (37,905,913 bytes; 37.9 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later. Intel runtime validation remains pending.
+
+SHA-256: `9ac5b38374fd58c196337c45ffd477323b9a0970a3bc6de7c2a6c8dfce181ccb`.
+
+**Update from dev.13 or earlier.** Running Forma inside its real Mac shell found defects that browser tests could not show, and all are fixed here:
+
+- Every file picker in the Mac app silently did nothing, including images, PDF, Sketch, fonts, plugins, widgets, audio and brand or slide assets.
+- PowerPoint, Markdown, palette, CSS, HTML, Swift, Kotlin and TSX exports failed as unsupported.
+- Full screen in Slides and prototypes stayed in the window.
+- Restarting from safe mode lost the open file.
+
+This release also adds:
+
+- MP4 and WebM export frame by frame with sound, with shaders animating in preview and export.
+- Comments on running prototypes, canvas annotation and measurement, and managed annotation categories.
+- Group resizing that gives layers real sizes, automatic section and frame fit, and an action that turns a scale into real values.
+- Conversion between sRGB and Display P3 with appearance preserved.
+- SwiftUI, UIKit, Compose and XML output, layout-aware shortcuts and interface scale to 150%.
+- Shape morphing in Smart animate, nested slots, nested background blur on frames with one solid fill, and shaders that sample layer pixels.
+- Fuller vector PDF with embedded fonts and images for simple text and image fills.
+- Finder drops, system clipboard text, images and SVG, and installed font faces.
+
+Every area has limits. Read the [validation record](VALIDATION-v0.2-dev14.md). Behavior changes: dragging a group handle now resizes its layers, and rotated Fill children change the next time their page is edited. Files using the newest features are refused by older builds; legacy files open unchanged.
+
+Multiplayer, accounts, hosted publishing and AI generation are not included. Full Figma parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
+
+## 0.2.0-dev.13 — archived Mac preview
 
 The dev.13 Mac package is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 0.2.0-dev.13](Forma-0.2.0-dev.13.dmg) (37,031,664 bytes; 37.0 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later. Intel runtime validation remains pending.
 
@@ -46,4 +74,4 @@ The [dev.11 Mac archive](Forma-0.2.0-dev.11.dmg) remains an accepted Developer I
 
 This release added bounded camera Back/Forward history, Find selected object including its sampled motion position, independent top-level frame/section name preferences, searchable frame presets, orientation swap, direct-child selection and guarded frame-fit workflows. Substantial parity work remains.
 
-The website browser demo is a fixed dev.13 snapshot with its own local storage/database names. Existing dev.5 recordings retain their original labels. This document does not announce a silent updater or replace older installers.
+The website browser demo is a fixed dev.14 snapshot with its own local storage/database names. Existing dev.5 recordings retain their original labels. This document does not announce a silent updater or replace older installers.

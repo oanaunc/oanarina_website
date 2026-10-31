@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-31",
-  "version": "0.2.0-dev.13",
+  "version": "0.2.0-dev.14",
   "product": "Forma",
   "nativeBundleVersion": "0.2.0",
-  "nativeBuild": 14,
-  "rendererSourceGitHash": "1fa5e3949ea8324b738967e090acd7cba53b5229",
-  "releaseSourceGitHash": "1fa5e3949ea8324b738967e090acd7cba53b5229",
+  "nativeBuild": 15,
+  "rendererSourceGitHash": "51d4a1195bfbc2fe2791a2d7ad00a64bee9a6fe5",
+  "releaseSourceGitHash": "51d4a1195bfbc2fe2791a2d7ad00a64bee9a6fe5",
   "download": {
-    "file": "Forma-0.2.0-dev.13.dmg",
-    "bytes": 37031664,
-    "sha256": "fc7f237532397d79f4dbde10d4d36dc6bf62f6e858f208bd3a50b9c19cdd9588"
+    "file": "Forma-0.2.0-dev.14.dmg",
+    "bytes": 37905913,
+    "sha256": "9ac5b38374fd58c196337c45ffd477323b9a0970a3bc6de7c2a6c8dfce181ccb"
   },
   "acceptance": {
     "appNotarization": "Accepted",
@@ -22,30 +22,34 @@
     "physicalIntelRuntimeValidated": false,
     "readOnlyDmgBundleMatchesSignedArchiveFiles": 374,
     "signedAppFromReadOnlyDmgSmoke": true,
-    "signedAppFromReadOnlyDmgLifecycleChecks": 37
+    "signedAppFromReadOnlyDmgLifecycleChecks": 37,
+    "signedAppFromReadOnlyDmgSmokeNote": "One run failed without captured output during a moment of system strain; three reruns passed.",
+    "signedAppFromReadOnlyDmgAcceptanceChecks": 85
   },
   "validation": {
-    "coreTests": 3383,
-    "coreFiles": 291,
+    "coreTests": 3526,
+    "coreFiles": 301,
     "completeBrowserRun": {
-      "passed": 2328,
-      "failed": 5,
+      "passed": 2404,
+      "failed": 2,
       "skipped": 1,
-      "note": "Three pass alone at low load. Two were test defects, corrected; the four affected spec files then pass 40 of 40. No complete rerun after those test-only fixes."
+      "note": "Both pass alone at low load. A later WebM writer fix was covered by core tests, animation-video and native acceptance, without a complete rerun."
     },
     "mcpTests": 123,
     "nativeLifecycleChecks": 37,
-    "nativeClipboardChecks": 31,
+    "nativeClipboardChecks": 38,
     "nativeSyntheticFigChecks": 13,
     "nativeIntegrationChecks": 85,
+    "nativeAcceptanceChecks": 85,
     "nativeRendererRestart": true
   },
   "featureRegister": {
     "requirements": 2022,
     "categories": 60,
-    "implemented": 1490,
-    "partial": 332,
-    "planned": 200
+    "implemented": 1538,
+    "partial": 287,
+    "planned": 13,
+    "retired": 184
   },
-  "documentationSourceGitHash": "d1b0299a868794e28bd0396b0cfddf11bf5c5d6a"
+  "documentationSourceGitHash": "51d4a1195bfbc2fe2791a2d7ad00a64bee9a6fe5"
 }
