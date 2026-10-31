@@ -1,6 +1,28 @@
 # Forma preview change notes
 
-## 0.2.0-dev.12 — published preview
+## 0.2.0-dev.13 — published preview
+
+The dev.13 Mac package is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 0.2.0-dev.13](Forma-0.2.0-dev.13.dmg) (37,031,664 bytes; 37.0 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later. Intel runtime validation remains pending.
+
+SHA-256: `fc7f237532397d79f4dbde10d4d36dc6bf62f6e858f208bd3a50b9c19cdd9588`.
+
+Forma is an offline Mac app. This release adds:
+
+- Components: nested instance overrides at any depth, exposed nested properties, swap properties through exposed chains, multi-instance editing and in-place frame and group conversion.
+- Libraries and tokens: published variables, linked read-only variables with update review, variable groups, device-wide usage counts and file-level library metadata.
+- Drawing: stretch brushes, illustration menus, straight knife, area eraser on filled shapes, curve-aware Shape Builder, corner rounding on curves, square offset joins, width points and taper presets.
+- Typography: keyboard lists with Roman and composite numbering, real font table data and variable axes for TTF and OTF, 1,903 emoji with colon completion, and text around closed shapes.
+- Layout and prototypes: automatic group bounds, nested baselines, grid row and column insertion, drag reorder in auto layout, nested scroll regions, generic device shells, Smart animate improvements and form control simulation.
+- New workspaces: Sites with static export, brand asset templates, shader paints, Display P3 documents, runnable code layers and sandboxed widgets.
+- Files and delivery: local branches with three-way merge, PowerPoint interchange, a standalone password-protected prototype player, vector PDF for solid shapes, an export queue, palette exchange and code export.
+- Reliability and Mac: crash journal, persisted Undo, corrupt-file recovery, safe mode, renderer restart, multi-window conflict detection, native tabs, print, share and document versions.
+- Resources and care: UI kits, illustrations, guides and tutorials, design health audits, a Privacy dashboard, a Romanian interface and an accessibility sweep.
+
+Every area has documented limits. Read the [preview contents](PREVIEW-CONTENTS-dev13.md), [validation record](VALIDATION-v0.2-offline-dev13.md) and [preview guide](../../ui-tool-guide.html#dev13-guide). Behavior changes: installed variable collections are read-only until detached, and a saved auto layout with a rotated or scaled child reflows the next time its page is edited. Files using the newest features are refused by older builds; legacy files open unchanged.
+
+Multiplayer, accounts, hosted publishing and AI generation are not included. Full Figma parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
+
+## 0.2.0-dev.12 — archived Mac preview
 
 The dev.12 Mac package is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 0.2.0-dev.12](Forma-0.2.0-dev.12.dmg) (32,440,052 bytes; 32.4 MB), or check [SHA-256](SHA256SUMS.txt). macOS 13+; universal Apple silicon and Intel build. Physical Intel runtime validation remains pending. Native bundle version: 0.2.0, build 13.
 
@@ -24,4 +46,4 @@ The [dev.11 Mac archive](Forma-0.2.0-dev.11.dmg) remains an accepted Developer I
 
 This release added bounded camera Back/Forward history, Find selected object including its sampled motion position, independent top-level frame/section name preferences, searchable frame presets, orientation swap, direct-child selection and guarded frame-fit workflows. Substantial parity work remains.
 
-The website browser demo is a fixed dev.12 snapshot with its own local storage/database names. Existing dev.5 recordings retain their original labels. This document does not announce a silent updater or replace older installers.
+The website browser demo is a fixed dev.13 snapshot with its own local storage/database names. Existing dev.5 recordings retain their original labels. This document does not announce a silent updater or replace older installers.

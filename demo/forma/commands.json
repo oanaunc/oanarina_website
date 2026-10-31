@@ -1,5 +1,179 @@
 [
   [
+    "branches",
+    "Branches…",
+    "File",
+    ""
+  ],
+  [
+    "storage",
+    "Storage and recovery…",
+    "File",
+    ""
+  ],
+  [
+    "safe-mode",
+    "Restart in safe mode",
+    "Help",
+    ""
+  ],
+  [
+    "design-health",
+    "Design health report…",
+    "Resources",
+    ""
+  ],
+  [
+    "palette-exchange",
+    "Import or export color palette…",
+    "Resources",
+    ""
+  ],
+  [
+    "batch-transforms",
+    "Batch transforms…",
+    "Object",
+    ""
+  ],
+  [
+    "code-export",
+    "Design-to-code export…",
+    "File",
+    ""
+  ],
+  [
+    "export-queue",
+    "Export queue…",
+    "File",
+    ""
+  ],
+  [
+    "workspace-layouts",
+    "Workspace layouts…",
+    "View",
+    ""
+  ],
+  [
+    "device-preview",
+    "Side-by-side device preview…",
+    "View",
+    ""
+  ],
+  [
+    "command-usage",
+    "Command usage…",
+    "Help",
+    ""
+  ],
+  [
+    "bug-report",
+    "Create bug report bundle…",
+    "Help",
+    ""
+  ],
+  [
+    "privacy-dashboard",
+    "Privacy dashboard…",
+    "Help",
+    ""
+  ],
+  [
+    "icons",
+    "Free icon library…",
+    "Resources",
+    ""
+  ],
+  [
+    "resource-library",
+    "UI kits, illustrations and tutorials…",
+    "Resources",
+    ""
+  ],
+  [
+    "share-prototype",
+    "Export prototype file…",
+    "File",
+    ""
+  ],
+  [
+    "templates",
+    "Templates and personal starter kits…",
+    "Resources",
+    ""
+  ],
+  [
+    "linear-repeat",
+    "Linear repeat…",
+    "Object",
+    ""
+  ],
+  [
+    "radial-repeat",
+    "Radial repeat…",
+    "Object",
+    ""
+  ],
+  [
+    "vector-separate",
+    "Separate vector regions…",
+    "Vector",
+    ""
+  ],
+  [
+    "vector-outline-stroke",
+    "Outline vector stroke…",
+    "Vector",
+    ""
+  ],
+  [
+    "slice-manager",
+    "Slices and exports…",
+    "File",
+    ""
+  ],
+  [
+    "toggle-slices",
+    "Show / hide slices",
+    "View",
+    ""
+  ],
+  [
+    "vector-offset",
+    "Offset vector path…",
+    "Vector",
+    ""
+  ],
+  [
+    "selection-box",
+    "Select layers in box…",
+    "Edit",
+    "⌥⌘B"
+  ],
+  [
+    "document-outline",
+    "Document outline…",
+    "View",
+    "⌥⌘L"
+  ],
+  [
+    "keyboard-insert",
+    "Insert layer with keyboard…",
+    "Object",
+    "⌥⌘N"
+  ],
+  [
+    "repeat-shape-tool",
+    "Repeat last shape tool",
+    "Tools",
+    "⌥R"
+  ],
+  [
+    "local-widgets",
+    "Local widgets…",
+    "Object",
+    ""
+  ],
+  [
     "tool-move",
     "Move tool",
     "Tools",
@@ -72,10 +246,22 @@
     "⇧P"
   ],
   [
+    "tool-brush",
+    "Brush tool",
+    "Tools",
+    ""
+  ],
+  [
     "tool-text",
     "Text tool",
     "Tools",
     "T"
+  ],
+  [
+    "tool-code",
+    "Code layer tool",
+    "Tools",
+    ""
   ],
   [
     "tool-hand",
@@ -114,6 +300,18 @@
     ""
   ],
   [
+    "new-brand",
+    "New brand project",
+    "File",
+    ""
+  ],
+  [
+    "new-site",
+    "New site",
+    "File",
+    ""
+  ],
+  [
     "open",
     "Open project…",
     "File",
@@ -144,10 +342,34 @@
     ""
   ],
   [
+    "file-cover",
+    "File cover…",
+    "File",
+    ""
+  ],
+  [
     "import",
     "Place image or SVG…",
     "File",
     "⇧⌘K"
+  ],
+  [
+    "import-sketch",
+    "Import Sketch document…",
+    "File",
+    ""
+  ],
+  [
+    "import-pdf",
+    "Import PDF pages…",
+    "File",
+    ""
+  ],
+  [
+    "place-video",
+    "Place video…",
+    "File",
+    ""
   ],
   [
     "figma",
@@ -513,6 +735,12 @@
     "parent-bottom",
     "Align selection to parent bottom",
     "Arrange",
+    ""
+  ],
+  [
+    "mask-outlines",
+    "Mask outlines view",
+    "View",
     ""
   ],
   [
@@ -966,6 +1194,12 @@
     ""
   ],
   [
+    "toolbelt-draw",
+    "Draw mode",
+    "View",
+    ""
+  ],
+  [
     "layout-guides",
     "Show layout guides",
     "View",
@@ -998,6 +1232,12 @@
   [
     "styles",
     "Local design styles…",
+    "Resources",
+    ""
+  ],
+  [
+    "asset-usage",
+    "Asset usage and unused candidates…",
     "Resources",
     ""
   ],
