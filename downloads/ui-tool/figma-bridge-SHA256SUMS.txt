@@ -1,1 +1,1 @@
-ce3dccbd8949a3fdffb852132b331f1a55ae8d78d7ccbc626aec021625a07738  figma-bridge.zip
+00cce58a72393f540b0b3e18883095bd9ad70d29f45b184a267023f6c481cd4c  figma-bridge.zip
