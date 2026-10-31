@@ -1,6 +1,6 @@
 # Forma sculptural brand film
 
-This is generated artistic brand imagery for the Forma website header. It is not an app recording, an editor feature, or a Figma reference. The Design, Whiteboard and Slides walkthroughs below the header remain actual recordings of synthetic documents in the development editor.
+This is generated artistic brand imagery for the Forma website header. It is not an app recording, an editor feature, or a design tool reference. The Design, Whiteboard and Slides walkthroughs below the header remain actual recordings of synthetic documents in the development editor.
 
 - [Source artwork](source-art.png), generated with the built-in image-generation tool.
 - [Image prompt](image-prompt.txt).

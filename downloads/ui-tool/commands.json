@@ -1,13 +1,13 @@
 [
   [
     "branches",
-    "Branches…",
+    "Branches\u2026",
     "File",
     ""
   ],
   [
     "storage",
-    "Storage and recovery…",
+    "Storage and recovery\u2026",
     "File",
     ""
   ],
@@ -19,115 +19,115 @@
   ],
   [
     "design-health",
-    "Design health report…",
+    "Design health report\u2026",
     "Resources",
     ""
   ],
   [
     "palette-exchange",
-    "Import or export color palette…",
+    "Import or export color palette\u2026",
     "Resources",
     ""
   ],
   [
     "batch-transforms",
-    "Batch transforms…",
+    "Batch transforms\u2026",
     "Object",
     ""
   ],
   [
     "code-export",
-    "Design-to-code export…",
+    "Design-to-code export\u2026",
     "File",
     ""
   ],
   [
     "export-queue",
-    "Export queue…",
+    "Export queue\u2026",
     "File",
     ""
   ],
   [
     "workspace-layouts",
-    "Workspace layouts…",
+    "Workspace layouts\u2026",
     "View",
     ""
   ],
   [
     "device-preview",
-    "Side-by-side device preview…",
+    "Side-by-side device preview\u2026",
     "View",
     ""
   ],
   [
     "command-usage",
-    "Command usage…",
+    "Command usage\u2026",
     "Help",
     ""
   ],
   [
     "bug-report",
-    "Create bug report bundle…",
+    "Create bug report bundle\u2026",
     "Help",
     ""
   ],
   [
     "privacy-dashboard",
-    "Privacy dashboard…",
+    "Privacy dashboard\u2026",
     "Help",
     ""
   ],
   [
     "icons",
-    "Free icon library…",
+    "Free icon library\u2026",
     "Resources",
     ""
   ],
   [
     "resource-library",
-    "UI kits, illustrations and tutorials…",
+    "UI kits, illustrations and tutorials\u2026",
     "Resources",
     ""
   ],
   [
     "share-prototype",
-    "Export prototype file…",
+    "Export prototype file\u2026",
     "File",
     ""
   ],
   [
     "templates",
-    "Templates and personal starter kits…",
+    "Templates and personal starter kits\u2026",
     "Resources",
     ""
   ],
   [
     "linear-repeat",
-    "Linear repeat…",
+    "Linear repeat\u2026",
     "Object",
     ""
   ],
   [
     "radial-repeat",
-    "Radial repeat…",
+    "Radial repeat\u2026",
     "Object",
     ""
   ],
   [
     "vector-separate",
-    "Separate vector regions…",
+    "Separate vector regions\u2026",
     "Vector",
     ""
   ],
   [
     "vector-outline-stroke",
-    "Outline vector stroke…",
+    "Outline vector stroke\u2026",
     "Vector",
     ""
   ],
   [
     "slice-manager",
-    "Slices and exports…",
+    "Slices and exports\u2026",
     "File",
     ""
   ],
@@ -139,37 +139,37 @@
   ],
   [
     "vector-offset",
-    "Offset vector path…",
+    "Offset vector path\u2026",
     "Vector",
     ""
   ],
   [
     "selection-box",
-    "Select layers in box…",
+    "Select layers in box\u2026",
     "Edit",
-    "⌥⌘B"
+    "\u2325\u2318B"
   ],
   [
     "document-outline",
-    "Document outline…",
+    "Document outline\u2026",
     "View",
-    "⌥⌘L"
+    "\u2325\u2318L"
   ],
   [
     "keyboard-insert",
-    "Insert layer with keyboard…",
+    "Insert layer with keyboard\u2026",
     "Object",
-    "⌥⌘N"
+    "\u2325\u2318N"
   ],
   [
     "repeat-shape-tool",
     "Repeat last shape tool",
     "Tools",
-    "⌥R"
+    "\u2325R"
   ],
   [
     "local-widgets",
-    "Local widgets…",
+    "Local widgets\u2026",
     "Object",
     ""
   ],
@@ -189,7 +189,7 @@
     "tool-section",
     "Section tool",
     "Tools",
-    "⇧S"
+    "\u21e7S"
   ],
   [
     "tool-slice",
@@ -219,7 +219,7 @@
     "tool-arrow",
     "Arrow tool",
     "Tools",
-    "⇧L"
+    "\u21e7L"
   ],
   [
     "tool-polygon",
@@ -243,7 +243,7 @@
     "tool-pencil",
     "Pencil tool",
     "Tools",
-    "⇧P"
+    "\u21e7P"
   ],
   [
     "tool-brush",
@@ -285,7 +285,7 @@
     "new",
     "New design file",
     "File",
-    "⌘N"
+    "\u2318N"
   ],
   [
     "new-whiteboard",
@@ -313,75 +313,69 @@
   ],
   [
     "open",
-    "Open project…",
+    "Open project\u2026",
     "File",
-    "⌘O"
+    "\u2318O"
   ],
   [
     "save",
     "Save project",
     "File",
-    "⌘S"
+    "\u2318S"
   ],
   [
     "save-as",
-    "Save project as…",
+    "Save project as\u2026",
     "File",
-    "⇧⌘S"
+    "\u21e7\u2318S"
   ],
   [
     "rename-file",
-    "Rename file…",
+    "Rename file\u2026",
     "File",
     ""
   ],
   [
     "file-info",
-    "File information…",
+    "File information\u2026",
     "File",
     ""
   ],
   [
     "file-cover",
-    "File cover…",
+    "File cover\u2026",
     "File",
     ""
   ],
   [
     "import",
-    "Place image or SVG…",
+    "Place image or SVG\u2026",
     "File",
-    "⇧⌘K"
+    "\u21e7\u2318K"
   ],
   [
     "import-sketch",
-    "Import Sketch document…",
+    "Import Sketch document\u2026",
     "File",
     ""
   ],
   [
     "import-pdf",
-    "Import PDF pages…",
+    "Import PDF pages\u2026",
     "File",
     ""
   ],
   [
     "place-video",
-    "Place video…",
-    "File",
-    ""
-  ],
-  [
-    "figma",
-    "Figma import / export",
+    "Place video\u2026",
     "File",
     ""
   ],
   [
     "export",
-    "Export…",
+    "Export\u2026",
     "File",
-    "⇧⌘E"
+    "\u21e7\u2318E"
   ],
   [
     "history",
@@ -391,7 +385,7 @@
   ],
   [
     "snapshot",
-    "Save a named version…",
+    "Save a named version\u2026",
     "File",
     ""
   ],
@@ -403,81 +397,81 @@
   ],
   [
     "preferences",
-    "Preferences…",
+    "Preferences\u2026",
     "File",
-    "⌘,"
+    "\u2318,"
   ],
   [
     "actions",
-    "Actions…",
+    "Actions\u2026",
     "Edit",
-    "⌘K"
+    "\u2318K"
   ],
   [
     "undo",
     "Undo",
     "Edit",
-    "⌘Z"
+    "\u2318Z"
   ],
   [
     "redo",
     "Redo",
     "Edit",
-    "⇧⌘Z"
+    "\u21e7\u2318Z"
   ],
   [
     "cut",
     "Cut",
     "Edit",
-    "⌘X"
+    "\u2318X"
   ],
   [
     "copy",
     "Copy",
     "Edit",
-    "⌘C"
+    "\u2318C"
   ],
   [
     "copy-as-png",
     "Copy as PNG",
     "Edit",
-    "⇧⌘C"
+    "\u21e7\u2318C"
   ],
   [
     "copy-properties",
     "Copy properties",
     "Edit",
-    "⌥⌘C"
+    "\u2325\u2318C"
   ],
   [
     "paste-properties",
     "Paste properties",
     "Edit",
-    "⌥⌘V"
+    "\u2325\u2318V"
   ],
   [
     "paste",
     "Paste",
     "Edit",
-    "⌘V"
+    "\u2318V"
   ],
   [
     "duplicate",
     "Duplicate",
     "Edit",
-    "⌘D"
+    "\u2318D"
   ],
   [
     "delete",
     "Delete",
     "Edit",
-    "⌫"
+    "\u232b"
   ],
   [
     "select-all",
     "Select all",
     "Edit",
-    "⌘A"
+    "\u2318A"
   ],
   [
     "deselect",
@@ -487,21 +481,21 @@
   ],
   [
     "rename",
-    "Rename layer…",
+    "Rename layer\u2026",
     "Edit",
-    "⌘R"
+    "\u2318R"
   ],
   [
     "select-child",
     "Select child layers",
     "Edit",
-    "↵"
+    "\u21b5"
   ],
   [
     "select-parent",
     "Select parent layer",
     "Edit",
-    "⇧↵"
+    "\u21e7\u21b5"
   ],
   [
     "select-next-sibling",
@@ -513,7 +507,7 @@
     "select-previous-sibling",
     "Select previous sibling",
     "Edit",
-    "⇧Tab"
+    "\u21e7Tab"
   ],
   [
     "select-same-fill",
@@ -541,7 +535,7 @@
   ],
   [
     "move-to-page",
-    "Move to page…",
+    "Move to page\u2026",
     "Object",
     ""
   ],
@@ -549,7 +543,7 @@
     "mask",
     "Use as mask",
     "Object",
-    "⌃⌘M"
+    "\u2303\u2318M"
   ],
   [
     "release-mask",
@@ -579,25 +573,25 @@
     "group",
     "Group selection",
     "Object",
-    "⌘G"
+    "\u2318G"
   ],
   [
     "ungroup",
     "Ungroup selection",
     "Object",
-    "⇧⌘G"
+    "\u21e7\u2318G"
   ],
   [
     "frame-selection",
     "Frame selection",
     "Object",
-    "⌥⌘G"
+    "\u2325\u2318G"
   ],
   [
     "component",
     "Create component",
     "Object",
-    "⌥⌘K"
+    "\u2325\u2318K"
   ],
   [
     "instance",
@@ -619,7 +613,7 @@
   ],
   [
     "component-properties",
-    "Component properties…",
+    "Component properties\u2026",
     "Object",
     ""
   ],
@@ -639,79 +633,79 @@
     "auto-layout",
     "Add auto layout",
     "Object",
-    "⇧A"
+    "\u21e7A"
   ],
   [
     "front",
     "Bring to front",
     "Object",
-    "⌥⌘]"
+    "\u2325\u2318]"
   ],
   [
     "back",
     "Send to back",
     "Object",
-    "⌥⌘["
+    "\u2325\u2318["
   ],
   [
     "lock",
     "Toggle layer lock",
     "Object",
-    "⇧⌘L"
+    "\u21e7\u2318L"
   ],
   [
     "hide",
     "Toggle layer visibility",
     "Object",
-    "⇧⌘H"
+    "\u21e7\u2318H"
   ],
   [
     "left",
     "Align left",
     "Arrange",
-    "⌥A"
+    "\u2325A"
   ],
   [
     "center",
     "Align horizontal centers",
     "Arrange",
-    "⌥H"
+    "\u2325H"
   ],
   [
     "right",
     "Align right",
     "Arrange",
-    "⌥D"
+    "\u2325D"
   ],
   [
     "top",
     "Align top",
     "Arrange",
-    "⌥W"
+    "\u2325W"
   ],
   [
     "middle",
     "Align vertical centers",
     "Arrange",
-    "⌥V"
+    "\u2325V"
   ],
   [
     "bottom",
     "Align bottom",
     "Arrange",
-    "⌥S"
+    "\u2325S"
   ],
   [
     "distribute-x",
     "Distribute horizontally",
     "Arrange",
-    "⌃⌥H"
+    "\u2303\u2325H"
   ],
   [
     "distribute-y",
     "Distribute vertically",
     "Arrange",
-    "⌃⌥V"
+    "\u2303\u2325V"
   ],
   [
     "parent-left",
@@ -771,19 +765,19 @@
     "previous-viewport",
     "Previous viewport",
     "View",
-    "⌥⌘←"
+    "\u2325\u2318\u2190"
   ],
   [
     "next-viewport",
     "Next viewport",
     "View",
-    "⌥⌘→"
+    "\u2325\u2318\u2192"
   ],
   [
     "find-selection",
     "Find selected object on canvas",
     "View",
-    "⌥⌘F"
+    "\u2325\u2318F"
   ],
   [
     "frame-names",
@@ -807,37 +801,37 @@
     "zoom-in",
     "Zoom in",
     "View",
-    "⌘+"
+    "\u2318+"
   ],
   [
     "zoom-out",
     "Zoom out",
     "View",
-    "⌘−"
+    "\u2318\u2212"
   ],
   [
     "zoom-100",
     "Zoom to 100%",
     "View",
-    "⇧0"
+    "\u21e70"
   ],
   [
     "fit",
     "Zoom to fit",
     "View",
-    "⇧1"
+    "\u21e71"
   ],
   [
     "fit-selection",
     "Zoom to selection",
     "View",
-    "⇧2"
+    "\u21e72"
   ],
   [
     "grid",
     "Show pixel grid",
     "View",
-    "⌘'"
+    "\u2318'"
   ],
   [
     "snap",
@@ -849,19 +843,19 @@
     "rulers",
     "Show rulers",
     "View",
-    "⇧R"
+    "\u21e7R"
   ],
   [
     "outlines",
     "Show outlines",
     "View",
-    "⇧O"
+    "\u21e7O"
   ],
   [
     "toggle-ui",
     "Show / hide UI",
     "View",
-    "⌘\\"
+    "\u2318\\"
   ],
   [
     "theme",
@@ -895,7 +889,7 @@
   ],
   [
     "rename-page",
-    "Rename page…",
+    "Rename page\u2026",
     "Page",
     ""
   ],
@@ -907,51 +901,51 @@
   ],
   [
     "text-find",
-    "Find and replace text…",
+    "Find and replace text\u2026",
     "Text",
-    "⌘F"
+    "\u2318F"
   ],
   [
     "text-bold",
     "Bold",
     "Text",
-    "⌘B"
+    "\u2318B"
   ],
   [
     "text-italic",
     "Italic",
     "Text",
-    "⌘I"
+    "\u2318I"
   ],
   [
     "text-underline",
     "Underline",
     "Text",
-    "⌘U"
+    "\u2318U"
   ],
   [
     "text-strike",
     "Strikethrough",
     "Text",
-    "⇧⌘X"
+    "\u21e7\u2318X"
   ],
   [
     "text-link",
-    "Create link…",
+    "Create link\u2026",
     "Text",
-    "⇧⌘U"
+    "\u21e7\u2318U"
   ],
   [
     "text-bullets",
     "Bulleted list",
     "Text",
-    "⇧⌘8"
+    "\u21e7\u23188"
   ],
   [
     "text-numbered",
     "Numbered list",
     "Text",
-    "⇧⌘7"
+    "\u21e7\u23187"
   ],
   [
     "text-left",
@@ -1035,25 +1029,25 @@
     "union",
     "Union selection",
     "Vector",
-    "⌥⇧U"
+    "\u2325\u21e7U"
   ],
   [
     "subtract",
     "Subtract selection",
     "Vector",
-    "⌥⇧S"
+    "\u2325\u21e7S"
   ],
   [
     "intersect",
     "Intersect selection",
     "Vector",
-    "⌥⇧I"
+    "\u2325\u21e7I"
   ],
   [
     "exclude",
     "Exclude overlap",
     "Vector",
-    "⌥⇧X"
+    "\u2325\u21e7X"
   ],
   [
     "release-boolean",
@@ -1065,7 +1059,7 @@
     "flatten",
     "Flatten selection",
     "Vector",
-    "⌥⇧F"
+    "\u2325\u21e7F"
   ],
   [
     "edit-vector",
@@ -1089,13 +1083,13 @@
     "vector-join",
     "Join vector endpoints",
     "Vector",
-    "⌘J"
+    "\u2318J"
   ],
   [
     "vector-smooth-join",
     "Smooth join vector endpoints",
     "Vector",
-    "⇧⌘J"
+    "\u21e7\u2318J"
   ],
   [
     "vector-split",
@@ -1107,7 +1101,7 @@
     "vector-heal",
     "Delete points and heal path",
     "Vector",
-    "⇧⌫"
+    "\u21e7\u232b"
   ],
   [
     "vector-reverse",
@@ -1137,29 +1131,29 @@
     "flip-x",
     "Flip horizontal",
     "Object",
-    "⇧H"
+    "\u21e7H"
   ],
   [
     "flip-y",
     "Flip vertical",
     "Object",
-    "⇧V"
+    "\u21e7V"
   ],
   [
     "rotate-left",
-    "Rotate 90° left",
+    "Rotate 90\u00b0 left",
     "Object",
     ""
   ],
   [
     "rotate-right",
-    "Rotate 90° right",
+    "Rotate 90\u00b0 right",
     "Object",
     ""
   ],
   [
     "rotate-180",
-    "Rotate 180°",
+    "Rotate 180\u00b0",
     "Object",
     ""
   ],
@@ -1179,25 +1173,25 @@
     "tidy",
     "Tidy selection into grid",
     "Arrange",
-    "⌃⌥T"
+    "\u2303\u2325T"
   ],
   [
     "forward",
     "Bring forward",
     "Object",
-    "⌘]"
+    "\u2318]"
   ],
   [
     "backward",
     "Send backward",
     "Object",
-    "⌘["
+    "\u2318["
   ],
   [
     "present",
     "Present prototype",
     "Prototype",
-    "⌥⌘↵"
+    "\u2325\u2318\u21b5"
   ],
   [
     "prototype",
@@ -1239,13 +1233,13 @@
     "layout-guides",
     "Show layout guides",
     "View",
-    "⇧G"
+    "\u21e7G"
   ],
   [
     "inspect",
     "Inspect / Dev Mode",
     "View",
-    "⇧D"
+    "\u21e7D"
   ],
   [
     "comments",
@@ -1255,31 +1249,31 @@
   ],
   [
     "fonts",
-    "Font library · Google & installed",
+    "Font library \u00b7 Google & installed",
     "Resources",
     ""
   ],
   [
     "variables",
-    "Variables and modes…",
+    "Variables and modes\u2026",
     "Resources",
     ""
   ],
   [
     "styles",
-    "Local design styles…",
+    "Local design styles\u2026",
     "Resources",
     ""
   ],
   [
     "asset-usage",
-    "Asset usage and unused candidates…",
+    "Asset usage and unused candidates\u2026",
     "Resources",
     ""
   ],
   [
     "components",
-    "Components and variants…",
+    "Components and variants\u2026",
     "Resources",
     ""
   ],
@@ -1291,7 +1285,7 @@
   ],
   [
     "mcp",
-    "Free local MCP automation…",
+    "Free local MCP automation\u2026",
     "Resources",
     ""
   ],
@@ -1305,7 +1299,7 @@
     "shortcuts",
     "Keyboard shortcuts",
     "Help",
-    "⌃⇧?"
+    "\u2303\u21e7?"
   ],
   [
     "release-notes",

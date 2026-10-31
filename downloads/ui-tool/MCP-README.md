@@ -16,7 +16,7 @@ Page operations: create_page, rename_page, duplicate_page, reorder_page and dele
 
 Save changes in the Mac editor first. MCP writes the saved .oui file; reopen it to view edits. Live synchronization with an already open editor is not implemented. Forma native saves and MCP writes share the same exclusive project lock and check disk revisions. Other applications may ignore that lock; avoid simultaneous edits in them. A crash can leave <project>.oanarina-mcp.lock; verify no process is using the project before manually removing it.
 
-SVG export supports vector/text pages, refuses images/raster paints, and uses approximate headless font metrics. Review typography in the Mac app. Installed font files are not copied. Direct binary .fig access and Figma cloud control are not included. No user files, credentials or font binaries are bundled.
+SVG export supports vector/text pages, refuses images/raster paints, and uses approximate headless font metrics. Review typography in the Mac app. Installed font files are not copied. Direct binary .fig access and design tool cloud control are not included. No user files, credentials or font binaries are bundled.
 
 Public startup and operation guide: https://www.oanarinaldi.com/ui-tool-guide.html#mcp-development
 

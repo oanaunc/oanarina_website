@@ -34,7 +34,7 @@ Native acceptance now includes a design flow driven by real mouse and key events
 
 - Nobody has used this build by hand. The real-event flow runs inside the app, but access to drive the app from outside was declined, so no person or outside tool has watched it on screen.
 - `.fig` and Sketch import are tested on self-authored fixtures only, with field names unverified against files from those apps.
-- VoiceOver in-page, Intel hardware, physical trackpads, older macOS, real PowerPoint and Figma round trips remain open. The older macOS path above is forced by a test on macOS 27, not run on an older system.
+- VoiceOver in-page, Intel hardware, physical trackpads, older macOS, real PowerPoint and design tool round trips remain open. The older macOS path above is forced by a test on macOS 27, not run on an older system.
 - Found and not fixed: a single auto-sized text line is only as tall as its font size, double-click puts the caret at the end of text, and a 2x PNG is not named `@2x`. See the design pass notes.
 
 ## Installer

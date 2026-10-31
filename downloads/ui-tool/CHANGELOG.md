@@ -25,4 +25,4 @@ And deeper work underneath:
 
 Every area has limits. Read the [validation record](VALIDATION-v0.2-dev15.md). `.fig` and Sketch import are tested on self-authored fixtures only, not on files from those apps. Behavior changes: a canvas click now selects an object on a page-level frame instead of the frame, and nested frame labels are off by default, with a toggle in View.
 
-Multiplayer, accounts, hosted publishing and AI generation are not included. Full Figma parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
+Multiplayer, accounts, hosted publishing and AI generation are not included. Full parity, exact reference verification, binary .fig export and real desktop round trips remain unfinished.
