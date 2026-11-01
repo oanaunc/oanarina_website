@@ -23,6 +23,7 @@ try {
             store: ['saatchi', 'redbubble', 'deviantart'].find(store => icon.classList.contains('shop-store-link--' + store)),
             href: icon.getAttribute('href'),
             disabled: icon.getAttribute('aria-disabled') === 'true',
+            background: getComputedStyle(icon).backgroundColor,
             helper: icon.dataset.tooltip,
             label: icon.getAttribute('aria-label'),
             target: icon.getAttribute('target'),
@@ -36,8 +37,12 @@ try {
         assert.deepEqual(card.icons.map(icon => icon.store), ['saatchi', 'redbubble', 'deviantart']);
         for (const icon of card.icons) {
             assert.ok(icon.helper && icon.label);
-            if (icon.disabled) assert.equal(icon.href, null);
+            if (icon.disabled) {
+                assert.equal(icon.href, null);
+                assert.equal(icon.background, 'rgb(170, 170, 170)');
+            }
             else {
+                assert.equal(icon.background, 'rgb(51, 51, 51)');
                 assert.equal(icon.target, '_blank');
                 assert.ok(icon.rel.includes('noopener'));
                 assert.equal(new URL(icon.href).hostname, { saatchi: 'www.saatchiart.com', redbubble: 'www.redbubble.com', deviantart: 'www.deviantart.com' }[icon.store]);
@@ -63,9 +68,12 @@ try {
     await page.waitForTimeout(180);
     assert.equal(await icon.evaluate(el => getComputedStyle(el, '::after').visibility), 'visible');
     assert.equal(await icon.evaluate(el => getComputedStyle(el).borderRadius), '50%');
+    assert.equal(await icon.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(228, 19, 33)');
     await page.screenshot({ path: '/tmp/shop-icons-desktop.png' });
     await page.mouse.move(0, 0);
-    await first.locator('.shop-store-link--deviantart').focus();
+    await icon.focus();
+    await page.keyboard.press('Tab');
+    assert.equal(await first.locator('.shop-store-link--deviantart').evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(5, 168, 68)');
     assert.equal(await first.locator('.shop-store-link--deviantart').evaluate(el => getComputedStyle(el, '::after').visibility), 'visible');
 
     for (const width of [390, 576, 768, 992]) {

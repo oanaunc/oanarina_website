@@ -29,6 +29,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    background: #333;
     color: #fff;
     text-decoration: none;
     line-height: 1;
@@ -36,9 +37,12 @@
     transition: box-shadow .2s ease, background-color .2s ease;
 }
 
-.shop-store-link--saatchi { background: #333; }
-.shop-store-link--redbubble { background: #e41321; }
-.shop-store-link--deviantart { background: #05a844; }
+.single-album .album-info a.shop-store-link--saatchi:hover,
+.single-album .album-info a.shop-store-link--saatchi:focus-visible { background: #333; }
+.single-album .album-info a.shop-store-link--redbubble:hover,
+.single-album .album-info a.shop-store-link--redbubble:focus-visible { background: #e41321; }
+.single-album .album-info a.shop-store-link--deviantart:hover,
+.single-album .album-info a.shop-store-link--deviantart:focus-visible { background: #05a844; }
 
 .shop-store-link svg {
     width: 19px;

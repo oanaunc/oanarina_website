@@ -1,0 +1,75 @@
+{
+  "generatedWith": "Built-in image_gen",
+  "checkedOn": "2026-11-01",
+  "layoutReference": "algorithmsbook.html",
+  "books": [
+    {
+      "title": "Fonts for Typography",
+      "subtitle": "History, Type Specimens and Practical Design for Pages, Screens and Everyday Communication",
+      "paperback": "https://www.amazon.com/dp/B0HQ1LPB2P",
+      "kindle": "https://www.amazon.com/dp/B0HQ1DDKWG",
+      "publicationStatus": "Both editions verified Live in the KDP Bookshelf on 2026-11-01.",
+      "pages": 300,
+      "metadataSource": "KDP Bookshelf; Desktop/45. fonts for typography/README.txt",
+      "image": "img/bg-img/blog-fonts-typography-studio.jpg",
+      "thumbnail": "images/artbooks/42.jpg",
+      "references": [
+        "Desktop/45. fonts for typography/previews/cover-front.jpg",
+        "Desktop/45. fonts for typography/previews/cover-wrap.png",
+        "Desktop/45. fonts for typography/previews/page-034.png",
+        "Desktop/45. fonts for typography/previews/page-035.png",
+        "Desktop/45. fonts for typography/previews/page-212.png",
+        "Desktop/45. fonts for typography/previews/page-213.png"
+      ],
+      "prompt": "Use case: product-mockup. Create one photorealistic editorial book photograph for an author's website, landscape aspect ratio approximately 1.9:1. The four supplied images are exact product references: image 1 is the front cover, image 2 is the back/spine/front wrap, images 3 and 4 are actual interior spreads. Depict FOUR copies of the same square 8.5 × 8.5-inch, 300-page matte paperback \"Fonts for Typography\" by \"dr. Oana Rinaldi\": one upright front-facing copy, one upright back-facing copy, and two open copies lying naturally at different angles in the foreground, each with a different supplied interior spread. Precisely preserve the navy front cover, white serif \"Fonts for\" above bold white \"TYPOGRAPHY\", cream sculptural lowercase a cover artwork, brick-red spine, cream back with \"Look closely. Set thoughtfully.\", and real cream/navy/rust page designs. No invented cover, no substituted artwork. Environment: a sophisticated contemporary typography studio, pale limestone tabletop, warm oak shelving softly out of focus, small loose metal letterpress sorts and a fine mechanical pencil as restrained props, daylight from a tall window. Natural perspective, realistic printed paper and binding, calm warm lighting, clear complete view of all four books, balanced arrangement, little wasted negative space. The books are the main subject, no hands or people, no extra promotional text, no graphic collage or panel divisions. Main cover title and author must remain legible and exact. This is a new staged product scene, use references as product truth.",
+      "correctionPrompt": "Precise product photograph correction. The FIRST reference is the earlier generated typography book scene and is the edit target. It has an ERROR: the foreground became a confusing three-page merged object. Keep the beautiful limestone typography studio, daylight, the upright cream back cover and navy front cover, accurate lettering and sculptural lowercase a artwork. COMPLETELY REBUILD THE FOREGROUND to show EXACTLY TWO SEPARATE OPEN BOOKS. Each open book must have EXACTLY TWO visible pages (one left page and one right page) joined by its own clearly visible central binding gutter. There must be FOUR visible interior pages in total. Leave a clearly visible 8–12 cm strip of bare tabletop between the two open books. They must NOT touch, overlap, share a page, share a gutter, or blend together. Both complete open books must fit fully within the image. Reduce their scale enough to show their outer edges and separate paper blocks. Place the left open book angled slightly clockwise and the right open book angled slightly counterclockwise, with their independent spines obvious. The next references are exact product truth: image 2 is the real front cover, image 3 is the real wrap, image 4 is the TWO-PAGE spread for the LEFT open book (Texture on its left, Helvetica and the public voice on its right), and image 5 is the TWO-PAGE spread for the RIGHT open book (Discover / Descoperă on its left, A three-panel brochure on its right). Use the complete two-page contents of each reference in its corresponding physical book. These are square 8.5 × 8.5-inch, 300-page matte paperbacks. There should be exactly FOUR physical copies overall: two upright closed books behind and two fully separate open books in front. Landscape aspect ratio about 1.9:1. No three-page books, no accordion books, no panoramic single giant book, no fused bindings, no extra pages. This correction is the essential requirement.",
+      "visualCheck": "Revised foreground: two distinct open books, each with two visible pages and its own gutter."
+    },
+    {
+      "title": "Legends Unveiled: A Gallery of Fantasy Figures",
+      "paperback": "https://www.amazon.com/dp/B0FBHQ5QP1",
+      "kindle": "https://www.amazon.com/dp/B0FBHS5PX5",
+      "publicationStatus": "Both editions verified Live in the KDP Bookshelf on 2026-11-01.",
+      "pages": 123,
+      "metadataSource": "KDP book details and paperback content summary",
+      "image": "img/bg-img/blog-legends-unveiled-library.jpg",
+      "thumbnail": "images/artbooks/43.jpg",
+      "coverSource": "https://images-na.ssl-images-amazon.com/images/P/B0FBHQ5QP1.01.LZZZZZZZ.jpg",
+      "prompt": "Use case: product-mockup. Create one premium photorealistic editorial book photograph for an author's website, landscape aspect ratio approximately 1.9:1. The supplied image is the EXACT front cover of the real book \"Legends Unveiled\" / \"A Gallery of Fantasy Figures\" / author \"Oana Rinaldi\". Preserve this cover artwork and lettering faithfully: square dark fantasy painting of an ancient carved stone portal opening onto a distant glowing city and a dragon silhouette beneath a crescent moon, with two tiny human figures, white serif title near the top and small gold author name at bottom right. Show the real square 8.5 × 8.5-inch, 123-page glossy PAPERBACK, slim flexible binding, not a thick hardback. Different arrangement from a conventional four-book mockup: one front-facing copy stands slightly angled on a weathered stone bookstand, one second closed copy rests flat on a dark carved oak reading table, also showing the same front cover. Do not invent any back cover or inside pages. Environment: an intimate fantasy collector's library at blue hour, tall arched window with a softly blurred forest outside, deep green velvet, a restrained brass candle holder casting warm amber light. Candle and window evoke the cover's portal without replicating it as the setting. The books remain clearly illuminated, legible and prominent; believable photographic materials and natural shadows, refined quiet atmosphere, carefully arranged editorial composition. No people, no hands, no added logos, no external title text, no collage, no fake magical effects around the physical books. Clearly recognizable exact cover, with all books fully in frame.",
+      "interiorReferences": [
+        "Desktop/Screenshot 2026-11-01 at 22.59.09.png",
+        "Desktop/Screenshot 2026-11-01 at 22.59.34.png"
+      ],
+      "visualCheck": "One upright cover and one open copy, with two separate pages: knight illustration and its matching profile.",
+      "correctionPrompt": "Precise product photograph edit. Reference 1 is the existing Legends Unveiled library photograph to edit. Preserve its beautiful dark oak library, arched blue-hour window, candlelight and the upright square paperback on the stone stand. Reference 2 is the EXACT true front cover: keep \"Legends Unveiled\", \"A Gallery of Fantasy Figures\", \"Oana Rinaldi\" and the fantasy portal illustration unchanged. Replace the closed copy lying flat in the foreground with ONE OPEN square 8.5 × 8.5-inch paperback. The open copy must show exactly TWO complete square pages joined by one natural central gutter, with a clear rectangular outer silhouette and visible slim paper block. LEFT page: faithfully reproduce reference 3, the full-page golden knight painting with lion banners, shield and sword. RIGHT page: faithfully reproduce reference 4, the cream parchment Knight character profile with its ornate border, circular Knight heading, and sections \"Allies & Enemies\", \"Description\", \"Special Powers\", \"Myth & Legend\", keeping the reference's actual layout. These screenshots are the author's supplied actual book pages; the gray \"Copyrighted Material\" notices and mouse cursors are Amazon preview overlays, not printed book content, so do not print those interface overlays on the physical pages. Angle the open book toward the camera so BOTH pages are clearly visible and readable as a TWO-PAGE SPREAD. Adjust the scale of the upright copy and foreground open copy modestly to fit fully in the frame, without cropping any outer book edge. Retain the real glossy paperback finish and approximate 123-page thin binding; do not turn it into a heavy hardcover. Exactly TWO physical copies overall: one upright closed cover and one open two-page copy. No three-page books, no extra gutters, no fused pages, no invented extra illustrations or text outside the product. Preserve the photographic realism and restrained fantasy collector's atmosphere. Landscape aspect ratio about 1.9:1."
+    },
+    {
+      "title": "On art: Concepts & Techniques",
+      "paperback": "https://www.amazon.com/dp/179063606X",
+      "publicationStatus": "Paperback verified Live in the KDP Bookshelf on 2026-11-01; Kindle is a draft and is not linked.",
+      "pages": 111,
+      "metadataSource": "Existing albums.html entry; KDP Bookshelf; published synopsis",
+      "image": "img/bg-img/blog-on-art-atelier.jpg",
+      "thumbnail": "images/artbooks/4.jpg",
+      "coverSource": "https://images-na.ssl-images-amazon.com/images/P/179063606X.01.LZZZZZZZ.jpg",
+      "prompt": "Use case: product-mockup. Create a photorealistic editorial book photograph for an author's website, landscape aspect ratio approximately 1.9:1. The supplied reference is the EXACT square front cover of the real paperback \"On art\" with subtitle \"Concepts & Techniques\" and author \"Oana Unciuleanu\". Preserve the flowing black calligraphic title and subtitle exactly, the woman's profile on the right with blue eye shadow, the fountain pen at lower left, and the luminous cyan, indigo, vermilion and golden-yellow mixed-media artwork. Do not redesign this cover. The physical product is a slim, square 8.5 × 8.5-inch paperback of about 112 pages, with flexible cover and realistic white paper edges, not a hardback. Create a distinct art-studio still life: one closed copy leaning upright against a small natural-wood table easel on a pale paint-marked artist's workbench, and a second closed copy lying flat diagonally in the foreground showing the same true front cover. Do not invent a back cover or internal printed pages. Surround the books with a restrained real artist's environment: a ceramic water jar, a few brushes, a small porcelain palette with traces of cobalt and burnt sienna, an unbranded graphite pencil and an unlettered sketch sheet with simple perspective construction lines. Warm late-afternoon side light through a large atelier window; ivory plaster and muted linen in the softly blurred background. The colorful covers are the focus; the studio remains warm, light, quiet and sophisticated. Believable photography with paper texture, soft natural shadows and faithful printed cover colors. All books fully visible and main cover text clearly readable. No people, no hands, no extra typography outside the real covers, no collage, no decorative fantasy effects.",
+      "correctionPrompt": "Precise product photograph edit. Reference 1 is the existing On art atelier photograph to edit. Keep the warm sunlit painter's workbench, brushes, palette, linen, wooden easel and upright book cover. Reference 2 is the true front cover; faithfully preserve \"On art\", \"Concepts & Techniques\", author \"Oana Unciuleanu\", the woman's profile, blue eye shadow, cyan/indigo/red/yellow mixed-media artwork and fountain pen. Replace the second CLOSED book lying in the foreground with ONE physically correct OPEN square 8.5 × 8.5-inch paperback. It must display EXACTLY TWO visible pages joined by ONE clearly defined central binding gutter, with separate left and right page and a slim realistic white paper block. LEFT page must reproduce reference 3: actual book page on additive color mixing, dark gray sans-serif text on white in the upper portion, and the red/green/blue overlapping circle diagram on charcoal in the lower portion, with white overlap at the center and the label \"ADDITIVE\". RIGHT page must reproduce reference 4: actual subtractive color mixing page, text on white above and the yellow/magenta/cyan circle diagram on charcoal below, with a black overlap at the center and the label \"SUBTRACTIVE\". Keep the supplied page layouts and correct diagram colors; do not invent a different design or combine the diagrams into a single page. These are screenshots of the author's own published pages; the gray \"Copyrighted Material\" labels and mouse pointers belong to the Amazon preview interface, not the printed book, so do not print those interface overlays on the physical pages. Angle the open copy gently toward the camera so both complete pages are visible and clearly belong to a single normal TWO-PAGE spread. Scale the upright copy and open copy to fit fully inside the landscape frame. Exactly TWO physical copies overall: one upright front cover and one open two-page copy. No three-page books, no extra spines or gutters, no fused covers, no extra promotional text, no people. Retain realistic slim paperback construction, not hardcover. Photoreal editorial lighting, warm daylight, original calm artist's atelier environment, landscape ratio about 1.9:1.",
+      "interiorReferences": [
+        "Desktop/Screenshot 2026-11-01 at 23.01.03.png",
+        "Desktop/Screenshot 2026-11-01 at 23.01.11.png"
+      ],
+      "visualCheck": "One upright cover and one open copy, with exactly two pages showing the supplied additive and subtractive color-mixing diagrams."
+    }
+  ],
+  "assetSizing": {
+    "bookFeatures": [
+      1200,
+      633
+    ],
+    "albumThumbnails": [
+      300,
+      300
+    ],
+    "format": "Optimized progressive JPEG"
+  }
+}
