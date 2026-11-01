@@ -10,12 +10,20 @@ const browser = await chromium.launch();
 const errors = [];
 let checks = 0;
 const shape = '#image=the-shape-of-sound-2026';
+async function verifyCatalogueCoverage(page) {
+    const missing = await page.evaluate(() => [...document.querySelectorAll('#lightgallery .item[data-src]')].filter(item => {
+        const work = window.ARTWORK_DATA.artworks[item.dataset.id];
+        return !work?.description?.length || work.keywords?.length !== 12 || work.hashtags?.length !== 12;
+    }).map(item => item.dataset.id));
+    assert.deepEqual(missing, [], 'Every artwork should have a description, keywords and hashtags');
+}
 try {
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(base + '/drawings.html' + shape);
     const room = page.locator('.artwork-room');
     await room.locator('#artwork-title').waitFor();
+    await verifyCatalogueCoverage(page);
     assert.equal(await room.evaluate(el => el.open), true);
     assert.ok(await room.evaluate(el => parseFloat(getComputedStyle(el).left) >= 20));
     assert.match(await room.evaluate(el => getComputedStyle(el, '::backdrop').backgroundColor), /rgba/);
@@ -67,7 +75,8 @@ try {
     await room.locator('[data-work]').first().click();
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Resonance Between Light and Silence');
     assert.equal(await room.locator('.artwork-room__thumbnails').isVisible(), false);
-    assert.equal(await room.locator('.artwork-room__about').isVisible(), false);
+    assert.equal(await room.locator('.artwork-room__about').isVisible(), true);
+    assert.equal(await room.locator('.artwork-room__statement p').count(), 3);
     assert.equal(await room.locator('.artwork-room__purchase').count(), 3);
     await room.getByRole('button', { name: 'Previous artwork', exact: true }).click();
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Shape of Sound');
@@ -116,9 +125,10 @@ try {
     checks++;
     await page.goto(base + '/paintings.html#image=velocity-of-fire-2026');
     await room.locator('#artwork-title').waitFor();
+    await verifyCatalogueCoverage(page);
     assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Fire');
     assert.equal(await room.locator('.artwork-room__purchase').count(), 3);
-    assert.match(await room.locator('.artwork-room__facts').textContent(), /oil on canvas/);
+    assert.match(await room.locator('.artwork-room__facts').textContent(), /oil on canvas/i);
     await room.locator('.artwork-room__image').evaluate(img => img.decode());
     await page.waitForTimeout(650);
     await page.screenshot({ path: '/tmp/artwork-viewer-painting.png' });
