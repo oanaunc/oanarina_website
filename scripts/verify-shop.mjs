@@ -24,6 +24,8 @@ try {
             href: icon.getAttribute('href'),
             disabled: icon.getAttribute('aria-disabled') === 'true',
             background: getComputedStyle(icon).backgroundColor,
+            logo: icon.querySelector('.saatchi-art-icon') !== null,
+            logoFill: icon.querySelector('.saatchi-art-icon circle') ? getComputedStyle(icon.querySelector('.saatchi-art-icon circle')).fill : null,
             helper: icon.dataset.tooltip,
             label: icon.getAttribute('aria-label'),
             target: icon.getAttribute('target'),
@@ -37,6 +39,10 @@ try {
         assert.deepEqual(card.icons.map(icon => icon.store), ['saatchi', 'redbubble', 'deviantart']);
         for (const icon of card.icons) {
             assert.ok(icon.helper && icon.label);
+            if (icon.store === 'saatchi') {
+                assert.equal(icon.logo, true);
+                assert.equal(icon.logoFill, icon.disabled ? 'rgb(170, 170, 170)' : 'rgb(51, 51, 51)');
+            }
             if (icon.disabled) {
                 assert.equal(icon.href, null);
                 assert.equal(icon.background, 'rgb(170, 170, 170)');
@@ -63,6 +69,12 @@ try {
     assert.equal(await page.locator('.oneMusic-albums .single-album-item:visible').count(), 4);
     const first = page.locator('[data-artwork-id="the-architecture-of-unspoken-words-2026"]');
     await first.scrollIntoViewIfNeeded();
+    const saatchi = first.locator('.shop-store-link--saatchi');
+    await page.waitForFunction(() => document.querySelector('[data-artwork-id="the-architecture-of-unspoken-words-2026"] .shop-store-link--saatchi use').getBBox().width > 70);
+    await saatchi.hover();
+    assert.equal(await saatchi.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(224, 0, 0)');
+    assert.equal(await saatchi.locator('circle').evaluate(el => getComputedStyle(el).fill), 'rgb(224, 0, 0)');
+    await page.screenshot({ path: '/tmp/shop-saatchi-hover.png' });
     const icon = first.locator('.shop-store-link--redbubble');
     await icon.hover();
     await page.waitForTimeout(180);
@@ -75,6 +87,9 @@ try {
     await page.keyboard.press('Tab');
     assert.equal(await first.locator('.shop-store-link--deviantart').evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(5, 168, 68)');
     assert.equal(await first.locator('.shop-store-link--deviantart').evaluate(el => getComputedStyle(el, '::after').visibility), 'visible');
+    await icon.focus();
+    await page.keyboard.press('Shift+Tab');
+    assert.equal(await saatchi.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(224, 0, 0)');
 
     for (const width of [390, 576, 768, 992]) {
         await page.setViewportSize({ width, height: 844 });

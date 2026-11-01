@@ -38,7 +38,10 @@
 }
 
 .single-album .album-info a.shop-store-link--saatchi:hover,
-.single-album .album-info a.shop-store-link--saatchi:focus-visible { background: #333; }
+.single-album .album-info a.shop-store-link--saatchi:focus-visible {
+    background: #e00000;
+    --saatchi-background: #e00000;
+}
 .single-album .album-info a.shop-store-link--redbubble:hover,
 .single-album .album-info a.shop-store-link--redbubble:focus-visible { background: #e41321; }
 .single-album .album-info a.shop-store-link--deviantart:hover,
@@ -48,6 +51,41 @@
     width: 19px;
     height: 19px;
     fill: currentColor;
+}
+
+.shop-store-link--saatchi,
+#saatchiBtn {
+    --saatchi-background: #333;
+}
+
+.shop-store-link--saatchi[aria-disabled="true"] {
+    --saatchi-background: #aaa;
+}
+
+.shop-store-link--saatchi svg.saatchi-art-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.saatchi-art-icon circle {
+    transition: fill .2s ease;
+}
+
+.art-social-item a.art-sa {
+    background: #333;
+    --saatchi-background: #333;
+}
+
+#saatchiBtn:hover,
+#saatchiBtn:focus-visible,
+.art-social-item a.art-sa:hover,
+.art-social-item a.art-sa:focus-visible {
+    --saatchi-background: #e00000;
+}
+
+.art-social-item a.art-sa:hover,
+.art-social-item a.art-sa:focus-visible {
+    background: #e00000;
 }
 
 .shop-store-link i {
@@ -109,6 +147,7 @@
 
 @media (prefers-reduced-motion: reduce) {
     .single-album .album-info .shop-store-link,
+    .saatchi-art-icon circle,
     .shop-store-link::after {
         transition: none;
     }
