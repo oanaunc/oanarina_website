@@ -1,33 +1,32 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-01",
-  "version": "1.0.2",
+  "asOf": "2026-11-02",
+  "version": "1.0.3",
   "product": "Forma",
-  "nativeBundleVersion": "1.0.2",
-  "nativeBuild": 19,
-  "rendererSourceGitHash": "8e488c9f8966d9365281cf2509a6bd0f820196c6",
-  "releaseSourceGitHash": "8e488c9f8966d9365281cf2509a6bd0f820196c6",
+  "nativeBundleVersion": "1.0.3",
+  "nativeBuild": 20,
+  "rendererSourceGitHash": "128a00df8c6083b18f6c75f1f4cbd0a9851efe9a",
+  "releaseSourceGitHash": "128a00df8c6083b18f6c75f1f4cbd0a9851efe9a",
   "download": {
-    "file": "Forma-1.0.2.dmg",
-    "bytes": 39435218,
-    "sha256": "b649711ac50d69de3d6533145080f5e1d0e700ac264a502338ab7e22d207cf15"
+    "file": "Forma-1.0.3.dmg",
+    "bytes": 39568700,
+    "sha256": "3ddecfb6cbeef6b49ea159a3d95aec89eeb1d1bf0ce9e9916cbee3ef4279725e"
   },
   "acceptance": {
     "signedAppFromReadOnlyDmgSmoke": true,
     "signedAppFromReadOnlyDmgLifecycleChecks": 37,
     "signedAppFromReadOnlyDmgAcceptanceChecks": null,
-    "signedAppFromReadOnlyDmgAcceptanceGroups": 28,
+    "signedAppFromReadOnlyDmgAcceptanceGroups": 29,
     "readOnlyDmgBundleMatchesSignedArchiveFiles": 385,
-    "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. spec-file: the last of its 4 steps, a real double-click, failed on the disk image because of a timing change in the check, and passed 2 of 3 on a local build of the same app code."
+    "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. spec-file: the real spec file was not available for this release."
   },
   "validation": {
-    "coreTests": 4052,
-    "coreFiles": 340,
+    "coreTests": 4452,
     "completeBrowserRun": {
-      "passed": 2646,
-      "failed": 2,
+      "passed": 2769,
+      "failed": 4,
       "skipped": 2,
-      "note": "One used an old fixture field name and passes now it uses the real one. The other passes 5 of 5 alone and failed the same way in the 1.0.1 run."
+      "note": "Three test fixes pass since. fonts passes alone and failed the same way in 1.0.1 and 1.0.2. WebKit had 191 failures, none of which passed on 1.0.2. See VALIDATION-v1.0.3.md."
     },
     "mcpTests": 134,
     "nativeLifecycleChecks": 37,
@@ -44,5 +43,5 @@
     "partial": 179,
     "planned": 5
   },
-  "documentationSourceGitHash": "115f4eabe31fa7c6df0b1dc4bd98cccafc6a07a1"
+  "documentationSourceGitHash": "efb57b12d10c32ad6ef841a215f89a91c48ff463"
 }
