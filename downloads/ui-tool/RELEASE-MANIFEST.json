@@ -1,40 +1,40 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-11-01",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "product": "Forma",
-  "nativeBundleVersion": "1.0.1",
-  "nativeBuild": 18,
-  "rendererSourceGitHash": "1b0f737fce87bf07662726413bba3917dab5c8a2",
-  "releaseSourceGitHash": "1b0f737fce87bf07662726413bba3917dab5c8a2",
+  "nativeBundleVersion": "1.0.2",
+  "nativeBuild": 19,
+  "rendererSourceGitHash": "8e488c9f8966d9365281cf2509a6bd0f820196c6",
+  "releaseSourceGitHash": "8e488c9f8966d9365281cf2509a6bd0f820196c6",
   "download": {
-    "file": "Forma-1.0.1.dmg",
-    "bytes": 39440512,
-    "sha256": "cf0cc8743c1e3644ae736c6f222607476c6a8bbbbf208eb00d334be42718e142"
+    "file": "Forma-1.0.2.dmg",
+    "bytes": 39435218,
+    "sha256": "b649711ac50d69de3d6533145080f5e1d0e700ac264a502338ab7e22d207cf15"
   },
   "acceptance": {
     "signedAppFromReadOnlyDmgSmoke": true,
     "signedAppFromReadOnlyDmgLifecycleChecks": 37,
-    "signedAppFromReadOnlyDmgAcceptanceChecks": 119,
-    "signedAppFromReadOnlyDmgAcceptanceGroups": 27,
-    "acceptanceGroupNotCompleted": "zoom: injected wheel events did not arrive on the final runs; it passed on the same zoom code earlier",
-    "readOnlyDmgBundleMatchesSignedArchiveFiles": 385
+    "signedAppFromReadOnlyDmgAcceptanceChecks": null,
+    "signedAppFromReadOnlyDmgAcceptanceGroups": 28,
+    "readOnlyDmgBundleMatchesSignedArchiveFiles": 385,
+    "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. spec-file: the last of its 4 steps, a real double-click, failed on the disk image because of a timing change in the check, and passed 2 of 3 on a local build of the same app code."
   },
   "validation": {
-    "coreTests": 4014,
-    "coreFiles": 337,
+    "coreTests": 4052,
+    "coreFiles": 340,
     "completeBrowserRun": {
-      "passed": 2616,
-      "failed": 6,
+      "passed": 2646,
+      "failed": 2,
       "skipped": 2,
-      "note": "Four were a bug fixed afterwards, with 255 affected checks passing on rerun; two pass alone. The complete suite was not rerun."
+      "note": "One used an old fixture field name and passes now it uses the real one. The other passes 5 of 5 alone and failed the same way in the 1.0.1 run."
     },
-    "mcpTests": 133,
+    "mcpTests": 134,
     "nativeLifecycleChecks": 37,
     "nativeClipboardChecks": 38,
     "nativeSyntheticImportChecks": 13,
     "nativeIntegrationChecks": 86,
-    "nativeAcceptanceChecks": 112,
+    "nativeAcceptanceChecks": null,
     "nativeRendererRestart": true
   },
   "featureRegister": {
@@ -44,5 +44,5 @@
     "partial": 179,
     "planned": 5
   },
-  "documentationSourceGitHash": "e6306023335ce0255092198c84e9b8fc23007071"
+  "documentationSourceGitHash": "115f4eabe31fa7c6df0b1dc4bd98cccafc6a07a1"
 }

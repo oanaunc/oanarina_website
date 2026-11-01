@@ -1,15 +1,19 @@
 # Forma change notes
 
-## 1.0.1
+## 1.0.2
 
-Forma 1.0.1 is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 1.0.1](Forma-1.0.1.dmg) (39,440,512 bytes; 39.4 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later.
+Forma 1.0.2 is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 1.0.2](Forma-1.0.2.dmg) (39,435,218 bytes; 39.4 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for macOS 13 or later.
 
-SHA-256: `cf0cc8743c1e3644ae736c6f222607476c6a8bbbbf208eb00d334be42718e142`.
+SHA-256: `b649711ac50d69de3d6533145080f5e1d0e700ac264a502338ab7e22d207cf15`.
 
-- Spec pages in .fig files now open as a page of editable text inside a frame, with headings, paragraphs, bold text and lists that reflow as you type.
-- A mouse wheel now zooms and pans smoothly. Each notch glides, and the canvas no longer flickers in our tests.
-- A rebuilt color panel floats beside the inspector, with a large color square, slim hue and alpha sliders, and HEX, RGB, HSL and HSB values.
-- Gradients have one bar: drag a stop to move it, click the bar to add one, and edit exact values in the Stops list.
-- A missing image is now a plain transparent checkerboard, and it moves and selects like any other layer.
+- Specs are now their own layer. A spec page in a .fig file imports as a Spec layer, and the Text tool menu makes a new one.
+- Write in a spec block by block. Type / for a menu of blocks, or start a line with #, -, 1., >, [], three backticks or --- and it changes as you type.
+- Headings, paragraphs, lists, to-dos, quotes, code, dividers, tables and images are all blocks. Drag one to move it, or click its handle for more options.
+- Embed a live frame with /frame. Change the frame and the spec shows the change.
+- Copy any spec as Markdown, paste Markdown in as blocks, and let a local agent read or write a spec through Forma's MCP server.
+- Save a fill as a named color style from the color panel. Find it in the new Styles tab, apply it to other layers, and change it once to update them all.
+- Design files import more faithfully: Auto line height, masks, polygons and stars, one-sided strokes, overlays, variant actions, groups and hugging auto layout, and large files import instead of being refused.
+- Several selected layers with different values show Mixed. Typing +10, or pressing an arrow key, changes each layer from its own value.
 
-Limits are listed in the [validation record](VALIDATION-v1.0.1.md). Spec pages are verified on one real file holding headings, paragraphs and bullet lists.
+Limits are listed in the [validation record](VALIDATION-v1.0.2.md). Masks, overlays and most new import fixes are confirmed by field name against real files, but neither real file tested uses them.
+
