@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    if (window.artworkViewerActive) return;
     const $gallery = $('#lightgallery');
 
     // Initialize LightGallery

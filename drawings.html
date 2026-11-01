@@ -79,6 +79,7 @@
     <link rel="stylesheet" href="css/drawings-header.css?v=20261030-horizon-fit">
     <script defer src="js/motion-manifest.js?v=20261030-selected-films"></script>
     <script defer src="js/experience.js?v=20261030-selected-films"></script>
+    <link rel="stylesheet" href="css/artwork-viewer.css?v=20261101-three-columns">
 </head>
 
 <body>
@@ -727,7 +728,7 @@
 
         <!-- Image Area -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2 item single-album-item z a d g" data-src="images/desene/2024 Winds of Reflection/She Who Walks Between Shadows, 2026, 50x70 cm, graphite pencil on paper.jpg" 
-        data-id="threshold-of-silence-2026"
+        data-id="she-who-walks-between-shadows-2026"
         data-sub-html="<h4>She Who Walks Between Shadows, 2026, 50x70 cm, graphite pencil on paper</h6><br>
         <h4>From the project: Winds of Reflection</h4>
         <h4>The original artwork <strong>IS AVAILABLE</strong>. Collection: Bucharest</h4>">
@@ -2307,12 +2308,14 @@
 
   <script src="js/picturefill.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
+  <script src="js/artwork-data.js?v=20261101-deviantart"></script>
+  <script src="js/artwork-viewer.js?v=20261101-three-columns"></script>
   <script src="js/idgallery.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>
 
   <script>
     $(document).ready(function(){
-      $('#lightgallery').lightGallery();
+      if (!window.artworkViewerActive) $('#lightgallery').lightGallery();
     });
   </script>
     
