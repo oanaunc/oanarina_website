@@ -188,6 +188,8 @@
             button.append(img, node('span', '', other.title)); related.append(button);
         });
         showImage(0);
+        $('.artwork-room__explore').scrollTop = 0;
+        thumbnails.scrollLeft = 0;
         reveal($('.artwork-room__information'), 15, 65);
         history.replaceState(null, '', location.pathname + location.search + '#image=' + encodeURIComponent(work.id));
     }

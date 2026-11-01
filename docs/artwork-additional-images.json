@@ -1,0 +1,580 @@
+{
+  "sourceFolder": "Downloads/art",
+  "largeMaxSide": 1000,
+  "thumbnailSize": [
+    300,
+    250
+  ],
+  "notes": [
+    "Shared studio photographs are referenced by every clearly identifiable artwork they show.",
+    "The clean Geometry of Acceleration scan is the viewer main image, avoiding a duplicate of the existing scan.",
+    "Original files and gallery images are retained."
+  ],
+  "images": [
+    {
+      "source": "Geometry of Acceleration, 29.7 × 42 cm, ink on paper, 2026.JPG",
+      "artworks": [
+        "geometry-of-acceleration-2026"
+      ],
+      "role": "main",
+      "src": "images/artwork-details/studio/geometry-of-acceleration.webp",
+      "thumb": "images/artwork-details/studio/geometry-of-acceleration-thumb.webp",
+      "label": "Full artwork"
+    },
+    {
+      "source": "IMG_0122.JPG",
+      "artworks": [
+        "orbit-of-acceleration-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0122.webp",
+      "thumb": "images/artwork-details/studio/img-0122-thumb.webp",
+      "label": "Framed artwork · bookshelf"
+    },
+    {
+      "source": "IMG_0123.JPG",
+      "artworks": [
+        "orbit-of-acceleration-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0123.webp",
+      "thumb": "images/artwork-details/studio/img-0123-thumb.webp",
+      "label": "Framed artwork · studio angle"
+    },
+    {
+      "source": "IMG_0124.jpg",
+      "artworks": [
+        "orbit-of-acceleration-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0124.webp",
+      "thumb": "images/artwork-details/studio/img-0124-thumb.webp",
+      "label": "Framed artwork · monochrome view"
+    },
+    {
+      "source": "IMG_0148.JPG",
+      "artworks": [
+        "ornament-of-listening-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0148.webp",
+      "thumb": "images/artwork-details/studio/img-0148-thumb.webp",
+      "label": "On paper · with drawing materials"
+    },
+    {
+      "source": "IMG_0149.jpg",
+      "artworks": [
+        "ornament-of-listening-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0149.webp",
+      "thumb": "images/artwork-details/studio/img-0149-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "IMG_0150.jpg",
+      "artworks": [
+        "ornament-of-listening-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0150.webp",
+      "thumb": "images/artwork-details/studio/img-0150-thumb.webp",
+      "label": "Full paper · studio view"
+    },
+    {
+      "source": "IMG_0179.jpg",
+      "artworks": [
+        "summer-2020",
+        "i-guess-i-m-dreaming-again-2017",
+        "do-you-think-we-re-forever-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0179.webp",
+      "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
+      "label": "In the studio · framed drawings together"
+    },
+    {
+      "source": "IMG_0619.jpg",
+      "artworks": [
+        "velocity-as-architecture-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0619.webp",
+      "thumb": "images/artwork-details/studio/img-0619-thumb.webp",
+      "label": "In progress · wheel and linework"
+    },
+    {
+      "source": "IMG_0625.jpg",
+      "artworks": [
+        "velocity-as-architecture-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-0625.webp",
+      "thumb": "images/artwork-details/studio/img-0625-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "IMG_1140.jpg",
+      "artworks": [
+        "where-silence-learns-to-sing-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1140.webp",
+      "thumb": "images/artwork-details/studio/img-1140-thumb.webp",
+      "label": "On the easel · canvas view"
+    },
+    {
+      "source": "IMG_1141.jpg",
+      "artworks": [
+        "where-silence-learns-to-sing-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1141.webp",
+      "thumb": "images/artwork-details/studio/img-1141-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "IMG_1156.JPG",
+      "artworks": [
+        "the-resonance-between-light-and-silence-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1156.webp",
+      "thumb": "images/artwork-details/studio/img-1156-thumb.webp",
+      "label": "On paper · drawing board"
+    },
+    {
+      "source": "IMG_1157.jpg",
+      "artworks": [
+        "the-resonance-between-light-and-silence-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1157.webp",
+      "thumb": "images/artwork-details/studio/img-1157-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "IMG_1158.jpg",
+      "artworks": [
+        "the-resonance-between-light-and-silence-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1158.webp",
+      "thumb": "images/artwork-details/studio/img-1158-thumb.webp",
+      "label": "On paper · alternate angle"
+    },
+    {
+      "source": "IMG_1358.jpg",
+      "artworks": [
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1358.webp",
+      "thumb": "images/artwork-details/studio/img-1358-thumb.webp",
+      "label": "On paper · alternate angle"
+    },
+    {
+      "source": "IMG_1359.jpg",
+      "artworks": [
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1359.webp",
+      "thumb": "images/artwork-details/studio/img-1359-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "IMG_1360.jpg",
+      "artworks": [
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1360.webp",
+      "thumb": "images/artwork-details/studio/img-1360-thumb.webp",
+      "label": "On paper · linework and texture"
+    },
+    {
+      "source": "IMG_1361.jpg",
+      "artworks": [
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-1361.webp",
+      "thumb": "images/artwork-details/studio/img-1361-thumb.webp",
+      "label": "Framed artwork · studio view"
+    },
+    {
+      "source": "IMG_4362.JPG",
+      "artworks": [
+        "the-shape-of-sound-2026",
+        "the-resonance-between-light-and-silence-2026",
+        "threshold-of-silence-2026",
+        "whispers-in-the-wind-2024",
+        "electric-solitude-in-bloom-2026",
+        "where-silence-learns-to-sing-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4362.webp",
+      "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+      "label": "In the studio · drawings and paintings together"
+    },
+    {
+      "source": "IMG_4363.JPG",
+      "artworks": [
+        "the-shape-of-sound-2026",
+        "the-resonance-between-light-and-silence-2026",
+        "threshold-of-silence-2026",
+        "whispers-in-the-wind-2024",
+        "electric-solitude-in-bloom-2026",
+        "where-silence-learns-to-sing-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4363.webp",
+      "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+      "label": "In the studio · shared wall, alternate angle"
+    },
+    {
+      "source": "IMG_4364.JPG",
+      "artworks": [
+        "the-shape-of-sound-2026",
+        "the-resonance-between-light-and-silence-2026",
+        "threshold-of-silence-2026",
+        "whispers-in-the-wind-2024",
+        "electric-solitude-in-bloom-2026",
+        "where-silence-learns-to-sing-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4364.webp",
+      "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+      "label": "In the studio · shared wall, front view"
+    },
+    {
+      "source": "IMG_4593.jpg",
+      "artworks": [
+        "the-weight-of-being-light-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4593.webp",
+      "thumb": "images/artwork-details/studio/img-4593-thumb.webp",
+      "label": "Painted feather · on the worktable"
+    },
+    {
+      "source": "IMG_4595.jpg",
+      "artworks": [
+        "the-weight-of-being-light-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4595.webp",
+      "thumb": "images/artwork-details/studio/img-4595-thumb.webp",
+      "label": "Painted feather · front view"
+    },
+    {
+      "source": "IMG_4596.jpg",
+      "artworks": [
+        "the-weight-of-being-light-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4596.webp",
+      "thumb": "images/artwork-details/studio/img-4596-thumb.webp",
+      "label": "Detail · feather and pigment"
+    },
+    {
+      "source": "IMG_4600.jpg",
+      "artworks": [
+        "the-weight-of-being-light-2026",
+        "orbit-of-acceleration-2026",
+        "velocity-as-architecture-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4600.webp",
+      "thumb": "images/artwork-details/studio/img-4600-thumb.webp",
+      "label": "In the studio · feather and framed drawings"
+    },
+    {
+      "source": "IMG_4638.JPG",
+      "artworks": [
+        "the-weight-of-being-light-2026",
+        "geometry-of-acceleration-2026",
+        "velocity-as-architecture-2026",
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4638.webp",
+      "thumb": "images/artwork-details/studio/img-4638-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "IMG_4639.jpg",
+      "artworks": [
+        "geometry-of-acceleration-2026",
+        "velocity-as-architecture-2026",
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4639.webp",
+      "thumb": "images/artwork-details/studio/img-4639-thumb.webp",
+      "label": "Framed drawings · shared display"
+    },
+    {
+      "source": "IMG_4640.jpg",
+      "artworks": [
+        "geometry-of-acceleration-2026",
+        "velocity-as-architecture-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4640.webp",
+      "thumb": "images/artwork-details/studio/img-4640-thumb.webp",
+      "label": "Framed drawings · close studio angle"
+    },
+    {
+      "source": "IMG_4641.jpg",
+      "artworks": [
+        "orbit-of-acceleration-2026",
+        "the-weight-of-being-light-2026",
+        "velocity-as-architecture-2026",
+        "geometry-of-acceleration-2026",
+        "the-geometry-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4641.webp",
+      "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+      "label": "In the studio · full framed display"
+    },
+    {
+      "source": "IMG_4767.jpg",
+      "artworks": [
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4767.webp",
+      "thumb": "images/artwork-details/studio/img-4767-thumb.webp",
+      "label": "On canvas · studio view"
+    },
+    {
+      "source": "IMG_4768.JPG",
+      "artworks": [
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4768.webp",
+      "thumb": "images/artwork-details/studio/img-4768-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "IMG_4769.JPG",
+      "artworks": [
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4769.webp",
+      "thumb": "images/artwork-details/studio/img-4769-thumb.webp",
+      "label": "On canvas · front view"
+    },
+    {
+      "source": "IMG_4771.jpg",
+      "artworks": [
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4771.webp",
+      "thumb": "images/artwork-details/studio/img-4771-thumb.webp",
+      "label": "On canvas · alternate light"
+    },
+    {
+      "source": "IMG_4773.jpg",
+      "artworks": [
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-4773.webp",
+      "thumb": "images/artwork-details/studio/img-4773-thumb.webp",
+      "label": "Detail · colour and reflections"
+    },
+    {
+      "source": "IMG_5400.jpg",
+      "artworks": [
+        "the-anatomy-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5400.webp",
+      "thumb": "images/artwork-details/studio/img-5400-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "IMG_5401.jpg",
+      "artworks": [
+        "the-anatomy-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5401.webp",
+      "thumb": "images/artwork-details/studio/img-5401-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "IMG_5402.jpg",
+      "artworks": [
+        "the-anatomy-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5402.webp",
+      "thumb": "images/artwork-details/studio/img-5402-thumb.webp",
+      "label": "On paper · alternate angle"
+    },
+    {
+      "source": "IMG_5403.jpg",
+      "artworks": [
+        "the-anatomy-of-velocity-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5403.webp",
+      "thumb": "images/artwork-details/studio/img-5403-thumb.webp",
+      "label": "On paper · perspective and linework"
+    },
+    {
+      "source": "IMG_5410.JPG",
+      "artworks": [
+        "waiting-for-the-summer-2014",
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5410.webp",
+      "thumb": "images/artwork-details/studio/img-5410-thumb.webp",
+      "label": "In the studio · paintings together"
+    },
+    {
+      "source": "IMG_5411.JPG",
+      "artworks": [
+        "waiting-for-the-summer-2014",
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5411.webp",
+      "thumb": "images/artwork-details/studio/img-5411-thumb.webp",
+      "label": "In the studio · shared wall, alternate angle"
+    },
+    {
+      "source": "IMG_5412.JPG",
+      "artworks": [
+        "waiting-for-the-summer-2014",
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5412.webp",
+      "thumb": "images/artwork-details/studio/img-5412-thumb.webp",
+      "label": "In the studio · shared wall, close view"
+    },
+    {
+      "source": "IMG_5413.JPG",
+      "artworks": [
+        "waiting-for-the-summer-2014",
+        "velocity-of-fire-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-5413.webp",
+      "thumb": "images/artwork-details/studio/img-5413-thumb.webp",
+      "label": "In the studio · shared wall, wider view"
+    },
+    {
+      "source": "IMG_8902.JPG",
+      "artworks": [
+        "born-to-break-the-horizon-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-8902.webp",
+      "thumb": "images/artwork-details/studio/img-8902-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "IMG_8903.jpg",
+      "artworks": [
+        "born-to-break-the-horizon-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-8903.webp",
+      "thumb": "images/artwork-details/studio/img-8903-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "IMG_8904.JPG",
+      "artworks": [
+        "born-to-break-the-horizon-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-8904.webp",
+      "thumb": "images/artwork-details/studio/img-8904-thumb.webp",
+      "label": "On paper · with drawing pen"
+    },
+    {
+      "source": "IMG_8905.jpg",
+      "artworks": [
+        "born-to-break-the-horizon-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-8905.webp",
+      "thumb": "images/artwork-details/studio/img-8905-thumb.webp",
+      "label": "On paper · alternate angle"
+    },
+    {
+      "source": "IMG_9541.jpg",
+      "artworks": [
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9541.webp",
+      "thumb": "images/artwork-details/studio/img-9541-thumb.webp",
+      "label": "In progress · construction lines"
+    },
+    {
+      "source": "IMG_9544.jpg",
+      "artworks": [
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9544.webp",
+      "thumb": "images/artwork-details/studio/img-9544-thumb.webp",
+      "label": "In progress · ink and structure"
+    },
+    {
+      "source": "IMG_9546.jpg",
+      "artworks": [
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9546.webp",
+      "thumb": "images/artwork-details/studio/img-9546-thumb.webp",
+      "label": "On paper · finishing the linework"
+    },
+    {
+      "source": "IMG_9547.jpg",
+      "artworks": [
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9547.webp",
+      "thumb": "images/artwork-details/studio/img-9547-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "IMG_9548.jpg",
+      "artworks": [
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9548.webp",
+      "thumb": "images/artwork-details/studio/img-9548-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "IMG_9580.jpg",
+      "artworks": [
+        "velocity-blueprint-2026",
+        "velocity-construct-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-9580.webp",
+      "thumb": "images/artwork-details/studio/img-9580-thumb.webp",
+      "label": "In the studio · framed drawings together"
+    }
+  ],
+  "colorSpace": "sRGB"
+}

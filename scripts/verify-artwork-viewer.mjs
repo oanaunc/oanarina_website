@@ -31,7 +31,8 @@ try {
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Shape of Sound');
     assert.match(await room.locator('.artwork-room__information > .artwork-room__eyebrow').textContent(), /2026 Sound/);
     assert.equal(await page.locator('.lg-outer').count(), 0);
-    assert.equal(await room.locator('[data-image]').count(), 3);
+    const shapeViews = await page.evaluate(() => window.ARTWORK_DATA.artworks['the-shape-of-sound-2026'].images.length);
+    assert.equal(await room.locator('[data-image]').count(), shapeViews);
     assert.equal(await room.locator('[data-work]').count(), 2);
     assert.equal(await room.locator('.artwork-room__purchase').first().getAttribute('href'), 'https://www.saatchiart.com/en-ro/art/Drawing-The-Shape-of-Sound-50-x-70-cm-graphite-crayon-on-paper-2026/806648/14375965/view');
     assert.equal(await room.locator('.artwork-room__purchase--secondary').first().getAttribute('href'), 'https://www.redbubble.com/shop/ap/185189585');
@@ -44,14 +45,14 @@ try {
         return new Set(ids).size === ids.length;
     }), true);
     checks++;
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < shapeViews; i++) {
         await room.locator(`[data-image="${i}"]`).click();
         await room.locator('.artwork-room__image').evaluate(img => img.decode());
         assert.equal(await room.locator(`[data-image="${i}"]`).getAttribute('aria-pressed'), 'true');
         assert.ok(page.url().endsWith(shape));
     }
     await page.keyboard.press('ArrowLeft');
-    assert.equal(await room.locator('[data-image="1"]').getAttribute('aria-pressed'), 'true');
+    assert.equal(await room.locator(`[data-image="${shapeViews - 2}"]`).getAttribute('aria-pressed'), 'true');
     checks++;
     await room.getByRole('button', { name: 'Enlarge artwork image' }).click();
     assert.equal(await room.locator('.artwork-room__zoom').isVisible(), true);
@@ -74,13 +75,15 @@ try {
     checks++;
     await room.locator('[data-work]').first().click();
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Resonance Between Light and Silence');
-    assert.equal(await room.locator('.artwork-room__thumbnails').isVisible(), false);
+    assert.equal(await room.locator('.artwork-room__thumbnails').isVisible(), true);
     assert.equal(await room.locator('.artwork-room__about').isVisible(), true);
     assert.equal(await room.locator('.artwork-room__statement p').count(), 3);
     assert.equal(await room.locator('.artwork-room__purchase').count(), 3);
+    assert.equal(await room.locator('.artwork-room__explore').evaluate(el => el.scrollTop), 0);
     await room.getByRole('button', { name: 'Previous artwork', exact: true }).click();
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Shape of Sound');
     assert.equal(await room.locator('[data-image="0"]').getAttribute('aria-pressed'), 'true');
+    assert.equal(await room.locator('.artwork-room__explore').evaluate(el => el.scrollTop), 0);
     checks++;
     await page.keyboard.press('ArrowLeft');
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Anatomy of Velocity');
@@ -100,7 +103,7 @@ try {
         const links = [...el.querySelectorAll('.artwork-room__purchase')].map(link => link.getBoundingClientRect());
         return visual.right < explore.left && explore.right < information.left
             && image.height > 700 && image.width > 450
-            && related.right < information.left && related.bottom <= el.getBoundingClientRect().bottom && keywords.bottom <= information.bottom
+            && related.right < information.left && explore.bottom <= el.getBoundingClientRect().bottom && keywords.bottom <= information.bottom
             && facts.bottom < statement.top && statement.height > 280
             && links.every(link => Math.abs(link.top - links[0].top) < 1);
     }));

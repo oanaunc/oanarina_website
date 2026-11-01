@@ -2352,6 +2352,21 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/the-shape-of-sound/studio-view.webp",
           "thumb": "images/artwork-details/the-shape-of-sound/studio-view-thumb.webp",
           "label": "On paper · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
         }
       ],
       "description": [
@@ -2494,6 +2509,33 @@ window.ARTWORK_DATA = {
         "Artistic Interpretation",
         "Movement and Space",
         "Contemporary Graphic Art"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/The Anatomy of Velocity, 29.7 × 42 cm (A3), ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/9.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5400.webp",
+          "thumb": "images/artwork-details/studio/img-5400-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5401.webp",
+          "thumb": "images/artwork-details/studio/img-5401-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5402.webp",
+          "thumb": "images/artwork-details/studio/img-5402-thumb.webp",
+          "label": "On paper · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5403.webp",
+          "thumb": "images/artwork-details/studio/img-5403-thumb.webp",
+          "label": "On paper · perspective and linework"
+        }
       ]
     },
     "geometry-of-acceleration-2026": {
@@ -2565,6 +2607,33 @@ window.ARTWORK_DATA = {
         "diagram",
         "transformation",
         "contemporary drawing"
+      ],
+      "images": [
+        {
+          "src": "images/artwork-details/studio/geometry-of-acceleration.webp",
+          "thumb": "images/artwork-details/studio/geometry-of-acceleration-thumb.webp",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4638.webp",
+          "thumb": "images/artwork-details/studio/img-4638-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4639.webp",
+          "thumb": "images/artwork-details/studio/img-4639-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4640.webp",
+          "thumb": "images/artwork-details/studio/img-4640-thumb.webp",
+          "label": "Framed drawings · close studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4641.webp",
+          "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+          "label": "In the studio · full framed display"
+        }
       ]
     },
     "the-geometry-of-velocity-2026": {
@@ -2636,6 +2705,48 @@ window.ARTWORK_DATA = {
         "automotive art",
         "spatial rhythm",
         "visual balance"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/The Geometry of Velocity, Ink on Paper, 30x42 cm, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1358.webp",
+          "thumb": "images/artwork-details/studio/img-1358-thumb.webp",
+          "label": "On paper · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1359.webp",
+          "thumb": "images/artwork-details/studio/img-1359-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1360.webp",
+          "thumb": "images/artwork-details/studio/img-1360-thumb.webp",
+          "label": "On paper · linework and texture"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1361.webp",
+          "thumb": "images/artwork-details/studio/img-1361-thumb.webp",
+          "label": "Framed artwork · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4638.webp",
+          "thumb": "images/artwork-details/studio/img-4638-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4639.webp",
+          "thumb": "images/artwork-details/studio/img-4639-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4641.webp",
+          "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+          "label": "In the studio · full framed display"
+        }
       ]
     },
     "the-resonance-between-light-and-silence-2026": {
@@ -2707,6 +2818,43 @@ window.ARTWORK_DATA = {
         "fine art drawing",
         "expressive realism",
         "visual poetry"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 Sound/The Resonance Between Light and Silence, 50 × 70 cm, graphite crayon on paper, 2026.jpg",
+          "thumb": "images/desene/2026 Sound/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1156.webp",
+          "thumb": "images/artwork-details/studio/img-1156-thumb.webp",
+          "label": "On paper · drawing board"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1157.webp",
+          "thumb": "images/artwork-details/studio/img-1157-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1158.webp",
+          "thumb": "images/artwork-details/studio/img-1158-thumb.webp",
+          "label": "On paper · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
+        }
       ]
     },
     "velocity-as-architecture-2026": {
@@ -2776,6 +2924,48 @@ window.ARTWORK_DATA = {
         "ink",
         "linework",
         "innovation"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Velocity as Architecture, A3, ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0619.webp",
+          "thumb": "images/artwork-details/studio/img-0619-thumb.webp",
+          "label": "In progress · wheel and linework"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0625.webp",
+          "thumb": "images/artwork-details/studio/img-0625-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4600.webp",
+          "thumb": "images/artwork-details/studio/img-4600-thumb.webp",
+          "label": "In the studio · feather and framed drawings"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4638.webp",
+          "thumb": "images/artwork-details/studio/img-4638-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4639.webp",
+          "thumb": "images/artwork-details/studio/img-4639-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4640.webp",
+          "thumb": "images/artwork-details/studio/img-4640-thumb.webp",
+          "label": "Framed drawings · close studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4641.webp",
+          "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+          "label": "In the studio · full framed display"
+        }
       ]
     },
     "ornament-of-listening-2026": {
@@ -2845,6 +3035,28 @@ window.ARTWORK_DATA = {
         "spirituality",
         "detail",
         "expression"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Spectrum Secrets/Ornament of Listening, 21 x 29 cm, colored pens on paper, 2026.jpg",
+          "thumb": "images/desene/2024 Spectrum Secrets/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0148.webp",
+          "thumb": "images/artwork-details/studio/img-0148-thumb.webp",
+          "label": "On paper · with drawing materials"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0149.webp",
+          "thumb": "images/artwork-details/studio/img-0149-thumb.webp",
+          "label": "On paper · studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0150.webp",
+          "thumb": "images/artwork-details/studio/img-0150-thumb.webp",
+          "label": "Full paper · studio view"
+        }
       ]
     },
     "orbit-of-acceleration-2026": {
@@ -2914,6 +3126,38 @@ window.ARTWORK_DATA = {
         "elegance",
         "pressure",
         "transformation"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Orbit of Acceleration, A3, ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0122.webp",
+          "thumb": "images/artwork-details/studio/img-0122-thumb.webp",
+          "label": "Framed artwork · bookshelf"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0123.webp",
+          "thumb": "images/artwork-details/studio/img-0123-thumb.webp",
+          "label": "Framed artwork · studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0124.webp",
+          "thumb": "images/artwork-details/studio/img-0124-thumb.webp",
+          "label": "Framed artwork · monochrome view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4600.webp",
+          "thumb": "images/artwork-details/studio/img-4600-thumb.webp",
+          "label": "In the studio · feather and framed drawings"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4641.webp",
+          "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+          "label": "In the studio · full framed display"
+        }
       ]
     },
     "velocity-of-the-unfinished-future-2026": {
@@ -3052,6 +3296,43 @@ window.ARTWORK_DATA = {
         "innovation",
         "automotive",
         "monumentality"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Velocity Construct, A3, ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9541.webp",
+          "thumb": "images/artwork-details/studio/img-9541-thumb.webp",
+          "label": "In progress · construction lines"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9544.webp",
+          "thumb": "images/artwork-details/studio/img-9544-thumb.webp",
+          "label": "In progress · ink and structure"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9546.webp",
+          "thumb": "images/artwork-details/studio/img-9546-thumb.webp",
+          "label": "On paper · finishing the linework"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9547.webp",
+          "thumb": "images/artwork-details/studio/img-9547-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9548.webp",
+          "thumb": "images/artwork-details/studio/img-9548-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9580.webp",
+          "thumb": "images/artwork-details/studio/img-9580-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
       ]
     },
     "resonance-in-the-half-light-2026": {
@@ -3190,6 +3471,18 @@ window.ARTWORK_DATA = {
         "energy",
         "velocity",
         "form"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Velocity Blueprint, ink on paper, 2026, 30-42 cm.jpg",
+          "thumb": "images/desene/2026 cars/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-9580.webp",
+          "thumb": "images/artwork-details/studio/img-9580-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
       ]
     },
     "she-who-walks-between-shadows-2026": {
@@ -3465,6 +3758,28 @@ window.ARTWORK_DATA = {
         "graphite drawing",
         "figurative abstraction",
         "quiet tension"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/Threshold of Silence, 50 x 70 cm, graphite crayon on paper, 2026.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
+        }
       ]
     },
     "a-cathedral-within-2025": {
@@ -4224,6 +4539,58 @@ window.ARTWORK_DATA = {
         "machine aesthetics",
         "visual tension",
         "road"
+      ],
+      "images": [
+        {
+          "src": "images/Picturi/2026 Cars/Velocity of Fire, 120 × 80 cm, oil on canvas, 2026.jpeg",
+          "thumb": "images/Picturi/2026 Cars/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4767.webp",
+          "thumb": "images/artwork-details/studio/img-4767-thumb.webp",
+          "label": "On canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4768.webp",
+          "thumb": "images/artwork-details/studio/img-4768-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4769.webp",
+          "thumb": "images/artwork-details/studio/img-4769-thumb.webp",
+          "label": "On canvas · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4771.webp",
+          "thumb": "images/artwork-details/studio/img-4771-thumb.webp",
+          "label": "On canvas · alternate light"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4773.webp",
+          "thumb": "images/artwork-details/studio/img-4773-thumb.webp",
+          "label": "Detail · colour and reflections"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5410.webp",
+          "thumb": "images/artwork-details/studio/img-5410-thumb.webp",
+          "label": "In the studio · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5411.webp",
+          "thumb": "images/artwork-details/studio/img-5411-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5412.webp",
+          "thumb": "images/artwork-details/studio/img-5412-thumb.webp",
+          "label": "In the studio · shared wall, close view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5413.webp",
+          "thumb": "images/artwork-details/studio/img-5413-thumb.webp",
+          "label": "In the studio · shared wall, wider view"
+        }
       ]
     },
     "the-weight-of-being-light-2026": {
@@ -4295,6 +4662,43 @@ window.ARTWORK_DATA = {
         "mixed media",
         "contemporary painting",
         "conceptual art"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Spectrum Secrets/The Weight of Being Light, 21 x 29 cm, acrylic on real feather, 2026.jpg",
+          "thumb": "images/desene/2024 Spectrum Secrets/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4593.webp",
+          "thumb": "images/artwork-details/studio/img-4593-thumb.webp",
+          "label": "Painted feather · on the worktable"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4595.webp",
+          "thumb": "images/artwork-details/studio/img-4595-thumb.webp",
+          "label": "Painted feather · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4596.webp",
+          "thumb": "images/artwork-details/studio/img-4596-thumb.webp",
+          "label": "Detail · feather and pigment"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4600.webp",
+          "thumb": "images/artwork-details/studio/img-4600-thumb.webp",
+          "label": "In the studio · feather and framed drawings"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4638.webp",
+          "thumb": "images/artwork-details/studio/img-4638-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4641.webp",
+          "thumb": "images/artwork-details/studio/img-4641-thumb.webp",
+          "label": "In the studio · full framed display"
+        }
       ]
     },
     "where-silence-learns-to-sing-2026": {
@@ -4366,6 +4770,38 @@ window.ARTWORK_DATA = {
         "studio painting",
         "contemporary art",
         "emotional narrative"
+      ],
+      "images": [
+        {
+          "src": "images/Picturi/2026 Music/Where Silence Learns to Sing, 120 × 80 cm, oil on canvas, 2026.jpg",
+          "thumb": "images/Picturi/2026 Music/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1140.webp",
+          "thumb": "images/artwork-details/studio/img-1140-thumb.webp",
+          "label": "On the easel · canvas view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-1141.webp",
+          "thumb": "images/artwork-details/studio/img-1141-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
+        }
       ]
     },
     "electric-solitude-in-bloom-2026": {
@@ -4435,6 +4871,28 @@ window.ARTWORK_DATA = {
         "emotional symbolism",
         "figurative abstraction",
         "sound visualization"
+      ],
+      "images": [
+        {
+          "src": "images/Picturi/2026 Music/Electric Solitude in Bloom, 120 x 80 cm, oil on canvas, 2026.jpg",
+          "thumb": "images/Picturi/2026 Music/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
+        }
       ]
     },
     "toward-the-unseen-2026": {
@@ -4575,7 +5033,34 @@ window.ARTWORK_DATA = {
         "#technicaldrawing",
         "#kineticenergy"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Born to Break the Horizon, Ink on paper, A4, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-8902.webp",
+          "thumb": "images/artwork-details/studio/img-8902-thumb.webp",
+          "label": "On paper · studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-8903.webp",
+          "thumb": "images/artwork-details/studio/img-8903-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-8904.webp",
+          "thumb": "images/artwork-details/studio/img-8904-thumb.webp",
+          "label": "On paper · with drawing pen"
+        },
+        {
+          "src": "images/artwork-details/studio/img-8905.webp",
+          "thumb": "images/artwork-details/studio/img-8905-thumb.webp",
+          "label": "On paper · alternate angle"
+        }
+      ]
     },
     "the-gate-that-forgot-the-sky-2025": {
       "title": "The gate that forgot the sky",
@@ -5275,7 +5760,29 @@ window.ARTWORK_DATA = {
         "#atmosphere",
         "#flowinghair"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/Whispers in the Wind, pencil on paper, 50 - 65cm, 2024.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4362.webp",
+          "thumb": "images/artwork-details/studio/img-4362-thumb.webp",
+          "label": "In the studio · drawings and paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4363.webp",
+          "thumb": "images/artwork-details/studio/img-4363-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-4364.webp",
+          "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
+          "label": "In the studio · shared wall, front view"
+        }
+      ]
     },
     "whispering-forms-2024": {
       "title": "Whispering Forms",
@@ -6605,7 +7112,19 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Summer, 2020, 50cm diameter, graphite crayon on paper.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0179.webp",
+          "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
+      ]
     },
     "autumn-2020": {
       "title": "Autumn",
@@ -8635,7 +9154,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Frozen/Do you think we're forever, 2017, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Frozen/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0179.webp",
+          "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
+      ]
     },
     "one-day-i-ll-see-you-stand-there-2017": {
       "title": "One day I'll see you stand there",
@@ -8775,7 +9306,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Frozen/I guess I'm dreaming again, 2017, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Frozen/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-0179.webp",
+          "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
+      ]
     },
     "you-just-slipped-through-my-fingers-2017": {
       "title": "You just slipped through my fingers",
@@ -21935,7 +22478,34 @@ window.ARTWORK_DATA = {
         "#urbanatmosphere",
         "#observation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/iluzia realitatii/Waiting for the summer, 2014, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/iluzia realitatii/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5410.webp",
+          "thumb": "images/artwork-details/studio/img-5410-thumb.webp",
+          "label": "In the studio · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5411.webp",
+          "thumb": "images/artwork-details/studio/img-5411-thumb.webp",
+          "label": "In the studio · shared wall, alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5412.webp",
+          "thumb": "images/artwork-details/studio/img-5412-thumb.webp",
+          "label": "In the studio · shared wall, close view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-5413.webp",
+          "thumb": "images/artwork-details/studio/img-5413-thumb.webp",
+          "label": "In the studio · shared wall, wider view"
+        }
+      ]
     },
     "walking-on-a-dream-2013": {
       "title": "Walking on a dream",
