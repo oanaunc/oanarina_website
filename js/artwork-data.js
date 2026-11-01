@@ -2367,8 +2367,8 @@ window.ARTWORK_DATA = {
       "year": "2026",
       "images": [
         {
-          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork.webp",
-          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork-thumb.webp",
+          "src": "images/desene/Chromatic Innerverse/The Architecture of Unspoken Words.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/1.jpg",
           "label": "Full artwork"
         },
         {
@@ -2463,8 +2463,8 @@ window.ARTWORK_DATA = {
       "year": "2026",
       "images": [
         {
-          "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork.webp",
-          "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork-thumb.webp",
+          "src": "images/desene/Chromatic Innerverse/The Weight of Invisible Worlds.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/2.jpg",
           "label": "Full artwork"
         },
         {
@@ -2559,8 +2559,8 @@ window.ARTWORK_DATA = {
       "year": "2026",
       "images": [
         {
-          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork.webp",
-          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork-thumb.webp",
+          "src": "images/desene/Chromatic Innerverse/Where Dreams Learn to Let Go.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/3.jpg",
           "label": "Full artwork"
         },
         {
@@ -2665,8 +2665,8 @@ window.ARTWORK_DATA = {
       "year": "2026",
       "images": [
         {
-          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork.webp",
-          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork-thumb.webp",
+          "src": "images/desene/Chromatic Innerverse/Where Light Becomes Infinite.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/4.jpg",
           "label": "Full artwork"
         },
         {

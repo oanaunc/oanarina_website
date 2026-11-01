@@ -4,7 +4,7 @@
   "notes": [
     "Artwork metadata and store links supplied by the artist in each 1. Artwork Title file.",
     "Titled images are the main artwork views; photographs retain their full composition and corrected EXIF orientation.",
-    "Exported as WebP with a 2200-pixel maximum side and separate 480-pixel thumbnails."
+    "Large images have a maximum side of 1000 pixels, drawing thumbnails are 300 × 250 JPEGs in the project mici folder, and shop thumbnails are 300 × 300 JPEGs in the project shop folder. Additional viewer photos are WebP with 300 × 250 thumbnails that preserve the full composition."
   ],
   "artworks": [
     {
@@ -58,9 +58,10 @@
       "artworks": [
         "the-architecture-of-unspoken-words-2026"
       ],
-      "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork.webp",
-      "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork-thumb.webp",
-      "label": "Full artwork"
+      "src": "images/desene/Chromatic Innerverse/The Architecture of Unspoken Words.jpg",
+      "thumb": "images/desene/Chromatic Innerverse/mici/1.jpg",
+      "label": "Full artwork",
+      "shopThumb": "images/desene/Chromatic Innerverse/shop/1.jpg"
     },
     {
       "source": "Chromatic Innerverse/The Architecture of Unspoken Words/IMG_5617.jpg",
@@ -95,9 +96,10 @@
       "artworks": [
         "the-weight-of-invisible-worlds-2026"
       ],
-      "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork.webp",
-      "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork-thumb.webp",
-      "label": "Full artwork"
+      "src": "images/desene/Chromatic Innerverse/The Weight of Invisible Worlds.jpg",
+      "thumb": "images/desene/Chromatic Innerverse/mici/2.jpg",
+      "label": "Full artwork",
+      "shopThumb": "images/desene/Chromatic Innerverse/shop/2.jpg"
     },
     {
       "source": "Chromatic Innerverse/The Weight of Invisible Worlds/IMG_5626.jpg",
@@ -122,9 +124,10 @@
       "artworks": [
         "where-dreams-learn-to-let-go-2026"
       ],
-      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork.webp",
-      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork-thumb.webp",
-      "label": "Full artwork"
+      "src": "images/desene/Chromatic Innerverse/Where Dreams Learn to Let Go.jpg",
+      "thumb": "images/desene/Chromatic Innerverse/mici/3.jpg",
+      "label": "Full artwork",
+      "shopThumb": "images/desene/Chromatic Innerverse/shop/3.jpg"
     },
     {
       "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5672.jpg",
@@ -176,9 +179,10 @@
       "artworks": [
         "where-light-becomes-infinite-2026"
       ],
-      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork.webp",
-      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork-thumb.webp",
-      "label": "Full artwork"
+      "src": "images/desene/Chromatic Innerverse/Where Light Becomes Infinite.jpg",
+      "thumb": "images/desene/Chromatic Innerverse/mici/4.jpg",
+      "label": "Full artwork",
+      "shopThumb": "images/desene/Chromatic Innerverse/shop/4.jpg"
     },
     {
       "source": "Chromatic Innerverse/Where Light Becomes Infinite/IMG_5609.jpg",
@@ -225,5 +229,14 @@
       "thumb": "images/artwork-details/the-shape-of-sound/img-5679-thumb.webp",
       "label": "Framed artwork · studio display"
     }
+  ],
+  "largeMaxSide": 1000,
+  "thumbnailSize": [
+    300,
+    250
+  ],
+  "shopThumbnailSize": [
+    300,
+    300
   ]
 }

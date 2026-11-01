@@ -1,0 +1,111 @@
+/* Compact store links shared by every artwork in the shop. */
+.shop-icon-definitions {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.single-album .album-info .shop-artwork-title {
+    min-height: 3em;
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.shop-store-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.single-album .album-info .shop-store-link {
+    display: inline-flex;
+    flex: 0 0 36px;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    box-shadow: 0 3px 9px #0002;
+    transition: box-shadow .2s ease, background-color .2s ease;
+}
+
+.shop-store-link--saatchi { background: #333; }
+.shop-store-link--redbubble { background: #e41321; }
+.shop-store-link--deviantart { background: #05a844; }
+
+.shop-store-link svg {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+}
+
+.shop-store-link i {
+    font-size: 17px;
+    color: inherit;
+}
+
+.single-album .album-info .shop-store-link[aria-disabled="true"] {
+    color: #fff;
+    background: #aaa;
+    box-shadow: none;
+    cursor: default;
+}
+
+.single-album .album-info a.shop-store-link:hover {
+    box-shadow: 0 4px 12px #0005;
+}
+
+.shop-store-link:focus-visible {
+    outline: 2px solid #24212c;
+    outline-offset: 3px;
+}
+
+/* Keep helper text centered on the card so edge icons stay inside the viewport. */
+.shop-store-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 5;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    width: max-content;
+    max-width: calc(100% + 24px);
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: #27232d;
+    color: #fff;
+    box-shadow: 0 4px 12px #0002;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .15s ease, visibility .15s ease;
+}
+
+.shop-store-link:hover::after,
+.shop-store-link:focus::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-album-item:hover,
+.single-album-item:focus-within {
+    z-index: 3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .single-album .album-info .shop-store-link,
+    .shop-store-link::after {
+        transition: none;
+    }
+}
