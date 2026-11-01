@@ -23,6 +23,9 @@
 #game-mechanics-live .event-thumbnail { background: #171d20; }
 #game-mechanics-live .event-thumbnail img { object-fit: contain; }
 #doctoral-research-2025 .event-thumbnail img { object-position: center 25%; }
+#pepsi-space-2023 { scroll-margin-top: 150px; }
+#pepsi-space-2023 .event-thumbnail { background: #12365b; }
+#pepsi-space-2023 .event-thumbnail img { object-fit: contain; }
 
 /* Extend the existing event link over its entire card. */
 .exhibition-card .event-text { position: static; }

@@ -1,0 +1,28 @@
+{
+  "event": "Pepsi Space",
+  "year": 2023,
+  "displayPeriod": "Summer 2023",
+  "country": "Romania",
+  "verifiedOn": "2026-11-01",
+  "campaignSource": {
+    "url": "https://www.pepsico.ro/media/resurse-media/in-noua-campanie-de-vara-reclamele-pepsi-devin-reclame-pentru-generatia-z",
+    "published": "2023-06-22",
+    "supports": "Pepsi Space launched in Romania in 2023 and promoted selected creators through Pepsi advertising spaces; the campaign ran June–September 2023."
+  },
+  "participationEvidence": "User confirmation and the two supplied images showing @oanarinaldi on the Pepsi Space artwork and a billboard presentation.",
+  "wording": "Selected digital artwork / group public-art presentation. No prize or award is asserted.",
+  "images": [
+    {
+      "source": "Screenshot 2026-11-01 at 17.32.25.png",
+      "event": "pepsi-space-2023",
+      "src": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist.webp",
+      "thumb": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist-thumb.webp"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.32.50.png",
+      "event": "pepsi-space-2023",
+      "src": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus.webp",
+      "thumb": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus-thumb.webp"
+    }
+  ]
+}

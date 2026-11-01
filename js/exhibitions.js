@@ -5,6 +5,18 @@
     // These event galleries use the standard overlay only.
     if ($.fn.lightGallery) delete $.fn.lightGallery.modules.fullscreen;
     var galleries = {
+    "pepsi-space-2023": [
+        {
+            "src": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist.webp",
+            "thumb": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist-thumb.webp",
+            "subHtml": "<h4>Pepsi Space</h4><p>Selected digital artwork · Public display · Romania<br>Summer 2023</p><p>Oana Rinaldi with her clock-and-octopus artwork displayed on a Pepsi Space billboard.</p>"
+        },
+        {
+            "src": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus.webp",
+            "thumb": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus-thumb.webp",
+            "subHtml": "<h4>Pepsi Space</h4><p>Selected digital artwork · Public display · Romania<br>Summer 2023</p><p>Clock-and-octopus artwork in the Pepsi Space campaign design.</p>"
+        }
+    ],
     "fe-mail-art": [
         {
             "src": "images/exhibitions/web/fe-mail-art/IMG_5065.jpg",

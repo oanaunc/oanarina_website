@@ -574,7 +574,1618 @@
       "src": "images/artwork-details/studio/img-9580.webp",
       "thumb": "images/artwork-details/studio/img-9580-thumb.webp",
       "label": "In the studio · framed drawings together"
+    },
+    {
+      "source": "IMG_6579.JPG",
+      "artworks": [
+        "veil-of-everything-light-2025",
+        "through-the-tides-of-silence-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/img-6579.webp",
+      "thumb": "images/artwork-details/studio/img-6579-thumb.webp",
+      "label": "In the studio · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.45.20.png",
+      "artworks": [
+        "velocity-of-the-unfinished-future-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-164520.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164520-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.45.41.png",
+      "artworks": [
+        "velocity-blueprint-2026",
+        "contours-of-connection-2024",
+        "spectrum-of-vision-2024",
+        "the-kiss-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-164541.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164541-thumb.webp",
+      "label": "Framed drawings · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.45.52.png",
+      "artworks": [
+        "velocity-blueprint-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-164552.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164552-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.46.41.png",
+      "artworks": [
+        "she-who-walks-between-shadows-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-164641.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164641-thumb.webp",
+      "label": "Detail · figure and Gothic arches"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.47.10.png",
+      "artworks": [
+        "between-breath-and-shadow-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-164710.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164710-thumb.webp",
+      "label": "In progress · profile and linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.50.08.png",
+      "artworks": [
+        "chromatic-voice-2026"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165008.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165008-thumb.webp",
+      "label": "On paper · colour and texture"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.52.03.png",
+      "artworks": [
+        "whispering-forms-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165203.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165203-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.53.51.png",
+      "artworks": [
+        "the-gate-that-forgot-the-sky-2025",
+        "shall-we-dance-my-friend-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165351.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165351-thumb.webp",
+      "label": "Framed artwork · at the keyboard"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.54.05.png",
+      "artworks": [
+        "frozen-rhythm-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165405.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165405-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.54.23.png",
+      "artworks": [
+        "frozen-rhythm-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165423.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165423-thumb.webp",
+      "label": "With the artist · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.54.44.png",
+      "artworks": [
+        "the-gate-that-forgot-the-sky-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165444.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165444-thumb.webp",
+      "label": "On paper · architectural detail"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.55.07.png",
+      "artworks": [
+        "a-cathedral-within-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165507.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165507-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.55.22.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165522.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165522-thumb.webp",
+      "label": "With the artist · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.55.45.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165545.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165545-thumb.webp",
+      "label": "Framed artwork · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.55.52.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165552.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165552-thumb.webp",
+      "label": "Framed artwork · exhibition angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.56.14.png",
+      "artworks": [
+        "the-silent-arch-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165614.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165614-thumb.webp",
+      "label": "In progress · arches and stonework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.56.27.png",
+      "artworks": [
+        "the-passage-within-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165627.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165627-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.56.37.png",
+      "artworks": [
+        "the-silent-arch-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165637.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165637-thumb.webp",
+      "label": "In progress · architectural linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.57.02.png",
+      "artworks": [
+        "wings-of-surrender-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165702.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165702-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.57.11.png",
+      "artworks": [
+        "echoes-of-silence-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-165711.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165711-thumb.webp",
+      "label": "In progress · graphite and hair"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.00.53.png",
+      "artworks": [
+        "wings-of-the-forsaken-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170053.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170053-thumb.webp",
+      "label": "Framed artwork · in the studio"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.01.27.png",
+      "artworks": [
+        "wings-of-the-forsaken-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170127.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170127-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.01.35.png",
+      "artworks": [
+        "wings-of-the-forsaken-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170135.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170135-thumb.webp",
+      "label": "In progress · wing and linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.01.51.png",
+      "artworks": [
+        "the-silent-watcher-of-the-forgotten-realm-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170151.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170151-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.03.16.png",
+      "artworks": [
+        "wings-of-becoming-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170316.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170316-thumb.webp",
+      "label": "Framed artwork · monochrome view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.03.40.png",
+      "artworks": [
+        "wings-of-the-unsaid-2025",
+        "icarus-contemplating-the-fall-2025",
+        "ascension-fractured-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170340.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170340-thumb.webp",
+      "label": "In the studio · framed drawings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.03.51.png",
+      "artworks": [
+        "ascension-fractured-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170351.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170351-thumb.webp",
+      "label": "On paper · figure and wings"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.04.01.png",
+      "artworks": [
+        "ascension-fractured-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170401.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170401-thumb.webp",
+      "label": "Framed artwork · studio light"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.04.19.png",
+      "artworks": [
+        "echoes-folded-into-silence-2025",
+        "spectrum-of-vision-2024",
+        "icarus-contemplating-the-fall-2025",
+        "interwoven-souls-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170419.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170419-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.04.31.png",
+      "artworks": [
+        "wings-of-the-unsaid-2025",
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170431.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170431-thumb.webp",
+      "label": "Framed drawings · studio light"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.04.41.png",
+      "artworks": [
+        "wings-of-the-unsaid-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170441.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170441-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.04.58.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170458.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170458-thumb.webp",
+      "label": "Framed artwork · bookshelf display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.05.06.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170506.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170506-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.05.12.png",
+      "artworks": [
+        "icarus-contemplating-the-fall-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170512.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170512-thumb.webp",
+      "label": "In progress · ink and texture"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.05.40.png",
+      "artworks": [
+        "frequencies-of-the-unseen-2025",
+        "spectrum-of-vision-2024",
+        "interwoven-souls-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170540.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170540-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.05.58.png",
+      "artworks": [
+        "radiant-smile-2024",
+        "spectrum-of-vision-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170558.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170558-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.06.24.png",
+      "artworks": [
+        "the-silence-between-the-signals-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170624.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170624-thumb.webp",
+      "label": "On canvas · colour and texture"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.06.41.png",
+      "artworks": [
+        "blueprints-for-the-invisible-2025",
+        "spectrum-of-vision-2024",
+        "radiant-smile-2024",
+        "interwoven-souls-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170641.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170641-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.07.03.png",
+      "artworks": [
+        "through-the-tides-of-silence-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170703.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170703-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.07.12.png",
+      "artworks": [
+        "veil-of-everything-light-2025",
+        "the-passage-within-2025",
+        "spectrum-of-vision-2024",
+        "interwoven-souls-2024",
+        "radiant-smile-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.07.19.png",
+      "artworks": [
+        "veil-of-everything-light-2025",
+        "spectrum-of-vision-2024",
+        "interwoven-souls-2024",
+        "radiant-smile-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170719.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170719-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.07.51.png",
+      "artworks": [
+        "journey-through-light-and-color",
+        "the-floating-world-2020",
+        "dancing-soul-2015"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170751.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170751-thumb.webp",
+      "label": "In exhibition · full gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.07.58.png",
+      "artworks": [
+        "open-your-mind-2019",
+        "crazy-in-love-2016",
+        "i-dreamed-a-thousand-years-2018",
+        "angels-walk-along-us-2019",
+        "the-world-far-below-is-on-fire-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+      "label": "In exhibition · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.08.05.png",
+      "artworks": [
+        "timeless-wonder-through-the-air-2017",
+        "soul-searching-2015",
+        "fantasy-2015",
+        "i-wish-upon-the-stars-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-170805.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170805-thumb.webp",
+      "label": "In exhibition · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.10.03.png",
+      "artworks": [
+        "one-last-kiss-2025"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171003.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171003-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.10.28.png",
+      "artworks": [
+        "whispering-forms-2024",
+        "reaching-for-hope-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171028.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171028-thumb.webp",
+      "label": "In the studio · framed drawings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.11.05.png",
+      "artworks": [
+        "reaching-for-hope-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171105.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171105-thumb.webp",
+      "label": "In progress · colour and linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.11.21.png",
+      "artworks": [
+        "reaching-for-hope-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171121.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171121-thumb.webp",
+      "label": "In progress · hands and colour"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.12.11.png",
+      "artworks": [
+        "whispering-forms-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171211.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171211-thumb.webp",
+      "label": "On paper · monochrome studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.12.28.png",
+      "artworks": [
+        "whispering-forms-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171228.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171228-thumb.webp",
+      "label": "Detail · faces and flowing lines"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.12.41.png",
+      "artworks": [
+        "the-silence-beyond-the-arches-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171241.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171241-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.13.30.png",
+      "artworks": [
+        "eternal-merge-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171330.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171330-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.13.41.png",
+      "artworks": [
+        "eternal-merge-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171341.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171341-thumb.webp",
+      "label": "Framed artwork · shared studio display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.14.02.png",
+      "artworks": [
+        "eternal-merge-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171402.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171402-thumb.webp",
+      "label": "In progress · ink and texture"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.15.05.png",
+      "artworks": [
+        "tender-connection-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171505.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171505-thumb.webp",
+      "label": "On paper · with drawing pen"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.15.25.png",
+      "artworks": [
+        "spectrum-of-vision-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171525.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171525-thumb.webp",
+      "label": "In progress · coloured pens"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.16.38.png",
+      "artworks": [
+        "waves-of-passion-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171638.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171638-thumb.webp",
+      "label": "On paper · studio angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.16.48.png",
+      "artworks": [
+        "whispers-in-the-wind-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171648.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171648-thumb.webp",
+      "label": "On paper · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.17.12.png",
+      "artworks": [
+        "entwined-emotions-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171712.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171712-thumb.webp",
+      "label": "In progress · ink and linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.17.26.png",
+      "artworks": [
+        "journey-through-light-and-color"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171726.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171726-thumb.webp",
+      "label": "On the easel · alternate angle"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.17.48.png",
+      "artworks": [
+        "tangled-emotions-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171748.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171748-thumb.webp",
+      "label": "On paper · with drawing pen"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.18.02.png",
+      "artworks": [
+        "whispers-in-the-wind-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171802.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171802-thumb.webp",
+      "label": "In progress · graphite portrait"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.18.16.png",
+      "artworks": [
+        "contours-of-connection-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171816.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171816-thumb.webp",
+      "label": "In progress · faces and lines"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.19.53.png",
+      "artworks": [
+        "radiant-smile-2024",
+        "interwoven-souls-2024",
+        "the-kiss-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-171953.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171953-thumb.webp",
+      "label": "Framed drawings · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.20.04.png",
+      "artworks": [
+        "interwoven-souls-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-172004.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172004-thumb.webp",
+      "label": "In progress · ink and linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.20.31.png",
+      "artworks": [
+        "radiant-smile-2024",
+        "drowning-2015",
+        "the-kiss-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-172031.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172031-thumb.webp",
+      "label": "In the studio · shared display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.20.52.png",
+      "artworks": [
+        "the-kiss-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-172052.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172052-thumb.webp",
+      "label": "In progress · flowing linework"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.40.14.png",
+      "artworks": [
+        "make-the-song-go-on-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174014.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174014-thumb.webp",
+      "label": "In progress · graphite and setting"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.40.29.png",
+      "artworks": [
+        "tales-of-wonder-2022"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174029.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174029-thumb.webp",
+      "label": "In exhibition · visitors and artwork"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.40.49.png",
+      "artworks": [
+        "one-day-i-ll-see-you-stand-there-2017",
+        "do-you-think-we-re-forever-2017",
+        "summer-2020",
+        "i-guess-i-m-dreaming-again-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174049.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174049-thumb.webp",
+      "label": "In exhibition · framed drawings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.41.01.png",
+      "artworks": [
+        "i-saw-the-coming-of-the-end"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174101.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174101-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.41.13.png",
+      "artworks": [
+        "none-of-this-will-save-you-from-yourself-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174113.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174113-thumb.webp",
+      "label": "Detail · graphite and folded forms"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.41.38.png",
+      "artworks": [
+        "tales-of-wonder-2022",
+        "i-saw-the-coming-of-the-end"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174138.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174138-thumb.webp",
+      "label": "In the studio · works in progress"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.41.58.png",
+      "artworks": [
+        "tales-of-wonder-2022"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174158.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174158-thumb.webp",
+      "label": "On canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.42.07.png",
+      "artworks": [
+        "tales-of-wonder-2022"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174207.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174207-thumb.webp",
+      "label": "On the easel · wider studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.42.23.png",
+      "artworks": [
+        "at-night-i-dream-of-a-desert-land-2024"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174223.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174223-thumb.webp",
+      "label": "Detail · graphite and interior space"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.42.35.png",
+      "artworks": [
+        "slowly-dissolving-our-time",
+        "waiting-patiently-2021"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174235.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174235-thumb.webp",
+      "label": "In exhibition · circular paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.42.43.png",
+      "artworks": [
+        "waiting-patiently-2021",
+        "slowly-dissolving-our-time"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174243.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174243-thumb.webp",
+      "label": "In exhibition · visitors and paintings"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.42.58.png",
+      "artworks": [
+        "from-the-flames-i-walk-away"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174258.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174258-thumb.webp",
+      "label": "On canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.13.png",
+      "artworks": [
+        "dancing-with-the-clouds-2020",
+        "ride-the-golden-stream-2020",
+        "timeless-wonder-through-the-air-2017",
+        "walking-on-a-dream-2013",
+        "the-floating-world-2020",
+        "silent-whispers-2019",
+        "queen-of-time-2019",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-fighter-2020",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "shall-we-dance-my-friend-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.26.png",
+      "artworks": [
+        "ride-the-golden-stream-2020",
+        "dancing-with-the-clouds-2020",
+        "timeless-wonder-through-the-air-2017",
+        "walking-on-a-dream-2013",
+        "the-floating-world-2020",
+        "silent-whispers-2019",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-fighter-2020",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "shall-we-dance-my-friend-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.35.png",
+      "artworks": [
+        "dancing-with-the-clouds-2020",
+        "timeless-wonder-through-the-air-2017",
+        "the-floating-world-2020",
+        "ride-the-golden-stream-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174335.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174335-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.42.png",
+      "artworks": [
+        "fantasy-2015",
+        "games-of-the-soul-2017",
+        "blossoming-2015",
+        "i-wish-upon-the-stars-2017",
+        "tavern-2011",
+        "revealing-table-2011"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.50.png",
+      "artworks": [
+        "ride-the-golden-stream-2020",
+        "cover-me-2015",
+        "timeless-wonder-through-the-air-2017",
+        "dancing-with-the-clouds-2020",
+        "the-floating-world-2020",
+        "queen-of-time-2019",
+        "silent-whispers-2019",
+        "where-shadows-dance-2018",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.43.58.png",
+      "artworks": [
+        "the-floating-world-2020",
+        "dancing-with-the-clouds-2020",
+        "somehow-i-found-a-way-to-get-lost-in-you-2017",
+        "kingdom-of-heaven-2021",
+        "dancing-on-clouds-2021",
+        "pull-your-heart-together-2020",
+        "shall-we-dance-my-friend-2016",
+        "walking-on-a-dream-2013"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.07.png",
+      "artworks": [
+        "the-keeper-of-the-fleeting-moment-2020",
+        "the-fighter-2020",
+        "dancing-with-the-clouds-2020",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.17.png",
+      "artworks": [
+        "dancing-with-the-clouds-2020",
+        "timeless-wonder-through-the-air-2017",
+        "ride-the-golden-stream-2020",
+        "the-floating-world-2020",
+        "silent-whispers-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.25.png",
+      "artworks": [
+        "i-wish-upon-the-stars-2017",
+        "blossoming-2015",
+        "fantasy-2015",
+        "games-of-the-soul-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174425.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174425-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.32.png",
+      "artworks": [
+        "tavern-2011",
+        "revealing-table-2011"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174432.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174432-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.41.png",
+      "artworks": [
+        "i-wish-upon-the-stars-2017",
+        "fantasy-2015",
+        "games-of-the-soul-2017",
+        "blossoming-2015"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174441.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174441-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.44.50.png",
+      "artworks": [
+        "blossoming-2015",
+        "i-wish-upon-the-stars-2017",
+        "i-dreamed-a-thousand-years-2018",
+        "fantasy-2015",
+        "somehow-i-found-a-way-to-get-lost-in-you-2017",
+        "the-world-far-below-is-on-fire-2018",
+        "walking-on-a-dream-2013",
+        "games-of-the-soul-2017",
+        "shall-we-dance-my-friend-2016",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-fighter-2020",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "kingdom-of-heaven-2021",
+        "dancing-on-clouds-2021",
+        "pull-your-heart-together-2020",
+        "vanished-into-the-blue-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.00.png",
+      "artworks": [
+        "ride-the-golden-stream-2020",
+        "timeless-wonder-through-the-air-2017",
+        "dancing-with-the-clouds-2020",
+        "cover-me-2015",
+        "the-floating-world-2020",
+        "the-world-far-below-is-on-fire-2018",
+        "silent-whispers-2019",
+        "where-shadows-dance-2018",
+        "queen-of-time-2019",
+        "i-dreamed-a-thousand-years-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.08.png",
+      "artworks": [
+        "i-wish-upon-the-stars-2017",
+        "blossoming-2015",
+        "fantasy-2015",
+        "tavern-2011",
+        "revealing-table-2011",
+        "games-of-the-soul-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.14.png",
+      "artworks": [
+        "walking-on-a-dream-2013",
+        "shall-we-dance-my-friend-2016",
+        "the-world-far-below-is-on-fire-2018",
+        "somehow-i-found-a-way-to-get-lost-in-you-2017",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "the-fighter-2020",
+        "i-dreamed-a-thousand-years-2018",
+        "pull-your-heart-together-2020",
+        "dancing-on-clouds-2021",
+        "kingdom-of-heaven-2021",
+        "sunlight-in-a-billion-dreams-2020",
+        "vanished-into-the-blue-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.24.png",
+      "artworks": [
+        "shall-we-dance-my-friend-2016",
+        "walking-on-a-dream-2013",
+        "pull-your-heart-together-2020",
+        "dancing-with-the-clouds-2020",
+        "ride-the-golden-stream-2020",
+        "the-floating-world-2020",
+        "dancing-on-clouds-2021",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-fighter-2020",
+        "kingdom-of-heaven-2021"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.32.png",
+      "artworks": [
+        "walking-on-a-dream-2013",
+        "shall-we-dance-my-friend-2016",
+        "ride-the-golden-stream-2020",
+        "timeless-wonder-through-the-air-2017",
+        "dancing-with-the-clouds-2020",
+        "the-floating-world-2020",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018",
+        "the-fighter-2020",
+        "cover-me-2015",
+        "where-shadows-dance-2018",
+        "queen-of-time-2019",
+        "silent-whispers-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.45.41.png",
+      "artworks": [
+        "the-house-of-wonders-2019",
+        "open-your-mind-2019",
+        "in-the-shadow-of-your-heart-2016",
+        "somehow-i-found-a-way-to-get-lost-in-you-2017",
+        "crazy-in-love-2016",
+        "walking-on-a-dream-2013",
+        "shall-we-dance-my-friend-2016",
+        "sunlight-in-a-billion-dreams-2020",
+        "the-fighter-2020",
+        "the-keeper-of-the-fleeting-moment-2020",
+        "kingdom-of-heaven-2021",
+        "dancing-on-clouds-2021",
+        "pull-your-heart-together-2020",
+        "the-world-far-below-is-on-fire-2018",
+        "i-dreamed-a-thousand-years-2018",
+        "vanished-into-the-blue-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+      "label": "In exhibition · gallery view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.46.03.png",
+      "artworks": [
+        "autumn-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174603.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174603-thumb.webp",
+      "label": "Framed artwork · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.46.35.png",
+      "artworks": [
+        "hypnotic-2021"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174635.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174635-thumb.webp",
+      "label": "On the easel · circular canvas"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.46.52.png",
+      "artworks": [
+        "i-took-a-trip-on-the-inside-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174652.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174652-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.47.10.png",
+      "artworks": [
+        "angels-walk-along-us-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174710.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174710-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.47.21.png",
+      "artworks": [
+        "vanished-into-the-blue-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174721.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174721-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.47.34.png",
+      "artworks": [
+        "in-the-background-2011",
+        "dancing-with-the-clouds-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174734.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174734-thumb.webp",
+      "label": "With the artist · studio display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.47.46.png",
+      "artworks": [
+        "silent-whispers-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174746.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174746-thumb.webp",
+      "label": "With the artist · framed drawing"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.47.58.png",
+      "artworks": [
+        "open-your-mind-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174758.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174758-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.48.11.png",
+      "artworks": [
+        "amsterdam-wibe-2012"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174811.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174811-thumb.webp",
+      "label": "With the artist · on the easel"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.48.21.png",
+      "artworks": [
+        "spring-2020",
+        "winter-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174821.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174821-thumb.webp",
+      "label": "With the artist · circular paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.48.39.png",
+      "artworks": [
+        "i-wish-upon-the-stars-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174839.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174839-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.48.49.png",
+      "artworks": [
+        "queen-of-time-2019",
+        "dancing-with-the-clouds-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174849.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174849-thumb.webp",
+      "label": "With the artist · framed drawing"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.49.00.png",
+      "artworks": [
+        "burning-up-the-way-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174900.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174900-thumb.webp",
+      "label": "With the artist · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.49.12.png",
+      "artworks": [
+        "forever-autumn-2021",
+        "dancing-with-the-clouds-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174912.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174912-thumb.webp",
+      "label": "With the artist · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.49.50.png",
+      "artworks": [
+        "dancing-with-the-clouds-2020",
+        "happy-happy-joy-joy-2021"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174950.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174950-thumb.webp",
+      "label": "In progress · circular portrait"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.49.56.png",
+      "artworks": [
+        "happy-happy-joy-joy-2021",
+        "dancing-with-the-clouds-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-174956.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174956-thumb.webp",
+      "label": "On the easel · circular portrait"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.50.07.png",
+      "artworks": [
+        "spring-2020",
+        "autumn-2020",
+        "summer-2020",
+        "winter-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175007.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175007-thumb.webp",
+      "label": "In the studio · the four seasons together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.50.18.png",
+      "artworks": [
+        "winter-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175018.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175018-thumb.webp",
+      "label": "Circular canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.50.30.png",
+      "artworks": [
+        "autumn-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175030.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175030-thumb.webp",
+      "label": "Detail · graphite and circular paper"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.50.42.png",
+      "artworks": [
+        "spring-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175042.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175042-thumb.webp",
+      "label": "Circular canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.50.56.png",
+      "artworks": [
+        "the-floating-world-2020",
+        "dancing-with-the-clouds-2020",
+        "ride-the-golden-stream-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175056.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175056-thumb.webp",
+      "label": "In the studio · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.51.11.png",
+      "artworks": [
+        "the-floating-world-2020",
+        "dancing-with-the-clouds-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175111.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175111-thumb.webp",
+      "label": "On the easel · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.51.22.png",
+      "artworks": [
+        "the-floating-world-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175122.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175122-thumb.webp",
+      "label": "On canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.51.36.png",
+      "artworks": [
+        "the-fighter-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175136.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175136-thumb.webp",
+      "label": "Detail · graphite and portrait"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.51.48.png",
+      "artworks": [
+        "ride-the-golden-stream-2020"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175148.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175148-thumb.webp",
+      "label": "On the easel · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.52.00.png",
+      "artworks": [
+        "somehow-i-found-a-way-to-get-lost-in-you-2017"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175200.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175200-thumb.webp",
+      "label": "On canvas · studio view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.52.34.png",
+      "artworks": [
+        "venetian-scene-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175234.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175234-thumb.webp",
+      "label": "In exhibition · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.52.48.png",
+      "artworks": [
+        "escape-to-fantasy-2016",
+        "a-glance-of-hope-2017",
+        "crazy-in-love-2016"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175248.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175248-thumb.webp",
+      "label": "With the artist · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.53.02.png",
+      "artworks": [
+        "open-your-mind-2019",
+        "bending-space-and-time-2019",
+        "the-house-of-wonders-2019",
+        "silent-whispers-2019",
+        "never-be-the-same-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+      "label": "With the artist · outdoor exhibition"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.53.09.png",
+      "artworks": [
+        "bending-space-and-time-2019",
+        "never-be-the-same-2019",
+        "open-your-mind-2019",
+        "silent-whispers-2019",
+        "the-house-of-wonders-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+      "label": "In exhibition · outdoor display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.53.31.png",
+      "artworks": [
+        "silent-ceremony-2019",
+        "never-be-the-same-2019",
+        "soul-searching-2015"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175331.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175331-thumb.webp",
+      "label": "In the studio · works together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.53.44.png",
+      "artworks": [
+        "bending-space-and-time-2019",
+        "never-be-the-same-2019"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175344.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175344-thumb.webp",
+      "label": "With the artist · studio display"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.54.00.png",
+      "artworks": [
+        "i-sang-the-words-i-meant-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175400.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175400-thumb.webp",
+      "label": "In exhibition · gallery room"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.54.11.png",
+      "artworks": [
+        "bells-from-the-deep-2018",
+        "i-sang-the-words-i-meant-2018"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175411.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175411-thumb.webp",
+      "label": "In exhibition · paintings together"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.54.25.png",
+      "artworks": [
+        "memories-of-yesterday-2016",
+        "flow-of-emotions-2015",
+        "hidden-reality-2012",
+        "dancing-time-2012"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175425.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175425-thumb.webp",
+      "label": "With the artist · exhibition view"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.54.35.png",
+      "artworks": [
+        "flow-of-emotions-2015",
+        "inner-silence-2014",
+        "the-sun-no-longer-shines-on-us-2016",
+        "hidden-reality-2012",
+        "nothing-to-see-2012",
+        "waiting-2012",
+        "we-are-all-actors-on-the-stage-of-life-2012",
+        "dancing-time-2012"
+      ],
+      "role": "additional",
+      "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+      "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+      "label": "In exhibition · paintings and drawings together"
     }
   ],
-  "colorSpace": "sRGB"
+  "colorSpace": "sRGB",
+  "unmatchedImages": [
+    {
+      "source": "Screenshot 2026-11-01 at 16.52.18.png",
+      "reason": "No verified match in the current paintings and drawings catalogue."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 16.54.18.png",
+      "reason": "Image fragment is too small (33 × 55 pixels)."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.02.05.png",
+      "reason": "No verified catalogue match; user requested leaving this artwork out."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.02.13.png",
+      "reason": "No verified catalogue match; user requested leaving this artwork out."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.02.46.png",
+      "reason": "No verified match in the current paintings and drawings catalogue."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.05.33.png",
+      "reason": "No verified catalogue match; user requested leaving this artwork out."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.16.18.png",
+      "reason": "No verified catalogue match; user requested leaving this artwork out."
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.54.50.png",
+      "reason": "No verified catalogue match; user requested leaving this artwork out."
+    }
+  ],
+  "exhibitionImages": [
+    {
+      "source": "Screenshot 2026-11-01 at 17.32.25.png",
+      "event": "pepsi-space-2023",
+      "src": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist.webp",
+      "thumb": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist-thumb.webp"
+    },
+    {
+      "source": "Screenshot 2026-11-01 at 17.32.50.png",
+      "event": "pepsi-space-2023",
+      "src": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus.webp",
+      "thumb": "images/exhibitions/web/pepsi-space-2023/clock-and-octopus-thumb.webp"
+    }
+  ]
 }

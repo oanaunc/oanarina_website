@@ -3227,6 +3227,18 @@ window.ARTWORK_DATA = {
         "evolution",
         "architecture",
         "vision"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Velocity of the Unfinished Future, A3, ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164520.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164520-thumb.webp",
+          "label": "On paper · studio view"
+        }
       ]
     },
     "velocity-construct-2026": {
@@ -3482,6 +3494,16 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-9580.webp",
           "thumb": "images/artwork-details/studio/img-9580-thumb.webp",
           "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164552.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164552-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164541-thumb.webp",
+          "label": "Framed drawings · shared display"
         }
       ]
     },
@@ -3552,6 +3574,18 @@ window.ARTWORK_DATA = {
         "isolation",
         "dreamlike",
         "emotional depth"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/She Who Walks Between Shadows, 2026, 50x70 cm, graphite pencil on paper.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164641.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164641-thumb.webp",
+          "label": "Detail · figure and Gothic arches"
+        }
       ]
     },
     "between-breath-and-shadow-2026": {
@@ -3621,6 +3655,18 @@ window.ARTWORK_DATA = {
         "figurative abstraction",
         "contemplative mood",
         "intimate perspective"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 The Line of Elegance/Between breath and shadow, 2026, ink on paper, 21-29cm.jpg",
+          "thumb": "images/desene/2026 The Line of Elegance/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164710.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164710-thumb.webp",
+          "label": "In progress · profile and linework"
+        }
       ]
     },
     "chromatic-voice-2026": {
@@ -3690,6 +3736,18 @@ window.ARTWORK_DATA = {
         "materiality",
         "mark-making",
         "contemporary drawing"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Spectrum Secrets/Chromatic Voice, colored pencils on paper, 21-29cm, 2026.jpg",
+          "thumb": "images/desene/2024 Spectrum Secrets/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165008.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165008-thumb.webp",
+          "label": "On paper · colour and texture"
+        }
       ]
     },
     "threshold-of-silence-2026": {
@@ -3849,6 +3907,18 @@ window.ARTWORK_DATA = {
         "symbolic arches",
         "psychological space",
         "artistic realism"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/A Cathedral Within, 50 x 70 cm, graphite crayon on paper, 2025.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165507.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165507-thumb.webp",
+          "label": "On paper · studio angle"
+        }
       ]
     },
     "the-silent-arch-2025": {
@@ -3918,6 +3988,23 @@ window.ARTWORK_DATA = {
         "past and present",
         "endurance of art",
         "transient beauty"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2025 Ancient Arches/The silent arch, ink on paper, A3, 2025.jpg",
+          "thumb": "images/desene/2025 Ancient Arches/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165614.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165614-thumb.webp",
+          "label": "In progress · arches and stonework"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165637.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165637-thumb.webp",
+          "label": "In progress · architectural linework"
+        }
       ]
     },
     "echoes-of-silence-2025": {
@@ -3987,6 +4074,18 @@ window.ARTWORK_DATA = {
         "stillness",
         "elegance",
         "timelessness"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/Echoes of Silence, 50 x 70 cm, graphite crayon on paper, 2025.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165711.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165711-thumb.webp",
+          "label": "In progress · graphite and hair"
+        }
       ]
     },
     "the-embrace-of-fallen-wings-2025": {
@@ -4263,6 +4362,28 @@ window.ARTWORK_DATA = {
         "chaos in ink",
         "dreamlike ascent",
         "mystical figure"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Wings of the Forsaken, A4, ink on paper, 2025.jpg",
+          "thumb": "images/desene/2025 Angels/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170053.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170053-thumb.webp",
+          "label": "Framed artwork · in the studio"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170127.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170127-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170135.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170135-thumb.webp",
+          "label": "In progress · wing and linework"
+        }
       ]
     },
     "the-silent-watcher-of-the-forgotten-realm-2025": {
@@ -4332,6 +4453,18 @@ window.ARTWORK_DATA = {
         "sacred",
         "reflection",
         "dark romanticism"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Winds of Reflection/The Silent Watcher of the Forgotten Realm, 50 x 70 cm, graphite crayon on paper, 2025.jpg",
+          "thumb": "images/desene/2024 Winds of Reflection/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170151.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170151-thumb.webp",
+          "label": "On paper · studio angle"
+        }
       ]
     },
     "one-last-kiss-2025": {
@@ -4401,6 +4534,18 @@ window.ARTWORK_DATA = {
         "tender moment",
         "figurative drawing",
         "finality"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/One Last Kiss, 21 x 29 cm, ink on paper, 2025.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/10.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171003.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171003-thumb.webp",
+          "label": "On paper · studio angle"
+        }
       ]
     },
     "reaching-for-hope-2024": {
@@ -4470,6 +4615,28 @@ window.ARTWORK_DATA = {
         "shared experience",
         "optimism",
         "transcendence"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2024 Spectrum Secrets/Reaching for Hope, 2024, watercolor pencils on paper, 21 x 29 cm.jpg",
+          "thumb": "images/desene/2024 Spectrum Secrets/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171105.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171105-thumb.webp",
+          "label": "In progress · colour and linework"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171121.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171121-thumb.webp",
+          "label": "In progress · hands and colour"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171028.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171028-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
       ]
     },
     "velocity-of-fire-2026": {
@@ -5130,7 +5297,24 @@ window.ARTWORK_DATA = {
         "#silence",
         "#passage"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Ancient Arches/The gate that forgot the sky, ink on paper, A3, 2025.jpg",
+          "thumb": "images/desene/2025 Ancient Arches/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165444.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165444-thumb.webp",
+          "label": "On paper · architectural detail"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165351.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165351-thumb.webp",
+          "label": "Framed artwork · at the keyboard"
+        }
+      ]
     },
     "wings-of-surrender-2025": {
       "title": "Wings of Surrender",
@@ -5200,7 +5384,19 @@ window.ARTWORK_DATA = {
         "#humanfigure",
         "#expressivelinework"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Wings of Surrender, 21 x 29 cm, ink on paper, 2025.jpg",
+          "thumb": "images/desene/2025 Angels/mici/10.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165702.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165702-thumb.webp",
+          "label": "On paper · studio view"
+        }
+      ]
     },
     "the-fragile-divine-2025": {
       "title": "The Fragile Divine",
@@ -5340,7 +5536,19 @@ window.ARTWORK_DATA = {
         "#humanfigure",
         "#vulnerability"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Wings of Becoming, ink on paper, 2025, 21-29cm.jpg",
+          "thumb": "images/desene/2025 Angels/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170316.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170316-thumb.webp",
+          "label": "Framed artwork · monochrome view"
+        }
+      ]
     },
     "ascension-fractured-2025": {
       "title": "Ascension Fractured",
@@ -5410,7 +5618,29 @@ window.ARTWORK_DATA = {
         "#humanfigure",
         "#vulnerability"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Ascension Fractured, ink on paper, 2025, 21-29cm.jpg",
+          "thumb": "images/desene/2025 Angels/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170351.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170351-thumb.webp",
+          "label": "On paper · figure and wings"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170401.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170401-thumb.webp",
+          "label": "Framed artwork · studio light"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170340.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170340-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
+      ]
     },
     "wings-of-the-unsaid-2025": {
       "title": "Wings of the Unsaid",
@@ -5480,7 +5710,29 @@ window.ARTWORK_DATA = {
         "#humanfigure",
         "#vulnerability"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Wings of the Unsaid, ink on paper, 2025, 21x29cm.jpg",
+          "thumb": "images/desene/2025 Angels/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170441.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170441-thumb.webp",
+          "label": "On paper · studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170340.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170340-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170431.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170431-thumb.webp",
+          "label": "Framed drawings · studio light"
+        }
+      ]
     },
     "icarus-contemplating-the-fall-2025": {
       "title": "Icarus Contemplating the fall",
@@ -5550,7 +5802,59 @@ window.ARTWORK_DATA = {
         "#vulnerability",
         "#expressivelinework"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2025 Angels/Icarus Contemplating the fall, ink on paper,  21x29cm, 2025.jpg",
+          "thumb": "images/desene/2025 Angels/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170458.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170458-thumb.webp",
+          "label": "Framed artwork · bookshelf display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170506.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170506-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170512.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170512-thumb.webp",
+          "label": "In progress · ink and texture"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165522.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165522-thumb.webp",
+          "label": "With the artist · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165545.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165545-thumb.webp",
+          "label": "Framed artwork · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165552.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165552-thumb.webp",
+          "label": "Framed artwork · exhibition angle"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170340.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170340-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170419.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170419-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170431.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170431-thumb.webp",
+          "label": "Framed drawings · studio light"
+        }
+      ]
     },
     "spectrum-of-vision-2024": {
       "title": "Spectrum of Vision",
@@ -5620,7 +5924,54 @@ window.ARTWORK_DATA = {
         "#humanform",
         "#emotionalintensity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Spectrum Secrets/Spectrum of Vision, colored pencils and ink on paper, 2024, 21-29cm copy.jpg",
+          "thumb": "images/desene/2024 Spectrum Secrets/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171525.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171525-thumb.webp",
+          "label": "In progress · coloured pens"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164541-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170419.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170419-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170558.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170558-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170641.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170641-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170719.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170719-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170540.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170540-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "the-wind-whispers-her-name-2024": {
       "title": "The Wind Whispers Her Name",
@@ -5781,6 +6132,16 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-4364.webp",
           "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
           "label": "In the studio · shared wall, front view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171648.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171648-thumb.webp",
+          "label": "On paper · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171802.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171802-thumb.webp",
+          "label": "In progress · graphite portrait"
         }
       ]
     },
@@ -5852,7 +6213,34 @@ window.ARTWORK_DATA = {
         "#flowingcontours",
         "#affection"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Whispering Forms, 2024, ink on paper, 42 - 30 cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/9.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171211.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171211-thumb.webp",
+          "label": "On paper · monochrome studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171228.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171228-thumb.webp",
+          "label": "Detail · faces and flowing lines"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165203.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165203-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171028.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171028-thumb.webp",
+          "label": "In the studio · framed drawings together"
+        }
+      ]
     },
     "eternal-merge-2024": {
       "title": "Eternal Merge",
@@ -5922,7 +6310,29 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#affection"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Eternal Merge, ink on paper, 21-29cm,2024.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171330.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171330-thumb.webp",
+          "label": "On paper · studio angle"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171402.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171402-thumb.webp",
+          "label": "In progress · ink and texture"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171341.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171341-thumb.webp",
+          "label": "Framed artwork · shared studio display"
+        }
+      ]
     },
     "tender-connection-2024": {
       "title": "Tender Connection",
@@ -5992,7 +6402,19 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Tender Connection, ink on paper, 2024, 21-29 cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171505.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171505-thumb.webp",
+          "label": "On paper · with drawing pen"
+        }
+      ]
     },
     "waves-of-passion-2024": {
       "title": "Waves of Passion",
@@ -6062,7 +6484,19 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Waves of Passion, ink on paper, 2024, 21-29 cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171638.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171638-thumb.webp",
+          "label": "On paper · studio angle"
+        }
+      ]
     },
     "entwined-emotions-2024": {
       "title": "Entwined Emotions",
@@ -6132,7 +6566,19 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Entwined Emotions, ink on paper, 2024, 21-29 cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171712-thumb.webp",
+          "label": "In progress · ink and linework"
+        }
+      ]
     },
     "tangled-emotions-2024": {
       "title": "Tangled Emotions",
@@ -6202,7 +6648,19 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Tangled Emotions, ink and pencil on paper, 2024, 21 x 29 cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171748.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171748-thumb.webp",
+          "label": "On paper · with drawing pen"
+        }
+      ]
     },
     "contours-of-connection-2024": {
       "title": "Contours of Connection",
@@ -6272,7 +6730,24 @@ window.ARTWORK_DATA = {
         "#flowingcontours",
         "#affection"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Contours of Connection, ink on paper, 2024, 21-29cm.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171816.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171816-thumb.webp",
+          "label": "In progress · faces and lines"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164541-thumb.webp",
+          "label": "Framed drawings · shared display"
+        }
+      ]
     },
     "interwoven-souls-2024": {
       "title": "Interwoven Souls",
@@ -6342,7 +6817,49 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/Interwoven Souls, 2024, A4, ink on paper copy.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-172004.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172004-thumb.webp",
+          "label": "In progress · ink and linework"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170419.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170419-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170641.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170641-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170719.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170719-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171953.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171953-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170540.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170540-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "the-kiss-2024": {
       "title": "The Kiss",
@@ -6412,7 +6929,34 @@ window.ARTWORK_DATA = {
         "#figurativedrawing",
         "#flowingcontours"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2024 Kiss/The kiss, 2024, A4, ink on paper copy.jpg",
+          "thumb": "images/desene/2024 Kiss/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-172052.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172052-thumb.webp",
+          "label": "In progress · flowing linework"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-164541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-164541-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171953.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171953-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-172031.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172031-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "make-the-song-go-on-2024": {
       "title": "Make the song go on",
@@ -6482,7 +7026,19 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2022 Surreal Land/Make the song go on, 2022, 50x70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2022 Surreal Land/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174014.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174014-thumb.webp",
+          "label": "In progress · graphite and setting"
+        }
+      ]
     },
     "none-of-this-will-save-you-from-yourself-2024": {
       "title": "None of this will save you from yourself",
@@ -6552,7 +7108,19 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2022 Surreal Land/None of this will save you from yourself, 2022, 50-70 cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2022 Surreal Land/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174113.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174113-thumb.webp",
+          "label": "Detail · graphite and folded forms"
+        }
+      ]
     },
     "radiant-smile-2024": {
       "title": "Radiant Smile",
@@ -6622,7 +7190,44 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2022 Surreal Land/Radiant Smile, 2024, A4, ink on paper.jpg",
+          "thumb": "images/desene/2022 Surreal Land/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170558.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170558-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170641.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170641-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170719.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170719-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171953.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171953-thumb.webp",
+          "label": "Framed drawings · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-172031.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172031-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "at-night-i-dream-of-a-desert-land-2024": {
       "title": "At night I dream of a desert land",
@@ -6692,7 +7297,19 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2022 Surreal Land/At night I dream of a desert land, 2022, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2022 Surreal Land/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174223.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174223-thumb.webp",
+          "label": "Detail · graphite and interior space"
+        }
+      ]
     },
     "i-will-escape-from-within-2021": {
       "title": "I will escape from within",
@@ -6832,7 +7449,39 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/Kingdom of heaven, 2021, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "galaxy-2021": {
       "title": "Galaxy",
@@ -6972,7 +7621,39 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/Dancing on clouds, 2021, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "queen-of-time-2021": {
       "title": "Queen of time",
@@ -7123,6 +7804,16 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-0179.webp",
           "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
           "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174049.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174049-thumb.webp",
+          "label": "In exhibition · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175007.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175007-thumb.webp",
+          "label": "In the studio · the four seasons together"
         }
       ]
     },
@@ -7194,7 +7885,29 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Autumn, 2020, 60cm diameter, graphite crayon on paper.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175030.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175030-thumb.webp",
+          "label": "Detail · graphite and circular paper"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174603.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174603-thumb.webp",
+          "label": "Framed artwork · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175007.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175007-thumb.webp",
+          "label": "In the studio · the four seasons together"
+        }
+      ]
     },
     "pull-your-heart-together-2020": {
       "title": "Pull your heart together",
@@ -7264,7 +7977,39 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/Pull your heart together, 2020, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "sunlight-in-a-billion-dreams-2020": {
       "title": "Sunlight in a billion dreams",
@@ -7334,7 +8079,49 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/Sunlight in a billion dreams, 2020, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "the-fighter-2020": {
       "title": "The fighter",
@@ -7404,7 +8191,59 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/The fighter, 2020, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175136.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175136-thumb.webp",
+          "label": "Detail · graphite and portrait"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "the-keeper-of-the-fleeting-moment-2020": {
       "title": "The keeper of the fleeting moment",
@@ -7474,7 +8313,54 @@ window.ARTWORK_DATA = {
         "#transformation",
         "#visualnarrative"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/2020 The golden beauty of dusk/The keeper of the fleeting moment, 2020, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/2020 The golden beauty of dusk/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "queen-of-time-2019": {
       "title": "Queen of Time",
@@ -7544,7 +8430,39 @@ window.ARTWORK_DATA = {
         "#identity",
         "#intricatedetail"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Infinity's immensity/Queen of Time, 2019, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Infinity's immensity/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174849.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174849-thumb.webp",
+          "label": "With the artist · framed drawing"
+        }
+      ]
     },
     "never-be-the-same-2019": {
       "title": "Never be the same",
@@ -7614,7 +8532,34 @@ window.ARTWORK_DATA = {
         "#layeredforms",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Infinity's immensity/Never be the same, 2019, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Infinity's immensity/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+          "label": "With the artist · outdoor exhibition"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+          "label": "In exhibition · outdoor display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175331.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175331-thumb.webp",
+          "label": "In the studio · works together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175344.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175344-thumb.webp",
+          "label": "With the artist · studio display"
+        }
+      ]
     },
     "silent-whispers-2019": {
       "title": "Silent Whispers",
@@ -7684,7 +8629,59 @@ window.ARTWORK_DATA = {
         "#layeredforms",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Infinity's immensity/Silent Whispers, 2019, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Infinity's immensity/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174746.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174746-thumb.webp",
+          "label": "With the artist · framed drawing"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+          "label": "With the artist · outdoor exhibition"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+          "label": "In exhibition · outdoor display"
+        }
+      ]
     },
     "shape-of-love-2019": {
       "title": "Shape of love",
@@ -9165,6 +10162,11 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-0179.webp",
           "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
           "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174049.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174049-thumb.webp",
+          "label": "In exhibition · framed drawings together"
         }
       ]
     },
@@ -9236,7 +10238,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Frozen/One day I'll see you stand there, 2017, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Frozen/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174049.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174049-thumb.webp",
+          "label": "In exhibition · framed drawings together"
+        }
+      ]
     },
     "i-guess-i-m-dreaming-again-2017": {
       "title": "I guess I'm dreaming again",
@@ -9317,6 +10331,11 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-0179.webp",
           "thumb": "images/artwork-details/studio/img-0179-thumb.webp",
           "label": "In the studio · framed drawings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174049.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174049-thumb.webp",
+          "label": "In exhibition · framed drawings together"
         }
       ]
     },
@@ -9738,7 +10757,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#identity"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/Frozen/A Glance Of Hope, 2017, 50-50cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/Frozen/mici/9.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175248.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175248-thumb.webp",
+          "label": "With the artist · exhibition view"
+        }
+      ]
     },
     "my-dreams-are-wondrous-2017": {
       "title": "My dreams are wondrous",
@@ -10368,7 +11399,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#layeredperception"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/The smoke/The sun no longer shines on us, 2016, 50-70 cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/The smoke/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "i-took-a-trip-on-the-inside-2016": {
       "title": "I took a trip on the inside",
@@ -10438,7 +11481,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#layeredperception"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/The smoke/I took a trip on the inside, 2016, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/The smoke/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174652.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174652-thumb.webp",
+          "label": "With the artist · studio view"
+        }
+      ]
     },
     "it-feels-so-good-to-reunite-2016": {
       "title": "It feels so good to reunite",
@@ -10578,7 +11633,19 @@ window.ARTWORK_DATA = {
         "#tonalcontrast",
         "#layeredperception"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/desene/The smoke/Memories of yesterday, 2016, 50-70cm, graphite crayon on paper.jpg",
+          "thumb": "images/desene/The smoke/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175425-thumb.webp",
+          "label": "With the artist · exhibition view"
+        }
+      ]
     },
     "burning-flame-2016": {
       "title": "Burning Flame",
@@ -13868,7 +14935,24 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#nonfigurativeart"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Frozen Rhythm, acrylic on canvas, 2025, 60x60 cm.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165405.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165405-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165423.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165423-thumb.webp",
+          "label": "With the artist · exhibition view"
+        }
+      ]
     },
     "echoes-folded-into-silence-2025": {
       "title": "Echoes Folded Into Silence",
@@ -13938,7 +15022,19 @@ window.ARTWORK_DATA = {
         "#repetition",
         "#nonfigurativeart"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Echoes Folded Into Silence, 2025, acrylic on canvas, 150x100cm.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170419.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170419-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "frequencies-of-the-unseen-2025": {
       "title": "Frequencies of the Unseen",
@@ -14008,7 +15104,19 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#repetition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Frequencies of the Unseen, 2025, 150 x 100 cm, acrylic on canvas.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170540.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170540-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "the-silence-between-the-signals-2025": {
       "title": "The Silence Between the Signals",
@@ -14078,7 +15186,19 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#repetition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/The Silence Between the Signals, acrylic on canvas, 150x100cm, 2025.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170624.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170624-thumb.webp",
+          "label": "On canvas · colour and texture"
+        }
+      ]
     },
     "blueprints-for-the-invisible-2025": {
       "title": "Blueprints for the invisible",
@@ -14148,7 +15268,19 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#repetition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Blueprints for the invisible, acrylic on canvas, 150-100cm, 2025.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170641.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170641-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "through-the-tides-of-silence-2025": {
       "title": "Through the Tides of Silence",
@@ -14218,7 +15350,24 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#repetition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Through the Tides of Silence, acrylic on canvas, 100 x 150 cm, 2025.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170703.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170703-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/img-6579.webp",
+          "thumb": "images/artwork-details/studio/img-6579-thumb.webp",
+          "label": "In the studio · paintings together"
+        }
+      ]
     },
     "veil-of-everything-light-2025": {
       "title": "Veil of Everflowing Light",
@@ -14288,7 +15437,29 @@ window.ARTWORK_DATA = {
         "#surfacetexture",
         "#repetition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2025 abstract/Veil of Everflowing Light, acrylic on canvas, 100 x 150 cm, 2025.jpg",
+          "thumb": "images/Picturi/2025 abstract/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/img-6579.webp",
+          "thumb": "images/artwork-details/studio/img-6579-thumb.webp",
+          "label": "In the studio · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+          "label": "In the studio · shared display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170719.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170719-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "the-passage-within-2025": {
       "title": "The Passage Within",
@@ -14358,7 +15529,24 @@ window.ARTWORK_DATA = {
         "#light",
         "#passage"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2024 Archi visions/The Passage Within, oil on canvas, 120x80 cm, 2025.jpg",
+          "thumb": "images/Picturi/2024 Archi visions/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165627.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165627-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170712.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170712-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "the-silence-beyond-the-arches-2024": {
       "title": "The Silence Beyond the Arches",
@@ -14428,7 +15616,19 @@ window.ARTWORK_DATA = {
         "#passage",
         "#monumentalspace"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2024 Archi visions/The Silence Beyond the Arches, 2024, oil on canvas, 120-80cm.jpg",
+          "thumb": "images/Picturi/2024 Archi visions/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171241.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171241-thumb.webp",
+          "label": "On the easel · studio view"
+        }
+      ]
     },
     "journey-through-light-and-color": {
       "title": "Journey Through Light And Color",
@@ -14498,7 +15698,24 @@ window.ARTWORK_DATA = {
         "#light",
         "#passage"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2024 Archi visions/Journey Through Light And Color, oil on canvas, 2024, 120x80 cm.jpg",
+          "thumb": "images/Picturi/2024 Archi visions/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-171726.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-171726-thumb.webp",
+          "label": "On the easel · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170751.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170751-thumb.webp",
+          "label": "In exhibition · full gallery view"
+        }
+      ]
     },
     "return-to-me-this-one-time": {
       "title": "Return to me this one time",
@@ -14638,7 +15855,24 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2022 Surreal Land/I saw the coming of the end, 2022, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/2022 Surreal Land/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174101.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174101-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174138.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174138-thumb.webp",
+          "label": "In the studio · works in progress"
+        }
+      ]
     },
     "tales-of-wonder-2022": {
       "title": "Tales of Wonder",
@@ -14708,7 +15942,34 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2022 Surreal Land/Tales of Wonder, 2022, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/2022 Surreal Land/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174158.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174158-thumb.webp",
+          "label": "On canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174207.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174207-thumb.webp",
+          "label": "On the easel · wider studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174029.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174029-thumb.webp",
+          "label": "In exhibition · visitors and artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174138.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174138-thumb.webp",
+          "label": "In the studio · works in progress"
+        }
+      ]
     },
     "from-the-flames-i-walk-away": {
       "title": "From the flames, I walk away",
@@ -14778,7 +16039,19 @@ window.ARTWORK_DATA = {
         "#introspection",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/2022 Surreal Land/From the flames, I walk away, 2021, oil on canvas, 120-80cm.jpg",
+          "thumb": "images/Picturi/2022 Surreal Land/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174258.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174258-thumb.webp",
+          "label": "On canvas · studio view"
+        }
+      ]
     },
     "slowly-dissolving-our-time": {
       "title": "Slowly dissolving our time",
@@ -14848,7 +16121,24 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Slowly dissolving our time, 2021, oil on canvas, 60 cm diameter.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174235.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174235-thumb.webp",
+          "label": "In exhibition · circular paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174243.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174243-thumb.webp",
+          "label": "In exhibition · visitors and paintings"
+        }
+      ]
     },
     "hypnotic-2021": {
       "title": "Hypnotic",
@@ -14918,7 +16208,19 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Hypnotic, 2021, oil on canvas, 60 cm diameter.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174635.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174635-thumb.webp",
+          "label": "On the easel · circular canvas"
+        }
+      ]
     },
     "waiting-patiently-2021": {
       "title": "Waiting patiently",
@@ -14988,7 +16290,24 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Waiting patiently, 2021, oil on canvas, 60 cm diameter.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174235.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174235-thumb.webp",
+          "label": "In exhibition · circular paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174243.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174243-thumb.webp",
+          "label": "In exhibition · visitors and paintings"
+        }
+      ]
     },
     "forever-autumn-2021": {
       "title": "Forever Autumn",
@@ -15058,7 +16377,19 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Forever Autumn, 2021, oil on canvas, 100x100 cm.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174912.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174912-thumb.webp",
+          "label": "With the artist · paintings together"
+        }
+      ]
     },
     "spring-2020": {
       "title": "Spring",
@@ -15128,7 +16459,29 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Spring, 2020, 60cm diameter, oil on canvas.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175042.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175042-thumb.webp",
+          "label": "Circular canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174821.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174821-thumb.webp",
+          "label": "With the artist · circular paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175007.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175007-thumb.webp",
+          "label": "In the studio · the four seasons together"
+        }
+      ]
     },
     "winter-2020": {
       "title": "Winter",
@@ -15198,7 +16551,29 @@ window.ARTWORK_DATA = {
         "#colorharmony",
         "#contemplation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/The four seasons/Winter, 2020, 60cm diameter, oil on canvas.jpg",
+          "thumb": "images/Picturi/The four seasons/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175018.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175018-thumb.webp",
+          "label": "Circular canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174821.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174821-thumb.webp",
+          "label": "With the artist · circular paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175007.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175007-thumb.webp",
+          "label": "In the studio · the four seasons together"
+        }
+      ]
     },
     "the-sun-in-your-eyes-2020": {
       "title": "The sun in your eyes",
@@ -15338,7 +16713,24 @@ window.ARTWORK_DATA = {
         "#imaginedlandscape",
         "#emotionalenergy"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Gravity/Happy happy joy joy 40-40cm, 2021, oil on canvas.jpg",
+          "thumb": "images/Picturi/Gravity/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174950.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174950-thumb.webp",
+          "label": "In progress · circular portrait"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174956.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174956-thumb.webp",
+          "label": "On the easel · circular portrait"
+        }
+      ]
     },
     "the-waves-washing-over-half-forgotten-memories-2020": {
       "title": "The waves washing over half forgotten memories",
@@ -15548,7 +16940,99 @@ window.ARTWORK_DATA = {
         "#imaginedlandscape",
         "#emotionalenergy"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Gravity/Dancing with the Clouds, 100-100cm, 2020, oil on canvas.jpg",
+          "thumb": "images/Picturi/Gravity/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174335.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174335-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174734.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174734-thumb.webp",
+          "label": "With the artist · studio display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174849.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174849-thumb.webp",
+          "label": "With the artist · framed drawing"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174912.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174912-thumb.webp",
+          "label": "With the artist · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174950.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174950-thumb.webp",
+          "label": "In progress · circular portrait"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174956.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174956-thumb.webp",
+          "label": "On the easel · circular portrait"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175056.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175056-thumb.webp",
+          "label": "In the studio · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175111.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175111-thumb.webp",
+          "label": "On the easel · paintings together"
+        }
+      ]
     },
     "the-floating-world-2020": {
       "title": "The floating world",
@@ -15618,7 +17102,79 @@ window.ARTWORK_DATA = {
         "#imaginedlandscape",
         "#emotionalenergy"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Gravity/The floating world, 100-100cm, 2020, oil on canvas.jpg",
+          "thumb": "images/Picturi/Gravity/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175122.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175122-thumb.webp",
+          "label": "On canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170751.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170751-thumb.webp",
+          "label": "In exhibition · full gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174335.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174335-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175056.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175056-thumb.webp",
+          "label": "In the studio · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175111.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175111-thumb.webp",
+          "label": "On the easel · paintings together"
+        }
+      ]
     },
     "ride-the-golden-stream-2020": {
       "title": "Ride the golden stream",
@@ -15688,7 +17244,64 @@ window.ARTWORK_DATA = {
         "#imaginedlandscape",
         "#emotionalenergy"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Gravity/Ride the golden stream, 100-100cm, 2020, oil on canvas.jpg",
+          "thumb": "images/Picturi/Gravity/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175148.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175148-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174335.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174335-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175056.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175056-thumb.webp",
+          "label": "In the studio · paintings together"
+        }
+      ]
     },
     "the-birth-of-all-creation-2020": {
       "title": "The birth of all creation",
@@ -15828,7 +17441,24 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#emotionalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/An eternal gaze/Angels walk along us, 120-80cm, 2019, oil on canvas.jpg",
+          "thumb": "images/Picturi/An eternal gaze/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174710.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174710-thumb.webp",
+          "label": "With the artist · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+          "label": "In exhibition · paintings together"
+        }
+      ]
     },
     "silent-ceremony-2019": {
       "title": "Silent ceremony",
@@ -15898,7 +17528,19 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#emotionalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/An eternal gaze/Silent ceremony, 120-80cm, 2019, oil on canvas.jpg",
+          "thumb": "images/Picturi/An eternal gaze/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175331.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175331-thumb.webp",
+          "label": "In the studio · works together"
+        }
+      ]
     },
     "bending-space-and-time-2019": {
       "title": "Bending Space and Time",
@@ -15968,7 +17610,29 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#emotionalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/An eternal gaze/Bending Space and Time, 120-80cm, 2019, oil on canvas.jpg",
+          "thumb": "images/Picturi/An eternal gaze/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+          "label": "With the artist · outdoor exhibition"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+          "label": "In exhibition · outdoor display"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175344.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175344-thumb.webp",
+          "label": "With the artist · studio display"
+        }
+      ]
     },
     "open-your-mind-2019": {
       "title": "Open your mind",
@@ -16038,7 +17702,39 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#emotionalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/An eternal gaze/Open your mind, 120-80cm, 2019, oil on canvas.jpg",
+          "thumb": "images/Picturi/An eternal gaze/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174758-thumb.webp",
+          "label": "With the artist · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+          "label": "With the artist · outdoor exhibition"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+          "label": "In exhibition · outdoor display"
+        }
+      ]
     },
     "the-house-of-wonders-2019": {
       "title": "The house of wonders",
@@ -16108,7 +17804,29 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#emotionalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/An eternal gaze/The house of wonders, 120-80cm, 2019, oil on canvas.jpg",
+          "thumb": "images/Picturi/An eternal gaze/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175302.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175302-thumb.webp",
+          "label": "With the artist · outdoor exhibition"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175309.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175309-thumb.webp",
+          "label": "In exhibition · outdoor display"
+        }
+      ]
     },
     "endless-horizon-of-ice-2019": {
       "title": "Endless horizon of ice",
@@ -16458,7 +18176,29 @@ window.ARTWORK_DATA = {
         "#tactilefolds",
         "#dramaticlight"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Voice of fire/Where shadows dance, 120-80cm, 2018, oil on canvas.jpg",
+          "thumb": "images/Picturi/Voice of fire/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "i-found-you-in-the-dark-2018": {
       "title": "I found you in the dark",
@@ -16808,7 +18548,19 @@ window.ARTWORK_DATA = {
         "#saturatedcolor",
         "#imaginedmovement"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Daydreaming/Bells From The Deep, 120-80cm, 2018, oil on canvas.jpg",
+          "thumb": "images/Picturi/Daydreaming/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175411.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175411-thumb.webp",
+          "label": "In exhibition · paintings together"
+        }
+      ]
     },
     "destined-to-find-an-answer-2018": {
       "title": "Destined to find an answer",
@@ -16948,7 +18700,24 @@ window.ARTWORK_DATA = {
         "#saturatedcolor",
         "#imaginedmovement"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Daydreaming/I sang the words I meant, 120-80cm, 2018, oil on canvas.jpg",
+          "thumb": "images/Picturi/Daydreaming/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175400.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175400-thumb.webp",
+          "label": "In exhibition · gallery room"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175411.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175411-thumb.webp",
+          "label": "In exhibition · paintings together"
+        }
+      ]
     },
     "one-wing-ruffled-the-water-2018": {
       "title": "One wing ruffled the water",
@@ -17298,7 +19067,39 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#psychologicalportrait"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Who we are/Somehow I found a way to get lost in you, 120-80cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Who we are/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175200.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175200-thumb.webp",
+          "label": "On canvas · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "vanished-into-the-blue-2017": {
       "title": "Vanished into the blue",
@@ -17368,7 +19169,34 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#psychologicalportrait"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Who we are/Vanished into the blue, 120-80cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Who we are/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174721.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174721-thumb.webp",
+          "label": "With the artist · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "cause-love-is-war-2017": {
       "title": "Cause love is war",
@@ -17578,7 +19406,69 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#psychologicalportrait"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Who we are/The world far below is on fire,, 120-80cm, 2018, oil on canvas.jpg",
+          "thumb": "images/Picturi/Who we are/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "don-t-leave-me-behind-2018": {
       "title": "Don't leave me behind",
@@ -17788,7 +19678,69 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#psychologicalportrait"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Who we are/I dreamed a thousand years, 120-80cm, 2018, oil on canvas.jpg",
+          "thumb": "images/Picturi/Who we are/mici/10.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174407.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174407-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "be-where-i-can-hear-you-2018": {
       "title": "Be where I can hear you",
@@ -18138,7 +20090,54 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#psychologicalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Distant memories/Timeless Wonder Through The Air, 100-100cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Distant memories/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170805.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170805-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174335.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174335-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174417.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174417-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "you-wear-a-thousand-faces-2017": {
       "title": "You wear a thousand faces",
@@ -18348,7 +20347,49 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#psychologicalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Distant memories/I wish upon the stars, 100-100cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Distant memories/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174839.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174839-thumb.webp",
+          "label": "With the artist · studio view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170805.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170805-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174425-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174441.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174441-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "games-of-the-soul-2017": {
       "title": "Games of the Soul",
@@ -18418,7 +20459,39 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#psychologicalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Distant memories/Games of the Soul, 100-100cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Distant memories/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174425-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174441.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174441-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "burning-up-the-way-2017": {
       "title": "Burning up the way",
@@ -18488,7 +20561,19 @@ window.ARTWORK_DATA = {
         "#imaginedspace",
         "#psychologicalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Distant memories/Burning up the way, 100-100cm, 2017, oil on canvas.jpg",
+          "thumb": "images/Picturi/Distant memories/mici/9.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174900.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174900-thumb.webp",
+          "label": "With the artist · studio view"
+        }
+      ]
     },
     "what-consumes-your-thoughts-controls-your-life-2017": {
       "title": "What consumes your thoughts controls your life",
@@ -19608,7 +21693,19 @@ window.ARTWORK_DATA = {
         "#figurativepainting",
         "#psychologicalatmosphere"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent waters/Escape To Fantasy, 120-80cm, 2016, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent waters/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175248.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175248-thumb.webp",
+          "label": "With the artist · exhibition view"
+        }
+      ]
     },
     "crazy-in-love-2016": {
       "title": "Crazy in Love",
@@ -19678,7 +21775,29 @@ window.ARTWORK_DATA = {
         "#figurativepainting",
         "#imaginedspace"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent waters/Crazy in Love, 120-80cm, 2016, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent waters/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170758.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170758-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175248.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175248-thumb.webp",
+          "label": "With the artist · exhibition view"
+        }
+      ]
     },
     "cause-i-m-broken-2016": {
       "title": "Cause I'm broken",
@@ -19888,7 +22007,19 @@ window.ARTWORK_DATA = {
         "#figurativepainting",
         "#imaginedspace"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent waters/In the shadow of your heart, 120-80cm, 2016, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent waters/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "blue-spirit-2015": {
       "title": "Blue Spirit",
@@ -20308,7 +22439,19 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#vividpalette"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Shades of reality/Venetian scene, 50-80cm, 2016, oil on canvas.jpg",
+          "thumb": "images/Picturi/Shades of reality/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175234.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175234-thumb.webp",
+          "label": "In exhibition · paintings together"
+        }
+      ]
     },
     "shall-we-dance-my-friend-2016": {
       "title": "Shall we dance my friend",
@@ -20378,7 +22521,59 @@ window.ARTWORK_DATA = {
         "#humanpresence",
         "#vividpalette"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Shades of reality/Shall we dance my friend, 120-80cm, 2016, oil on canvas.jpg",
+          "thumb": "images/Picturi/Shades of reality/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-165351.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-165351-thumb.webp",
+          "label": "Framed artwork · at the keyboard"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "join-in-the-shadow-dance-2016": {
       "title": "Join in the shadow dance",
@@ -20798,7 +22993,19 @@ window.ARTWORK_DATA = {
         "#layeredcolor",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Falling/Drowning, 2015, 100-100cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Falling/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-172031.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-172031-thumb.webp",
+          "label": "In the studio · shared display"
+        }
+      ]
     },
     "crumbling-to-pieces-2015": {
       "title": "Crumbling to pieces",
@@ -21008,7 +23215,24 @@ window.ARTWORK_DATA = {
         "#layeredcolor",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Falling/Soul searching, 2015, 100-100cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Falling/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170805.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170805-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175331.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175331-thumb.webp",
+          "label": "In the studio · works together"
+        }
+      ]
     },
     "dancing-soul-2015": {
       "title": "Dancing soul",
@@ -21078,7 +23302,19 @@ window.ARTWORK_DATA = {
         "#layeredcolor",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Falling/Dancing soul, 100-100cm, 2015, oil on canvas.jpg",
+          "thumb": "images/Picturi/Falling/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170751.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170751-thumb.webp",
+          "label": "In exhibition · full gallery view"
+        }
+      ]
     },
     "blossoming-2015": {
       "title": "Blossoming",
@@ -21148,7 +23384,39 @@ window.ARTWORK_DATA = {
         "#layeredcolor",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Falling/Blossoming, 100-100cm, 2015, oil on canvas.jpg",
+          "thumb": "images/Picturi/Falling/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174425-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174441.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174441-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "fantasy-2015": {
       "title": "Fantasy",
@@ -21218,7 +23486,44 @@ window.ARTWORK_DATA = {
         "#layeredcolor",
         "#transformation"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Falling/Fantasy, 100-100cm, 2015, oil on canvas.jpg",
+          "thumb": "images/Picturi/Falling/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-170805.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-170805-thumb.webp",
+          "label": "In exhibition · paintings together"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174425-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174441.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174441-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "rewind-2014": {
       "title": "Rewind",
@@ -21358,7 +23663,19 @@ window.ARTWORK_DATA = {
         "#intimatecomposition",
         "#softmodeling"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent enigma/Inner silence, 2014, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent enigma/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "in-visible-light-2014": {
       "title": "In Visible Light",
@@ -21778,7 +24095,24 @@ window.ARTWORK_DATA = {
         "#intimatecomposition",
         "#softmodeling"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent enigma/Flow of emotions, 2015, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent enigma/mici/9.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175425-thumb.webp",
+          "label": "With the artist · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "immortal-2015": {
       "title": "Immortal",
@@ -21918,7 +24252,29 @@ window.ARTWORK_DATA = {
         "#intimatecomposition",
         "#softmodeling"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Silent enigma/Cover Me, 2015, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Silent enigma/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174350.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174350-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174500.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174500-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "burning-flame-2014": {
       "title": "Burning flame",
@@ -22575,7 +24931,54 @@ window.ARTWORK_DATA = {
         "#streetlight",
         "#bodilygesture"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/in anonimat/Walking on a dream, 2013, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/in anonimat/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174313.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174313-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174326.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174326-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174358.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174358-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174450.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174450-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174514.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174514-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174524.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174524-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174532.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174532-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174541.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174541-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "the-first-steps-2013": {
       "title": "The first steps",
@@ -24185,7 +26588,19 @@ window.ARTWORK_DATA = {
         "#monochromepainting",
         "#collectivepresence"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/singularity/Amsterdam wibe, 2012, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/singularity/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174811.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174811-thumb.webp",
+          "label": "With the artist · on the easel"
+        }
+      ]
     },
     "passing-by-2012": {
       "title": "Passing by",
@@ -25305,7 +27720,19 @@ window.ARTWORK_DATA = {
         "#intimatecomposition",
         "#tactilesurface"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Red Drape/Waiting, 2012, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Red Drape/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "the-girl-without-pearl-earrings-2012": {
       "title": "The girl without pearl earrings",
@@ -25585,7 +28012,19 @@ window.ARTWORK_DATA = {
         "#warmlight",
         "#intimatecomposition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Red Drape/We are all actors on the stage of life, 2012, 120-80 cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Red Drape/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "red-detail-2012": {
       "title": "Red detail",
@@ -25795,7 +28234,24 @@ window.ARTWORK_DATA = {
         "#warmlight",
         "#intimatecomposition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Red Drape/Dancing time, 2012, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Red Drape/mici/11.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175425-thumb.webp",
+          "label": "With the artist · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "nothing-to-see-2012": {
       "title": "Nothing to see",
@@ -25865,7 +28321,19 @@ window.ARTWORK_DATA = {
         "#warmlight",
         "#intimatecomposition"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Red Drape/Nothing to see, 2012, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Red Drape/mici/12.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "hidden-reality-2012": {
       "title": "Hidden reality",
@@ -25935,7 +28403,24 @@ window.ARTWORK_DATA = {
         "#intimatecomposition",
         "#paleskin"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Red Drape/Hidden reality, 2012, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Red Drape/mici/8.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175425.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175425-thumb.webp",
+          "label": "With the artist · exhibition view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-175435.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-175435-thumb.webp",
+          "label": "In exhibition · paintings and drawings together"
+        }
+      ]
     },
     "wondering-2011": {
       "title": "Wondering",
@@ -26565,7 +29050,29 @@ window.ARTWORK_DATA = {
         "#saturatedlight",
         "#everydaylife"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Facebook/Tavern, 2011, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Facebook/mici/1.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174432.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174432-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "helena-2011": {
       "title": "Helena",
@@ -26705,7 +29212,29 @@ window.ARTWORK_DATA = {
         "#saturatedlight",
         "#everydaylife"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Facebook/Revealing table, 2011, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Facebook/mici/3.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174342.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174342-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174432.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174432-thumb.webp",
+          "label": "In exhibition · gallery view"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174508.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174508-thumb.webp",
+          "label": "In exhibition · gallery view"
+        }
+      ]
     },
     "in-the-background-2011": {
       "title": "In the background",
@@ -26775,7 +29304,19 @@ window.ARTWORK_DATA = {
         "#saturatedlight",
         "#everydaylife"
       ],
-      "copySource": "generated-from-artwork-and-catalogue"
+      "copySource": "generated-from-artwork-and-catalogue",
+      "images": [
+        {
+          "src": "images/Picturi/Facebook/In the background, 2011, 120-80cm, oil on canvas.jpg",
+          "thumb": "images/Picturi/Facebook/mici/4.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/studio/screenshot-2026-11-01-174734.webp",
+          "thumb": "images/artwork-details/studio/screenshot-2026-11-01-174734-thumb.webp",
+          "label": "With the artist · studio display"
+        }
+      ]
     },
     "a-moment-in-time-2011": {
       "title": "A moment in time",
