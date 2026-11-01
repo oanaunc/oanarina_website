@@ -3,6 +3,34 @@
 // Add image sets and writing to artworks below using the same data-id.
 window.ARTWORK_DATA = {
   "shopLinks": {
+    "the-architecture-of-unspoken-words-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Architecture-of-Unspoken-Words/806648/14380857/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185241413"
+    },
+    "the-weight-of-invisible-worlds-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Weight-of-Invisible-Worlds/806648/14380867/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185241551"
+    },
+    "where-dreams-learn-to-let-go-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-Where-Dreams-Learn-to-Let-Go/806648/14380875/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185241671"
+    },
+    "where-light-becomes-infinite-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-Where-Light-Becomes-Infinite/806648/14380903/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185241789"
+    },
     "velocity-blueprint-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-Velocity-Blueprint/806648/13810071/view",
@@ -2332,6 +2360,404 @@ window.ARTWORK_DATA = {
     }
   },
   "artworks": {
+    "the-architecture-of-unspoken-words-2026": {
+      "title": "The Architecture of Unspoken Words",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork-thumb.webp",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5617.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5617-thumb.webp",
+          "label": "Framed artwork · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5618.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5618-thumb.webp",
+          "label": "Framed artwork · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630-thumb.webp",
+          "label": "In the studio · alongside The Weight of Invisible Worlds"
+        }
+      ],
+      "description": [
+        "The Architecture of Unspoken Words explores the invisible structures of human communication, where emotions, memories, and unexpressed thoughts accumulate beyond the boundaries of language.",
+        "Two solitary figures occupy the lower part of the composition, separated by a small distance yet connected through an immense, suspended formation of vibrant colors and interlocking geometric shapes. Rising above them, this abstract architecture becomes a visual metaphor for the complexity of human relationships, suggesting that what remains unspoken can possess greater emotional weight than words themselves.",
+        "The composition establishes a dialogue between intimacy and immensity. The figures, reduced to minimal silhouettes, contrast with the monumental chromatic structure that dominates the space above them. Their physical stillness suggests a moment of contemplation, while the overlapping forms evoke the movement of thoughts, the fragmentation of memories, and the continuous transformation of emotional experience.",
+        "Color functions as an independent language. Warm yellows, oranges, and pinks coexist with deep blues, purples, and turquoise, creating a visual tension between vulnerability and strength, closeness and separation, harmony and contradiction. Each geometric fragment can be interpreted as an individual emotion or experience, contributing to a larger psychological landscape that neither figure can fully comprehend.",
+        "The generous white space surrounding the composition intensifies its symbolic dimension, isolating the encounter from any recognizable environment. The abstract structure appears to descend toward the figures, gradually converging into a delicate point of connection, as though an entire universe of thoughts were attempting to find expression in a single moment.",
+        "Ultimately, The Architecture of Unspoken Words reflects on the paradox of human connection: two individuals may share the same emotional universe while experiencing it in profoundly different ways. The artwork transforms silence into a complex visual architecture, suggesting that communication extends far beyond spoken language and that the deepest connections often exist within the spaces between words."
+      ],
+      "keywords": [
+        "Abstract art",
+        "human connection",
+        "unspoken words",
+        "emotional architecture",
+        "visual communication",
+        "geometric abstraction",
+        "chromatic harmony",
+        "human relationships",
+        "psychological landscape",
+        "contemporary drawing",
+        "symbolic composition",
+        "emotional complexity"
+      ],
+      "keywords30": [
+        "Abstract art",
+        "contemporary art",
+        "conceptual drawing",
+        "geometric abstraction",
+        "emotional architecture",
+        "human connection",
+        "unspoken communication",
+        "interpersonal relationships",
+        "visual storytelling",
+        "chromatic expression",
+        "psychological landscape",
+        "emotional complexity",
+        "symbolic composition",
+        "human silhouettes",
+        "color symbolism",
+        "fragmented memories",
+        "emotional dialogue",
+        "visual metaphor",
+        "existential reflection",
+        "intimate encounters",
+        "abstract geometry",
+        "vibrant colors",
+        "artistic expression",
+        "contemporary illustration",
+        "silence and communication",
+        "emotional duality",
+        "minimalist figures",
+        "spatial relationships",
+        "psychological abstraction",
+        "markers on paper"
+      ],
+      "hashtags": [
+        "#AbstractArt",
+        "#HumanConnection",
+        "#UnspokenWords",
+        "#EmotionalArchitecture",
+        "#VisualCommunication",
+        "#GeometricAbstraction",
+        "#ChromaticHarmony",
+        "#HumanRelationships",
+        "#PsychologicalLandscape",
+        "#ContemporaryDrawing",
+        "#SymbolicComposition",
+        "#EmotionalComplexity"
+      ]
+    },
+    "the-weight-of-invisible-worlds-2026": {
+      "title": "The Weight of Invisible Worlds",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Colored markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork-thumb.webp",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5626.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5626-thumb.webp",
+          "label": "On paper · with colored markers"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5627.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5627-thumb.webp",
+          "label": "On paper · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630-thumb.webp",
+          "label": "In the studio · alongside The Architecture of Unspoken Words"
+        }
+      ],
+      "description": [
+        "The Weight of Invisible Worlds explores the emotional complexity of human existence through the relationship between introspection, identity, and the unseen forces that shape our inner lives.",
+        "At the center of the composition, a solitary female figure sits in a contemplative pose, her dark silhouette contrasting with the vibrant geometric forms surrounding her. Behind her, overlapping circular structures unfold in a spectrum of blues, pinks, oranges, purples, and turquoise, suggesting interconnected emotional dimensions, fragmented memories, and parallel states of consciousness.",
+        "The circular forms evoke the idea of invisible worlds carried within the individual: experiences, desires, fears, and possibilities that coexist beyond the boundaries of physical reality. Their intersecting shapes suggest that identity is not a fixed entity but an evolving construction of emotional layers, each influencing the others.",
+        "The figure's bowed head and inward posture communicate a moment of vulnerability and self-reflection. Yet the intense colors surrounding her transform this apparent solitude into a space of psychological richness. Rather than representing isolation as emptiness, the composition presents it as an encounter with the vast complexity of one's own consciousness.",
+        "The contrast between the nearly black silhouette and the luminous chromatic environment establishes a dialogue between the visible and the invisible, the physical and the psychological. The figure becomes both an observer and a participant in the abstract universe behind her, suggesting that the worlds we inhabit internally can be as expansive and significant as the external reality.",
+        "Ultimately, The Weight of Invisible Worlds is a meditation on the emotional dimensions of existence, the multiplicity of identity, and the quiet strength required to carry an entire universe within oneself."
+      ],
+      "keywords": [
+        "Contemporary Art",
+        "Figurative Abstraction",
+        "Female Silhouette",
+        "Introspection",
+        "Emotional Complexity",
+        "Inner Worlds",
+        "Geometric Abstraction",
+        "Identity",
+        "Consciousness",
+        "Psychological Depth",
+        "Chromatic Expression",
+        "Contemporary Drawing"
+      ],
+      "keywords30": [
+        "Contemporary Art",
+        "Figurative Abstraction",
+        "Female Silhouette",
+        "Introspection",
+        "Emotional Complexity",
+        "Inner Worlds",
+        "Geometric Abstraction",
+        "Identity",
+        "Consciousness",
+        "Psychological Depth",
+        "Chromatic Expression",
+        "Contemporary Drawing",
+        "Feminine Identity",
+        "Solitude",
+        "Self Reflection",
+        "Abstract Composition",
+        "Color Theory",
+        "Emotional Landscape",
+        "Symbolic Art",
+        "Geometric Forms",
+        "Visual Metaphor",
+        "Inner Universe",
+        "Human Vulnerability",
+        "Existential Reflection",
+        "Layered Reality",
+        "Psychological Art",
+        "Female Figure",
+        "Colorful Illustration",
+        "Modern Expressionism",
+        "Conceptual Art"
+      ],
+      "hashtags": [
+        "#ContemporaryArt",
+        "#FigurativeAbstraction",
+        "#FemaleSilhouette",
+        "#Introspection",
+        "#EmotionalComplexity",
+        "#InnerWorlds",
+        "#GeometricAbstraction",
+        "#Identity",
+        "#Consciousness",
+        "#PsychologicalDepth",
+        "#ChromaticExpression",
+        "#ContemporaryDrawing"
+      ]
+    },
+    "where-dreams-learn-to-let-go-2026": {
+      "title": "Where Dreams Learn to Let Go",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Colored markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork-thumb.webp",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5672.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5672-thumb.webp",
+          "label": "Framed artwork · in the studio"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5673.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5673-thumb.webp",
+          "label": "Framed artwork · studio angle"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5674.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5674-thumb.webp",
+          "label": "Framed artwork · alternate view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5675.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5675-thumb.webp",
+          "label": "In the studio · shared wall"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5677.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5677-thumb.webp",
+          "label": "Framed artwork · close view"
+        }
+      ],
+      "description": [
+        "Where Dreams Learn to Let Go explores the delicate intersection between solitude, emotional vulnerability, and the quiet liberation of releasing what can no longer be held.",
+        "A solitary figure sits beneath an immense landscape of vibrant, abstract color, suspended between the weight of introspection and the limitless possibilities of imagination. Above, a small multicolored balloon floats freely, becoming a metaphor for forgotten dreams, fragile hopes, and the emotional attachments that gradually drift beyond our reach.",
+        "The composition establishes a striking dialogue between the stillness of the human silhouette and the energetic movement of the surrounding chromatic forms. Expansive fields of emerald green, electric pink, warm orange, and muted lavender create an imaginary environment in which emotional states are transformed into visual territories. These organic shapes resemble clouds, memories, or fragments of an internal universe, suggesting that the landscape exists as much within the mind as outside it.",
+        "The contrast between the dark, motionless figure and the playful intensity of the colors introduces a subtle emotional paradox: the world remains vivid and full of possibilities even during moments of personal isolation. The balloon, positioned just beyond the figure's immediate reach, becomes a symbol of both distance and freedom, representing the difficult realization that letting go does not necessarily mean losing something, but allowing it to exist beyond our control.",
+        "Through its minimalist figurative language and expressive use of color, the artwork invites reflection on the relationship between memory, acceptance, and emotional transformation. It captures a suspended moment in which sadness and hope coexist, suggesting that personal growth often begins not with the pursuit of something new, but with the courage to release what once defined us.",
+        "Ultimately, Where Dreams Learn to Let Go is a meditation on the beauty of impermanence, the resilience of the human spirit, and the silent freedom found in acceptance."
+      ],
+      "keywords": [
+        "Contemporary Art",
+        "Conceptual Art",
+        "Emotional Landscape",
+        "Solitude",
+        "Letting Go",
+        "Introspection",
+        "Dreamscape",
+        "Symbolism",
+        "Minimalist Figurative Art",
+        "Emotional Freedom",
+        "Color Abstraction",
+        "Contemporary Drawing"
+      ],
+      "keywords30": [
+        "Contemporary Art",
+        "Conceptual Art",
+        "Modern Drawing",
+        "Colored Marker Art",
+        "Emotional Landscape",
+        "Dreamscape",
+        "Solitude",
+        "Introspection",
+        "Letting Go",
+        "Emotional Freedom",
+        "Symbolism",
+        "Minimalist Art",
+        "Figurative Abstraction",
+        "Abstract Landscape",
+        "Human Silhouette",
+        "Floating Balloon",
+        "Vibrant Colors",
+        "Chromatic Contrast",
+        "Psychological Landscape",
+        "Inner World",
+        "Emotional Vulnerability",
+        "Memory",
+        "Acceptance",
+        "Impermanence",
+        "Hope",
+        "Melancholy",
+        "Visual Poetry",
+        "Surreal Atmosphere",
+        "Personal Transformation",
+        "Contemporary Figurative Art"
+      ],
+      "hashtags": [
+        "#ContemporaryArt",
+        "#ConceptualArt",
+        "#EmotionalLandscape",
+        "#Solitude",
+        "#LettingGo",
+        "#Introspection",
+        "#Dreamscape",
+        "#Symbolism",
+        "#MinimalistFigurativeArt",
+        "#EmotionalFreedom",
+        "#ColorAbstraction",
+        "#ContemporaryDrawing"
+      ]
+    },
+    "where-light-becomes-infinite-2026": {
+      "title": "Where Light Becomes Infinite",
+      "dimensions": "21 × 29.7 cm",
+      "medium": "Markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork-thumb.webp",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5609.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5609-thumb.webp",
+          "label": "On paper · full view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5610.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5610-thumb.webp",
+          "label": "Framed artwork · bookshelf"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5611.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5611-thumb.webp",
+          "label": "Framed artwork · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5612.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5612-thumb.webp",
+          "label": "In the studio · with origami"
+        }
+      ],
+      "description": [
+        "Where Light Becomes Infinite explores the relationship between human existence, perception, and the overwhelming immensity of possibility. A solitary black silhouette stands at the threshold of a monumental structure composed of cascading vertical fragments of color, suggesting an architecture that transcends physical space and enters the realm of consciousness.",
+        "The composition transforms geometric abstraction into a metaphor for the infinite. Vibrant shades of turquoise, blue, violet, magenta, and crimson descend toward a luminous center of yellow and white, creating a visual passage between the tangible and the intangible. The vertical rhythm evokes an imaginary city, a cathedral of light, or the fragmented dimensions of an unexplored universe.",
+        "The human figure, deliberately reduced to a minimal silhouette, establishes a profound contrast between individual fragility and the vastness of the surrounding environment. Yet the figure is not portrayed as powerless. Instead, its quiet presence becomes an expression of curiosity, contemplation, and the courage to confront the unknown.",
+        "Light emerges as the central philosophical element of the artwork, symbolizing knowledge, transformation, and the possibility of transcendence. The surrounding colors suggest multiple layers of reality, each representing a different emotional state, memory, or dimension of experience.",
+        "Through its interplay of scale, chromatic intensity, and geometric repetition, Where Light Becomes Infinite invites viewers to reflect on their own place within an immeasurable universe. The work proposes that infinity is not necessarily a distant destination, but something encountered in moments of stillness, when the boundaries between the self and the unknown begin to dissolve."
+      ],
+      "keywords": [
+        "Abstract architecture",
+        "Infinity",
+        "Human existence",
+        "Chromatic geometry",
+        "Transcendence",
+        "Solitude",
+        "Light and shadow",
+        "Geometric abstraction",
+        "Contemplation",
+        "Infinite possibilities",
+        "Spiritual journey",
+        "Color symbolism"
+      ],
+      "keywords30": [
+        "Contemporary art",
+        "Abstract art",
+        "Geometric abstraction",
+        "Abstract architecture",
+        "Infinity",
+        "Human existence",
+        "Existentialism",
+        "Transcendence",
+        "Solitude",
+        "Contemplation",
+        "Spiritual journey",
+        "Color symbolism",
+        "Chromatic geometry",
+        "Vertical composition",
+        "Light and shadow",
+        "Luminous architecture",
+        "Human silhouette",
+        "Monumental scale",
+        "Infinite possibilities",
+        "Perception",
+        "Consciousness",
+        "Metaphysical space",
+        "Visual rhythm",
+        "Color fields",
+        "Emotional landscape",
+        "Imaginary dimensions",
+        "Geometric fragmentation",
+        "Inner exploration",
+        "Philosophical art",
+        "Markers on paper"
+      ],
+      "hashtags": [
+        "#AbstractArchitecture",
+        "#Infinity",
+        "#HumanExistence",
+        "#ChromaticGeometry",
+        "#Transcendence",
+        "#Solitude",
+        "#LightAndShadow",
+        "#GeometricAbstraction",
+        "#Contemplation",
+        "#InfinitePossibilities",
+        "#SpiritualJourney",
+        "#ColorSymbolism"
+      ]
+    },
     "the-shape-of-sound-2026": {
       "title": "The Shape of Sound",
       "dimensions": "50 × 70 cm",
@@ -2367,6 +2793,11 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-4364.webp",
           "thumb": "images/artwork-details/studio/img-4364-thumb.webp",
           "label": "In the studio · shared wall, front view"
+        },
+        {
+          "src": "images/artwork-details/the-shape-of-sound/img-5679.webp",
+          "thumb": "images/artwork-details/the-shape-of-sound/img-5679-thumb.webp",
+          "label": "Framed artwork · studio display"
         }
       ],
       "description": [
@@ -30580,6 +31011,10 @@ window.ARTWORK_DATA = {
     }
   },
   "deviantArtLinks": {
+    "the-architecture-of-unspoken-words-2026": "https://www.deviantart.com/oanarinaldi/art/The-Architecture-of-Unspoken-Words-1405120085",
+    "the-weight-of-invisible-worlds-2026": "https://www.deviantart.com/oanarinaldi/art/The-Weight-of-Invisible-Worlds-1405122168",
+    "where-dreams-learn-to-let-go-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Dreams-Learn-to-Let-Go-1405123727",
+    "where-light-becomes-infinite-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-Infinite-1405126255",
     "velocity-blueprint-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Blueprint%2C-ink-on-paper%2C-2026%2C-30-42cm-1325456201",
     "born-to-break-the-horizon-2026": "https://www.deviantart.com/oanarinaldi/art/Born-to-Break-the-Horizon%2C-Ink-on-paper%2C-A4%2C-2026-1329379754",
     "velocity-construct-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Construct%2C-A3%2C-ink-on-paper%2C-2026-1330414394",

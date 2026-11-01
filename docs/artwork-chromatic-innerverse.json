@@ -1,0 +1,229 @@
+{
+  "project": "Chromatic Innerverse",
+  "sourceFolder": "Downloads/desene",
+  "notes": [
+    "Artwork metadata and store links supplied by the artist in each 1. Artwork Title file.",
+    "Titled images are the main artwork views; photographs retain their full composition and corrected EXIF orientation.",
+    "Exported as WebP with a 2200-pixel maximum side and separate 480-pixel thumbnails."
+  ],
+  "artworks": [
+    {
+      "id": "the-architecture-of-unspoken-words-2026",
+      "sourceText": "Chromatic Innerverse/The Architecture of Unspoken Words/1. Artwork Title",
+      "title": "The Architecture of Unspoken Words",
+      "specification": "21 × 29.7 cm (A4), markers on paper, 2026",
+      "links": {
+        "saatchi": "https://www.saatchiart.com/en-ro/art/Drawing-The-Architecture-of-Unspoken-Words/806648/14380857/view",
+        "redbubble": "https://www.redbubble.com/shop/ap/185241413",
+        "deviantart": "https://www.deviantart.com/oanarinaldi/art/The-Architecture-of-Unspoken-Words-1405120085"
+      }
+    },
+    {
+      "id": "the-weight-of-invisible-worlds-2026",
+      "sourceText": "Chromatic Innerverse/The Weight of Invisible Worlds/1. Artwork Title",
+      "title": "The Weight of Invisible Worlds",
+      "specification": "21 × 29.7 cm (A4), colored markers on paper, 2026",
+      "links": {
+        "saatchi": "https://www.saatchiart.com/en-ro/art/Drawing-The-Weight-of-Invisible-Worlds/806648/14380867/view",
+        "redbubble": "https://www.redbubble.com/shop/ap/185241551",
+        "deviantart": "https://www.deviantart.com/oanarinaldi/art/The-Weight-of-Invisible-Worlds-1405122168"
+      }
+    },
+    {
+      "id": "where-dreams-learn-to-let-go-2026",
+      "sourceText": "Chromatic Innerverse/Where Dreams Learn to Let Go/1. Artwork Title",
+      "title": "Where Dreams Learn to Let Go",
+      "specification": "21 × 29.7 cm (A4), colored markers on paper, 2026",
+      "links": {
+        "saatchi": "https://www.saatchiart.com/en-ro/art/Drawing-Where-Dreams-Learn-to-Let-Go/806648/14380875/view",
+        "redbubble": "https://www.redbubble.com/shop/ap/185241671",
+        "deviantart": "https://www.deviantart.com/oanarinaldi/art/Where-Dreams-Learn-to-Let-Go-1405123727"
+      }
+    },
+    {
+      "id": "where-light-becomes-infinite-2026",
+      "sourceText": "Chromatic Innerverse/Where Light Becomes Infinite/1. Artwork Title",
+      "title": "Where Light Becomes Infinite",
+      "specification": "21 × 29.7 cm, markers on paper, 2026",
+      "links": {
+        "saatchi": "https://www.saatchiart.com/en-ro/art/Drawing-Where-Light-Becomes-Infinite/806648/14380903/view",
+        "redbubble": "https://www.redbubble.com/shop/ap/185241789",
+        "deviantart": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-Infinite-1405126255"
+      }
+    }
+  ],
+  "images": [
+    {
+      "source": "Chromatic Innerverse/The Architecture of Unspoken Words/The Architecture of Unspoken Words.jpg",
+      "artworks": [
+        "the-architecture-of-unspoken-words-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/artwork-thumb.webp",
+      "label": "Full artwork"
+    },
+    {
+      "source": "Chromatic Innerverse/The Architecture of Unspoken Words/IMG_5617.jpg",
+      "artworks": [
+        "the-architecture-of-unspoken-words-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5617.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5617-thumb.webp",
+      "label": "Framed artwork · close view"
+    },
+    {
+      "source": "Chromatic Innerverse/The Architecture of Unspoken Words/IMG_5618.jpg",
+      "artworks": [
+        "the-architecture-of-unspoken-words-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5618.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5618-thumb.webp",
+      "label": "Framed artwork · alternate angle"
+    },
+    {
+      "source": "Chromatic Innerverse/The Architecture of Unspoken Words/IMG_5630.JPG",
+      "artworks": [
+        "the-architecture-of-unspoken-words-2026",
+        "the-weight-of-invisible-worlds-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-architecture-of-unspoken-words/img_5630-thumb.webp",
+      "label": "In the studio · alongside The Weight of Invisible Worlds"
+    },
+    {
+      "source": "Chromatic Innerverse/The Weight of Invisible Worlds/The Weight of Invisible Worlds.jpg",
+      "artworks": [
+        "the-weight-of-invisible-worlds-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/artwork-thumb.webp",
+      "label": "Full artwork"
+    },
+    {
+      "source": "Chromatic Innerverse/The Weight of Invisible Worlds/IMG_5626.jpg",
+      "artworks": [
+        "the-weight-of-invisible-worlds-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5626.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5626-thumb.webp",
+      "label": "On paper · with colored markers"
+    },
+    {
+      "source": "Chromatic Innerverse/The Weight of Invisible Worlds/IMG_5627.JPG",
+      "artworks": [
+        "the-weight-of-invisible-worlds-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5627.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-weight-of-invisible-worlds/img_5627-thumb.webp",
+      "label": "On paper · alternate angle"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/Where Dreams Learn to Let Go .jpg",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/artwork-thumb.webp",
+      "label": "Full artwork"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5672.jpg",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5672.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5672-thumb.webp",
+      "label": "Framed artwork · in the studio"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5673.jpg",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5673.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5673-thumb.webp",
+      "label": "Framed artwork · studio angle"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5674.jpg",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5674.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5674-thumb.webp",
+      "label": "Framed artwork · alternate view"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5675.JPG",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5675.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5675-thumb.webp",
+      "label": "In the studio · shared wall"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Dreams Learn to Let Go/IMG_5677.jpg",
+      "artworks": [
+        "where-dreams-learn-to-let-go-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5677.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-dreams-learn-to-let-go/img_5677-thumb.webp",
+      "label": "Framed artwork · close view"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Light Becomes Infinite/Where Light Becomes Infinite .jpg",
+      "artworks": [
+        "where-light-becomes-infinite-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/artwork-thumb.webp",
+      "label": "Full artwork"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Light Becomes Infinite/IMG_5609.jpg",
+      "artworks": [
+        "where-light-becomes-infinite-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5609.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5609-thumb.webp",
+      "label": "On paper · full view"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Light Becomes Infinite/IMG_5610.JPG",
+      "artworks": [
+        "where-light-becomes-infinite-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5610.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5610-thumb.webp",
+      "label": "Framed artwork · bookshelf"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Light Becomes Infinite/IMG_5611.JPG",
+      "artworks": [
+        "where-light-becomes-infinite-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5611.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5611-thumb.webp",
+      "label": "Framed artwork · close view"
+    },
+    {
+      "source": "Chromatic Innerverse/Where Light Becomes Infinite/IMG_5612.jpg",
+      "artworks": [
+        "where-light-becomes-infinite-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5612.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-infinite/img_5612-thumb.webp",
+      "label": "In the studio · with origami"
+    },
+    {
+      "source": "the shape of sound/IMG_5679.jpg",
+      "artworks": [
+        "the-shape-of-sound-2026"
+      ],
+      "src": "images/artwork-details/the-shape-of-sound/img-5679.webp",
+      "thumb": "images/artwork-details/the-shape-of-sound/img-5679-thumb.webp",
+      "label": "Framed artwork · studio display"
+    }
+  ]
+}
