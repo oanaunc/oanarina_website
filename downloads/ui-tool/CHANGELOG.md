@@ -1,23 +1,24 @@
 # Forma change notes
 
-## 1.0.3
+## 1.0.4
 
-Forma 1.0.3 is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 1.0.3](Forma-1.0.3.dmg) (39,568,700 bytes; 39.6 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for Apple silicon and Intel Macs.
+Forma 1.0.4 is Developer ID-signed, Apple-notarized, stapled and Gatekeeper-checked. Download [Forma 1.0.4](Forma-1.0.4.dmg) (39,762,356 bytes; 39.8 MB), or check [SHA-256](SHA256SUMS.txt). It is a universal build for Apple silicon and Intel Macs.
 
-SHA-256: `3ddecfb6cbeef6b49ea159a3d95aec89eeb1d1bf0ce9e9916cbee3ef4279725e`.
+SHA-256: `e723b72a761abc5a898862b634b1db27cc6c0f42d92ca1b8a4b2ae38b5eb44dd`.
 
-- Big files open and move far more smoothly. Off-screen layers are skipped one by one, even during a drag, and tiny text and shadows draw simply when you zoom far out.
-- The block menu in a spec has a solid background again, so its commands are readable.
-- Specs: press D to make one, drop a Markdown file on the canvas, paste a copied layer as a live embed, and drag across blocks to select them. Find and replace now looks inside specs.
-- Drag padding, gaps and corner radius right on the canvas, with star and arc handles, and spacing handles for rows and grids of loose layers.
-- Arrow keys reorder layers in auto layout, and you can drag a layer into a grid cell. Thin lines are easy to grab, and snapping stays fast on large pages.
-- A real font picker, with search, recents, the whole catalog and a live preview on the canvas.
-- Text has real Auto line height, whole-pixel lines, line heights under 100%, and wrapping at hyphens, slashes and for Chinese, Japanese and Korean. Hugging text wraps at its max width.
-- Number fields take units and percentages, and color fields take OKLCH and CSS color names.
-- Strokes can use color styles, gradients can be saved as styles, Paste over selection is in the Edit menu, K scaling writes real values, and the right panel keeps the common sections first.
-- Cut, erase and shape builder work on branching vectors and strokes, filled regions can be dragged, and prototype drags follow the finger.
-- Imported files come through better: images that fail become placeholders, repeated images are stored once, and library styles, grids, image crops, text lists and variable actions now import.
-- Help → Send feedback saves a local report for you to send. Forma sends nothing by itself.
+- Panning and zooming big files is smoother. Panning moves an already painted canvas, a zoom shows a scaled copy until it stops, shadows stay light while the view moves, and the canvas no longer goes blank during a fast move.
+- Clicking and nudging on big files are faster, because only the layers that changed are touched.
+- Background blur works anywhere: several on a page, on any shape or frame, inside groups and under masks, in prototypes, Motion and exports, and imports keep them.
+- PDFs keep far more as real objects: blends, group opacity, all mask modes, every gradient, rich text, and Greek, Cyrillic and CJK text. A PDF exported right after opening a file no longer turns text into a picture.
+- Library updates have a changed-values table, a visual compare and Merge both. You can choose which assets to publish, and renamed variables update inside prototype expressions.
+- Specs have collapsible toggle blocks with /toggle, and lines no longer shift when you open a spec.
+- Letter case is a live setting on text and ranges, and the Text menu commands turn it on and off. Checklists and hanging punctuation are in too.
+- K scaling writes real values on instances, main components, Booleans and animated layers. A block of layers can move inside a grid, and arrow keys step it.
+- Color styles can hold several paints, images and shaders, with a Paints list in the edit panel.
+- Imports keep variable bindings on line height, borders, effects and gradient stops, keep multi-color vectors editable, and keep arrowheads on every open path.
+- PNG exports can embed your own RGB ICC profile.
 
-Limits are listed in the [validation record](VALIDATION-v1.0.3.md). Most new import behavior was tested only on files written here.
+The Text menu's letter case commands now toggle a setting instead of changing your text. Hanging quotes now also apply in lists, and constraints now scale the contents of groups, so some existing layouts can shift. Files with several background blurs on a page, or specs with toggle blocks, need 1.0.4 or later.
+
+Limits are listed in the [validation record](VALIDATION-v1.0.4.md). Imported bindings, checklists and arrowheads were tested only on files written here.
 

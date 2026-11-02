@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-11-02",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "product": "Forma",
-  "nativeBundleVersion": "1.0.3",
-  "nativeBuild": 20,
-  "rendererSourceGitHash": "128a00df8c6083b18f6c75f1f4cbd0a9851efe9a",
-  "releaseSourceGitHash": "128a00df8c6083b18f6c75f1f4cbd0a9851efe9a",
+  "nativeBundleVersion": "1.0.4",
+  "nativeBuild": 21,
+  "rendererSourceGitHash": "8b2f1f65624d563e5f0ebd31732c328aaca05555",
+  "releaseSourceGitHash": "8b2f1f65624d563e5f0ebd31732c328aaca05555",
   "download": {
-    "file": "Forma-1.0.3.dmg",
-    "bytes": 39568700,
-    "sha256": "3ddecfb6cbeef6b49ea159a3d95aec89eeb1d1bf0ce9e9916cbee3ef4279725e"
+    "file": "Forma-1.0.4.dmg",
+    "bytes": 39762356,
+    "sha256": "e723b72a761abc5a898862b634b1db27cc6c0f42d92ca1b8a4b2ae38b5eb44dd"
   },
   "acceptance": {
     "signedAppFromReadOnlyDmgSmoke": true,
     "signedAppFromReadOnlyDmgLifecycleChecks": 37,
-    "signedAppFromReadOnlyDmgAcceptanceChecks": null,
+    "signedAppFromReadOnlyDmgAcceptanceChecks": 123,
     "signedAppFromReadOnlyDmgAcceptanceGroups": 29,
     "readOnlyDmgBundleMatchesSignedArchiveFiles": 385,
     "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. spec-file: the real spec file was not available for this release."
   },
   "validation": {
-    "coreTests": 4452,
+    "coreTests": 4618,
     "completeBrowserRun": {
-      "passed": 2769,
-      "failed": 4,
+      "passed": 2817,
+      "failed": 1,
       "skipped": 2,
-      "note": "Three test fixes pass since. fonts passes alone and failed the same way in 1.0.1 and 1.0.2. WebKit had 191 failures, none of which passed on 1.0.2. See VALIDATION-v1.0.3.md."
+      "note": "The one failure passes 5 of 5 alone. WebKit: 2,625 passed, 193 failed, compared by test name with 1.0.3. See VALIDATION-v1.0.4.md."
     },
     "mcpTests": 134,
     "nativeLifecycleChecks": 37,
     "nativeClipboardChecks": 38,
     "nativeSyntheticImportChecks": 13,
     "nativeIntegrationChecks": 86,
-    "nativeAcceptanceChecks": null,
+    "nativeAcceptanceChecks": 123,
     "nativeRendererRestart": true
   },
   "featureRegister": {
@@ -43,5 +43,5 @@
     "partial": 179,
     "planned": 5
   },
-  "documentationSourceGitHash": "efb57b12d10c32ad6ef841a215f89a91c48ff463"
+  "documentationSourceGitHash": "21450b513f4e8d5d0cf841b72692293ef850239e"
 }
