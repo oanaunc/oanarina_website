@@ -41,3 +41,12 @@
     outline: 2px solid #333;
     outline-offset: 5px;
 }
+
+/* Keep exhibition information above the link covering the card. */
+.exhibition-details { position: relative; z-index: 3; width: 100%; margin: 14px 0 18px; color: #fff; font-size: 14px; line-height: 1.7; transition: color 500ms; }
+.exhibition-details summary { cursor: pointer; }
+.exhibition-details p { margin: 12px 0 0; color: inherit; font-size: inherit; line-height: inherit; }
+.exhibition-card .single-event-area:hover .exhibition-details { color: #000; }
+.exhibition-details summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+#romanian-graphics-2026 .event-thumbnail img { object-position: center 25%; }

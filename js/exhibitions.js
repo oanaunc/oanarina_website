@@ -5,6 +5,78 @@
     // These event galleries use the standard overlay only.
     if ($.fn.lightGallery) delete $.fn.lightGallery.modules.fullscreen;
     var galleries = {
+    "romanian-graphics-2026": [
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5834.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5834.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_6093.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_6093.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5683.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5683.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5684.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5684.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5685.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5685.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5686.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5686.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5687.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5687.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5688.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5688.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5689.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5689.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5690.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5690.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5765.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5765.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5918.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5918.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5949.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5949.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    },
+    {
+        "src": "images/exhibitions/web/romanian-graphics-2026/IMG_6094.jpg",
+        "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_6094.jpg",
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+    }
+],
     "pepsi-space-2023": [
         {
             "src": "images/exhibitions/web/pepsi-space-2023/billboard-with-artist.webp",
