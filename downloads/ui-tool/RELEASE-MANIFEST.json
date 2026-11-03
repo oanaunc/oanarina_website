@@ -1,47 +1,48 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-02",
-  "version": "1.0.4",
+  "asOf": "2026-11-03",
+  "version": "1.0.5",
   "product": "Forma",
-  "nativeBundleVersion": "1.0.4",
-  "nativeBuild": 21,
-  "rendererSourceGitHash": "8b2f1f65624d563e5f0ebd31732c328aaca05555",
-  "releaseSourceGitHash": "8b2f1f65624d563e5f0ebd31732c328aaca05555",
+  "nativeBundleVersion": "1.0.5",
+  "nativeBuild": 22,
+  "rendererSourceGitHash": "279bc0d57d64d52f37278cfcef121ad0bb517a51",
+  "releaseSourceGitHash": "279bc0d57d64d52f37278cfcef121ad0bb517a51",
   "download": {
-    "file": "Forma-1.0.4.dmg",
-    "bytes": 39762356,
-    "sha256": "e723b72a761abc5a898862b634b1db27cc6c0f42d92ca1b8a4b2ae38b5eb44dd"
+    "file": "Forma-1.0.5.dmg",
+    "bytes": 40508767,
+    "sha256": "4d9bfb9459f610fa0c4a936f96dcfa449618349ed84bfd90e9f9de0bae4d4da8"
   },
   "acceptance": {
     "signedAppFromReadOnlyDmgSmoke": true,
     "signedAppFromReadOnlyDmgLifecycleChecks": 37,
-    "signedAppFromReadOnlyDmgAcceptanceChecks": 123,
+    "signedAppFromReadOnlyDmgAcceptanceChecks": 127,
     "signedAppFromReadOnlyDmgAcceptanceGroups": 29,
     "readOnlyDmgBundleMatchesSignedArchiveFiles": 385,
-    "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. spec-file: the real spec file was not available for this release."
+    "acceptanceGroupsNotCompleted": "zoom: injected wheel events do not arrive on this Mac. open-lag: needs a benchmark file. spec-file: no real spec file was available. Spotlight could not be verified on this Mac. See VALIDATION-v1.0.5.md."
   },
   "validation": {
-    "coreTests": 4618,
+    "coreTests": 4802,
     "completeBrowserRun": {
-      "passed": 2817,
-      "failed": 1,
-      "skipped": 2,
-      "note": "The one failure passes 5 of 5 alone. WebKit: 2,625 passed, 193 failed, compared by test name with 1.0.3. See VALIDATION-v1.0.4.md."
+      "passed": 2883,
+      "failed": 0,
+      "skipped": 3,
+      "note": "WebKit: 2,696 passed, 188 failed, 2 skipped, compared by test name with 1.0.4 and 1.0.3. See VALIDATION-v1.0.5.md."
     },
-    "mcpTests": 134,
+    "mcpTests": 136,
     "nativeLifecycleChecks": 37,
     "nativeClipboardChecks": 38,
     "nativeSyntheticImportChecks": 13,
     "nativeIntegrationChecks": 86,
-    "nativeAcceptanceChecks": 123,
-    "nativeRendererRestart": true
+    "nativeAcceptanceChecks": 127,
+    "nativeRendererRestart": true,
+    "quickLookChecks": 12
   },
   "featureRegister": {
-    "requirements": 1808,
-    "categories": 57,
-    "implemented": 1624,
-    "partial": 179,
+    "requirements": 1844,
+    "categories": 58,
+    "implemented": 1685,
+    "partial": 154,
     "planned": 5
   },
-  "documentationSourceGitHash": "21450b513f4e8d5d0cf841b72692293ef850239e"
+  "documentationSourceGitHash": "e2718d977f4adb5c97a92a111c4b42e617475147"
 }
