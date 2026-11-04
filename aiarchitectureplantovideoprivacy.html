@@ -249,31 +249,27 @@
 
                           <!-- Post Excerpt -->
     <h1>Privacy Policy — AI Architecture Plan to Video</h1>
-    <p><strong>Last updated:</strong> 20 October 2026<br>
+    <p><strong>Last updated:</strong> 4 November 2026<br>
     <strong>Developer:</strong> Oana Rinaldi<br>
     <strong>Bundle / Android package:</strong> com.oanarinaldi.aiarchitectureplantovideo<br>
     <strong>Contact:</strong> <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a></p>
 
     <h2>Summary</h2>
-    <p>AI Architecture Plan to Video turns a picture you choose — a 2D floor plan, a sketch, or a photo of a plot, a room, a facade or a render — into an AI result picture (for example a 3D model or a redesign) and a short video. The only AI provider it uses is Google (Gemini). There is no login requirement, no advertising and no analytics. Your projects, pictures, result pictures and videos are stored on your device. You can use the app in two ways:</p>
-    <ul>
-        <li><strong>With your own Google (Gemini) API key</strong> — your picture goes directly from your device to Google. We receive nothing.</li>
-        <li><strong>With a plan or credits</strong> bought in the app — your picture passes through our server, which asks Google to make the result picture and the video and holds the result until your device collects it (see below).</li>
-    </ul>
+    <p>AI Architecture Plan to Video turns a picture you choose — a 2D floor plan, a sketch, or a photo of a plot, a room, a facade or a render — into an AI result picture (for example a 3D model or a redesign) and a short video. The only AI provider it uses is Google (Gemini). There is no login requirement, no advertising and no analytics. Your projects, pictures, result pictures and videos are stored on your device. In version 1.2, new generation requests go through our server to Google. The Learn library and bundled examples are available offline.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
         <li>The pictures you choose and the AI result pictures, in the app’s private container.</li>
         <li>Finished videos, which the app saves into a “Plan to Video” album in your Photos library (you can turn this off, or keep an extra copy in the app, in Settings). On iOS, the app asks for Photos access so it can play its own videos from that album; “Limited” access is enough. On Android, saving uses MediaStore and imports use the system picker, so broad photo-library access is not requested. The app does not read or upload your other photos.</li>
         <li>Your projects, favourites and video settings, and a list of videos still being made so they can be collected after the app is closed.</li>
-        <li>Your API key, if you add one, in the iOS Keychain or encrypted with Android Keystore (this device only, excluded from app backup).</li>
+        <li>A personal API key saved by an earlier app version, in the iOS Keychain or encrypted with Android Keystore (this device only, excluded from app backup).</li>
         <li>Your preferences.</li>
     </ul>
 
-    <h2>Using Your Own API Key</h2>
-    <p>The app sends your picture, the result picture, your style choices and notes directly from your device to the Gemini API (<code>generativelanguage.googleapis.com</code>), authenticated with your key. Generation runs on Google’s servers; Google keeps generated videos for about 2 days so the app can download them. This data is processed under your own account and the provider’s terms: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms</a>. Some Gemini models in preview may use submitted content to improve Google’s products; check Google’s terms for your account.</p>
+    <h2>Personal API Keys in Earlier Versions</h2>
+    <p>Earlier versions could send your picture, the result picture, your style choices and notes directly from your device to the Gemini API (<code>generativelanguage.googleapis.com</code>), authenticated with your key. Generation runs on Google’s servers; Google keeps generated videos for about 2 days so the app can download them. This data is processed under your own account and the provider’s terms: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms</a>. Some Gemini models in preview may use submitted content to improve Google’s products; check Google’s terms for your account.</p>
 
-    <h2>Using a Plan or Credits</h2>
+    <h2>Generation Through Our Server</h2>
     <p>The app uploads your picture, the result picture, your settings and notes to our server (hosted on Cloudflare). The server stores the uploads only while your result picture or video is being made and deletes them when it finishes. It asks Google to make the result picture (Gemini image) and the video (Gemini Omni Flash or Veo), using the developer’s Google account. The finished image or video is kept on our server so your device can collect it even if the app was closed or offline: it is deleted one day after your device has downloaded it, or after 30 days if it is never collected.</p>
     <p>To manage your credits and jobs, the server stores:</p>
     <ul>
@@ -305,7 +301,7 @@
 
     <h2 id="delete-account">Deleting Your Data</h2>
     <p>In the app, open Settings &gt; Plan &amp; credits &gt; <strong>Delete account &amp; data</strong>. This immediately deletes your account record, credit balance and history, job history, any uploads or videos still on our server, and any Sign in with Apple link, and revokes the Sign in with Apple token. Remaining credits are lost. Apple transaction IDs and Google purchase/order hashes are kept, no longer linked to your account, only so the same purchase cannot be credited twice. Google purchase-token ciphertext and content reports are erased. Deleting your data does not cancel a subscription — cancel it in your Apple ID’s Subscriptions settings or Google Play’s Subscriptions page. You can also email <a href="mailto:oanarinaldi@gmail.com?subject=Plan%20to%20Video%20data%20deletion">oanarinaldi@gmail.com</a> with the subject “Plan to Video data deletion” and your Support ID to request deletion without the app. Do not include your API key or payment details.</p>
-    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; videos, or delete the app. Remove your API key in Settings or revoke it in your Google account. For data held by Google under your own key, contact Google directly.</p>
+    <p>To remove everything on your device, use Settings &gt; Delete all projects &amp; videos, or delete the app. If you previously saved a personal API key, you can revoke it in your Google account. For data held by Google under your own key, contact Google directly.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
