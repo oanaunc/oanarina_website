@@ -36,9 +36,9 @@ async function verifyCatalogueRibbon(page) {
         return thumb.left >= rail.left - 1 && thumb.right <= rail.right + 1;
     }), true, 'The selected thumbnail stays in view');
     assert.equal(await ribbon.evaluate(el => {
-        const rect = el.getBoundingClientRect(), room = el.closest('dialog').getBoundingClientRect();
-        return rect.bottom <= room.bottom && rect.top > room.top && rect.right <= room.right;
-    }), true, 'The ribbon stays inside the popup');
+        const rect = el.getBoundingClientRect(), panel = el.closest('dialog').querySelector('.artwork-room__panel').getBoundingClientRect();
+        return rect.top > panel.bottom && rect.bottom <= innerHeight && rect.left === 0 && rect.right === innerWidth;
+    }), true, 'The ribbon sits below the popup across the viewport');
     await thumbnails.nth(initialIndex).click();
     assert.equal(new URL(page.url()).hash, initialHash);
     await page.locator('.artwork-room__close').focus();
@@ -52,7 +52,7 @@ try {
     await verifyCatalogueCoverage(page);
     await verifyCatalogueRibbon(page);
     assert.equal(await room.evaluate(el => el.open), true);
-    assert.ok(await room.evaluate(el => parseFloat(getComputedStyle(el).left) >= 20));
+    assert.ok(await room.locator('.artwork-room__panel').evaluate(el => parseFloat(getComputedStyle(el).left) >= 20));
     assert.match(await room.evaluate(el => getComputedStyle(el, '::backdrop').backgroundColor), /rgba/);
     assert.equal(await room.getByRole('button', { name: 'Back to drawings', exact: true }).count(), 1);
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Shape of Sound');

@@ -36,6 +36,7 @@
     dialog.className = 'artwork-room';
     dialog.setAttribute('aria-labelledby', 'artwork-title');
     dialog.innerHTML = `
+        <div class="artwork-room__panel">
         <header class="artwork-room__header">
             <div class="artwork-room__identity"><span>Oana Rinaldi</span><button type="button" class="artwork-room__category" data-action="close"></button></div>
             <nav class="artwork-room__navigation" aria-label="Artwork navigation">
@@ -73,6 +74,8 @@
                 </article>
             </div>
         </div>
+        <div class="artwork-room__zoom" hidden><button type="button" data-action="unzoom" aria-label="Return to artwork details">← Back to artwork</button><img alt=""></div>
+        </div>
         <nav class="artwork-room__catalogue" aria-labelledby="artwork-catalogue-label">
             <span id="artwork-catalogue-label"></span>
             <div class="artwork-room__catalogue-controls">
@@ -80,8 +83,7 @@
                 <div class="artwork-room__catalogue-list"></div>
                 <button type="button" data-action="catalogue-next" aria-label="Scroll artwork thumbnails right">→</button>
             </div>
-        </nav>
-        <div class="artwork-room__zoom" hidden><button type="button" data-action="unzoom" aria-label="Return to artwork details">← Back to artwork</button><img alt=""></div>`;
+        </nav>`;
     document.body.append(dialog);
     const $ = selector => dialog.querySelector(selector);
     $('.artwork-room__category').textContent = '← ' + category;
@@ -257,7 +259,7 @@
     dialog.addEventListener('click', event => {
         // Native dialog backdrop clicks target the dialog, outside its glass frame.
         if (event.target === dialog) {
-            const rect = dialog.getBoundingClientRect();
+            const rect = $('.artwork-room__panel').getBoundingClientRect();
             if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) close();
         }
         const button = event.target.closest('button'); if (!button) return;
