@@ -73,6 +73,14 @@
                 </article>
             </div>
         </div>
+        <nav class="artwork-room__catalogue" aria-labelledby="artwork-catalogue-label">
+            <span id="artwork-catalogue-label"></span>
+            <div class="artwork-room__catalogue-controls">
+                <button type="button" data-action="catalogue-prev" aria-label="Scroll artwork thumbnails left">←</button>
+                <div class="artwork-room__catalogue-list"></div>
+                <button type="button" data-action="catalogue-next" aria-label="Scroll artwork thumbnails right">→</button>
+            </div>
+        </nav>
         <div class="artwork-room__zoom" hidden><button type="button" data-action="unzoom" aria-label="Return to artwork details">← Back to artwork</button><img alt=""></div>`;
     document.body.append(dialog);
     const $ = selector => dialog.querySelector(selector);
@@ -107,6 +115,31 @@
         if (content) el.textContent = content;
         return el;
     };
+    const catalogue = $('.artwork-room__catalogue-list');
+    $('#artwork-catalogue-label').textContent = 'All ' + category.toLowerCase();
+    works.forEach(work => {
+        const button = node('button', 'artwork-room__catalogue-work');
+        button.type = 'button'; button.dataset.catalogueWork = work.index;
+        button.setAttribute('aria-label', 'View ' + work.title);
+        button.title = work.title; button.tabIndex = -1;
+        const img = node('img'); img.src = work.thumb; img.alt = ''; img.loading = 'lazy'; img.decoding = 'async';
+        button.append(img); catalogue.append(button);
+    });
+    function syncCatalogue(focus = false) {
+        const buttons = catalogue.children;
+        Array.from(buttons).forEach((button, index) => {
+            button.tabIndex = index === current ? 0 : -1;
+            if (index === current) button.setAttribute('aria-current', 'true');
+            else button.removeAttribute('aria-current');
+        });
+        if (!dialog.open) return;
+        const selected = buttons[current];
+        const rail = catalogue.getBoundingClientRect(), thumb = selected.getBoundingClientRect();
+        if (thumb.left < rail.left || thumb.right > rail.right) {
+            catalogue.scrollLeft += thumb.left - rail.left - (rail.width - thumb.width) / 2;
+        }
+        if (focus) selected.focus({ preventScroll: true });
+    }
     function link(url, className, title, subtitle) {
         const el = node('a', className);
         el.href = url; el.target = '_blank'; el.rel = 'noopener noreferrer';
@@ -134,6 +167,7 @@
         $('.artwork-room__scroll').scrollTop = 0;
         $('.artwork-room__information').scrollTop = 0;
         $('.artwork-room__position').textContent = (current + 1) + ' / ' + works.length;
+        syncCatalogue();
         $('.artwork-room__information > .artwork-room__eyebrow').textContent = work.project ? 'From the project · ' + work.project : category;
         $('#artwork-title').textContent = work.title;
         const collect = $('.artwork-room__collect'); collect.replaceChildren();
@@ -206,6 +240,7 @@
         }
         render(index);
         if (!dialog.open) dialog.showModal();
+        syncCatalogue();
         document.body.classList.add('artwork-room-open', 'lg-on');
         $('.artwork-room__scroll').scrollTop = 0;
         $('.artwork-room__close').focus({ preventScroll: true });
@@ -226,9 +261,14 @@
             if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) close();
         }
         const button = event.target.closest('button'); if (!button) return;
+        if (button.dataset.catalogueWork !== undefined) { render(Number(button.dataset.catalogueWork)); syncCatalogue(true); return; }
         if (button.dataset.image !== undefined) return showImage(Number(button.dataset.image));
         if (button.dataset.work !== undefined) { render(Number(button.dataset.work)); $('.artwork-room__close').focus({ preventScroll: true }); return; }
         switch (button.dataset.action) {
+            case 'catalogue-prev':
+            case 'catalogue-next':
+                catalogue.scrollBy({ left: catalogue.clientWidth * (button.dataset.action === 'catalogue-next' ? .75 : -.75), behavior: motionEnabled() ? 'smooth' : 'instant' });
+                break;
             case 'prev': render(current - 1); break;
             case 'next': render(current + 1); break;
             case 'close': close(); break;
@@ -237,6 +277,11 @@
         }
     });
     dialog.addEventListener('keydown', event => {
+        if (!event.altKey && !event.ctrlKey && !event.metaKey && event.target.closest('.artwork-room__catalogue-list') && ['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) {
+            event.preventDefault();
+            const index = event.key === 'Home' ? 0 : event.key === 'End' ? works.length - 1 : current + (event.key === 'ArrowRight' ? 1 : -1);
+            render(index); syncCatalogue(true); return;
+        }
         if (event.altKey || event.ctrlKey || event.metaKey || !$('.artwork-room__zoom').hidden) return;
         if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
             event.preventDefault();

@@ -17,6 +17,32 @@ async function verifyCatalogueCoverage(page) {
     }).map(item => item.dataset.id));
     assert.deepEqual(missing, [], 'Every artwork should have a description, keywords and hashtags');
 }
+async function verifyCatalogueRibbon(page) {
+    const ribbon = page.getByRole('navigation', { name: /^All (drawings|paintings)$/ });
+    const thumbnails = ribbon.locator('.artwork-room__catalogue-work');
+    const count = await page.locator('#lightgallery .item[data-src]').count();
+    assert.equal(await thumbnails.count(), count, 'The ribbon includes the whole page gallery');
+    const initialHash = new URL(page.url()).hash;
+    const initialIndex = await thumbnails.evaluateAll(buttons => buttons.findIndex(button => button.getAttribute('aria-current') === 'true'));
+    await thumbnails.last().click();
+    assert.equal(await thumbnails.last().getAttribute('aria-current'), 'true');
+    assert.equal(await thumbnails.last().getAttribute('title'), await page.locator('#artwork-title').textContent());
+    await page.keyboard.press('ArrowRight');
+    assert.equal(await thumbnails.first().getAttribute('aria-current'), 'true', 'Keyboard navigation wraps to the first work');
+    await page.keyboard.press('End');
+    assert.equal(await thumbnails.last().getAttribute('aria-current'), 'true');
+    assert.equal(await thumbnails.last().evaluate(button => {
+        const thumb = button.getBoundingClientRect(), rail = button.parentElement.getBoundingClientRect();
+        return thumb.left >= rail.left - 1 && thumb.right <= rail.right + 1;
+    }), true, 'The selected thumbnail stays in view');
+    assert.equal(await ribbon.evaluate(el => {
+        const rect = el.getBoundingClientRect(), room = el.closest('dialog').getBoundingClientRect();
+        return rect.bottom <= room.bottom && rect.top > room.top && rect.right <= room.right;
+    }), true, 'The ribbon stays inside the popup');
+    await thumbnails.nth(initialIndex).click();
+    assert.equal(new URL(page.url()).hash, initialHash);
+    await page.locator('.artwork-room__close').focus();
+}
 try {
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     page.on('pageerror', error => errors.push(error.message));
@@ -24,6 +50,7 @@ try {
     const room = page.locator('.artwork-room');
     await room.locator('#artwork-title').waitFor();
     await verifyCatalogueCoverage(page);
+    await verifyCatalogueRibbon(page);
     assert.equal(await room.evaluate(el => el.open), true);
     assert.ok(await room.evaluate(el => parseFloat(getComputedStyle(el).left) >= 20));
     assert.match(await room.evaluate(el => getComputedStyle(el, '::backdrop').backgroundColor), /rgba/);
@@ -102,9 +129,9 @@ try {
         const statement = el.querySelector('.artwork-room__statement').getBoundingClientRect();
         const links = [...el.querySelectorAll('.artwork-room__purchase')].map(link => link.getBoundingClientRect());
         return visual.right < explore.left && explore.right < information.left
-            && image.height > 700 && image.width > 450
+            && image.height > 580 && image.width > 450
             && related.right < information.left && explore.bottom <= el.getBoundingClientRect().bottom && keywords.bottom <= information.bottom
-            && facts.bottom < statement.top && statement.height > 280
+            && facts.bottom < statement.top && statement.height > 180
             && links.every(link => Math.abs(link.top - links[0].top) < 1);
     }));
     await page.screenshot({ path: '/tmp/artwork-viewer-desktop.png' });
@@ -129,6 +156,7 @@ try {
     await page.goto(base + '/paintings.html#image=velocity-of-fire-2026');
     await room.locator('#artwork-title').waitFor();
     await verifyCatalogueCoverage(page);
+    await verifyCatalogueRibbon(page);
     assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Fire');
     assert.equal(await room.locator('.artwork-room__purchase').count(), 3);
     assert.match(await room.locator('.artwork-room__facts').textContent(), /oil on canvas/i);
@@ -166,6 +194,7 @@ try {
         assert.equal(await mobileRoom.locator('.artwork-room__image').evaluate(el => el.getAnimations().length), 0);
         assert.ok(await mobileRoom.evaluate(el => el.scrollWidth <= innerWidth));
         assert.ok(await mobileRoom.locator('.artwork-room__scroll').evaluate(el => el.scrollWidth <= el.clientWidth + 1));
+        await verifyCatalogueRibbon(mobile);
         await mobile.screenshot({ path: `/tmp/artwork-viewer-${width}.png` });
         await mobileRoom.locator('[data-image="2"]').click();
         await mobileRoom.locator('.artwork-room__image').evaluate(img => img.decode());
@@ -180,6 +209,9 @@ try {
         await mobileRoom.locator('[data-work]').first().click();
         assert.equal(await mobileRoom.locator('#artwork-title').textContent(), 'The Resonance Between Light and Silence');
         assert.equal(await mobileRoom.locator('.artwork-room__scroll').evaluate(el => el.scrollTop), 0);
+        await mobile.goto(base + '/paintings.html#image=velocity-of-fire-2026');
+        await verifyCatalogueRibbon(mobile);
+        await mobile.screenshot({ path: `/tmp/artwork-viewer-painting-${width}.png` });
         await mobile.close();
         checks++;
     }
