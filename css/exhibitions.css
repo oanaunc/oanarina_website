@@ -50,3 +50,7 @@
 .exhibition-details summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 #romanian-graphics-2026 .event-thumbnail img { object-position: center 25%; }
+
+/* Reserve a separate bottom strip for every event's photo thumbnails. */
+.exhibition-gallery.lg-has-thumb .lg-inner { height: calc(100% - 100px); }
+.exhibition-gallery.lg-has-thumb .lg-item { padding-bottom: 0; }

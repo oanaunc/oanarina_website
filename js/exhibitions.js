@@ -547,6 +547,7 @@
         var trigger = this;
         $(trigger).one('onCloseAfter.lg', function () { trigger.focus(); });
         $(trigger).lightGallery({
+            addClass: 'exhibition-gallery',
             dynamic: true,
             dynamicEl: galleries[trigger.getAttribute('data-event-gallery')],
             hash: false,
@@ -556,7 +557,8 @@
             autoplay: false,
             autoplayControls: false,
             thumbnail: true,
-            showThumbByDefault: false
+            showThumbByDefault: true,
+            toogleThumb: false
         });
     });
 })(jQuery);
