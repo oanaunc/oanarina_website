@@ -63,14 +63,18 @@ try {
     assert.ok(cards.find(card => card.id === 'queen-of-time-2021').icons[0].href.includes('/8417008/'));
     assert.equal(cards.find(card => card.id === 'burning-flame-2016').icons[0].disabled, true);
 
-    const filter = page.locator('[data-filter=".xp"]');
-    await filter.click();
+    const filter = page.getByRole('searchbox', { name: 'Search by project or artwork title' });
+    await filter.fill('Chromatic Innerverse');
     await page.waitForTimeout(700);
-    assert.equal(await page.locator('.oneMusic-albums .single-album-item:visible').count(), 4);
+    assert.equal(await page.locator('.shop-project .single-album-item:visible').count(), 4);
     const first = page.locator('[data-artwork-id="the-architecture-of-unspoken-words-2026"]');
     await first.scrollIntoViewIfNeeded();
     const saatchi = first.locator('.shop-store-link--saatchi');
-    await page.waitForFunction(() => document.querySelector('[data-artwork-id="the-architecture-of-unspoken-words-2026"] .shop-store-link--saatchi use').getBBox().width > 70);
+    assert.equal(await saatchi.locator('image').evaluate(async el => {
+        const logo = new Image(); logo.src = el.href.baseVal;
+        await logo.decode();
+        return logo.naturalWidth;
+    }), 100);
     await saatchi.hover();
     assert.equal(await saatchi.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(224, 0, 0)');
     assert.equal(await saatchi.locator('circle').evaluate(el => getComputedStyle(el).fill), 'rgb(224, 0, 0)');
@@ -94,7 +98,7 @@ try {
     for (const width of [390, 576, 768, 992]) {
         await page.setViewportSize({ width, height: 844 });
         await filter.scrollIntoViewIfNeeded();
-        await filter.click();
+        await filter.fill('Chromatic Innerverse');
         await page.waitForTimeout(700);
         await first.scrollIntoViewIfNeeded();
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
