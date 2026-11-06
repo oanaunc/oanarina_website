@@ -122,8 +122,8 @@ window.OANA_MOTION = {
     "sameImage": true
   },
   "furniture": {
-    "src": "media/motion/furniture-chromatic-convergence.mp4",
-    "poster": "img/bg-img/furniture-chromatic-convergence.jpg",
+    "src": "media/motion/furniture-chromatic-convergence.mp4?v=20261106-reversed",
+    "poster": "img/bg-img/furniture-chromatic-convergence.jpg?v=20261106-reversed",
     "sameImage": true
   },
   "musicvideos": {
