@@ -121,6 +121,11 @@ window.OANA_MOTION = {
     "poster": "img/bg-img/shoes-painted-heels.jpg",
     "sameImage": true
   },
+  "furniture": {
+    "src": "media/motion/furniture-chromatic-convergence.mp4",
+    "poster": "img/bg-img/furniture-chromatic-convergence.jpg",
+    "sameImage": true
+  },
   "musicvideos": {
     "src": "media/motion/musicvideos.mp4",
     "poster": "img/music/album.png",

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hand-painted furniture by Oana Rinaldi, featuring Chromatic Convergence and The Art of Living in Turquoise.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Furniture by Oana Rinaldi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!-- Custom CSS for tooltips -->
+    <style>
+        /* Tooltip styling */
+        .tooltip-btn {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tooltip-btn::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+
+        .tooltip-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+        }
+
+        .tooltip-btn:hover::after,
+        .tooltip-btn:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Custom styles for furniture projects */
+        .furniture-project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #333;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .furniture-project-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* Make lightbox description text white */
+        .lg-sub-html {
+            color: #FFF !important;
+        }
+
+        .lg-sub-html h4,
+        .lg-sub-html h6,
+        .lg-sub-html p {
+            color: #FFF !important;
+        }
+
+        #scrollUp {
+            bottom: 68px;
+        }
+    </style>
+    <!-- Additive motion: original design and content retained. -->
+    <link rel="stylesheet" href="css/experience.css">
+    <script defer src="js/motion-manifest.js?v=20261106-furniture"></script>
+    <script defer src="js/experience.js?v=20261106-furniture"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <div class="brand-social-wrap"><a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a><a class="nav-social-icon nav-social-ig" href="https://www.instagram.com/oanarinaldi" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a class="nav-social-icon nav-social-tt" href="https://www.tiktok.com/@oanarinaldi?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="paintings.html">Art</a>
+                                        <ul class="dropdown">
+                                            <li><a href="artbio.html">Art Bio</a></li>
+											<li><a href="aiart.html">AI Art</a></li>
+                                            <li><a href="paintings.html">Paintings</a></li>
+                                            <li><a href="drawings.html">Drawings</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="exhibitions.html">Exhibitions</a></li>
+                                            <li><a href="albums.html">Albums &#38; Books</a></li>
+                                            <li><a href="photography.html">Photography</a></li>
+                                            <li><a href="graphicdesign.html">Graphic Design</a></li>
+                                            <li><a href="artvideos.html">Videos</a></li>
+                                            <li><a href="aiartvideos.html">AI Art Videos</a></li>
+                                            <li><a target="_blank" href="https://arthistory101.blog/">Art History 101</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="musicvideos.html">Music</a>
+                                        <ul class="dropdown">
+                                            <li><a href="musicvideos.html">Music Videos</a></li>
+                                            <li><a target="_blank" href="https://rockfest.blog/">Rock Music Blog</a></li>
+                                            <li><a target="_blank" href="https://thepoeticpage.com/">Poetry Blog</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/5EHOfrYOGfUSAWzCk8MwGg">Art History 101 Podcast</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="jackets.html">Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="jackets.html">Jackets</a></li>
+                                            <li><a href="shoes.html">Shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps.html">Algorithms</a>
+                                        <ul class="dropdown">
+                                            <li><a href="itbio.html">IT Bio</a></li>
+											<li><a href="algorithmsbook.html">Algorithms</a></li>
+                                            <li><a href="apps.html">Apps Online</a></li>
+                                            <li><a href="photo-editor.html">Photo Editor for Mac</a></li>
+                                            <li><a href="forma.html">Forma</a></li>
+                                            <li><a href="https://aetherfold4d.com" target="_blank" rel="noopener">Aetherfold 4D</a></li>
+                                            <li><a href="code.html">Code Samples</a></li>
+                                            <li><a target="_blank" href="https://artofcoding.blog/">Art of Coding</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/4d_chess/">4D Chess</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/rubik_4D/">Magic Cube 4D</a></li>
+                                            <li><a target="_blank" href="https://oanarinaldi.com/car_quiz/">Car Quiz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="architecture.html">Architecture</a>
+                                        <ul class="dropdown">
+                                            <li><a href="archibio.html">Archi Bio</a></li>
+                                            <li><a href="architecture.html">Projects</a></li>
+                                            <li><a href="furniture.html" aria-current="page">Furniture</a></li>
+                                            <li><a href="architectureapps.html">Architecture Apps</a></li>
+                                            <li><a href="3dmodels.html">3D Models</a></li>
+                                            <li><a href="origami.html">Origami Polyhedra</a></li>
+                                            <li><a href="archipublications.html">Publications</a></li>
+                                            <li><a href="archi-tool.html">Archi Tool</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://arthistory101.blog/" id="blogBtn" class="tooltip-btn" data-tooltip="Visit my Art History Blog"> <i class="fa fa-rss"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://www.saatchiart.com/en-ro/oanaunciuleanu" id="saatchiBtn" class="tooltip-btn" data-tooltip="Buy my Art on Saatchi Art" aria-label="Saatchi Art"><svg class="saatchi-art-icon" viewBox="0 0 100 100" width="24" height="24" aria-hidden="true" focusable="false" style="vertical-align:middle"><circle cx="50" cy="50" r="50" fill="var(--saatchi-background, #e00000)"/><image href="img/core-img/saatchi-art-wordmark.svg" width="100" height="100"></image></svg></a>
+                                    </div>
+
+<div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://artofcoding.blog/" id="codingBlogBtn" class="tooltip-btn" data-tooltip="Visit my Coding Blog"><i class="fa fa-code"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://rockfest.blog/" id="rockfestBtn" class="tooltip-btn" data-tooltip="Visit my Rock Music Blog"><i class="fa fa-music"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/4d_chess/" id="chessBtn" class="tooltip-btn" data-tooltip="Play my 4D Chess Game"><i class="fa fa-chess-piece"></i></a>
+                                    </div>
+
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/rubik_4D/" id="rubikBtn" class="tooltip-btn" data-tooltip="Play my Magic Cube 4D"><i class="fa fa-rubik-cube"></i></a>
+                                    </div>
+                                    <div class="login-register-btn mr-50">
+                                         <a target="_blank" href="https://oanarinaldi.com/car_quiz/" id="carQuizBtn" class="tooltip-btn" data-tooltip="Play my Car Logo Quiz"><i class="fa fa-car"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                                      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
+                        </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+    <!-- ##### Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/furniture-chromatic-convergence.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                    <pre>
+
+
+
+					</pre>
+                         <h2>Furniture</h2>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="album-catagory">
+        <div class="site-section" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center" style="margin-top: 60px; margin-bottom: 80px;">
+                            <h3 style="font-size: 2rem; font-weight: 400; color: #333; line-height: 1.6; font-style: italic; padding: 0 20px;">I use furniture as a canvas, working with the grain, edges and carved details of each piece to see how color can change its place in a room.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <section aria-labelledby="tv_stand-title">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="furniture-project-title" id="tv_stand-title">Chromatic Convergence</h3>
+                            <p class="furniture-project-description">Two pieces of furniture form a single abstract composition. Diagonals carry the eye from midnight blue and turquoise across a field of yellow into magenta and red. Visible brushstrokes give the geometry a painterly edge, and the composition changes as you walk around it.<br>Hand-painted furniture · Mixed media on wood · 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="row oneMusic-albums furniture-gallery">
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/blue-side.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;Midnight blue and turquoise brushstrokes lead into the yellow and red section.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/blue-side.jpg" width="300" height="250" alt="Midnight blue and turquoise brushstrokes lead into the yellow and red section." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/front-view.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;A straight-on view shows how the diagonals connect the two units.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/front-view.jpg" width="300" height="250" alt="A straight-on view shows how the diagonals connect the two units." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/red-side.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;The magenta and red end frames the yellow interior of the open compartment.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/red-side.jpg" width="300" height="250" alt="The magenta and red end frames the yellow interior of the open compartment." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/open-compartment.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;A low angle looks across the blue front panel into the open yellow and red shelving.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/open-compartment.jpg" width="300" height="250" alt="A low angle looks across the blue front panel into the open yellow and red shelving." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/top-diagonals.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;An elevated side view shows blue bands and a sweep of yellow across the top.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/top-diagonals.jpg" width="300" height="250" alt="An elevated side view shows blue bands and a sweep of yellow across the top." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/panel-junction.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;A close view of the front panel where it meets the yellow shelf and deep red interior.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/panel-junction.jpg" width="300" height="250" alt="A close view of the front panel where it meets the yellow shelf and deep red interior." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/tv_stand/paint-detail.jpg"
+                                       data-sub-html="&lt;h4&gt;Chromatic Convergence&lt;/h4&gt;&lt;p&gt;Fine diagonal stripes meet visible brushstrokes at the painted corner.&lt;/p&gt;">
+                                        <img src="images/furniture/tv_stand/mici/paint-detail.jpg" width="300" height="250" alt="Fine diagonal stripes meet visible brushstrokes at the painted corner." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section aria-labelledby="library-title">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="furniture-project-title" id="library-title">The Art of Living in Turquoise</h3>
+                            <p class="furniture-project-description">A single shade of turquoise brings together the open shelves, carved doors and ornamental trim of a vintage bookcase. Light catches the raised floral motifs, bringing the original carving into focus.<br>Painted vintage bookcase</p>
+                        </div>
+                    </div>
+
+                    <div class="row oneMusic-albums furniture-gallery">
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/library/front-view.jpg"
+                                       data-sub-html="&lt;h4&gt;The Art of Living in Turquoise&lt;/h4&gt;&lt;p&gt;The full bookcase, with turquoise cabinets framing the open shelves and glazed doors.&lt;/p&gt;">
+                                        <img src="images/furniture/library/mici/front-view.jpg" width="300" height="250" alt="The full bookcase, with turquoise cabinets framing the open shelves and glazed doors." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/library/carved-detail.jpg"
+                                       data-sub-html="&lt;h4&gt;The Art of Living in Turquoise&lt;/h4&gt;&lt;p&gt;A close-up of carved floral motifs on the turquoise cabinet doors and drawers.&lt;/p&gt;">
+                                        <img src="images/furniture/library/mici/carved-detail.jpg" width="300" height="250" alt="A close-up of carved floral motifs on the turquoise cabinet doors and drawers." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/library/room-view.jpg"
+                                       data-sub-html="&lt;h4&gt;The Art of Living in Turquoise&lt;/h4&gt;&lt;p&gt;An angled view shows the depth of the bookcase and its position in the room.&lt;/p&gt;">
+                                        <img src="images/furniture/library/mici/room-view.jpg" width="300" height="250" alt="An angled view shows the depth of the bookcase and its position in the room." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 single-album-item">
+                            <div class="single-album-area wow fadeInUp">
+                                <div class="album-thumb">
+                                    <a class="furniture-photo" href="images/furniture/library/reading-area.jpg"
+                                       data-sub-html="&lt;h4&gt;The Art of Living in Turquoise&lt;/h4&gt;&lt;p&gt;The bookcase behind a low table in the reading area.&lt;/p&gt;">
+                                        <img src="images/furniture/library/mici/reading-area.jpg" width="300" height="250" alt="The bookcase behind a low table in the reading area." loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <p class="copywrite-text"><a href="#">Copyright &copy; 2019 All rights reserved | Oana Rinaldi Art, Algorithms &#38; Architecture</a></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="paintings.html">Art</a></li>
+                            <li><a href="apps.html">Algorithms</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/lightgallery-all.min.js?v=20261106-furniture"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.furniture-gallery').each(function () {
+                $(this).lightGallery({
+                    selector: '.furniture-photo',
+                    mode: 'lg-slide',
+                    speed: 600,
+                    share: false,
+                    actualSize: false,
+                    hash: false
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

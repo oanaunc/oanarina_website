@@ -125,7 +125,7 @@
     videos.forEach(item => { if (item !== active) releaseHeader(item); });
     if (active && !active.video.getAttribute('src')) {
       // Buffer only the active short film where paused random seeks need later frames.
-      if (['forma', 'ui-tool', 'drawings', 'artbio', 'jackets', 'shoes', 'photography'].includes(name)) active.video.preload = 'auto';
+      if (['forma', 'ui-tool', 'drawings', 'artbio', 'jackets', 'shoes', 'furniture', 'photography'].includes(name)) active.video.preload = 'auto';
       active.video.src = active.video.dataset.src;
       active.video.load();
     }

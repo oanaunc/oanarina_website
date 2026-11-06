@@ -31,6 +31,7 @@ document.write("<li><a href=&quot;architecture.html&quot;>Architecture</a>");
 document.write("<ul class=&quot;dropdown&quot;>");
 document.write("<li><a href=&quot;archibio.html&quot;>Archi Bio</a></li>");
 document.write("<li><a href=&quot;architecture.html&quot;>Projects</a></li>");
+document.write("<li><a href=&quot;furniture.html&quot;>Furniture</a></li>");
 document.write("<li><a href=&quot;3dmodels.html&quot;>3D Models</a></li>");
 document.write("<li><a href=&quot;archipublications.html&quot;>Publications</a></li>");
 document.write("<li><a href=&quot;archipublications.html&quot;>Publications</a></li>");
