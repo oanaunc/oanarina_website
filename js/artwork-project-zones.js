@@ -21,6 +21,12 @@
 
         const byProject = new Map();
         for (const { item, title, project } of works) {
+            const caption = document.createElement('p');
+            caption.className = 'artwork-card-title';
+            caption.textContent = title;
+            caption.title = title;
+            item.querySelector('.album-thumb').after(caption);
+
             const name = project?.trim() || 'Independent works';
             if (!byProject.has(name)) byProject.set(name, []);
             byProject.get(name).push({ item, searchText: normalize(name + ' ' + title) });
@@ -85,7 +91,7 @@
 
             let boardHeight = 0;
             if (total) {
-                // The fixed thumbnail ratio reserves the same space before and after lazy loading.
+                // The fixed thumbnail ratio and two-line title space keep all rows the same height.
                 const first = matches.find(cards => cards.length)[0].item;
                 const cellHeight = first.getBoundingClientRect().height;
                 const inset = parseFloat(getComputedStyle(first).paddingLeft);

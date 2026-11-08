@@ -46,6 +46,12 @@
     object-fit: contain;
 }
 
+.artwork-project-island .artwork-card-title {
+    margin: 10px 0 0;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
 .artwork-project-island .shop-project__heading {
     flex-wrap: wrap;
     gap: 2px 9px;
