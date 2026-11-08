@@ -119,7 +119,12 @@
         .collection-number { color: #b9957f; font-size: .8rem; letter-spacing: .15em; border-top: 1px solid #b9957f; padding-top: 10px; min-width: 45px; }
         .jacket-collection-copy h3 { font-size: clamp(1.7rem, 3vw, 2.65rem); font-weight: 400; margin-bottom: 12px; }
         .jacket-collection-copy p { color: #746d68; line-height: 1.8; margin-bottom: 0; }
+        .jacket-collection-copy .jacket-project-meta { color: #715440; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
+        .jacket-project-meta ~ p + p { margin-top: 10px; }
+        #the-art-of-becoming { scroll-margin-top: 100px; }
         .jacket-gallery { justify-content: center; }
+        .jacket-gallery--portraits { max-width: 980px; margin: 0 auto; }
+        .jacket-gallery a.single-album-item:focus-visible { outline: 2px solid #715440; outline-offset: -4px; }
         .jacket-gallery .single-album-item { cursor: zoom-in; padding: 10px; }
         .jacket-gallery .single-album-area { margin-bottom: 0; overflow: hidden; background: #ece5df; box-shadow: 0 16px 40px rgba(63, 46, 37, .08); transition: transform .5s cubic-bezier(.2,.75,.25,1), box-shadow .5s ease; }
         .jacket-gallery .album-thumb { position: relative; overflow: hidden; }
@@ -313,9 +318,50 @@
                     </div>
                 </div>
 
-                <div class="jacket-collection" data-aos="fade-up">
+                <section class="jacket-collection" id="the-art-of-becoming" aria-labelledby="the-art-of-becoming-title" data-aos="fade-up">
                     <div class="jacket-collection-copy">
                         <span class="collection-number">01</span>
+                        <div>
+                            <h3 id="the-art-of-becoming-title">The Art of Becoming</h3>
+                            <p class="jacket-project-meta">Wearable Art · Mixed Media · 2026</p>
+                            <p>I reimagined an existing black jacket as a piece of wearable art, keeping its high collar, fitted waist and flared hem. Across the back, a peacock-inspired design in turquoise, sapphire, violet and gold brings movement to the black fabric. A single sparkling flower on the front offers a quieter detail.</p>
+                            <p>The peacock suggests beauty, confidence and renewal. I wanted the jacket itself to reflect that sense of renewal: a familiar garment given a second life and a new way to express individuality.</p>
+                        </div>
+                    </div>
+                    <div class="row jacket-gallery jacket-gallery--portraits" id="lightgallery-jackets-becoming" data-gallery-id="6">
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-back.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Peacock Back</h4><p>Turquoise, sapphire, violet and gold trace feather-like forms across the back.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-back.webp" alt="Full peacock design across the back of the black jacket" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-front.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Front View</h4><p>A single sparkling flower accents the black jacket above the tied waist.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-front.webp" alt="Front of the black jacket with a sparkling flower and tied waist" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-profile.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Side Profile</h4><p>The fitted waist and flared hem define the silhouette, with a glimpse of color at the back.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-profile.webp" alt="Side profile showing the fitted waist and flared hem of the jacket" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-peacock-perspective.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Three-Quarter Back</h4><p>The feather pattern follows the jacket from the shoulder to the flared hem.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-peacock-perspective.webp" alt="Three-quarter rear view showing the peacock pattern above and below the waist" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-flower-detail.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Floral Detail</h4><p>The small, sparkling flower catches the light against the black fabric.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-flower-detail.webp" alt="Close-up of the sparkling flower on the front of the jacket" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-feather-detail.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Feather Detail</h4><p>Blue and gold eye motifs gather into a fan below the waist.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-feather-detail.webp" alt="Rear view highlighting the blue and gold peacock motifs below the waist" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-front-perspective.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Collar and Waist</h4><p>The high collar frames the flower, while the soft tie gathers the jacket at the waist.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-front-perspective.webp" alt="Angled front detail showing the high collar, flower and waist tie" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-turning-view.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Turning View</h4><p>The peacock colors come into view as the jacket turns away from the camera.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-turning-view.webp" alt="Side and rear view of the jacket revealing the colorful peacock design" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                        <a class="col-6 col-md-4 item single-album-item" href="images/jackets/large/the-art-of-becoming-draped-view.webp" data-sub-html="<h6>The Art of Becoming</h6><h4>Draped View</h4><p>A loose fold of black fabric frames the bright feather motifs.</p>">
+                            <div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/the-art-of-becoming-draped-view.webp" alt="Draped black fabric framing the peacock design on the back of the jacket" width="420" height="560" loading="lazy" decoding="async"></div></div>
+                        </a>
+                    </div>
+                </section>
+
+                <div class="jacket-collection" data-aos="fade-up">
+                    <div class="jacket-collection-copy">
+                        <span class="collection-number">02</span>
                         <div><h3>Crimson Poppy Nocturne</h3><p>A vivid red biker jacket softened by hand-built poppies and deep botanical embroidery. The clean asymmetric front gives way to an opulent garden across the back—a contrast between structure and romantic abundance.</p></div>
                     </div>
                     <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-red">
@@ -328,7 +374,7 @@
                 </div>
 
                 <div class="jacket-collection" data-aos="fade-up">
-                    <div class="jacket-collection-copy"><span class="collection-number">02</span><div><h3>Emerald Secret Garden</h3><p>Deep emerald suede becomes a quiet landscape for blush roses, mint bows and jewel-toned butterflies. Transparent mesh allows the floral composition to float across the jacket like a pressed garden preserved in motion.</p></div></div>
+                    <div class="jacket-collection-copy"><span class="collection-number">03</span><div><h3>Emerald Secret Garden</h3><p>Deep emerald suede becomes a quiet landscape for blush roses, mint bows and jewel-toned butterflies. Transparent mesh allows the floral composition to float across the jacket like a pressed garden preserved in motion.</p></div></div>
                     <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-emerald">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4292.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Back View</h4><p>Blush florals and butterflies float over emerald suede.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4292.jpg" alt="Emerald Secret Garden jacket back" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4293.jpg" data-sub-html="<h6>Emerald Secret Garden</h6><h4>Botanical Detail</h4><p>Delicate mesh, satin bows and embroidered roses in close detail.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4293.jpg" alt="Emerald Secret Garden botanical detail" loading="lazy"></div></div></div>
@@ -340,7 +386,7 @@
                 </div>
 
                 <div class="jacket-collection" data-aos="fade-up">
-                    <div class="jacket-collection-copy"><span class="collection-number">03</span><div><h3>Champagne Winged Heart</h3><p>A warm champagne jacket with a restrained floral front and an unforgettable metallic heart across the back. A feathered butterfly rests on its edge, turning the piece into a tender emblem of movement, affection and transformation.</p></div></div>
+                    <div class="jacket-collection-copy"><span class="collection-number">04</span><div><h3>Champagne Winged Heart</h3><p>A warm champagne jacket with a restrained floral front and an unforgettable metallic heart across the back. A feathered butterfly rests on its edge, turning the piece into a tender emblem of movement, affection and transformation.</p></div></div>
                     <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-champagne">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4298.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Front Perspective</h4><p>Soft champagne suede with hand-applied blossoms and gold details.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4298.jpg" alt="Champagne Winged Heart front perspective" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4299.jpg" data-sub-html="<h6>Champagne Winged Heart</h6><h4>Front View</h4><p>An elegant neutral silhouette punctuated by delicate ornament.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4299.jpg" alt="Champagne Winged Heart front view" loading="lazy"></div></div></div>
@@ -350,7 +396,7 @@
                 </div>
 
                 <div class="jacket-collection" data-aos="fade-up">
-                    <div class="jacket-collection-copy"><span class="collection-number">04</span><div><h3>Fuchsia Blossom Rhapsody</h3><p>Fuchsia suede meets pale blush embroidery, pearl chains, crystalline centers and sculptural flowers. Romantic without becoming delicate, this jacket balances vivid color with intricate couture detailing.</p></div></div>
+                    <div class="jacket-collection-copy"><span class="collection-number">05</span><div><h3>Fuchsia Blossom Rhapsody</h3><p>Fuchsia suede meets pale blush embroidery, pearl chains, crystalline centers and sculptural flowers. Romantic without becoming delicate, this jacket balances vivid color with intricate couture detailing.</p></div></div>
                     <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-fuchsia">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4303.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Embroidered Back</h4><p>A sweeping pale-pink garden blooms across saturated fuchsia.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4303.jpg" alt="Fuchsia Blossom Rhapsody embroidered back" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4305.jpg" data-sub-html="<h6>Fuchsia Blossom Rhapsody</h6><h4>Back Perspective</h4><p>Layered flowers and mesh give the composition depth and movement.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4305.jpg" alt="Fuchsia Blossom Rhapsody back perspective" loading="lazy"></div></div></div>
@@ -361,7 +407,7 @@
                 </div>
 
                 <div class="jacket-collection" data-aos="fade-up">
-                    <div class="jacket-collection-copy"><span class="collection-number">05</span><div><h3>Azure Beaded Garland</h3><p>A clear turquoise silhouette conceals an exuberant back: sequined flowers, pearl-centered blossoms and densely beaded leaves form a luminous garland. Tone-on-tone ornament makes the craftsmanship emerge gradually as the light moves.</p></div></div>
+                    <div class="jacket-collection-copy"><span class="collection-number">06</span><div><h3>Azure Beaded Garland</h3><p>A clear turquoise silhouette conceals an exuberant back: sequined flowers, pearl-centered blossoms and densely beaded leaves form a luminous garland. Tone-on-tone ornament makes the craftsmanship emerge gradually as the light moves.</p></div></div>
                     <div class="row oneMusic-albums jacket-gallery" id="lightgallery-jackets-azure">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4309.jpg" data-sub-html="<h6>Azure Beaded Garland</h6><h4>Minimal Front</h4><p>A clean turquoise front creates a striking moment of restraint.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4309.jpg" alt="Azure Beaded Garland front view" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-src="images/jackets/large/IMG_4310.jpg" data-sub-html="<h6>Azure Beaded Garland</h6><h4>Beaded Back</h4><p>Sequined blossoms and intricate leaves form a radiant turquoise garland.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4310.jpg" alt="Azure Beaded Garland embellished back" loading="lazy"></div></div></div>
@@ -417,6 +463,7 @@
         $(document).ready(function () {
             $('.jacket-gallery').each(function () {
                 $(this).lightGallery({
+                    galleryId: $(this).data('gallery-id') || 1,
                     mode: 'lg-slide',
                     speed: 650,
                     share: false,
