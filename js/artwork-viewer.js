@@ -32,6 +32,7 @@
         return work;
     });
     if (!works.length) return;
+    window.initArtworkProjectZones?.(gallery, works);
     const dialog = document.createElement('dialog');
     dialog.className = 'artwork-room';
     dialog.setAttribute('aria-labelledby', 'artwork-title');

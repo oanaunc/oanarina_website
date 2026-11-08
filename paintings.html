@@ -85,6 +85,8 @@
     <script defer src="js/motion-manifest.js?v=20261030-kiss"></script>
     <script defer src="js/experience.js?v=20260913-memory"></script>
     <link rel="stylesheet" href="css/artwork-viewer.css?v=20261105-separate-ribbon">
+    <link rel="stylesheet" href="css/shop.css?v=20261105-project-search">
+    <link rel="stylesheet" href="css/artwork-project-zones.css?v=20261108">
 </head>
 
 <body>
@@ -301,22 +303,33 @@
             <div class="row">
                 <div class="col-12">
 
-                    <!-- Paintings Projects menu -->
-                    <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
-                              
-                    	<a href="#" data-filter=".z" style="color:#000000">All paintings</a>
-                        <a href="#" data-filter=".a" style="color:#000000">120 x 80 cm</a>
-                        <a href="#" data-filter=".k" style="color:#000000">150 x 100 cm</a>
-                        <a href="#" data-filter=".b" style="color:#000000">100 x 100 cm</a>
-                        <a href="#" data-filter=".c" style="color:#000000">50 x 80 cm</a>
-                        <a href="#" data-filter=".d" style="color:#000000">50 x 50 cm</a>
-                        <a href="#" data-filter=".e" style="color:#000000">Other dimensions</a>
-						<a href="#" data-filter=".f" style="color:#000000">&#x25AF; Vertical</a>
-						<a href="#" data-filter=".g" style="color:#000000">&#9645; Horizontal</a>
-						<a href="#" data-filter=".h" style="color:#000000">&#x25A2; Square</a>
-						<a href="#" data-filter=".i" style="color:#000000">Available</a>
-						<a href="#" data-filter=".j" style="color:#000000">Not Available</a>
-                       
+                    <div class="artwork-controls" id="artwork-controls" hidden>
+                        <div class="shop-toolbar">
+                            <div class="shop-search" role="search" aria-label="Search paintings">
+                                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>
+                                <label class="shop-sr-only" for="artwork-search">Search by project or artwork title</label>
+                                <input id="artwork-search" type="search" placeholder="Search a project or artwork…" autocomplete="off" aria-controls="lightgallery">
+                                <button type="button" id="artwork-clear-search" aria-label="Clear search" hidden>×</button>
+                            </div>
+                        </div>
+                        <div class="shop-medium-filters" role="group" aria-label="Filter paintings">
+                            <button type="button" data-filter="" aria-pressed="true" aria-controls="lightgallery">All paintings</button>
+                            <button type="button" data-filter=".a" aria-pressed="false" aria-controls="lightgallery">120 x 80 cm</button>
+                            <button type="button" data-filter=".k" aria-pressed="false" aria-controls="lightgallery">150 x 100 cm</button>
+                            <button type="button" data-filter=".b" aria-pressed="false" aria-controls="lightgallery">100 x 100 cm</button>
+                            <button type="button" data-filter=".c" aria-pressed="false" aria-controls="lightgallery">50 x 80 cm</button>
+                            <button type="button" data-filter=".d" aria-pressed="false" aria-controls="lightgallery">50 x 50 cm</button>
+                            <button type="button" data-filter=".e" aria-pressed="false" aria-controls="lightgallery">Other dimensions</button>
+                            <button type="button" data-filter=".f" aria-pressed="false" aria-controls="lightgallery">&#x25AF; Vertical</button>
+                            <button type="button" data-filter=".g" aria-pressed="false" aria-controls="lightgallery">&#9645; Horizontal</button>
+                            <button type="button" data-filter=".h" aria-pressed="false" aria-controls="lightgallery">&#x25A2; Square</button>
+                            <button type="button" data-filter=".i" aria-pressed="false" aria-controls="lightgallery">Available</button>
+                            <button type="button" data-filter=".j" aria-pressed="false" aria-controls="lightgallery">Not Available</button>
+                        </div>
+                        <div class="shop-results-line">
+                            <p id="artwork-results" role="status" aria-live="polite" aria-atomic="true"></p>
+                            <button type="button" id="artwork-reset" hidden>Show all works <span aria-hidden="true">↗</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -331,7 +344,7 @@
     <div class="container-fluid">
                   
      
-      <div class="row oneMusic-albums" id="lightgallery">
+      <div class="row" id="lightgallery">
 		  
 		<!--Project: Cars (2026)-->
 
@@ -2997,7 +3010,9 @@
   <script src="js/picturefill.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/artwork-data.js?v=20261101-chromatic-image-sizes"></script>
-  <script src="js/artwork-viewer.js?v=20261105-separate-ribbon"></script>
+  <script src="js/shop-layout.js?v=20261108-project-islands"></script>
+  <script src="js/artwork-project-zones.js?v=20261108"></script>
+  <script src="js/artwork-viewer.js?v=20261108-project-zones"></script>
   <script src="js/idgallery.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>
 

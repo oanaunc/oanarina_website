@@ -1,0 +1,75 @@
+.artwork-controls {
+    margin-bottom: 24px;
+}
+
+.artwork-controls .shop-medium-filters {
+    flex-wrap: wrap;
+    margin: 12px 7px 0;
+}
+
+.artwork-controls button:focus-visible {
+    outline: 2px solid #84639f;
+    outline-offset: 3px;
+}
+
+.artwork-controls[hidden],
+.artwork-controls [hidden],
+.artwork-project-board [hidden] {
+    display: none !important;
+}
+
+.artwork-project-board {
+    --project-columns: 1;
+    --project-card-inset: clamp(22px, 9vw, 46px);
+    position: relative;
+    display: block;
+    isolation: isolate;
+}
+
+.artwork-project-board .artwork-project-island .single-album-item {
+    width: var(--project-cell-width);
+    padding: 68px var(--project-card-inset) 0;
+}
+
+.artwork-project-island .single-album-area {
+    margin-bottom: 18px;
+}
+
+.artwork-project-island .album-thumb,
+.artwork-project-island .album-thumb img {
+    border-radius: 5px;
+}
+
+.artwork-project-island .album-thumb img {
+    display: block;
+    aspect-ratio: 6 / 5;
+    object-fit: contain;
+}
+
+.artwork-project-island .shop-project__heading {
+    flex-wrap: wrap;
+    gap: 2px 9px;
+}
+
+.artwork-project-island .shop-project__heading h2 {
+    overflow-wrap: anywhere;
+}
+
+.artwork-project-island .shop-project__count {
+    white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+    .artwork-project-board {
+        --project-columns: 2;
+        --project-card-inset: clamp(22px, 2.3vw, 38px);
+    }
+}
+
+@media (min-width: 768px) {
+    .artwork-project-board { --project-columns: 3; }
+}
+
+@media (min-width: 992px) {
+    .artwork-project-board { --project-columns: 6; }
+}

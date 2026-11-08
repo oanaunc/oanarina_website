@@ -3,6 +3,7 @@
     'use strict';
     const board = document.getElementById('shop-projects');
     if (!board) return;
+    const { flowCells, outline, topRun } = window.SHOP_LAYOUT;
     const search = document.getElementById('shop-search');
     const clear = document.getElementById('shop-clear-search');
     const reset = document.getElementById('shop-reset');
@@ -55,55 +56,6 @@
     });
     board.replaceChildren(...islands.map(island => island.section));
     let medium = '', frame = 0, hasLayout = false;
-    // Trace the union of occupied cells, then inset and round its contour.
-    function outline(cells, cellWidth, cellHeight) {
-        const filled = new Set(cells.map(cell => cell.join(','))), edges = new Map();
-        const edge = (a, b) => {
-            const key = a.join(',');
-            if (!edges.has(key)) edges.set(key, []);
-            edges.get(key).push(b);
-        };
-        cells.forEach(([x, y]) => {
-            if (!filled.has([x, y - 1].join(','))) edge([x, y], [x + 1, y]);
-            if (!filled.has([x + 1, y].join(','))) edge([x + 1, y], [x + 1, y + 1]);
-            if (!filled.has([x, y + 1].join(','))) edge([x + 1, y + 1], [x, y + 1]);
-            if (!filled.has([x - 1, y].join(','))) edge([x, y + 1], [x, y]);
-        });
-        const contours = [];
-        while (edges.size) {
-            const start = edges.keys().next().value, vertices = [];
-            let key = start, previousDirection = 0;
-            do {
-                const point = key.split(',').map(Number), choices = edges.get(key);
-                vertices.push([point[0] * cellWidth, point[1] * cellHeight]);
-                const direction = next => next[0] > point[0] ? 0 : next[1] > point[1] ? 1 : next[0] < point[0] ? 2 : 3;
-                choices.sort((a, b) => {
-                    const rank = next => [1, 0, 3, 2][(direction(next) - previousDirection + 4) % 4];
-                    return rank(a) - rank(b);
-                });
-                const next = choices.shift(); previousDirection = direction(next);
-                if (!choices.length) edges.delete(key);
-                key = next.join(',');
-            } while (key !== start);
-            contours.push(vertices);
-        }
-        return contours.map(vertices => {
-        const points = vertices.filter((v, i) => {
-            const a = vertices[(i + vertices.length - 1) % vertices.length], b = vertices[(i + 1) % vertices.length];
-            return (v[0] - a[0]) * (b[1] - v[1]) !== (v[1] - a[1]) * (b[0] - v[0]);
-        });
-        const unit = (a, b) => { const dx = b[0] - a[0], dy = b[1] - a[1], length = Math.hypot(dx, dy); return [dx / length, dy / length]; };
-        const inset = points.map((v, i) => {
-            const a = unit(points[(i + points.length - 1) % points.length], v), b = unit(v, points[(i + 1) % points.length]);
-            return [v[0] - (a[1] + b[1]) * 7, v[1] + (a[0] + b[0]) * 7];
-        });
-        return inset.map((v, i) => {
-            const a = unit(inset[(i + inset.length - 1) % inset.length], v), b = unit(v, inset[(i + 1) % inset.length]);
-            const before = [v[0] - a[0] * 17, v[1] - a[1] * 17], after = [v[0] + b[0] * 17, v[1] + b[1] * 17];
-            return `${i ? 'L' : 'M'}${before.join(',')}Q${v.join(',')} ${after.join(',')}`;
-        }).join('') + 'Z';
-        }).join('');
-    }
     function layout() {
         frame = 0;
         const width = board.clientWidth;
@@ -132,7 +84,7 @@
         const cardHeight = Math.max(0, ...records.filter(work => !work.card.hidden).map(work => work.card.offsetHeight));
         const cellHeight = cardHeight + 84;
         const totalMatches = matches.reduce((sum, works) => sum + works.length, 0);
-        const flow = window.SHOP_LAYOUT.flowCells(totalMatches, columns);
+        const flow = flowCells(totalMatches, columns);
         let cursor = 0;
         let total = 0, groupCount = 0, bottom = 0;
         islands.forEach((island, index) => {
@@ -148,16 +100,9 @@
             island.svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
             island.path.setAttribute('d', outline(cells, cellWidth, cellHeight));
             island.path.setAttribute('fill-rule', 'evenodd');
-            // Place the project title over the longest occupied run on its top row.
-            const top = cells.filter(cell => cell[1] === 0).map(cell => cell[0]).sort((a, b) => a - b);
-            let runStart = top[0], runLength = 1, bestStart = top[0], bestLength = 1;
-            for (let i = 1; i < top.length; i++) {
-                if (top[i] === top[i - 1] + 1) runLength++;
-                else { runStart = top[i]; runLength = 1; }
-                if (runLength > bestLength) { bestStart = runStart; bestLength = runLength; }
-            }
-            island.heading.style.left = bestStart * cellWidth + 20 + 'px';
-            island.heading.style.width = bestLength * cellWidth - 40 + 'px';
+            const headingRun = topRun(cells);
+            island.heading.style.left = headingRun.column * cellWidth + 20 + 'px';
+            island.heading.style.width = headingRun.length * cellWidth - 40 + 'px';
             island.count.textContent = visible.length + (visible.length === 1 ? ' work' : ' works');
             visible.forEach((work, i) => {
                 Object.assign(work.card.style, { left: cells[i][0] * cellWidth + 18 + 'px', top: cells[i][1] * cellHeight + 64 + 'px', width: cellWidth - 36 + 'px' });

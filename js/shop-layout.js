@@ -72,5 +72,67 @@ Adapted from https://github.com/jakubcerveny/gilbert/blob/master/gilbert2d.py
         }
         return cells;
     }
-    root.SHOP_LAYOUT = { flowCells };
+    // Trace the union of occupied cells, then inset and round its contour.
+    function outline(cells, cellWidth, cellHeight) {
+        const filled = new Set(cells.map(cell => cell.join(','))), edges = new Map();
+        const edge = (a, b) => {
+            const key = a.join(',');
+            if (!edges.has(key)) edges.set(key, []);
+            edges.get(key).push(b);
+        };
+        cells.forEach(([x, y]) => {
+            if (!filled.has([x, y - 1].join(','))) edge([x, y], [x + 1, y]);
+            if (!filled.has([x + 1, y].join(','))) edge([x + 1, y], [x + 1, y + 1]);
+            if (!filled.has([x, y + 1].join(','))) edge([x + 1, y + 1], [x, y + 1]);
+            if (!filled.has([x - 1, y].join(','))) edge([x, y + 1], [x, y]);
+        });
+        const contours = [];
+        while (edges.size) {
+            const start = edges.keys().next().value, vertices = [];
+            let key = start, previousDirection = 0;
+            do {
+                const point = key.split(',').map(Number), choices = edges.get(key);
+                vertices.push([point[0] * cellWidth, point[1] * cellHeight]);
+                const direction = next => next[0] > point[0] ? 0 : next[1] > point[1] ? 1 : next[0] < point[0] ? 2 : 3;
+                choices.sort((a, b) => {
+                    const rank = next => [1, 0, 3, 2][(direction(next) - previousDirection + 4) % 4];
+                    return rank(a) - rank(b);
+                });
+                const next = choices.shift(); previousDirection = direction(next);
+                if (!choices.length) edges.delete(key);
+                key = next.join(',');
+            } while (key !== start);
+            contours.push(vertices);
+        }
+        return contours.map(vertices => {
+        const points = vertices.filter((v, i) => {
+            const a = vertices[(i + vertices.length - 1) % vertices.length], b = vertices[(i + 1) % vertices.length];
+            return (v[0] - a[0]) * (b[1] - v[1]) !== (v[1] - a[1]) * (b[0] - v[0]);
+        });
+        const unit = (a, b) => { const dx = b[0] - a[0], dy = b[1] - a[1], length = Math.hypot(dx, dy); return [dx / length, dy / length]; };
+        const inset = points.map((v, i) => {
+            const a = unit(points[(i + points.length - 1) % points.length], v), b = unit(v, points[(i + 1) % points.length]);
+            return [v[0] - (a[1] + b[1]) * 7, v[1] + (a[0] + b[0]) * 7];
+        });
+        return inset.map((v, i) => {
+            const a = unit(inset[(i + inset.length - 1) % inset.length], v), b = unit(v, inset[(i + 1) % inset.length]);
+            const before = [v[0] - a[0] * 17, v[1] - a[1] * 17], after = [v[0] + b[0] * 17, v[1] + b[1] * 17];
+            return `${i ? 'L' : 'M'}${before.join(',')}Q${v.join(',')} ${after.join(',')}`;
+        }).join('') + 'Z';
+        }).join('');
+    }
+    // Find the longest uninterrupted span on the first occupied row.
+    function topRun(cells) {
+        const row = Math.min(...cells.map(cell => cell[1]));
+        const columns = cells.filter(cell => cell[1] === row).map(cell => cell[0]).sort((a, b) => a - b);
+        let start = columns[0], length = 1, bestStart = start, bestLength = length;
+        for (let i = 1; i < columns.length; i++) {
+            if (columns[i] === columns[i - 1] + 1) length++;
+            else { start = columns[i]; length = 1; }
+            if (length > bestLength) { bestStart = start; bestLength = length; }
+        }
+        return { column: bestStart, row, length: bestLength };
+    }
+
+    root.SHOP_LAYOUT = { flowCells, outline, topRun };
 })(typeof window === 'undefined' ? globalThis : window);
