@@ -368,7 +368,6 @@
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4288.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Three-Quarter View</h4><p>Textural red flowers, matte suede and graphic metal zippers.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4288.jpg" alt="Crimson Poppy Nocturne three-quarter view" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4289.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Embroidered Back</h4><p>A dramatic botanical composition in burgundy, green and black.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4289.jpg" alt="Crimson Poppy Nocturne embroidered back" loading="lazy"></div></div></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4290.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Back Detail</h4><p>Layered embroidery and dimensional poppies reveal meticulous handwork.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4290.jpg" alt="Crimson Poppy Nocturne back detail" loading="lazy"></div></div></div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item single-album-item" data-aos="fade-up" data-src="images/jackets/large/IMG_4291.jpg" data-sub-html="<h6>Crimson Poppy Nocturne</h6><h4>Embroidery Close-Up</h4><p>Fine threadwork, pearls and petals create a richly tactile surface.</p>"><div class="single-album-area"><div class="album-thumb"><img src="images/jackets/thumbs/IMG_4291.jpg" alt="Crimson Poppy Nocturne embroidery close-up" loading="lazy"></div></div></div>
                     </div>
                 </div>
 
@@ -460,6 +459,11 @@
 
     <script>
         $(document).ready(function () {
+            // Send old links to the red jacket gallery after removing its fifth photo.
+            if (window.location.hash === '#lg=1&slide=4') {
+                window.location.replace('#lightgallery-jackets-red');
+            }
+
             $('.jacket-gallery').each(function () {
                 $(this).lightGallery({
                     galleryId: $(this).data('gallery-id') || 1,
