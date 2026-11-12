@@ -48,6 +48,22 @@
 .exhibition-details p { margin: 12px 0 0; color: inherit; font-size: inherit; line-height: inherit; }
 .exhibition-card .single-event-area:hover .exhibition-details { color: #000; }
 .exhibition-details summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.exhibition-details .exhibition-resource-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+}
+.exhibition-details .exhibition-resource-links a {
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.exhibition-details .exhibition-resource-links a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
 
 #romanian-graphics-2026 .event-thumbnail img { object-position: center 25%; }
 
@@ -58,10 +74,11 @@
 .exhibition-gallery--with-links .lg {
     display: flex;
     flex-direction: column;
+    overflow: clip;
     padding-top: 47px;
 }
 .exhibition-gallery--with-links.lg-thumb-open .lg { padding-bottom: 100px; }
-.exhibition-gallery--with-links.lg-has-thumb .lg-inner {
+.exhibition-gallery.exhibition-gallery--with-links .lg-inner {
     position: relative;
     flex: 1;
     min-height: 0;

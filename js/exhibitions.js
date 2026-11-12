@@ -1,4 +1,4 @@
-/* Event galleries use the same LightGallery viewer as the art pages. */
+/* Open an event's photo set, or its card photo when that is the only image. */
 (function ($) {
     "use strict";
     // The bundled fullscreen module exits fullscreen on every close, even when disabled.
@@ -9,72 +9,72 @@
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5834.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5834.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_6093.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_6093.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5683.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5683.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5684.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5684.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5685.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5685.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5686.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5686.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5687.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5687.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5688.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5688.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5689.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5689.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5690.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5690.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5765.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5765.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5918.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5918.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_5949.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_5949.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     },
     {
         "src": "images/exhibitions/web/romanian-graphics-2026/IMG_6094.jpg",
         "thumb": "images/exhibitions/web/romanian-graphics-2026/IMG_6094.jpg",
-        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–16 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
+        "subHtml": "<h4>Romanian Graphics 2026 / GR 26</h4><p>15th edition · Organized by the Romanian Fine Artists’ Union<br>Romanian Academy Galleries / House of Scientists · Bucharest, Romania<br>2–13 November 2026</p><p>163 works by 103 artists from Romania and abroad.</p>"
     }
 ],
     "pepsi-space-2023": [
@@ -271,211 +271,211 @@
         {
             "src": "images/exhibitions/web/winter-salon/13.jpg",
             "thumb": "images/exhibitions/web/winter-salon/13.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/01.jpg",
             "thumb": "images/exhibitions/web/winter-salon/01.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/02.jpg",
             "thumb": "images/exhibitions/web/winter-salon/02.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/03.jpg",
             "thumb": "images/exhibitions/web/winter-salon/03.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/04.jpg",
             "thumb": "images/exhibitions/web/winter-salon/04.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/05.jpg",
             "thumb": "images/exhibitions/web/winter-salon/05.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/06.jpg",
             "thumb": "images/exhibitions/web/winter-salon/06.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/07.jpg",
             "thumb": "images/exhibitions/web/winter-salon/07.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/08.jpg",
             "thumb": "images/exhibitions/web/winter-salon/08.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/09.jpg",
             "thumb": "images/exhibitions/web/winter-salon/09.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/10.jpg",
             "thumb": "images/exhibitions/web/winter-salon/10.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/11.jpg",
             "thumb": "images/exhibitions/web/winter-salon/11.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/12.jpg",
             "thumb": "images/exhibitions/web/winter-salon/12.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/14.jpg",
             "thumb": "images/exhibitions/web/winter-salon/14.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/15.jpg",
             "thumb": "images/exhibitions/web/winter-salon/15.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/16.jpg",
             "thumb": "images/exhibitions/web/winter-salon/16.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/winter-salon/17.jpg",
             "thumb": "images/exhibitions/web/winter-salon/17.jpg",
-            "subHtml": "<h4>Winter Salon</h4><p>Art4All Gallery · Bucharest, Romania<br>December 2025 – January 2026</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Winter Salon</h4><p>ART4ALL Cultural Centre · Bucharest, Romania<br>10 December 2025 – 20 January 2026</p><p>Group art exhibition</p>"
         }
     ],
     "doctoral-research-2025": [
         {
             "src": "images/exhibitions/web/doctoral-research-2025/13.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/13.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/01.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/01.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/02.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/02.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/03.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/03.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/04.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/04.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/05.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/05.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/06.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/06.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/07.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/07.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/08.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/08.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/09.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/09.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/10.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/10.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/11.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/11.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/12.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/12.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/14.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/14.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/15.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/15.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/16.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/16.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/doctoral-research-2025/17.jpg",
             "thumb": "images/exhibitions/web/doctoral-research-2025/17.jpg",
-            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>Combinatul Fondului Plastic · Bucharest, Romania<br>December 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Doctoral Research Exhibition 2025</h4><p>UNAgaleria, Combinatul Fondului Plastic · Bucharest, Romania<br>4–15 December 2025</p><p>Group art exhibition</p>"
         }
     ],
     "romanian-graphics-2025": [
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/02.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/02.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/01.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/01.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/03.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/03.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/04.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/04.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/05.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/05.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/06.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/06.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         },
         {
             "src": "images/exhibitions/web/romanian-graphics-2025/07.jpg",
             "thumb": "images/exhibitions/web/romanian-graphics-2025/07.jpg",
-            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Visual Arts Center · Bucharest, Romania<br>October 2025</p><p>Group art exhibition</p>"
+            "subHtml": "<h4>Romanian Graphics 2025 / GR 25</h4><p>Galeria Căminul Artei · Bucharest, Romania<br>November 2025</p><p>Group art exhibition</p>"
         }
     ],
     "emotions-of-the-soul": [
@@ -547,27 +547,35 @@
         var trigger = this;
         var $trigger = $(trigger);
         var galleryId = trigger.getAttribute('data-event-gallery');
-        var links = document.getElementById(galleryId + '-links');
+        var card = trigger.closest('.exhibition-card');
+        var title = card.querySelector('h4');
+        var slides = galleries[galleryId] || [{
+            src: trigger.getAttribute('href'),
+            subHtml: title.outerHTML
+        }];
+        var links = card.querySelector('.exhibition-resource-links');
         if (links) {
             $trigger.one('onAfterOpen.lg', function () {
                 var viewer = $trigger.data('lightGallery').$outer[0];
-                var navigation = links.content.firstElementChild.cloneNode(true);
+                var navigation = links.cloneNode(true);
+                navigation.classList.add('exhibition-gallery-links');
+                navigation.tabIndex = -1;
                 viewer.querySelector('.lg-inner').before(navigation);
-                navigation.focus();
+                navigation.focus({ preventScroll: true });
             });
         }
         $trigger.one('onCloseAfter.lg', function () { trigger.focus(); });
         $trigger.lightGallery({
             addClass: links ? 'exhibition-gallery exhibition-gallery--with-links' : 'exhibition-gallery',
             dynamic: true,
-            dynamicEl: galleries[galleryId],
+            dynamicEl: slides,
             hash: false,
             download: false,
             share: false,
             fullScreen: false,
             autoplay: false,
             autoplayControls: false,
-            thumbnail: true,
+            thumbnail: slides.length > 1,
             showThumbByDefault: true,
             toogleThumb: false
         });
