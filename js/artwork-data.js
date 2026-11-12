@@ -94,6 +94,13 @@ window.ARTWORK_DATA = {
       },
       "redbubble": "https://www.redbubble.com/shop/ap/184790738"
     },
+    "velocity-beyond-form-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-Velocity-Beyond-Form-42-x-29-7-cm-ink-on-paper-2026/806648/14415249/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185586114"
+    },
     "the-shape-of-sound-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Shape-of-Sound-50-x-70-cm-graphite-crayon-on-paper-2026/806648/14375965/view",
@@ -2966,6 +2973,107 @@ window.ARTWORK_DATA = {
           "src": "images/artwork-details/studio/img-5403.webp",
           "thumb": "images/artwork-details/studio/img-5403-thumb.webp",
           "label": "On paper · perspective and linework"
+        }
+      ]
+    },
+    "velocity-beyond-form-2026": {
+      "title": "Velocity Beyond Form",
+      "dimensions": "42 × 29.7 cm (A3)",
+      "medium": "Ink on paper",
+      "year": "2026",
+      "description": [
+        "Velocity Beyond Form explores the relationship between movement, precision, and the architectural language of speed. Through an intricate composition of dynamic lines, geometric constructions, and expressive cross-hatching, the drawing transforms a high-performance sports car into a visual investigation of motion, engineering, and futuristic design.",
+        "The vehicle emerges from a network of intersecting trajectories, technical measurements, and circular geometries, suggesting that its existence extends beyond its physical structure. The surrounding construction lines reveal an underlying creative process in which imagination, mathematics, and mechanical innovation converge.",
+        "The prominent circular forms introduce a sense of continuity and perpetual motion, while the sharp angular surfaces and contrasting densities of ink emphasize tension between controlled engineering and unrestricted velocity.",
+        "Rather than presenting the automobile merely as an object of technological achievement, the artwork considers it a manifestation of human ambition: the desire to overcome limitations, redefine boundaries, and transform movement into an expression of freedom.",
+        "The deliberate coexistence of finished details and visible construction marks challenges the distinction between concept and realization. The drawing exists simultaneously as an engineering vision and an artistic statement, capturing the moment when an imagined form begins to acquire physical presence.",
+        "Ultimately, Velocity Beyond Form celebrates the aesthetics of innovation, where speed becomes architecture, geometry becomes emotion, and design transcends functionality."
+      ],
+      "keywords": [
+        "automotive art",
+        "velocity",
+        "futuristic design",
+        "supercar",
+        "engineering aesthetics",
+        "geometric abstraction",
+        "technical drawing",
+        "dynamic composition",
+        "mechanical precision",
+        "architectural geometry",
+        "contemporary ink drawing",
+        "motion studies"
+      ],
+      "hashtags": [
+        "#AutomotiveArt",
+        "#Velocity",
+        "#FuturisticDesign",
+        "#SupercarArt",
+        "#EngineeringAesthetics",
+        "#GeometricAbstraction",
+        "#TechnicalDrawing",
+        "#DynamicComposition",
+        "#MechanicalPrecision",
+        "#ArchitecturalGeometry",
+        "#InkDrawing",
+        "#MotionStudies"
+      ],
+      "searchKeywords": [
+        "automotive illustration",
+        "contemporary drawing",
+        "ink on paper",
+        "supercar design",
+        "velocity",
+        "futuristic aesthetics",
+        "geometric construction",
+        "mechanical engineering",
+        "technical illustration",
+        "dynamic movement",
+        "automotive architecture",
+        "precision drawing",
+        "industrial design",
+        "conceptual automotive art",
+        "expressive linework",
+        "cross-hatching",
+        "circular geometry",
+        "engineering sketches",
+        "visual dynamics",
+        "speed and motion",
+        "aerodynamic design",
+        "monochromatic artwork",
+        "contemporary fine art",
+        "design philosophy",
+        "mechanical abstraction",
+        "technological innovation",
+        "structural composition",
+        "artistic engineering",
+        "futuristic transportation",
+        "architectural expression"
+      ],
+      "images": [
+        {
+          "src": "images/desene/2026 cars/Velocity Beyond Form, 42 × 29.7 cm, ink on paper, 2026.jpg",
+          "thumb": "images/desene/2026 cars/mici/10.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/2026-cars/velocity-beyond-form/framed-landscape.webp",
+          "thumb": "images/artwork-details/2026-cars/velocity-beyond-form/framed-landscape-thumb.webp",
+          "label": "Framed artwork · wide view"
+        },
+        {
+          "src": "images/artwork-details/2026-cars/velocity-beyond-form/framed-portrait.webp",
+          "thumb": "images/artwork-details/2026-cars/velocity-beyond-form/framed-portrait-thumb.webp",
+          "label": "Framed artwork · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/2026-cars/velocity-beyond-form/on-paper-front.webp",
+          "thumb": "images/artwork-details/2026-cars/velocity-beyond-form/on-paper-front-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/2026-cars/velocity-beyond-form/on-paper-with-tools.webp",
+          "thumb": "images/artwork-details/2026-cars/velocity-beyond-form/on-paper-with-tools-thumb.webp",
+          "label": "On paper · with drawing tools"
         }
       ]
     },
@@ -31024,6 +31132,7 @@ window.ARTWORK_DATA = {
     "the-geometry-of-velocity-2026": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Velocity%2C-Ink-on-Paper%2C-30x42-cm-1362391496",
     "geometry-of-acceleration-2026": "https://www.deviantart.com/oanarinaldi/art/Geometry-of-Acceleration%2C-29.7-%C3%97-42-cm%2C-ink-on-paper%2C-2026-1379070837",
     "the-anatomy-of-velocity-2026": "https://www.deviantart.com/oanarinaldi/art/The-Anatomy-of-Velocity%2C-29.7-%C3%97-42-cm-%28A3%29%2C-ink-on-paper%2C-2026-1398466393",
+    "velocity-beyond-form-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Beyond-Form%2C-42-%C3%97-29.7-cm%2C-ink-on-paper%2C-2026-1409306172",
     "the-shape-of-sound-2026": "https://www.deviantart.com/oanarinaldi/art/The-Shape-of-Sound%2C-50-x-70-cm%2C-graphite-crayon-on-paper%2C-2026-1404256023",
     "the-resonance-between-light-and-silence-2026": "https://www.deviantart.com/oanarinaldi/art/The-Resonance-Between-Light-and-Silence%2C-50-70-1358324238",
     "resonance-in-the-half-light-2026": "https://www.deviantart.com/oanarinaldi/art/Resonance-in-the-Half-Light%2C-50-x-70-cm%2C-graphite-1329387514",

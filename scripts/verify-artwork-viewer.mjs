@@ -113,7 +113,7 @@ try {
     assert.equal(await room.locator('.artwork-room__explore').evaluate(el => el.scrollTop), 0);
     checks++;
     await page.keyboard.press('ArrowLeft');
-    assert.equal(await room.locator('#artwork-title').textContent(), 'The Anatomy of Velocity');
+    assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity Beyond Form');
     await page.keyboard.press('ArrowRight');
     assert.equal(await room.locator('#artwork-title').textContent(), 'The Shape of Sound');
     await room.locator('.artwork-room__image').evaluate(img => img.decode());

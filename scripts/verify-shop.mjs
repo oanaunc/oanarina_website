@@ -32,7 +32,7 @@ try {
             rel: icon.getAttribute('rel')
         }))
     })));
-    assert.equal(cards.length, 357);
+    assert.equal(cards.length, 358);
     assert.equal(new Set(cards.map(card => card.id)).size, cards.length);
     for (const card of cards) {
         assert.ok(data.artworks[card.id], card.id);
@@ -112,7 +112,7 @@ try {
         if (width === 390) await page.screenshot({ path: '/tmp/shop-icons-mobile.png' });
     }
     assert.deepEqual(errors, []);
-    console.log(JSON.stringify({ artworks: cards.length, icons: cards.length * 3, deviantArtLinks: 351, disabledIcons: 43, responsiveWidths: [390, 576, 768, 992, 1440], hoverAndKeyboardHelpers: true, pageErrors: errors }, null, 2));
+    console.log(JSON.stringify({ artworks: cards.length, icons: cards.length * 3, deviantArtLinks: cards.filter(card => data.deviantArtLinks[card.id]).length, disabledIcons: 43, responsiveWidths: [390, 576, 768, 992, 1440], hoverAndKeyboardHelpers: true, pageErrors: errors }, null, 2));
 } finally {
     await browser.close();
 }
