@@ -11,13 +11,11 @@
 .exhibition-card .event-text .see-more-btn { margin-top: auto; letter-spacing: 5px; }
 .exhibition-card .single-event-area:hover .event-meta-data span { color: #000; }
 .exhibition-card .see-more-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
-.lg-sub-html h4 { color: #fff; font-size: 18px; }
-.lg-sub-html p { color: #fff; font-size: 13px; margin: 4px 0; line-height: 1.5; }
 @media (min-width: 576px) { .exhibitions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 900px) { .exhibitions-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (min-width: 1200px) { .exhibitions-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (min-width: 1500px) { .exhibitions-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
-@media (max-width: 575px) { .exhibitions-container { padding: 0 20px; } .lg-sub-html p { font-size: 11px; } }
+@media (max-width: 575px) { .exhibitions-container { padding: 0 20px; } }
 
 /* Keep the seminar poster legible and portrait covers framed above center. */
 #game-mechanics-live .event-thumbnail { background: #171d20; }
@@ -67,51 +65,98 @@
 
 #romanian-graphics-2026 .event-thumbnail img { object-position: center 25%; }
 
-/* Reserve a separate bottom strip for every event's photo thumbnails. */
-.exhibition-gallery.lg-has-thumb .lg-inner { height: calc(100% - 100px); }
-.exhibition-gallery.lg-has-thumb .lg-item { padding-bottom: 0; }
-
-.exhibition-gallery--with-links .lg {
-    display: flex;
-    flex-direction: column;
-    overflow: clip;
-    padding-top: 47px;
+/* Use the artwork viewer's panel with one thumbnail rail for the current event. */
+.exhibition-room .artwork-room__panel { bottom: 24px; }
+.exhibition-room .artwork-room__stage { touch-action: pan-y; }
+.exhibition-room .artwork-room__explore { display: flex; flex-direction: column; overflow: hidden; }
+.exhibition-room .artwork-room__thumbnails { flex: 0 1 auto; min-height: 0; scrollbar-width: thin; scrollbar-color: #a995bd transparent; }
+.exhibition-room .exhibition-room__caption { margin-top: 12px; line-height: 1.5; color: var(--art-muted); }
+.exhibition-room h1 { overflow-wrap: anywhere; }
+.exhibition-room .exhibition-room__metadata {
+    margin-bottom: 17px;
+    color: var(--art-muted);
+    font: 12px/1.55 Arial, sans-serif;
 }
-.exhibition-gallery--with-links.lg-thumb-open .lg { padding-bottom: 100px; }
-.exhibition-gallery.exhibition-gallery--with-links .lg-inner {
+.exhibition-room .artwork-room__information:focus-visible { outline: 2px solid #8f7cad; outline-offset: -3px; }
+.exhibition-room__description { display: grid; gap: 10px; }
+.exhibition-room .exhibition-room__description p { color: #554d61; font: 14px/1.65 Arial, sans-serif; }
+.exhibition-room__coverage, .exhibition-room__videos { border-top: 1px solid var(--art-line); margin-top: 18px; padding-top: 15px; }
+.exhibition-room .exhibition-room__coverage h2,
+.exhibition-room .exhibition-room__videos h2 { font: 600 13px/1.5 Arial, sans-serif; margin-bottom: 9px; }
+.exhibition-room__article-links, .exhibition-room__video-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+.exhibition-room .exhibition-room__article-links a {
+    margin: 0;
+    min-height: 46px;
+    padding: 10px 28px 10px 12px !important;
+    align-content: center;
+    overflow-wrap: anywhere;
+}
+.exhibition-room .exhibition-room__article-links a:only-child { grid-column: 1 / -1; }
+.exhibition-room__article-links .artwork-room__external { top: 50%; right: 10px; transform: translateY(-50%); font-size: 16px; }
+.exhibition-room__video {
+    display: block;
+    overflow: hidden;
+    border: 1px solid #ffffffcf;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #ffffffbd, #f0e9f480);
+    color: var(--art-ink);
+    box-shadow: 0 4px 13px #3f2c540f;
+}
+.exhibition-room__video:hover { background: #fff; color: var(--art-ink); }
+.exhibition-room__video-preview {
     position: relative;
-    flex: 1;
-    min-height: 0;
-    height: auto;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16 / 9;
+    background: #30273a;
 }
-.exhibition-gallery-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex: none;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 12px;
-    background: #151515;
-    border-block: 1px solid #393939;
-}
-.exhibition-gallery-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    min-height: 44px;
-    padding: 6px 14px;
-    border: 1px solid #626262;
-    border-radius: 8px;
-    background: #242424;
+.exhibition-room__video-preview img { width: 100%; height: 100%; object-fit: cover; }
+.exhibition-room__play {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     color: #fff;
-    font: 500 14px/1.25 Arial, sans-serif;
-    text-align: center;
+    background: #21192cdb;
+    border: 1px solid #fffc;
+    font-size: 13px;
 }
-.exhibition-gallery-links a:hover,
-.exhibition-gallery-links a:focus-visible { background: #383838; color: #fff; }
-.exhibition-gallery-links a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
-@media (max-width: 575px) {
-    .exhibition-gallery-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .exhibition-gallery-links a { padding-inline: 6px; font-size: 13px; }
+.exhibition-room__video:hover .exhibition-room__play { background: #21192c; }
+.exhibition-room__video-label { display: block; padding: 8px 10px; font: 500 12px/1.4 Arial, sans-serif; }
+
+@media (min-width: 1100px) {
+    .exhibition-room .artwork-room__thumbnails { grid-auto-rows: 94px; }
+}
+@media (min-width: 960px) and (max-width: 1099px) {
+    .exhibition-room .artwork-room__layout:not(.artwork-room__layout--without-explore) {
+        grid-template-columns: minmax(0, 1.15fr) 104px minmax(315px, 1fr);
+        grid-template-rows: minmax(0, 1fr);
+    }
+    .exhibition-room .artwork-room__layout > * { grid-area: auto; }
+    .exhibition-room .artwork-room__explore { max-height: none; }
+    .exhibition-room .artwork-room__thumbnails {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-auto-rows: 78px;
+        gap: 8px;
+        padding: 4px;
+    }
+    .exhibition-room .artwork-room__thumbnails button { width: 100%; height: 78px; }
+}
+@media (min-width: 651px) and (max-width: 1099px) {
+    .exhibition-room .artwork-room__layout--without-explore .artwork-room__information { grid-row: 1; }
+}
+@media (max-width: 900px) { .exhibition-room .artwork-room__panel { bottom: 16px; } }
+@media (max-width: 650px) {
+    .exhibition-room .artwork-room__panel { bottom: 10px; }
+    .exhibition-room h1 { font-size: clamp(29px, 8vw, 39px); }
+    .exhibition-room .artwork-room__explore { margin-top: 14px; }
+    .exhibition-room .artwork-room__views h2 { margin-bottom: 3px; }
+    .exhibition-room .artwork-room__thumbnails { margin-top: 0; }
 }
