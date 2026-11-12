@@ -545,11 +545,22 @@
         if (!$.fn.lightGallery) return;
         event.preventDefault();
         var trigger = this;
-        $(trigger).one('onCloseAfter.lg', function () { trigger.focus(); });
-        $(trigger).lightGallery({
-            addClass: 'exhibition-gallery',
+        var $trigger = $(trigger);
+        var galleryId = trigger.getAttribute('data-event-gallery');
+        var links = document.getElementById(galleryId + '-links');
+        if (links) {
+            $trigger.one('onAfterOpen.lg', function () {
+                var viewer = $trigger.data('lightGallery').$outer[0];
+                var navigation = links.content.firstElementChild.cloneNode(true);
+                viewer.querySelector('.lg-inner').before(navigation);
+                navigation.focus();
+            });
+        }
+        $trigger.one('onCloseAfter.lg', function () { trigger.focus(); });
+        $trigger.lightGallery({
+            addClass: links ? 'exhibition-gallery exhibition-gallery--with-links' : 'exhibition-gallery',
             dynamic: true,
-            dynamicEl: galleries[trigger.getAttribute('data-event-gallery')],
+            dynamicEl: galleries[galleryId],
             hash: false,
             download: false,
             share: false,
