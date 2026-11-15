@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How Architecture 3D Walkthrough handles floor plans, generation jobs and shared files.">
+<meta name="description" content="How Architecture 3D Walkthrough handles floor plans, rendered views, generation jobs and shared tours.">
 <link rel="canonical" href="https://www.oanarinaldi.com/architecture3dwalkthroughprivacy.html">
 <title>Privacy policy | Architecture 3D Walkthrough</title>
 <style>
@@ -25,8 +25,12 @@ footer{padding-bottom:28px} .product{color:#ffbc87;margin:0;font-weight:650}
 <h2>When you choose to read a floor plan</h2>
 <p>The consent screen names the provider you selected. If you continue, the resized plan goes through the app’s Cloudflare generation service to OpenAI or Google Gemini to extract rooms, walls and openings. Anything visible on the image, such as a name, address or note in the title block, travels with it. Crop those details out before sending if you want to keep them private.</p>
 <p>The service uses a random installation identifier and a job identifier to return the result to your device. The source image is removed from the service after submission to OpenAI or after Gemini returns. A job result or status remains there for up to seven days from submission so a device can reconnect. If processing is interrupted, an unfinished file may remain until the job expires. Cancellation removes the service’s working copy, but a provider may already be processing the request. A minimal cancellation record persists for seven days to prevent a late upload from restarting it. The selected provider handles data under its API policies. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a> and <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</p>
+<h2>When you choose to create rendered views</h2>
+<p>If you confirm an image render, the app sends the selected 3D camera view or resized exterior reference through Cloudflare to OpenAI. If you confirm a motion clip, the app sends the selected finished render through Cloudflare to Google Gemini. The service keeps the job and its returned media for up to seven days so the app can reconnect. Finished renders and clips are also saved in the project on your device. A film made from still images is created on your device.</p>
 <h2>Offline viewing and sharing</h2>
 <p>Reviewing a stored layout and walking through it take place on your device. An exported HTML file contains the project title, geometry, plan notes and appearance settings. It can be opened offline in a compatible browser. The source image and credentials are excluded. Anyone with a copy can view the exported layout.</p>
+<h2>When you publish a tour link</h2>
+<p>Publishing uploads the project title, named rendered views, thumbnails and any included motion clips to the Cloudflare service. Anyone who gets the link can open the tour and save its media. The link expires after 90 days unless updated. You can unpublish it sooner from the project.</p>
 <h2>Deletion and contact</h2>
 <p>Delete a project from your library to remove its local files. Cancel a running generation from the project to remove its server job. Copies you saved or shared through another app can be deleted where they were saved. For privacy requests or questions, email <a href="mailto:oanarinaldi@gmail.com">oanarinaldi@gmail.com</a>.</p>
 
