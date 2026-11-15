@@ -31,6 +31,13 @@ window.ARTWORK_DATA = {
       },
       "redbubble": "https://www.redbubble.com/shop/ap/185241789"
     },
+    "where-light-becomes-a-passage-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-Where-Light-Becomes-a-Passage/806648/14424657/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185687236"
+    },
     "velocity-blueprint-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-Velocity-Blueprint/806648/13810071/view",
@@ -2763,6 +2770,122 @@ window.ARTWORK_DATA = {
         "#InfinitePossibilities",
         "#SpiritualJourney",
         "#ColorSymbolism"
+      ]
+    },
+    "where-light-becomes-a-passage-2026": {
+      "title": "Where Light Becomes a Passage",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/desene/Chromatic Innerverse/Where Light Becomes a Passage.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/5.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6261.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6261-thumb.webp",
+          "label": "On paper · angled view with markers"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6262.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6262-thumb.webp",
+          "label": "On paper · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6263.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6263-thumb.webp",
+          "label": "On paper · overhead view with markers"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6265.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6265-thumb.webp",
+          "label": "Gold frame · overhead view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6266.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6266-thumb.webp",
+          "label": "Gold frame · front view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6267.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6267-thumb.webp",
+          "label": "Gold frame · alternate angle"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6268.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/where-light-becomes-a-passage/img_6268-thumb.webp",
+          "label": "In the studio · alongside a second drawing"
+        }
+      ],
+      "description": [
+        "Where Light Becomes a Passage explores the relationship between human consciousness, perception, and the infinite possibilities that exist beyond the boundaries of the visible world.",
+        "At the center of the composition, a solitary human silhouette stands before a monumental arrangement of luminous, geometric columns. These vertical structures, composed of vibrant fragments of color, suggest an architectural threshold between physical reality and an imagined dimension of existence.",
+        "The surrounding electric-blue atmosphere evokes an infinite, dreamlike space, while the interplay of warm yellows, radiant pinks, turquoise, and violet creates a visual transition from darkness toward illumination. The columns become metaphors for the layers of memory, emotion, and experience that shape human identity.",
+        "The contrast between the small human figure and the towering structures emphasizes the relationship between individual existence and the immensity of the unknown. Yet the figure does not appear overwhelmed. Instead, its quiet presence suggests curiosity, contemplation, and the courage to approach transformation.",
+        "The fragmented geometry introduces a dialogue between order and imagination, as if reality itself were constructed from individual moments of perception. The reflections beneath the figure further blur the distinction between tangible space and psychological experience.",
+        "Ultimately, Where Light Becomes a Passage presents illumination not simply as a visual phenomenon, but as a metaphor for personal discovery. The artwork invites viewers to contemplate the invisible thresholds that separate what we know from what we might become."
+      ],
+      "keywords": [
+        "Conceptual art",
+        "Contemporary drawing",
+        "Geometric abstraction",
+        "Chromatic architecture",
+        "Human consciousness",
+        "Inner transformation",
+        "Luminous passage",
+        "Surreal landscape",
+        "Color symbolism",
+        "Existential exploration",
+        "Dreamlike atmosphere",
+        "Visual perception"
+      ],
+      "keywords30": [
+        "Conceptual art",
+        "Contemporary art",
+        "Contemporary drawing",
+        "Marker drawing",
+        "Geometric abstraction",
+        "Chromatic architecture",
+        "Abstract landscape",
+        "Surrealism",
+        "Surreal landscape",
+        "Human silhouette",
+        "Solitude",
+        "Human consciousness",
+        "Inner transformation",
+        "Spiritual journey",
+        "Luminous passage",
+        "Threshold symbolism",
+        "Color symbolism",
+        "Chromatic expression",
+        "Geometric composition",
+        "Architectural abstraction",
+        "Dreamlike atmosphere",
+        "Existential exploration",
+        "Visual perception",
+        "Psychological landscape",
+        "Infinite space",
+        "Personal discovery",
+        "Emotional transcendence",
+        "Reflective surfaces",
+        "Vibrant colors",
+        "Imaginative reality"
+      ],
+      "hashtags": [
+        "#ConceptualArt",
+        "#ContemporaryDrawing",
+        "#GeometricAbstraction",
+        "#ChromaticArchitecture",
+        "#HumanConsciousness",
+        "#InnerTransformation",
+        "#LuminousPassage",
+        "#SurrealLandscape",
+        "#ColorSymbolism",
+        "#ExistentialExploration",
+        "#DreamlikeAtmosphere",
+        "#VisualPerception"
       ]
     },
     "the-shape-of-sound-2026": {
@@ -31123,6 +31246,7 @@ window.ARTWORK_DATA = {
     "the-weight-of-invisible-worlds-2026": "https://www.deviantart.com/oanarinaldi/art/The-Weight-of-Invisible-Worlds-1405122168",
     "where-dreams-learn-to-let-go-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Dreams-Learn-to-Let-Go-1405123727",
     "where-light-becomes-infinite-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-Infinite-1405126255",
+    "where-light-becomes-a-passage-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-a-Passage%2C-21-%C3%97-29.7-cm%2C-markers-on-paper%2C-2026-1410515833",
     "velocity-blueprint-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Blueprint%2C-ink-on-paper%2C-2026%2C-30-42cm-1325456201",
     "born-to-break-the-horizon-2026": "https://www.deviantart.com/oanarinaldi/art/Born-to-Break-the-Horizon%2C-Ink-on-paper%2C-A4%2C-2026-1329379754",
     "velocity-construct-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Construct%2C-A3%2C-ink-on-paper%2C-2026-1330414394",

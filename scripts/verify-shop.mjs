@@ -5,7 +5,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 
 const require = createRequire(process.env.ARTWORK_PLAYWRIGHT_PACKAGE || path.resolve('../oanarina_ui_tool/package.json'));
-const { chromium } = require('@playwright/test');
+const { chromium, expect } = require('@playwright/test');
 const base = process.env.ARTWORK_TEST_URL || 'http://127.0.0.1:5182';
 const context = { window: {} };
 vm.runInNewContext(readFileSync('js/artwork-data.js', 'utf8'), context);
@@ -32,7 +32,7 @@ try {
             rel: icon.getAttribute('rel')
         }))
     })));
-    assert.equal(cards.length, 358);
+    assert.equal(cards.length, 359);
     assert.equal(new Set(cards.map(card => card.id)).size, cards.length);
     for (const card of cards) {
         assert.ok(data.artworks[card.id], card.id);
@@ -65,8 +65,7 @@ try {
 
     const filter = page.getByRole('searchbox', { name: 'Search by project or artwork title' });
     await filter.fill('Chromatic Innerverse');
-    await page.waitForTimeout(700);
-    assert.equal(await page.locator('.shop-project .single-album-item:visible').count(), 4);
+    await expect(page.locator('.shop-project .single-album-item:visible')).toHaveCount(5);
     const first = page.locator('[data-artwork-id="the-architecture-of-unspoken-words-2026"]');
     await first.scrollIntoViewIfNeeded();
     const saatchi = first.locator('.shop-store-link--saatchi');
