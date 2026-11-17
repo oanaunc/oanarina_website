@@ -804,7 +804,7 @@ parameters to dynamic blocks and <code>DYNPROP</code> changes them. The <strong>
 thumbnails, search, favourites and recents; drag a block onto the plan or the 3D view to insert it.</p>
 <p><code>XCLIP</code> clips the display of a block reference (the clip moves with the block) and <code>BTABLE</code> stores named parameter sets
 for dynamic blocks.</p>
-<p><strong>Round 7 blocks.</strong> <code>BEDIT</code> opens the block editor (<code>BSAVE</code>, <code>BCLOSE</code>), and <code>REFEDIT</code>, <code>REFSET</code> and
+<p><strong>Round 7 blocks.</strong> <code>BEDIT</code> opens the block editor. Click <strong>Save and Close Block</strong> above the drawing, or type <code>BCLOSE Save</code> (<code>BC S</code>), to apply your edits to every instance and return to the previous view or sheet. <code>BCLOSE Discard</code> discards changes since the last block save. <code>BSAVE</code> saves the definition with the block editor open. Save the <code>.archi</code> project separately to keep the updated definition on disk. <code>REFEDIT</code>, <code>REFSET</code> and
 <code>REFCLOSE</code> edit blocks and references in place. Blocks that would contain themselves are refused. Groups can contain building
 elements. <code>LIBRARYINSTALL</code> installs the bundled block and annotation symbol library. <code>LAYERNOTIFY</code> and <code>LAYRECONCILE</code> warn
 about new layers and mark them as reviewed.</p>
@@ -3235,8 +3235,8 @@ command inside the app. This table is generated from the command definitions in 
 </tr>
 <tr>
 <td><code>BCLOSE</code></td>
-<td></td>
-<td>Closes the block editor, saving or discarding the changes.</td>
+<td><code>BC</code></td>
+<td>Closes the block editor, saving or discarding the changes, and returns to the drawing.</td>
 </tr>
 <tr>
 <td><code>BCOUNT</code></td>
@@ -3969,7 +3969,7 @@ command inside the app. This table is generated from the command definitions in 
 <tr>
 <td><code>DOOR</code></td>
 <td><code>DOORS</code></td>
-<td>Places doors in walls (default 900×2100).</td>
+<td>Places doors in walls (default 900×2100 mm, converted to drawing units).</td>
 </tr>
 <tr>
 <td><code>DORMER</code></td>
@@ -4364,7 +4364,7 @@ command inside the app. This table is generated from the command definitions in 
 <tr>
 <td><code>WINDOW</code></td>
 <td><code>WIN</code></td>
-<td>Places windows in walls (default 1200×1200, sill 900).</td>
+<td>Places windows in walls (default 1200×1200 mm, sill 900 mm, converted to drawing units).</td>
 </tr>
 <tr>
 <td><code>ZONE</code></td>
@@ -7074,17 +7074,21 @@ PAGEPRESET Delete &quot;Presentation&quot;
 <p>Aliases: <code>PSPRESET</code>, <code>NAMEDPAGESETUP</code>. Viewport positions/scales, geometry and title-block text stay intact. Presets include section graphics when present; use <strong>Customize section graphics on this sheet</strong> to edit those settings.</p>
 <h2 id="text-editing-revisions-and-opening-sizes-mac-105">Text editing, revisions and opening sizes (Mac 1.0.5)</h2>
 <p>Double-click drawing text to edit it in place. Font and Height are on the first toolbar row; <strong>Apply</strong> and <strong>Cancel</strong> are on the second. Apply saves the edit and closes the editor; Escape discards it. Single-line text also accepts Enter; multiline text accepts Command-Return. <strong>Command-S saves pending text and formatting in the project</strong>, including a height typed with an Italian decimal comma. An applied edit is one Undo step.</p>
-<p>On a sheet, open <strong>Customize Sheet</strong>. <strong>Cartiglio drawing</strong> selects the built-in title block or any project block, including one imported from DXF. A custom block uses paper millimetres, with its base point anchored at the lower-right of the frame: draw left and up from it. <strong>Redesign Cartiglio Drawing</strong> opens the selected block in 2D; finish with <code>BCLOSE Save</code>. Shared blocks update every sheet using them.</p>
+<p>On a sheet, open <strong>Customize Sheet</strong>. <strong>Cartiglio drawing</strong> selects the built-in title block or any project block, including one imported from DXF. A custom block uses paper millimetres, with its base point anchored at the lower-right of the frame: draw left and up from it. <strong>Redesign Cartiglio Drawing</strong> opens the selected block in 2D. Click <strong>Save and Close Block</strong> to return to the sheet. Shared blocks update every sheet using them.</p>
 <p><strong>Revision history / revisioni</strong> is available in Customize Sheet and in the Sheets panel. Choose <strong>Above cartiglio</strong>, <strong>Inside cartiglio</strong>, or <strong>Cartiglio fields only</strong>. Fields only removes the separate history table and keeps the current revision in the cartiglio. Inside adds a history band under the built-in fields; in a custom cartiglio, reserve the appropriate space yourself. Table width (40–1000 mm) and row height (3–30 mm) are configurable. Use <strong>Move element → Revision history table</strong> to adjust its offset independently, or its checkbox to hide it. Revisions still update when the table is hidden.</p>
 <p>Custom blocks accept <code>{revision}</code>, <code>{revisionDate}</code>, <code>{revisionDescription}</code>, <code>{revisionBy}</code> and indexed rows such as <code>{revision.1.code}</code>, <code>{revision.1.date}</code>, <code>{revision.1.description}</code>, <code>{revision.1.by}</code>. Rows are oldest-first. Add revisions from <strong>Sheets → Revisions → Description / By → Add</strong> or <code>SHEETREVISION</code>. <code>SHEETREVTABLE Fields 180 5</code> selects fields only; <code>SHEETREVTABLE Inside 180 5</code> adds the history band. Aliases: <code>REVSTYLE</code>, <code>REVISIONSTYLE</code>. <code>SHEETSTYLE Revisions Move -10,5</code> sets the independent offset in paper mm. Existing files keep their previous appearance until configured.</p>
 <p>Use <strong>Annotate → Door / Window Sizes</strong>, or type <code>QUOTAINFISSI</code> (<code>OPENINGSIZES</code>, <code>DOORWINDOWSIZES</code>), to add live <strong>width × height</strong> labels to BIM doors and windows of the current level:</p>
 <ul>
-<li><code>QUOTAINFISSI All Centimetres 10</code> labels both categories; <code>Doors</code> or <code>Windows</code> selects one category. 10 is the text height in drawing units (1 mm on paper at 1:100 in a cm drawing).</li>
-<li>Choose Drawing, Millimetres, Centimetres or Metres. For example a 900 × 2100 mm door is labelled <strong>90×210 cm</strong>.</li>
-<li><code>QUOTAINFISSI Automatic Centimetres 10</code> labels subsequently created BIM doors and windows. Run All separately for existing openings.</li>
+<li><code>QUOTAINFISSI All Centimetres 10</code> labels both categories in a cm drawing; <code>Doors</code> or <code>Windows</code> selects one category. 10 is the text height in drawing units (1 mm on paper at 1:100 when the drawing uses cm). Press Enter for the same physical height in any drawing unit.</li>
+<li><strong>Drawing</strong> uses the drawing's units. Choose <strong>Centimetres</strong> to include <code>cm</code> on the label, for example <strong>90×210 cm</strong>. <strong>Millimetres</strong> and <strong>Metres</strong> remain available.</li>
+<li><code>QUOTAINFISSI Automatic Centimetres 10</code> labels subsequently created BIM doors and windows in a cm drawing. Run All separately for existing openings.</li>
 <li><code>QUOTAINFISSI Off</code> disables labels on future openings and keeps existing labels.</li>
 </ul>
 <p>Repeating the bulk command updates the size labels without duplicating them or replacing existing marks. Labels follow changes to the opening's width and height in the plan and plotted output. They support Undo and save in <code>.archi</code>. These labels measure BIM openings; arbitrary lines or blocks in an imported 2D drawing must first be modelled as doors/windows, or dimensioned with the normal dimension tools. The commands also run through the scripting/agent command API.</p>
+<h3 id="doors-and-tags-in-centimeter-drawings-109">Doors and tags in centimeter drawings (1.0.9)</h3>
+<p>With the drawing set to <strong>Centimeters</strong>, <code>DOOR</code> starts at 90 × 210 cm and uses a 5 cm frame. Choose <strong>Width</strong> or <strong>Height</strong> to enter a custom size in cm. You can also enter a dimension with a unit suffix, such as <code>900mm</code> or <code>2.1m</code>. If the command remembers an incorrect size from an older version, choose <strong>ReSet</strong> within <code>DOOR</code> to restore the stock size, then place the door or press Enter to save the defaults.</p>
+<p>For an existing door, select the door and change <strong>Width</strong>, <strong>Height</strong> and, if needed, <strong>Frame Width</strong> in <strong>Properties</strong>. Use <code>QUOTAINFISSI Doors Centimetres 10</code> to refresh existing size tags on the current level. This returns their text to the live dimensions. For a reference tag such as D01, select the tag itself and set its <strong>Height</strong> in Properties (e.g. 10 cm); this leaves the reference and door intact.</p>
+<p><a href="downloads/archi-tool/Porte-e-cartellini-cm-1.0.9.md">Istruzioni in italiano</a></p>
 <h3 id="hatch-and-sheet-support-corrections-106">Hatch and sheet support corrections (1.0.6)</h3>
 <p>MATCHPROP / MA applies each target immediately; Enter finishes and Undo restores the whole command. Click inside a hatch, including between sparse pattern lines. Settings → All enables all appearance properties. SCALE / SC and grip scaling preserve pattern origin; copies associate with their copied boundaries.</p>
 <p>Customize Sheet → View titles controls stored and generated viewport captions. Text from drawing on this sheet hides a chosen standalone model text on this sheet and its exports; the model and other sheets retain it. Commands: SHEETTEXT ListModel, HideModel #ID, ShowModel #ID.</p>
@@ -7105,10 +7109,13 @@ PAGEPRESET Delete &quot;Presentation&quot;
 <p>Select a door/window label and change <strong>Content</strong> in <strong>Properties</strong>, double-click it and press <strong>Apply</strong>, or use <code>TEXTEDIT</code> (<code>ED</code>, <code>DDEDIT</code>). The entered text now appears in the drawing and PDF/SVG output and survives save/reopen and Undo. Editing the label changes its annotation only. To change the actual opening, select the door/window itself and edit <strong>Width</strong> and <strong>Height</strong>; automatic size labels follow those model values.</p>
 <p>Live tags expose <strong>Label Mode</strong> in Properties: <strong>Manual</strong> indicates a text override. Set it to <strong>Automatic</strong> to restore the linked value, or run <code>TAGLABEL</code>, select the labels, finish selection with Enter, and choose <code>Automatic</code>. <code>OPENINGSIZES</code> explicitly refreshes matching size labels to automatic dimensions. Changing only font/height keeps a live label automatic.</p>
 <p>To show only door references, run <code>TAGLABEL</code> (<code>EDITLABEL</code>, <code>TAGFORMAT</code>), select the existing door labels, press Enter, choose <code>Field</code>, then type <code>mark</code>. The existing bubbles now show the door's Mark instead of width × height. Select each actual door and set <strong>Mark</strong> to <code>D1</code>, <code>D2</code>, <code>D3</code>, etc., or use <code>MARKS Set</code>. <code>MARKS Renumber No</code> assigns reading-order references <code>D01</code>, <code>D02</code>, etc. To add missing references use <strong>Annotate → Tag All</strong> (<code>TAGALL Doors</code>); existing size labels no longer prevent reference tags from being added. Commands and property edits are also available through the scripting/agent API on both platforms.</p>
-<h2 id="doors-and-tags-in-centimeter-drawings-109">Doors and tags in centimeter drawings (1.0.9)</h2>
-<p>In <strong>Drawing Units</strong>, confirm <strong>Centimeters</strong>. Run <code>DOOR</code> and choose <strong>ReSet</strong> if it still shows a remembered size from an older version. The stock door is 90 × 210 cm with a 5 cm frame. Choose <strong>Width</strong> or <strong>Height</strong> for other sizes.</p>
-<p>To repair a door already in the drawing, select it and edit <strong>Width</strong>, <strong>Height</strong> and, if needed, <strong>Frame Width</strong> in <strong>Properties</strong>. Use <code>QUOTAINFISSI Doors Centimetres 10</code> to refresh the live size labels on the current level. For a reference tag like D01, select the tag and edit its <strong>Height</strong> in <strong>Properties</strong>.</p>
-<p><a href="downloads/archi-tool/Porte-e-cartellini-cm-1.0.9.md">Istruzioni in italiano</a></p>
+<h2 id="chiudi-blocco-e-salva-1010">Chiudi blocco e salva (1.0.10)</h2>
+<ol>
+<li>Apri il blocco con un doppio clic nel disegno oppure digita <code>BEDIT</code> e inserisci il nome del blocco.</li>
+<li>Quando hai finito, clicca <strong>Chiudi blocco e salva</strong> nella barra sopra il disegno. Nell'interfaccia inglese il pulsante si chiama <strong>Save and Close Block</strong>. Puoi anche digitare <code>BCLOSE Save</code> o <code>BC S</code>. Le modifiche si applicano a tutte le istanze del blocco e torni alla vista o alla tavola da cui sei partito.</li>
+<li>Salva il progetto <code>.archi</code> con <strong>⌘S</strong> su Mac o <strong>Ctrl+S</strong> su Windows.</li>
+</ol>
+<p>Per uscire scartando le modifiche dall'ultimo salvataggio del blocco, digita <code>BCLOSE Discard</code>. Se usi <strong>Annulla</strong> dopo aver chiuso il blocco, torni nell'editor con le modifiche ancora da confermare.</p>
 <p class="text-center mb-100"><a href="archi-tool.html">← Back to Oanarina Archi Tool</a></p></article></main>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
