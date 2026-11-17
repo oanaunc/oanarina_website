@@ -14,3 +14,4 @@ c74103b76de70cf7fb7ff99ab81810aac03d3c76283ff3788446e1c16627edeb  Oanarina-Archi
 d87fb655b7b849b2968a78f5707fec68a8730e4156a441b89e941e3620d29c33  Oanarina-Archi-Tool-1.0.9.dmg
 96e01754d2e67e86699d746ed135e49689d486e15102db4cceccde34f06b8ccb  Oanarina-Archi-Tool-Setup-1.0.9.exe
 d5b664d7bd73e8deb9f6c62ba60da599b72b8bb99fa2a9ccc0908bb50fb419fc  Oanarina-Archi-Tool-1.0.10.dmg
+d0714636ba37c641dbdb0fddadee150d9c69142667d5cd2470517cb0b6681eed  Oanarina-Archi-Tool-Setup-1.0.10.exe
