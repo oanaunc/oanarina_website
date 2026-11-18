@@ -32,7 +32,7 @@ try {
             rel: icon.getAttribute('rel')
         }))
     })));
-    assert.equal(cards.length, 359);
+    assert.equal(cards.length, 360);
     assert.equal(new Set(cards.map(card => card.id)).size, cards.length);
     for (const card of cards) {
         assert.ok(data.artworks[card.id], card.id);

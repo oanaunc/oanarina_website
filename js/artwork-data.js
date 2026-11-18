@@ -3,6 +3,13 @@
 // Add image sets and writing to artworks below using the same data-id.
 window.ARTWORK_DATA = {
   "shopLinks": {
+    "velocity-of-desire-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Painting-Velocity-of-Desire-120-x-80-cm-oil-on-canvas-2026/806648/14435131/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185795013"
+    },
     "the-architecture-of-unspoken-words-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Architecture-of-Unspoken-Words/806648/14380857/view",
@@ -2374,6 +2381,111 @@ window.ARTWORK_DATA = {
     }
   },
   "artworks": {
+    "velocity-of-desire-2026": {
+      "title": "Velocity of Desire",
+      "dimensions": "120 × 80 cm",
+      "medium": "Oil on canvas",
+      "year": "2026",
+      "description": [
+        "Velocity of Desire explores the relationship between speed, ambition, and the human fascination with movement. A futuristic sports car emerges from an atmospheric composition of deep electric blues, crimson reds, and expressive shadows, becoming more than a mechanical object: it transforms into a symbol of freedom, aspiration, and the relentless pursuit of the extraordinary.",
+        "The dramatic contrast between cool and warm tones creates a visual dialogue between control and passion, precision and instinct. Blue evokes the mystery of the unknown, while vibrant red introduces an emotional intensity that suggests energy, desire, and the exhilaration of acceleration. The surrounding environment dissolves into abstract gestures, blurring the distinction between physical space and psychological experience.",
+        "The vehicle's aerodynamic silhouette embodies a tension between stillness and motion. Although physically stationary within the composition, it appears charged with potential energy, as though suspended in the moment immediately before an explosive acceleration.",
+        "Through expressive brushwork, luminous reflections, and a cinematic atmosphere, the painting challenges the conventional representation of automotive beauty. Rather than celebrating machinery alone, it examines the emotional significance of speed as a metaphor for personal ambition, transformation, and the desire to transcend limitations.",
+        "Ultimately, Velocity of Desire captures the paradox of movement: the ability to evoke an entire journey within a single, motionless image."
+      ],
+      "keywords": [
+        "Sports car painting",
+        "automotive art",
+        "contemporary oil painting",
+        "velocity",
+        "futuristic car",
+        "abstract realism",
+        "dynamic composition",
+        "electric blue",
+        "crimson red",
+        "cinematic atmosphere",
+        "expressive brushwork",
+        "luxury automotive art"
+      ],
+      "hashtags": [
+        "#SportsCarPainting",
+        "#AutomotiveArt",
+        "#ContemporaryOilPainting",
+        "#Velocity",
+        "#FuturisticCar",
+        "#AbstractRealism",
+        "#DynamicComposition",
+        "#ElectricBlue",
+        "#CrimsonRed",
+        "#CinematicAtmosphere",
+        "#ExpressiveBrushwork",
+        "#LuxuryAutomotiveArt"
+      ],
+      "searchKeywords": [
+        "Sports car painting",
+        "automotive fine art",
+        "contemporary oil painting",
+        "luxury sports car",
+        "futuristic automotive design",
+        "velocity",
+        "movement",
+        "speed",
+        "acceleration",
+        "dynamic energy",
+        "abstract realism",
+        "expressive painting",
+        "cinematic lighting",
+        "electric blue",
+        "crimson red",
+        "dramatic contrasts",
+        "automotive aesthetics",
+        "aerodynamic design",
+        "modern art",
+        "contemporary realism",
+        "emotional expression",
+        "freedom",
+        "ambition",
+        "artistic interpretation",
+        "atmospheric painting",
+        "bold brushstrokes",
+        "visual storytelling",
+        "automotive passion",
+        "collectible art",
+        "large canvas painting"
+      ],
+      "images": [
+        {
+          "src": "images/Picturi/2026 Cars/Velocity of Desire, 120 x 80 cm, oil on canvas, 2026.jpg",
+          "thumb": "images/Picturi/2026 Cars/mici/2.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/velocity-of-desire/img-6297.webp",
+          "thumb": "images/artwork-details/velocity-of-desire/img-6297-thumb.webp",
+          "label": "On the easel · studio view"
+        },
+        {
+          "src": "images/artwork-details/velocity-of-desire/img-6298.webp",
+          "thumb": "images/artwork-details/velocity-of-desire/img-6298-thumb.webp",
+          "label": "On canvas · alternate light"
+        },
+        {
+          "src": "images/artwork-details/velocity-of-desire/img-6299.webp",
+          "thumb": "images/artwork-details/velocity-of-desire/img-6299-thumb.webp",
+          "label": "Detail · red reflections and wheel"
+        },
+        {
+          "src": "images/artwork-details/velocity-of-desire/img-6300.webp",
+          "thumb": "images/artwork-details/velocity-of-desire/img-6300-thumb.webp",
+          "label": "Detail · headlight and brushwork"
+        },
+        {
+          "src": "images/artwork-details/velocity-of-desire/img-6301.webp",
+          "thumb": "images/artwork-details/velocity-of-desire/img-6301-thumb.webp",
+          "label": "On canvas · front view"
+        }
+      ]
+    },
     "the-architecture-of-unspoken-words-2026": {
       "title": "The Architecture of Unspoken Words",
       "dimensions": "21 × 29.7 cm (A4)",
@@ -31242,6 +31354,7 @@ window.ARTWORK_DATA = {
     }
   },
   "deviantArtLinks": {
+    "velocity-of-desire-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-of-Desire%2C-120-x-80-cm%2C-oil-on-canvas%2C-2026-1411632856",
     "the-architecture-of-unspoken-words-2026": "https://www.deviantart.com/oanarinaldi/art/The-Architecture-of-Unspoken-Words-1405120085",
     "the-weight-of-invisible-worlds-2026": "https://www.deviantart.com/oanarinaldi/art/The-Weight-of-Invisible-Worlds-1405122168",
     "where-dreams-learn-to-let-go-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Dreams-Learn-to-Let-Go-1405123727",

@@ -153,11 +153,22 @@ try {
     await page.mouse.click(5, 5);
     await page.waitForFunction(() => !document.querySelector('.artwork-room').open);
     checks++;
-    await page.goto(base + '/paintings.html#image=velocity-of-fire-2026');
+    await page.goto(base + '/paintings.html#image=velocity-of-desire-2026');
     await room.locator('#artwork-title').waitFor();
     await verifyCatalogueCoverage(page);
     await verifyCatalogueRibbon(page);
-    assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Fire');
+    assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Desire');
+    assert.equal(await room.locator('[data-image]').count(), 6);
+    assert.equal(await room.locator('.artwork-room__statement p').count(), 5);
+    assert.equal(await room.locator('.artwork-room__purchase').first().getAttribute('href'), 'https://www.saatchiart.com/en-ro/art/Painting-Velocity-of-Desire-120-x-80-cm-oil-on-canvas-2026/806648/14435131/view');
+    assert.equal(await room.locator('.artwork-room__purchase--secondary').first().getAttribute('href'), 'https://www.redbubble.com/shop/ap/185795013');
+    assert.ok((await room.getByRole('link', { name: /Download/ }).getAttribute('href')).endsWith('1411632856'));
+    assert.ok((await room.locator('.artwork-room__image').getAttribute('src')).includes('Velocity of Desire,'));
+    for (let i = 0; i < 6; i++) {
+        await room.locator(`[data-image="${i}"]`).click();
+        await room.locator('.artwork-room__image').evaluate(img => img.decode());
+    }
+    await room.locator('[data-image="0"]').click();
     assert.equal(await room.locator('.artwork-room__purchase').count(), 3);
     assert.match(await room.locator('.artwork-room__facts').textContent(), /oil on canvas/i);
     await room.locator('.artwork-room__image').evaluate(img => img.decode());
@@ -166,7 +177,7 @@ try {
     await room.getByRole('button', { name: 'Previous artwork', exact: true }).click();
     assert.match(await room.locator('.artwork-room__position').textContent(), /^(\d+) \/ \1$/);
     await room.getByRole('button', { name: 'Next artwork', exact: true }).click();
-    assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Fire');
+    assert.equal(await room.locator('#artwork-title').textContent(), 'Velocity of Desire');
     checks++;
     for (const [id, title, deviationId] of [
         ['she-who-walks-between-shadows-2026', 'She Who Walks Between Shadows', '1307529818'],
@@ -209,7 +220,7 @@ try {
         await mobileRoom.locator('[data-work]').first().click();
         assert.equal(await mobileRoom.locator('#artwork-title').textContent(), 'The Resonance Between Light and Silence');
         assert.equal(await mobileRoom.locator('.artwork-room__scroll').evaluate(el => el.scrollTop), 0);
-        await mobile.goto(base + '/paintings.html#image=velocity-of-fire-2026');
+        await mobile.goto(base + '/paintings.html#image=velocity-of-desire-2026');
         await verifyCatalogueRibbon(mobile);
         await mobile.screenshot({ path: `/tmp/artwork-viewer-painting-${width}.png` });
         await mobile.close();
