@@ -45,6 +45,13 @@ window.ARTWORK_DATA = {
       },
       "redbubble": "https://www.redbubble.com/shop/ap/185687236"
     },
+    "the-geometry-of-inner-thought-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Geometry-of-Inner-Thought/806648/14440405/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/185855514"
+    },
     "velocity-blueprint-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-Velocity-Blueprint/806648/13810071/view",
@@ -2998,6 +3005,112 @@ window.ARTWORK_DATA = {
         "#ExistentialExploration",
         "#DreamlikeAtmosphere",
         "#VisualPerception"
+      ]
+    },
+    "the-geometry-of-inner-thought-2026": {
+      "title": "The Geometry of Inner Thought",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/desene/Chromatic Innerverse/The Geometry of Inner Thought.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/6.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6354.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6354-thumb.webp",
+          "label": "On paper · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6355.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6355-thumb.webp",
+          "label": "On paper · with colored markers"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6356.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6356-thumb.webp",
+          "label": "Gold frame · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6357.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6357-thumb.webp",
+          "label": "Gold frame · front view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6358.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6358-thumb.webp",
+          "label": "Gold frame · alternate angle"
+        }
+      ],
+      "description": [
+        "The Geometry of Inner Thought explores the relationship between human consciousness, introspection, and the fragmented architecture of identity. Through a seated figure constructed from vibrant geometric shapes, the artwork transforms the familiar posture of contemplation into a visual representation of the mind's complexity.",
+        "The figure, reminiscent of the classical thinker, is reimagined through a contemporary language of color and abstraction. Rather than presenting the human body as a unified form, the composition divides it into interconnected chromatic fragments, suggesting that identity is continuously shaped by memories, emotions, experiences, and perceptions.",
+        "The circular structures surrounding the head evoke expanding thoughts, overlapping realities, and the multidimensional nature of consciousness. Their geometric divisions suggest an internal universe in which rational structures coexist with emotional spontaneity.",
+        "The vivid contrasts between pink, turquoise, yellow, orange, and blue challenge the traditional association of introspection with darkness or melancholy. Here, contemplation becomes an energetic and creative process, suggesting that even moments of stillness contain extraordinary psychological movement.",
+        "The generous white space surrounding the figure emphasizes the distinction between the external world's silence and the colorful intensity of inner experience.",
+        "Ultimately, The Geometry of Inner Thought proposes that human consciousness is not a fixed or singular entity, but an evolving mosaic of interconnected possibilities. The artwork celebrates thinking as an act of creation, where every idea, emotion, and memory contributes to the architecture of the self."
+      ],
+      "keywords": [
+        "Geometric abstraction",
+        "introspection",
+        "consciousness",
+        "fragmented identity",
+        "contemporary figurative art",
+        "chromatic expression",
+        "inner universe",
+        "human psychology",
+        "abstract portraiture",
+        "visual philosophy",
+        "colorful geometry",
+        "conceptual drawing"
+      ],
+      "keywords30": [
+        "Geometric abstraction",
+        "introspection",
+        "consciousness",
+        "fragmented identity",
+        "contemporary figurative art",
+        "chromatic expression",
+        "inner universe",
+        "human psychology",
+        "abstract portraiture",
+        "visual philosophy",
+        "colorful geometry",
+        "conceptual drawing",
+        "modern expressionism",
+        "psychological exploration",
+        "human perception",
+        "abstract human figure",
+        "contemplation",
+        "creative consciousness",
+        "emotional complexity",
+        "geometric composition",
+        "color symbolism",
+        "fragmented reality",
+        "contemporary illustration",
+        "artistic identity",
+        "conceptual figurative art",
+        "visual storytelling",
+        "colorful minimalism",
+        "philosophical art",
+        "inner dialogue",
+        "Chromatic Innerverse"
+      ],
+      "hashtags": [
+        "#GeometricAbstraction",
+        "#Introspection",
+        "#Consciousness",
+        "#FragmentedIdentity",
+        "#ContemporaryFigurativeArt",
+        "#ChromaticExpression",
+        "#InnerUniverse",
+        "#HumanPsychology",
+        "#AbstractPortraiture",
+        "#VisualPhilosophy",
+        "#ColorfulGeometry",
+        "#ConceptualDrawing"
       ]
     },
     "the-shape-of-sound-2026": {
@@ -31360,6 +31473,7 @@ window.ARTWORK_DATA = {
     "where-dreams-learn-to-let-go-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Dreams-Learn-to-Let-Go-1405123727",
     "where-light-becomes-infinite-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-Infinite-1405126255",
     "where-light-becomes-a-passage-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-a-Passage%2C-21-%C3%97-29.7-cm%2C-markers-on-paper%2C-2026-1410515833",
+    "the-geometry-of-inner-thought-2026": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Inner-Thought-1412268778",
     "velocity-blueprint-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Blueprint%2C-ink-on-paper%2C-2026%2C-30-42cm-1325456201",
     "born-to-break-the-horizon-2026": "https://www.deviantart.com/oanarinaldi/art/Born-to-Break-the-Horizon%2C-Ink-on-paper%2C-A4%2C-2026-1329379754",
     "velocity-construct-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Construct%2C-A3%2C-ink-on-paper%2C-2026-1330414394",
