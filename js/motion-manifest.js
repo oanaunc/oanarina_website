@@ -96,6 +96,11 @@ window.OANA_MOTION = {
     "poster": "img/bg-img/jackets-red-editorial.jpg",
     "sameImage": true
   },
+  "purses": {
+    "src": "media/motion/purses-blue-amour.mp4",
+    "poster": "img/bg-img/purses-blue-amour.jpg",
+    "sameImage": true
+  },
   "aiartvideos": {
     "src": "media/motion/aiartvideos.mp4",
     "poster": "img/bg-img/breadcumb21.jpg",

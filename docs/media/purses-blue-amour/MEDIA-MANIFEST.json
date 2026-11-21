@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-21",
+  "generation": {
+    "service": "Midjourney",
+    "jobId": "5bdfab6c-4d12-48a0-94a9-94281e77b93c",
+    "url": "https://www.midjourney.com/jobs/5bdfab6c-4d12-48a0-94a9-94281e77b93c?index=0",
+    "prompt": "A royal-blue heart-shaped couture purse resting on blue satin, silver chain and crystal trim. Elegant product-film timelapse: a soft band of studio light slowly sweeps across the sculptural folds, revealing sparkling details, while the camera makes one smooth subtle lateral glide. Preserve the exact handmade purse silhouette, blue fabric, crystal border and silver chain. The purse remains still. Continuous shot, restrained realistic motion, no hands, no new objects, no text.",
+    "batchSize": 1,
+    "resolution": "HD",
+    "sourceImage": "D35AA4D9-9C3E-47B1-BA89-9FA45A3D43E4.PNG",
+    "referenceCrop": [
+      0,
+      330,
+      1199,
+      1005
+    ]
+  },
+  "video": {
+    "file": "media/motion/purses-blue-amour.mp4",
+    "bytes": 3927472,
+    "sha256": "c13e83a46675503ddf0d006ed3611a54ed9eb77924d54aa1b5631d7a405f343f"
+  },
+  "poster": {
+    "file": "img/bg-img/purses-blue-amour.jpg",
+    "bytes": 169543,
+    "sha256": "2096c5cc58db06704bf09466ea71f74d468bda17fd00fccffe57f0dd4f961fab"
+  },
+  "encoding": {
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 5.208333,
+    "crf": 25,
+    "keyframeIntervalFrames": 12,
+    "faststart": true,
+    "audio": false
+  }
+}
