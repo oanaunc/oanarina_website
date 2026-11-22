@@ -5,6 +5,7 @@
     const galleries = {
         "romanian-graphics-2026": [
             {"src": "images/exhibitions/web/romanian-graphics-2026/IMG_5834.jpg"},
+            {"src": "images/exhibitions/web/romanian-graphics-2026/IMG_6401.jpg", "label": "Observator Cultural · Grafica Românească 26 by Adrian-Silvan Ionescu — article excerpt discussing Oana Rinaldi’s The Silent Arch and Threshold of Silence, with a reproduction of Threshold of Silence."},
             {"src": "images/exhibitions/web/romanian-graphics-2026/IMG_6093.jpg"},
             {"src": "images/exhibitions/web/romanian-graphics-2026/IMG_5683.jpg"},
             {"src": "images/exhibitions/web/romanian-graphics-2026/IMG_5684.jpg"},
