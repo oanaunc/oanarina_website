@@ -52,6 +52,13 @@ window.ARTWORK_DATA = {
       },
       "redbubble": "https://www.redbubble.com/shop/ap/185855514"
     },
+    "the-geometry-of-being-2026": {
+      "saatchi": {
+        "url": "https://www.saatchiart.com/en-ro/art/Drawing-The-Geometry-of-Being-21-x-29-7-cm-markers-on-paper-2026/806648/14458731/view",
+        "label": "Original"
+      },
+      "redbubble": "https://www.redbubble.com/shop/ap/186046843"
+    },
     "velocity-blueprint-2026": {
       "saatchi": {
         "url": "https://www.saatchiart.com/en-ro/art/Drawing-Velocity-Blueprint/806648/13810071/view",
@@ -3111,6 +3118,115 @@ window.ARTWORK_DATA = {
         "#VisualPhilosophy",
         "#ColorfulGeometry",
         "#ConceptualDrawing"
+      ]
+    },
+    "the-geometry-of-being-2026": {
+      "title": "The Geometry of Being",
+      "dimensions": "21 × 29.7 cm (A4)",
+      "medium": "Markers on paper",
+      "year": "2026",
+      "images": [
+        {
+          "src": "images/desene/Chromatic Innerverse/The Geometry of Being.jpg",
+          "thumb": "images/desene/Chromatic Innerverse/mici/7.jpg",
+          "label": "Full artwork"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6577.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6577-thumb.webp",
+          "label": "On paper · drawing board"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6578.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6578-thumb.webp",
+          "label": "On paper · with colored markers"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6579.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6579-thumb.webp",
+          "label": "On paper · front view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6580.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6580-thumb.webp",
+          "label": "Gold frame · close view"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6581.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6581-thumb.webp",
+          "label": "Gold frame · studio angle"
+        },
+        {
+          "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6582.webp",
+          "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6582-thumb.webp",
+          "label": "Gold frame · studio display"
+        }
+      ],
+      "description": [
+        "The Geometry of Being explores the relationship between the mathematical order of the universe and the unpredictable nature of living existence. Geometric structures establish a visual architecture in which color becomes a language of emotion, energy, and transformation.",
+        "The fragmented circle evokes a celestial body, a miniature universe composed of interconnected chromatic territories. The interplay between warm and cool colors suggests the coexistence of opposing forces, while the intersecting lines establish an invisible coordinate system through which existence unfolds.",
+        "The solitary bird introduces an organic presence into this carefully structured reality. It becomes a symbol of consciousness, individuality, and freedom within a world governed by abstract principles. Its delicate presence challenges the rigidity of geometry, suggesting that life is not merely contained within order but continuously reinterprets it.",
+        "The composition reflects the possibility of harmony between rationality and intuition, mathematical precision and emotional experience, universal structure and individual existence."
+      ],
+      "keywords": [
+        "Geometric abstraction",
+        "chromatic harmony",
+        "consciousness",
+        "freedom",
+        "celestial geometry",
+        "existence",
+        "bird symbolism",
+        "visual equilibrium",
+        "mathematical aesthetics",
+        "organic life",
+        "universal order",
+        "contemporary art"
+      ],
+      "keywords30": [
+        "Geometric abstraction",
+        "chromatic harmony",
+        "consciousness",
+        "freedom",
+        "celestial geometry",
+        "existence",
+        "bird symbolism",
+        "visual equilibrium",
+        "mathematical aesthetics",
+        "organic life",
+        "universal order",
+        "contemporary art",
+        "color theory",
+        "geometric composition",
+        "minimalism",
+        "abstract drawing",
+        "conceptual art",
+        "markers on paper",
+        "chromatic expression",
+        "cosmic balance",
+        "visual philosophy",
+        "spatial relationships",
+        "duality",
+        "interconnectedness",
+        "artistic symbolism",
+        "inner universe",
+        "geometric rhythm",
+        "emotional abstraction",
+        "nature and geometry",
+        "Chromatic Innerverse"
+      ],
+      "hashtags": [
+        "#GeometricAbstraction",
+        "#ChromaticHarmony",
+        "#Consciousness",
+        "#Freedom",
+        "#CelestialGeometry",
+        "#Existence",
+        "#BirdSymbolism",
+        "#VisualEquilibrium",
+        "#MathematicalAesthetics",
+        "#OrganicLife",
+        "#UniversalOrder",
+        "#ContemporaryArt"
       ]
     },
     "the-shape-of-sound-2026": {
@@ -31474,6 +31590,7 @@ window.ARTWORK_DATA = {
     "where-light-becomes-infinite-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-Infinite-1405126255",
     "where-light-becomes-a-passage-2026": "https://www.deviantart.com/oanarinaldi/art/Where-Light-Becomes-a-Passage%2C-21-%C3%97-29.7-cm%2C-markers-on-paper%2C-2026-1410515833",
     "the-geometry-of-inner-thought-2026": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Inner-Thought-1412268778",
+    "the-geometry-of-being-2026": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Being%2C-21-%C3%97-29.7-cm%2C-markers-on-paper%2C-2026-1414309154",
     "velocity-blueprint-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Blueprint%2C-ink-on-paper%2C-2026%2C-30-42cm-1325456201",
     "born-to-break-the-horizon-2026": "https://www.deviantart.com/oanarinaldi/art/Born-to-Break-the-Horizon%2C-Ink-on-paper%2C-A4%2C-2026-1329379754",
     "velocity-construct-2026": "https://www.deviantart.com/oanarinaldi/art/Velocity-Construct%2C-A3%2C-ink-on-paper%2C-2026-1330414394",

@@ -32,7 +32,7 @@ try {
             rel: icon.getAttribute('rel')
         }))
     })));
-    assert.equal(cards.length, 361);
+    assert.equal(cards.length, 362);
     assert.equal(new Set(cards.map(card => card.id)).size, cards.length);
     for (const card of cards) {
         assert.ok(data.artworks[card.id], card.id);
@@ -65,7 +65,7 @@ try {
 
     const filter = page.getByRole('searchbox', { name: 'Search by project or artwork title' });
     await filter.fill('Chromatic Innerverse');
-    await expect(page.locator('.shop-project .single-album-item:visible')).toHaveCount(6);
+    await expect(page.locator('.shop-project .single-album-item:visible')).toHaveCount(7);
     const first = page.locator('[data-artwork-id="the-architecture-of-unspoken-words-2026"]');
     await first.scrollIntoViewIfNeeded();
     const saatchi = first.locator('.shop-store-link--saatchi');

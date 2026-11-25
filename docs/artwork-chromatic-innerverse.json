@@ -62,6 +62,19 @@
         "redbubble": "https://www.redbubble.com/shop/ap/185855514",
         "deviantart": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Inner-Thought-1412268778"
       }
+    },
+    {
+      "id": "the-geometry-of-being-2026",
+      "sourceFolder": "Downloads/drawing",
+      "sourceText": "Artwork metadata and links supplied by the artist on 2026-11-25",
+      "title": "The Geometry of Being",
+      "specification": "21 × 29.7 cm (A4), markers on paper, 2026",
+      "links": {
+        "saatchi": "https://www.saatchiart.com/en-ro/art/Drawing-The-Geometry-of-Being-21-x-29-7-cm-markers-on-paper-2026/806648/14458731/view",
+        "redbubble": "https://www.redbubble.com/shop/ap/186046843",
+        "deviantart": "https://www.deviantart.com/oanarinaldi/art/The-Geometry-of-Being%2C-21-%C3%97-29.7-cm%2C-markers-on-paper%2C-2026-1414309154"
+      },
+      "instagramCaption": "The Geometry of Being\n21 × 29.7 cm (A4), markers on paper, 2026\n\nFrom the Chromatic Innerverse series.\n\nWithin the mathematical architecture of the universe, a solitary living presence reminds us that freedom can exist even within the most carefully constructed order.\n\n#GeometricAbstraction #ChromaticHarmony #Consciousness #Freedom #CelestialGeometry #Existence #BirdSymbolism #VisualEquilibrium #MathematicalAesthetics #OrganicLife #UniversalOrder #ContemporaryArt #ColorTheory #GeometricComposition #Minimalism #AbstractDrawing #ConceptualArt #MarkersOnPaper #ChromaticExpression #CosmicBalance #VisualPhilosophy #SpatialRelationships #Duality #Interconnectedness #ArtisticSymbolism #InnerUniverse #GeometricRhythm #EmotionalAbstraction #NatureAndGeometry #ChromaticInnerverse"
     }
   ],
   "images": [
@@ -295,6 +308,70 @@
       "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6358.webp",
       "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-inner-thought/img_6358-thumb.webp",
       "label": "Gold frame · alternate angle"
+    },
+    {
+      "source": "Downloads/drawing/The Geometry of Being, 21 × 29.7 cm, markers on paper, 2026.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/desene/Chromatic Innerverse/The Geometry of Being.jpg",
+      "thumb": "images/desene/Chromatic Innerverse/mici/7.jpg",
+      "label": "Full artwork",
+      "shopThumb": "images/desene/Chromatic Innerverse/shop/7.jpg"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6577.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6577.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6577-thumb.webp",
+      "label": "On paper · drawing board"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6578.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6578.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6578-thumb.webp",
+      "label": "On paper · with colored markers"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6579.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6579.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6579-thumb.webp",
+      "label": "On paper · front view"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6580.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6580.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6580-thumb.webp",
+      "label": "Gold frame · close view"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6581.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6581.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6581-thumb.webp",
+      "label": "Gold frame · studio angle"
+    },
+    {
+      "source": "Downloads/drawing/IMG_6582.jpg",
+      "artworks": [
+        "the-geometry-of-being-2026"
+      ],
+      "src": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6582.webp",
+      "thumb": "images/artwork-details/chromatic-innerverse/the-geometry-of-being/img_6582-thumb.webp",
+      "label": "Gold frame · studio display"
     }
   ],
   "largeMaxSide": 1000,
