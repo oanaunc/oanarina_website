@@ -1,0 +1,52 @@
+/* Keep the podcast and subscription labels readable in the desktop menu. */
+.breakpoint-off .classynav ul li .dropdown.music-dropdown {
+  width: 260px;
+}
+
+.breakpoint-off .classynav ul li:focus-within > .dropdown.music-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* Compact portfolio navigation for standalone app and support pages. */
+.site-music-discovery {
+  box-sizing: border-box;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  font: 13px/1.6 system-ui, sans-serif;
+}
+
+.site-music-discovery details {
+  width: max-content;
+  max-width: 100%;
+  padding: 8px 13px;
+  border: 1px solid #9c889a77;
+  border-radius: 9px;
+  background: #f6f1f8;
+  color: #49344f;
+}
+
+.site-music-discovery summary {
+  cursor: pointer;
+  list-style: revert;
+}
+
+.site-music-discovery a {
+  display: block;
+  padding: 7px 8px;
+  color: #674c78;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.site-music-discovery a:hover {
+  text-decoration: underline;
+}
+
+.site-music-discovery a:focus-visible,
+.site-music-discovery summary:focus-visible {
+  outline: 2px solid #9670af;
+  outline-offset: 3px;
+}
