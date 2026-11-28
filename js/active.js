@@ -134,12 +134,17 @@
     // :: 4.0 Masonary Gallery Active Code
     // Must wait until images have dimensions — otherwise Isotope stacks items wrong.
     if ($.fn.imagesLoaded) {
+        var galleryReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
         $('.oneMusic-albums').imagesLoaded(function () {
             // filter items on button click
             $('.catagory-menu').on('click', 'a', function () {
                 var filterValue = $(this).attr('data-filter');
+                var reduceMotion = galleryReducedMotion.matches ||
+                    document.documentElement.classList.contains('motion-off');
+                // Isotope must hide items immediately when motion styles suppress its transitions.
                 $grid.isotope({
-                    filter: filterValue
+                    filter: filterValue,
+                    transitionDuration: reduceMotion ? 0 : '0.4s'
                 });
             });
             // init Isotope
