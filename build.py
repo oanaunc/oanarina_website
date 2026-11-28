@@ -27,7 +27,7 @@ def public_url(value):
 def load_posts(today):
     posts = []
     seen = set()
-    for path in sorted((ROOT / 'content').glob('*.json')):
+    for path in sorted((ROOT / 'content').glob('*.json'), key=lambda article: article.stem):
         post = json.loads(path.read_text(encoding='utf-8'))
         day = date.fromisoformat(post['date'])
         if not re.fullmatch(rf'{day}(?:-[a-z0-9-]+)?', path.stem):
