@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-28",
+  "slug": "what-late-afternoon-light-does-to-a-room",
+  "category": "Architecture",
+  "title": "What late afternoon light does to a room",
+  "description": "Watch where the light lands before you choose the colour of a wall, the finish on a table, or the spot for a reading chair.",
+  "image": "what-late-afternoon-light-does-to-a-room.webp",
+  "alt": "Warm side light rakes across a plaster wall beside a walnut chair and an open book.",
+  "image_caption": "Illustration generated for this article.",
+  "sections": [
+    {
+      "heading": "Follow the bright patch",
+      "paragraphs": [
+        "A room you know well can look briefly unfamiliar late in the day. A window frames a bright patch on the floor, and the edge of a chair casts a long shadow. If the sun can reach the room at that angle, the light moves across surfaces that looked nearly uniform at midday. It is a good moment to see where you actually want to sit, and what you would rather leave in shadow.",
+        "Try the simplest version of a daylight study. On a clear day, photograph the same corner from the same spot in the morning, around midday, and again late in the afternoon. Keep the lamps off for the comparison. Notice when a table becomes difficult to read at, a passage gains depth, or a wall makes the room feel warmer. A nearby building or deep window reveal might block the direct sun altogether. That is an observation worth keeping, too."
+      ]
+    },
+    {
+      "heading": "Give your materials the same light",
+      "paragraphs": [
+        "Hold two samples against the wall where they would actually go. A pale paint chip laid flat on a windowsill can tell a different story from the same chip held upright in a darker corner. Keep your samples on the same plane so you can compare them. Then move them together to the walls that catch more light and watch what changes.",
+        "Side light can bring out the ridges of rough plaster and the grain in a piece of wood. It can also reveal a bright reflection on a glossy tabletop right where your eyes fall. Look from the chair you plan to use. If that reflection is distracting, try turning the table, shifting the chair, or comparing a lower-sheen sample in the same place."
+      ]
+    },
+    {
+      "heading": "Change one thing at a time",
+      "paragraphs": [
+        "Make two sketches of the corner before you move anything heavy. Try the chair facing the window in one and perpendicular to it in the other. Keep the materials and viewpoint the same. This makes it easier to notice what the change does to the view, where the light falls on a book, and how much room is left to walk past.",
+        "An image can help you decide which version to try first. The most revealing check is still to sit there for ten minutes while the light is doing the thing you noticed. You might keep the wall exactly as it is and move the chair half a metre."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "U.S. Department of Energy · Daylighting",
+      "url": "https://www.energy.gov/articles/energy-101-daylighting"
+    }
+  ],
+  "app": {
+    "name": "AI Architecture Render",
+    "description": "If you want to compare two looks before moving furniture or buying finishes, start with a room photo or a sketch and use our app to explore materials and lighting in concept renders. Some generation features require paid credits or in-app purchases.",
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/ai-architecture-render/id6799261681"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oanarinaldi.aiarchitecturerender"
+      }
+    ]
+  },
+  "image_prompt": "A quietly striking independent architecture magazine cover photograph, landscape 3:2 format. Contemporary reading room with limewashed warm-cream walls and a tall deeply recessed left side window, raking realistic low afternoon sun cast across a pale stone sill and textured wall, producing a diagonal patch of rich amber and soft-edged shadow. An understated walnut chair and an open plain paper book, a tiny olive branch in a ceramic vase, smoked umber and muted terracotta detail, strong three-dimensional texture, ample breathing room, magazine-quality composition and believable light. Camera just outside doorway looking into the quiet room; keep the main illuminated wall and chair within center safe crop. Editorial architecture image of an imagined space. No text, letters, people, branding, or device mockups."
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-28",
+  "slug": "weeknight-dinner-from-the-vegetable-drawer",
+  "category": "Food",
+  "title": "A weeknight dinner from the vegetable drawer",
+  "description": "Build a meal around the vegetables already at home with a grain, something hearty, and one bright finish.",
+  "image": "weeknight-dinner-from-the-vegetable-drawer.webp",
+  "alt": "A plate of roasted carrots, red onion, and chickpeas sits near a small bowl of grains and fresh vegetables.",
+  "image_caption": "Illustration generated for this article.",
+  "sections": [
+    {
+      "heading": "Lay out the ingredients before looking up a recipe",
+      "paragraphs": [
+        "Take out the vegetables you want to use and put them on the counter. You might have two carrots, half a red onion, and a few greens. Pick a familiar base that will make a meal of them. Rice, bulgur, a slice of toast, or leftover potatoes are all good candidates. Then look for one hearty addition. A tin of chickpeas, a spoonful of hummus, or a smear of white bean spread gives the vegetables somewhere to land.",
+        "Once you can see the ingredients together, give each one a job. Carrots can become the sweet, browned part of the plate. Red onion can join them on the tray. Greens can be dressed separately so they keep their texture. A little lemon at the end helps the components taste like they belong to the same dinner."
+      ]
+    },
+    {
+      "heading": "Cook the slowest ingredient first",
+      "paragraphs": [
+        "For the carrot version, cut the carrots into even pieces and toss them with oil, salt, and a little cumin or paprika. Start roasting them, then add wedges of red onion once the carrots have a head start. While they cook, get your grain ready and rinse the chickpeas. You can warm the chickpeas with the vegetables near the end or fold them straight into the warm grain.",
+        "Finish the bowl with lemon juice, olive oil, parsley, and a spoonful of tahini loosened with water if you have it. Taste a bite that includes a little of everything before deciding what is missing. The same idea works with broccoli, leftover squash, or peppers. Write down the combination you liked in a few words. A list of dinners you already enjoyed comes in handy the next time you open the drawer before deciding what to make."
+      ]
+    }
+  ],
+  "sources": [],
+  "app": {
+    "name": "Veggie Chef: Vegetarian Meals",
+    "description": "Browse our vegetarian recipe app when you want another direction for the ingredients you have or a few ideas for the week ahead.",
+    "links": [
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oanarinaldi.veggiechef"
+      }
+    ]
+  },
+  "image_prompt": "High-end independent food magazine editorial photograph, 3:2 landscape. On a worn walnut countertop a small handful of mismatched everyday vegetables waits beside a plate of roasted carrots, red onion and chickpeas with herbs and lemon, plus a small ceramic bowl of grains. Natural late afternoon kitchen light, modest and attainable home setting, yellow linen, a deep terracotta plate, visible little tactile imperfections. Make the food realistic and specifically vegetarian. Center the plate and fresh ingredients in the safe crop. No people, no words, no gadgets, no packaging or brands."
+}

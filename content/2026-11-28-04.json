@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-28",
+  "slug": "a-gift-list-that-actually-helps",
+  "category": "Everyday Life",
+  "title": "A better way to keep birthday gift ideas",
+  "description": "Catch the small details throughout the year so you have somewhere to start when a birthday comes around.",
+  "image": "a-gift-list-that-actually-helps.webp",
+  "alt": "An open notebook, pencil, and rust-red ribbon on a sage-green table next to a small parcel.",
+  "image_caption": "Illustration generated for this article.",
+  "sections": [
+    {
+      "heading": "Write down what they actually said",
+      "paragraphs": [
+        "Someone mentions a bakery they want to try, a mug they miss, or an exhibition they keep meaning to see. Those remarks are easy to forget by the time a birthday arrives. Give each person one place for notes. When something comes up naturally in conversation, save a few words. ‘Green mug with a wide handle’ is more useful later than ‘something for the kitchen.’ A short note also makes it easier to remember why the idea sounded right.",
+        "Include experiences and small gestures. A walk to the bakery with time to sit afterward may fit better than a present in a box. A photo print can work if an object would feel excessive. The point of keeping a list is having a handful of choices when you need them."
+      ]
+    },
+    {
+      "heading": "Give time-sensitive ideas their own reminder",
+      "paragraphs": [
+        "A gift that needs postage, advance booking, or a little making takes longer than a card. When you write the idea down, add the action you would need to take first. ‘Check Saturday tickets’ makes the next step smaller. If you look at the list early and the idea no longer fits, you still have time to choose something from the rest of it.",
+        "Keep a line for what you actually chose. Next year, that detail helps you avoid buying the same thing twice and reminds you which ideas still have a chance. A good list can stay quite short. Two specific ideas and one evening they would enjoy are already enough to make the next birthday easier to plan."
+      ]
+    }
+  ],
+  "sources": [],
+  "app": {
+    "name": "Next Birthday Reminder",
+    "description": "Our app keeps birthdays, gift ideas, and celebration plans together if you would like one place to capture those notes as they come up.",
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/app/next-birthday-moments-plans/id6806520560"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oanarinaldi.nextbirthday"
+      }
+    ]
+  },
+  "image_prompt": "A calm 3:2 landscape still life photograph for an independent lifestyle magazine article. Simple open notebook on a sage-green table, just abstract empty lines and no actual writing, a graphite pencil, loose deep red cotton ribbon and a small cream parcel or kraft envelope. Morning side light and subtle natural texture. A hint of muted yellow and red, sophisticated understated bookish styling. Focus on the everyday notebook and ribbon together, centered in the safe crop. No people, no visible words, no dates, no brands, no digital devices."
+}

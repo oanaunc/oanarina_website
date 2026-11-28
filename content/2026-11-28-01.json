@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-28",
+  "slug": "draw-the-route-before-you-draw-the-room",
+  "category": "Architecture",
+  "title": "Draw the route before you draw the room",
+  "description": "A pencil line can show where a floor plan gets in the way of the life you live in it.",
+  "image": "draw-the-route-before-you-draw-the-room.webp",
+  "alt": "A red pencil route winds through a hand-drawn floor plan on an oak drafting table.",
+  "image_caption": "Illustration generated for this article.",
+  "sections": [
+    {
+      "heading": "Start at the door with your hands full",
+      "paragraphs": [
+        "Picture carrying two bags from your front door to the kitchen. Where do you put your keys? Which door do you need to open? Does your route cross the middle of the place where someone else might be sitting? It is easier to see the answers when you draw that trip on a plan. Start with a copy of your sketch and trace the path in one colour. Include the point where you put the bags down.",
+        "Now add a second route in another colour. Try a guest walking from the entrance to the bathroom, or someone getting from the bedroom to the kitchen before the rest of the house is awake. Where the routes overlap, imagine both people doing those things at the same time. A line crossing another line may be fine in an open room. A line crossing a swinging door, a dining chair, and the edge of the kitchen all at once gives you something specific to revisit."
+      ]
+    },
+    {
+      "heading": "Draw furniture as it gets used",
+      "paragraphs": [
+        "A table drawn with every chair pushed in can make a layout seem more generous than it feels at dinner. Draw one chair pulled back and add the route someone would take to refill a glass. Sketch the door open where it would naturally rest. If you are working on a room you already have, mark the size and position of the furniture with painter’s tape and try the movement yourself.",
+        "On the second plan, make one adjustment. Turn the table, shift where people arrive, or move the storage that sits in the way. Trace the same routes again. You will have a direct comparison between two versions of an everyday scene, which is easier to discuss than a general feeling that one plan flows better. Your first drawing can be rough. Its job is to help you ask a better question about how the place works."
+      ]
+    }
+  ],
+  "sources": [],
+  "app": {
+    "name": "AI Architecture Plan",
+    "description": "If you are ready to compare options, our app lets you work with plan images and explore layout and furniture concepts. Use it to compare a few directions against the routes you drew. Some generation features require paid credits or in-app purchases.",
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/ai-architecture-plan/id6809520926"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oanarinaldi.aiarchitectureplan"
+      }
+    ]
+  },
+  "image_prompt": "A realistic 3:2 landscape cover photograph for an independent architecture and lifestyle magazine. Overhead oblique view at a light oak drafting table, on it a large plain paper with a carefully hand-drawn black pencil apartment floor plan with two adjacent rooms and open doors. One distinct muted brick-red curved pencil path winds from the entrance through the plan; the page has no lettering, measurements, legend, or other symbols apart from simple architectural furniture outlines. Single pencil and modest empty ceramic cup beside the sheet. Diffuse window light, tactile paper, cream and warm wood, artful but realistic. Composition keeps the route and the page clear in central crop. No people, no branding, no type, no digital interface. This is an editorial illustration, not a construction drawing."
+}

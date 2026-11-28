@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-28",
+  "slug": "storyboard-a-home-walkthrough",
+  "category": "Design Process",
+  "title": "How to storyboard a home walkthrough in five shots",
+  "description": "A short sequence can explain how a home fits together, from the approach to the view you remember.",
+  "image": "storyboard-a-home-walkthrough.webp",
+  "alt": "Small photographic studies of the same home arranged on a worktable with a pencil and tracing paper.",
+  "image_caption": "Illustration generated for this article.",
+  "sections": [
+    {
+      "heading": "Show the arrival",
+      "paragraphs": [
+        "Give the viewer a place to start. The first shot could be as ordinary as a path from the street to a front door. Leave enough of the surroundings in the frame to show how someone would find the entrance. The second shot begins just inside. Keep part of the doorway or the edge of the coat wall in view so the viewer can tell where they are standing.",
+        "Draw each frame on a small card and write one sentence under it that a viewer should be able to understand. Under the arrival shot it might read ‘the entry is tucked to the side.’ A sentence like that makes it easier to choose a useful viewpoint when you eventually make the image."
+      ]
+    },
+    {
+      "heading": "Give the turning point its own frame",
+      "paragraphs": [
+        "The third shot is where you turn or where a new room comes into view. Keep a recognizable feature in both this frame and the previous one. A doorway, an edge of the kitchen island, or a tall window can help the viewer follow the movement. In the fourth shot, pause where someone might spend time. Show the chair beside the window and the portion of the room it looks toward. One good view can explain a room better than a fast sweep across all its walls."
+      ]
+    },
+    {
+      "heading": "End on a view with a purpose",
+      "paragraphs": [
+        "For the fifth shot, pick the image that tells you what is distinctive about the house. Perhaps it is the kitchen table looking out onto a small garden. Let that frame sit long enough to notice the relationship. Lay all five cards on the table before animating anything. If the middle of the sequence feels confusing, put two cards side by side and see what a viewer would need to recognize in both. You can often solve the problem by shifting a single viewpoint."
+      ]
+    }
+  ],
+  "sources": [],
+  "app": {
+    "name": "AI Architecture Plan to Video",
+    "description": "Once you have a frame you want to explore, our app can turn a plan, sketch, or room image into a short concept video. Try one shot first and see whether the motion helps the viewer understand it. Some generation features require paid credits or in-app purchases.",
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/ai-architecture-plan-to-video/id6818145793"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oanarinaldi.aiarchitectureplantovideo"
+      }
+    ]
+  },
+  "image_prompt": "A 3:2 landscape editorial still life photograph, quiet and highly crafted. On an architect's desk, a loose sequence of five blank-bordered contact prints show consistent views of the same modest contemporary home, from approach to kitchen and garden. The prints are laid in order, with a graphite pencil and tracing vellum off to one side. Each photo has believable rooms with plaster, warm oak floors and natural light, a coherent palette from one location. Use an oblique camera angle with a warm beam of light, slight deep sage detail. No faces, lettering, numbers or branding. Imagined project, not app output."
+}
